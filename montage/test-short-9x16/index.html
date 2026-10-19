@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Test short 666 - 10 s</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; background: #0f1724; }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: Georgia, "Times New Roman", serif;
+        color: #f4ead2;
+      }
+      .bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .shade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(15, 23, 36, 0.9) 0%, rgba(15, 23, 36, 0.6) 40%, rgba(15, 23, 36, 0.55) 100%);
+      }
+      .clip { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+      .line {
+        position: absolute;
+        left: 100px;
+        width: 880px;
+        right: 100px;
+        margin: 0;
+        text-align: center;
+        line-height: 1.22;
+        overflow-wrap: break-word;
+      }
+      .q { top: 330px; font-size: 78px; }
+      .lead { top: 330px; font-size: 70px; }
+      .hook { top: 330px; font-size: 58px; }
+      .gold { color: #f6d77f; }
+      .jean {
+        top: auto;
+        left: auto;
+        position: absolute;
+        right: 70px;
+        bottom: 120px;
+        height: 740px;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-width="1080"
+      data-height="1920"
+      data-duration="10"
+    >
+      <img class="bg" id="bg" src="assets/decor-patmos.jpg" />
+      <div class="shade" id="shade"></div>
+
+      <p class="clip line q" id="s1" data-start="0" data-duration="3.4">Un nombre peut-il cacher le nom d'un homme&nbsp;?</p>
+
+      <p class="clip line lead" id="s2" data-start="3.2" data-duration="4.4">Depuis Patmos, Jean donne une énigme&nbsp;:<br /><span class="gold">le nombre 666</span></p>
+
+      <img class="clip jean" id="jean" src="assets/jean-patmos.png" data-start="3.5" data-duration="6.5" />
+
+      <p class="clip line hook" id="s3" data-start="8.2" data-duration="1.8">Il ajoute que celui qui a de l'intelligence calcule ce nombre.</p>
+
+      <audio id="voix" src="assets/voix-10s.wav" data-start="0" data-duration="10"></audio>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#bg", { scale: 1.0 }, { scale: 1.08, duration: 10, ease: "none" }, 0);
+      tl.fromTo("#s1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.1);
+      tl.to("#s1", { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.0);
+      tl.fromTo("#s2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 3.3);
+      tl.fromTo("#jean", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" }, 3.5);
+      tl.to("#s2", { opacity: 0, duration: 0.4, ease: "power1.in" }, 7.3);
+      tl.fromTo("#s3", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 8.3);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
