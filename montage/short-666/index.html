@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>La Bible Simple - Short 666</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Cormorant Garamond";
+        src: url("assets/fonts/CormorantGaramond.ttf") format("truetype");
+        font-weight: 300 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Cormorant Garamond";
+        src: url("assets/fonts/CormorantGaramond-Italic.ttf") format("truetype");
+        font-weight: 300 700;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: "EB Garamond";
+        src: url("assets/fonts/EBGaramond.ttf") format("truetype");
+        font-weight: 400 800;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Frank Ruhl Libre";
+        src: url("assets/fonts/FrankRuhlLibre.ttf") format("truetype");
+        font-weight: 300 900;
+        font-style: normal;
+      }
+
+      html, body { margin: 0; background: #1a1410; }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        color: #1a1410;
+      }
+
+      .sc-in { position: absolute; inset: 0; }
+      .bgset { position: absolute; inset: 0; overflow: hidden; }
+      .bgimg, .paper {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .bgimg { filter: sepia(0.35) saturate(1.15) contrast(1.06) brightness(1.02); }
+      .paper { mix-blend-mode: multiply; opacity: 0.5; }
+      .vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 85% 70% at 50% 45%, rgba(26, 20, 16, 0) 55%, rgba(26, 20, 16, 0.6) 100%);
+      }
+
+      .el {
+        position: absolute;
+        filter: drop-shadow(16px 24px 24px rgba(26, 20, 16, 0.55)) sepia(0.12);
+      }
+
+      .card-wrap {
+        position: absolute;
+        filter: drop-shadow(0 22px 30px rgba(26, 20, 16, 0.55));
+      }
+      .card {
+        position: relative;
+        padding: 56px 66px 62px;
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 140% auto;
+        clip-path: polygon(0% 3%, 6% 0%, 14% 2%, 27% 0%, 41% 2.5%, 55% 0.5%, 68% 2%, 82% 0%, 93% 2%, 100% 0.5%,
+          99% 22%, 100% 45%, 98.5% 70%, 100% 97%, 91% 100%, 78% 98%, 63% 100%, 49% 98.5%, 34% 100%, 20% 98%, 7% 100%, 0% 97.5%,
+          1% 72%, 0% 48%, 1.5% 24%);
+        text-align: center;
+      }
+      .kicker {
+        display: block;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 30px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        color: #8b5e34;
+        margin-bottom: 16px;
+      }
+      .rule {
+        display: block;
+        width: 460px;
+        height: 2px;
+        margin: 0 auto 24px;
+        background: #8b5e34;
+      }
+      .big { margin: 0; font-size: 80px; font-weight: 600; line-height: 1.08; }
+      .p1-hook .big { font-size: 92px; }
+      .mid { margin: 0; font-size: 62px; font-weight: 500; line-height: 1.14; }
+      .small { margin: 0; font-size: 46px; font-weight: 500; line-height: 1.16; }
+      .w { display: inline-block; }
+      .accent { color: #8b2e1f; font-style: italic; }
+      .ink { color: #1a1410; }
+      .smallcaps { font-size: 0.55em; letter-spacing: 3px; color: #8b5e34; }
+
+      .quote { margin: 0; font-style: italic; font-size: 64px; font-weight: 500; line-height: 1.14; }
+      .ref {
+        display: block;
+        margin-top: 22px;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 28px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #8b5e34;
+      }
+
+      .ribbon {
+        position: absolute;
+        left: 80px;
+        width: 920px;
+        margin: 0;
+        padding: 30px 40px 34px;
+        box-sizing: border-box;
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 66px;
+        line-height: 1.15;
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 160% auto;
+        clip-path: polygon(0% 6%, 8% 0%, 22% 4%, 39% 0%, 57% 5%, 74% 0%, 90% 4%, 100% 1%,
+          99% 50%, 100% 95%, 86% 100%, 68% 96%, 50% 100%, 31% 96%, 14% 100%, 0% 95%, 1.5% 50%);
+      }
+
+      .medallion {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        filter: drop-shadow(0 18px 26px rgba(26, 20, 16, 0.55));
+      }
+      .medallion .disc {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 260% auto;
+        box-shadow: inset 0 0 60px rgba(139, 94, 52, 0.45);
+      }
+      .medallion svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+      .medallion circle { fill: none; stroke: #c8963e; stroke-width: 6; stroke-dasharray: 1500; }
+      .medallion .inner { stroke: #8b5e34; stroke-width: 2; stroke-dasharray: 1300; }
+      .medal-num {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 268px;
+        line-height: 1;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        color: #8b2e1f;
+        -webkit-text-stroke: 5px #f6d77f;
+        paint-order: stroke fill;
+      }
+
+      .tiles { position: absolute; left: 0; width: 1080px; height: 300px; }
+      .tile {
+        position: absolute;
+        top: 0;
+        width: 200px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 400% auto;
+        border: 3px solid #8b5e34;
+        border-radius: 10px;
+        box-shadow: 0 14px 22px rgba(26, 20, 16, 0.45);
+      }
+      .tile .val {
+        font-family: "EB Garamond", Georgia, serif;
+        font-weight: 700;
+        font-size: 48px;
+        color: #8b2e1f;
+        line-height: 1;
+      }
+      .tile .heb {
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 500;
+        font-size: 150px;
+        line-height: 1.05;
+        color: #1a1410;
+      }
+      .tile.small { width: 118px; height: 230px; }
+      .tile.small .val { font-size: 36px; }
+      .tile.small .heb { font-size: 112px; }
+
+      .head { position: absolute; left: 80px; width: 920px; text-align: center; }
+      .sum {
+        position: absolute;
+        left: 60px;
+        width: 960px;
+        margin: 0;
+        text-align: center;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 50px;
+        color: #1a1410;
+      }
+      .total {
+        position: absolute;
+        left: 0;
+        width: 1080px;
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 230px;
+        line-height: 1;
+        color: #8b2e1f;
+      }
+
+      .stamp {
+        position: absolute;
+        left: 230px;
+        width: 620px;
+        padding: 12px 0 18px;
+        text-align: center;
+        font-family: "EB Garamond", Georgia, serif;
+        font-weight: 700;
+        font-size: 88px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #8b2e1f;
+        border: 9px double #8b2e1f;
+        background: rgba(239, 227, 200, 0.9);
+      }
+
+      .cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        margin-top: 30px;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 36px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #8b5e34;
+      }
+      .bubble { width: 66px; height: 56px; overflow: visible; }
+      .bubble path { fill: none; stroke: #8b2e1f; stroke-width: 6; stroke-linejoin: round; stroke-dasharray: 420; }
+
+      .title { margin: 0 0 24px; font-weight: 700; font-size: 124px; line-height: 1.02; }
+
+      .mote { position: absolute; border-radius: 50%; background: #f6d77f; filter: blur(1px); }
+      #motes { position: absolute; inset: 0; z-index: 50; pointer-events: none; }
+
+      @keyframes hf-grain-noise {
+        0%, 100% { transform: translate(0, 0); }
+        10% { transform: translate(-5%, -5%); }
+        20% { transform: translate(-10%, 5%); }
+        30% { transform: translate(5%, -10%); }
+        40% { transform: translate(-5%, 15%); }
+        50% { transform: translate(-10%, 5%); }
+        60% { transform: translate(15%, 0); }
+        70% { transform: translate(0, 10%); }
+        80% { transform: translate(-15%, 0); }
+        90% { transform: translate(10%, 5%); }
+      }
+      #grain-overlay .grain-texture {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        opacity: 0.12;
+        animation: hf-grain-noise 0.5s steps(1) infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-width="1080"
+      data-height="1920"
+      data-duration="60"
+    >
+      <div class="clip scene" id="p1" data-start="0.000" data-duration="12.65"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/patmos.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="card-wrap p1-hook" style="top:330px;left:70px;width:940px"><div class="card"><span class="kicker">Apocalypse 13</span><span class="rule"></span><p class="big"><span class="w">Un</span> <span class="w">nombre</span> <span class="w">peut-il</span> <span class="w">cacher</span> <span class="w">le</span> <span class="w accent">nom</span> <span class="w">d'un</span> <span class="w">homme&nbsp;?</span></p></div></div><img class="el p1-jean" src="assets/elements/personnage-01-jean-patmos.png" style="width:607px;height:1180px;left:-30px;bottom:-40px" /><p class="ribbon p1-cap" style="top:170px">Depuis Patmos, Jean donne une énigme…</p><div class="medallion p1-medal" style="left:495px;top:500px"><div class="disc"></div><svg viewBox="0 0 500 500"><circle cx="250" cy="250" r="238" transform="rotate(-90 250 250)" /><circle class="inner" cx="250" cy="250" r="214" transform="rotate(-90 250 250)" /></svg><div class="medal-num">666</div></div><div class="card-wrap p1-quote" style="top:150px;left:70px;width:940px"><div class="card"><p class="quote">« Que celui qui a de l'intelligence calcule ce&nbsp;nombre. »</p><span class="ref">Apocalypse 13.18</span></div></div></div></div>
+      <div class="clip scene" id="p2" data-start="12.350" data-duration="3.1"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/bureau.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="card-wrap p2-card" style="top:170px;left:70px;width:940px"><div class="card"><p class="mid">En hébreu, chaque lettre a une <span class="accent">valeur numérique</span>.</p></div></div><div class="tiles" style="top:600px"><div class="tile p2-t" style="left:190px"><span class="val">3</span><span class="heb">ג</span></div><div class="tile p2-t" style="left:430px"><span class="val">2</span><span class="heb">ב</span></div><div class="tile p2-t" style="left:670px"><span class="val">1</span><span class="heb">א</span></div></div><img class="el p2-scribe" src="assets/elements/personnage-03-scribe-hebreu.png" style="width:410px;height:1076px;left:20px;bottom:-40px" /></div></div>
+      <div class="clip scene" id="p3" data-start="15.150" data-duration="7.7"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/parchemin.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="head" style="top:170px"><span class="kicker">Néron César en hébreu</span><p class="big ink">Néron César</p></div><div class="tiles" style="top:560px"><div class="tile small p3-t p3-t6" style="left:60px"><span class="val">200</span><span class="heb">ר</span></div><div class="tile small p3-t p3-t5" style="left:188px"><span class="val">60</span><span class="heb">ס</span></div><div class="tile small p3-t p3-t4" style="left:316px"><span class="val">100</span><span class="heb">ק</span></div><div class="tile small p3-t p3-t3" style="left:484px"><span class="val">50</span><span class="heb">ן</span></div><div class="tile small p3-t p3-t2" style="left:612px"><span class="val">6</span><span class="heb">ו</span></div><div class="tile small p3-t p3-t1" style="left:740px"><span class="val">200</span><span class="heb">ר</span></div><div class="tile small p3-t p3-t0" style="left:868px"><span class="val">50</span><span class="heb">נ</span></div></div><p class="sum p3-sum" style="top:900px">50 + 200 + 6 + 50 + 100 + 60 + 200</p><p class="total p3-total" style="top:1010px">= 666</p></div></div>
+      <div class="clip scene" id="p4" data-start="22.550" data-duration="6.1"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/rome.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="card-wrap p4-card" style="top:170px;left:70px;width:940px"><div class="card"><span class="kicker">Néron · empereur de Rome</span><p class="big">54 – 68 <span class="smallcaps">apr. J.-C.</span></p></div></div><div class="card-wrap p4-card2" style="top:530px;left:70px;width:940px"><div class="card"><p class="mid">Des historiens rapportent ses <span class="accent">persécutions</span> contre les chrétiens.</p></div></div><img class="el p4-neron" src="assets/elements/personnage-02-neron.png" style="width:470px;height:1150px;right:30px;bottom:-40px" /><img class="el p4-chretien" src="assets/elements/personnage-06-chretien-priere.png" style="width:400px;height:630px;left:30px;bottom:60px" /></div></div>
+      <div class="clip scene" id="p5" data-start="28.350" data-duration="7.7"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/salle.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="card-wrap p5-card" style="top:160px;left:70px;width:940px"><div class="card"><p class="mid">Beaucoup de spécialistes pensent que Jean visait <span class="accent">ce nom</span>.</p></div></div><div class="stamp p5-stamp" style="top:520px">Hypothèse</div><div class="card-wrap p5-card2" style="top:720px;left:150px;width:780px"><div class="card"><p class="small">Le même calcul donne aussi d'autres noms.</p></div></div><img class="el p5-erudit" src="assets/elements/personnage-04-erudit-grec.png" style="width:481px;height:1050px;left:10px;bottom:-30px" /><img class="el p5-loupe" src="assets/elements/objet-07-loupe.png" style="width:217px;height:460px;right:110px;bottom:180px" /></div></div>
+      <div class="clip scene" id="p6" data-start="35.750" data-duration="7.3"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/bureau.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="card-wrap p6-card" style="top:170px;left:70px;width:940px"><div class="card"><p class="big">Alors pourquoi garder cette idée&nbsp;?</p></div></div><div class="card-wrap p6-card2" style="top:560px;left:70px;width:940px"><div class="card"><p class="mid">Elle montre comment les premiers chrétiens lisaient leur époque<span class="p6-prud">… <span class="accent">avec prudence</span>.</span></p></div></div><img class="el p6-chretien" src="assets/elements/personnage-06-chretien-priere.png" style="width:420px;height:661px;right:40px;bottom:50px" /></div></div>
+      <div class="clip scene" id="p7" data-start="42.750" data-duration="5.5"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/rome.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="card-wrap p7-card" style="top:300px;left:70px;width:940px"><div class="card"><span class="kicker">Ce que le texte nous apprend</span><span class="rule"></span><p class="big">Ne pas laisser le pouvoir décider de notre <span class="accent">fidélité</span>.</p></div></div><img class="el p7-balance" src="assets/elements/objet-05-balance.png" style="width:440px;height:461px;left:320px;bottom:230px" /></div></div>
+      <div class="clip scene" id="p8" data-start="47.950" data-duration="4.0"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/parchemin.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="head" style="top:360px"><p class="big ink">Lire ce passage,<br />c'est chercher la sagesse,</p><p class="big accent p8-pas">pas un code.</p></div><img class="el p8-codex" src="assets/elements/objet-09-codex-ferme.png" style="width:330px;height:380px;left:220px;bottom:400px" /><img class="el p8-lampe" src="assets/elements/objet-11-lampe-huile.png" style="width:329px;height:220px;right:170px;bottom:420px" /></div></div>
+      <div class="clip scene" id="p9" data-start="51.650" data-duration="4.2"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/patmos.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="card-wrap p9-card" style="top:190px;left:70px;width:940px"><div class="card"><p class="mid">Quel verset de l'Apocalypse t'a le plus <span class="accent">intrigué</span>&nbsp;?</p><span class="cta p9-cta"><svg class="bubble" viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z" /></svg>Écris-le en commentaire</span></div></div><img class="el p9-jean" src="assets/elements/personnage-01-jean-patmos.png" style="width:607px;height:1180px;left:-30px;bottom:-40px" /></div></div>
+      <div class="clip scene" id="p10" data-start="55.550" data-duration="4.45"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/parchemin.jpg" /><img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div><div class="head end" style="top:560px"><span class="kicker">Abonne-toi</span><span class="rule"></span><p class="title ink">La Bible Simple</p><span class="rule"></span><p class="mid ink p10-sub">La Bible, pas à pas, sans jargon.</p></div></div></div>
+
+      <div id="motes"><i class="mote" style="left:40px;top:100px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:177px;top:363px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:314px;top:626px;width:7px;height:7px;opacity:0.34"></i><i class="mote" style="left:451px;top:889px;width:4px;height:4px;opacity:0.41"></i><i class="mote" style="left:588px;top:1152px;width:6px;height:6px;opacity:0.48"></i><i class="mote" style="left:725px;top:1415px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:862px;top:1678px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:999px;top:241px;width:7px;height:7px;opacity:0.34"></i><i class="mote" style="left:136px;top:504px;width:4px;height:4px;opacity:0.41"></i><i class="mote" style="left:273px;top:767px;width:6px;height:6px;opacity:0.48"></i><i class="mote" style="left:410px;top:1030px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:547px;top:1293px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:684px;top:1556px;width:7px;height:7px;opacity:0.34"></i><i class="mote" style="left:821px;top:119px;width:4px;height:4px;opacity:0.41"></i><i class="mote" style="left:958px;top:382px;width:6px;height:6px;opacity:0.48"></i><i class="mote" style="left:95px;top:645px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:232px;top:908px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:369px;top:1171px;width:7px;height:7px;opacity:0.34"></i></div>
+
+      <div id="grain-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100">
+        <div class="grain-texture"></div>
+      </div>
+
+      <audio id="voix" src="assets/voix.wav" data-start="0" data-duration="60" data-volume="1"></audio>
+      <audio id="sfx-whoosh-1" src=".media/audio/sfx/sfx_004.mp3" data-start="2.95" data-duration="2" data-volume="0.18"></audio>
+      <audio id="sfx-mer-1" src=".media/audio/sfx/sfx_002.mp3" data-start="3.2" data-duration="9.3" data-volume="0.09"></audio>
+      <audio id="sfx-impact-1" src=".media/audio/sfx/sfx_001.mp3" data-start="6.5" data-duration="2" data-volume="1"></audio>
+      <audio id="sfx-whoosh-2" src=".media/audio/sfx/sfx_004.mp3" data-start="12.3" data-duration="2" data-volume="0.15"></audio>
+      <audio id="sfx-impact-2" src=".media/audio/sfx/sfx_001.mp3" data-start="21.2" data-duration="2" data-volume="1"></audio>
+      <audio id="sfx-stamp" src=".media/audio/sfx/sfx_001.mp3" data-start="32.15" data-duration="2" data-volume="0.45"></audio>
+      <audio id="sfx-whoosh-3" src=".media/audio/sfx/sfx_004.mp3" data-start="35.7" data-duration="2" data-volume="0.15"></audio>
+      <audio id="sfx-mer-2" src=".media/audio/sfx/sfx_002.mp3" data-start="51.8" data-duration="3.9" data-volume="0.08"></audio>
+      <audio id="sfx-whoosh-4" src=".media/audio/sfx/sfx_004.mp3" data-start="55.5" data-duration="2" data-volume="0.15"></audio>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#p10 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 55.550);
+      tl.fromTo("#p10 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 4.45, ease: "none" }, 55.550);
+      tl.fromTo("#p9 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 51.650);
+      tl.fromTo("#p9 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 4.2, ease: "none" }, 51.650);
+      tl.fromTo("#p8 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 47.950);
+      tl.fromTo("#p8 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 4.0, ease: "none" }, 47.950);
+      tl.fromTo("#p7 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 42.750);
+      tl.fromTo("#p7 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 5.5, ease: "none" }, 42.750);
+      tl.fromTo("#p6 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 35.750);
+      tl.fromTo("#p6 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 7.3, ease: "none" }, 35.750);
+      tl.fromTo("#p5 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 28.350);
+      tl.fromTo("#p5 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 7.7, ease: "none" }, 28.350);
+      tl.fromTo("#p4 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 22.550);
+      tl.fromTo("#p4 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 6.1, ease: "none" }, 22.550);
+      tl.fromTo("#p3 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 15.150);
+      tl.fromTo("#p3 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 7.7, ease: "none" }, 15.150);
+      tl.fromTo("#p2 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 12.350);
+      tl.fromTo("#p2 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 3.1, ease: "none" }, 12.350);
+      tl.fromTo("#p1 .bgimg", { scale: 1.04 }, { scale: 1.12, duration: 12.65, ease: "none" }, 0.000);
+      tl.fromTo("#p1 .p1-hook .card", { opacity: 0, y: 40, rotation: -3 }, { opacity: 1, y: 0, rotation: -1.5, duration: 0.7, ease: "power3.out" }, 0.05);
+      tl.fromTo("#p1 .p1-hook .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.inOut" }, 0.4);
+      tl.fromTo("#p1 .p1-hook .w", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.24 }, 0.55);
+      tl.to("#p1 .p1-hook .card", { opacity: 0, y: -60, rotation: -3, duration: 0.45, ease: "power2.in" }, 3.0);
+      tl.fromTo("#p1 .p1-jean", { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 1.1, ease: "power3.out" }, 3.2);
+      tl.fromTo("#p1 .p1-cap", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 3.4);
+      tl.to("#p1 .p1-cap", { opacity: 0, duration: 0.4, ease: "power1.in" }, 7.2);
+      tl.fromTo("#p1 .p1-medal", { opacity: 0, scale: 0.6, rotation: -20 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.7, ease: "back.out(1.6)" }, 5.75);
+      tl.fromTo("#p1 .p1-medal circle", { strokeDashoffset: 1500 }, { strokeDashoffset: 0, duration: 1.1, ease: "power2.inOut", stagger: 0.12 }, 5.9);
+      tl.fromTo("#p1 .p1-medal .medal-num", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }, 6.5);
+      tl.to("#p1 .p1-medal", { opacity: 0, y: -40, duration: 0.5, ease: "power2.in" }, 7.8);
+      tl.fromTo("#p1 .p1-quote .card", { opacity: 0, y: 40, rotation: 2.5 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out", rotation: 1 }, 8.15);
+      tl.fromTo("#p2 .p2-card .card", { opacity: 0, y: 30, rotation: -2 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: -1 }, 12.75);
+      tl.fromTo("#p2 .p2-scribe", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }, 12.8);
+      tl.fromTo("#p2 .p2-t", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.8)", stagger: -0.35 }, 13.4);
+      tl.fromTo("#p3 .head", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 15.55);
+      tl.fromTo("#p3 .p3-t0", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 16.60);
+      tl.fromTo("#p3 .p3-t1", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 17.10);
+      tl.fromTo("#p3 .p3-t2", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 17.60);
+      tl.fromTo("#p3 .p3-t3", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 18.10);
+      tl.fromTo("#p3 .p3-t4", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 18.60);
+      tl.fromTo("#p3 .p3-t5", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 19.10);
+      tl.fromTo("#p3 .p3-t6", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }, 19.60);
+      tl.fromTo("#p3 .p3-sum", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 20.0);
+      tl.fromTo("#p3 .p3-total", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(2.2)" }, 21.2);
+      tl.fromTo("#p4 .p4-neron", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1.0, ease: "power3.out" }, 22.9);
+      tl.fromTo("#p4 .p4-card .card", { opacity: 0, y: 30, rotation: -2.5 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: -1 }, 23.1);
+      tl.fromTo("#p4 .p4-card2 .card", { opacity: 0, y: 30, rotation: 2 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: 0.8 }, 25.4);
+      tl.fromTo("#p4 .p4-chretien", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }, 25.9);
+      tl.fromTo("#p5 .p5-erudit", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }, 28.7);
+      tl.fromTo("#p5 .p5-card .card", { opacity: 0, y: 30, rotation: -2 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: -1 }, 28.9);
+      tl.fromTo("#p5 .p5-loupe", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 29.6);
+      tl.fromTo("#p5 .p5-stamp", { opacity: 0, scale: 1.8, rotation: -14 }, { opacity: 1, scale: 1, rotation: -8, duration: 0.35, ease: "power4.in" }, 31.9);
+      tl.fromTo("#p5 .p5-card2 .card", { opacity: 0, y: 24, rotation: 1.5 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: 0.5 }, 33.9);
+      tl.fromTo("#p6 .p6-card .card", { opacity: 0, y: 30, rotation: -2 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: -1 }, 36.2);
+      tl.fromTo("#p6 .p6-card2 .card", { opacity: 0, y: 30, rotation: 2 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: 0.6 }, 38.3);
+      tl.fromTo("#p6 .p6-chretien", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }, 38.6);
+      tl.fromTo("#p6 .p6-prud", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power1.out" }, 41.5);
+      tl.fromTo("#p7 .p7-card .card", { opacity: 0, y: 40, rotation: -2.5 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: -1 }, 43.3);
+      tl.fromTo("#p7 .p7-card .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.inOut" }, 43.6);
+      tl.fromTo("#p7 .p7-balance", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }, 44.2);
+      tl.fromTo("#p8 .head .ink", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 48.45);
+      tl.fromTo("#p8 .p8-pas", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "back.out(2)" }, 50.2);
+      tl.fromTo("#p8 .p8-codex", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 48.8);
+      tl.fromTo("#p8 .p8-lampe", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 49.1);
+      tl.fromTo("#p9 .p9-jean", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }, 51.9);
+      tl.fromTo("#p9 .p9-card .card", { opacity: 0, y: 30, rotation: -2 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out", rotation: -1 }, 52.05);
+      tl.fromTo("#p9 .p9-cta", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 54.5);
+      tl.fromTo("#p9 .bubble path", { strokeDashoffset: 420 }, { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 54.5);
+      tl.fromTo("#p10 .kicker", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 55.95);
+      tl.fromTo("#p10 .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.inOut", stagger: 0.15 }, 56.0);
+      tl.fromTo("#p10 .title", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 56.2);
+      tl.fromTo("#p10 .p10-sub", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 56.9);
+      gsap.utils.toArray(".mote").forEach((m, i) => { tl.fromTo(m, { y: 0, x: 0 }, { y: -260 - (i % 4) * 60, x: ((i % 3) - 1) * 50, duration: 60, ease: "none" }, 0); });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
