@@ -25,7 +25,11 @@ Committer et pousser à chaque étape qui produit des fichiers.
 - Citations bibliques complètes en Louis Segond 1910 (domaine public), nommée à la première citation.
 - Hébreu et grec : toujours en HTML, jamais dans une image ; faire relire par quelqu'un qui lit la langue avant publication.
 
-## Charte visuelle (détail dans `design.md`)
+## Styles visuels
+
+- **Style 01 « Parchemin aquarelle »** : style actuel, figé dans `styles/style-01-parchemin-aquarelle.md`. Ne pas le modifier pour tester un autre style : créer un nouveau fichier `styles/style-NN-<nom>.md`, un gabarit séparé et un dossier de projet distinct.
+
+## Charte visuelle du style 01 (détail dans `design.md`)
 
 - Aquarelle et encre sur parchemin, bords déchirés, vignette bleu nuit.
 - Palette : parchemin `#EFE3C8`, sépia `#8B5E34`, ocre `#C8963E`, bleu nuit `#1E2A44`, encre `#1A1410`, rouille `#8B2E1F`, or `#E8B955`.
