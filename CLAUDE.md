@@ -41,7 +41,29 @@ Committer et pousser à chaque étape qui produit des fichiers.
 - Effets sonores : 5 à 6 par minute au maximum, sous licence libre (`npx hyperframes media-use resolve --type sfx`), crédits notés dans `CREDITS.md` et dans la description.
 - Musique : discrète, environ 20 dB sous la voix, libre de droits pour YouTube. La recherche automatique demande `HEYGEN_API_KEY` dans l'environnement (la connexion OAuth HeyGen ne fonctionne pas depuis le cloud) ; sinon l'utilisateur fournit le fichier.
 
+## Consignes de rétention (à appliquer à chaque nouvelle vidéo)
+
+Avant le montage
+- Première phrase du script : une tension (chiffre, contraste, question), moins de 2,5 s. Premier plan plein cadre dès la première image, jamais une carte vide.
+- Une phrase = une image : pas deux idées dans la même phrase.
+- Liste de 5 à 8 mots-clés visuels par script, affichés en carte à l'écran au moment exact où le mot est prononcé (horodatage mot par mot).
+- Voix off : énergie, pauses courtes, débit un peu plus rapide (5 à 10 %), pas de silence de plus de 0,5 s.
+- Images : pleine résolution (au moins 2048 px), avec des personnages en pied et des mains ou objets clés en plus des bustes, pour alterner plans larges et gros plans.
+
+Au montage
+- Un seul texte lisible à la fois : sous-titres mot par mot sur une bande sombre ; des cartes seulement pour un mot-clé ou une référence biblique, jamais la même phrase deux fois.
+- Un événement visuel toutes les 2 à 3 secondes (anneau doré, tampon « Hypothèse », zoom « coup de poing », flash) ; rien de statique plus de 3 secondes.
+- Zones de sécurité : 150 px en haut, 380 px en bas, 140 px à droite (interface YouTube).
+- Son : ambiance sous la voix, quelques impacts sur les mots-clés, effets assez bas pour ne jamais couvrir la voix (voix seule environ -19 LUFS, extras environ 10 dB sous la voix).
+- Signature de chaîne : mêmes gestes d'une vidéo à l'autre (cartes parchemin, anneau doré, tampon rouge).
+- Ne pas boucler la fin du short sur son début (choix de l'utilisateur).
+
+Après la publication
+- Suivre dans YouTube Studio la part des spectateurs qui restent au-delà de 3 s et la courbe de rétention ; tester deux accroches sur deux shorts voisins ; envisager une série récurrente. Ce sont des bonnes pratiques, à confirmer par les courbes de la chaîne.
+
 ## Repères
 
-- `montage/short-666/` : premier short complet, modèle de référence (`build.py` génère `index.html` depuis `template.tpl`).
+- `montage/short-666/` : premier short complet (version 1 publiée ; la version 2 de `build.py` est écrite mais pas rendue).
+- `montage/short-marque-sceau/` : deuxième short ; la version 2 (style rétention) a un rendu brouillon.
+- `montage/common.py`, `montage/template-short.tpl`, `montage/synth_audio.py` : base proposée pour les prochains montages (constructeur de plans calés sur la transcription, gabarit commun, sons synthétisés sans droits). Essayée seulement sur le brouillon v2 de « marque et sceau » : la relire avant de s'en servir.
 - `montage/test-short-9x16/` : tests de style (v1 à v3).
