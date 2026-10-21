@@ -28,6 +28,7 @@ Committer et pousser à chaque étape qui produit des fichiers.
 ## Styles visuels
 
 - **Style 01 « Parchemin aquarelle »** : style actuel, figé dans `styles/style-01-parchemin-aquarelle.md`. Ne pas le modifier pour tester un autre style : créer un nouveau fichier `styles/style-NN-<nom>.md`, un gabarit séparé et un dossier de projet distinct.
+- **Style 02 « Explainer à autocollants »** (en test, inspiré de PaperClip) : `styles/style-02-autocollants-explainer.md`. Photos réelles détourées à liseré blanc, grande toile et caméra continue, infographies exactes, accent orange unique.
 
 ## Charte visuelle du style 01 (détail dans `design.md`)
 
