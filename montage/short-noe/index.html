@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>La Bible Simple - Short</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Cormorant Garamond";
+        src: url("assets/fonts/CormorantGaramond.ttf") format("truetype");
+        font-weight: 300 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Cormorant Garamond";
+        src: url("assets/fonts/CormorantGaramond-Italic.ttf") format("truetype");
+        font-weight: 300 700;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: "EB Garamond";
+        src: url("assets/fonts/EBGaramond.ttf") format("truetype");
+        font-weight: 400 800;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Frank Ruhl Libre";
+        src: url("assets/fonts/FrankRuhlLibre.ttf") format("truetype");
+        font-weight: 300 900;
+        font-style: normal;
+      }
+
+      html, body { margin: 0; background: #1a1410; }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        color: #1a1410;
+      }
+
+      /* ---------- scene ---------- */
+      .sc-in { position: absolute; inset: 0; }
+      .bgset { position: absolute; inset: 0; overflow: hidden; }
+      .bgimg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .bgimg { filter: sepia(0.3) saturate(1.2) contrast(1.08) brightness(1.0); }
+      .bgset::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("assets/decors/parchemin.jpg") center / cover;
+        mix-blend-mode: multiply;
+        opacity: 0.42;
+      }
+      .bgset::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        background: radial-gradient(ellipse 85% 70% at 50% 45%, rgba(26, 20, 16, 0) 50%, rgba(26, 20, 16, 0.68) 100%);
+      }
+      .veil { position: absolute; inset: 0; background: #1a1410; }
+
+      .el {
+        position: absolute;
+        filter: drop-shadow(16px 24px 24px rgba(26, 20, 16, 0.55)) sepia(0.1);
+      }
+
+      /* ---------- keyword cards and chips ---------- */
+      .kw, .hero, .refchip, .ring, .strikeline { position: absolute; z-index: 20; }
+      .kw {
+        padding: 22px 44px 30px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 84px;
+        line-height: 1.05;
+        color: #1a1410;
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 300% auto;
+        clip-path: polygon(0% 8%, 10% 0%, 35% 5%, 60% 0%, 85% 6%, 100% 2%, 99% 50%, 100% 94%, 80% 100%, 55% 95%, 30% 100%, 8% 96%, 0% 100%, 1.5% 50%);
+        filter: drop-shadow(0 14px 18px rgba(26, 20, 16, 0.5));
+      }
+      .kw span { display: block; white-space: nowrap; }
+      .kw.dark { color: #efe3c8; background: #1a1410 url("assets/decors/parchemin.jpg") center / 300% auto; background-blend-mode: multiply; }
+      .kw.red { color: #8b2e1f; }
+      .kw.gold { color: #8b2e1f; background-color: #f6d77f; background-blend-mode: multiply; }
+      .kw.small { font-size: 58px; padding: 16px 34px 22px; }
+      .kw small {
+        display: block;
+        font-family: "EB Garamond", Georgia, serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #8b5e34;
+        margin-top: 6px;
+      }
+      .hero {
+        left: 0;
+        width: 1080px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 190px;
+        line-height: 0.95;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #f6d77f;
+        -webkit-text-stroke: 16px #1a1410;
+        paint-order: stroke fill;
+        filter: drop-shadow(0 14px 20px rgba(0, 0, 0, 0.6));
+      }
+      .hero span { display: block; }
+      .hero.rust { color: #c9482b; }
+      .hero.cream { color: #f4ead2; }
+      .refchip {
+        padding: 10px 30px 14px;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 34px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #efe3c8;
+        background: rgba(26, 20, 16, 0.86);
+        border: 3px solid #c8963e;
+      }
+      .refchip span { display: block; white-space: nowrap; }
+      .ring { overflow: visible; pointer-events: none; z-index: 15; }
+      .ring circle { fill: none; stroke-width: 12; stroke-dasharray: 1000; stroke-linecap: round; filter: drop-shadow(0 0 10px rgba(246, 215, 127, 0.9)); }
+      .strikeline { left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; z-index: 25; }
+
+      /* ---------- captions ---------- */
+      .cap {
+        position: absolute;
+        left: 50px;
+        top: 1215px;
+        width: 840px;
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 1.1;
+        color: #f4ead2;
+        z-index: 60;
+      }
+      .capin {
+        display: inline-block;
+        padding: 12px 34px 20px;
+        background: rgba(26, 20, 16, 0.86);
+        border-radius: 16px;
+        border-bottom: 5px solid #c8963e;
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.45);
+      }
+      .cw { display: inline-block; margin: 0 0.05em; }
+
+      /* ---------- global overlays ---------- */
+      #progress { position: absolute; left: 0; top: 0; width: 1080px; height: 10px; z-index: 95; background: rgba(26, 20, 16, 0.5); }
+      #progress i { display: block; width: 100%; height: 100%; background: #f6d77f; transform-origin: 0 50%; }
+      #flash { position: absolute; inset: 0; z-index: 90; opacity: 0; pointer-events: none; background: #f6d77f; }
+
+      .mote { position: absolute; border-radius: 50%; background: #f6d77f; box-shadow: 0 0 8px rgba(246, 215, 127, 0.85); }
+      #motes { position: absolute; inset: 0; z-index: 50; pointer-events: none; }
+
+      @keyframes hf-grain-noise {
+        0%, 100% { transform: translate(0, 0); }
+        10% { transform: translate(-5%, -5%); }
+        20% { transform: translate(-10%, 5%); }
+        30% { transform: translate(5%, -10%); }
+        40% { transform: translate(-5%, 15%); }
+        50% { transform: translate(-10%, 5%); }
+        60% { transform: translate(15%, 0); }
+        70% { transform: translate(0, 10%); }
+        80% { transform: translate(-15%, 0); }
+        90% { transform: translate(10%, 5%); }
+      }
+      #grain-overlay .grain-texture {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        opacity: 0.11;
+        animation: hf-grain-noise 0.5s steps(1) infinite;
+      }
+
+      /* ---------- project-specific pieces ---------- */
+      .portrait {
+        position: absolute;
+        overflow: hidden;
+        border: 6px solid #c8963e;
+        box-shadow: 0 16px 26px rgba(26, 20, 16, 0.5);
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 260% auto;
+      }
+      .portrait img { position: absolute; }
+      .half { position: absolute; top: 0; height: 1920px; overflow: hidden; }
+      .half img { position: absolute; }
+      .divider { position: absolute; left: 538px; top: 0; width: 4px; height: 1920px; background: #f6d77f; transform-origin: 50% 0; z-index: 12; }
+
+      .medallion { position: absolute; width: 500px; height: 500px; filter: drop-shadow(0 18px 26px rgba(26, 20, 16, 0.55)); z-index: 20; }
+      .medallion .disc {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 260% auto;
+        box-shadow: inset 0 0 60px rgba(139, 94, 52, 0.45);
+      }
+      .medallion svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+      .medallion circle { fill: none; stroke: #c8963e; stroke-width: 6; stroke-dasharray: 1500; }
+      .medallion .inner { stroke: #8b5e34; stroke-width: 2; stroke-dasharray: 1300; }
+      .medal-num {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 268px;
+        line-height: 1;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        color: #8b2e1f;
+        -webkit-text-stroke: 5px #f6d77f;
+        paint-order: stroke fill;
+      }
+
+      .tiles { position: absolute; left: 0; width: 1080px; height: 300px; z-index: 18; }
+      .tile {
+        position: absolute;
+        top: 0;
+        width: 200px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #efe3c8 url("assets/decors/parchemin.jpg") center / 400% auto;
+        border: 3px solid #8b5e34;
+        border-radius: 10px;
+        box-shadow: 0 14px 22px rgba(26, 20, 16, 0.45);
+      }
+      .tile .val { font-family: "EB Garamond", Georgia, serif; font-weight: 700; font-size: 48px; color: #8b2e1f; line-height: 1; }
+      .tile .heb { font-family: "Frank Ruhl Libre", serif; font-weight: 500; font-size: 150px; line-height: 1.05; color: #1a1410; }
+      .tile.small { width: 118px; height: 230px; }
+      .tile.small .val { font-size: 36px; }
+      .tile.small .heb { font-size: 112px; }
+      .hebword {
+        position: absolute;
+        left: 0;
+        width: 1080px;
+        margin: 0;
+        text-align: center;
+        font-family: "Frank Ruhl Libre", serif;
+        font-weight: 700;
+        font-size: 190px;
+        line-height: 1;
+        color: #1a1410;
+        z-index: 18;
+      }
+      .total, .running {
+        position: absolute;
+        left: 0;
+        width: 1080px;
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1;
+        color: #8b2e1f;
+        z-index: 18;
+      }
+      .total { font-size: 250px; }
+      .running { font-size: 170px; }
+      .stamp {
+        position: absolute;
+        left: 200px;
+        width: 680px;
+        padding: 12px 0 18px;
+        text-align: center;
+        font-family: "EB Garamond", Georgia, serif;
+        font-weight: 700;
+        font-size: 96px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #8b2e1f;
+        border: 9px double #8b2e1f;
+        background: rgba(239, 227, 200, 0.92);
+        z-index: 22;
+      }
+      .cta {
+        position: absolute;
+        left: 90px;
+        width: 740px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 28px 24px;
+        box-sizing: border-box;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #1a1410;
+        background: #f6d77f;
+        border: 4px solid #1a1410;
+        z-index: 30;
+      }
+      .bubble { width: 70px; height: 60px; overflow: visible; flex: none; }
+      .bubble path { fill: none; stroke: #8b2e1f; stroke-width: 7; stroke-linejoin: round; stroke-dasharray: 420; }
+      .head { position: absolute; left: 80px; width: 920px; text-align: center; z-index: 18; }
+      .title { margin: 0 0 24px; font-weight: 700; font-size: 124px; line-height: 1.02; color: #1a1410; }
+      .endkicker {
+        display: block;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 36px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #8b5e34;
+        margin-bottom: 18px;
+      }
+      .endrule { display: block; width: 460px; height: 2px; margin: 0 auto 24px; background: #8b5e34; }
+      .subpill {
+        position: absolute;
+        left: 190px;
+        width: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding: 26px 30px 30px;
+        box-sizing: border-box;
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 58px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        color: #efe3c8;
+        background: #8b2e1f;
+        border: 5px solid #1a1410;
+        border-radius: 999px;
+        box-shadow: 0 14px 26px rgba(26, 20, 16, 0.5);
+        z-index: 30;
+      }
+      .subpill svg { width: 64px; height: 64px; flex: none; }
+      .gold-glow {
+        position: absolute;
+        left: 0;
+        top: 250px;
+        width: 1080px;
+        height: 1100px;
+        background: radial-gradient(ellipse at 45% 50%, rgba(246, 215, 127, 0.55) 0%, rgba(246, 215, 127, 0) 62%);
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-width="1080"
+      data-height="1920"
+      data-duration="52.6"
+    >
+      <div class="clip scene" id="n1" data-start="0.000" data-duration="3.45"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.28"></div></div><img class="el" id="e1" src="assets/elements/personnage-13-noe-pied-marteau.png" style="width:331px;height:760px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:20px;top:880px" /><div class="hero " id="e2" style="left:0;width:1080px;top:190px;font-size:200px"><span>ARCHE</span></div><div class="hero rust" id="e3" style="left:0;width:1080px;top:430px;font-size:140px"><span>PERSONNE</span></div></div></div>
+      <div class="clip scene" id="n2" data-start="3.150" data-duration="5.5"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.4"></div></div><img class="el" id="e4" src="assets/elements/personnage-14-noe-portrait.png" style="width:881px;height:1050px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:20px;top:470px" /><div class="refchip" id="e5" style="left:60px;top:190px"><span>Genèse 6.9</span></div><div class="hero " id="e6" style="left:0;width:1080px;top:270px;font-size:240px"><span>NOÉ</span></div><div class="kw gold" id="e7" style="left:560px;top:760px;font-size:76px"><span>Homme juste</span></div><svg class="ring" id="e8" style="left:370px;top:600px;width:340px;height:340px" viewBox="0 0 340 340"><circle cx="170" cy="170" r="150" stroke="#f6d77f" transform="rotate(-90 170 170)" /></svg><div class="kw small" id="e9" style="left:90px;top:1010px;font-size:70px"><span>Il marchait avec Dieu</span></div></div></div>
+      <div class="clip scene" id="n3" data-start="8.350" data-duration="2.78"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/violence.jpg" /><div class="veil" style="opacity:0.1"></div></div><div class="refchip" id="e10" style="left:60px;top:190px"><span>Genèse 6.11</span></div><img class="el" id="e11" src="assets/elements/personnage-18-guerrier.png" style="width:564px;height:1000px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:540px;top:520px" /><div class="hero cream" id="e12" style="left:0;width:1080px;top:290px;font-size:190px"><span>VIOLENCE</span></div></div></div>
+      <div class="clip scene" id="n4" data-start="10.830" data-duration="3.41"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.1"></div></div><img class="el" id="e13" src="assets/elements/personnage-15-noe-mains-levees.png" style="width:590px;height:1050px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:240px;top:480px" /><div class="refchip" id="e14" style="left:60px;top:190px"><span>Genèse 6.14</span></div><div class="hero " id="e15" style="left:0;width:1080px;top:300px;font-size:180px"><span>CONSTRUIS</span></div></div></div>
+      <div class="clip scene" id="n5" data-start="13.940" data-duration="2.67"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.22"></div></div><div class="hero cream" id="e16" style="left:0;width:1080px;top:300px;font-size:130px"><span>300 coudées</span></div><div class="hero " id="e17" style="left:0;width:1080px;top:540px;font-size:230px"><span>130 m +</span></div><img class="el" id="e18" src="assets/elements/objet-22-planches.png" style="width:596px;height:560px;z-index:8;left:60px;top:1020px" /><img class="el" id="e19" src="assets/elements/objet-24-regle.png" style="width:447px;height:560px;z-index:8;left:780px;top:960px" /></div></div>
+      <div class="clip scene" id="n6" data-start="16.310" data-duration="3.38"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/violence.jpg" /><div class="veil" style="opacity:0.45"></div></div><img class="el" id="e20" src="assets/elements/personnage-13-noe-pied-marteau.png" style="width:392px;height:900px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:30px;top:620px" /><div class="hero cream" id="e21" style="left:0;width:1080px;top:280px;font-size:190px"><span>DÉLUGE ?</span></div><div class="kw dark" id="e22" style="left:520px;top:780px;font-size:90px"><span>Jamais vu</span></div></div></div>
+      <div class="clip scene" id="n7" data-start="19.390" data-duration="2.94"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.15"></div></div><div class="refchip" id="e23" style="left:60px;top:190px"><span>Genèse 6.22</span></div><img class="el" id="e24" src="assets/elements/objet-29-main-maillet.png" style="width:648px;height:900px;z-index:8;left:200px;top:480px" /><div class="hero cream" id="e25" style="left:0;width:1080px;top:290px;font-size:140px"><span>Il fait tout</span></div><svg class="ring" id="e26" style="left:330px;top:410px;width:380px;height:380px" viewBox="0 0 380 380"><circle cx="190" cy="190" r="170" stroke="#f6d77f" transform="rotate(-90 190 190)" /></svg></div></div>
+      <div class="clip scene" id="n8" data-start="22.030" data-duration="3.59"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.4"></div></div><img class="el" id="e27" src="assets/elements/personnage-14-noe-portrait.png" style="width:881px;height:1050px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:20px;top:470px" /><div class="refchip" id="e28" style="left:60px;top:190px"><span>2 Pierre 2.5</span></div><div class="kw gold" id="e29" style="left:200px;top:330px;font-size:120px"><span>Prédicateur</span></div><div class="kw small" id="e30" style="left:260px;top:560px;font-size:100px"><span>de la justice</span></div></div></div>
+      <div class="clip scene" id="n9" data-start="25.320" data-duration="4.32"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/banquet.jpg" /></div><img class="el" id="e31" src="assets/elements/personnage-16-couple-banquet.png" style="width:494px;height:820px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:420px;top:430px" /><div class="kw gold" id="e32" style="left:40px;top:300px;font-size:80px"><span>Ils mangent</span></div><img class="el" id="e33" src="assets/elements/objet-26-pain.png" style="width:320px;height:240px;z-index:9;left:50px;top:560px" /><div class="kw gold" id="e34" style="left:560px;top:380px;font-size:80px"><span>Ils boivent</span></div><img class="el" id="e35" src="assets/elements/objet-25-gobelet.png" style="width:181px;height:300px;z-index:9;left:60px;top:830px" /><div class="kw gold" id="e36" style="left:300px;top:930px;font-size:86px"><span>Ils se marient</span></div><img class="el" id="e37" src="assets/elements/objet-28-couronne-fleurs.png" style="width:253px;height:260px;z-index:9;left:20px;top:1010px" /></div></div>
+      <div class="clip scene" id="n10" data-start="29.340" data-duration="3.57"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/banquet.jpg" /><div class="veil" style="opacity:0.08"></div></div><div class="refchip" id="e38" style="left:60px;top:190px"><span>Matthieu 24.37-39</span></div><div class="kw small" id="e39" style="left:120px;top:330px;font-size:84px"><span>Ils ne se doutaient<br>de rien</span></div><img class="el" id="e40" src="assets/elements/personnage-16-couple-banquet.png" style="width:494px;height:820px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:330px;top:560px" /><div class="hero rust" id="e41" style="left:0;width:1080px;top:290px;font-size:200px"><span>DÉLUGE</span></div></div></div>
+      <div class="clip scene" id="n11" data-start="32.610" data-duration="4.28"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.5"></div></div><div class="hero cream" id="e42" style="left:0;width:1080px;top:250px;font-size:150px"><span>COMBIEN<br>D'ANNÉES ?</span></div><img class="el" id="e43" src="assets/elements/personnage-14-noe-portrait.png" style="width:755px;height:900px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:90px;top:760px" /><div class="kw dark small" id="e44" style="left:100px;top:1010px;font-size:68px"><span>La Bible ne le précise pas</span></div></div></div>
+      <div class="clip scene" id="n12" data-start="36.590" data-duration="3.44"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/porte.jpg" /><div class="veil" style="opacity:0.05"></div></div><div class="refchip" id="e45" style="left:60px;top:190px"><span>Genèse 7.13</span></div><div class="hero " id="e46" style="left:0;width:1080px;top:230px;font-size:460px"><span>8</span></div><div class="kw dark" id="e47" style="left:250px;top:840px;font-size:100px"><span>Seulement</span></div><svg class="ring" id="e48" style="left:220px;top:750px;width:420px;height:420px" viewBox="0 0 420 420"><circle cx="210" cy="210" r="190" stroke="#f6d77f" transform="rotate(-90 210 210)" /></svg></div></div>
+      <div class="clip scene" id="n13" data-start="39.730" data-duration="4.7"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/porte.jpg" /><div class="veil" style="opacity:0.3"></div></div><div class="refchip" id="e49" style="left:60px;top:190px"><span>Hébreux 11.7</span></div><img class="el" id="e50" src="assets/elements/personnage-15-noe-mains-levees.png" style="width:590px;height:1050px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:240px;top:480px" /><div class="hero " id="e51" style="left:0;width:1080px;top:290px;font-size:260px"><span>FOI</span></div><div class="kw gold" id="e52" style="left:90px;top:1010px;font-size:70px"><span>Ce qu'il ne voyait pas</span></div></div></div>
+      <div class="clip scene" id="n14" data-start="44.130" data-duration="5.88"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/arche.jpg" /><div class="veil" style="opacity:0.2"></div></div><img class="el" id="e53" src="assets/elements/personnage-13-noe-pied-marteau.png" style="width:392px;height:900px;z-index:5;-webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);left:30px;top:700px" /><div class="hero " id="e54" style="left:0;width:1080px;top:290px;font-size:230px"><span>ET TOI ?</span></div><div class="kw gold" id="e55" style="left:480px;top:760px;font-size:76px"><span>Que personne<br>ne voyait</span></div><div class="cta" id="e56" style="top:1010px"><svg class="bubble" viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z" /></svg>À toi de répondre</div></div></div>
+      <div class="clip scene" id="n15" data-start="49.710" data-duration="2.89"><div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/parchemin.jpg" /></div><div class="head" id="end" style="top:430px"><span class="endkicker" id="ek">Abonne-toi</span><span class="endrule" id="r1"></span><p class="title" id="et">La Bible Simple</p><span class="endrule" id="r2"></span></div><div class="subpill" id="e57" style="top:880px"><svg viewBox="0 0 24 24" fill="#f6d77f"><path d="M12 2a6 6 0 0 0-6 6v3.6L4.2 15a1 1 0 0 0 .9 1.5h13.8a1 1 0 0 0 .9-1.5L18 11.6V8a6 6 0 0 0-6-6zm0 20a3 3 0 0 0 3-3H9a3 3 0 0 0 3 3z"/></svg>S'abonner</div></div></div>
+
+      <div id="motes"><i class="mote" style="left:40px;top:100px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:177px;top:363px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:314px;top:626px;width:7px;height:7px;opacity:0.34"></i><i class="mote" style="left:451px;top:889px;width:4px;height:4px;opacity:0.41"></i><i class="mote" style="left:588px;top:1152px;width:6px;height:6px;opacity:0.48"></i><i class="mote" style="left:725px;top:1415px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:862px;top:1678px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:999px;top:241px;width:7px;height:7px;opacity:0.34"></i><i class="mote" style="left:136px;top:504px;width:4px;height:4px;opacity:0.41"></i><i class="mote" style="left:273px;top:767px;width:6px;height:6px;opacity:0.48"></i><i class="mote" style="left:410px;top:1030px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:547px;top:1293px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:684px;top:1556px;width:7px;height:7px;opacity:0.34"></i><i class="mote" style="left:821px;top:119px;width:4px;height:4px;opacity:0.41"></i><i class="mote" style="left:958px;top:382px;width:6px;height:6px;opacity:0.48"></i><i class="mote" style="left:95px;top:645px;width:3px;height:3px;opacity:0.20"></i><i class="mote" style="left:232px;top:908px;width:5px;height:5px;opacity:0.27"></i><i class="mote" style="left:369px;top:1171px;width:7px;height:7px;opacity:0.34"></i></div>
+
+      <p class="clip cap" id="cap0" data-start="0.190" data-duration="1.690"><span class="capin" id="capin0"><span class="cw cw0-0">Il</span> <span class="cw cw0-1">construit</span> <span class="cw cw0-2">une</span> <span class="cw cw0-3">arche</span></span></p>
+      <p class="clip cap" id="cap1" data-start="1.880" data-duration="1.420"><span class="capin" id="capin1"><span class="cw cw1-0">et</span> <span class="cw cw1-1">personne</span> <span class="cw cw1-2">ne</span> <span class="cw cw1-3">l'écoute.</span></span></p>
+      <p class="clip cap" id="cap2" data-start="3.300" data-duration="0.930"><span class="capin" id="capin2"><span class="cw cw2-0">Son</span> <span class="cw cw2-1">nom,</span></span></p>
+      <p class="clip cap" id="cap3" data-start="4.230" data-duration="0.670"><span class="capin" id="capin3"><span class="cw cw3-0">Noé.</span></span></p>
+      <p class="clip cap" id="cap4" data-start="4.900" data-duration="1.110"><span class="capin" id="capin4"><span class="cw cw4-0">La</span> <span class="cw cw4-1">Bible</span> <span class="cw cw4-2">le</span> <span class="cw cw4-3">décrit</span></span></p>
+      <p class="clip cap" id="cap5" data-start="6.010" data-duration="1.280"><span class="capin" id="capin5"><span class="cw cw5-0">comme</span> <span class="cw cw5-1">un</span> <span class="cw cw5-2">homme</span> <span class="cw cw5-3">juste</span></span></p>
+      <p class="clip cap" id="cap6" data-start="7.290" data-duration="1.210"><span class="capin" id="capin6"><span class="cw cw6-0">qui</span> <span class="cw cw6-1">marchait</span> <span class="cw cw6-2">avec</span> <span class="cw cw6-3">Dieu.</span></span></p>
+      <p class="clip cap" id="cap7" data-start="8.500" data-duration="0.800"><span class="capin" id="capin7"><span class="cw cw7-0">Autour</span> <span class="cw cw7-1">de</span> <span class="cw cw7-2">lui,</span></span></p>
+      <p class="clip cap" id="cap8" data-start="9.300" data-duration="0.940"><span class="capin" id="capin8"><span class="cw cw8-0">la</span> <span class="cw cw8-1">terre</span> <span class="cw cw8-2">est</span> <span class="cw cw8-3">pleine</span></span></p>
+      <p class="clip cap" id="cap9" data-start="10.240" data-duration="0.740"><span class="capin" id="capin9"><span class="cw cw9-0">de</span> <span class="cw cw9-1">violence.</span></span></p>
+      <p class="clip cap" id="cap10" data-start="10.980" data-duration="1.140"><span class="capin" id="capin10"><span class="cw cw10-0">Dieu</span> <span class="cw cw10-1">lui</span> <span class="cw cw10-2">dit,</span></span></p>
+      <p class="clip cap" id="cap11" data-start="12.120" data-duration="1.650"><span class="capin" id="capin11"><span class="cw cw11-0">construis</span> <span class="cw cw11-1">une</span> <span class="cw cw11-2">arche.</span></span></p>
+      <p class="clip cap" id="cap12" data-start="14.090" data-duration="0.950"><span class="capin" id="capin12"><span class="cw cw12-0">300</span> <span class="cw cw12-1">coudées</span> <span class="cw cw12-2">de</span> <span class="cw cw12-3">long,</span></span></p>
+      <p class="clip cap" id="cap13" data-start="15.040" data-duration="1.420"><span class="capin" id="capin13"><span class="cw cw13-0">plus</span> <span class="cw cw13-1">de</span> <span class="cw cw13-2">130</span> <span class="cw cw13-3">mètres.</span></span></p>
+      <p class="clip cap" id="cap14" data-start="16.460" data-duration="1.140"><span class="capin" id="capin14"><span class="cw cw14-0">Le</span> <span class="cw cw14-1">déluge,</span></span></p>
+      <p class="clip cap" id="cap15" data-start="17.600" data-duration="1.080"><span class="capin" id="capin15"><span class="cw cw15-0">personne</span> <span class="cw cw15-1">n'en</span> <span class="cw cw15-2">a</span> <span class="cw cw15-3">encore</span></span></p>
+      <p class="clip cap" id="cap16" data-start="18.680" data-duration="0.860"><span class="capin" id="capin16"><span class="cw cw16-0">jamais</span> <span class="cw cw16-1">vu.</span></span></p>
+      <p class="clip cap" id="cap17" data-start="19.540" data-duration="1.020"><span class="capin" id="capin17"><span class="cw cw17-0">Et</span> <span class="cw cw17-1">Noé</span> <span class="cw cw17-2">fait</span> <span class="cw cw17-3">tout</span></span></p>
+      <p class="clip cap" id="cap18" data-start="20.560" data-duration="0.780"><span class="capin" id="capin18"><span class="cw cw18-0">ce</span> <span class="cw cw18-1">que</span> <span class="cw cw18-2">Dieu</span> <span class="cw cw18-3">lui</span></span></p>
+      <p class="clip cap" id="cap19" data-start="21.340" data-duration="0.840"><span class="capin" id="capin19"><span class="cw cw19-0">a</span> <span class="cw cw19-1">ordonné.</span></span></p>
+      <p class="clip cap" id="cap20" data-start="22.180" data-duration="1.680"><span class="capin" id="capin20"><span class="cw cw20-0">Le</span> <span class="cw cw20-1">Nouveau</span> <span class="cw cw20-2">Testament</span> <span class="cw cw20-3">l'appelle</span></span></p>
+      <p class="clip cap" id="cap21" data-start="23.860" data-duration="1.610"><span class="capin" id="capin21"><span class="cw cw21-0">prédicateur</span> <span class="cw cw21-1">de</span> <span class="cw cw21-2">la</span> <span class="cw cw21-3">justice.</span></span></p>
+      <p class="clip cap" id="cap22" data-start="25.470" data-duration="1.130"><span class="capin" id="capin22"><span class="cw cw22-0">Pendant</span> <span class="cw cw22-1">ce</span> <span class="cw cw22-2">temps,</span></span></p>
+      <p class="clip cap" id="cap23" data-start="26.600" data-duration="0.880"><span class="capin" id="capin23"><span class="cw cw23-0">les</span> <span class="cw cw23-1">gens</span> <span class="cw cw23-2">mangent,</span></span></p>
+      <p class="clip cap" id="cap24" data-start="27.480" data-duration="0.560"><span class="capin" id="capin24"><span class="cw cw24-0">boivent,</span></span></p>
+      <p class="clip cap" id="cap25" data-start="28.040" data-duration="1.080"><span class="capin" id="capin25"><span class="cw cw25-0">se</span> <span class="cw cw25-1">marient.</span></span></p>
+      <p class="clip cap" id="cap26" data-start="29.490" data-duration="0.810"><span class="capin" id="capin26"><span class="cw cw26-0">Jésus</span> <span class="cw cw26-1">dit</span> <span class="cw cw26-2">qu'ils</span> <span class="cw cw26-3">ne</span></span></p>
+      <p class="clip cap" id="cap27" data-start="30.300" data-duration="0.830"><span class="capin" id="capin27"><span class="cw cw27-0">se</span> <span class="cw cw27-1">doutaient</span> <span class="cw cw27-2">de</span> <span class="cw cw27-3">rien</span></span></p>
+      <p class="clip cap" id="cap28" data-start="31.130" data-duration="1.630"><span class="capin" id="capin28"><span class="cw cw28-0">jusqu'à</span> <span class="cw cw28-1">l'arrivée</span> <span class="cw cw28-2">du</span> <span class="cw cw28-3">déluge.</span></span></p>
+      <p class="clip cap" id="cap29" data-start="32.760" data-duration="2.870"><span class="capin" id="capin29"><span class="cw cw29-0">Combien</span> <span class="cw cw29-1">d'années</span> <span class="cw cw29-2">a-t-il</span> <span class="cw cw29-3">travaillé ?</span></span></p>
+      <p class="clip cap" id="cap30" data-start="35.630" data-duration="0.620"><span class="capin" id="capin30"><span class="cw cw30-0">La</span> <span class="cw cw30-1">Bible</span> <span class="cw cw30-2">ne</span> <span class="cw cw30-3">le</span></span></p>
+      <p class="clip cap" id="cap31" data-start="36.250" data-duration="0.490"><span class="capin" id="capin31"><span class="cw cw31-0">précise</span> <span class="cw cw31-1">pas.</span></span></p>
+      <p class="clip cap" id="cap32" data-start="36.740" data-duration="0.680"><span class="capin" id="capin32"><span class="cw cw32-0">Au</span> <span class="cw cw32-1">final,</span></span></p>
+      <p class="clip cap" id="cap33" data-start="37.420" data-duration="1.560"><span class="capin" id="capin33"><span class="cw cw33-0">huit</span> <span class="cw cw33-1">personnes</span> <span class="cw cw33-2">seulement</span> <span class="cw cw33-3">entrent</span></span></p>
+      <p class="clip cap" id="cap34" data-start="38.980" data-duration="0.900"><span class="capin" id="capin34"><span class="cw cw34-0">dans</span> <span class="cw cw34-1">l'arche.</span></span></p>
+      <p class="clip cap" id="cap35" data-start="39.880" data-duration="1.440"><span class="capin" id="capin35"><span class="cw cw35-0">L'Épître</span> <span class="cw cw35-1">aux</span> <span class="cw cw35-2">Hébreux</span> <span class="cw cw35-3">résume</span></span></p>
+      <p class="clip cap" id="cap36" data-start="41.320" data-duration="0.520"><span class="capin" id="capin36"><span class="cw cw36-0">sa</span> <span class="cw cw36-1">foi.</span></span></p>
+      <p class="clip cap" id="cap37" data-start="41.840" data-duration="0.608"><span class="capin" id="capin37"><span class="cw cw37-0">Il</span> <span class="cw cw37-1">a</span> <span class="cw cw37-2">cru</span> <span class="cw cw37-3">à</span></span></p>
+      <p class="clip cap" id="cap38" data-start="42.448" data-duration="1.042"><span class="capin" id="capin38"><span class="cw cw38-0">ce</span> <span class="cw cw38-1">qu'il</span> <span class="cw cw38-2">ne</span> <span class="cw cw38-3">voyait</span></span></p>
+      <p class="clip cap" id="cap39" data-start="43.490" data-duration="0.790"><span class="capin" id="capin39"><span class="cw cw39-0">pas</span> <span class="cw cw39-1">encore.</span></span></p>
+      <p class="clip cap" id="cap40" data-start="44.280" data-duration="0.880"><span class="capin" id="capin40"><span class="cw cw40-0">Et</span> <span class="cw cw40-1">toi,</span></span></p>
+      <p class="clip cap" id="cap41" data-start="45.160" data-duration="0.630"><span class="capin" id="capin41"><span class="cw cw41-0">as-tu</span> <span class="cw cw41-1">déjà</span> <span class="cw cw41-2">cru</span> <span class="cw cw41-3">à</span></span></p>
+      <p class="clip cap" id="cap42" data-start="45.790" data-duration="1.490"><span class="capin" id="capin42"><span class="cw cw42-0">quelque</span> <span class="cw cw42-1">chose</span> <span class="cw cw42-2">que</span> <span class="cw cw42-3">personne</span></span></p>
+      <p class="clip cap" id="cap43" data-start="47.370" data-duration="1.220"><span class="capin" id="capin43"><span class="cw cw43-0">d'autre</span> <span class="cw cw43-1">ne</span> <span class="cw cw43-2">voyait ?</span></span></p>
+      <p class="clip cap" id="cap44" data-start="48.590" data-duration="0.930"><span class="capin" id="capin44"><span class="cw cw44-0">Dis-le</span> <span class="cw cw44-1">en</span> <span class="cw cw44-2">commentaire.</span></span></p>
+      <p class="clip cap" id="cap45" data-start="49.860" data-duration="0.960"><span class="capin" id="capin45"><span class="cw cw45-0">Abonne-toi</span> <span class="cw cw45-1">pour</span> <span class="cw cw45-2">découvrir</span> <span class="cw cw45-3">la</span></span></p>
+      <p class="clip cap" id="cap46" data-start="50.820" data-duration="0.400"><span class="capin" id="capin46"><span class="cw cw46-0">Bible,</span></span></p>
+      <p class="clip cap" id="cap47" data-start="51.220" data-duration="0.780"><span class="capin" id="capin47"><span class="cw cw47-0">un</span> <span class="cw cw47-1">récit</span> <span class="cw cw47-2">à</span> <span class="cw cw47-3">la</span></span></p>
+      <p class="clip cap" id="cap48" data-start="52.060" data-duration="0.540"><span class="capin" id="capin48"><span class="cw cw48-0">fois.</span></span></p>
+
+      <div id="progress"><i></i></div>
+      <div id="flash"></div>
+
+      <div id="grain-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100">
+        <div class="grain-texture"></div>
+      </div>
+
+      <audio id="voix" src="assets/voix.wav" data-start="0" data-duration="52.6" data-volume="1"></audio>
+      <audio id="ambiance" src="assets/audio/ambiance.wav" data-start="0" data-duration="52.6" data-volume="0.16"></audio>
+      <audio id="sfx-mer-bed" src=".media/audio/sfx/sfx_002.mp3" data-start="3.3" data-duration="9.4" data-volume="0.04"></audio>
+      <audio id="sfx-hit-0" src="assets/audio/hit.wav" data-start="0.2" data-duration="1.1" data-volume="0.54"></audio>
+      <audio id="sfx-hit-1" src="assets/audio/hit.wav" data-start="2.23" data-duration="1.1" data-volume="0.36"></audio>
+      <audio id="sfx-hit-2" src="assets/audio/hit.wav" data-start="4.23" data-duration="1.1" data-volume="0.42"></audio>
+      <audio id="sfx-tick-0" src="assets/audio/tick.wav" data-start="6.9" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-tick-1" src="assets/audio/tick.wav" data-start="7.73" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-riser-0" src="assets/audio/riser.wav" data-start="5.5" data-duration="1.4" data-volume="0.42"></audio>
+      <audio id="sfx-hit-3" src="assets/audio/hit.wav" data-start="10.37" data-duration="1.1" data-volume="0.54"></audio>
+      <audio id="sfx-hit-4" src="assets/audio/hit.wav" data-start="12.12" data-duration="1.1" data-volume="0.48"></audio>
+      <audio id="sfx-riser-1" src="assets/audio/riser.wav" data-start="11.02" data-duration="1.4" data-volume="0.36"></audio>
+      <audio id="sfx-hit-5" src="assets/audio/hit.wav" data-start="14.09" data-duration="1.1" data-volume="0.3"></audio>
+      <audio id="sfx-hit-6" src="assets/audio/hit.wav" data-start="15.39" data-duration="1.1" data-volume="0.54"></audio>
+      <audio id="sfx-hit-7" src="assets/audio/hit.wav" data-start="17.03" data-duration="1.1" data-volume="0.42"></audio>
+      <audio id="sfx-riser-2" src="assets/audio/riser.wav" data-start="15.73" data-duration="1.4" data-volume="0.36"></audio>
+      <audio id="sfx-tick-2" src="assets/audio/tick.wav" data-start="18.68" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-hit-8" src="assets/audio/hit.wav" data-start="21.41" data-duration="1.1" data-volume="0.42"></audio>
+      <audio id="sfx-tick-3" src="assets/audio/tick.wav" data-start="23.86" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-tick-4" src="assets/audio/tick.wav" data-start="24.15" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-hit-9" src="assets/audio/hit.wav" data-start="23.86" data-duration="1.1" data-volume="0.36"></audio>
+      <audio id="sfx-tick-5" src="assets/audio/tick.wav" data-start="26.99" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-tick-6" src="assets/audio/tick.wav" data-start="27.48" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-tick-7" src="assets/audio/tick.wav" data-start="28.16" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-riser-3" src="assets/audio/riser.wav" data-start="25.4" data-duration="1.4" data-volume="0.21"></audio>
+      <audio id="sfx-tick-8" src="assets/audio/tick.wav" data-start="30.44" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-hit-10" src="assets/audio/hit.wav" data-start="32.12" data-duration="1.1" data-volume="0.54"></audio>
+      <audio id="sfx-hit-11" src="assets/audio/hit.wav" data-start="32.76" data-duration="1.1" data-volume="0.36"></audio>
+      <audio id="sfx-tick-9" src="assets/audio/tick.wav" data-start="35.65" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-hit-12" src="assets/audio/hit.wav" data-start="37.42" data-duration="1.1" data-volume="0.6"></audio>
+      <audio id="sfx-tick-10" src="assets/audio/tick.wav" data-start="38.15" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-riser-4" src="assets/audio/riser.wav" data-start="36.0" data-duration="1.4" data-volume="0.24"></audio>
+      <audio id="sfx-hit-13" src="assets/audio/hit.wav" data-start="41.44" data-duration="1.1" data-volume="0.48"></audio>
+      <audio id="sfx-riser-5" src="assets/audio/riser.wav" data-start="40.04" data-duration="1.4" data-volume="0.3"></audio>
+      <audio id="sfx-tick-11" src="assets/audio/tick.wav" data-start="42.23" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-hit-14" src="assets/audio/hit.wav" data-start="44.72" data-duration="1.1" data-volume="0.48"></audio>
+      <audio id="sfx-tick-12" src="assets/audio/tick.wav" data-start="46.96" data-duration="0.09" data-volume="0.132"></audio>
+      <audio id="sfx-hit-15" src="assets/audio/hit.wav" data-start="48.59" data-duration="1.1" data-volume="0.24"></audio>
+      <audio id="sfx-hit-16" src="assets/audio/hit.wav" data-start="50.7" data-duration="1.1" data-volume="0.18"></audio>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#n1 .bgimg", { scale: 1.0, x: 0, y: 0 }, { scale: 1.1, x: -30, y: 0, duration: 3.45, ease: "none" }, 0.000);
+      tl.fromTo("#n2 .bgimg", { scale: 1.08, x: 0, y: 0 }, { scale: 1.18, x: 40, y: -10, duration: 5.5, ease: "none" }, 3.150);
+      tl.fromTo("#n2 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 3.150);
+      tl.fromTo("#n3 .bgimg", { scale: 1.0, x: 0, y: 0 }, { scale: 1.1, x: -35, y: 0, duration: 2.78, ease: "none" }, 8.350);
+      tl.fromTo("#n3 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 8.350);
+      tl.fromTo("#n4 .bgimg", { scale: 1.12, x: 0, y: 0 }, { scale: 1.0, x: 0, y: 0, duration: 3.41, ease: "none" }, 10.830);
+      tl.fromTo("#n4 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 10.830);
+      tl.fromTo("#n5 .bgimg", { scale: 1.0, x: 0, y: 0 }, { scale: 1.12, x: 30, y: 0, duration: 2.67, ease: "none" }, 13.940);
+      tl.fromTo("#n5 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 13.940);
+      tl.fromTo("#n6 .bgimg", { scale: 1.0, x: 0, y: 0 }, { scale: 1.1, x: 40, y: 0, duration: 3.38, ease: "none" }, 16.310);
+      tl.fromTo("#n6 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 16.310);
+      tl.fromTo("#n7 .bgimg", { scale: 1.05, x: 0, y: 0 }, { scale: 1.15, x: -40, y: 0, duration: 2.94, ease: "none" }, 19.390);
+      tl.fromTo("#n7 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 19.390);
+      tl.fromTo("#n8 .bgimg", { scale: 1.18, x: 0, y: 0 }, { scale: 1.05, x: -30, y: 20, duration: 3.59, ease: "none" }, 22.030);
+      tl.fromTo("#n8 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 22.030);
+      tl.fromTo("#n9 .bgimg", { scale: 1.0, x: 0, y: 0 }, { scale: 1.12, x: 35, y: 0, duration: 4.32, ease: "none" }, 25.320);
+      tl.fromTo("#n9 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 25.320);
+      tl.fromTo("#n10 .bgimg", { scale: 1.12, x: 0, y: 0 }, { scale: 1.2, x: -30, y: 0, duration: 3.57, ease: "none" }, 29.340);
+      tl.fromTo("#n10 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 29.340);
+      tl.fromTo("#n11 .bgimg", { scale: 1.0, x: 0, y: 0 }, { scale: 1.1, x: 25, y: -10, duration: 4.28, ease: "none" }, 32.610);
+      tl.fromTo("#n11 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 32.610);
+      tl.fromTo("#n12 .bgimg", { scale: 1.0, x: 0, y: 0 }, { scale: 1.1, x: -30, y: 0, duration: 3.44, ease: "none" }, 36.590);
+      tl.fromTo("#n12 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 36.590);
+      tl.fromTo("#n13 .bgimg", { scale: 1.1, x: 0, y: 0 }, { scale: 1.2, x: 30, y: 0, duration: 4.7, ease: "none" }, 39.730);
+      tl.fromTo("#n13 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 39.730);
+      tl.fromTo("#n14 .bgimg", { scale: 1.2, x: 0, y: 0 }, { scale: 1.0, x: 0, y: 0, duration: 5.88, ease: "none" }, 44.130);
+      tl.fromTo("#n14 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 44.130);
+      tl.fromTo("#n15 .bgimg", { scale: 1.05, x: 0, y: 0 }, { scale: 1.14, x: 0, y: 0, duration: 2.89, ease: "none" }, 49.710);
+      tl.fromTo("#n15 .sc-in", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, 49.710);
+      tl.fromTo("#e1", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 0.050);
+      tl.fromTo("#e2", { opacity: 0, rotation: -5 }, { opacity: 1, duration: 0.01, rotation: 0 }, 0.240);
+      tl.fromTo("#flash", { opacity: 0.45, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 0.240);
+      tl.fromTo("#e3", { opacity: 0, y: -160, scale: 1.3, rotation: -5 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power4.in", rotation: 0 }, 2.230);
+      tl.fromTo("#flash", { opacity: 0.35, backgroundColor: "rgba(139, 46, 31, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 2.230);
+      tl.fromTo("#n1 .bgset", { scale: 1 }, { scale: 1.05, duration: 0.09, yoyo: true, repeat: 1, ease: "power2.out" }, 2.230);
+      tl.fromTo("#e4", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 3.400);
+      tl.fromTo("#e5", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 3.500);
+      tl.fromTo("#e6", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 4.230);
+      tl.fromTo("#flash", { opacity: 0.4, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 4.230);
+      tl.fromTo("#e7", { opacity: 0, scale: 0.5, rotation: -2 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 3 }, 6.900);
+      tl.fromTo("#e8 circle", { strokeDashoffset: 1000, opacity: 1 }, { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 7.000);
+      tl.fromTo("#e8", { opacity: 0 }, { opacity: 1, duration: 0.05 }, 7.000);
+      tl.fromTo("#e8", { scale: 1 }, { scale: 1.08, duration: 0.5, yoyo: true, repeat: 3, ease: "sine.inOut" }, 7.800);
+      tl.fromTo("#e9", { opacity: 0, scale: 0.5, rotation: -7 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -2 }, 7.730);
+      tl.fromTo("#e10", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 8.600);
+      tl.fromTo("#e11", { opacity: 0, x: 260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 8.700);
+      tl.fromTo("#e12", { opacity: 0, y: -160, scale: 1.3, rotation: -5 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power4.in", rotation: 0 }, 10.370);
+      tl.fromTo("#flash", { opacity: 0.45, backgroundColor: "rgba(139, 46, 31, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 10.370);
+      tl.fromTo("#n3 .bgset", { scale: 1 }, { scale: 1.06, duration: 0.09, yoyo: true, repeat: 1, ease: "power2.out" }, 10.370);
+      tl.fromTo("#e13", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 11.100);
+      tl.fromTo("#e14", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 11.100);
+      tl.fromTo("#e15", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 12.120);
+      tl.fromTo("#flash", { opacity: 0.45, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 12.120);
+      tl.fromTo("#e16", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 14.090);
+      tl.fromTo("#e17", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 15.390);
+      tl.fromTo("#flash", { opacity: 0.5, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 15.390);
+      tl.fromTo("#e18", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)" }, 14.090);
+      tl.fromTo("#e19", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)" }, 15.390);
+      tl.fromTo("#e20", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 16.600);
+      tl.fromTo("#e21", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 17.030);
+      tl.fromTo("#e22", { opacity: 0, scale: 0.5, rotation: -2 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 3 }, 18.680);
+      tl.fromTo("#flash", { opacity: 0.25, backgroundColor: "rgba(255, 248, 230, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 18.680);
+      tl.fromTo("#e23", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 19.620);
+      tl.fromTo("#e24", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 20.050);
+      tl.fromTo("#e25", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 20.050);
+      tl.fromTo("#e26 circle", { strokeDashoffset: 1000, opacity: 1 }, { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 21.110);
+      tl.fromTo("#e26", { opacity: 0 }, { opacity: 1, duration: 0.05 }, 21.110);
+      tl.fromTo("#e26", { scale: 1 }, { scale: 1.08, duration: 0.5, yoyo: true, repeat: 3, ease: "sine.inOut" }, 21.810);
+      tl.fromTo("#n7 .bgset", { scale: 1 }, { scale: 1.05, duration: 0.09, yoyo: true, repeat: 1, ease: "power2.out" }, 21.410);
+      tl.fromTo("#e27", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 22.300);
+      tl.fromTo("#e28", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 22.300);
+      tl.fromTo("#e29", { opacity: 0, scale: 0.5, rotation: -8 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -3 }, 23.860);
+      tl.fromTo("#e30", { opacity: 0, scale: 0.5, rotation: -2 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 3 }, 24.150);
+      tl.fromTo("#flash", { opacity: 0.35, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 23.860);
+      tl.fromTo("#e31", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 25.600);
+      tl.fromTo("#e32", { opacity: 0, scale: 0.5, rotation: -9 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -4 }, 26.990);
+      tl.fromTo("#e33", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)" }, 26.990);
+      tl.fromTo("#e34", { opacity: 0, scale: 0.5, rotation: -2 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 3 }, 27.480);
+      tl.fromTo("#e35", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)" }, 27.480);
+      tl.fromTo("#e36", { opacity: 0, scale: 0.5, rotation: -7 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -2 }, 28.160);
+      tl.fromTo("#e37", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)" }, 28.160);
+      tl.fromTo("#e38", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 29.600);
+      tl.fromTo("#e39", { opacity: 0, scale: 0.5, rotation: -7 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -2 }, 30.440);
+      tl.fromTo("#e40", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 29.600);
+      tl.fromTo("#n10 .veil", { opacity: 0 }, { opacity: 0.55, duration: 0.7, ease: "power2.in" }, 31.600);
+      tl.fromTo("#e41", { opacity: 0, y: -160, scale: 1.3, rotation: -5 }, { opacity: 1, y: 0, scale: 1, duration: 0.28, ease: "power4.in", rotation: 0 }, 32.120);
+      tl.fromTo("#flash", { opacity: 0.45, backgroundColor: "rgba(139, 46, 31, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 32.120);
+      tl.fromTo("#n10 .bgset", { scale: 1 }, { scale: 1.06, duration: 0.09, yoyo: true, repeat: 1, ease: "power2.out" }, 32.120);
+      tl.fromTo("#e39", { opacity: 1 }, { opacity: 0, duration: 0.2 }, 32.000);
+      tl.fromTo("#e42", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 32.760);
+      tl.fromTo("#flash", { opacity: 0.3, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 32.760);
+      tl.fromTo("#e43", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 32.960);
+      tl.fromTo("#e44", { opacity: 0, scale: 0.5, rotation: -7 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -2 }, 35.650);
+      tl.fromTo("#e45", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 36.850);
+      tl.fromTo("#e46", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 37.420);
+      tl.fromTo("#flash", { opacity: 0.5, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 37.420);
+      tl.fromTo("#n12 .bgset", { scale: 1 }, { scale: 1.06, duration: 0.09, yoyo: true, repeat: 1, ease: "power2.out" }, 37.420);
+      tl.fromTo("#e47", { opacity: 0, scale: 0.5, rotation: -8 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -3 }, 38.150);
+      tl.fromTo("#e48 circle", { strokeDashoffset: 1000, opacity: 1 }, { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 38.560);
+      tl.fromTo("#e48", { opacity: 0 }, { opacity: 1, duration: 0.05 }, 38.560);
+      tl.fromTo("#e48", { scale: 1 }, { scale: 1.08, duration: 0.5, yoyo: true, repeat: 3, ease: "sine.inOut" }, 39.360);
+      tl.fromTo("#e49", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 39.950);
+      tl.fromTo("#e50", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 40.100);
+      tl.fromTo("#e51", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 41.440);
+      tl.fromTo("#flash", { opacity: 0.45, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 41.440);
+      tl.fromTo("#e52", { opacity: 0, scale: 0.5, rotation: -7 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: -2 }, 42.230);
+      tl.fromTo("#e53", { opacity: 0, y: 90 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 44.400);
+      tl.fromTo("#e54", { opacity: 0, scale: 0.5, rotation: -5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 0 }, 44.720);
+      tl.fromTo("#flash", { opacity: 0.4, backgroundColor: "rgba(246, 215, 127, 1)" }, { opacity: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, 44.720);
+      tl.fromTo("#e55", { opacity: 0, scale: 0.5, rotation: -2 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)", rotation: 3 }, 46.960);
+      tl.fromTo("#e56", { opacity: 0, x: -260 }, { opacity: 1, x: 0, duration: 0.45, ease: "power4.out" }, 48.440);
+      tl.fromTo("#e56 path", { strokeDashoffset: 420 }, { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 48.590);
+      tl.fromTo("#ek", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5 }, 50.000);
+      tl.fromTo("#r1, #r2", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.inOut" }, 50.050);
+      tl.fromTo("#et", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "back.out(1.8)" }, 50.200);
+      tl.fromTo("#e57", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.4)" }, 50.700);
+      tl.fromTo("#e57", { scale: 1 }, { scale: 1.07, duration: 0.45, yoyo: true, repeat: 3, ease: "sine.inOut" }, 51.200);
+      tl.fromTo("#capin0", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 0.190);
+      tl.fromTo(".cw0-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 0.190);
+      tl.to(".cw0-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 0.350);
+      tl.fromTo(".cw0-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 0.240);
+      tl.to(".cw0-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 1.070);
+      tl.fromTo(".cw0-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 1.070);
+      tl.to(".cw0-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 1.360);
+      tl.fromTo(".cw0-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 1.360);
+      tl.to(".cw0-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 1.880);
+      tl.fromTo("#capin1", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 1.880);
+      tl.fromTo(".cw1-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 1.880);
+      tl.to(".cw1-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 2.040);
+      tl.fromTo(".cw1-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 2.230);
+      tl.to(".cw1-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 2.390);
+      tl.fromTo(".cw1-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 2.530);
+      tl.to(".cw1-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 2.690);
+      tl.fromTo(".cw1-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 2.710);
+      tl.to(".cw1-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 3.300);
+      tl.fromTo("#capin2", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 3.300);
+      tl.fromTo(".cw2-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 3.300);
+      tl.to(".cw2-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 4.020);
+      tl.fromTo(".cw2-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 4.020);
+      tl.to(".cw2-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 4.230);
+      tl.fromTo("#capin3", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 4.230);
+      tl.fromTo(".cw3-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 4.230);
+      tl.to(".cw3-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 4.900);
+      tl.fromTo("#capin4", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 4.900);
+      tl.fromTo(".cw4-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 4.900);
+      tl.to(".cw4-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 5.225);
+      tl.fromTo(".cw4-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 5.225);
+      tl.to(".cw4-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 5.550);
+      tl.fromTo(".cw4-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 5.550);
+      tl.to(".cw4-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 5.710);
+      tl.fromTo(".cw4-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 5.780);
+      tl.to(".cw4-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 6.010);
+      tl.fromTo("#capin5", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 6.010);
+      tl.fromTo(".cw5-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 6.010);
+      tl.to(".cw5-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 6.370);
+      tl.fromTo(".cw5-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 6.390);
+      tl.to(".cw5-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 6.550);
+      tl.fromTo(".cw5-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 6.530);
+      tl.to(".cw5-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 6.900);
+      tl.fromTo(".cw5-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 6.900);
+      tl.to(".cw5-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 7.290);
+      tl.fromTo("#capin6", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 7.290);
+      tl.fromTo(".cw6-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 7.290);
+      tl.to(".cw6-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 7.450);
+      tl.fromTo(".cw6-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 7.730);
+      tl.to(".cw6-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 7.890);
+      tl.fromTo(".cw6-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 7.890);
+      tl.to(".cw6-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 8.100);
+      tl.fromTo(".cw6-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 8.100);
+      tl.to(".cw6-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 8.500);
+      tl.fromTo("#capin7", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 8.500);
+      tl.fromTo(".cw7-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 8.500);
+      tl.to(".cw7-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 8.785);
+      tl.fromTo(".cw7-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 8.785);
+      tl.to(".cw7-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 9.070);
+      tl.fromTo(".cw7-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 9.070);
+      tl.to(".cw7-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 9.280);
+      tl.fromTo("#capin8", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 9.300);
+      tl.fromTo(".cw8-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 9.300);
+      tl.to(".cw8-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 9.460);
+      tl.fromTo(".cw8-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 9.400);
+      tl.to(".cw8-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 9.690);
+      tl.fromTo(".cw8-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 9.700);
+      tl.to(".cw8-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 9.880);
+      tl.fromTo(".cw8-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 9.880);
+      tl.to(".cw8-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 10.240);
+      tl.fromTo("#capin9", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 10.240);
+      tl.fromTo(".cw9-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 10.240);
+      tl.to(".cw9-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 10.400);
+      tl.fromTo(".cw9-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 10.370);
+      tl.to(".cw9-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 10.980);
+      tl.fromTo("#capin10", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 10.980);
+      tl.fromTo(".cw10-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 10.980);
+      tl.to(".cw10-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 11.430);
+      tl.fromTo(".cw10-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 11.430);
+      tl.to(".cw10-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 11.880);
+      tl.fromTo(".cw10-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 11.880);
+      tl.to(".cw10-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 12.040);
+      tl.fromTo("#capin11", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 12.120);
+      tl.fromTo(".cw11-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 12.120);
+      tl.to(".cw11-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 12.680);
+      tl.fromTo(".cw11-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 12.680);
+      tl.to(".cw11-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 12.900);
+      tl.fromTo(".cw11-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 12.910);
+      tl.to(".cw11-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 13.550);
+      tl.fromTo("#capin12", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 14.090);
+      tl.fromTo(".cw12-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 14.090);
+      tl.to(".cw12-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 14.250);
+      tl.fromTo(".cw12-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 14.320);
+      tl.to(".cw12-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 14.560);
+      tl.fromTo(".cw12-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 14.560);
+      tl.to(".cw12-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 14.720);
+      tl.fromTo(".cw12-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 14.710);
+      tl.to(".cw12-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 14.960);
+      tl.fromTo("#capin13", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 15.040);
+      tl.fromTo(".cw13-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 15.040);
+      tl.to(".cw13-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 15.280);
+      tl.fromTo(".cw13-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 15.280);
+      tl.to(".cw13-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 15.440);
+      tl.fromTo(".cw13-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 15.390);
+      tl.to(".cw13-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 15.940);
+      tl.fromTo(".cw13-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 15.940);
+      tl.to(".cw13-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 16.460);
+      tl.fromTo("#capin14", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 16.460);
+      tl.fromTo(".cw14-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 16.460);
+      tl.to(".cw14-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 17.030);
+      tl.fromTo(".cw14-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 17.030);
+      tl.to(".cw14-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 17.600);
+      tl.fromTo("#capin15", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 17.600);
+      tl.fromTo(".cw15-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 17.600);
+      tl.to(".cw15-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 17.840);
+      tl.fromTo(".cw15-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 17.940);
+      tl.to(".cw15-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 18.160);
+      tl.fromTo(".cw15-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 18.160);
+      tl.to(".cw15-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 18.320);
+      tl.fromTo(".cw15-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 18.230);
+      tl.to(".cw15-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 18.680);
+      tl.fromTo("#capin16", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 18.680);
+      tl.fromTo(".cw16-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 18.680);
+      tl.to(".cw16-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 19.130);
+      tl.fromTo(".cw16-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 19.130);
+      tl.to(".cw16-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 19.540);
+      tl.fromTo("#capin17", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 19.540);
+      tl.fromTo(".cw17-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 19.540);
+      tl.to(".cw17-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 19.795);
+      tl.fromTo(".cw17-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 19.795);
+      tl.to(".cw17-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 20.050);
+      tl.fromTo(".cw17-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 20.050);
+      tl.to(".cw17-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 20.305);
+      tl.fromTo(".cw17-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 20.305);
+      tl.to(".cw17-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 20.560);
+      tl.fromTo("#capin18", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 20.560);
+      tl.fromTo(".cw18-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 20.560);
+      tl.to(".cw18-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 20.720);
+      tl.fromTo(".cw18-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 20.610);
+      tl.to(".cw18-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 20.800);
+      tl.fromTo(".cw18-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 20.950);
+      tl.to(".cw18-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 21.120);
+      tl.fromTo(".cw18-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 21.120);
+      tl.to(".cw18-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 21.330);
+      tl.fromTo("#capin19", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 21.340);
+      tl.fromTo(".cw19-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 21.340);
+      tl.to(".cw19-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 21.500);
+      tl.fromTo(".cw19-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 21.410);
+      tl.to(".cw19-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 22.180);
+      tl.fromTo("#capin20", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 22.180);
+      tl.fromTo(".cw20-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 22.180);
+      tl.to(".cw20-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 22.620);
+      tl.fromTo(".cw20-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 22.620);
+      tl.to(".cw20-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 23.060);
+      tl.fromTo(".cw20-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 23.060);
+      tl.to(".cw20-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 23.300);
+      tl.fromTo(".cw20-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 23.300);
+      tl.to(".cw20-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 23.860);
+      tl.fromTo("#capin21", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 23.860);
+      tl.fromTo(".cw21-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 23.860);
+      tl.to(".cw21-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 24.500);
+      tl.fromTo(".cw21-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 24.530);
+      tl.to(".cw21-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 24.690);
+      tl.fromTo(".cw21-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 24.650);
+      tl.to(".cw21-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 24.810);
+      tl.fromTo(".cw21-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 25.050);
+      tl.to(".cw21-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 25.470);
+      tl.fromTo("#capin22", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 25.470);
+      tl.fromTo(".cw22-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 25.470);
+      tl.to(".cw22-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 25.915);
+      tl.fromTo(".cw22-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 25.915);
+      tl.to(".cw22-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 26.360);
+      tl.fromTo(".cw22-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 26.360);
+      tl.to(".cw22-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 26.520);
+      tl.fromTo("#capin23", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 26.600);
+      tl.fromTo(".cw23-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 26.600);
+      tl.to(".cw23-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 26.760);
+      tl.fromTo(".cw23-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 26.670);
+      tl.to(".cw23-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 26.840);
+      tl.fromTo(".cw23-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 26.990);
+      tl.to(".cw23-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 27.480);
+      tl.fromTo("#capin24", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 27.480);
+      tl.fromTo(".cw24-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 27.480);
+      tl.to(".cw24-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 28.040);
+      tl.fromTo("#capin25", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 28.040);
+      tl.fromTo(".cw25-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 28.040);
+      tl.to(".cw25-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 28.200);
+      tl.fromTo(".cw25-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 28.160);
+      tl.to(".cw25-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 28.900);
+      tl.fromTo("#capin26", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 29.490);
+      tl.fromTo(".cw26-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 29.490);
+      tl.to(".cw26-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 29.750);
+      tl.fromTo(".cw26-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 29.750);
+      tl.to(".cw26-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 29.920);
+      tl.fromTo(".cw26-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 29.920);
+      tl.to(".cw26-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 30.190);
+      tl.fromTo(".cw26-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 30.190);
+      tl.to(".cw26-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 30.350);
+      tl.fromTo("#capin27", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 30.300);
+      tl.fromTo(".cw27-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 30.300);
+      tl.to(".cw27-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 30.460);
+      tl.fromTo(".cw27-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 30.440);
+      tl.to(".cw27-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 30.690);
+      tl.fromTo(".cw27-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 30.800);
+      tl.to(".cw27-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 30.960);
+      tl.fromTo(".cw27-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 30.910);
+      tl.to(".cw27-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 31.130);
+      tl.fromTo("#capin28", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 31.130);
+      tl.fromTo(".cw28-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 31.130);
+      tl.to(".cw28-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 31.520);
+      tl.fromTo(".cw28-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 31.530);
+      tl.to(".cw28-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 32.010);
+      tl.fromTo(".cw28-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 32.010);
+      tl.to(".cw28-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 32.170);
+      tl.fromTo(".cw28-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 32.120);
+      tl.to(".cw28-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 32.760);
+      tl.fromTo("#capin29", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 32.760);
+      tl.fromTo(".cw29-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 32.760);
+      tl.to(".cw29-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 33.860);
+      tl.fromTo(".cw29-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 33.860);
+      tl.to(".cw29-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 34.020);
+      tl.fromTo(".cw29-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 34.090);
+      tl.to(".cw29-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 34.490);
+      tl.fromTo(".cw29-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 34.500);
+      tl.to(".cw29-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 35.610);
+      tl.fromTo("#capin30", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 35.630);
+      tl.fromTo(".cw30-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 35.630);
+      tl.to(".cw30-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 35.790);
+      tl.fromTo(".cw30-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 35.860);
+      tl.to(".cw30-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 36.020);
+      tl.fromTo(".cw30-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 35.940);
+      tl.to(".cw30-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 36.100);
+      tl.fromTo(".cw30-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 36.030);
+      tl.to(".cw30-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 36.190);
+      tl.fromTo("#capin31", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 36.250);
+      tl.fromTo(".cw31-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 36.250);
+      tl.to(".cw31-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 36.430);
+      tl.fromTo(".cw31-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 36.430);
+      tl.to(".cw31-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 36.740);
+      tl.fromTo("#capin32", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 36.740);
+      tl.fromTo(".cw32-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 36.740);
+      tl.to(".cw32-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 37.080);
+      tl.fromTo(".cw32-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 37.080);
+      tl.to(".cw32-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 37.420);
+      tl.fromTo("#capin33", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 37.420);
+      tl.fromTo(".cw33-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 37.420);
+      tl.to(".cw33-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 37.760);
+      tl.fromTo(".cw33-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 37.760);
+      tl.to(".cw33-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 38.000);
+      tl.fromTo(".cw33-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 38.150);
+      tl.to(".cw33-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 38.560);
+      tl.fromTo(".cw33-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 38.560);
+      tl.to(".cw33-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 38.980);
+      tl.fromTo("#capin34", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 38.980);
+      tl.fromTo(".cw34-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 38.980);
+      tl.to(".cw34-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 39.190);
+      tl.fromTo(".cw34-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 39.240);
+      tl.to(".cw34-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 39.880);
+      tl.fromTo("#capin35", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 39.880);
+      tl.fromTo(".cw35-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 39.880);
+      tl.to(".cw35-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 40.470);
+      tl.fromTo(".cw35-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 40.470);
+      tl.to(".cw35-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 40.630);
+      tl.fromTo(".cw35-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 40.660);
+      tl.to(".cw35-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 40.930);
+      tl.fromTo(".cw35-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 41.090);
+      tl.to(".cw35-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 41.320);
+      tl.fromTo("#capin36", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 41.320);
+      tl.fromTo(".cw36-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 41.320);
+      tl.to(".cw36-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 41.480);
+      tl.fromTo(".cw36-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 41.440);
+      tl.to(".cw36-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 41.840);
+      tl.fromTo("#capin37", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 41.840);
+      tl.fromTo(".cw37-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 41.840);
+      tl.to(".cw37-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 42.000);
+      tl.fromTo(".cw37-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 41.992);
+      tl.to(".cw37-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 42.152);
+      tl.fromTo(".cw37-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 42.144);
+      tl.to(".cw37-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 42.304);
+      tl.fromTo(".cw37-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 42.296);
+      tl.to(".cw37-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 42.456);
+      tl.fromTo("#capin38", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 42.448);
+      tl.fromTo(".cw38-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 42.448);
+      tl.to(".cw38-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 42.608);
+      tl.fromTo(".cw38-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 42.600);
+      tl.to(".cw38-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 42.840);
+      tl.fromTo(".cw38-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 42.990);
+      tl.to(".cw38-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 43.150);
+      tl.fromTo(".cw38-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 43.030);
+      tl.to(".cw38-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 43.490);
+      tl.fromTo("#capin39", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 43.490);
+      tl.fromTo(".cw39-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 43.490);
+      tl.to(".cw39-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 43.720);
+      tl.fromTo(".cw39-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 43.720);
+      tl.to(".cw39-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 44.280);
+      tl.fromTo("#capin40", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 44.280);
+      tl.fromTo(".cw40-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 44.280);
+      tl.to(".cw40-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 44.720);
+      tl.fromTo(".cw40-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 44.720);
+      tl.to(".cw40-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 45.160);
+      tl.fromTo("#capin41", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 45.160);
+      tl.fromTo(".cw41-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 45.160);
+      tl.to(".cw41-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 45.320);
+      tl.fromTo(".cw41-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 45.400);
+      tl.to(".cw41-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 45.560);
+      tl.fromTo(".cw41-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 45.520);
+      tl.to(".cw41-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 45.680);
+      tl.fromTo(".cw41-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 45.630);
+      tl.to(".cw41-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 45.790);
+      tl.fromTo("#capin42", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 45.790);
+      tl.fromTo(".cw42-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 45.790);
+      tl.to(".cw42-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 46.250);
+      tl.fromTo(".cw42-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 46.250);
+      tl.to(".cw42-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 46.580);
+      tl.fromTo(".cw42-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 46.580);
+      tl.to(".cw42-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 46.770);
+      tl.fromTo(".cw42-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 46.770);
+      tl.to(".cw42-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 47.060);
+      tl.fromTo("#capin43", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 47.370);
+      tl.fromTo(".cw43-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 47.370);
+      tl.to(".cw43-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 47.760);
+      tl.fromTo(".cw43-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 47.760);
+      tl.to(".cw43-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 47.920);
+      tl.fromTo(".cw43-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 47.960);
+      tl.to(".cw43-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 48.460);
+      tl.fromTo("#capin44", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 48.590);
+      tl.fromTo(".cw44-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 48.590);
+      tl.to(".cw44-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 48.760);
+      tl.fromTo(".cw44-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 48.760);
+      tl.to(".cw44-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 48.920);
+      tl.fromTo(".cw44-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 48.820);
+      tl.to(".cw44-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 49.300);
+      tl.fromTo("#capin45", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 49.860);
+      tl.fromTo(".cw45-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 49.860);
+      tl.to(".cw45-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 50.020);
+      tl.fromTo(".cw45-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 50.100);
+      tl.to(".cw45-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 50.260);
+      tl.fromTo(".cw45-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 50.140);
+      tl.to(".cw45-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 50.680);
+      tl.fromTo(".cw45-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 50.680);
+      tl.to(".cw45-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 50.840);
+      tl.fromTo("#capin46", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 50.820);
+      tl.fromTo(".cw46-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 50.820);
+      tl.to(".cw46-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 51.220);
+      tl.fromTo("#capin47", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 51.220);
+      tl.fromTo(".cw47-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 51.220);
+      tl.to(".cw47-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 51.380);
+      tl.fromTo(".cw47-1", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 51.340);
+      tl.to(".cw47-1", { color: "#f4ead2", scale: 1, duration: 0.14 }, 51.640);
+      tl.fromTo(".cw47-2", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 51.640);
+      tl.to(".cw47-2", { color: "#f4ead2", scale: 1, duration: 0.14 }, 51.800);
+      tl.fromTo(".cw47-3", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 51.700);
+      tl.to(".cw47-3", { color: "#f4ead2", scale: 1, duration: 0.14 }, 51.860);
+      tl.fromTo("#capin48", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 52.060);
+      tl.fromTo(".cw48-0", { color: "#f4ead2", scale: 1 }, { color: "#f6d77f", scale: 1.06, duration: 0.09, ease: "power2.out" }, 52.060);
+      tl.to(".cw48-0", { color: "#f4ead2", scale: 1, duration: 0.14 }, 52.240);
+      gsap.utils.toArray(".mote").forEach((m, i) => { tl.fromTo(m, { y: 0, x: 0 }, { y: -240 - (i % 4) * 60, x: ((i % 3) - 1) * 50, duration: 52.6, ease: "none" }, 0); });
+      tl.fromTo("#progress i", { scaleX: 0 }, { scaleX: 1, duration: 52.6, ease: "none" }, 0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
