@@ -38,8 +38,8 @@ Committer et pousser à chaque étape qui produit des fichiers.
 - Shorts : 9:16 (1080 × 1920), zones hautes et basses dégagées pour l'interface YouTube.
 - Vidéos longues : 16:9, **20 plans au maximum**, qui reviennent pendant la vidéo avec un état différent ; changement d'état toutes les 7 à 20 secondes (mouvement de caméra lent, apparitions en plusieurs temps, alternance décor / gros plan).
 - Images d'éléments : toujours `width` et `height` explicites en pixels (une largeur `auto` change de taille d'un worker de rendu à l'autre).
-- Effets sonores : 5 à 6 par minute au maximum, sous licence libre (`npx hyperframes media-use resolve --type sfx`), crédits notés dans `CREDITS.md` et dans la description.
-- Musique : discrète, environ 20 dB sous la voix, libre de droits pour YouTube. La recherche automatique demande `HEYGEN_API_KEY` dans l'environnement (la connexion OAuth HeyGen ne fonctionne pas depuis le cloud) ; sinon l'utilisateur fournit le fichier.
+- Effets sonores : utiliser la bibliothèque intégrée à HyperFrames (`.agents/skills/media-use/audio/assets/sfx/`, licence Pixabay : usage commercial, aucune attribution obligatoire). `Short(..., lib_sfx=True)` dans `montage/common.py` superpose pour chaque impact `impact-bass-2` + `pop` + `whoosh-short`, car les impacts et la montée de la bibliothèque sont presque uniquement sous 150 Hz (inaudibles sur un haut-parleur de téléphone). Le fichier `riser.mp3` n'a de son que de 0 à 4,5 s (sommet vers 3,5 à 4,3 s) malgré ce que dit son manifeste. Pas plus de 10 à 12 événements par short, impacts seulement sur les mots-clés, « whoosh » seulement aux changements de plan importants. Niveaux : chaque effet environ 10 dB sous la voix (voix seule environ -19 LUFS).
+- Musique : générée en local avec MusicGen (`musicgen-small`) via `montage/gen_music.py` (venv Python avec `torch`, `transformers`, `scipy` ; PyTorch s'installe depuis PyPI car download.pytorch.org est bloqué ; environ 160 à 200 s de calcul pour 30 s de musique). Post-traitement : filtre passe-haut 110 Hz, compression légère, fondus, `loudnorm` à -16 LUFS, puis `data-volume` d'environ 0,15 pour rester environ 13 à 15 dB sous la voix. **Licence** : les poids de `musicgen-small` sont en CC-BY-NC 4.0 (non commercial) ; l'usage de l'audio généré dans une vidéo monétisée n'est pas clairement tranché. À signaler à l'utilisateur dans le `CREDITS.md` de chaque vidéo. Alternative : un fichier fourni par l'utilisateur.
 
 ## Consignes de rétention (à appliquer à chaque nouvelle vidéo)
 
@@ -54,7 +54,7 @@ Au montage
 - Un seul texte lisible à la fois : sous-titres mot par mot sur une bande sombre ; des cartes seulement pour un mot-clé ou une référence biblique, jamais la même phrase deux fois.
 - Un événement visuel toutes les 2 à 3 secondes (anneau doré, tampon « Hypothèse », zoom « coup de poing », flash) ; rien de statique plus de 3 secondes.
 - Zones de sécurité : 150 px en haut, 380 px en bas, 140 px à droite (interface YouTube).
-- Son : ambiance sous la voix, quelques impacts sur les mots-clés, effets assez bas pour ne jamais couvrir la voix (voix seule environ -19 LUFS, extras environ 10 dB sous la voix).
+- Son : musique discrète sous la voix, quelques impacts sur les mots-clés, effets assez bas pour ne jamais couvrir la voix (voix seule environ -19 LUFS, extras environ 10 dB sous la voix). Vérifier les niveaux élément par élément (mesure `ebur128` après `atrim` et `volume`) : le rendu semble normaliser le total, donc comparer le mix final à la voix seule ne prouve rien.
 - Signature de chaîne : mêmes gestes d'une vidéo à l'autre (cartes parchemin, anneau doré, tampon rouge).
 - Ne pas boucler la fin du short sur son début (choix de l'utilisateur).
 
@@ -65,5 +65,6 @@ Après la publication
 
 - `montage/short-666/` : premier short complet (version 1 publiée ; la version 2 de `build.py` est écrite mais pas rendue).
 - `montage/short-marque-sceau/` : deuxième short ; la version 2 (style rétention) a un rendu brouillon.
-- `montage/common.py`, `montage/template-short.tpl`, `montage/synth_audio.py` : base proposée pour les prochains montages (constructeur de plans calés sur la transcription, gabarit commun, sons synthétisés sans droits). Essayée seulement sur le brouillon v2 de « marque et sceau » : la relire avant de s'en servir.
+- `montage/short-noe/` : troisième short ; version complète avec effets de la bibliothèque et musique MusicGen (modèle de référence pour le son).
+- `montage/common.py`, `montage/template-short.tpl`, `montage/gen_music.py` (musique), `montage/synth_audio.py` (anciens sons synthétisés, graves inaudibles sur téléphone : à éviter) : base proposée pour les prochains montages (constructeur de plans calés sur la transcription, gabarit commun, sons synthétisés sans droits). Essayée seulement sur le brouillon v2 de « marque et sceau » : la relire avant de s'en servir.
 - `montage/test-short-9x16/` : tests de style (v1 à v3).

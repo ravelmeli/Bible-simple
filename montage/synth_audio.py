@@ -62,15 +62,16 @@ def ambiance(duration):
 
 
 def riser(length=1.4):
+    """Soft swell: a gentle sweep with a little filtered air, no harsh broadband hiss."""
     t = np.arange(int(length * SR)) / SR
-    f = 180 + 900 * (t / length) ** 2
+    f = 220 + 480 * (t / length) ** 2
     phase = 2 * np.pi * np.cumsum(f) / SR
-    tone = np.sin(phase) + 0.4 * np.sin(2 * phase)
+    tone = np.sin(phase) + 0.25 * np.sin(2 * phase)
     rng = np.random.default_rng(3)
-    noise = rng.standard_normal(len(t))
-    noise = noise - lowpass(noise, 1500)
-    env = (t / length) ** 1.6
-    return (tone * 0.6 + noise * 0.5) * env * np.clip((length - t) / 0.03, 0, 1)
+    air = lowpass(rng.standard_normal(len(t)), 2200)
+    air = air - lowpass(air, 500)
+    env = np.sin(np.pi * 0.5 * (t / length)) ** 2 * np.clip((length - t) / 0.25, 0, 1)
+    return (tone * 0.8 + air * 0.12) * env
 
 
 def hit(length=1.1):

@@ -7,6 +7,7 @@ the captions only; cards stay short (a keyword or a reference) so nothing is rea
 import json
 import os
 import re
+import shutil
 
 from PIL import Image
 
@@ -22,6 +23,20 @@ SFX_FILES = {
 }
 SFX_VOL = {"hit": 0.5, "riser": 0.24, "tick": 0.22, "whoosh": 0.14, "mer": 0.07, "impact": 0.7}
 SFX_SCALE = 0.6  # keeps effects under the voice (voice-only mix is about -19 LUFS)
+
+# Library sounds shipped with HyperFrames (Pixabay Content License: commercial use, no attribution required).
+LIB_DIR = os.path.join(HERE, "..", ".agents", "skills", "media-use", "audio", "assets", "sfx")
+# kind -> list of layers (file, duration, media_start, base_volume). Impacts and the riser of the library are
+# almost only below 150 Hz (inaudible on a phone speaker), so each impact gets a mid-range layer on top.
+LIB_LAYERS = {
+    "hit": [("impact-bass-2.mp3", 2.0, 0.0, 0.07), ("pop.mp3", 0.72, 0.0, 0.45), ("whoosh-short.mp3", 0.57, 0.0, 0.08)],
+    "impact": [("impact-bass-1.mp3", 2.1, 0.0, 0.07), ("pop.mp3", 0.72, 0.0, 0.45)],
+    # The library riser swells for 0 to 3.5 s, peaks 3.5 to 4.3 s and is silent after 4.5 s (the manifest says otherwise).
+    "riser": [("riser.mp3", 2.0, 2.3, 0.05)],
+    "tick": [("click-soft.mp3", 0.37, 0.0, 0.18)],
+    "whoosh": [("whoosh-short.mp3", 0.57, 0.0, 0.16)],
+    "spark": [("sparkle.mp3", 1.2, 0.0, 0.07)],
+}
 
 HOW = {
     "rise": ("opacity: 0, y: 90", 'opacity: 1, y: 0, duration: 0.8, ease: "power3.out"'),
@@ -39,8 +54,9 @@ def norm(w):
 
 
 class Short:
-    def __init__(self, project_dir, duration, fixes=None):
+    def __init__(self, project_dir, duration, fixes=None, lib_sfx=False):
         self.dir = project_dir
+        self.lib_sfx = lib_sfx
         self.duration = duration
         self.scenes = []
         self.tweens = []
@@ -77,6 +93,21 @@ class Short:
         self.tweens.append(f'tl.fromTo("{sel}", {{ {frm} }}, {{ {to} }}, {at:.3f});')
 
     def sfx(self, kind, at, vol=None):
+        if self.lib_sfx and kind in LIB_LAYERS:
+            # `vol` is an intensity (about 0.3 to 1.0) that scales the base volume of every layer.
+            k = 1.0 if vol is None else vol
+            if kind == "riser":
+                k = (vol if vol is not None else 0.13) / 0.13
+            n = len([a for a in self.audio if a[0].startswith(f"sfx-{kind}-")])
+            for j, (name, dur, mstart, base) in enumerate(LIB_LAYERS[kind]):
+                if base <= 0:
+                    continue
+                st = at + 1.4 - dur if kind == "riser" else at  # a riser ends where the keyword lands (at + 1.4 s)
+                st = max(st, 0.0)
+                d = min(dur, max(self.duration - st, 0.05))
+                self.audio.append((f"sfx-{kind}-{n}-{j}", f"assets/audio/lib/{name}", round(st, 3), round(d, 3),
+                                   round(base * min(max(k, 0.2), 1.4), 3), mstart))
+            return
         path, dur = SFX_FILES[kind]
         v = round((SFX_VOL[kind] if vol is None else vol) * SFX_SCALE, 3)
         n = len([a for a in self.audio if a[0].startswith(f"sfx-{kind}")])
@@ -150,9 +181,15 @@ class Short:
                 scene_tw.append(f'tl.fromTo("#{sc.id} .sc-in", {{ opacity: 0 }}, {{ opacity: 1, duration: {fade}, ease: "none" }}, {s:.3f});')
         cap_html, cap_tw = self.captions(suppress=suppress)
         audio = [("voix", "assets/voix.wav", 0, self.duration, 1)] + self.audio
+        lib_used = {os.path.basename(a[1]) for a in audio if "/lib/" in a[1]}
+        if lib_used:
+            os.makedirs(os.path.join(self.dir, "assets/audio/lib"), exist_ok=True)
+            for name in lib_used:
+                shutil.copyfile(os.path.join(LIB_DIR, name), os.path.join(self.dir, "assets/audio/lib", name))
         audio_html = "\n      ".join(
-            f'<audio id="{a}" src="{src}" data-start="{st}" data-duration="{d}" data-volume="{v}"></audio>'
-            for a, src, st, d, v in audio)
+            f'<audio id="{a[0]}" src="{a[1]}" data-start="{a[2]}" data-duration="{a[3]}" data-volume="{a[4]}"'
+            + (f' data-media-start="{a[5]}"' if len(a) > 5 and a[5] else "") + '></audio>'
+            for a in audio)
         motes = "".join(
             f'<i class="mote" style="left:{(i * 137) % 1000 + 40}px;top:{(i * 263) % 1700 + 100}px;'
             f'width:{3 + (i * 7) % 5}px;height:{3 + (i * 7) % 5}px;opacity:{0.2 + ((i * 11) % 5) * 0.07:.2f}"></i>'
@@ -206,7 +243,7 @@ class Scene:
         self._anim(f"#{i}", at, how)
         return i
 
-    def kw(self, text, style, at, how="pop", rot=0, hero=False, tick=True, cls=""):
+    def kw(self, text, style, at, how="pop", rot=0, hero=False, tick=False, cls=""):
         i = self.short.uid()
         base = "hero" if hero else "kw"
         self.html.append(f'<div class="{base} {cls}" id="{i}" style="{style}"><span>{text}</span></div>')
