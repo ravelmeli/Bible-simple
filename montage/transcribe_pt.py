@@ -27,7 +27,7 @@ def merge_tokens(words):
     out = []
     for w in words:
         t = w["text"]
-        if out and (t.startswith(("'", "\u2019", "-")) or out[-1]["text"].endswith(("'", "\u2019", "-", "\u00ab"))):
+        if out and (t.startswith(("'", "\u2019", "-")) or out[-1]["text"].endswith(("'", "\u2019", "-"))):
             out[-1]["text"] += t
             out[-1]["end"] = w["end"]
         elif t in ("\u00bb", "?", "!", ":", ";") and out:
@@ -35,6 +35,11 @@ def merge_tokens(words):
             out[-1]["end"] = w["end"]
         else:
             out.append(dict(w))
+    for w in out:  # French typography: non-breaking space inside guillemets
+        if w["text"].startswith("\u00ab"):
+            w["text"] = "\u00ab\u00a0" + w["text"][1:]
+        if w["text"].endswith("\u00bb"):
+            w["text"] = w["text"][:-1] + "\u00a0\u00bb"  # nbsp
     return out
 
 
