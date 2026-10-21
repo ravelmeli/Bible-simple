@@ -1,231 +1,178 @@
-"""Generate index.html for the 60-second 9:16 short « 666 ».
+"""Short « Néron et 666 » — retention-style montage (60 s, 9:16).
 
-Scene timings follow the Whisper segments of the voice-over (assets/voix.wav).
-Run: python3 build.py
+Beats are timed on the word-level transcript (transcript.json). Run: python3 build.py
 """
+import os
+import sys
 
-SCENES = []  # (id, start, end, decor, html)
-TWEENS = []  # JS lines
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(HERE, ".."))
+from common import Short  # noqa: E402
 
+DUR = 60
+sh = Short(HERE, DUR)
+T = sh.t
 
-def el(src, w, h, style, cls="el"):
-    return f'<img class="{cls}" src="assets/elements/{src}.png" style="width:{w}px;height:{h}px;{style}" />'
+# ===== q1 · HOOK 0 – 3.4 : the number, then the question =====
+q1 = sh.scene("q1", 0, 3.4, "patmos", zoom=(1.0, 1.08), dark=0.62)
+q1.kw("666", "left:0;width:1080px;top:380px;font-size:470px;letter-spacing:6px", 0.0, how="cut", hero=True, tick=False, cls="rust")
+sh.tween("#e1", "scale: 1.5", 'scale: 1, duration: 0.35, ease: "power4.out"', 0.0)
+q1.ring(540, 640, 390, 0.25, "#f6d77f", 0.8)
+q1.kw("= un nom ?", "left:0;width:1080px;top:960px;font-size:130px", T("nom"), "pop", hero=True, tick=False, cls="cream")
+sh.sfx("hit", 0.0, 0.8)
+sh.flash(0.0, "gold", 0.5)
+sh.sfx("riser", T("nom") - 1.4, 0.8)
+sh.sfx("hit", T("nom"), 0.5)
+sh.punch("q1", T("nom"), 1.05)
 
+# ===== q2 · 3.4 – 7.28 : Patmos, the riddle =====
+q2 = sh.scene("q2", 3.4, 7.28, "patmos", pan=(-30, 0))
+q2.element("personnage-01-jean-patmos", 1200, "left:-30px;top:720px", 3.5, "rise")
+q2.ref("Apocalypse 13.18", "left:60px;top:190px", 3.5)
+q2.kw("Île de Patmos", "left:60px;top:300px;font-size:64px", T("patmos"), "pop", rot=-3, cls="small")
+q2.raw('<div class="medallion" id="med" style="left:520px;top:430px"><div class="disc"></div>'
+       '<svg viewBox="0 0 500 500"><circle cx="250" cy="250" r="238" transform="rotate(-90 250 250)" />'
+       '<circle class="inner" cx="250" cy="250" r="214" transform="rotate(-90 250 250)" /></svg>'
+       '<div class="medal-num" id="mednum">666</div></div>')
+sh.tween("#med", "opacity: 0, scale: 0.6, rotation: -20", 'opacity: 1, scale: 1, rotation: 0, duration: 0.7, ease: "back.out(1.6)"', T("666") - 0.1)
+sh.tween("#med circle", "strokeDashoffset: 1500", 'strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut", stagger: 0.12', T("666"))
+sh.sfx("riser", T("666") - 1.5)
+sh.sfx("hit", T("666"))
+sh.flash(T("666"), "gold", 0.4)
+sh.sfx("mer", 3.4, 0.1)
 
-def card(inner, top, extra_cls="", left=70, width=940):
-    return (f'<div class="card-wrap {extra_cls}" style="top:{top}px;left:{left}px;width:{width}px">'
-            f'<div class="card">{inner}</div></div>')
+# ===== q3 · 7.28 – 11.84 : "calculate this number" =====
+q3 = sh.scene("q3", 7.28, 11.84, "bureau", pan=(30, -10), dark=0.1)
+q3.ref("Apocalypse 13.18", "left:60px;top:190px", 7.4)
+q3.element("objet-04-boulier", 640, "left:200px;top:520px", 8.0, "rise", z=6)
+q3.kw("L'intelligence", "left:90px;top:330px;font-size:84px", T("l'intelligence"), "pop", rot=-3, cls="small")
+q3.kw("Calcule", "left:0;width:1080px;top:1040px;font-size:170px", T("calcule"), "pop", hero=True, tick=False)
+sh.sfx("hit", T("calcule"), 0.45)
+sh.punch("q3", T("calcule"), 1.04)
+sh.sfx("whoosh", 7.15)
 
-
-def appear(sel, at, y=30, dur=0.6, ease="power3.out", rot=None):
-    frm = f"opacity: 0, y: {y}" + (f", rotation: {rot[0]}" if rot else "")
-    to = f"opacity: 1, y: 0, duration: {dur}, ease: \"{ease}\"" + (f", rotation: {rot[1]}" if rot else "")
-    TWEENS.append(f'tl.fromTo("{sel}", {{ {frm} }}, {{ {to} }}, {at});')
-
-
-def fade_out(sel, at, dur=0.4):
-    TWEENS.append(f'tl.to("{sel}", {{ opacity: 0, duration: {dur}, ease: "power1.in" }}, {at});')
-
-
-# ---------- P1 Patmos: hook, Jean, 666, verse (0 – 12.5) ----------
-hook = card(
-    '<span class="kicker">Apocalypse 13</span><span class="rule"></span>'
-    '<p class="big">' + " ".join(
-        f'<span class="w{" accent" if w == "nom" else ""}">{w}</span>'
-        for w in ["Un", "nombre", "peut-il", "cacher", "le", "nom", "d'un", "homme&nbsp;?"]) + "</p>",
-    330, "p1-hook")
-p1 = (
-    hook
-    + el("personnage-01-jean-patmos", 607, 1180, "left:-30px;bottom:-40px", "el p1-jean")
-    + '<p class="ribbon p1-cap" style="top:170px">Depuis Patmos, Jean donne une énigme…</p>'
-    + '<div class="medallion p1-medal" style="left:495px;top:500px"><div class="disc"></div>'
-      '<svg viewBox="0 0 500 500"><circle cx="250" cy="250" r="238" transform="rotate(-90 250 250)" />'
-      '<circle class="inner" cx="250" cy="250" r="214" transform="rotate(-90 250 250)" /></svg>'
-      '<div class="medal-num">666</div></div>'
-    + card('<p class="quote">« Que celui qui a de l\'intelligence calcule ce&nbsp;nombre. »</p>'
-           '<span class="ref">Apocalypse 13.18</span>', 150, "p1-quote")
-)
-SCENES.append(("p1", 0, 12.5, "patmos", p1))
-TWEENS += [
-    'tl.fromTo("#p1 .p1-hook .card", { opacity: 0, y: 40, rotation: -3 }, { opacity: 1, y: 0, rotation: -1.5, duration: 0.7, ease: "power3.out" }, 0.05);',
-    'tl.fromTo("#p1 .p1-hook .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.inOut" }, 0.4);',
-    'tl.fromTo("#p1 .p1-hook .w", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.35, ease: "power2.out", stagger: 0.24 }, 0.55);',
-    'tl.to("#p1 .p1-hook .card", { opacity: 0, y: -60, rotation: -3, duration: 0.45, ease: "power2.in" }, 3.0);',
-    'tl.fromTo("#p1 .p1-jean", { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 1.1, ease: "power3.out" }, 3.2);',
-]
-appear("#p1 .p1-cap", 3.4, 20, 0.7, "power2.out")
-fade_out("#p1 .p1-cap", 7.2)
-TWEENS += [
-    'tl.fromTo("#p1 .p1-medal", { opacity: 0, scale: 0.6, rotation: -20 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.7, ease: "back.out(1.6)" }, 5.75);',
-    'tl.fromTo("#p1 .p1-medal circle", { strokeDashoffset: 1500 }, { strokeDashoffset: 0, duration: 1.1, ease: "power2.inOut", stagger: 0.12 }, 5.9);',
-    'tl.fromTo("#p1 .p1-medal .medal-num", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2)" }, 6.5);',
-    'tl.to("#p1 .p1-medal", { opacity: 0, y: -40, duration: 0.5, ease: "power2.in" }, 7.8);',
-]
-appear("#p1 .p1-quote .card", 8.15, 40, 0.7, rot=(2.5, 1))
-
-# ---------- P2 Bureau: Hebrew letters carry numbers (12.5 – 15.3) ----------
-tiles = "".join(
-    f'<div class="tile p2-t" style="left:{x}px"><span class="val">{v}</span><span class="heb">{l}</span></div>'
-    for x, l, v in [(190, "ג", 3), (430, "ב", 2), (670, "א", 1)])
-p2 = (card('<p class="mid">En hébreu, chaque lettre a une <span class="accent">valeur numérique</span>.</p>', 170, "p2-card")
-      + f'<div class="tiles" style="top:600px">{tiles}</div>'
-      + el("personnage-03-scribe-hebreu", 410, 1076, "left:20px;bottom:-40px", "el p2-scribe"))
-SCENES.append(("p2", 12.5, 15.3, "bureau", p2))
-appear("#p2 .p2-card .card", 12.75, 30, rot=(-2, -1))
-appear("#p2 .p2-scribe", 12.8, 80, 0.9)
-TWEENS.append('tl.fromTo("#p2 .p2-t", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.8)", stagger: -0.35 }, 13.4);')
-
-# ---------- P3 Parchment: Néron César in Hebrew = 666 (15.3 – 22.7) ----------
-# Visual left-to-right order of the right-to-left word נרון קסר.
-letters = [("ר", 200), ("ס", 60), ("ק", 100), None, ("ן", 50), ("ו", 6), ("ר", 200), ("נ", 50)]
-x = 60
-html_tiles = []
-reading = []
-for item in letters:
-    if item is None:
-        x += 40
-        continue
-    l, v = item
-    html_tiles.append((x, l, v))
-    x += 128
-# Reveal right to left, the reading order of Hebrew.
-order = list(reversed(range(len(html_tiles))))
+# ===== q4 · 11.84 – 14.95 : every Hebrew letter has a value =====
+q4 = sh.scene("q4", 11.84, 14.95, "bureau", pan=(-25, 0), dark=0.1)
+q4.element("personnage-03-scribe-hebreu", 960, "left:-10px;top:560px", 12.0, "rise")
 tiles = ""
-for idx, (tx, l, v) in enumerate(html_tiles):
-    rank = order.index(idx)
-    tiles += f'<div class="tile small p3-t p3-t{rank}" style="left:{tx}px"><span class="val">{v}</span><span class="heb">{l}</span></div>'
-p3 = (
-    '<div class="head" style="top:170px"><span class="kicker">Néron César en hébreu</span>'
-    '<p class="big ink">Néron César</p></div>'
-    f'<div class="tiles" style="top:560px">{tiles}</div>'
-    '<p class="sum p3-sum" style="top:900px">50 + 200 + 6 + 50 + 100 + 60 + 200</p>'
-    '<p class="total p3-total" style="top:1010px">= 666</p>'
-)
-SCENES.append(("p3", 15.3, 22.7, "parchemin", p3))
-appear("#p3 .head", 15.55, 24)
-for rank in range(7):
-    TWEENS.append(f'tl.fromTo("#p3 .p3-t{rank}", {{ opacity: 0, y: 30, scale: 0.9 }}, {{ opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(1.8)" }}, {16.6 + rank * 0.5:.2f});')
-appear("#p3 .p3-sum", 20.0, 20, 0.6)
-TWEENS.append('tl.fromTo("#p3 .p3-total", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(2.2)" }, 21.2);')
+for k, (x, l, v) in enumerate([(380, "א", 1), (590, "ב", 2), (800, "ג", 3)]):
+    tiles += f'<div class="tile" id="t4{k}" style="left:{x - 190}px"><span class="val">{v}</span><span class="heb">{l}</span></div>'
+q4.raw(f'<div class="tiles" style="top:360px;left:190px">{tiles}</div>')
+for k, at in enumerate([T("hébreu") + 0.1, T("hébreu") + 0.55, T("hébreu") + 1.0]):
+    sh.tween(f"#t4{k}", "opacity: 0, y: 40, scale: 0.8", 'opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(2)"', at)
+    sh.sfx("tick", at)
+q4.kw("Une valeur", "left:420px;top:760px;font-size:80px", T("valeur"), "pop", rot=3, cls="gold")
 
-# ---------- P4 Rome: Néron, 54 – 68, persecutions (22.7 – 28.5) ----------
-p4 = (card('<span class="kicker">Néron · empereur de Rome</span><p class="big">54 – 68 <span class="smallcaps">apr. J.-C.</span></p>', 170, "p4-card")
-      + card('<p class="mid">Des historiens rapportent ses <span class="accent">persécutions</span> contre les chrétiens.</p>', 530, "p4-card2")
-      + el("personnage-02-neron", 470, 1150, "right:30px;bottom:-40px", "el p4-neron")
-      + el("personnage-06-chretien-priere", 400, 630, "left:30px;bottom:60px", "el p4-chretien"))
-SCENES.append(("p4", 22.7, 28.5, "rome", p4))
-appear("#p4 .p4-neron", 22.9, 100, 1.0)
-appear("#p4 .p4-card .card", 23.1, 30, rot=(-2.5, -1))
-appear("#p4 .p4-card2 .card", 25.4, 30, rot=(2, 0.8))
-appear("#p4 .p4-chretien", 25.9, 60, 0.9)
+# ===== q5 · 14.95 – 22.0 : Néron César adds up to 666 =====
+q5 = sh.scene("q5", 14.95, 21.98, "parchemin")
+q5.kw("Néron César", "left:60px;top:230px;font-size:76px", T("Néron"), "slamL", rot=-2, cls="small")
+q5.raw('<p class="hebword" id="hw" style="top:360px">נרון קסר</p>')
+sh.tween("#hw", "opacity: 0, scale: 0.8", 'opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.8)"', T("Kassar") - 0.3)
+order = [("נ", 50), ("ר", 200), ("ו", 6), ("ן", 50), ("ק", 100), ("ס", 60), ("ר", 200)]  # reading order, right to left
+xs = [1008 - 118 - 128 * i - (40 if i >= 4 else 0) for i in range(7)]  # visual x of each tile, right to left, gap between the two words
+tiles, run, tot = "", "", 0
+t0 = T("Kassar") + 0.5
+for k, ((l, v), x) in enumerate(zip(order, xs)):
+    tiles += f'<div class="tile small" id="t5{k}" style="left:{x}px"><span class="val">{v}</span><span class="heb">{l}</span></div>'
+    tot += v
+    run += f'<p class="running" id="r5{k}" style="top:960px">{tot}</p>'
+q5.raw(f'<div class="tiles" style="top:640px;left:0">{tiles}</div>')
+q5.raw(run)
+step = (T("obtient") - t0 + 0.2) / 7
+for k in range(7):
+    at = t0 + k * step
+    sh.tween(f"#t5{k}", "opacity: 0, y: 40, scale: 0.8", 'opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(2)"', at)
+    sh.tween(f"#r5{k}", "opacity: 0, scale: 0.8", 'opacity: 1, scale: 1, duration: 0.15', at + 0.05)
+    if k < 6:
+        sh.tween(f"#r5{k}", "opacity: 1", 'opacity: 0, duration: 0.1', at + step)
+    sh.sfx("tick", at)
+sh.tween("#r56", "scale: 1", 'scale: 1.4, duration: 0.3, ease: "back.out(2.5)"', T("666", 1))
+sh.sfx("riser", T("666", 1) - 1.4)
+sh.sfx("hit", T("666", 1))
+sh.flash(T("666", 1), "gold", 0.5)
+sh.punch("q5", T("666", 1), 1.05)
 
-# ---------- P5 Study: scholars, hypothesis (28.5 – 35.9) ----------
-p5 = (card('<p class="mid">Beaucoup de spécialistes pensent que Jean visait <span class="accent">ce nom</span>.</p>', 160, "p5-card")
-      + '<div class="stamp p5-stamp" style="top:520px">Hypothèse</div>'
-      + card('<p class="small">Le même calcul donne aussi d\'autres noms.</p>', 720, "p5-card2", left=150, width=780)
-      + el("personnage-04-erudit-grec", 481, 1050, "left:10px;bottom:-30px", "el p5-erudit")
-      + el("objet-07-loupe", 217, 460, "right:110px;bottom:180px", "el p5-loupe"))
-SCENES.append(("p5", 28.5, 35.9, "salle", p5))
-appear("#p5 .p5-erudit", 28.7, 80, 0.9)
-appear("#p5 .p5-card .card", 28.9, 30, rot=(-2, -1))
-appear("#p5 .p5-loupe", 29.6, 40, 0.8)
-TWEENS.append('tl.fromTo("#p5 .p5-stamp", { opacity: 0, scale: 1.8, rotation: -14 }, { opacity: 1, scale: 1, rotation: -8, duration: 0.35, ease: "power4.in" }, 31.9);')
-appear("#p5 .p5-card2 .card", 33.9, 24, rot=(1.5, 0.5))
+# ===== q6 · 21.98 – 28.67 : Nero (54-68) and the persecutions =====
+q6 = sh.scene("q6", 21.98, 28.67, "rome", pan=(30, 0))
+q6.element("personnage-02-neron", 1150, "left:560px;top:430px", 22.2, "rise", fade_bottom=True)
+q6.ref("Néron · empereur", "left:60px;top:190px", T("Néron", 2))
+q6.kw("54 – 68", "left:60px;top:300px;font-size:120px", T("54"), "pop", rot=-3, cls="gold")
+q6.kw("Persécutions", "left:40px;top:560px;font-size:96px", T("persécutions"), "pop", rot=2, cls="red")
+q6.element("personnage-06-chretien-priere", 600, "left:30px;top:800px", T("chrétiens"), "rise", fade_bottom=True)
+sh.sfx("whoosh", 21.8)
+sh.sfx("hit", T("persécutions"), 0.45)
+sh.flash(T("persécutions"), "red", 0.3)
 
-# ---------- P6 Desk: why keep the idea (35.9 – 42.9) ----------
-p6 = (card('<p class="big">Alors pourquoi garder cette idée&nbsp;?</p>', 170, "p6-card")
-      + card('<p class="mid">Elle montre comment les premiers chrétiens lisaient leur époque<span class="p6-prud">… <span class="accent">avec prudence</span>.</span></p>', 560, "p6-card2")
-      + el("personnage-06-chretien-priere", 420, 661, "right:40px;bottom:50px", "el p6-chretien"))
-SCENES.append(("p6", 35.9, 42.9, "bureau", p6))
-appear("#p6 .p6-card .card", 36.2, 30, rot=(-2, -1))
-appear("#p6 .p6-card2 .card", 38.3, 30, rot=(2, 0.6))
-appear("#p6 .p6-chretien", 38.6, 60, 0.9)
-TWEENS.append('tl.fromTo("#p6 .p6-prud", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power1.out" }, 41.5);')
+# ===== q7 · 28.67 – 35.9 : specialists, hypothesis =====
+q7 = sh.scene("q7", 28.67, 35.9, "salle", pan=(-25, 0), dark=0.08)
+q7.element("personnage-04-erudit-grec", 1050, "left:10px;top:520px", 28.8, "rise", fade_bottom=True)
+q7.element("objet-07-loupe", 460, "left:700px;top:620px", T("spécialistes"), "pop", z=8)
+q7.kw("Les spécialistes", "left:90px;top:230px;font-size:80px", T("spécialistes"), "pop", rot=-3, cls="small")
+q7.raw('<div class="stamp" id="st7" style="top:720px">Hypothèse</div>')
+sh.tween("#st7", "opacity: 0, scale: 1.8, rotation: -16", 'opacity: 1, scale: 1, rotation: -8, duration: 0.3, ease: "power4.in"', T("hypothèse"))
+sh.sfx("hit", T("hypothèse"), 0.8)
+sh.flash(T("hypothèse"), "red", 0.35)
+sh.punch("q7", T("hypothèse"), 1.06)
+q7.kw("D'autres noms ?", "left:230px;top:960px;font-size:76px", T("noms") - 0.6, "pop", rot=2, cls="dark small")
 
-# ---------- P7 Rome: the lesson (42.9 – 48.1) ----------
-p7 = (card('<span class="kicker">Ce que le texte nous apprend</span><span class="rule"></span>'
-           '<p class="big">Ne pas laisser le pouvoir décider de notre <span class="accent">fidélité</span>.</p>', 300, "p7-card")
-      + el("objet-05-balance", 440, 461, "left:320px;bottom:230px", "el p7-balance"))
-SCENES.append(("p7", 42.9, 48.1, "rome", p7))
-appear("#p7 .p7-card .card", 43.3, 40, rot=(-2.5, -1))
-TWEENS.append('tl.fromTo("#p7 .p7-card .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.inOut" }, 43.6);')
-appear("#p7 .p7-balance", 44.2, 50, 0.9)
+# ===== q8 · 35.9 – 42.9 : why keep the idea? =====
+q8 = sh.scene("q8", 35.9, 42.9, "bureau", pan=(25, 0), dark=0.1)
+q8.kw("Pourquoi ?", "left:0;width:1080px;top:250px;font-size:210px", T("pourquoi"), "pop", hero=True, tick=False)
+sh.sfx("hit", T("pourquoi"), 0.5)
+sh.flash(T("pourquoi"), "gold", 0.4)
+sh.punch("q8", T("pourquoi"), 1.05)
+q8.element("personnage-06-chretien-priere", 800, "left:260px;top:660px", T("chrétiens", 1) - 0.4, "rise", fade_bottom=True)
+q8.kw("Les premiers chrétiens", "left:90px;top:560px;font-size:66px", T("chrétiens", 1) - 0.2, "pop", rot=-3, cls="small")
+q8.kw("Avec prudence", "left:300px;top:980px;font-size:84px", T("prudence"), "pop", rot=3, cls="gold")
+sh.sfx("whoosh", 35.7)
 
-# ---------- P8 Parchment: wisdom, not a code (48.1 – 51.8) ----------
-p8 = ('<div class="head" style="top:360px"><p class="big ink">Lire ce passage,<br />c\'est chercher la sagesse,</p>'
-      '<p class="big accent p8-pas">pas un code.</p></div>'
-      + el("objet-09-codex-ferme", 330, 380, "left:220px;bottom:400px", "el p8-codex")
-      + el("objet-11-lampe-huile", 329, 220, "right:170px;bottom:420px", "el p8-lampe"))
-SCENES.append(("p8", 48.1, 51.8, "parchemin", p8))
-appear("#p8 .head .ink", 48.45, 24)
-appear("#p8 .p8-pas", 50.2, 20, 0.5, "back.out(2)")
-appear("#p8 .p8-codex", 48.8, 40, 0.8)
-appear("#p8 .p8-lampe", 49.1, 40, 0.8)
+# ===== q9 · 42.9 – 48.1 : power versus faithfulness =====
+q9 = sh.scene("q9", 42.9, 48.1, "rome", pan=(0, -15), dark=0.25)
+bal = q9.element("objet-05-balance", 560, "left:260px;top:620px", 43.1, "rise", z=8)
+sh.tween(f"#{bal}", "rotation: 0", 'rotation: -8, duration: 0.5, ease: "power2.out"', T("pouvoir"))
+sh.tween(f"#{bal}", "rotation: -8", 'rotation: 8, duration: 0.6, ease: "back.out(1.6)"', T("fidélité") - 0.1)
+q9.kw("Pouvoir", "left:40px;top:300px;font-size:100px", T("pouvoir"), "drop", rot=-4, cls="dark", tick=False)
+q9.kw("Fidélité", "left:560px;top:300px;font-size:100px", T("fidélité"), "drop", rot=4, cls="gold", tick=False)
+sh.sfx("hit", T("pouvoir"), 0.4)
+sh.sfx("hit", T("fidélité"), 0.6)
+sh.flash(T("fidélité"), "gold", 0.4)
+sh.punch("q9", T("fidélité"), 1.05)
 
-# ---------- P9 Patmos callback: comment (51.8 – 55.7) ----------
-bubble = ('<svg class="bubble" viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 '
-          'a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z" /></svg>')
-p9 = (card('<p class="mid">Quel verset de l\'Apocalypse t\'a le plus <span class="accent">intrigué</span>&nbsp;?</p>'
-           f'<span class="cta p9-cta">{bubble}Écris-le en commentaire</span>', 190, "p9-card")
-      + el("personnage-01-jean-patmos", 607, 1180, "left:-30px;bottom:-40px", "el p9-jean"))
-SCENES.append(("p9", 51.8, 55.7, "patmos", p9))
-appear("#p9 .p9-jean", 51.9, 80, 0.9)
-appear("#p9 .p9-card .card", 52.05, 30, rot=(-2, -1))
-appear("#p9 .p9-cta", 54.5, 16, 0.5)
-TWEENS.append('tl.fromTo("#p9 .bubble path", { strokeDashoffset: 420 }, { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 54.5);')
+# ===== q10 · 48.1 – 51.8 : wisdom, not a code =====
+q10 = sh.scene("q10", 48.1, 51.8, "parchemin")
+q10.element("objet-09-codex-ferme", 400, "left:130px;top:760px", 48.4, "rise", z=8)
+q10.element("objet-11-lampe-huile", 260, "left:640px;top:830px", 48.7, "rise", z=8)
+q10.kw("Sagesse", "left:0;width:1080px;top:300px;font-size:200px", T("sagesse"), "pop", hero=True, tick=False)
+sh.sfx("hit", T("sagesse"), 0.5)
+sh.flash(T("sagesse"), "gold", 0.4)
+q10.kw("Un code", "left:340px;top:560px;font-size:100px", T("code") - 0.2, "pop", rot=-3, cls="dark")
+q10.strike_line(330, 650, 760, 610, T("code") + 0.25, width=16)
 
-# ---------- P10 End card (55.7 – 60) ----------
-p10 = ('<div class="head end" style="top:560px"><span class="kicker">Abonne-toi</span><span class="rule"></span>'
-       '<p class="title ink">La Bible Simple</p><span class="rule"></span>'
-       '<p class="mid ink p10-sub">La Bible, pas à pas, sans jargon.</p></div>')
-SCENES.append(("p10", 55.7, 60, "parchemin", p10))
-appear("#p10 .kicker", 55.95, 16)
-TWEENS.append('tl.fromTo("#p10 .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.inOut", stagger: 0.15 }, 56.0);')
-appear("#p10 .title", 56.2, 24, 0.7)
-appear("#p10 .p10-sub", 56.9, 20, 0.6)
+# ===== q11 · 51.8 – 55.7 : back to Patmos, the comment question =====
+q11 = sh.scene("q11", 51.8, 55.7, "patmos", pan=(30, 0))
+q11.element("personnage-01-jean-patmos", 1200, "left:-30px;top:720px", 51.9, "rise")
+q11.kw("Quel verset ?", "left:0;width:1080px;top:300px;font-size:150px", T("verset"), "pop", hero=True, tick=False)
+sh.sfx("hit", T("verset"), 0.4)
+j = sh.uid()
+q11.raw(f'<div class="cta" id="{j}" style="top:1050px"><svg class="bubble" viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z" /></svg>Écris-le en commentaire</div>')
+q11._anim(f"#{j}", T("commentaire") - 0.25, "slamL")
+sh.tween(f"#{j} path", "strokeDashoffset: 420", 'strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut"', T("commentaire"))
+sh.sfx("mer", 51.8, 0.1)
 
-# ---------- Assemble ----------
-FADE = 0.3
-scene_html = []
-for i, (sid, start, end, decor, inner) in enumerate(SCENES):
-    s = max(0, start - (FADE / 2 if i else 0))
-    e = min(60, end + (FADE / 2 if i < len(SCENES) - 1 else 0))
-    dur = round(e - s, 3)
-    scene_html.append(
-        f'<div class="clip scene" id="{sid}" data-start="{s:.3f}" data-duration="{dur}">'
-        f'<div class="sc-in"><div class="bgset"><img class="bgimg" src="assets/decors/{decor}.jpg" />'
-        f'<img class="paper" src="assets/decors/parchemin.jpg" /><div class="vignette"></div></div>'
-        f'{inner}</div></div>')
-    TWEENS.insert(0, f'tl.fromTo("#{sid} .bgimg", {{ scale: 1.04 }}, {{ scale: 1.12, duration: {dur}, ease: "none" }}, {s:.3f});')
-    if i:
-        TWEENS.insert(0, f'tl.fromTo("#{sid} .sc-in", {{ opacity: 0 }}, {{ opacity: 1, duration: {FADE}, ease: "none" }}, {s:.3f});')
+# ===== q12 · 55.7 – 60 : end card, over Patmos so the short loops back to its hook =====
+q12 = sh.scene("q12", 55.7, DUR, "patmos", dark=0.62)
+q12.raw('<div class="head" id="end" style="top:430px"><span class="endkicker" id="ek" style="color:#f6d77f">Abonne-toi</span><span class="endrule" id="r1" style="background:#f6d77f"></span>'
+        '<p class="title" id="et" style="color:#f4ead2">La Bible Simple</p><span class="endrule" id="r2" style="background:#f6d77f"></span></div>')
+sh.tween("#ek", "opacity: 0, y: 20", 'opacity: 1, y: 0, duration: 0.5', 55.85)
+sh.tween("#r1, #r2", "scaleX: 0", 'scaleX: 1, duration: 0.8, ease: "power2.inOut"', 55.9)
+sh.tween("#et", "opacity: 0, y: 30, scale: 0.9", 'opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "back.out(1.8)"', 56.05)
+k = sh.uid()
+q12.raw(f'<div class="subpill" id="{k}" style="top:880px"><svg viewBox="0 0 24 24" fill="#f6d77f"><path d="M12 2a6 6 0 0 0-6 6v3.6L4.2 15a1 1 0 0 0 .9 1.5h13.8a1 1 0 0 0 .9-1.5L18 11.6V8a6 6 0 0 0-6-6zm0 20a3 3 0 0 0 3-3H9a3 3 0 0 0 3 3z"/></svg>S\'abonner</div>')
+q12._anim(f"#{k}", 56.4, "pop")
+sh.tween(f"#{k}", "scale: 1", 'scale: 1.07, duration: 0.45, yoyo: true, repeat: 4, ease: "sine.inOut"', 56.9)
+sh.sfx("hit", 56.4, 0.3)
 
-AUDIO = [
-    ("voix", "assets/voix.wav", 0, 60, 1),
-    ("sfx-whoosh-1", ".media/audio/sfx/sfx_004.mp3", 2.95, 2, 0.18),
-    ("sfx-mer-1", ".media/audio/sfx/sfx_002.mp3", 3.2, 9.3, 0.09),
-    ("sfx-impact-1", ".media/audio/sfx/sfx_001.mp3", 6.5, 2, 1),
-    ("sfx-whoosh-2", ".media/audio/sfx/sfx_004.mp3", 12.3, 2, 0.15),
-    ("sfx-impact-2", ".media/audio/sfx/sfx_001.mp3", 21.2, 2, 1),
-    ("sfx-stamp", ".media/audio/sfx/sfx_001.mp3", 32.15, 2, 0.45),
-    ("sfx-whoosh-3", ".media/audio/sfx/sfx_004.mp3", 35.7, 2, 0.15),
-    ("sfx-mer-2", ".media/audio/sfx/sfx_002.mp3", 51.8, 3.9, 0.08),
-    ("sfx-whoosh-4", ".media/audio/sfx/sfx_004.mp3", 55.5, 2, 0.15),
-]
-audio_html = "\n      ".join(
-    f'<audio id="{a}" src="{src}" data-start="{st}" data-duration="{d}" data-volume="{v}"></audio>'
-    for a, src, st, d, v in AUDIO)
+# ===== sound bed =====
+sh.audio.insert(0, ("ambiance", "assets/audio/ambiance.wav", 0, DUR, 0.16))
 
-motes = "".join(
-    f'<i class="mote" style="left:{(i * 137) % 1000 + 40}px;top:{(i * 263) % 1700 + 100}px;'
-    f'width:{3 + (i * 7) % 5}px;height:{3 + (i * 7) % 5}px;opacity:{0.2 + ((i * 11) % 5) * 0.07:.2f}"></i>'
-    for i in range(18))
-TWEENS.append('gsap.utils.toArray(".mote").forEach((m, i) => { tl.fromTo(m, { y: 0, x: 0 }, { y: -260 - (i % 4) * 60, x: ((i % 3) - 1) * 50, duration: 60, ease: "none" }, 0); });')
-
-template = open("template.tpl").read()
-out = (template.replace("{{SCENES}}", "\n      ".join(scene_html))
-       .replace("{{AUDIO}}", audio_html)
-       .replace("{{MOTES}}", motes)
-       .replace("{{TWEENS}}", "\n      ".join(TWEENS)))
-open("index.html", "w").write(out)
-print("scenes:", len(SCENES), "tweens:", len(TWEENS))
+sh.build(os.path.join(HERE, "..", "template-short.tpl"))

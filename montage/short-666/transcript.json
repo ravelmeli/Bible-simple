@@ -1,0 +1,932 @@
+[
+  {
+    "text": "Un",
+    "start": 0.16,
+    "end": 0.24,
+    "id": "w0"
+  },
+  {
+    "text": "nombre",
+    "start": 0.24,
+    "end": 0.66,
+    "id": "w1"
+  },
+  {
+    "text": "peut-il",
+    "start": 0.66,
+    "end": 1.2,
+    "id": "w2"
+  },
+  {
+    "text": "cacher",
+    "start": 1.29,
+    "end": 1.73,
+    "id": "w3"
+  },
+  {
+    "text": "le",
+    "start": 1.73,
+    "end": 1.89,
+    "id": "w4"
+  },
+  {
+    "text": "nom",
+    "start": 1.89,
+    "end": 2.12,
+    "id": "w5"
+  },
+  {
+    "text": "d'un",
+    "start": 2.14,
+    "end": 2.46,
+    "id": "w6"
+  },
+  {
+    "text": "homme?",
+    "start": 2.46,
+    "end": 3.22,
+    "id": "w7"
+  },
+  {
+    "text": "Depuis",
+    "start": 3.4,
+    "end": 3.57,
+    "id": "w8"
+  },
+  {
+    "text": "Patmos,",
+    "start": 3.57,
+    "end": 4.03,
+    "id": "w9"
+  },
+  {
+    "text": "Jean",
+    "start": 4.03,
+    "end": 4.21,
+    "id": "w10"
+  },
+  {
+    "text": "donne",
+    "start": 4.31,
+    "end": 4.57,
+    "id": "w11"
+  },
+  {
+    "text": "une",
+    "start": 4.57,
+    "end": 4.75,
+    "id": "w12"
+  },
+  {
+    "text": "énigme,",
+    "start": 4.75,
+    "end": 5.26,
+    "id": "w13"
+  },
+  {
+    "text": "le",
+    "start": 5.26,
+    "end": 5.46,
+    "id": "w14"
+  },
+  {
+    "text": "nombre",
+    "start": 5.46,
+    "end": 5.91,
+    "id": "w15"
+  },
+  {
+    "text": "666.",
+    "start": 6.36,
+    "end": 7.28,
+    "id": "w16"
+  },
+  {
+    "text": "Il",
+    "start": 7.28,
+    "end": 7.68,
+    "id": "w17"
+  },
+  {
+    "text": "ajoute",
+    "start": 7.68,
+    "end": 8.08,
+    "id": "w18"
+  },
+  {
+    "text": "que",
+    "start": 8.08,
+    "end": 8.48,
+    "id": "w19"
+  },
+  {
+    "text": "celui",
+    "start": 8.48,
+    "end": 8.6,
+    "id": "w20"
+  },
+  {
+    "text": "qui",
+    "start": 8.6,
+    "end": 8.85,
+    "id": "w21"
+  },
+  {
+    "text": "a",
+    "start": 8.85,
+    "end": 8.93,
+    "id": "w22"
+  },
+  {
+    "text": "de",
+    "start": 8.93,
+    "end": 9.09,
+    "id": "w23"
+  },
+  {
+    "text": "l'intelligence",
+    "start": 9.09,
+    "end": 10.25,
+    "id": "w24"
+  },
+  {
+    "text": "calcule",
+    "start": 10.25,
+    "end": 10.82,
+    "id": "w25"
+  },
+  {
+    "text": "ce",
+    "start": 10.82,
+    "end": 10.93,
+    "id": "w26"
+  },
+  {
+    "text": "nombre.",
+    "start": 11.45,
+    "end": 11.84,
+    "id": "w27"
+  },
+  {
+    "text": "En",
+    "start": 11.84,
+    "end": 12.227,
+    "id": "w28"
+  },
+  {
+    "text": "hébreu,",
+    "start": 12.227,
+    "end": 12.613,
+    "id": "w29"
+  },
+  {
+    "text": "chaque",
+    "start": 12.613,
+    "end": 13,
+    "id": "w30"
+  },
+  {
+    "text": "lettre",
+    "start": 13,
+    "end": 13.38,
+    "id": "w31"
+  },
+  {
+    "text": "a",
+    "start": 13.38,
+    "end": 13.45,
+    "id": "w32"
+  },
+  {
+    "text": "une",
+    "start": 13.45,
+    "end": 13.65,
+    "id": "w33"
+  },
+  {
+    "text": "valeur",
+    "start": 13.69,
+    "end": 14.05,
+    "id": "w34"
+  },
+  {
+    "text": "numérique.",
+    "start": 14.08,
+    "end": 14.95,
+    "id": "w35"
+  },
+  {
+    "text": "Si",
+    "start": 14.95,
+    "end": 15.335,
+    "id": "w36"
+  },
+  {
+    "text": "on",
+    "start": 15.335,
+    "end": 15.72,
+    "id": "w37"
+  },
+  {
+    "text": "écrit",
+    "start": 15.72,
+    "end": 15.91,
+    "id": "w38"
+  },
+  {
+    "text": "Néron",
+    "start": 15.91,
+    "end": 16.37,
+    "id": "w39"
+  },
+  {
+    "text": "César,",
+    "start": 16.43,
+    "end": 17.16,
+    "id": "w40"
+  },
+  {
+    "text": "Néron",
+    "start": 17.16,
+    "end": 17.67,
+    "id": "w41"
+  },
+  {
+    "text": "Kassar,",
+    "start": 17.67,
+    "end": 18.6,
+    "id": "w42"
+  },
+  {
+    "text": "et",
+    "start": 18.6,
+    "end": 18.7,
+    "id": "w43"
+  },
+  {
+    "text": "qu'on",
+    "start": 18.7,
+    "end": 18.94,
+    "id": "w44"
+  },
+  {
+    "text": "additionne",
+    "start": 18.94,
+    "end": 19.48,
+    "id": "w45"
+  },
+  {
+    "text": "les",
+    "start": 19.48,
+    "end": 19.64,
+    "id": "w46"
+  },
+  {
+    "text": "lettres,",
+    "start": 19.64,
+    "end": 20.18,
+    "id": "w47"
+  },
+  {
+    "text": "on",
+    "start": 20.18,
+    "end": 20.35,
+    "id": "w48"
+  },
+  {
+    "text": "obtient",
+    "start": 20.35,
+    "end": 20.76,
+    "id": "w49"
+  },
+  {
+    "text": "666.",
+    "start": 21.08,
+    "end": 21.98,
+    "id": "w50"
+  },
+  {
+    "text": "Néron",
+    "start": 21.98,
+    "end": 22.48,
+    "id": "w51"
+  },
+  {
+    "text": "a",
+    "start": 22.48,
+    "end": 22.98,
+    "id": "w52"
+  },
+  {
+    "text": "régné",
+    "start": 22.98,
+    "end": 23.09,
+    "id": "w53"
+  },
+  {
+    "text": "de",
+    "start": 23.22,
+    "end": 23.29,
+    "id": "w54"
+  },
+  {
+    "text": "54",
+    "start": 23.29,
+    "end": 23.87,
+    "id": "w55"
+  },
+  {
+    "text": "à",
+    "start": 23.92,
+    "end": 23.97,
+    "id": "w56"
+  },
+  {
+    "text": "68,",
+    "start": 24.08,
+    "end": 24.9,
+    "id": "w57"
+  },
+  {
+    "text": "et",
+    "start": 24.9,
+    "end": 25,
+    "id": "w58"
+  },
+  {
+    "text": "des",
+    "start": 25,
+    "end": 25.15,
+    "id": "w59"
+  },
+  {
+    "text": "historiens",
+    "start": 25.15,
+    "end": 25.65,
+    "id": "w60"
+  },
+  {
+    "text": "rapportent",
+    "start": 25.65,
+    "end": 26.17,
+    "id": "w61"
+  },
+  {
+    "text": "ses",
+    "start": 26.2,
+    "end": 26.32,
+    "id": "w62"
+  },
+  {
+    "text": "persécutions",
+    "start": 26.32,
+    "end": 26.86,
+    "id": "w63"
+  },
+  {
+    "text": "contre",
+    "start": 27.03,
+    "end": 27.24,
+    "id": "w64"
+  },
+  {
+    "text": "les",
+    "start": 27.24,
+    "end": 27.39,
+    "id": "w65"
+  },
+  {
+    "text": "chrétiens.",
+    "start": 27.39,
+    "end": 28.06,
+    "id": "w66"
+  },
+  {
+    "text": "Beaucoup",
+    "start": 28.67,
+    "end": 29.07,
+    "id": "w67"
+  },
+  {
+    "text": "de",
+    "start": 29.07,
+    "end": 29.17,
+    "id": "w68"
+  },
+  {
+    "text": "spécialistes",
+    "start": 29.17,
+    "end": 29.79,
+    "id": "w69"
+  },
+  {
+    "text": "pensent",
+    "start": 29.79,
+    "end": 30.15,
+    "id": "w70"
+  },
+  {
+    "text": "que",
+    "start": 30.15,
+    "end": 30.3,
+    "id": "w71"
+  },
+  {
+    "text": "Jean",
+    "start": 30.3,
+    "end": 30.51,
+    "id": "w72"
+  },
+  {
+    "text": "visait",
+    "start": 30.51,
+    "end": 30.78,
+    "id": "w73"
+  },
+  {
+    "text": "ce",
+    "start": 30.81,
+    "end": 30.91,
+    "id": "w74"
+  },
+  {
+    "text": "nom.",
+    "start": 30.91,
+    "end": 31.3,
+    "id": "w75"
+  },
+  {
+    "text": "Mais",
+    "start": 31.3,
+    "end": 31.59,
+    "id": "w76"
+  },
+  {
+    "text": "ce",
+    "start": 31.59,
+    "end": 31.88,
+    "id": "w77"
+  },
+  {
+    "text": "n'est",
+    "start": 31.88,
+    "end": 32.07,
+    "id": "w78"
+  },
+  {
+    "text": "qu'une",
+    "start": 32.12,
+    "end": 32.49,
+    "id": "w79"
+  },
+  {
+    "text": "hypothèse.",
+    "start": 32.49,
+    "end": 33.34,
+    "id": "w80"
+  },
+  {
+    "text": "Le",
+    "start": 33.34,
+    "end": 33.645,
+    "id": "w81"
+  },
+  {
+    "text": "même",
+    "start": 33.645,
+    "end": 33.95,
+    "id": "w82"
+  },
+  {
+    "text": "calcul",
+    "start": 33.95,
+    "end": 34.06,
+    "id": "w83"
+  },
+  {
+    "text": "donne",
+    "start": 34.18,
+    "end": 34.36,
+    "id": "w84"
+  },
+  {
+    "text": "aussi",
+    "start": 34.36,
+    "end": 34.66,
+    "id": "w85"
+  },
+  {
+    "text": "d'autres",
+    "start": 34.66,
+    "end": 35.14,
+    "id": "w86"
+  },
+  {
+    "text": "noms.",
+    "start": 35.14,
+    "end": 35.58,
+    "id": "w87"
+  },
+  {
+    "text": "Alors",
+    "start": 35.58,
+    "end": 36.5,
+    "id": "w88"
+  },
+  {
+    "text": "pourquoi",
+    "start": 36.5,
+    "end": 36.72,
+    "id": "w89"
+  },
+  {
+    "text": "garder",
+    "start": 36.72,
+    "end": 37.25,
+    "id": "w90"
+  },
+  {
+    "text": "cette",
+    "start": 37.25,
+    "end": 37.69,
+    "id": "w91"
+  },
+  {
+    "text": "idée?",
+    "start": 37.7,
+    "end": 38.32,
+    "id": "w92"
+  },
+  {
+    "text": "Parce",
+    "start": 38.32,
+    "end": 38.56,
+    "id": "w93"
+  },
+  {
+    "text": "qu'elle",
+    "start": 38.56,
+    "end": 38.81,
+    "id": "w94"
+  },
+  {
+    "text": "montre",
+    "start": 38.81,
+    "end": 39.06,
+    "id": "w95"
+  },
+  {
+    "text": "comment",
+    "start": 39.06,
+    "end": 39.31,
+    "id": "w96"
+  },
+  {
+    "text": "les",
+    "start": 39.41,
+    "end": 39.47,
+    "id": "w97"
+  },
+  {
+    "text": "premiers",
+    "start": 39.47,
+    "end": 39.8,
+    "id": "w98"
+  },
+  {
+    "text": "chrétiens",
+    "start": 39.8,
+    "end": 40.16,
+    "id": "w99"
+  },
+  {
+    "text": "lisaient",
+    "start": 40.16,
+    "end": 40.47,
+    "id": "w100"
+  },
+  {
+    "text": "leur",
+    "start": 40.47,
+    "end": 40.64,
+    "id": "w101"
+  },
+  {
+    "text": "époque.",
+    "start": 40.64,
+    "end": 41.01,
+    "id": "w102"
+  },
+  {
+    "text": "Avec",
+    "start": 41.01,
+    "end": 41.61,
+    "id": "w103"
+  },
+  {
+    "text": "prudence.",
+    "start": 41.61,
+    "end": 42.49,
+    "id": "w104"
+  },
+  {
+    "text": "Ce",
+    "start": 42.49,
+    "end": 42.716,
+    "id": "w105"
+  },
+  {
+    "text": "que",
+    "start": 42.716,
+    "end": 42.942,
+    "id": "w106"
+  },
+  {
+    "text": "le",
+    "start": 42.942,
+    "end": 43.168,
+    "id": "w107"
+  },
+  {
+    "text": "texte",
+    "start": 43.168,
+    "end": 43.394,
+    "id": "w108"
+  },
+  {
+    "text": "nous",
+    "start": 43.394,
+    "end": 43.62,
+    "id": "w109"
+  },
+  {
+    "text": "apprend",
+    "start": 43.62,
+    "end": 44.02,
+    "id": "w110"
+  },
+  {
+    "text": "surtout,",
+    "start": 44.02,
+    "end": 44.58,
+    "id": "w111"
+  },
+  {
+    "text": "ne",
+    "start": 44.67,
+    "end": 44.77,
+    "id": "w112"
+  },
+  {
+    "text": "pas",
+    "start": 44.77,
+    "end": 44.95,
+    "id": "w113"
+  },
+  {
+    "text": "laisser",
+    "start": 44.98,
+    "end": 45.42,
+    "id": "w114"
+  },
+  {
+    "text": "le",
+    "start": 45.42,
+    "end": 45.55,
+    "id": "w115"
+  },
+  {
+    "text": "pouvoir",
+    "start": 45.55,
+    "end": 46.01,
+    "id": "w116"
+  },
+  {
+    "text": "décider",
+    "start": 46.01,
+    "end": 46.46,
+    "id": "w117"
+  },
+  {
+    "text": "de",
+    "start": 46.46,
+    "end": 46.6,
+    "id": "w118"
+  },
+  {
+    "text": "notre",
+    "start": 46.6,
+    "end": 46.91,
+    "id": "w119"
+  },
+  {
+    "text": "fidélité.",
+    "start": 46.92,
+    "end": 47.68,
+    "id": "w120"
+  },
+  {
+    "text": "Lire",
+    "start": 47.68,
+    "end": 48.135,
+    "id": "w121"
+  },
+  {
+    "text": "ce",
+    "start": 48.135,
+    "end": 48.59,
+    "id": "w122"
+  },
+  {
+    "text": "passage,",
+    "start": 48.59,
+    "end": 48.73,
+    "id": "w123"
+  },
+  {
+    "text": "c'est",
+    "start": 48.73,
+    "end": 49.08,
+    "id": "w124"
+  },
+  {
+    "text": "chercher",
+    "start": 49.08,
+    "end": 49.64,
+    "id": "w125"
+  },
+  {
+    "text": "la",
+    "start": 49.64,
+    "end": 49.75,
+    "id": "w126"
+  },
+  {
+    "text": "sagesse,",
+    "start": 49.78,
+    "end": 50.41,
+    "id": "w127"
+  },
+  {
+    "text": "pas",
+    "start": 50.41,
+    "end": 50.61,
+    "id": "w128"
+  },
+  {
+    "text": "un",
+    "start": 50.61,
+    "end": 50.76,
+    "id": "w129"
+  },
+  {
+    "text": "code.",
+    "start": 50.76,
+    "end": 51.15,
+    "id": "w130"
+  },
+  {
+    "text": "Quel",
+    "start": 51.15,
+    "end": 51.6,
+    "id": "w131"
+  },
+  {
+    "text": "verset",
+    "start": 51.6,
+    "end": 52.05,
+    "id": "w132"
+  },
+  {
+    "text": "de",
+    "start": 52.05,
+    "end": 52.14,
+    "id": "w133"
+  },
+  {
+    "text": "l'Apocalypse",
+    "start": 52.21,
+    "end": 53.01,
+    "id": "w134"
+  },
+  {
+    "text": "t'a",
+    "start": 53.01,
+    "end": 53.22,
+    "id": "w135"
+  },
+  {
+    "text": "le",
+    "start": 53.22,
+    "end": 53.33,
+    "id": "w136"
+  },
+  {
+    "text": "plus",
+    "start": 53.37,
+    "end": 53.65,
+    "id": "w137"
+  },
+  {
+    "text": "intrigué?",
+    "start": 53.65,
+    "end": 54.54,
+    "id": "w138"
+  },
+  {
+    "text": "Écris-le",
+    "start": 54.55,
+    "end": 54.81,
+    "id": "w139"
+  },
+  {
+    "text": "en",
+    "start": 54.81,
+    "end": 54.88,
+    "id": "w140"
+  },
+  {
+    "text": "commentaire.",
+    "start": 54.88,
+    "end": 55.43,
+    "id": "w141"
+  },
+  {
+    "text": "Et",
+    "start": 55.43,
+    "end": 55.94,
+    "id": "w142"
+  },
+  {
+    "text": "abonne-toi",
+    "start": 55.94,
+    "end": 56.15,
+    "id": "w143"
+  },
+  {
+    "text": "pour",
+    "start": 56.18,
+    "end": 56.39,
+    "id": "w144"
+  },
+  {
+    "text": "continuer",
+    "start": 56.39,
+    "end": 56.92,
+    "id": "w145"
+  },
+  {
+    "text": "à",
+    "start": 56.92,
+    "end": 56.94,
+    "id": "w146"
+  },
+  {
+    "text": "découvrir",
+    "start": 57.03,
+    "end": 57.51,
+    "id": "w147"
+  },
+  {
+    "text": "la",
+    "start": 57.51,
+    "end": 57.63,
+    "id": "w148"
+  },
+  {
+    "text": "Bible,",
+    "start": 57.63,
+    "end": 58.03,
+    "id": "w149"
+  },
+  {
+    "text": "pas",
+    "start": 58.03,
+    "end": 58.21,
+    "id": "w150"
+  },
+  {
+    "text": "à",
+    "start": 58.21,
+    "end": 58.27,
+    "id": "w151"
+  },
+  {
+    "text": "pas,",
+    "start": 58.27,
+    "end": 58.63,
+    "id": "w152"
+  },
+  {
+    "text": "sans",
+    "start": 58.9,
+    "end": 58.99,
+    "id": "w153"
+  },
+  {
+    "text": "jargon.",
+    "start": 58.99,
+    "end": 59.5,
+    "id": "w154"
+  }
+]
