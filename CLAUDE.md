@@ -27,8 +27,19 @@ Committer et pousser à chaque étape qui produit des fichiers.
 
 ## Styles visuels
 
-- **Style 01 « Parchemin aquarelle »** : style actuel, figé dans `styles/style-01-parchemin-aquarelle.md`. Ne pas le modifier pour tester un autre style : créer un nouveau fichier `styles/style-NN-<nom>.md`, un gabarit séparé et un dossier de projet distinct.
-- **Style 02 « Explainer à autocollants »** (en test, inspiré de PaperClip) : `styles/style-02-autocollants-explainer.md`. Photos réelles détourées à liseré blanc, grande toile et caméra continue, infographies exactes, accent orange unique.
+- **Style 01 « Parchemin aquarelle »** : style des quatre premiers shorts, figé dans `styles/style-01-parchemin-aquarelle.md`. Ne pas le modifier pour tester un autre style : créer un nouveau fichier `styles/style-NN-<nom>.md`, un gabarit séparé et un dossier de projet distinct.
+- **Style 02 « Explainer à autocollants »** (inspiré de PaperClip) : **style par défaut des nouvelles vidéos**, sauf si l'utilisateur demande le style 01. Détail dans `styles/style-02-autocollants-explainer.md`. Photos réelles détourées à liseré blanc, personnages aquarelle en autocollants, grande toile et caméra continue, infographies exactes, accent orange unique. Modèle : `montage/short-esther-02/` (`build.py` + `template.tpl`).
+
+### Déroulé propre au style 02 (remplace les étapes 3, 6 et 7 du déroulé général)
+
+Les images viennent de trois sources :
+1. **Générées par l'utilisateur (Nano Banana), sur prompts fournis** : seulement ce qu'aucune photo réelle ne montre, surtout les personnages (en général une seule planche de 6 personnages, en pied et en gros plan, dans le style aquarelle du style 01 pour garder une identité constante), parfois une scène précise. Pas de décors : le fond est la toile claire à grille de points.
+2. **Cherchées sur internet par Claude** : photos d'objets et de lieux réels (pièces, sceaux, manuscrits, reliefs, sites), uniquement en domaine public ou licence libre compatible avec un usage commercial (Met Open Access `/public/collection/v1.1/search?...&isPublicDomain=true`, autres musées en accès ouvert, Wikimedia Commons). Vérifier la licence de chaque image une par une et la noter dans `CREDITS.md` (titre, institution, lien, licence). Jamais d'image sans licence claire, jamais de marque ni de personne réelle identifiable. Détourage (`npx hyperframes remove-background`, ou par couleur de fond pour les fonds studio unis), puis liseré blanc et ombre. **Montrer la sélection à l'utilisateur avant le montage.**
+3. **Fabriquées par Claude** : cartes (fond Natural Earth, domaine public ; tracés historiques annoncés « schématiques »), chronologies, compteurs, schémas, grilles, tableaux.
+
+Ordre : titre et format → script validé → en parallèle, prompts des personnages pour l'utilisateur et recherche des photos par Claude (sélection montrée) → voix off → transcription → détourage et autocollants → montage → brouillon → finalisation.
+
+Si une collection en ligne est inaccessible depuis l'environnement, le dire et passer à une autre. Pour les sujets abstraits (grâce, prière), prévoir plus d'infographies et de personnages, moins de photos.
 
 ## Charte visuelle du style 01 (détail dans `design.md`)
 
@@ -72,4 +83,5 @@ Après la publication
 - `montage/short-marque-sceau/` : deuxième short ; la version 2 (style rétention) a un rendu brouillon.
 - `montage/short-noe/` : troisième short ; version complète avec effets de la bibliothèque et musique MusicGen (modèle de référence pour le son).
 - `montage/common.py`, `montage/template-short.tpl`, `montage/gen_music.py` (musique), `montage/synth_audio.py` (anciens sons synthétisés, graves inaudibles sur téléphone : à éviter) : base proposée pour les prochains montages (constructeur de plans calés sur la transcription, gabarit commun, sons synthétisés sans droits). Essayée seulement sur le brouillon v2 de « marque et sceau » : la relire avant de s'en servir.
+- `montage/short-esther-02/` : short Esther en style 02 (version 2 avec toutes les améliorations) ; modèle de référence du style 02.
 - `montage/test-short-9x16/` : tests de style (v1 à v3).
