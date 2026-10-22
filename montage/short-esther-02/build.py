@@ -63,18 +63,21 @@ def pop(i, t, rot=-3):
     tween(f"#{i}", f"opacity: 0, scale: 0.55, rotation: {rot - 8}", f'opacity: 1, scale: 1, rotation: {rot}, duration: 0.6, ease: "back.out(1.9)"', t)
 
 
-def sticker(station, name, x, y, w, t, rot=-3, label=None, sub=None, lab_dx=0, lab_dy=0, side="right"):
+def sticker(station, name, x, y, w, t, rot=-3, label=None, sub=None, lab_dx=0, lab_dy=0, side="right", instant=False):
     iw, ih = Image.open(os.path.join(HERE, "assets/stickers", name + ".png")).size
     h = round(ih * w / iw)
     i = put(station, x, y, f'<img src="assets/stickers/{name}.png" style="width:{w}px;height:{h}px" />', "sticker")
-    pop(i, t, rot)
-    sfx("pop", t, 0.32)
+    if instant:
+        tween(f"#{i}", f"opacity: 1, scale: 1.14, rotation: {rot - 3}", f'opacity: 1, scale: 1, rotation: {rot}, duration: 0.9, ease: "power3.out"', t)
+    else:
+        pop(i, t, rot)
+        sfx("pop", t, 0.32)
     if label:
         lx = x + w + 30 if side == "right" else x - 330
         ly = y + h // 2 - 40 + lab_dy
         lx += lab_dx
-        leader(station, (x + w * (0.85 if side == "right" else 0.15), y + h * 0.5), (lx if side == "right" else lx + 300, ly + 22), t + 0.25)
-        label_box(station, lx, ly, label, sub, t + 0.35)
+        leader(station, (x + w * (0.85 if side == "right" else 0.15), y + h * 0.5), (lx if side == "right" else lx + 300, ly + 22), t + 0.1)
+        label_box(station, lx, ly, label, sub, t + 0.15)
     return i, h
 
 
@@ -90,9 +93,9 @@ def leader(station, a, b, t):
     tween(f"#{i} circle", "scale: 0, transformOrigin: \"50% 50%\"", 'scale: 1, duration: 0.25, ease: "back.out(3)"', t)
 
 
-def label_box(station, x, y, title, sub, t):
+def label_box(station, x, y, title, sub, t, dark=False):
     inner = f'<b>{title}</b>' + (f'<span>{sub}</span>' if sub else "")
-    i = put(station, x, y, inner, "label")
+    i = put(station, x, y, inner, "label dark" if dark else "label")
     blur_in(i, t, 10)
     sfx("click", t, 0.5)
     return i
@@ -168,100 +171,122 @@ def cam(t, station, scale=1.0):
 # ================================================================ STORY
 S1, S2, S3 = (0, 0), (1, 0), (2, 0)
 S4, S5, S6 = (2, 1), (1, 1), (0, 1)
-S7, S9 = (0, 2), (2, 2)
+S7, S8, S9 = (0, 2), (1, 2), (2, 2)
 S10, S11, S12 = (2, 3), (1, 3), (0, 3)
 S13 = (0, 4)
 
-# --- S1 · 0 – 5.74 · hook: entering uninvited means death (Est 4:11)
+# --- S1 · 0 – 5.62 · hook: the guard is on screen from the very first frame (Est 4:11)
 cam(0, S1)
+g, gh = sticker(S1, "tete-garde-perse", 50, 600, 640, 0.0, rot=-4, instant=True)
+label_box(S1, 60, 600 + gh + 20, "Garde perse", "relief, v. 486–465 av. J.-C.", 0.6)
 headline(S1, 300, ["Entrer chez le roi", "sans [invitation] ?"], 0.0, kicker="Explication · Esther", hl_t=T("sans") + 0.2, size=100)
-sticker(S1, "tete-garde-perse", 90, 760, 560, 0.35, rot=-4, label="Garde perse", sub="relief, v. 486–465 av. J.-C.")
-tag(S1, 600, 1130, "= la mort", T("mort"), "acc", 64)
-ref(S1, 600, 1230, "Esther 4.11", T("mort") + 0.2)
+tag(S1, 60, 1250, "= la mort", T("mort"), "acc", 64)
+ref(S1, 380, 1268, "Esther 4.11", T("mort") + 0.2)
+sticker(S1, "esther-pied", 730, 640, 300, T("reine", 0) - 0.3, rot=3)
 hit(T("mort"), 1.0)
 
-# --- S2 · 5.74 – 10.82 · Esther, queen of Persia, secretly Jewish (Est 2:10)
+# --- S2 · 5.62 – 10.7 · Esther, queen of Persia, secretly Jewish (Est 2:10)
 cam(5.62, S2)
 headline(S2, 300, ["Esther,", "reine de [Perse]"], T("esther") - 0.3, kicker="Le personnage", hl_t=T("perse"), size=104)
-sticker(S2, "daric-roi", 80, 700, 420, 6.2, rot=5, label="Le roi de Perse", sub="daric en or, IVe s. av. J.-C.", lab_dy=-90)
-sticker(S2, "rouleau-esther", 600, 820, 300, 7.0, rot=-6)
-label_box(S2, 560, 1180, "Le livre d'Esther", "rouleau, XVIIIe s.", 7.4)
-tag(S2, 80, 1190, "Secret : elle est juive", T("juive"), "acc", 46)
-ref(S2, 80, 1285, "Esther 2.10", T("juive") + 0.2)
+sticker(S2, "esther-portrait", 40, 590, 540, 5.9, rot=-3)
+d_, dh = sticker(S2, "daric-roi", 620, 600, 380, 6.6, rot=5)
+label_box(S2, 620, 600 + dh + 20, "Le roi de Perse", "daric en or, IVe s. av. J.-C.", 6.8)
+tag(S2, 40, 1270, "Secret : elle est juive", T("juive"), "acc", 48)
+ref(S2, 620, 1284, "Esther 2.10", T("juive") + 0.2)
 
-# --- S3 · 10.82 – 17.98 · Haman's decree to every province, one single day (Est 1:1, 3:12-13)
+# --- S3 · 10.7 – 17.85 · the decree spreads over 127 provinces, from India to Ethiopia (Est 1:1, 3:12-13)
 cam(10.7, S3)
 headline(S3, 280, ["Le [décret] de Haman"], T("haman") - 0.3, kicker="Le danger", hl_t=T("décret"), size=92)
-sticker(S3, "tablette-scellee", 70, 470, 360, T("décret") - 0.2, rot=-5, label="Document scellé", sub="tablette perse, v. 500 av. J.-C.", lab_dy=-10)
-grid_id = uid()
-tiles = "".join(f'<i id="{grid_id}t{k}"></i>' for k in range(127))
-gi = put(S3, 70, 800, f'<div class="grid">{tiles}</div>', "gridwrap")
-blur_in(gi, T("décret") + 0.1, 12)
-for k in range(127):
-    tween(f"#{grid_id}t{k}", 'backgroundColor: "#CBD3DC"', f'backgroundColor: "{ACC}", duration: 0.08', T("décret") + 0.35 + k * 0.018)
-counter(S3, 760, 790, 0, 127, T("décret") + 0.35, 127 * 0.018, "", 120, "small")
-label_box(S3, 760, 930, "provinces", "tout l'empire", T("décret") + 0.6)
-tag(S3, 70, 1300, "Exécution : 1 seul jour", T("jour") - 0.15, "acc", 50)
-ref(S3, 690, 1314, "Esther 1.1 · 3.13", T("jour"))
+MAP = json.load(open(os.path.join(HERE, "assets/map.json")))
+MW_SHOW = 770
+mscale = MW_SHOW / MAP["w"]
+mid = uid()
+land = "".join(f'<path class="land" d="{d}"/>' for d in MAP["land"])
+dots = "".join(f'<circle class="pdot" id="{mid}p{k}" cx="{x:.1f}" cy="{y:.1f}" r="7"/>' for k, (x, y) in enumerate(MAP["points"]))
+pl = "".join(f'<g class="place" id="{mid}{i}"><circle cx="{x:.1f}" cy="{y:.1f}" r="10"/><text x="{x + 16:.1f}" y="{y + 9:.1f}">{name}</text></g>'
+             for i, (name, (x, y)) in enumerate(MAP["places"].items()))
+mi = put(S3, 40, 560, f'<svg class="map" width="{MW_SHOW}" height="{round(MAP["h"] * mscale)}" viewBox="0 0 {MAP["w"]} {MAP["h"]}">'
+         f'{land}<path class="empire" id="{mid}e" d="{MAP["empire"]}"/>{dots}{pl}</svg>', "mapwrap")
+blur_in(mi, T("haman") - 0.1, 14)
+tween(f"#{mid}e", "fillOpacity: 0, strokeDashoffset: 3000", 'fillOpacity: 1, strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut"', T("décret"))
+for k in range(len(MAP["points"])):
+    tween(f"#{mid}p{k}", "opacity: 0, scale: 0, transformOrigin: \"50% 50%\"", 'opacity: 1, scale: 1, duration: 0.18, ease: "back.out(3)"',
+          T("décret") + 0.4 + k * 0.022)
+for i in range(len(MAP["places"])):
+    tween(f"#{mid}{i}", "opacity: 0", 'opacity: 1, duration: 0.3', T("décret") + 0.2 + i * 0.25)
+sticker(S3, "haman", 830, 520, 190, T("haman") - 0.1, rot=4)
+counter(S3, 40, 1150, 0, 127, T("décret") + 0.4, 127 * 0.022, " provinces", 110, "small")
+label_box(S3, 610, 1160, "De l'Inde à l'Éthiopie", "Esther 1.1 · tracé schématique", T("décret") + 0.8)
+tag(S3, 40, 1300, "Exécution : 1 seul jour", T("jour") - 0.15, "acc", 50)
+ref(S3, 690, 1314, "Esther 3.13", T("jour"))
 hit(T("décret"), 0.8)
 
-# --- S4 · 17.98 – 22.98 · the scepter rule as a decision chart (Est 4:11)
+# --- S4 · 17.85 – 22.85 · the scepter rule as a decision chart (Est 4:11)
 cam(17.85, S4)
 headline(S4, 280, ["Seul le [sceptre d'or]"], 18.0, kicker="La loi du palais", hl_t=T("sceptre"), size=92)
 tag(S4, 70, 470, "Esther hésite", T("hésite"), "", 40)
 ref(S4, 760, 482, "Esther 4.11", T("hésite") + 0.2)
-f1 = put(S4, 290, 600, "Entrer sans être appelé", "box")
+f1 = put(S4, 290, 640, "Entrer sans être appelé", "box")
 blur_in(f1, 19.2, 14)
-f2 = put(S4, 230, 790, "Le roi tend-il<br>son sceptre d'or ?", "box q")
+f2 = put(S4, 230, 860, "Le roi tend-il<br>son sceptre d'or ?", "box q")
 blur_in(f2, T("sceptre"), 14)
 sx4, sy4 = st(*S4)
 arrows = uid()
 html.append(f'<svg class="node lead arrows" id="{arrows}" style="left:{sx4}px;top:{sy4}px" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
-            f'<path class="a0" d="M540 690 L540 780" stroke-dasharray="100"/>'
-            f'<path class="a1" d="M380 950 L240 1060" stroke-dasharray="200"/>'
-            f'<path class="a2" d="M700 950 L840 1060" stroke-dasharray="200"/></svg>')
-tween(f"#{arrows} .a0", "strokeDashoffset: 100", 'strokeDashoffset: 0, duration: 0.3', T("sceptre") - 0.2)
-tween(f"#{arrows} .a1, #{arrows} .a2", "strokeDashoffset: 200", 'strokeDashoffset: 0, duration: 0.4, stagger: 0.15', T("sceptre") + 0.4)
-no = put(S4, 90, 1070, "<small>Non</small>Mort", "box out")
-yes = put(S4, 690, 1070, "<small>Oui</small>Vie", "box out")
+            f'<path class="a0" d="M540 748 L540 852" stroke-dasharray="110"/>'
+            f'<path class="a1" d="M380 1014 L240 1172" stroke-dasharray="220"/>'
+            f'<path class="a2" d="M700 1014 L840 1172" stroke-dasharray="220"/></svg>')
+tween(f"#{arrows} .a0", "strokeDashoffset: 110", 'strokeDashoffset: 0, duration: 0.3', T("sceptre") - 0.2)
+tween(f"#{arrows} .a1, #{arrows} .a2", "strokeDashoffset: 220", 'strokeDashoffset: 0, duration: 0.4, stagger: 0.15', T("sceptre") + 0.4)
+no = put(S4, 90, 1180, "<small>Non</small>Mort", "box out")
+yes = put(S4, 690, 1180, "<small>Oui</small>Vie", "box out")
 blur_in(no, T("sceptre") + 0.6, 12)
 blur_in(yes, T("vie") - 0.3, 12)
 sfx("click", T("sceptre") + 0.6, 0.6)
 
-# --- S5 · 22.98 – 28.64 · Mordecai's challenge (Est 4:14)
+# --- S5 · 22.85 – 28.5 · Mordecai's challenge (Est 4:14)
 cam(22.85, S5)
 headline(S5, 290, ["« Pour un temps", "comme [celui-ci] »"], T("temps") - 0.2, kicker="Mardochée · Esther 4.14", hl_t=T("temps") + 0.5, size=96)
-sticker(S5, "chapiteau-taureau", 140, 760, 480, 23.2, rot=4, label="Palais perse", sub="chapiteau, Ve s. av. J.-C.", lab_dy=-40)
-tag(S5, 120, 1240, "Et si c'était le moment ?", T("reine", 2) - 0.6, "", 44)
+sticker(S5, "mardochee", 60, 580, 410, T("mardochée") - 0.2, rot=-3)
+c_, ch_ = sticker(S5, "chapiteau-taureau", 600, 620, 380, 23.6, rot=4)
+label_box(S5, 600, 620 + ch_ + 20, "Palais perse", "chapiteau, Ve s. av. J.-C.", 23.8)
+tag(S5, 520, 1200, "Et si c'était le moment ?", T("reine", 2) - 0.6, "", 38)
 
-# --- S6 · 28.64 – 31.4 · three days of fasting (Est 4:16)
+# --- S6 · 28.5 – 31.25 · three days of fasting (Est 4:16)
 cam(28.5, S6)
 headline(S6, 300, ["[3 jours] de jeûne"], T("trois") - 0.2, kicker="La préparation", hl_t=T("trois") + 0.2, size=100)
 for k in range(3):
-    d = put(S6, 70 + k * 320, 620, f'<small>Jour</small>{k + 1}', "day")
+    d = put(S6, 70 + k * 320, 560, f'<small>Jour</small>{k + 1}', "day")
     tween(f"#{d}", 'opacity: 0, y: 40, backgroundColor: "#FFFFFF", color: "#1B242E"',
           f'opacity: 1, y: 0, backgroundColor: "{ACC}", color: "#FFFFFF", duration: 0.35, ease: "back.out(2)"', T("trois") + 0.15 + k * 0.42)
     sfx("click", T("trois") + 0.15 + k * 0.42, 0.7)
-label_box(S6, 70, 1000, "Tout le peuple jeûne", "à Suse, nuit et jour", T("jeûne"))
-ref(S6, 70, 1120, "Esther 4.16", T("jeûne") + 0.2)
+sticker(S6, "peuple-jeune", 40, 900, 600, 28.7, rot=-2)
+sticker(S6, "sac-cendres", 690, 900, 320, T("jeûne"), rot=5)
+label_box(S6, 690, 1150, "Tout le peuple jeûne", "sac et cendre, à Suse", T("jeûne") + 0.1)
+ref(S6, 690, 1300, "Esther 4.16", T("jeûne") + 0.2)
 
-# --- S7 · 31.4 – 34.96 · « If I perish, I perish » (captions hidden: the line is on screen)
+# --- S7 · 31.25 – 34.7 · « If I perish, I perish » (captions hidden: the line is on screen)
 cam(31.25, S7)
-q = headline(S7, 520, ["Si je dois périr,", "je [périrai]."], T("périr") - 0.6, kicker="Esther · Esther 4.16", hl_t=T("périrai"), size=124)
+headline(S7, 380, ["Si je dois périr,", "je [périrai]."], T("périr") - 0.6, kicker="Esther · Esther 4.16", hl_t=T("périrai"), size=124)
+sticker(S7, "esther-portrait", 470, 760, 520, 31.5, rot=3)
 hit(T("périrai"), 1.0)
 
-# --- S4 again · 34.96 – 38.68 · she walks in, the king holds out the scepter: the « Oui » path lights up (Est 5:2)
-cam(34.85, S4, 0.92)
-tag(S4, 70, 1270, "Elle entre", T("entre"), "", 48)
-tween(f"#{arrows} .a2", f'stroke: "#8A97A6"', f'stroke: "{ACC}", strokeWidth: 10, duration: 0.3', T("tend"))
-tween(f"#{yes}", 'backgroundColor: "#FFFFFF", color: "#1B242E"', f'backgroundColor: "{ACC}", color: "#FFFFFF", duration: 0.25', T("tend"))
-tween(f"#{yes}", "scale: 1", 'scale: 1.18, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out"', T("tend"))
-tween(f"#{no}", "opacity: 1", 'opacity: 0.25, duration: 0.4', T("tend"))
-ref(S4, 700, 1282, "Esther 5.2", T("tend") + 0.2)
+# --- mid-video pull-out over the whole canvas, then S8 · 35.65 – 38.55 · she enters, the king holds out the scepter (Est 5:2)
+cam(34.7, "all")
+cam(35.65, S8)
+headline(S8, 280, ["Elle [entre]"], 35.7, kicker="Le moment décisif", hl_t=T("entre"), size=110)
+ok = put(S8, 700, 300, "<small>Oui</small>Vie", "box out")
+blur_in(ok, 36.0, 10)
+es = sticker(S8, "esther-pied", 40, 540, 380, T("entre") + 0.1, rot=-2)
+sticker(S8, "roi-sceptre", 420, 600, 620, 36.0, rot=2)
+tween(f"#{ok}", 'backgroundColor: "#FFFFFF", color: "#1B242E"', f'backgroundColor: "{ACC}", color: "#FFFFFF", duration: 0.25', T("tend"))
+tween(f"#{ok}", "scale: 1", 'scale: 1.18, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false', T("tend"))
+tag(S8, 40, 1300, "Il tend son sceptre d'or", T("tend"), "acc", 48)
+ref(S8, 700, 1314, "Esther 5.2", T("tend") + 0.2)
 hit(T("tend"), 1.2)
 sfx("spark", T("sceptre", 1), 1.0)
 
-# --- S9 · 38.68 – 43.8 · two banquets, then Haman exposed (Est 5:4-8, 7:1-6)
+# --- S9 · 38.55 – 43.65 · two banquets, then Haman exposed (Est 5:4-8, 7:1-6)
 cam(38.55, S9)
 headline(S9, 280, ["Deux festins,", "un [piège] inversé"], T("festin") - 0.4, kicker="Le retournement", hl_t=T("dénonce"), size=88)
 sx9, sy9 = st(*S9)
@@ -277,10 +302,10 @@ for k, (title, sub, t) in enumerate([("Festin n° 1", "Esther 5.4", T("festin"))
 sticker(S9, "rhyton-belier", 640, 560, 300, T("festin") + 0.3, rot=6)
 sticker(S9, "coupe-inscription-royale", 600, 900, 330, T("festin") + 0.8, rot=-4)
 label_box(S9, 600, 1250, "Vaisselle royale perse", "Ve s. av. J.-C.", T("festin") + 1.1)
-tag(S9, 160, 1290, "Haman dénoncé", T("dénonce"), "acc", 50)
+tag(S9, 160, 1300, "Haman dénoncé", T("dénonce"), "acc", 50)
 hit(T("dénonce"), 0.7)
 
-# --- S10 · 43.8 – 46.6 · the gallows, to scale (Est 5:14, 7:10)
+# --- S10 · 43.65 – 46.45 · the gallows, to scale (Est 5:14, 7:10)
 cam(43.65, S10)
 headline(S10, 280, ["Pendu à sa", "propre [potence]"], 43.85, kicker="La chute de Haman", hl_t=T("potence"), size=92)
 bar_h = 760                       # 50 cubits ≈ 22 m  → about 34.5 px per metre
@@ -293,40 +318,44 @@ tween(f"#{b2}", "scaleY: 0, transformOrigin: \"50% 100%\"", 'scaleY: 1, duration
 label_box(S10, 400, 640, "Potence : 50 coudées", "≈ 22 m (coudée ≈ 44,5 cm)", T("potence") + 0.2)
 label_box(S10, 520, base_y - 120, "Un homme", "≈ 1,7 m, même échelle", T("potence") + 0.6)
 ref(S10, 400, 790, "Esther 5.14 · 7.10", T("potence") + 0.4)
+sticker(S10, "haman", 820, 860, 200, 43.9, rot=4)
 hit(T("potence"), 0.9)
 
-# --- S11 · 46.6 – 50.8 · the people saved, Purim (Est 9:20-28)
+# --- S11 · 46.45 – 50.65 · the people saved, Purim (Est 9:20-28)
 cam(46.45, S11)
 headline(S11, 280, ["Le peuple est [sauvé]"], T("sauvé") - 0.5, kicker="L'issue", hl_t=T("sauvé"), size=92)
-sticker(S11, "relief-serviteurs-festin", 90, 500, 380, 46.9, rot=-4, label="Repas de fête", sub="relief perse, IVe s. av. J.-C.", lab_dy=-60)
+r_, rh = sticker(S11, "relief-serviteurs-festin", 40, 500, 420, 46.8, rot=-4)
+label_box(S11, 40, 500 + rh + 18, "Repas de fête", "relief perse, IVe s. av. J.-C.", 47.0)
+sticker(S11, "esther-pied", 640, 500, 330, T("sauvé") - 0.2, rot=3)
 for k, dname in enumerate(["14 Adar", "15 Adar"]):
-    d = put(S11, 90 + k * 330, 1020, f'<small>Purim</small>{dname}', "day wide")
+    d = put(S11, 40 + k * 330, 1200, f'<small>Purim</small>{dname}', "day wide")
     tween(f"#{d}", 'opacity: 0, y: 40, backgroundColor: "#FFFFFF", color: "#1B242E"',
           f'opacity: 1, y: 0, backgroundColor: "{ACC}", color: "#FFFFFF", duration: 0.35, ease: "back.out(2)"', T("purim") + k * 0.35)
-ref(S11, 90, 1260, "Esther 9.20-28", T("purim") + 0.3)
+ref(S11, 720, 1240, "Esther 9.20-28", T("purim") + 0.3)
 hit(T("sauvé"), 0.6)
 
-# --- S12 · 50.8 – 54.76 · dark mode reveal: the book never names God
+# --- S12 · 50.65 – 54.6 · dark mode reveal: the book never names God
 cam(50.65, S12)
 tween("#darkbg", "opacity: 0", 'opacity: 1, duration: 0.6, ease: "power2.inOut"', 50.6)
 headline(S12, 280, ["Le livre d'Esther"], 50.95, kicker="Détail étonnant", size=92, dark=True)
-sticker(S12, "rouleau-esther", 700, 470, 240, 51.1, rot=6)
+sticker(S12, "rouleau-esther", 720, 470, 250, 51.1, rot=6)
 counter(S12, 70, 520, 0, 10, 51.4, 0.8, " chapitres", 96, "dark small")
 counter(S12, 70, 680, 0, 167, 52.0, 1.0, " versets", 96, "dark small")
-label_box(S12, 70, 880, "Le nom de Dieu", "dans le texte hébreu", T("jamais") - 0.3)
+label_box(S12, 70, 880, "Le nom de Dieu", "dans le texte hébreu", T("jamais") - 0.3, dark=True)
 z = put(S12, 70, 980, "0", "zero")
 tween(f"#{z}", "opacity: 0, scale: 2.2", 'opacity: 1, scale: 1, duration: 0.35, ease: "power4.in"', T("dieu"))
 tag(S12, 460, 1110, "fois", T("dieu") + 0.3, "dark", 56)
 hit(T("dieu"), 1.0)
 
-# --- S13 · 54.76 – 59.8 · the question
+# --- S13 · 54.6 – 59.65 · the question
 cam(54.6, S13)
-headline(S13, 520, ["Et [toi] ?"], T("toi") - 0.2, kicker="À ton tour", hl_t=T("toi"), size=200, dark=True)
+headline(S13, 480, ["Et [toi] ?"], T("toi") - 0.2, kicker="À ton tour", hl_t=T("toi"), size=200, dark=True)
+sticker(S13, "esther-pied", 720, 820, 300, 54.8, rot=3)
 cta = put(S13, 70, 1010, '<svg viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z"/></svg>Réponds en commentaire', "cta")
 blur_in(cta, T("commentaire") - 0.5, 14)
 sfx("click", T("commentaire") - 0.5, 0.8)
 
-# --- end · 59.8 – 62.4 · pull out over the whole canvas, title card
+# --- end · 59.65 – 62.4 · pull out over the whole canvas, title card
 cam(59.65, "all")
 
 # ================================================================ assemble
@@ -342,6 +371,7 @@ def cam_xy(station, scale):
 
 
 cam_tw = []
+route_html = []
 x0, y0, s0 = cam_xy(CAM[0][1], 1.0)
 cam_tw.append(f'tl.set("#world", {{ x: {x0:.1f}, y: {y0:.1f}, scale: {s0} }}, 0);')
 for k, (t, stn, sc) in enumerate(CAM):
@@ -351,8 +381,22 @@ for k, (t, stn, sc) in enumerate(CAM):
         px, py, ps = cam_xy(CAM[k - 1][1], CAM[k - 1][2])
         cam_tw.append(f'tl.fromTo("#world", {{ x: {px:.1f}, y: {py:.1f}, scale: {ps:.4f} }}, '
                       f'{{ x: {x:.1f}, y: {y:.1f}, scale: {s:.4f}, duration: {move}, ease: "power3.inOut", immediateRender: false }}, {at(t)});')
-        cam_tw.append(f'tl.fromTo("#world", {{ filter: "blur(0px)" }}, {{ filter: "blur(5px)", duration: {move / 2}, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }}, {at(t)});')
+        blur = 2 if "all" in (stn, CAM[k - 1][1]) else 5
+        cam_tw.append(f'tl.fromTo("#world", {{ filter: "blur(0px)" }}, {{ filter: "blur({blur}px)", duration: {move / 2}, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }}, {at(t)});')
         sfx("whoosh", t, 0.9)
+        # Route streak: an orange line drawn from the previous station to the next one during the move.
+        prev = CAM[k - 1][1] if CAM[k - 1][1] != "all" else (CAM[k - 2][1] if k >= 2 else None)
+        if stn != "all" and prev not in (None, "all"):
+            (ax, ay), (bx, by) = st(*prev), st(*stn)
+            ax, ay, bx, by = ax + W / 2, ay + H * 0.62, bx + W / 2, by + H * 0.62
+            ln = int(((bx - ax) ** 2 + (by - ay) ** 2) ** 0.5) + 2
+            rid = uid()
+            route_html.append(f'<svg class="node route" id="{rid}" style="left:0;top:0" width="{WORLD_W}" height="{WORLD_H}" viewBox="0 0 {WORLD_W} {WORLD_H}">'
+                              f'<line x1="{ax:.0f}" y1="{ay:.0f}" x2="{bx:.0f}" y2="{by:.0f}" stroke-dasharray="{ln}"/>'
+                              f'<circle cx="{bx:.0f}" cy="{by:.0f}" r="16"/></svg>')
+            cam_tw.append(f'tl.fromTo("#{rid} line", {{ strokeDashoffset: {ln} }}, {{ strokeDashoffset: 0, duration: {move}, ease: "power3.inOut" }}, {at(t)});')
+            cam_tw.append(f'tl.fromTo("#{rid} circle", {{ scale: 0, transformOrigin: "50% 50%" }}, {{ scale: 1, duration: 0.3, ease: "back.out(3)" }}, {at(t + move * 0.8)});')
+            cam_tw.append(f'tl.to("#{rid}", {{ opacity: 0, duration: 0.5 }}, {at(t + move + 0.3)});')
     # Slow drift while holding a station.
     end = CAM[k + 1][0] if k + 1 < len(CAM) else DUR
     hold_from = t + (move if k else 0)
@@ -365,6 +409,7 @@ tw.append(f'tl.fromTo("#chrome", {{ opacity: 1 }}, {{ opacity: 0, duration: 0.3,
 tw.append(f'tl.fromTo("#endcard", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.5 }}, {at(60.2)});')
 tw.append(f'tl.fromTo("#endcard .h", {{ y: 40, filter: "blur(12px)" }}, {{ y: 0, filter: "blur(0px)", duration: 0.6, ease: "power3.out" }}, {at(60.25)});')
 tw.append(f'tl.fromTo("#endcard .hl i", {{ scaleX: 0 }}, {{ scaleX: 1, duration: 0.45, ease: "power3.out" }}, {at(60.7)});')
+tw.append(f'tl.fromTo("#es1, #es2", {{ opacity: 0, y: 80 }}, {{ opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.6)", stagger: 0.12 }}, {at(60.45)});')
 tw.append(f'tl.fromTo("#endcard .sub2", {{ opacity: 0, scale: 0.7 }}, {{ opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }}, {at(60.9)});')
 tw.append(f'tl.fromTo("#endcard .sub2", {{ scale: 1 }}, {{ scale: 1.06, duration: 0.4, yoyo: true, repeat: 1, ease: "sine.inOut", immediateRender: false }}, {at(61.4)});')
 hit(60.9, 0.5)
@@ -380,7 +425,7 @@ for k, (n, lab, a, b) in enumerate(CHAP):
 tw.append(f'tl.fromTo("#chrome", {{ color: "#1B242E" }}, {{ color: "#E9EDF1", duration: 0.6 }}, {at(50.6)});')
 
 # Captions (hidden while the hero quote is on screen and over the end card).
-SUPPRESS = [(31.3, 34.9), (59.6, DUR)]
+SUPPRESS = [(31.3, 36.0), (59.6, DUR)]
 chunks, cur = [], []
 for w in words:
     cur.append(w)
@@ -402,9 +447,10 @@ for n, ch in enumerate(chunks):
         tw.append(f'tl.fromTo("#w{n}_{k}", {{ color: "#1B242E" }}, {{ color: "{ACC}", duration: 0.08 }}, {at(w["start"])});')
         tw.append(f'tl.to("#w{n}_{k}", {{ color: "#1B242E", duration: 0.12 }}, {at(max(w["end"], w["start"] + 0.16))});')
 
+audio.insert(0, ("music", "assets/audio/music.wav", 0, DUR, 0.15))
 audio_html = "\n      ".join(f'<audio id="{a}" src="{p}" data-start="{s}" data-duration="{d}" data-volume="{v}"></audio>' for a, p, s, d, v in audio)
 tpl = open(os.path.join(HERE, "template.tpl")).read()
-out = (tpl.replace("{{WORLD}}", "\n        ".join(html)).replace("{{WORLD_W}}", str(WORLD_W)).replace("{{WORLD_H}}", str(WORLD_H))
+out = (tpl.replace("{{WORLD}}", "\n        ".join(route_html + html)).replace("{{WORLD_W}}", str(WORLD_W)).replace("{{WORLD_H}}", str(WORLD_H))
        .replace("{{CHAPTERS}}", chap_html).replace("{{CAPTIONS}}", "\n      ".join(caps)).replace("{{DURATION}}", str(DUR))
        .replace("{{AUDIO}}", '<audio id="voix" src="assets/voix.wav" data-start="0" data-duration="62.4" data-volume="1"></audio>\n      ' + audio_html)
        .replace("{{TWEENS}}", "\n      ".join(cam_tw + tw)))

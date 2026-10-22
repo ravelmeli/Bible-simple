@@ -13,6 +13,18 @@ Toutes les images ci-dessous sont marquées « Public Domain » (CC0) dans l'API
 - `tablette-scellee.png` — « Cuneiform tablet impressed with seals: administrative document inscribed in Achaemenid Elamite », Achaemenid, ca. 500 BCE — https://www.metmuseum.org/art/collection/search/323243 — Rogers Fund, 1936
 - `sceau-cachet.png` — « Stamp seal (scaraboid) with deity (?) », Achaemenid, ca. 6th–4th century BCE — https://www.metmuseum.org/art/collection/search/323765 — Bequest of W. Gedney Beatty, 1941
 
+## Personnages
+
+Illustrations aquarelle générées pour la chaîne (planche « Esther », style 01), réutilisées en autocollants à liseré blanc.
+
+## Carte
+
+Fond de carte : Natural Earth, `ne_50m_land` (domaine public), https://www.naturalearthdata.com/. Étendue de l'Empire perse et 127 points : tracé schématique fait à la main, à titre d'illustration (Esther 1.1), pas des frontières historiques exactes.
+
+## Musique
+
+Générée en local avec MusicGen (`musicgen-small`, Meta), prompt « modern minimal tech explainer underscore… », graine 11 (`montage/gen_music.py`). **Licence à vérifier avant de monétiser** : les poids du modèle sont publiés sous CC-BY-NC 4.0 (non commercial) ; l'usage de l'audio généré dans une vidéo monétisée n'est pas clairement tranché.
+
 ## Effets sonores
 Bibliothèque intégrée à HyperFrames (`whoosh-short`, `click-soft`, `pop`, `impact-bass-2`, `typing`, `sparkle`), issus de Pixabay, Pixabay Content License : usage commercial, aucune attribution obligatoire.
 

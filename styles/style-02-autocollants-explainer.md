@@ -41,3 +41,13 @@ Une seule grande toile (par exemple 6000 × 3000 px en 16:9, ou 2400 × 6000 px 
 - Rendu déterministe (chaque image ne dépend que du temps), comme HyperFrames.
 - Son : nappe sobre de type « explainer tech », clics d'interface, tic-tac pendant les compteurs, souffle doux sur les mouvements de caméra.
 - Contrôles finaux : durée, résolution, fps, volume (environ -14 LUFS pour une vidéo sans voix, -16 avec voix), aucune image noire, aucune police de secours, aucun élément coupé au bord.
+
+## Leçons du premier test (short Esther, `montage/short-esther-02/`)
+
+- Remplir la hauteur : contenu de 560 à 1400 px, sous-titres en boîte blanche à 1440 px (au-dessus de la zone réservée à l'interface YouTube).
+- Les personnages aquarelle du style 01 marchent bien en autocollants à côté des photos de musée : ils humanisent le récit.
+- Accroche : un autocollant visible dès la première image (pas d'apparition depuis zéro), titre qui se « défloute » ensuite.
+- Grande toile : un zoom arrière au milieu (au retournement) et un trait orange entre deux écrans pendant chaque déplacement rendent la carte lisible.
+- Carte : fond Natural Earth (domaine public), zone et points tracés à la main et annoncés comme « tracé schématique ».
+- Photos : API Open Access du Met (`/public/collection/v1.1/search?...&isPublicDomain=true`, l'ancienne `/v1/search` est retirée), détourage avec `npx hyperframes remove-background`, ou par couleur de fond pour les objets sur fond studio uni.
+- Musique : MusicGen avec un prompt « tech explainer » (arpège léger, nappe, pulsation douce), environ 15 dB sous la voix.

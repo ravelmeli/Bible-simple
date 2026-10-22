@@ -73,6 +73,8 @@
       .arrows path { stroke: #8A97A6; stroke-width: 6; stroke-linecap: round; }
 
       .label { padding-left: 18px; border-left: 4px solid #F85830; }
+      .label.dark b { color: #E9EDF1; }
+      .label.dark span { color: #8A97A6; }
       .label b { display: block; font-size: 36px; font-weight: 700; line-height: 1.15; white-space: nowrap; }
       .label span { display: block; margin-top: 6px; font-size: 24px; color: #6B7785; white-space: nowrap; }
 
@@ -120,7 +122,7 @@
       .box.q { width: 620px; border-radius: 26px; }
       .box.out { width: 300px; font-size: 64px; font-weight: 800; }
       .box small { display: block; font-size: 24px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: #6B7785; margin-bottom: 4px; }
-      .box.out[style*="F85830"] small { color: #FFFFFF; }
+      .box.out small { color: inherit; opacity: 0.8; }
 
       .day {
         width: 280px;
@@ -151,6 +153,33 @@
       }
       .cta svg { width: 70px; height: 60px; }
       .cta path { fill: none; stroke: #F85830; stroke-width: 9; stroke-linejoin: round; }
+
+      .map { display: block; overflow: hidden; }
+      .map .land { fill: #D3DAE2; stroke: #AEB8C3; stroke-width: 1.5; }
+      .map .empire { fill: rgba(248, 88, 48, 0.16); stroke: #F85830; stroke-width: 4; stroke-dasharray: 3000; stroke-linejoin: round; }
+      .map .pdot { fill: #F85830; }
+      .map .place circle { fill: #1B242E; stroke: #FFFFFF; stroke-width: 4; }
+      .map .place text { font-family: "Inter", sans-serif; font-size: 34px; font-weight: 700; fill: #1B242E; paint-order: stroke; stroke: #E9EDF1; stroke-width: 8px; }
+      .mapwrap { padding: 14px; background: #FFFFFF; border: 3px solid #1B242E; box-shadow: 8px 8px 0 rgba(27, 36, 46, 0.15); }
+      .route { pointer-events: none; overflow: visible; }
+      .route line { stroke: #F85830; stroke-width: 10; stroke-linecap: round; fill: none; }
+      .route circle { fill: #F85830; }
+      #grain {
+        position: absolute;
+        inset: -50%;
+        z-index: 65;
+        pointer-events: none;
+        opacity: 0.05;
+        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        animation: hf-grain 0.5s steps(1) infinite;
+      }
+      @keyframes hf-grain {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(-4%, 3%); }
+        50% { transform: translate(3%, -4%); }
+        75% { transform: translate(-3%, -2%); }
+      }
+      #endcard .es { position: absolute; filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.45)); }
 
       /* ---- screen-fixed chrome ---- */
       #chrome { position: absolute; left: 70px; top: 160px; width: 870px; z-index: 50; color: #1B242E; }
@@ -229,7 +258,10 @@
         <div class="kick">Abonne-toi</div>
         <div class="h">La Bible<br /><em class="hl"><span>Simple</span><i></i></em></div>
         <div class="sub2">S'abonner</div>
+        <img class="es" id="es1" src="assets/stickers/tete-garde-perse.png" style="left:40px;top:1180px;width:380px;height:330px;transform:rotate(-6deg)" />
+        <img class="es" id="es2" src="assets/stickers/esther-pied.png" style="left:790px;top:1060px;width:240px;height:477px;transform:rotate(5deg)" />
       </div>
+      <div id="grain"></div>
 
       {{AUDIO}}
     </div>
