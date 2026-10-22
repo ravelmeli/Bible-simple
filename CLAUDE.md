@@ -84,4 +84,5 @@ Après la publication
 - `montage/short-noe/` : troisième short ; version complète avec effets de la bibliothèque et musique MusicGen (modèle de référence pour le son).
 - `montage/common.py`, `montage/template-short.tpl`, `montage/gen_music.py` (musique), `montage/synth_audio.py` (anciens sons synthétisés, graves inaudibles sur téléphone : à éviter) : base proposée pour les prochains montages (constructeur de plans calés sur la transcription, gabarit commun, sons synthétisés sans droits). Essayée seulement sur le brouillon v2 de « marque et sceau » : la relire avant de s'en servir.
 - `montage/short-esther-02/` : short Esther en style 02 (version 2 avec toutes les améliorations) ; modèle de référence du style 02.
+- `kit-style-02/` : kit complet et réutilisable du style 02 (guide `GUIDE.md`, moteur `moteur/style02.py` + gabarit paramétré, outils, prompts, exemple Esther qui régénère le même `index.html`). Point de départ des prochains montages en style 02 : `bash kit-style-02/outils/nouveau_projet.sh montage/<nom>`.
 - `montage/test-short-9x16/` : tests de style (v1 à v3).

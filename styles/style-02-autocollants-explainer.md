@@ -1,6 +1,8 @@
 # Style 02 — « Explainer à autocollants » (inspiré de PaperClip / 回形针)
 
-Style en test. Le style 01 « Parchemin aquarelle » reste la référence (`styles/style-01-parchemin-aquarelle.md`) et ne doit pas être modifié pour ce style.
+Kit complet pour le reproduire (y compris sur une autre chaîne) : `kit-style-02/GUIDE.md`.
+
+Le style 01 « Parchemin aquarelle » reste la référence (`styles/style-01-parchemin-aquarelle.md`) et ne doit pas être modifié pour ce style.
 
 Source : une vidéo de référence de 10 s (16:9) et le prompt qui l'a produite, fournis par l'utilisateur. On reprend le langage visuel, jamais la marque de l'auteur (pas de « GEWU LAB », pas de nom de série copié).
 
