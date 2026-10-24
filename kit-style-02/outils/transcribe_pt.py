@@ -3,7 +3,7 @@
 Fallback for when `hyperframes transcribe` crashes with SIGILL, and for when the transformers pipeline is
 OOM-killed (float32 and bfloat16 both exceeded 14 GB for word timestamps on a 16 GB machine).
 
-Usage: python3 transcribe_pt.py <audio.wav> <out transcript.json>
+Usage: python3 transcribe_pt.py <audio.wav> <out transcript.json> [language, default fr]
 Writes [{"text": ..., "start": ..., "end": ...}, ...], the format `montage/common.py` reads.
 """
 import json
@@ -43,12 +43,12 @@ def merge_tokens(words):
     return out
 
 
-def main(audio, out):
+def main(audio, out, lang="fr"):
     t0 = time.time()
     model = WhisperModel("large-v3", device="cpu", compute_type="int8", cpu_threads=4)
     print(f"model loaded in {time.time() - t0:.0f} s", flush=True)
     t0 = time.time()
-    segments, info = model.transcribe(load_16k(audio), language="fr", word_timestamps=True, beam_size=5,
+    segments, info = model.transcribe(load_16k(audio), language=lang, word_timestamps=True, beam_size=5,
                                       vad_filter=False, condition_on_previous_text=False)
     words = []
     for seg in segments:
@@ -61,4 +61,4 @@ def main(audio, out):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "fr")

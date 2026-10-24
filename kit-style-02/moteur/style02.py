@@ -70,7 +70,7 @@ def setup(here, duration, cols=3, rows=5, fmt="9:16", theme=None, transcript="tr
 
 # ---------------------------------------------------------------- calage sur la transcription
 def norm(t):
-    return re.sub(r"[\.,\?!:;«»\"'’()\u00a0\u202f ]", "", t).lower()
+    return re.sub(r"[\.,\?!:;«»“”\"'’()\u00a0\u202f ]", "", t).lower()
 
 
 def T(word, n=0):
