@@ -4,7 +4,7 @@
 set -euo pipefail
 KIT="$(cd "$(dirname "$0")/.." && pwd)"
 DST="$1"
-mkdir -p "$DST"/assets/{stickers,fonts,audio/lib} "$DST"/renders
+mkdir -p "$DST"/assets/{source,stickers,fonts,audio/lib} "$DST"/renders
 cp "$KIT/exemple-esther/build.py" "$DST/build.py"
 sed -i "s#os.path.join(HERE, \"..\", \"moteur\")#\"$KIT/moteur\"#" "$DST/build.py"
 cp "$KIT/exemple-esther/assets/fonts/"* "$DST/assets/fonts/"
