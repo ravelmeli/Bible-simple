@@ -1,0 +1,802 @@
+[
+{
+"text": "Qui",
+"start": 0.0,
+"end": 0.3
+},
+{
+"text": "suis-je",
+"start": 0.3,
+"end": 0.98
+},
+{
+"text": "vraiment",
+"start": 0.98,
+"end": 1.34
+},
+{
+"text": "obligé",
+"start": 1.34,
+"end": 2.46
+},
+{
+"text": "d'aimer ?",
+"start": 2.46,
+"end": 2.98
+},
+{
+"text": "Un",
+"start": 3.61,
+"end": 3.88
+},
+{
+"text": "docteur",
+"start": 3.88,
+"end": 4.24
+},
+{
+"text": "de",
+"start": 4.24,
+"end": 4.34
+},
+{
+"text": "la",
+"start": 4.34,
+"end": 4.4
+},
+{
+"text": "loi",
+"start": 4.4,
+"end": 4.62
+},
+{
+"text": "pose",
+"start": 4.62,
+"end": 4.82
+},
+{
+"text": "la",
+"start": 4.82,
+"end": 4.94
+},
+{
+"text": "question",
+"start": 4.94,
+"end": 5.22
+},
+{
+"text": "à",
+"start": 5.22,
+"end": 5.38
+},
+{
+"text": "Jésus.",
+"start": 5.38,
+"end": 5.64
+},
+{
+"text": "« Et",
+"start": 6.02,
+"end": 6.56
+},
+{
+"text": "qui",
+"start": 6.56,
+"end": 6.92
+},
+{
+"text": "est",
+"start": 6.92,
+"end": 7.16
+},
+{
+"text": "mon",
+"start": 7.16,
+"end": 7.32
+},
+{
+"text": "prochain ? »",
+"start": 7.32,
+"end": 8.14
+},
+{
+"text": "Jésus",
+"start": 8.74,
+"end": 9.28
+},
+{
+"text": "répond",
+"start": 9.28,
+"end": 9.52
+},
+{
+"text": "par",
+"start": 9.52,
+"end": 9.72
+},
+{
+"text": "une",
+"start": 9.72,
+"end": 9.84
+},
+{
+"text": "histoire.",
+"start": 9.84,
+"end": 10.1
+},
+{
+"text": "Un",
+"start": 10.72,
+"end": 11.26
+},
+{
+"text": "homme",
+"start": 11.26,
+"end": 11.48
+},
+{
+"text": "descend",
+"start": 11.48,
+"end": 11.7
+},
+{
+"text": "de",
+"start": 11.7,
+"end": 11.9
+},
+{
+"text": "Jérusalem",
+"start": 11.9,
+"end": 12.32
+},
+{
+"text": "à",
+"start": 12.32,
+"end": 12.52
+},
+{
+"text": "Jéricho.",
+"start": 12.52,
+"end": 12.8
+},
+{
+"text": "27",
+"start": 13.16,
+"end": 13.7
+},
+{
+"text": "kilomètres,",
+"start": 13.7,
+"end": 14.32
+},
+{
+"text": "environ",
+"start": 14.32,
+"end": 14.54
+},
+{
+"text": "1 000",
+"start": 14.54,
+"end": 15.04
+},
+{
+"text": "mètres",
+"start": 15.04,
+"end": 15.38
+},
+{
+"text": "de",
+"start": 15.38,
+"end": 15.48
+},
+{
+"text": "descente.",
+"start": 15.48,
+"end": 15.86
+},
+{
+"text": "Des",
+"start": 16.53,
+"end": 16.8
+},
+{
+"text": "brigands",
+"start": 16.8,
+"end": 17.22
+},
+{
+"text": "le",
+"start": 17.22,
+"end": 17.36
+},
+{
+"text": "laissent",
+"start": 17.36,
+"end": 17.66
+},
+{
+"text": "à",
+"start": 17.66,
+"end": 17.82
+},
+{
+"text": "demi mort.",
+"start": 17.82,
+"end": 18.4
+},
+{
+"text": "Un",
+"start": 19.1,
+"end": 19.64
+},
+{
+"text": "prêtre",
+"start": 19.64,
+"end": 19.88
+},
+{
+"text": "passe",
+"start": 19.88,
+"end": 20.16
+},
+{
+"text": "et",
+"start": 20.16,
+"end": 20.8
+},
+{
+"text": "l'évite.",
+"start": 20.8,
+"end": 21.14
+},
+{
+"text": "Un",
+"start": 21.78,
+"end": 22.32
+},
+{
+"text": "lévite",
+"start": 22.32,
+"end": 22.64
+},
+{
+"text": "passe",
+"start": 22.64,
+"end": 22.9
+},
+{
+"text": "et",
+"start": 22.9,
+"end": 23.52
+},
+{
+"text": "l'évite",
+"start": 23.52,
+"end": 23.98
+},
+{
+"text": "aussi.",
+"start": 23.98,
+"end": 24.18
+},
+{
+"text": "Le",
+"start": 24.8,
+"end": 25.34
+},
+{
+"text": "texte",
+"start": 25.34,
+"end": 25.62
+},
+{
+"text": "ne",
+"start": 25.62,
+"end": 25.68
+},
+{
+"text": "dit",
+"start": 25.68,
+"end": 25.78
+},
+{
+"text": "pas",
+"start": 25.78,
+"end": 25.9
+},
+{
+"text": "pourquoi.",
+"start": 25.9,
+"end": 26.1
+},
+{
+"text": "Puis",
+"start": 26.8,
+"end": 27.34
+},
+{
+"text": "arrive",
+"start": 27.34,
+"end": 27.6
+},
+{
+"text": "un",
+"start": 27.6,
+"end": 27.78
+},
+{
+"text": "Samaritain,",
+"start": 27.78,
+"end": 28.42
+},
+{
+"text": "un",
+"start": 28.42,
+"end": 29.1
+},
+{
+"text": "homme",
+"start": 29.1,
+"end": 29.34
+},
+{
+"text": "que",
+"start": 29.34,
+"end": 29.46
+},
+{
+"text": "les",
+"start": 29.46,
+"end": 29.56
+},
+{
+"text": "Juifs",
+"start": 29.56,
+"end": 29.8
+},
+{
+"text": "évitaient.",
+"start": 29.8,
+"end": 30.36
+},
+{
+"text": "Lui",
+"start": 31.28,
+"end": 31.76
+},
+{
+"text": "est",
+"start": 31.76,
+"end": 31.9
+},
+{
+"text": "ému",
+"start": 31.9,
+"end": 32.2
+},
+{
+"text": "de",
+"start": 32.2,
+"end": 32.28
+},
+{
+"text": "compassion.",
+"start": 32.28,
+"end": 32.6
+},
+{
+"text": "Il",
+"start": 33.38,
+"end": 33.86
+},
+{
+"text": "soigne",
+"start": 33.86,
+"end": 34.18
+},
+{
+"text": "ses",
+"start": 34.18,
+"end": 34.36
+},
+{
+"text": "plaies",
+"start": 34.36,
+"end": 34.64
+},
+{
+"text": "avec",
+"start": 34.64,
+"end": 34.84
+},
+{
+"text": "de",
+"start": 34.84,
+"end": 34.98
+},
+{
+"text": "l'huile",
+"start": 34.98,
+"end": 35.32
+},
+{
+"text": "et",
+"start": 35.32,
+"end": 35.36
+},
+{
+"text": "du",
+"start": 35.36,
+"end": 35.46
+},
+{
+"text": "vin,",
+"start": 35.46,
+"end": 35.66
+},
+{
+"text": "le",
+"start": 35.78,
+"end": 36.6
+},
+{
+"text": "conduit",
+"start": 36.6,
+"end": 37.04
+},
+{
+"text": "à",
+"start": 37.04,
+"end": 37.14
+},
+{
+"text": "une",
+"start": 37.14,
+"end": 37.26
+},
+{
+"text": "auberge",
+"start": 37.26,
+"end": 37.74
+},
+{
+"text": "et",
+"start": 37.74,
+"end": 38.4
+},
+{
+"text": "paie",
+"start": 38.4,
+"end": 38.68
+},
+{
+"text": "deux",
+"start": 38.68,
+"end": 38.92
+},
+{
+"text": "deniers,",
+"start": 38.92,
+"end": 39.36
+},
+{
+"text": "environ",
+"start": 39.9,
+"end": 40.38
+},
+{
+"text": "deux",
+"start": 40.38,
+"end": 40.72
+},
+{
+"text": "jours",
+"start": 40.72,
+"end": 40.96
+},
+{
+"text": "de",
+"start": 40.96,
+"end": 41.1
+},
+{
+"text": "salaire.",
+"start": 41.1,
+"end": 41.44
+},
+{
+"text": "Alors",
+"start": 42.3,
+"end": 42.78
+},
+{
+"text": "Jésus",
+"start": 42.78,
+"end": 43.18
+},
+{
+"text": "retourne",
+"start": 43.18,
+"end": 43.62
+},
+{
+"text": "la",
+"start": 43.62,
+"end": 43.7
+},
+{
+"text": "question :",
+"start": 43.7,
+"end": 43.96
+},
+{
+"text": "qui",
+"start": 44.72,
+"end": 45.2
+},
+{
+"text": "a",
+"start": 45.2,
+"end": 45.38
+},
+{
+"text": "été",
+"start": 45.38,
+"end": 45.6
+},
+{
+"text": "le",
+"start": 45.6,
+"end": 45.74
+},
+{
+"text": "prochain",
+"start": 45.74,
+"end": 46.08
+},
+{
+"text": "de",
+"start": 46.08,
+"end": 46.24
+},
+{
+"text": "cet",
+"start": 46.24,
+"end": 46.38
+},
+{
+"text": "homme ?",
+"start": 46.38,
+"end": 46.72
+},
+{
+"text": "« Celui",
+"start": 47.54,
+"end": 48.02
+},
+{
+"text": "qui",
+"start": 48.02,
+"end": 48.18
+},
+{
+"text": "a",
+"start": 48.18,
+"end": 48.28
+},
+{
+"text": "exercé",
+"start": 48.28,
+"end": 48.68
+},
+{
+"text": "la",
+"start": 48.68,
+"end": 48.78
+},
+{
+"text": "miséricorde. »",
+"start": 48.78,
+"end": 49.4
+},
+{
+"text": "Le",
+"start": 49.9,
+"end": 50.38
+},
+{
+"text": "docteur",
+"start": 50.38,
+"end": 50.78
+},
+{
+"text": "ne",
+"start": 50.78,
+"end": 50.86
+},
+{
+"text": "dit",
+"start": 50.86,
+"end": 51.0
+},
+{
+"text": "même",
+"start": 51.0,
+"end": 51.1
+},
+{
+"text": "pas",
+"start": 51.1,
+"end": 51.3
+},
+{
+"text": "« le",
+"start": 51.3,
+"end": 51.52
+},
+{
+"text": "Samaritain ».",
+"start": 51.52,
+"end": 52.08
+},
+{
+"text": "Jésus",
+"start": 53.02,
+"end": 53.5
+},
+{
+"text": "conclut :",
+"start": 53.5,
+"end": 53.88
+},
+{
+"text": "« Va,",
+"start": 53.88,
+"end": 54.62
+},
+{
+"text": "et",
+"start": 54.8,
+"end": 55.28
+},
+{
+"text": "toi,",
+"start": 55.28,
+"end": 55.5
+},
+{
+"text": "fais",
+"start": 55.62,
+"end": 56.0
+},
+{
+"text": "de",
+"start": 56.0,
+"end": 56.16
+},
+{
+"text": "même. »",
+"start": 56.16,
+"end": 56.34
+},
+{
+"text": "Et",
+"start": 57.12,
+"end": 57.5
+},
+{
+"text": "toi,",
+"start": 57.5,
+"end": 57.7
+},
+{
+"text": "de",
+"start": 57.8,
+"end": 58.46
+},
+{
+"text": "qui",
+"start": 58.46,
+"end": 58.6
+},
+{
+"text": "vas-tu",
+"start": 58.6,
+"end": 58.96
+},
+{
+"text": "te",
+"start": 58.96,
+"end": 59.06
+},
+{
+"text": "rendre",
+"start": 59.06,
+"end": 59.24
+},
+{
+"text": "proche",
+"start": 59.24,
+"end": 59.7
+},
+{
+"text": "cette",
+"start": 59.7,
+"end": 59.8
+},
+{
+"text": "semaine ?",
+"start": 59.8,
+"end": 60.28
+},
+{
+"text": "Dis-le",
+"start": 60.75,
+"end": 61.02
+},
+{
+"text": "en",
+"start": 61.02,
+"end": 61.12
+},
+{
+"text": "commentaire",
+"start": 61.12,
+"end": 61.6
+},
+{
+"text": "et",
+"start": 61.6,
+"end": 62.04
+},
+{
+"text": "abonne-toi",
+"start": 62.04,
+"end": 62.52
+},
+{
+"text": "pour",
+"start": 62.52,
+"end": 62.68
+},
+{
+"text": "découvrir",
+"start": 62.68,
+"end": 63.04
+},
+{
+"text": "la",
+"start": 63.04,
+"end": 63.2
+},
+{
+"text": "Bible",
+"start": 63.2,
+"end": 63.4
+},
+{
+"text": "un",
+"start": 63.4,
+"end": 63.76
+},
+{
+"text": "récit",
+"start": 63.76,
+"end": 64.06
+},
+{
+"text": "à",
+"start": 64.06,
+"end": 64.16
+},
+{
+"text": "la",
+"start": 64.16,
+"end": 64.18
+},
+{
+"text": "fois.",
+"start": 64.18,
+"end": 64.36
+}
+]
