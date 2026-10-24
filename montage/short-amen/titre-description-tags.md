@@ -4,7 +4,7 @@
 
 ### **➤ 5 TITRES HAUTS EN CTR (FORMAT COURT)**
 
-1. **Amen, bien plus qu'« ainsi soit-il »** *(35 caractères)*  
+1. **Amen, bien plus qu'« ainsi soit-il »** *(36 caractères)*  
 2. **Le vrai sens du mot Amen** *(24 caractères)*  
 3. **Amen = « c'est solide »** *(23 caractères)*  
 4. **Jésus disait Amen à l'envers** *(28 caractères)*  
