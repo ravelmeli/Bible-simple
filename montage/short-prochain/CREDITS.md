@@ -14,7 +14,7 @@ Planche aquarelle générée pour la chaîne (Nano Banana), style 01, réutilis�
 
 ## Musique
 
-À générer avec MusicGen (`musicgen-small`, CC-BY-NC 4.0 : usage dans une vidéo monétisée pas clairement tranché).
+« Ambiant Hope », Komiku, extrait de 0 à 65,6 s, filtré, normalisé et mixé environ 15 dB sous la voix. Licence **CC0 1.0** (domaine public : usage commercial autorisé, aucune attribution obligatoire), indiquée par Openverse pour le fichier Wikimedia Commons https://commons.wikimedia.org/wiki/File:Komiku_-_10_-_Ambiant_Hope.ogg. Original conservé dans `assets/source/musique-komiku-ambiant-hope.ogg`.
 
 ## Effets sonores
 
