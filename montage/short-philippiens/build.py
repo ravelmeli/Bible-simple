@@ -1,193 +1,181 @@
-"""Exemple complet du style 02 : le short « Esther » (9:16, 62,4 s), reconstruit avec le moteur du kit.
+"""Short « Je puis tout par Celui qui me fortifie » (Philippiens 4.11-13) en style 02 — 9:16, 81,7 s.
 
-Copier ce fichier dans le dossier d'un nouveau projet, puis remplacer les stations (STORY) par la nouvelle histoire.
+Construit avec le moteur du kit (kit-style-02/moteur/style02.py). Chaque élément est calé sur transcript.json.
+Le mot grec est écrit en HTML (police Inter, qui contient le grec), jamais dans une image : à faire relire avant publication.
 Lancer : python3 build.py   (puis npx hyperframes check et npx hyperframes render -q draft)
 """
 import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "..", "kit-style-02", "moteur"))          # chemin vers kit-style-02/moteur
+sys.path.insert(0, os.path.join(HERE, "..", "..", "kit-style-02", "moteur"))
 import style02 as s  # noqa: E402
 
-THEME = {"brand": "La Bible Simple", "title": "La Bible Simple - Esther - style 02", "lang": "fr"}
-s.setup(here=HERE, duration=62.4, cols=3, rows=5, theme=THEME)
-from style02 import *  # noqa: E402,F401,F403  (après setup : W, H, html, T, sticker, headline, cam...)
+THEME = {"brand": "La Bible Simple", "title": "La Bible Simple - Philippiens 4.13 - style 02", "lang": "fr"}
+s.setup(here=HERE, duration=81.7, cols=3, rows=5, theme=THEME)
+from style02 import *  # noqa: E402,F401,F403
 
-# ================================================================ STORY
+N = " "
 S1, S2, S3 = (0, 0), (1, 0), (2, 0)
 S4, S5, S6 = (2, 1), (1, 1), (0, 1)
 S7, S8, S9 = (0, 2), (1, 2), (2, 2)
 S10, S11, S12 = (2, 3), (1, 3), (0, 3)
 S13 = (0, 4)
 
-# --- S1 · 0 – 5.62 · hook: the guard is on screen from the very first frame (Est 4:11)
+html.append('<style>.box.wide{text-align:left;font-weight:700;line-height:1.3}'
+            f'.grk{{font-weight:800;line-height:1.1;color:{THEME["bg"]};letter-spacing:-2px}}</style>')
+
+# --- S1 · accroche : le maillot est là dès la première image, puis tatouages, match, examen
 cam(0, S1)
-g, gh = sticker(S1, "tete-garde-perse", 50, 600, 640, 0.0, rot=-4, instant=True)
-label_box(S1, 60, 600 + gh + 20, "Garde perse", "relief, v. 486–465 av. J.-C.", 0.6)
-headline(S1, 300, ["Entrer chez le roi", "sans [invitation] ?"], 0.0, kicker="Explication · Esther", hl_t=T("sans") + 0.2, size=100)
-tag(S1, 60, 1250, "= la mort", T("mort"), "acc", 64)
-ref(S1, 380, 1268, "Esther 4.11", T("mort") + 0.2)
-sticker(S1, "esther-pied", 730, 640, 300, T("reine", 0) - 0.3, rot=3)
-hit(T("mort"), 1.0)
+sticker(S1, "maillot", 60, 600, 380, 0.0, rot=-4, instant=True)
+headline(S1, 300, ["« Je puis [tout] »"], 0.0, kicker="Le verset le plus cité", hl_t=T("tout") + 0.1, size=110)
+sticker(S1, "avant-bras-tatoue", 560, 580, 330, T("tatouages") - 0.2, rot=4)
+tag(S1, 60, 1100, "Tatouages", T("tatouages"), "", 44)
+tag(S1, 60, 1200, "Maillots", T("maillots"), "", 44)
+tag(S1, 500, 1100, "Un match", T("match"), "", 44)
+tag(S1, 500, 1200, "Un examen", T("examen"), "", 44)
+ref(S1, 60, 1330, "Philippiens 4.13 · Louis Segond 1910", T("fortifie"))
+hit(T("tout"), 0.7)
 
-# --- S2 · 5.62 – 10.7 · Esther, queen of Persia, secretly Jewish (Est 2:10)
-cam(5.62, S2)
-headline(S2, 300, ["Esther,", "reine de [Perse]"], T("esther") - 0.3, kicker="Le personnage", hl_t=T("perse"), size=104)
-sticker(S2, "esther-portrait", 40, 590, 540, 5.9, rot=-3)
-d_, dh = sticker(S2, "daric-roi", 620, 600, 380, 6.6, rot=5)
-label_box(S2, 620, 600 + dh + 20, "Le roi de Perse", "daric en or, IVe s. av. J.-C.", 6.8)
-tag(S2, 40, 1270, "Secret : elle est juive", T("juive"), "acc", 48)
-ref(S2, 620, 1284, "Esther 2.10", T("juive") + 0.2)
+# --- S2 · « Paul ne parlait pas de gagner »
+t2 = T("mais") - 0.4
+cam(t2, S2)
+headline(S2, 280, ["Paul ne parlait pas", "de [gagner]"], t2 + 0.1, kicker="Le contexte", hl_t=T("gagner"), size=92)
+sticker(S2, "paul-pied", 80, 560, 400, t2 + 0.3, rot=-2)
+tag(S2, 540, 760, "≠ une victoire", T("gagner") - 0.1, "acc", 56)
+hit(T("gagner"), 0.8)
 
-# --- S3 · 10.7 – 17.85 · the decree spreads over 127 provinces, from India to Ethiopia (Est 1:1, 3:12-13)
-cam(10.7, S3)
-headline(S3, 280, ["Le [décret] de Haman"], T("haman") - 0.3, kicker="Le danger", hl_t=T("décret"), size=92)
-map_svg(S3, 40, 560, "assets/map.json", T("haman") - 0.1, T("décret"))
-sticker(S3, "haman", 830, 520, 190, T("haman") - 0.1, rot=4)
-counter(S3, 40, 1150, 0, 127, T("décret") + 0.4, 127 * 0.022, " provinces", 110, "small")
-label_box(S3, 610, 1160, "De l'Inde à l'Éthiopie", "Esther 1.1 · tracé schématique", T("décret") + 0.8)
-tag(S3, 40, 1300, "Exécution : 1 seul jour", T("jour") - 0.15, "acc", 50)
-ref(S3, 690, 1314, "Esther 3.13", T("jour"))
-hit(T("décret"), 0.8)
+# --- S3 · il écrit en prison
+t3 = T("quand") - 0.3
+cam(t3, S3)
+headline(S3, 280, ["Il écrit", "en [prison]"], t3 + 0.1, kicker="Où est Paul ?", hl_t=T("prison"), size=100)
+sticker(S3, "paul-pied", 60, 560, 420, T("prison") - 0.4, rot=-2)
+sticker(S3, "encrier-stylet-romain", 540, 640, 420, T("écrit") + 0.2, rot=4)
+label_box(S3, 540, 1020, "Encrier romain", "terre cuite, Ier–IIe s. · Met", T("écrit") + 0.5)
+ref(S3, 60, 1320, "Philippiens 1.7 et 1.13", T("prison"))
 
-# --- S4 · 17.85 – 22.85 · the scepter rule as a decision chart (Est 4:11)
-cam(17.85, S4)
-headline(S4, 280, ["Seul le [sceptre d'or]"], 18.0, kicker="La loi du palais", hl_t=T("sceptre"), size=92)
-tag(S4, 70, 470, "Esther hésite", T("hésite"), "", 40)
-ref(S4, 760, 482, "Esther 4.11", T("hésite") + 0.2)
-f1 = put(S4, 290, 640, "Entrer sans être appelé", "box")
-blur_in(f1, 19.2, 14)
-f2 = put(S4, 230, 860, "Le roi tend-il<br>son sceptre d'or ?", "box q")
-blur_in(f2, T("sceptre"), 14)
-sx4, sy4 = st(*S4)
-arrows = uid()
-html.append(f'<svg class="node lead arrows" id="{arrows}" style="left:{sx4}px;top:{sy4}px" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
-            f'<path class="a0" d="M540 748 L540 852" stroke-dasharray="110"/>'
-            f'<path class="a1" d="M380 1014 L240 1172" stroke-dasharray="220"/>'
-            f'<path class="a2" d="M700 1014 L840 1172" stroke-dasharray="220"/></svg>')
-tween(f"#{arrows} .a0", "strokeDashoffset: 110", 'strokeDashoffset: 0, duration: 0.3', T("sceptre") - 0.2)
-tween(f"#{arrows} .a1, #{arrows} .a2", "strokeDashoffset: 220", 'strokeDashoffset: 0, duration: 0.4, stagger: 0.15', T("sceptre") + 0.4)
-no = put(S4, 90, 1180, "<small>Non</small>Mort", "box out")
-yes = put(S4, 690, 1180, "<small>Oui</small>Vie", "box out")
-blur_in(no, T("sceptre") + 0.6, 12)
-blur_in(yes, T("vie") - 0.3, 12)
-sfx("click", T("sceptre") + 0.6, 0.6)
+# --- S4 · pas sa première épreuve : coups, naufrages, faim, froid (2 Corinthiens 11.25-27)
+t4 = T("première") - 0.9
+cam(t4, S4)
+headline(S4, 280, ["Pas sa première", "[épreuve]"], t4 + 0.1, kicker="Ce que Paul a vécu", hl_t=T("épreuve"), size=96)
+tag(S4, 70, 620, "Les coups", T("coups"), "", 60)
+tag(S4, 70, 760, "Les naufrages", T("naufrages"), "", 60)
+tag(S4, 70, 900, "La faim", T("faim"), "acc", 60)
+tag(S4, 70, 1040, "Le froid", T("froid"), "acc", 60)
+ref(S4, 70, 1200, "2 Corinthiens 11.25-27 · LSG", T("froid") + 0.2)
+hit(T("faim"), 0.7)
 
-# --- S5 · 22.85 – 28.5 · Mordecai's challenge (Est 4:14)
-cam(22.85, S5)
-headline(S5, 290, ["« Pour un temps", "comme [celui-ci] »"], T("temps") - 0.2, kicker="Mardochée · Esther 4.14", hl_t=T("temps") + 0.5, size=96)
-sticker(S5, "mardochee", 60, 580, 410, T("mardochée") - 0.2, rot=-3)
-c_, ch_ = sticker(S5, "chapiteau-taureau", 600, 620, 380, 23.6, rot=4)
-label_box(S5, 600, 620 + ch_ + 20, "Palais perse", "chapiteau, Ve s. av. J.-C.", 23.8)
-tag(S5, 520, 1200, "Et si c'était le moment ?", T("reine", 2) - 0.6, "", 38)
+# --- S5 · aux chrétiens de Philippes, qui viennent de lui envoyer de l'aide (Philippiens 4.10, 4.18)
+t5 = T("chrétiens") - 1.2
+cam(t5, S5)
+headline(S5, 280, ["Aux chrétiens", "de [Philippes]"], t5 + 0.1, kicker="Les destinataires", hl_t=T("philippes"), size=96)
+map_svg(S5, 40, 640, "assets/map.json", T("chrétiens") - 0.3, T("philippes"), width=580)
+sticker(S5, "epaphrodite", 690, 620, 250, T("envoyer") - 0.3, rot=3)
+label_box(S5, 60, 1070, "Épaphrodite apporte l'aide", "Philippiens 4.18", T("envoyer"))
+tag(S5, 60, 1220, "Une aide envoyée à Paul", T("l'aide") - 0.1, "acc", 44)
+ref(S5, 60, 1320, "Carte : Natural Earth", T("l'aide"))
 
-# --- S6 · 28.5 – 31.25 · three days of fasting (Est 4:16)
-cam(28.5, S6)
-headline(S6, 300, ["[3 jours] de jeûne"], T("trois") - 0.2, kicker="La préparation", hl_t=T("trois") + 0.2, size=100)
-boxes(S6, 70, 560, ["1", "2", "3"], T("trois") + 0.15)
-sticker(S6, "peuple-jeune", 40, 900, 600, 28.7, rot=-2)
-sticker(S6, "sac-cendres", 690, 900, 320, T("jeûne"), rot=5)
-label_box(S6, 690, 1150, "Tout le peuple jeûne", "sac et cendre, à Suse", T("jeûne") + 0.1)
-ref(S6, 690, 1300, "Esther 4.16", T("jeûne") + 0.2)
+# --- S6 · juste avant : « j'ai appris à être content » (Philippiens 4.11-12), sous-titres coupés
+t6 = T("juste") - 0.5
+cam(t6, S6)
+headline(S6, 280, ["Juste [avant]", "ce verset"], t6 + 0.1, kicker="Philippiens 4.11-12", hl_t=T("avant", 1), size=100)
+q6 = put(S6, 60, 610, "<small>Philippiens 4.11-12 · LSG</small>« J'ai appris à être content de l'état où je me trouve. "
+         "Je sais vivre dans l'humiliation, et je sais vivre dans l'abondance. »", "box wide", "width:900px;font-size:36px")
+blur_in(q6, 23.4, 14)
+tag(S6, 60, 1080, "Content", T("content") - 0.1, "acc", 60)
+tag(S6, 60, 1200, "L'humiliation", T("l'humiliation"), "", 48)
+tag(S6, 500, 1200, "L'abondance", T("l'abondance"), "", 48)
+sticker(S6, "lettre-papyrus-grec", 720, 1000, 230, t6 + 0.6, rot=4)
 
-# --- S7 · 31.25 – 34.7 · « If I perish, I perish » (captions hidden: the line is on screen)
-cam(31.25, S7)
-headline(S7, 380, ["Si je dois périr,", "je [périrai]."], T("périr") - 0.6, kicker="Esther · Esther 4.16", hl_t=T("périrai"), size=124)
-sticker(S7, "esther-portrait", 470, 760, 520, 31.5, rot=3)
-hit(T("périrai"), 1.0)
+# --- S7 · rassasié et affamé, dans l'abondance et dans le manque (Philippiens 4.12), sous-titres coupés
+t7 = 30.2
+cam(t7, S7)
+headline(S7, 280, ["En tout", "et [partout]"], t7 + 0.1, kicker="Philippiens 4.12", hl_t=T("partout"), size=100)
+q7 = put(S7, 60, 610, "<small>Philippiens 4.12 · LSG</small>« En tout et partout j'ai appris à être rassasié et à avoir faim. »",
+         "box wide", "width:900px;font-size:36px")
+blur_in(q7, 30.7, 14)
+sticker(S7, "bols", 140, 880, 640, T("rassasié") - 0.3, rot=-2)
+tag(S7, 60, 1260, "Rassasié", T("rassasié", 1), "acc", 44)
+tag(S7, 440, 1260, "Affamé", T("affamé"), "", 44)
+tag(S7, 60, 1350, "Abondance", T("l'abondance", 1), "acc", 44)
+tag(S7, 440, 1350, "Manque", T("manque") - 0.2, "", 44)
 
-# --- mid-video pull-out over the whole canvas, then S8 · 35.65 – 38.55 · she enters, the king holds out the scepter (Est 5:2)
-cam(34.7, "all")
-cam(35.65, S8)
-headline(S8, 280, ["Elle [entre]"], 35.7, kicker="Le moment décisif", hl_t=T("entre"), size=110)
-ok = put(S8, 700, 300, "<small>Oui</small>Vie", "box out")
-blur_in(ok, 36.0, 10)
-es = sticker(S8, "esther-pied", 40, 540, 380, T("entre") + 0.1, rot=-2)
-sticker(S8, "roi-sceptre", 420, 600, 620, 36.0, rot=2)
-tween(f"#{ok}", 'backgroundColor: "#FFFFFF", color: "#1B242E"', f'backgroundColor: "{ACC}", color: "#FFFFFF", duration: 0.25', T("tend"))
-tween(f"#{ok}", "scale: 1", 'scale: 1.18, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false', T("tend"))
-tag(S8, 40, 1300, "Il tend son sceptre d'or", T("tend"), "acc", 48)
-ref(S8, 700, 1314, "Esther 5.2", T("tend") + 0.2)
-hit(T("tend"), 1.2)
-sfx("spark", T("sceptre", 1), 1.0)
+# --- S8 · le « tout » de Paul : tenir dans toutes les situations
+t8 = 38.9
+cam(t8, S8)
+headline(S8, 280, ["Le « [tout] »", "de Paul"], t8 + 0.1, kicker="Ce que veut dire « tout »", hl_t=T("tout", 2), size=100)
+sticker(S8, "paul-pied", 50, 560, 400, T("paul", 1) - 0.3, rot=-2)
+tag(S8, 500, 640, "Tenir", T("tenir"), "acc", 80)
+tag(S8, 500, 780, "dans toutes les situations", T("situations") - 0.4, "", 36)
+tag(S8, 500, 880, "même les pires", T("pires") - 0.2, "acc", 44)
+hit(T("tenir"), 0.9)
 
-# --- S9 · 38.55 – 43.65 · two banquets, then Haman exposed (Est 5:4-8, 7:1-6)
-cam(38.55, S9)
-headline(S9, 280, ["Deux festins,", "un [piège] inversé"], T("festin") - 0.4, kicker="Le retournement", hl_t=T("dénonce"), size=88)
-sx9, sy9 = st(*S9)
-tl_id = uid()
-html.append(f'<svg class="node lead" id="{tl_id}" style="left:{sx9}px;top:{sy9}px" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
-            f'<path d="M120 640 L120 1180" stroke-dasharray="540"/></svg>')
-tween(f"#{tl_id} path", "strokeDashoffset: 540", 'strokeDashoffset: 0, duration: 2.4, ease: "none"', T("festin") - 0.1)
-for k, (title, sub, t) in enumerate([("Festin n° 1", "Esther 5.4", T("festin")), ("Festin n° 2", "Esther 7.1", T("festin") + 0.9),
-                                     ("Révélation", "Esther 7.3-6", T("identité"))]):
-    dot = put(S9, 106, 630 + k * 250, "", "dot")
-    tween(f"#{dot}", "scale: 0", 'scale: 1, duration: 0.3, ease: "back.out(3)"', t)
-    label_box(S9, 160, 610 + k * 250, title, sub, t)
-sticker(S9, "rhyton-belier", 640, 560, 300, T("festin") + 0.3, rot=6)
-sticker(S9, "coupe-inscription-royale", 600, 900, 330, T("festin") + 0.8, rot=-4)
-label_box(S9, 600, 1250, "Vaisselle royale perse", "Ve s. av. J.-C.", T("festin") + 1.1)
-tag(S9, 160, 1300, "Haman dénoncé", T("dénonce"), "acc", 50)
-hit(T("dénonce"), 0.7)
+# --- vue d'ensemble, puis S9 · révélation en mode sombre : « j'ai appris » = « j'ai été initié » (grec)
+t_all = T("détail") - 1.0
+cam(t_all, "all")
+t9 = T("détail") - 0.3
+cam(t9, S9)
+dark_mode(t9 - 0.1)
+headline(S9, 280, ["« J'ai [appris] »"], t9 + 0.1, kicker="Détail étonnant · en grec", hl_t=T("appris", 2), size=110, dark=True)
+grk = put(S9, 70, 520, "μεμύημαι", "grk", "font-size:190px")
+blur_in(grk, T("grec") - 0.1, 20)
+label_box(S9, 70, 800, "Memyēmai", "littéralement : « j'ai été initié »", T("initié") - 0.2, dark=True)
+tag(S9, 70, 960, "un secret qu'on découvre", T("secret") - 0.2, "dark", 44)
+tag(S9, 70, 1060, "en traversant la faim", T("traversant") - 0.1, "acc", 44)
+sticker(S9, "paul-portrait", 600, 1120, 340, T("secret") - 0.2, rot=3)
+hit(T("initié"), 1.0)
 
-# --- S10 · 43.65 – 46.45 · the gallows, to scale (Est 5:14, 7:10)
-cam(43.65, S10)
-headline(S10, 280, ["Pendu à sa", "propre [potence]"], 43.85, kicker="La chute de Haman", hl_t=T("potence"), size=92)
-bar_h = 760                       # 50 cubits ≈ 22 m  → about 34.5 px per metre
-man_h = round(1.7 * bar_h / 22)   # a man ≈ 1.7 m, same scale
-base_y = 1380
-bar_to_scale(S10, 220, base_y, bar_h, T("potence"))
-bar_to_scale(S10, 430, base_y, man_h, T("potence") + 0.4, width=60, acc=False, dur=0.3)
-label_box(S10, 400, 640, "Potence : 50 coudées", "≈ 22 m (coudée ≈ 44,5 cm)", T("potence") + 0.2)
-label_box(S10, 520, base_y - 120, "Un homme", "≈ 1,7 m, même échelle", T("potence") + 0.6)
-ref(S10, 400, 790, "Esther 5.14 · 7.10", T("potence") + 0.4)
-sticker(S10, "haman", 820, 860, 200, 43.9, rot=4)
-hit(T("potence"), 0.9)
+# --- S10 · le verset suivant : Philippiens 4.14, sous-titres coupés
+t10 = T("regarde") - 0.7
+cam(t10, S10)
+headline(S10, 280, ["Le verset", "[suivant]"], t10 + 0.1, kicker="Philippiens 4.14", hl_t=T("suivant"), size=100, dark=True)
+q10 = put(S10, 60, 690, "<small>Philippiens 4.14 · LSG</small>« Cependant, vous avez bien fait de prendre part à ma détresse. »",
+          "box wide", "width:900px;font-size:36px")
+blur_in(q10, 57.0, 14)
+sticker(S10, "epaphrodite", 60, 980, 300, T("prendre") - 0.3, rot=-3)
+label_box(S10, 420, 1080, "Les amis de Philippes", "ils prennent part à sa détresse", T("détresse") - 0.1, dark=True)
 
-# --- S11 · 46.45 – 50.65 · the people saved, Purim (Est 9:20-28)
-cam(46.45, S11)
-headline(S11, 280, ["Le peuple est [sauvé]"], T("sauvé") - 0.5, kicker="L'issue", hl_t=T("sauvé"), size=92)
-r_, rh = sticker(S11, "relief-serviteurs-festin", 40, 500, 420, 46.8, rot=-4)
-label_box(S11, 40, 500 + rh + 18, "Repas de fête", "relief perse, IVe s. av. J.-C.", 47.0)
-sticker(S11, "esther-pied", 640, 500, 330, T("sauvé") - 0.2, rot=3)
-for k, dname in enumerate(["14 Adar", "15 Adar"]):
-    d = put(S11, 40 + k * 330, 1200, f'<small>Purim</small>{dname}', "day wide")
-    tween(f"#{d}", 'opacity: 0, y: 40, backgroundColor: "#FFFFFF", color: "#1B242E"',
-          f'opacity: 1, y: 0, backgroundColor: "{ACC}", color: "#FFFFFF", duration: 0.35, ease: "back.out(2)"', T("purim") + k * 0.35)
-ref(S11, 720, 1240, "Esther 9.20-28", T("purim") + 0.3)
-hit(T("sauvé"), 0.6)
+# --- S11 · Paul remercie ses amis : sa force ne vient pas de lui seul
+t11 = T("juste", 1) - 0.3
+cam(t11, S11)
+headline(S11, 280, ["Paul [remercie]", "ses amis"], t11 + 0.1, kicker="Juste après « je puis tout »", hl_t=T("remercie"), size=100, dark=True)
+sticker(S11, "paul-pied", 60, 620, 340, T("paul", 2) - 0.3, rot=-2)
+sticker(S11, "epaphrodite", 540, 600, 290, T("amis") - 0.3, rot=3)
+tag(S11, 60, 1200, "Sa force ne vient pas de lui seul", T("force") - 0.1, "acc", 38)
+ref(S11, 60, 1310, "Philippiens 4.13-14", T("seul"))
 
-# --- S12 · 50.65 – 54.6 · dark mode reveal: the book never names God
-cam(50.65, S12)
-dark_mode(50.6)
-headline(S12, 280, ["Le livre d'Esther"], 50.95, kicker="Détail étonnant", size=92, dark=True)
-sticker(S12, "rouleau-esther", 720, 470, 250, 51.1, rot=6)
-counter(S12, 70, 520, 0, 10, 51.4, 0.8, " chapitres", 96, "dark small")
-counter(S12, 70, 680, 0, 167, 52.0, 1.0, " versets", 96, "dark small")
-label_box(S12, 70, 880, "Le nom de Dieu", "dans le texte hébreu", T("jamais") - 0.3, dark=True)
-z = put(S12, 70, 980, "0", "zero")
-tween(f"#{z}", "opacity: 0, scale: 2.2", 'opacity: 1, scale: 1, duration: 0.35, ease: "power4.in"', T("dieu"))
-tag(S12, 460, 1110, "fois", T("dieu") + 0.3, "dark", 56)
-hit(T("dieu"), 1.0)
+# --- S12 · pas la victoire : la force de tenir, que tu gagnes ou que tu perdes
+t12 = T("promet") - 1.1
+cam(t12, S12)
+headline(S12, 280, ["Pas la [victoire]"], t12 + 0.1, kicker="Ce que promet le verset", hl_t=T("victoire"), size=110, dark=True)
+c1 = put(S12, 70, 560, "<small>Ce verset ne promet pas</small>La victoire", "box", "width:880px")
+c2 = put(S12, 70, 800, "<small>Il promet</small>La force de tenir", "box", "width:880px")
+blur_in(c1, T("promet") - 0.2, 14)
+blur_in(c2, T("promet", 1) - 0.2, 14)
+tween(f"#{c2}", f'backgroundColor: "#FFFFFF", color: "{INK}"', f'backgroundColor: "{ACC}", color: "#FFFFFF", duration: 0.3', T("tenir", 1))
+tag(S12, 70, 1100, "Tu gagnes", T("gagnes"), "dark", 56)
+tag(S12, 500, 1100, "Tu perdes", T("perdes") - 0.2, "dark", 56)
+hit(T("tenir", 1), 0.9)
 
-# --- S13 · 54.6 – 59.65 · the question
-cam(54.6, S13)
-headline(S13, 480, ["Et [toi] ?"], T("toi") - 0.2, kicker="À ton tour", hl_t=T("toi"), size=200, dark=True)
-sticker(S13, "esther-pied", 720, 820, 300, 54.8, rot=3)
-cta = put(S13, 70, 1010, '<svg viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z"/></svg>Réponds en commentaire', "cta")
-blur_in(cta, T("commentaire") - 0.5, 14)
-sfx("click", T("commentaire") - 0.5, 0.8)
+# --- S13 · appel à commenter
+t13 = T("toi") - 0.3
+cam(t13, S13)
+headline(S13, 330, ["Et [toi] ?"], t13 + 0.1, kicker="À ton tour", hl_t=T("toi"), size=170, dark=True)
+label_box(S13, 70, 760, "Dans quelle situation", "as-tu besoin de cette force ?", T("situation") - 0.3, dark=True)
+sticker(S13, "paul-portrait", 600, 800, 340, t13 + 0.4, rot=3)
+cta = put(S13, 70, 1150, '<svg viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z"/></svg>Réponds en commentaire', "cta")
+blur_in(cta, T("dis-le") - 0.2, 14)
+sfx("click", T("dis-le") - 0.2, 0.8)
 
-# --- end · 59.65 – 62.4 · pull out over the whole canvas, title card
-cam(59.65, "all")
+# --- fin · vue d'ensemble puis carte de fin pendant « abonne-toi »
+t_end = T("abonne-toi") - 0.6
+cam(t_end, "all")
 
-
-# ================================================================ assemble
 build(
-    chapters=[("01", "Danger", 0, 17.85), ("02", "Décision", 17.85, 34.85), ("03", "Retournement", 34.85, 50.65), ("04", "Leçon", 50.65, DUR)],
-    suppress=[(31.3, 36.0), (59.6, DUR)],     # citation affichée en grand, puis carte de fin : pas de sous-titres
+    chapters=[("01", "Le verset", 0, t6), ("02", "Le contexte", t6, t_all), ("03", "Le mot", t_all, t11), ("04", "Leçon", t11, DUR)],
+    suppress=[(23.3, 30.1), (30.5, 38.9), (57.1, 60.3), (T("abonne-toi") - 0.7, DUR)],
     endcard={"kicker": "Abonne-toi", "title": "La Bible<br />[Simple]", "button": "S'abonner",
-             "stickers": [("tete-garde-perse", 40, 1180, 380, -6), ("esther-pied", 790, 1060, 240, 5)]},
-    endcard_t=60.2,
+             "stickers": [("paul-portrait", 30, 1150, 330, -6), ("epaphrodite", 800, 1000, 200, 5)]},
+    endcard_t=T("abonne-toi") - 0.1,
+    music_volume=0.14,
 )
