@@ -1,0 +1,4500 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 3 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Bible-simple/montage/short-66-73/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "duplicate_media_discovery_risk",
+        "severity": "warning",
+        "message": "Detected 2 matching img entries with the same source/start/duration.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Bible-simple/montage/short-66-73/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Avoid duplicated media nodes that can be discovered twice during compilation."
+      },
+      {
+        "code": "overlapping_gsap_tweens",
+        "severity": "warning",
+        "message": "GSAP tweens overlap on \"#world\" for x, y, scale between 43.68s and 43.83s.",
+        "selector": "#world",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Bible-simple/montage/short-66-73/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`."
+      },
+      {
+        "code": "overlapping_gsap_tweens",
+        "severity": "warning",
+        "message": "GSAP tweens overlap on \"#world\" for filter between 43.68s and 43.83s.",
+        "selector": "#world",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Bible-simple/montage/short-66-73/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`."
+      },
+      {
+        "code": "gsap_repeated_fromto_without_baseline",
+        "severity": "warning",
+        "message": "6 tl.fromTo() calls target \"proxy (unresolved DOM association)\" with no stable baseline. The last-authored fromTo \"from\" values become the element's resting state for any seek before the first tween actually runs, because GSAP applies fromTo from-values at authoring time (immediateRender), not at tween position.",
+        "selector": "proxy (unresolved DOM association)",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Bible-simple/montage/short-66-73/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 4.72s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
+      },
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 664 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Bible-simple/montage/short-66-73/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 79,
+    "findings": [
+      {
+        "code": "escaped_container",
+        "severity": "warning",
+        "time": 28.7,
+        "selector": "#world",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": -12.69,
+          "top": -1987.68,
+          "right": 3303.45,
+          "bottom": 7837.92,
+          "width": 3316.14,
+          "height": 9825.6
+        },
+        "containerSelector": "#drift",
+        "text": "BIBLE CATHOLIQUE 7 livres de plus Bible catholique Bible protestante POURQUOI ? 66 ou 73 ? 66 livres 73 livres Protestante Catholique Pourquoi ? LE MÊME PARTOUT Le Nouveau Testament : 27 27 livres Identique partout La différence : l'Ancien Testament LES PROTESTANTS La Bible hébraïque 39 livres Ancien Testament LES CATHOLIQUES AUSSI La Septante Traduction grecque 7 de plus EN PLUS Les sept livres Tobie Judith La Sagesse Le Siracide Baruch 1 Maccabées 2 Maccabées XVIE SIÈCLE Luther les place à part Lecture utile Hors de la Bible 1546 Le concile de Trente 1500 Déclarés canoniques ENCORE DAVANTAGE Les Églises orthodoxes Encore davantage Selon leur tradition DÉTAIL ÉTONNANT Jérôme et la Vulgate Traducteur de la Vulgate Absents de la Bible hébraïque Mais il les inclut À TON TOUR Quelle Bible lis-tu ? Catholique, protestante, orthodoxe ? dis-nous la tienne Réponds en commentaire",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": -12.69,
+          "top": -22.56,
+          "right": 1092.69,
+          "bottom": 1942.56,
+          "width": 1105.38,
+          "height": 1965.12
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -12.69,
+          "y": -1987.68,
+          "width": 3316.14,
+          "height": 9825.6
+        },
+        "firstSeen": 3.189,
+        "lastSeen": 54.211,
+        "occurrences": 9,
+        "heldMs": 0,
+        "times": [
+          3.189,
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x2 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1135.76,
+          "top": 276.9,
+          "right": -803.65,
+          "bottom": 308.99,
+          "width": 332.11,
+          "height": 32.09
+        },
+        "containerSelector": "#root",
+        "text": "Bible catholique",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1135.76
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1135.76,
+          "y": 276.9,
+          "width": 332.11,
+          "height": 32.09
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x2 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1101.54,
+          "top": 323.48,
+          "right": -770.92,
+          "bottom": 470.45,
+          "width": 330.62,
+          "height": 146.97
+        },
+        "containerSelector": "#root",
+        "text": "livres",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1101.54
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1101.54,
+          "y": 323.48,
+          "width": 330.62,
+          "height": 146.97
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x2 > div:nth-of-type(2) > div:nth-of-type(1) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1168.88,
+          "top": 323.48,
+          "right": -1101.54,
+          "bottom": 470.45,
+          "width": 67.34,
+          "height": 146.97
+        },
+        "containerSelector": "#root",
+        "text": "7",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1168.88
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1168.88,
+          "y": 323.48,
+          "width": 67.34,
+          "height": 146.97
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x2 > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1168.88,
+          "top": 455.37,
+          "right": -765.16,
+          "bottom": 602.34,
+          "width": 403.72,
+          "height": 146.97
+        },
+        "containerSelector": "#root",
+        "text": "de plus",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1168.88
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1168.88,
+          "y": 455.37,
+          "width": 403.72,
+          "height": 146.97
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x3",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1151.28,
+          "top": 764.39,
+          "right": -774.17,
+          "bottom": 825.45,
+          "width": 377.11,
+          "height": 61.06
+        },
+        "containerSelector": "#root",
+        "text": "Bible catholique",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1151.28
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1151.28,
+          "y": 764.39,
+          "width": 377.11,
+          "height": 61.06
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x4",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1151.28,
+          "top": 888.59,
+          "right": -744.9,
+          "bottom": 949.65,
+          "width": 406.38,
+          "height": 61.06
+        },
+        "containerSelector": "#root",
+        "text": "Bible protestante",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1151.28
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1151.28,
+          "y": 888.59,
+          "width": 406.38,
+          "height": 61.06
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x5 > div:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": -17.96,
+          "top": 256.2,
+          "right": 195.67,
+          "bottom": 288.29,
+          "width": 213.63,
+          "height": 32.09
+        },
+        "containerSelector": "#root",
+        "text": "Pourquoi ?",
+        "fixHint": "Text is 214px x 32px inside 1080px x 1920px and overflows by up to 18px; widen the container to at least ~1098px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 17.96
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -17.96,
+          "y": 256.2,
+          "width": 213.63,
+          "height": 32.09
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 9.567,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.567
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x5 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -17.96,
+          "top": 256.2,
+          "right": 195.67,
+          "bottom": 288.29,
+          "width": 213.63,
+          "height": 32.09
+        },
+        "containerSelector": "#root",
+        "text": "Pourquoi ?",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 17.96
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -17.96,
+          "y": 256.2,
+          "width": 213.63,
+          "height": 32.09
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x5 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": -51.08,
+          "top": 310.33,
+          "right": 581.4,
+          "bottom": 455.65,
+          "width": 632.48,
+          "height": 145.32
+        },
+        "containerSelector": "#root",
+        "text": "66 ou ?",
+        "fixHint": "Text is 632px x 145px inside 1080px x 1920px and overflows by up to 51px; widen the container to at least ~1131px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 51.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -51.08,
+          "y": 310.33,
+          "width": 632.48,
+          "height": 145.32
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 9.567,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.567
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x5 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -51.08,
+          "top": 301.74,
+          "right": 581.4,
+          "bottom": 464.24,
+          "width": 632.48,
+          "height": 162.5
+        },
+        "containerSelector": "#root",
+        "text": "66 ou ?",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 51.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -51.08,
+          "y": 301.74,
+          "width": 632.48,
+          "height": 162.5
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x6",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": -51.08,
+          "top": 586.88,
+          "right": 140.67,
+          "bottom": 742.13,
+          "width": 191.75,
+          "height": 155.25
+        },
+        "containerSelector": "#root",
+        "text": "66",
+        "fixHint": "Text is 192px x 155px inside 1080px x 1920px and overflows by up to 51px; widen the container to at least ~1131px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 51.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -51.08,
+          "y": 586.88,
+          "width": 191.75,
+          "height": 155.25
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 9.567,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.567
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x6",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -51.08,
+          "top": 570.84,
+          "right": 140.67,
+          "bottom": 758.17,
+          "width": 191.75,
+          "height": 187.33
+        },
+        "containerSelector": "#root",
+        "text": "66",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 51.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -51.08,
+          "y": 570.84,
+          "width": 191.75,
+          "height": 187.33
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x8",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": -51.08,
+          "top": 855.98,
+          "right": 127.33,
+          "bottom": 1011.24,
+          "width": 178.41,
+          "height": 155.26
+        },
+        "containerSelector": "#root",
+        "text": "73",
+        "fixHint": "Text is 178px x 155px inside 1080px x 1920px and overflows by up to 51px; widen the container to at least ~1131px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 51.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -51.08,
+          "y": 855.98,
+          "width": 178.41,
+          "height": 155.26
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 9.567,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.567
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x8",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -51.08,
+          "top": 839.94,
+          "right": 127.33,
+          "bottom": 1027.28,
+          "width": 178.41,
+          "height": 187.34
+        },
+        "containerSelector": "#root",
+        "text": "73",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 51.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -51.08,
+          "y": 839.94,
+          "width": 178.41,
+          "height": 187.34
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x12",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -23.13,
+          "top": 1217.71,
+          "right": 499.62,
+          "bottom": 1342.95,
+          "width": 522.75,
+          "height": 125.24
+        },
+        "containerSelector": "#root",
+        "text": "Pourquoi ?",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 23.13
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -23.13,
+          "y": 1217.71,
+          "width": 522.75,
+          "height": 125.24
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x13 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1099.84,
+          "top": 265.18,
+          "right": 1425.41,
+          "bottom": 297.26,
+          "width": 325.57,
+          "height": 32.08
+        },
+        "containerSelector": "#root",
+        "text": "Le même partout",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 345.41
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1099.84,
+          "y": 265.18,
+          "width": 325.57,
+          "height": 32.08
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x13 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 1066.72,
+          "top": 319.52,
+          "right": 1627.24,
+          "bottom": 431.29,
+          "width": 560.52,
+          "height": 111.77
+        },
+        "containerSelector": "#root",
+        "text": "Le Nouveau",
+        "fixHint": "Text is 561px x 112px inside 1080px x 1920px and overflows by up to 547px; widen the container to at least ~1627px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 547.24
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1066.72,
+          "y": 319.52,
+          "width": 560.52,
+          "height": 111.77
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 9.567,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.567
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x13 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1066.72,
+          "top": 312.79,
+          "right": 1627.24,
+          "bottom": 438.02,
+          "width": 560.52,
+          "height": 125.23
+        },
+        "containerSelector": "#root",
+        "text": "Le Nouveau",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 547.24
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1066.72,
+          "y": 312.79,
+          "width": 560.52,
+          "height": 125.23
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x13 > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 1066.72,
+          "top": 431.3,
+          "right": 1640.94,
+          "bottom": 543.07,
+          "width": 574.22,
+          "height": 111.77
+        },
+        "containerSelector": "#root",
+        "text": "Testament :",
+        "fixHint": "Text is 574px x 112px inside 1080px x 1920px and overflows by up to 561px; widen the container to at least ~1641px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 560.94
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1066.72,
+          "y": 431.3,
+          "width": 574.22,
+          "height": 111.77
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 9.567,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.567
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x13 > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1066.72,
+          "top": 424.57,
+          "right": 1640.94,
+          "bottom": 549.8,
+          "width": 574.22,
+          "height": 125.23
+        },
+        "containerSelector": "#root",
+        "text": "Testament :",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 560.94
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1066.72,
+          "y": 424.57,
+          "width": 574.22,
+          "height": 125.23
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 9.567,
+        "selector": "#x13 > div:nth-of-type(2) > div:nth-of-type(2) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1640.94,
+          "top": 424.57,
+          "right": 1759.73,
+          "bottom": 549.8,
+          "width": 118.79,
+          "height": 125.23
+        },
+        "containerSelector": "#root",
+        "text": "27",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 679.73
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1640.94,
+          "y": 424.57,
+          "width": 118.79,
+          "height": 125.23
+        },
+        "firstSeen": 9.567,
+        "lastSeen": 54.211,
+        "occurrences": 8,
+        "heldMs": 0,
+        "times": [
+          9.567,
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 15.713,
+        "selector": "#x13 > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 86.67,
+          "top": 175.81,
+          "right": 412.24,
+          "bottom": 207.89,
+          "width": 325.57,
+          "height": 32.08
+        },
+        "containerSelector": "#brand",
+        "text": "LE MÊME PARTOUT",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 86.67,
+          "y": 175.81,
+          "width": 325.57,
+          "height": 32.08
+        },
+        "firstSeen": 15.713,
+        "lastSeen": 15.713,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          15.713
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x5 > div:nth-of-type(2) > div:nth-of-type(1) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -689.35,
+          "top": -1180.22,
+          "right": -534.25,
+          "bottom": -1017.73,
+          "width": 155.1,
+          "height": 162.49
+        },
+        "containerSelector": "#root",
+        "text": "73",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 689.35,
+          "top": 1180.22
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -689.35,
+          "y": -1180.22,
+          "width": 155.1,
+          "height": 162.49
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x7 > span:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -866.29,
+          "top": -824.18,
+          "right": -689.61,
+          "bottom": -745.52,
+          "width": 176.68,
+          "height": 78.66
+        },
+        "containerSelector": "#root",
+        "text": "livres",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 866.29,
+          "top": 824.18
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -866.29,
+          "y": -824.18,
+          "width": 176.68,
+          "height": 78.66
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x9 > span:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -879.63,
+          "top": -555.08,
+          "right": -702.95,
+          "bottom": -476.42,
+          "width": 176.68,
+          "height": 78.66
+        },
+        "containerSelector": "#root",
+        "text": "livres",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 879.63,
+          "top": 555.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -879.63,
+          "y": -555.08,
+          "width": 176.68,
+          "height": 78.66
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x10",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -446.35,
+          "top": -778.64,
+          "right": -212.32,
+          "bottom": -727.93,
+          "width": 234.03,
+          "height": 50.71
+        },
+        "containerSelector": "#root",
+        "text": "Protestante",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 446.35,
+          "top": 778.64
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -446.35,
+          "y": -778.64,
+          "width": 234.03,
+          "height": 50.71
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x11",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -446.35,
+          "top": -509.54,
+          "right": -231.54,
+          "bottom": -458.83,
+          "width": 214.81,
+          "height": 50.71
+        },
+        "containerSelector": "#root",
+        "text": "Catholique",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 446.35,
+          "top": 509.54
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -446.35,
+          "y": -509.54,
+          "width": 214.81,
+          "height": 50.71
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x14",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 53.55,
+          "top": -873.86,
+          "right": 281.02,
+          "bottom": -635.81,
+          "width": 227.47,
+          "height": 238.05
+        },
+        "containerSelector": "#root",
+        "text": "27",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 873.86
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 53.55,
+          "y": -873.86,
+          "width": 227.47,
+          "height": 238.05
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x15 > span:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 287.23,
+          "top": -762.08,
+          "right": 511,
+          "bottom": -662.72,
+          "width": 223.77,
+          "height": 99.36
+        },
+        "containerSelector": "#root",
+        "text": "livres",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 762.08
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 287.23,
+          "y": -762.08,
+          "width": 223.77,
+          "height": 99.36
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x16",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 81.5,
+          "top": -509.54,
+          "right": 526.32,
+          "bottom": -444.34,
+          "width": 444.82,
+          "height": 65.2
+        },
+        "containerSelector": "#root",
+        "text": "Identique partout",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 509.54
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 81.5,
+          "y": -509.54,
+          "width": 444.82,
+          "height": 65.2
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 15.944,
+        "selector": "#x17",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 81.5,
+          "top": -385.34,
+          "right": 741.11,
+          "bottom": -334.63,
+          "width": 659.61,
+          "height": 50.71
+        },
+        "containerSelector": "#root",
+        "text": "La différence : l'Ancien Testament",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 385.34
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 81.5,
+          "y": -385.34,
+          "width": 659.61,
+          "height": 50.71
+        },
+        "firstSeen": 15.944,
+        "lastSeen": 54.211,
+        "occurrences": 7,
+        "heldMs": 0,
+        "times": [
+          15.944,
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 22.322,
+        "selector": "#x18 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1195.1,
+          "top": 266.13,
+          "right": 1514.53,
+          "bottom": 297.76,
+          "width": 319.43,
+          "height": 31.63
+        },
+        "containerSelector": "#root",
+        "text": "Les protestants",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 434.53
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1195.1,
+          "y": 266.13,
+          "width": 319.43,
+          "height": 31.63
+        },
+        "firstSeen": 22.322,
+        "lastSeen": 54.211,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 22.322,
+        "selector": "#x18 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1162.44,
+          "top": 313.07,
+          "right": 1541.32,
+          "bottom": 441.64,
+          "width": 378.88,
+          "height": 128.57
+        },
+        "containerSelector": "#root",
+        "text": "La Bible",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 461.32
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1162.44,
+          "y": 313.07,
+          "width": 378.88,
+          "height": 128.57
+        },
+        "firstSeen": 22.322,
+        "lastSeen": 54.211,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 22.322,
+        "selector": "#x18 > div:nth-of-type(2) > div:nth-of-type(2) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1162.44,
+          "top": 427.67,
+          "right": 1656.6,
+          "bottom": 556.24,
+          "width": 494.16,
+          "height": 128.57
+        },
+        "containerSelector": "#root",
+        "text": "hébraïque",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 576.6
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1162.44,
+          "y": 427.67,
+          "width": 494.16,
+          "height": 128.57
+        },
+        "firstSeen": 22.322,
+        "lastSeen": 54.211,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 22.322,
+        "selector": "#x19",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1162.44,
+          "top": 613.06,
+          "right": 1402.51,
+          "bottom": 847.76,
+          "width": 240.07,
+          "height": 234.7
+        },
+        "containerSelector": "#root",
+        "text": "39",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 322.51
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1162.44,
+          "y": 613.06,
+          "width": 240.07,
+          "height": 234.7
+        },
+        "firstSeen": 22.322,
+        "lastSeen": 54.211,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 22.322,
+        "selector": "#x20 > span:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1408.63,
+          "top": 723.27,
+          "right": 1629.25,
+          "bottom": 821.23,
+          "width": 220.62,
+          "height": 97.96
+        },
+        "containerSelector": "#root",
+        "text": "livres",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 549.25
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1408.63,
+          "y": 723.27,
+          "width": 220.62,
+          "height": 97.96
+        },
+        "firstSeen": 22.322,
+        "lastSeen": 54.211,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 22.322,
+        "selector": "#x21",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1189.99,
+          "top": 972.24,
+          "right": 1647.15,
+          "bottom": 1036.53,
+          "width": 457.16,
+          "height": 64.29
+        },
+        "containerSelector": "#root",
+        "text": "Ancien Testament",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 567.15
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1189.99,
+          "y": 972.24,
+          "width": 457.16,
+          "height": 64.29
+        },
+        "firstSeen": 22.322,
+        "lastSeen": 54.211,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          22.322,
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 28.7,
+        "selector": "#x22 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1197.09,
+          "top": 264.02,
+          "right": 1628.12,
+          "bottom": 295.75,
+          "width": 431.03,
+          "height": 31.73
+        },
+        "containerSelector": "#root",
+        "text": "Les catholiques aussi",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 548.12
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1197.09,
+          "y": 264.02,
+          "width": 431.03,
+          "height": 31.73
+        },
+        "firstSeen": 28.7,
+        "lastSeen": 54.211,
+        "occurrences": 5,
+        "heldMs": 0,
+        "times": [
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 28.7,
+        "selector": "#x22 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1164.33,
+          "top": 310.08,
+          "right": 1323.39,
+          "bottom": 458.49,
+          "width": 159.06,
+          "height": 148.41
+        },
+        "containerSelector": "#root",
+        "text": "La",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 243.39
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1164.33,
+          "y": 310.08,
+          "width": 159.06,
+          "height": 148.41
+        },
+        "firstSeen": 28.7,
+        "lastSeen": 54.211,
+        "occurrences": 5,
+        "heldMs": 0,
+        "times": [
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 28.7,
+        "selector": "#x22 > div:nth-of-type(2) > div:nth-of-type(1) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1323.39,
+          "top": 310.08,
+          "right": 1848.59,
+          "bottom": 458.49,
+          "width": 525.2,
+          "height": 148.41
+        },
+        "containerSelector": "#root",
+        "text": "Septante",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 768.59
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1323.39,
+          "y": 310.08,
+          "width": 525.2,
+          "height": 148.41
+        },
+        "firstSeen": 28.7,
+        "lastSeen": 54.211,
+        "occurrences": 5,
+        "heldMs": 0,
+        "times": [
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 28.7,
+        "selector": "#x24",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1550.19,
+          "top": 705.15,
+          "right": 2006.64,
+          "bottom": 765.54,
+          "width": 456.45,
+          "height": 60.39
+        },
+        "containerSelector": "#root",
+        "text": "Traduction grecque",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 926.64
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1550.19,
+          "y": 705.15,
+          "width": 456.45,
+          "height": 60.39
+        },
+        "firstSeen": 28.7,
+        "lastSeen": 54.211,
+        "occurrences": 5,
+        "heldMs": 0,
+        "times": [
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 28.7,
+        "selector": "#x25",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1522.56,
+          "top": 820.8,
+          "right": 1607.11,
+          "bottom": 1006.06,
+          "width": 84.55,
+          "height": 185.26
+        },
+        "containerSelector": "#root",
+        "text": "7",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 527.11
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1522.56,
+          "y": 820.8,
+          "width": 84.55,
+          "height": 185.26
+        },
+        "firstSeen": 28.7,
+        "lastSeen": 54.211,
+        "occurrences": 5,
+        "heldMs": 0,
+        "times": [
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 28.7,
+        "selector": "#x26 > span:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1613.25,
+          "top": 906.78,
+          "right": 1841.3,
+          "bottom": 984.56,
+          "width": 228.05,
+          "height": 77.78
+        },
+        "containerSelector": "#root",
+        "text": "de plus",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 761.3
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1613.25,
+          "y": 906.78,
+          "width": 228.05,
+          "height": 77.78
+        },
+        "firstSeen": 28.7,
+        "lastSeen": 54.211,
+        "occurrences": 5,
+        "heldMs": 0,
+        "times": [
+          28.7,
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 30.784,
+        "selector": "#x27 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 53.55,
+          "top": 117.8,
+          "right": 490.43,
+          "bottom": 248.21,
+          "width": 436.88,
+          "height": 130.41
+        },
+        "containerSelector": "#brand",
+        "text": "Les sept livres",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 53.55,
+          "y": 117.8,
+          "width": 436.88,
+          "height": 130.41
+        },
+        "firstSeen": 30.784,
+        "lastSeen": 30.784,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          30.784
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 30.784,
+        "selector": "#x27 > div:nth-of-type(2) > div:nth-of-type(1) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 490.43,
+          "top": 117.8,
+          "right": 760.58,
+          "bottom": 248.21,
+          "width": 270.15,
+          "height": 130.41
+        },
+        "containerSelector": "#ch2",
+        "text": "livres",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 490.43,
+          "y": 117.8,
+          "width": 270.15,
+          "height": 130.41
+        },
+        "firstSeen": 30.784,
+        "lastSeen": 30.784,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          30.784
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x27 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 89.78,
+          "top": -1712.54,
+          "right": 235.66,
+          "bottom": -1680.68,
+          "width": 145.88,
+          "height": 31.86
+        },
+        "containerSelector": "#root",
+        "text": "En plus",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1712.54
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 89.78,
+          "y": -1712.54,
+          "width": 145.88,
+          "height": 31.86
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x27 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 56.89,
+          "top": -1665.26,
+          "right": 490.77,
+          "bottom": -1535.74,
+          "width": 433.88,
+          "height": 129.52
+        },
+        "containerSelector": "#root",
+        "text": "Les sept",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1665.26
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 56.89,
+          "y": -1665.26,
+          "width": 433.88,
+          "height": 129.52
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x27 > div:nth-of-type(2) > div:nth-of-type(1) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 490.77,
+          "top": -1665.26,
+          "right": 759.07,
+          "bottom": -1535.74,
+          "width": 268.3,
+          "height": 129.52
+        },
+        "containerSelector": "#root",
+        "text": "livres",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1665.26
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 490.77,
+          "y": -1665.26,
+          "width": 268.3,
+          "height": 129.52
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x28",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 84.64,
+          "top": -1391.84,
+          "right": 200.34,
+          "bottom": -1336.33,
+          "width": 115.7,
+          "height": 55.51
+        },
+        "containerSelector": "#root",
+        "text": "Tobie",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1391.84
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84.64,
+          "y": -1391.84,
+          "width": 115.7,
+          "height": 55.51
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x29",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 84.64,
+          "top": -1289.05,
+          "right": 222.41,
+          "bottom": -1233.54,
+          "width": 137.77,
+          "height": 55.51
+        },
+        "containerSelector": "#root",
+        "text": "Judith",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1289.05
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84.64,
+          "y": -1289.05,
+          "width": 137.77,
+          "height": 55.51
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x30",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 84.64,
+          "top": -1186.26,
+          "right": 328.85,
+          "bottom": -1130.75,
+          "width": 244.21,
+          "height": 55.51
+        },
+        "containerSelector": "#root",
+        "text": "La Sagesse",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1186.26
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84.64,
+          "y": -1186.26,
+          "width": 244.21,
+          "height": 55.51
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x31",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 84.64,
+          "top": -1083.47,
+          "right": 321.47,
+          "bottom": -1027.96,
+          "width": 236.83,
+          "height": 55.51
+        },
+        "containerSelector": "#root",
+        "text": "Le Siracide",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1083.47
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84.64,
+          "y": -1083.47,
+          "width": 236.83,
+          "height": 55.51
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x32",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 84.64,
+          "top": -980.68,
+          "right": 237.44,
+          "bottom": -925.17,
+          "width": 152.8,
+          "height": 55.51
+        },
+        "containerSelector": "#root",
+        "text": "Baruch",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 980.68
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84.64,
+          "y": -980.68,
+          "width": 152.8,
+          "height": 55.51
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x33",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 84.64,
+          "top": -877.89,
+          "right": 359.73,
+          "bottom": -822.38,
+          "width": 275.09,
+          "height": 55.51
+        },
+        "containerSelector": "#root",
+        "text": "1 Maccabées",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 877.89
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84.64,
+          "y": -877.89,
+          "width": 275.09,
+          "height": 55.51
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 35.078,
+        "selector": "#x34",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 84.64,
+          "top": -775.1,
+          "right": 369.37,
+          "bottom": -719.59,
+          "width": 284.73,
+          "height": 55.51
+        },
+        "containerSelector": "#root",
+        "text": "2 Maccabées",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 775.1
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 84.64,
+          "y": -775.1,
+          "width": 284.73,
+          "height": 55.51
+        },
+        "firstSeen": 35.078,
+        "lastSeen": 54.211,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          35.078,
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x36 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -2082.94,
+          "top": 273.47,
+          "right": -1873.2,
+          "bottom": 304.77,
+          "width": 209.74,
+          "height": 31.3
+        },
+        "containerSelector": "#root",
+        "text": "XVIe siècle",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 2082.94
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -2082.94,
+          "y": 273.47,
+          "width": 209.74,
+          "height": 31.3
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x36 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -2115.25,
+          "top": 319.91,
+          "right": -1656.2,
+          "bottom": 442.08,
+          "width": 459.05,
+          "height": 122.17
+        },
+        "containerSelector": "#root",
+        "text": "Luther les",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 2115.25
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -2115.25,
+          "y": 319.91,
+          "width": 459.05,
+          "height": 122.17
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x36 > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -2115.25,
+          "top": 428.95,
+          "right": -1843.68,
+          "bottom": 551.11,
+          "width": 271.57,
+          "height": 122.16
+        },
+        "containerSelector": "#root",
+        "text": "place",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 2115.25
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -2115.25,
+          "y": 428.95,
+          "width": 271.57,
+          "height": 122.16
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x36 > div:nth-of-type(2) > div:nth-of-type(2) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1843.68,
+          "top": 428.95,
+          "right": -1573.99,
+          "bottom": 551.11,
+          "width": 269.69,
+          "height": 122.16
+        },
+        "containerSelector": "#root",
+        "text": "à part",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1843.68
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1843.68,
+          "y": 428.95,
+          "width": 269.69,
+          "height": 122.16
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x38",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1734.63,
+          "top": 750,
+          "right": -1422.27,
+          "bottom": 813.61,
+          "width": 312.36,
+          "height": 63.61
+        },
+        "containerSelector": "#root",
+        "text": "Lecture utile",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1734.63
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1734.63,
+          "y": 750,
+          "width": 312.36,
+          "height": 63.61
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x39",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1734.63,
+          "top": 891.35,
+          "right": -1356.03,
+          "bottom": 954.95,
+          "width": 378.6,
+          "height": 63.6
+        },
+        "containerSelector": "#root",
+        "text": "Hors de la Bible",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1734.63
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1734.63,
+          "y": 891.35,
+          "width": 378.6,
+          "height": 63.6
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x40 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -992.57,
+          "top": 273.47,
+          "right": -912.99,
+          "bottom": 304.77,
+          "width": 79.58,
+          "height": 31.3
+        },
+        "containerSelector": "#root",
+        "text": "1546",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 992.57
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -992.57,
+          "y": 273.47,
+          "width": 79.58,
+          "height": 31.3
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x40 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1024.88,
+          "top": 319.91,
+          "right": -539.89,
+          "bottom": 447.12,
+          "width": 484.99,
+          "height": 127.21
+        },
+        "containerSelector": "#root",
+        "text": "Le concile",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1024.88
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1024.88,
+          "y": 319.91,
+          "width": 484.99,
+          "height": 127.21
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x40 > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1024.88,
+          "top": 433.3,
+          "right": -884.28,
+          "bottom": 560.51,
+          "width": 140.6,
+          "height": 127.21
+        },
+        "containerSelector": "#root",
+        "text": "de",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1024.88
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1024.88,
+          "y": 433.3,
+          "width": 140.6,
+          "height": 127.21
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x40 > div:nth-of-type(2) > div:nth-of-type(2) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -884.28,
+          "top": 433.3,
+          "right": -567.69,
+          "bottom": 560.51,
+          "width": 316.59,
+          "height": 127.21
+        },
+        "containerSelector": "#root",
+        "text": "Trente",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 884.28
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -884.28,
+          "y": 433.3,
+          "width": 316.59,
+          "height": 127.21
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x42",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -1024.88,
+          "top": 1052.88,
+          "right": -635.71,
+          "bottom": 1260.86,
+          "width": 389.17,
+          "height": 207.98
+        },
+        "containerSelector": "#root",
+        "text": "1546",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 1024.88
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -1024.88,
+          "y": 1052.88,
+          "width": 389.17,
+          "height": 207.98
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 41.456,
+        "selector": "#x44",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -997.62,
+          "top": 1315.38,
+          "right": -477.88,
+          "bottom": 1378.98,
+          "width": 519.74,
+          "height": 63.6
+        },
+        "containerSelector": "#root",
+        "text": "Déclarés canoniques",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 997.62
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -997.62,
+          "y": 1315.38,
+          "width": 519.74,
+          "height": 63.6
+        },
+        "firstSeen": 41.456,
+        "lastSeen": 54.211,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          41.456,
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 43.932,
+        "selector": "#x22 > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 368.41,
+          "top": 217.03,
+          "right": 469.67,
+          "bottom": 224.48,
+          "width": 101.26,
+          "height": 7.45
+        },
+        "containerSelector": "#ch1",
+        "text": "LES CATHOLIQUES AUSSI",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 368.41,
+          "y": 217.03,
+          "width": 101.26,
+          "height": 7.45
+        },
+        "firstSeen": 43.932,
+        "lastSeen": 43.932,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          43.932
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 43.932,
+        "selector": "#x27 > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 108.75,
+          "top": 217.03,
+          "right": 142.87,
+          "bottom": 224.48,
+          "width": 34.12,
+          "height": 7.45
+        },
+        "containerSelector": "#ch0",
+        "text": "EN PLUS",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 108.75,
+          "y": 217.03,
+          "width": 34.12,
+          "height": 7.45
+        },
+        "firstSeen": 43.932,
+        "lastSeen": 43.932,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          43.932
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 47.833,
+        "selector": "#x45 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 94.69,
+          "top": -1683.42,
+          "right": 444.94,
+          "bottom": -1651.9,
+          "width": 350.25,
+          "height": 31.52
+        },
+        "containerSelector": "#root",
+        "text": "Encore davantage",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1683.42
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 94.69,
+          "y": -1683.42,
+          "width": 350.25,
+          "height": 31.52
+        },
+        "firstSeen": 47.833,
+        "lastSeen": 54.211,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 47.833,
+        "selector": "#x45 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 62.15,
+          "top": -1636.65,
+          "right": 581.99,
+          "bottom": -1513.63,
+          "width": 519.84,
+          "height": 123.02
+        },
+        "containerSelector": "#root",
+        "text": "Les Églises",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1636.65
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 62.15,
+          "y": -1636.65,
+          "width": 519.84,
+          "height": 123.02
+        },
+        "firstSeen": 47.833,
+        "lastSeen": 54.211,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 47.833,
+        "selector": "#x45 > div:nth-of-type(2) > div:nth-of-type(2) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 62.15,
+          "top": -1526.85,
+          "right": 596.3,
+          "bottom": -1403.83,
+          "width": 534.15,
+          "height": 123.02
+        },
+        "containerSelector": "#root",
+        "text": "orthodoxes",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1526.85
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 62.15,
+          "y": -1526.85,
+          "width": 534.15,
+          "height": 123.02
+        },
+        "firstSeen": 47.833,
+        "lastSeen": 54.211,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 47.833,
+        "selector": "#x46",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 89.6,
+          "top": -1264.54,
+          "right": 612.57,
+          "bottom": -1191.34,
+          "width": 522.97,
+          "height": 73.2
+        },
+        "containerSelector": "#root",
+        "text": "Encore davantage",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1264.54
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 89.6,
+          "y": -1264.54,
+          "width": 522.97,
+          "height": 73.2
+        },
+        "firstSeen": 47.833,
+        "lastSeen": 54.211,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 47.833,
+        "selector": "#x47",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 89.6,
+          "top": -1123.22,
+          "right": 528.8,
+          "bottom": -1063.23,
+          "width": 439.2,
+          "height": 59.99
+        },
+        "containerSelector": "#root",
+        "text": "Selon leur tradition",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 1123.22
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 89.6,
+          "y": -1123.22,
+          "width": 439.2,
+          "height": 59.99
+        },
+        "firstSeen": 47.833,
+        "lastSeen": 54.211,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          47.833,
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 54.211,
+        "selector": "#x49 > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1093.46,
+          "top": 448.81,
+          "right": 1362.14,
+          "bottom": 475.53,
+          "width": 268.68,
+          "height": 26.72
+        },
+        "containerSelector": "#root",
+        "text": "Détail étonnant",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 282.14
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1093.46,
+          "y": 448.81,
+          "width": 268.68,
+          "height": 26.72
+        },
+        "firstSeen": 54.211,
+        "lastSeen": 54.211,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 54.211,
+        "selector": "#x49 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 1065.88,
+          "top": 494.06,
+          "right": 1549.97,
+          "bottom": 587.17,
+          "width": 484.09,
+          "height": 93.11
+        },
+        "containerSelector": "#root",
+        "text": "Jérôme et la",
+        "fixHint": "Text is 484px x 93px inside 1080px x 1920px and overflows by up to 470px; widen the container to at least ~1550px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 469.97
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1065.88,
+          "y": 494.06,
+          "width": 484.09,
+          "height": 93.11
+        },
+        "firstSeen": 54.211,
+        "lastSeen": 54.211,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 54.211,
+        "selector": "#x49 > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1065.88,
+          "top": 488.46,
+          "right": 1549.97,
+          "bottom": 592.77,
+          "width": 484.09,
+          "height": 104.31
+        },
+        "containerSelector": "#root",
+        "text": "Jérôme et la",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 469.97
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1065.88,
+          "y": 488.46,
+          "width": 484.09,
+          "height": 104.31
+        },
+        "firstSeen": 54.211,
+        "lastSeen": 54.211,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          54.211
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 54.211,
+        "selector": "#x49 > div:nth-of-type(2) > div:nth-of-type(2) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 1065.88,
+          "top": 587.16,
+          "right": 1377.98,
+          "bottom": 680.27,
+          "width": 312.1,
+          "height": 93.11
+        },
+        "containerSelector": "#root",
+        "text": "Vulgate",
+        "fixHint": "Text is 312px x 93px inside 1080px x 1920px and overflows by up to 298px; widen the container to at least ~1378px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 297.98
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1065.88,
+          "y": 587.16,
+          "width": 312.1,
+          "height": 93.11
+        },
+        "firstSeen": 54.211,
+        "lastSeen": 54.211,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          54.211
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 54.211,
+        "selector": "#x49 > div:nth-of-type(2) > div:nth-of-type(2) > em:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 1065.88,
+          "top": 581.56,
+          "right": 1377.98,
+          "bottom": 685.87,
+          "width": 312.1,
+          "height": 104.31
+        },
+        "containerSelector": "#root",
+        "text": "Vulgate",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 297.98
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1065.88,
+          "y": 581.56,
+          "width": 312.1,
+          "height": 104.31
+        },
+        "firstSeen": 54.211,
+        "lastSeen": 54.211,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          54.211
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "samples": [
+      3.189,
+      9.567,
+      15.944,
+      22.322,
+      28.7,
+      35.078,
+      41.456,
+      47.833,
+      54.211
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 91,
+    "truncated": true
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.68:1; WCAG AA requires 3:1.",
+        "text": "Détail étonnant",
+        "fg": "rgb(138,151,166)",
+        "bg": "rgb(128,61,50)",
+        "ratio": 2.68,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(148,160,174)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(43) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1065.875244140625,
+          "y": 448.8055114746094,
+          "width": 758.605224609375,
+          "height": 26.723541259765625
+        },
+        "time": 54.211,
+        "times": [
+          54.211
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      3.189,
+      15.944,
+      28.7,
+      41.456,
+      54.211
+    ],
+    "checked": 61,
+    "passed": 60
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 18,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 24 text elements stay under it for 0.5 s or more, the smallest \"Bible catholique\" at 5 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Bible catholique",
+        "selector": "#x2 > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 101.65,
+          "y": 312.93,
+          "width": 321.13,
+          "height": 31.02
+        },
+        "time": 0.125,
+        "times": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.125,
+          0.125,
+          0.125,
+          4.617,
+          9.608,
+          15.847,
+          19.341,
+          24.707,
+          30.946,
+          36.312,
+          40.43,
+          43.424,
+          43.424,
+          43.424,
+          43.923,
+          52.034,
+          52.409
+        ],
+        "fontPx": 4.98,
+        "floorPx": 28,
+        "seconds": 4.617,
+        "elements": [
+          {
+            "selector": "#x2 > div:nth-of-type(1)",
+            "text": "Bible catholique",
+            "fontPx": 4.98,
+            "time": 0.125,
+            "seconds": 4.617
+          },
+          {
+            "selector": "#x5 > div:nth-of-type(1)",
+            "text": "Pourquoi ?",
+            "fontPx": 4.98,
+            "time": 4.617,
+            "seconds": 5.116
+          },
+          {
+            "selector": "#x13 > div:nth-of-type(1)",
+            "text": "Le même partout",
+            "fontPx": 4.98,
+            "time": 9.608,
+            "seconds": 6.24
+          },
+          {
+            "selector": "#x18 > div:nth-of-type(1)",
+            "text": "Les protestants",
+            "fontPx": 4.98,
+            "time": 15.847,
+            "seconds": 3.619
+          },
+          {
+            "selector": "#x22 > div:nth-of-type(1)",
+            "text": "Les catholiques aussi",
+            "fontPx": 4.98,
+            "time": 19.341,
+            "seconds": 5.491
+          },
+          {
+            "selector": "#x27 > div:nth-of-type(1)",
+            "text": "En plus",
+            "fontPx": 4.98,
+            "time": 24.707,
+            "seconds": 6.115
+          },
+          {
+            "selector": "#x36 > div:nth-of-type(1)",
+            "text": "XVIe siècle",
+            "fontPx": 4.98,
+            "time": 30.946,
+            "seconds": 5.491
+          },
+          {
+            "selector": "#x40 > div:nth-of-type(1)",
+            "text": "1546",
+            "fontPx": 4.98,
+            "time": 36.312,
+            "seconds": 4.243
+          },
+          {
+            "selector": "#x45 > div:nth-of-type(1)",
+            "text": "Encore davantage",
+            "fontPx": 4.98,
+            "time": 40.43,
+            "seconds": 3.618
+          },
+          {
+            "selector": "#x56 > span:nth-of-type(1)",
+            "text": "dis-nous la tienne",
+            "fontPx": 5.63,
+            "time": 52.409,
+            "seconds": 2.246
+          },
+          {
+            "selector": "#x49 > div:nth-of-type(1)",
+            "text": "Détail étonnant",
+            "fontPx": 6.1,
+            "time": 43.923,
+            "seconds": 8.112
+          },
+          {
+            "selector": "#x55 > div:nth-of-type(1)",
+            "text": "À ton tour",
+            "fontPx": 6.1,
+            "time": 52.034,
+            "seconds": 2.621
+          },
+          {
+            "selector": "#x47",
+            "text": "Selon leur tradition",
+            "fontPx": 9.2,
+            "time": 43.424,
+            "seconds": 0.749
+          },
+          {
+            "selector": "#x21",
+            "text": "Ancien Testament",
+            "fontPx": 9.97,
+            "time": 43.424,
+            "seconds": 0.624
+          },
+          {
+            "selector": "#x44",
+            "text": "Déclarés canoniques",
+            "fontPx": 9.97,
+            "time": 43.424,
+            "seconds": 0.749
+          },
+          {
+            "selector": "#ch1",
+            "text": "La différence",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 43.05
+          },
+          {
+            "selector": "#ch1 > b:nth-of-type(1)",
+            "text": "02",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 43.05
+          },
+          {
+            "selector": "#ch2",
+            "text": "Jérôme",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 51.66
+          },
+          {
+            "selector": "#ch2 > b:nth-of-type(1)",
+            "text": "03",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 51.66
+          },
+          {
+            "selector": "#ch3",
+            "text": "Leçon",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 54.031
+          },
+          {
+            "selector": "#ch3 > b:nth-of-type(1)",
+            "text": "04",
+            "fontPx": 20,
+            "time": 0,
+            "seconds": 54.031
+          },
+          {
+            "selector": "#ch0",
+            "text": "Les chiffres",
+            "fontPx": 20,
+            "time": 0.125,
+            "seconds": 15.598
+          },
+          {
+            "selector": "#ch0 > b:nth-of-type(1)",
+            "text": "01",
+            "fontPx": 20,
+            "time": 0.125,
+            "seconds": 15.598
+          },
+          {
+            "selector": "#brand",
+            "text": "La Bible Simple",
+            "fontPx": 24,
+            "time": 0,
+            "seconds": 54.031
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"le même partout,\" (3 words) is on screen 0.83 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "le même partout,",
+        "selector": "#cap7",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 251.08,
+          "y": 1453,
+          "width": 437.8399999999999,
+          "height": 68
+        },
+        "time": 11.036,
+        "words": 3,
+        "seconds": 0.834,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"vingt-sept livres.\" (3 words) is on screen 1.00 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "vingt-sept livres.",
+        "selector": "#cap8",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 252.11,
+          "y": 1453.3,
+          "width": 435.7700000000001,
+          "height": 68
+        },
+        "time": 11.94,
+        "words": 3,
+        "seconds": 0.998,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"La différence se trouve\" (4 words) is on screen 1.13 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "La différence se trouve",
+        "selector": "#cap9",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 174.56,
+          "y": 1456.2,
+          "width": 590.8599999999999,
+          "height": 68
+        },
+        "time": 12.969,
+        "words": 4,
+        "seconds": 1.131,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"trente-neuf livres.\" (3 words) is on screen 1.00 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "trente-neuf livres.",
+        "selector": "#cap13",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 237.33,
+          "y": 1454.23,
+          "width": 465.33000000000004,
+          "height": 68
+        },
+        "time": 17.938,
+        "words": 3,
+        "seconds": 0.998,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"qui en contient sept\" (4 words) is on screen 1.03 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "qui en contient sept",
+        "selector": "#cap17",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 214.67,
+          "y": 1453.15,
+          "width": 510.65999999999997,
+          "height": 68
+        },
+        "time": 22.773,
+        "words": 4,
+        "seconds": 1.03,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"Luther les place à\" (4 words) is on screen 1.07 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "Luther les place à",
+        "selector": "#cap26",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 244.11,
+          "y": 1453.82,
+          "width": 451.7800000000001,
+          "height": 68
+        },
+        "time": 31.905,
+        "words": 4,
+        "seconds": 1.069,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"hors de la Bible.\" (4 words) is on screen 1.04 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "hors de la Bible.",
+        "selector": "#cap29",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 268.39,
+          "y": 1453.15,
+          "width": 403.22,
+          "height": 68
+        },
+        "time": 34.869,
+        "words": 4,
+        "seconds": 1.037,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"le Concile de Trente\" (4 words) is on screen 1.07 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "le Concile de Trente",
+        "selector": "#cap31",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 214.89,
+          "y": 1453.3,
+          "width": 510.2199999999999,
+          "height": 68
+        },
+        "time": 37.638,
+        "words": 4,
+        "seconds": 1.069,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"comptent encore davantage,\" (3 words) is on screen 0.97 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "comptent encore davantage,",
+        "selector": "#cap34",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 98.31,
+          "y": 1454.23,
+          "width": 743.3600000000001,
+          "height": 68
+        },
+        "time": 41.638,
+        "words": 3,
+        "seconds": 0.967,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"Selon leur tradition\" (3 words) is on screen 0.33 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "Selon leur tradition",
+        "selector": "#x47",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 119.01,
+          "y": 833.83,
+          "width": 406.88,
+          "height": 57.75999999999999
+        },
+        "time": 43.073,
+        "words": 3,
+        "seconds": 0.327,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"le traducteur de la\" (4 words) is on screen 0.83 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "le traducteur de la",
+        "selector": "#cap38",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 237.16,
+          "y": 1455.4,
+          "width": 465.68000000000006,
+          "height": 68
+        },
+        "time": 46.037,
+        "words": 4,
+        "seconds": 0.834,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"savait qu'ils n'étaient pas\" (4 words) is on screen 1.17 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "savait qu'ils n'étaient pas",
+        "selector": "#cap40",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 145.52,
+          "y": 1457.15,
+          "width": 648.96,
+          "height": 68
+        },
+        "time": 47.402,
+        "words": 4,
+        "seconds": 1.17,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"dans la Bible hébraïque,\" (4 words) is on screen 0.87 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "dans la Bible hébraïque,",
+        "selector": "#cap41",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 165.05,
+          "y": 1453.82,
+          "width": 609.9000000000001,
+          "height": 68
+        },
+        "time": 48.603,
+        "words": 4,
+        "seconds": 0.866,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"mais il les a\" (4 words) is on screen 1.00 s (±0.06 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "mais il les a",
+        "selector": "#cap42",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 323.91,
+          "y": 1453.82,
+          "width": 292.17,
+          "height": 68
+        },
+        "time": 49.539,
+        "words": 4,
+        "seconds": 0.998,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"quand même inclus.\" (3 words) is on screen 0.87 s (±0.06 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "quand même inclus.",
+        "selector": "#cap43",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 211.81,
+          "y": 1453,
+          "width": 516.3800000000001,
+          "height": 68
+        },
+        "time": 50.537,
+        "words": 3,
+        "seconds": 0.874,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"Quelle Bible lis-tu?\" (4 words) is on screen 1.00 s (±0.06 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "Quelle Bible lis-tu?",
+        "selector": "#cap44",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 227.83,
+          "y": 1453,
+          "width": 484.3399999999999,
+          "height": 68
+        },
+        "time": 51.91,
+        "words": 4,
+        "seconds": 0.998,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"dis-nous la tienne\" (4 words) is on screen 0.13 s (±0.06 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "dis-nous la tienne",
+        "selector": "#x56 > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 76.51,
+          "y": 885.22,
+          "width": 199.29000000000002,
+          "height": 30
+        },
+        "time": 53.906,
+        "words": 4,
+        "seconds": 0.125,
+        "floorSeconds": 1.275
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 460
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
