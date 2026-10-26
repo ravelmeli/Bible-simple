@@ -1,0 +1,727 @@
+[
+ {
+  "text": "A",
+  "start": 0.0,
+  "end": 0.22
+ },
+ {
+  "text": "Catholic",
+  "start": 0.22,
+  "end": 0.66
+ },
+ {
+  "text": "Bible",
+  "start": 0.66,
+  "end": 1.04
+ },
+ {
+  "text": "has",
+  "start": 1.04,
+  "end": 1.42
+ },
+ {
+  "text": "seven",
+  "start": 1.42,
+  "end": 1.78
+ },
+ {
+  "text": "more",
+  "start": 1.78,
+  "end": 2.14
+ },
+ {
+  "text": "books",
+  "start": 2.14,
+  "end": 2.5
+ },
+ {
+  "text": "than",
+  "start": 2.5,
+  "end": 2.7
+ },
+ {
+  "text": "a",
+  "start": 2.7,
+  "end": 2.84
+ },
+ {
+  "text": "Protestant",
+  "start": 2.84,
+  "end": 3.16
+ },
+ {
+  "text": "Bible,",
+  "start": 3.16,
+  "end": 3.56
+ },
+ {
+  "text": "sixty-six",
+  "start": 3.76,
+  "end": 4.4
+ },
+ {
+  "text": "books",
+  "start": 4.4,
+  "end": 4.88
+ },
+ {
+  "text": "on",
+  "start": 4.88,
+  "end": 5.1
+ },
+ {
+  "text": "one",
+  "start": 5.1,
+  "end": 5.3
+ },
+ {
+  "text": "side,",
+  "start": 5.3,
+  "end": 5.6
+ },
+ {
+  "text": "seventy-three",
+  "start": 5.74,
+  "end": 6.2
+ },
+ {
+  "text": "on",
+  "start": 6.2,
+  "end": 6.86
+ },
+ {
+  "text": "the",
+  "start": 6.86,
+  "end": 7.0
+ },
+ {
+  "text": "other.",
+  "start": 7.0,
+  "end": 7.26
+ },
+ {
+  "text": "Why?",
+  "start": 7.4,
+  "end": 8.02
+ },
+ {
+  "text": "The",
+  "start": 8.34,
+  "end": 8.98
+ },
+ {
+  "text": "New",
+  "start": 8.98,
+  "end": 9.14
+ },
+ {
+  "text": "Testament",
+  "start": 9.14,
+  "end": 9.48
+ },
+ {
+  "text": "is",
+  "start": 9.48,
+  "end": 9.76
+ },
+ {
+  "text": "the",
+  "start": 9.76,
+  "end": 9.88
+ },
+ {
+  "text": "same",
+  "start": 9.88,
+  "end": 10.12
+ },
+ {
+  "text": "everywhere,",
+  "start": 10.12,
+  "end": 10.48
+ },
+ {
+  "text": "twenty-seven",
+  "start": 10.8,
+  "end": 11.26
+ },
+ {
+  "text": "books.",
+  "start": 11.26,
+  "end": 11.74
+ },
+ {
+  "text": "The",
+  "start": 11.96,
+  "end": 12.42
+ },
+ {
+  "text": "difference",
+  "start": 12.42,
+  "end": 12.78
+ },
+ {
+  "text": "is",
+  "start": 12.78,
+  "end": 13.06
+ },
+ {
+  "text": "in",
+  "start": 13.06,
+  "end": 13.2
+ },
+ {
+  "text": "the",
+  "start": 13.2,
+  "end": 13.28
+ },
+ {
+  "text": "Old",
+  "start": 13.28,
+  "end": 13.7
+ },
+ {
+  "text": "Testament.",
+  "start": 13.7,
+  "end": 14.24
+ },
+ {
+  "text": "Protestants",
+  "start": 14.68,
+  "end": 15.32
+ },
+ {
+  "text": "follow",
+  "start": 15.32,
+  "end": 15.56
+ },
+ {
+  "text": "the",
+  "start": 15.56,
+  "end": 15.78
+ },
+ {
+  "text": "Hebrew",
+  "start": 15.78,
+  "end": 16.02
+ },
+ {
+  "text": "Bible,",
+  "start": 16.02,
+  "end": 16.38
+ },
+ {
+  "text": "thirty-nine",
+  "start": 16.58,
+  "end": 16.96
+ },
+ {
+  "text": "books.",
+  "start": 16.96,
+  "end": 17.32
+ },
+ {
+  "text": "Catholics",
+  "start": 17.74,
+  "end": 18.38
+ },
+ {
+  "text": "also",
+  "start": 18.38,
+  "end": 18.7
+ },
+ {
+  "text": "follow",
+  "start": 18.7,
+  "end": 19.2
+ },
+ {
+  "text": "the",
+  "start": 19.2,
+  "end": 19.38
+ },
+ {
+  "text": "Septuagint,",
+  "start": 19.38,
+  "end": 19.98
+ },
+ {
+  "text": "an",
+  "start": 20.1,
+  "end": 20.36
+ },
+ {
+  "text": "ancient",
+  "start": 20.36,
+  "end": 20.8
+ },
+ {
+  "text": "Greek",
+  "start": 20.8,
+  "end": 21.04
+ },
+ {
+  "text": "translation",
+  "start": 21.04,
+  "end": 21.48
+ },
+ {
+  "text": "which",
+  "start": 21.48,
+  "end": 22.08
+ },
+ {
+  "text": "has",
+  "start": 22.08,
+  "end": 22.32
+ },
+ {
+  "text": "seven",
+  "start": 22.32,
+  "end": 22.64
+ },
+ {
+  "text": "more.",
+  "start": 22.64,
+  "end": 22.94
+ },
+ {
+  "text": "Tobit,",
+  "start": 23.44,
+  "end": 24.08
+ },
+ {
+  "text": "Judith,",
+  "start": 24.2,
+  "end": 24.62
+ },
+ {
+  "text": "Wisdom,",
+  "start": 24.96,
+  "end": 25.64
+ },
+ {
+  "text": "Sirach,",
+  "start": 25.7,
+  "end": 26.44
+ },
+ {
+  "text": "Baruch,",
+  "start": 26.66,
+  "end": 27.18
+ },
+ {
+  "text": "and",
+  "start": 27.18,
+  "end": 27.38
+ },
+ {
+  "text": "the",
+  "start": 27.38,
+  "end": 27.8
+ },
+ {
+  "text": "two",
+  "start": 27.8,
+  "end": 27.98
+ },
+ {
+  "text": "books",
+  "start": 27.98,
+  "end": 28.22
+ },
+ {
+  "text": "of",
+  "start": 28.22,
+  "end": 28.36
+ },
+ {
+  "text": "Maccabees.",
+  "start": 28.36,
+  "end": 28.82
+ },
+ {
+  "text": "In",
+  "start": 29.06,
+  "end": 29.62
+ },
+ {
+  "text": "the",
+  "start": 29.62,
+  "end": 29.74
+ },
+ {
+  "text": "sixteenth",
+  "start": 29.74,
+  "end": 30.22
+ },
+ {
+  "text": "century,",
+  "start": 30.22,
+  "end": 30.48
+ },
+ {
+  "text": "Luther",
+  "start": 30.62,
+  "end": 30.9
+ },
+ {
+  "text": "sets",
+  "start": 30.9,
+  "end": 31.18
+ },
+ {
+  "text": "them",
+  "start": 31.18,
+  "end": 31.4
+ },
+ {
+  "text": "apart",
+  "start": 31.4,
+  "end": 31.66
+ },
+ {
+  "text": "as",
+  "start": 31.66,
+  "end": 32.14
+ },
+ {
+  "text": "useful",
+  "start": 32.14,
+  "end": 32.78
+ },
+ {
+  "text": "reading,",
+  "start": 32.78,
+  "end": 33.22
+ },
+ {
+  "text": "but",
+  "start": 33.34,
+  "end": 33.54
+ },
+ {
+  "text": "outside",
+  "start": 33.54,
+  "end": 34.02
+ },
+ {
+  "text": "the",
+  "start": 34.02,
+  "end": 34.22
+ },
+ {
+  "text": "Bible.",
+  "start": 34.22,
+  "end": 34.42
+ },
+ {
+  "text": "In",
+  "start": 34.74,
+  "end": 35.3
+ },
+ {
+  "text": "1546,",
+  "start": 35.3,
+  "end": 35.96
+ },
+ {
+  "text": "the",
+  "start": 36.36,
+  "end": 36.56
+ },
+ {
+  "text": "Council",
+  "start": 36.56,
+  "end": 36.88
+ },
+ {
+  "text": "of",
+  "start": 36.88,
+  "end": 37.12
+ },
+ {
+  "text": "Trent",
+  "start": 37.12,
+  "end": 37.4
+ },
+ {
+  "text": "declares",
+  "start": 37.4,
+  "end": 37.9
+ },
+ {
+  "text": "them",
+  "start": 37.9,
+  "end": 38.06
+ },
+ {
+  "text": "canonical.",
+  "start": 38.06,
+  "end": 38.48
+ },
+ {
+  "text": "The",
+  "start": 38.9,
+  "end": 39.46
+ },
+ {
+  "text": "Orthodox",
+  "start": 39.46,
+  "end": 39.84
+ },
+ {
+  "text": "Churches",
+  "start": 39.84,
+  "end": 40.24
+ },
+ {
+  "text": "count",
+  "start": 40.24,
+  "end": 40.56
+ },
+ {
+  "text": "even",
+  "start": 40.56,
+  "end": 40.86
+ },
+ {
+  "text": "more,",
+  "start": 40.86,
+  "end": 41.34
+ },
+ {
+  "text": "depending",
+  "start": 41.44,
+  "end": 41.78
+ },
+ {
+  "text": "on",
+  "start": 41.78,
+  "end": 42.06
+ },
+ {
+  "text": "their",
+  "start": 42.06,
+  "end": 42.18
+ },
+ {
+  "text": "traditions.",
+  "start": 42.18,
+  "end": 42.52
+ },
+ {
+  "text": "Here's",
+  "start": 43.14,
+  "end": 43.7
+ },
+ {
+  "text": "the",
+  "start": 43.7,
+  "end": 43.82
+ },
+ {
+  "text": "surprising",
+  "start": 43.82,
+  "end": 44.16
+ },
+ {
+  "text": "part.",
+  "start": 44.16,
+  "end": 44.42
+ },
+ {
+  "text": "Jerome,",
+  "start": 44.88,
+  "end": 45.18
+ },
+ {
+  "text": "the",
+  "start": 45.5,
+  "end": 45.7
+ },
+ {
+  "text": "translator",
+  "start": 45.7,
+  "end": 46.08
+ },
+ {
+  "text": "of",
+  "start": 46.08,
+  "end": 46.3
+ },
+ {
+  "text": "the",
+  "start": 46.3,
+  "end": 46.36
+ },
+ {
+  "text": "Vulgate,",
+  "start": 46.36,
+  "end": 46.7
+ },
+ {
+  "text": "knew",
+  "start": 46.84,
+  "end": 47.16
+ },
+ {
+  "text": "they",
+  "start": 47.16,
+  "end": 47.4
+ },
+ {
+  "text": "weren't",
+  "start": 47.4,
+  "end": 47.72
+ },
+ {
+  "text": "in",
+  "start": 47.72,
+  "end": 47.88
+ },
+ {
+  "text": "the",
+  "start": 47.88,
+  "end": 47.96
+ },
+ {
+  "text": "Hebrew",
+  "start": 47.96,
+  "end": 48.14
+ },
+ {
+  "text": "Bible,",
+  "start": 48.14,
+  "end": 48.48
+ },
+ {
+  "text": "but",
+  "start": 48.64,
+  "end": 48.88
+ },
+ {
+  "text": "he",
+  "start": 48.88,
+  "end": 49.14
+ },
+ {
+  "text": "included",
+  "start": 49.14,
+  "end": 49.5
+ },
+ {
+  "text": "them",
+  "start": 49.5,
+  "end": 49.68
+ },
+ {
+  "text": "anyway.",
+  "start": 49.68,
+  "end": 50.0
+ },
+ {
+  "text": "Which",
+  "start": 50.64,
+  "end": 51.2
+ },
+ {
+  "text": "Bible",
+  "start": 51.2,
+  "end": 51.46
+ },
+ {
+  "text": "do",
+  "start": 51.46,
+  "end": 51.62
+ },
+ {
+  "text": "you",
+  "start": 51.62,
+  "end": 51.74
+ },
+ {
+  "text": "read?",
+  "start": 51.74,
+  "end": 51.96
+ },
+ {
+  "text": "Tell",
+  "start": 52.06,
+  "end": 52.44
+ },
+ {
+  "text": "us",
+  "start": 52.44,
+  "end": 52.56
+ },
+ {
+  "text": "in",
+  "start": 52.56,
+  "end": 52.66
+ },
+ {
+  "text": "the",
+  "start": 52.66,
+  "end": 52.72
+ },
+ {
+  "text": "comments,",
+  "start": 52.72,
+  "end": 53.02
+ },
+ {
+  "text": "and",
+  "start": 53.14,
+  "end": 53.56
+ },
+ {
+  "text": "subscribe",
+  "start": 53.56,
+  "end": 53.84
+ },
+ {
+  "text": "to",
+  "start": 53.84,
+  "end": 54.2
+ },
+ {
+  "text": "discover",
+  "start": 54.2,
+  "end": 54.44
+ },
+ {
+  "text": "the",
+  "start": 54.44,
+  "end": 54.7
+ },
+ {
+  "text": "Bible",
+  "start": 54.7,
+  "end": 54.92
+ },
+ {
+  "text": "one",
+  "start": 54.92,
+  "end": 55.28
+ },
+ {
+  "text": "story",
+  "start": 55.28,
+  "end": 55.6
+ },
+ {
+  "text": "at",
+  "start": 55.6,
+  "end": 55.92
+ },
+ {
+  "text": "a",
+  "start": 56.0,
+  "end": 56.06
+ },
+ {
+  "text": "time.",
+  "start": 56.06,
+  "end": 56.24
+ }
+]

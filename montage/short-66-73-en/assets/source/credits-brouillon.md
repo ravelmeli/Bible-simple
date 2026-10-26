@@ -1,0 +1,3 @@
+- `met-466281` — « Manuscript Leaf from a Bible », North French, ca. 1280–1300 — https://www.metmuseum.org/art/collection/search/466281 — Gift of Mr. and Mrs. William D. Wixom, 1994 — Public Domain (CC0, Met Open Access)
+- `met-469985` — « Manuscript Leaf with Opening of The Book of Nehemias, from a Bible », French, ca. 1280–1300 — https://www.metmuseum.org/art/collection/search/469985 — Gift of Mr. and Mrs. William D. Wixom, 1998 — Public Domain (CC0, Met Open Access)
+- `met-437910` — « Saint Jerome », Antonio Vivarini, 1440s — https://www.metmuseum.org/art/collection/search/437910 — Bequest of Adele L. Lehman, in memory of Arthur Lehman, 1965 — Public Domain (CC0, Met Open Access)
