@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "7e7b8c55-22da-45bc-bfe2-ec51879e02a9",
-  "currentRevision": "0634b472-d385-4cda-9641-420639794900",
+  "currentRevision": "94bb4fd2-73a2-40da-bb20-cb90619cbbe2",
   "pendingChanges": false,
   "files": {
     "assets/audio/lib/click-soft.mp3": {
@@ -155,6 +155,10 @@
     "CREDITS.md": {
       "hash": "f4508db785db04936ba381694b0c39f976d575bea8c823f9db25218f09ef18bd",
       "content": "/root/.cache/hyperframes/history/7e7b8c55-22da-45bc-bfe2-ec51879e02a9/blobs/f4/f4508db785db04936ba381694b0c39f976d575bea8c823f9db25218f09ef18bd"
+    },
+    "titre-description-tags.md": {
+      "hash": "9f44e0358b9b9c8c0d260d56ed5d89efc91f05e6ae7a29e781655217a45bbe22",
+      "content": "/root/.cache/hyperframes/history/7e7b8c55-22da-45bc-bfe2-ec51879e02a9/blobs/9f/9f44e0358b9b9c8c0d260d56ed5d89efc91f05e6ae7a29e781655217a45bbe22"
     }
   },
   "revisions": {
@@ -189,6 +193,21 @@
         "CREDITS.md": {
           "before": null,
           "after": "/root/.cache/hyperframes/history/7e7b8c55-22da-45bc-bfe2-ec51879e02a9/blobs/f4/f4508db785db04936ba381694b0c39f976d575bea8c823f9db25218f09ef18bd"
+        }
+      }
+    },
+    "94bb4fd2-73a2-40da-bb20-cb90619cbbe2": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793017743064,
+      "endedAt": 1793017743065,
+      "files": {
+        "titre-description-tags.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/7e7b8c55-22da-45bc-bfe2-ec51879e02a9/blobs/9f/9f44e0358b9b9c8c0d260d56ed5d89efc91f05e6ae7a29e781655217a45bbe22"
         }
       }
     }
@@ -551,11 +570,11 @@
   },
   "renders": {
     "latest": {
-      "id": "a03fb891-3dd7-45d0-b762-424694311b3c",
-      "completedAt": 1793017234870,
-      "output": "/home/user/Bible-simple/montage/short-66-73/renders/66-73-draft.mp4",
+      "id": "2e22679b-863a-4c12-9eb3-7423696e62b6",
+      "completedAt": 1793017964021,
+      "output": "/home/user/Bible-simple/montage/short-66-73/renders/66-73-final.mp4",
       "status": "completed",
-      "revision": "0634b472-d385-4cda-9641-420639794900"
+      "revision": null
     },
     "retainedRevisions": [
       "0634b472-d385-4cda-9641-420639794900"
