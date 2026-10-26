@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "77266c72-9b01-449c-a5fb-5a3cee154c1a",
-  "currentRevision": "6f619aee-23b4-4b26-b3f9-cdb053355d49",
+  "currentRevision": "1f312584-ca11-4d6f-981f-bbbda8bfe3b5",
   "pendingChanges": false,
   "files": {
     "assets/audio/lib/click-soft.mp3": {
@@ -139,6 +139,10 @@
     "CREDITS.md": {
       "hash": "073530b20561b41f9a264c7d8e2a7602a9c9dc5741fcbae207dfbfe2062f649b",
       "content": "/root/.cache/hyperframes/history/77266c72-9b01-449c-a5fb-5a3cee154c1a/blobs/07/073530b20561b41f9a264c7d8e2a7602a9c9dc5741fcbae207dfbfe2062f649b"
+    },
+    "titre-description-tags.md": {
+      "hash": "5c5cbdece5372a51a48ece168c8c233581750549951d45f252141dd16aa8262d",
+      "content": "/root/.cache/hyperframes/history/77266c72-9b01-449c-a5fb-5a3cee154c1a/blobs/5c/5c5cbdece5372a51a48ece168c8c233581750549951d45f252141dd16aa8262d"
     }
   },
   "revisions": {
@@ -154,6 +158,21 @@
         "CREDITS.md": {
           "before": null,
           "after": "/root/.cache/hyperframes/history/77266c72-9b01-449c-a5fb-5a3cee154c1a/blobs/07/073530b20561b41f9a264c7d8e2a7602a9c9dc5741fcbae207dfbfe2062f649b"
+        }
+      }
+    },
+    "1f312584-ca11-4d6f-981f-bbbda8bfe3b5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793014261213,
+      "endedAt": 1793014261214,
+      "files": {
+        "titre-description-tags.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/77266c72-9b01-449c-a5fb-5a3cee154c1a/blobs/5c/5c5cbdece5372a51a48ece168c8c233581750549951d45f252141dd16aa8262d"
         }
       }
     }
@@ -525,11 +544,11 @@
   },
   "renders": {
     "latest": {
-      "id": "7a874d8e-aa09-4d36-8703-d0a213f1e6b3",
-      "completedAt": 1793013289404,
-      "output": "/home/user/Bible-simple/montage/short-arameen/renders/arameen-draft.mp4",
+      "id": "2b5e6e25-0bd5-43a2-a378-f54a9bf0b250",
+      "completedAt": 1793014490168,
+      "output": "/home/user/Bible-simple/montage/short-arameen/renders/arameen-final.mp4",
       "status": "completed",
-      "revision": "6f619aee-23b4-4b26-b3f9-cdb053355d49"
+      "revision": null
     },
     "retainedRevisions": [
       "6f619aee-23b4-4b26-b3f9-cdb053355d49"
