@@ -1,0 +1,1 @@
+- `met-324903` — « Ostracon inscribed in Aramaic », Sasanian, ca. 500–600 CE — https://www.metmuseum.org/art/collection/search/324903 — Rogers Fund, 1959 — Public Domain (CC0, Met Open Access)
