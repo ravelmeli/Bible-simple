@@ -10,7 +10,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "..", "kit-style-02", "moteur"))
 import style02 as s  # noqa: E402
 
-THEME = {"brand": "La Bible Simple", "title": "La Bible Simple - Jaël - style 02", "lang": "fr"}
+# Toile beige « parchemin » (accent orange inchangé) : mieux adaptée à la thématique biblique que le gris-bleu.
+THEME = {"brand": "La Bible Simple", "title": "La Bible Simple - Jaël - style 02", "lang": "fr",
+         "bg": "#EFE4CC", "ink": "#2B2118", "grey": "#7A6C58", "grey2": "#B3A58D", "line": "#CDBFA3", "tile": "#DDD0B6", "land": "#E2D6BB"}
 s.setup(here=HERE, duration=60.8, cols=3, rows=5, theme=THEME, bpm=96)
 from style02 import *  # noqa: E402,F401,F403
 
