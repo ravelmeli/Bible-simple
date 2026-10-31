@@ -1,0 +1,6 @@
+- `met-323175` — « Jar handle with seal impression », Israelite, ca. late 8th–7th century BCE — https://www.metmuseum.org/art/collection/search/323175 — Gift of Harris D. and H. Dunscombe Colt, 1934 — Public Domain (CC0, Met Open Access)
+- `met-249023` — « Bronze ring key », Roman, 3rd–4th century CE — https://www.metmuseum.org/art/collection/search/249023 — Bequest of Mary Anna Palmer Draper, 1915 — Public Domain (CC0, Met Open Access)
+- `met-548596` — « Model of a Scribe's Palette Inscribed for Amenhotep », , ca. 1386–1347 BCE — https://www.metmuseum.org/art/collection/search/548596 — Rogers Fund, 1937 — Public Domain (CC0, Met Open Access)
+- `met-544847` — « Letter written in hieratic script on papyrus », , ca. 1473–1458 BCE — https://www.metmuseum.org/art/collection/search/544847 — Rogers Fund, 1927 — Public Domain (CC0, Met Open Access)
+- `met-242549` — « Gold boat-shaped earring », Cypriot, ca. 1200–1050 BCE — https://www.metmuseum.org/art/collection/search/242549 — The Cesnola Collection, Purchased by subscription, 1874–76 — Public Domain (CC0, Met Open Access)
+- `met-544319` — « Writing board », , ca. 1981–1802 B.C. — https://www.metmuseum.org/art/collection/search/544319 — Gift of Edward S. Harkness, 1928 — Public Domain (CC0, Met Open Access)
