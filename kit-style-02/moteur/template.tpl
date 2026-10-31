@@ -181,6 +181,52 @@
       }
       #endcard .es { position: absolute; filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.45)); }
 
+      /* ---- éléments de rétention (actifs seulement avec build(retention=True)) ---- */
+      #plx {
+        position: absolute;
+        left: -300px;
+        top: -300px;
+        width: {{PLX_W}}px;
+        height: {{PLX_H}}px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cpath d='M90 76v28M76 90h28' stroke='%23{{ACC_HEX}}' stroke-width='5' stroke-linecap='round' opacity='0.22'/%3E%3C/svg%3E");
+        background-size: 180px 180px;
+      }
+      #dust { position: absolute; inset: 0; overflow: hidden; }
+      #dust i { position: absolute; display: block; border-radius: 50%; }
+      #sweep {
+        position: absolute;
+        top: -10%;
+        left: -60%;
+        width: 60%;
+        height: 120%;
+        z-index: 55;
+        pointer-events: none;
+        opacity: 0;
+        background: linear-gradient(90deg, rgba({{ACC_RGB}}, 0), rgba({{ACC_RGB}}, 0.2), rgba({{ACC_RGB}}, 0));
+        transform: skewX(-16deg);
+      }
+      .stamp { padding: 6px 28px 10px; font-weight: 900; letter-spacing: 6px; text-transform: uppercase; color: {{ACC}}; border: 8px solid {{ACC}}; white-space: nowrap; }
+      .burst line { stroke: {{ACC}}; stroke-width: 9; stroke-linecap: round; }
+      .ring { border: 8px solid {{ACC}}; border-radius: 50%; box-sizing: border-box; }
+      .arrow { pointer-events: none; overflow: visible; }
+      .arrow line { stroke: {{ACC}}; stroke-width: 8; stroke-linecap: round; }
+      .arrow .hd { fill: none; stroke: {{ACC}}; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .teaser {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 10px 22px 12px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: {{INK}};
+        background: #FFFFFF;
+        border: 2px solid {{LINE}};
+      }
+      .teaser b { display: block; width: 16px; height: 16px; border-radius: 50%; background: {{ACC}}; }
+
       /* ---- screen-fixed chrome ---- */
       #chrome { position: absolute; left: 70px; top: 160px; width: 870px; z-index: 50; color: {{INK}}; }
       #brand { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; }
@@ -241,6 +287,8 @@
   <body>
     <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="{{DURATION}}">
       <div id="darkbg"></div>
+      {{PLX}}
+      {{DUST}}
       <div id="drift">
         <div id="world">
         {{WORLD}}
@@ -252,6 +300,7 @@
         <div id="chapters">{{CHAPTERS}}</div>
       </div>
 
+      {{SWEEP}}
       {{CAPTIONS}}
 
       {{ENDCARD}}

@@ -304,3 +304,13 @@ Format attendu de `transcript.json` : `[{"text": "mot", "start": 0.12, "end": 0.
 - [ ] Niveaux : voix environ −19 LUFS, effets environ 10 dB dessous, musique 13 à 15 dB dessous ; rendu final autour de −16 LUFS.
 - [ ] `CREDITS.md` complet (chaque photo avec sa licence, carte, musique avec sa réserve, effets, police).
 - [ ] `titre-description-tags.md` prêt.
+
+## Rétention renforcée (option `retention=True`)
+
+Ajoutée après les premiers tests. Elle ne change rien aux anciennes vidéos tant qu'elle n'est pas demandée.
+
+1. Générer les pistes de signature : `python3 -I kit-style-02/outils/make_signature_audio.py --bpm 96 --duree <durée> <projet>/assets/audio/` (pulsation `pulse.wav`, jingle `jingle.wav`).
+2. Dans `build.py` : `s.setup(..., bpm=96)` puis `build(..., retention=True)`. Réglages : `pulse_volume=0.07` (≈ 25 dB sous la voix), `jingle_volume=0.12`.
+3. Ce que fait `retention=True` : autocollants qui flottent et s'inclinent au tempo (mouvement permanent), fond de croix en parallaxe (0,3× la caméra), poussière flottante, balayage d'accent à chaque changement de plan, léger « pop » de chaque mot des sous-titres, zoom lent 1,06.
+4. Éléments à poser à la main, au bon mot : `stamp()` (tampon avec secousse, réservé à « Détail étonnant » ou « Hypothèse »), `burst()` (rafale sur un mot-clé), `ring()` (anneau sur un nom ou un chiffre), `arrow()` (flèche entre deux éléments), `teaser()` (puce « Attends le détail final » : seulement si la suite tient la promesse).
+5. Règles : pas de clignotement de plus de 3 par seconde ; un événement visuel au moins toutes les 2 à 3 secondes ; le tampon et le jingle gardent toujours la même forme pour signer la chaîne.
