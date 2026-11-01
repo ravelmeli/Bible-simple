@@ -53,10 +53,14 @@ CAM = []          # (temps, station | "all", échelle)
 _uid = [0]
 _dark = [None]    # instant du passage en mode sombre (barre de chapitres en clair)
 STICKERS = []     # (id, instant d'apparition) : base du mouvement permanent
+NODES = {}        # station -> ids des éléments posés (pour wipe)
+ZOOM = [1.0]      # zoom par défaut des plans (cam sans échelle) ; avec XM/YM : recale les positions pour garder tout dans l'écran
+XM = [None]       # (a, b) : x' = a + (x - 70) * b
+YM = [None]       # (a, b) : y' = a + (y - 170) * b
 BPM = [96]        # tempo de la pulsation (flottement des autocollants, piste assets/audio/pulse.wav)
 
 
-def setup(here, duration, cols=3, rows=5, fmt="9:16", theme=None, transcript="transcript.json", bpm=96):
+def setup(here, duration, cols=3, rows=5, fmt="9:16", theme=None, transcript="transcript.json", bpm=96, zoom=1.0, xmap=None, ymap=None):
     """Prépare un projet. fmt : "9:16" (1080 × 1920) ou "16:9" (1920 × 1080)."""
     global W, H, DUR, COLS, ROWS, WORLD_W, WORLD_H, HERE, ACC, INK, THEME, words
     W, H = (1080, 1920) if fmt == "9:16" else (1920, 1080)
@@ -66,9 +70,11 @@ def setup(here, duration, cols=3, rows=5, fmt="9:16", theme=None, transcript="tr
     ACC, INK = THEME["acc"], THEME["ink"]
     words = json.load(open(os.path.join(here, transcript)))
     del html[:], tw[:], audio[:], CAM[:], STICKERS[:]
+    NODES.clear()
     _uid[0] = 0
     _dark[0] = None
     BPM[0] = bpm
+    ZOOM[0], XM[0], YM[0] = zoom, xmap, ymap
 
 
 # ---------------------------------------------------------------- calage sur la transcription
@@ -103,11 +109,34 @@ def st(c, r):
 
 
 # ---------------------------------------------------------------- primitives visuelles
+def _tx(x):
+    return round(XM[0][0] + (x - 70) * XM[0][1]) if XM[0] else x
+
+
+def _ty(y):
+    return round(YM[0][0] + (y - 170) * YM[0][1]) if YM[0] else y
+
+
 def put(station, x, y, inner, cls="", style=""):
     sx, sy = st(*station)
     i = uid()
-    html.append(f'<div class="node {cls}" id="{i}" style="left:{sx + x}px;top:{sy + y}px;{style}">{inner}</div>')
+    html.append(f'<div class="node {cls}" id="{i}" style="left:{sx + _tx(x)}px;top:{sy + _ty(y)}px;{style}">{inner}</div>')
+    NODES.setdefault(station, []).append(i)
     return i
+
+
+def wipe(station, t, dur=0.35):
+    """Efface (fondu) tout ce qui a été posé sur cette station jusqu'ici : permet de revenir sur un plan avec un état différent."""
+    ids = NODES.get(station, [])
+    if ids:
+        sel = ", ".join(f"#{i}" for i in ids)
+        tw.append(f'tl.to("{sel}", {{ opacity: 0, duration: {dur}, ease: "power1.in", immediateRender: false }}, {at(t)});')
+    NODES[station] = []
+
+
+def fade(i, t, dur=0.3):
+    """Fait disparaître un élément posé (citation remplacée, étiquette qui a rempli son rôle)."""
+    tw.append(f'tl.to("#{i}", {{ opacity: 0, duration: {dur}, ease: "power1.in", immediateRender: false }}, {at(t)});')
 
 
 def blur_in(i, t, dy=24):
@@ -143,7 +172,7 @@ def leader(station, a, b, t):
     """Ligne fine qui se dessine de a vers b, avec un point d'accent au départ."""
     sx, sy = st(*station)
     i = uid()
-    (x1, y1), (x2, y2) = a, b
+    (x1, y1), (x2, y2) = (_tx(a[0]), _ty(a[1])), (_tx(b[0]), _ty(b[1]))
     ln = int(((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5) + 2
     html.append(f'<svg class="node lead" id="{i}" style="left:{sx}px;top:{sy}px" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
                 f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke-dasharray="{ln}" />'
@@ -261,7 +290,7 @@ def burst(station, x, y, t, n=12, r0=70, r1=150):
     i = uid()
     lines = "".join(f'<line x1="{200 + r0 * math.cos(a):.1f}" y1="{200 + r0 * math.sin(a):.1f}" x2="{200 + r1 * math.cos(a):.1f}" y2="{200 + r1 * math.sin(a):.1f}" />'
                     for a in (k * 2 * math.pi / n for k in range(n)))
-    html.append(f'<svg class="node burst" id="{i}" style="left:{sx + x - 200}px;top:{sy + y - 200}px;opacity:0" width="400" height="400" viewBox="0 0 400 400">{lines}</svg>')
+    html.append(f'<svg class="node burst" id="{i}" style="left:{sx + _tx(x) - 200}px;top:{sy + _ty(y) - 200}px;opacity:0" width="400" height="400" viewBox="0 0 400 400">{lines}</svg>')
     tween(f"#{i}", 'opacity: 1, scale: 0.35, transformOrigin: "50% 50%"', 'opacity: 0, scale: 1.3, duration: 0.55, ease: "power2.out"', t)
     return i
 
@@ -278,7 +307,7 @@ def arrow(station, a, b, t):
     import math
     sx, sy = st(*station)
     i = uid()
-    (x1, y1), (x2, y2) = a, b
+    (x1, y1), (x2, y2) = (_tx(a[0]), _ty(a[1])), (_tx(b[0]), _ty(b[1]))
     ln = int(math.hypot(x2 - x1, y2 - y1)) + 2
     ang = math.atan2(y2 - y1, x2 - x1)
     hx = [(x2 - 30 * math.cos(ang - 0.45), y2 - 30 * math.sin(ang - 0.45)), (x2, y2), (x2 - 30 * math.cos(ang + 0.45), y2 - 30 * math.sin(ang + 0.45))]
@@ -330,6 +359,8 @@ def hit(t, k=1.0):
 # ---------------------------------------------------------------- caméra
 def cam(t, station, scale=1.0):
     """À t, la caméra rejoint la station (ou "all" : vue d'ensemble de toute la toile)."""
+    if station != "all" and scale == 1.0:
+        scale = ZOOM[0]
     CAM.append((t, station, scale))
 
 

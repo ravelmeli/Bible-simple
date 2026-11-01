@@ -2,5401 +2,5361 @@
  {
   "text": "Il",
   "start": 0.0,
-  "end": 0.32
+  "end": 0.36
  },
  {
   "text": "y",
-  "start": 0.32,
-  "end": 0.46
+  "start": 0.36,
+  "end": 0.48
  },
  {
   "text": "a,",
-  "start": 0.46,
-  "end": 0.78
+  "start": 0.48,
+  "end": 0.8
  },
  {
   "text": "quelque",
-  "start": 0.78,
-  "end": 1.28
+  "start": 0.8,
+  "end": 1.34
  },
  {
-  "text": "part,",
-  "start": 1.28,
-  "end": 1.7
+  "text": "part",
+  "start": 1.34,
+  "end": 1.66
  },
  {
   "text": "dans",
-  "start": 1.72,
-  "end": 2.0
+  "start": 1.66,
+  "end": 1.88
  },
  {
   "text": "une",
-  "start": 2.0,
-  "end": 2.18
+  "start": 1.88,
+  "end": 2.04
  },
  {
   "text": "ville",
-  "start": 2.18,
-  "end": 2.46
+  "start": 2.04,
+  "end": 2.3
  },
  {
   "text": "de",
-  "start": 2.46,
-  "end": 2.66
+  "start": 2.3,
+  "end": 2.5
  },
  {
-  "text": "l'ancienne",
-  "start": 2.66,
-  "end": 3.0
+  "text": "l'ancien",
+  "start": 2.5,
+  "end": 2.9
  },
  {
   "text": "Israël,",
-  "start": 3.0,
-  "end": 3.48
+  "start": 2.9,
+  "end": 3.46
  },
  {
   "text": "une",
-  "start": 3.62,
-  "end": 4.02
+  "start": 3.5,
+  "end": 4.18
  },
  {
   "text": "femme",
-  "start": 4.02,
-  "end": 4.38
+  "start": 4.18,
+  "end": 4.52
  },
  {
   "text": "qui",
-  "start": 4.38,
-  "end": 4.92
+  "start": 4.52,
+  "end": 5.02
  },
  {
   "text": "crie",
-  "start": 4.92,
-  "end": 5.4
+  "start": 5.02,
+  "end": 5.42
  },
  {
   "text": "en",
-  "start": 5.4,
+  "start": 5.42,
   "end": 5.54
  },
  {
   "text": "plein",
   "start": 5.54,
-  "end": 5.84
+  "end": 5.78
  },
  {
   "text": "marché.",
-  "start": 5.84,
-  "end": 6.18
+  "start": 5.78,
+  "end": 6.1
  },
  {
   "text": "Personne",
-  "start": 6.88,
-  "end": 7.44
+  "start": 6.82,
+  "end": 7.34
  },
  {
   "text": "ne",
-  "start": 7.44,
-  "end": 7.5
+  "start": 7.34,
+  "end": 7.4
  },
  {
-  "text": "la",
-  "start": 7.5,
-  "end": 7.6
+  "text": "l'a",
+  "start": 7.4,
+  "end": 7.54
  },
  {
-  "text": "paye",
-  "start": 7.6,
+  "text": "payée",
+  "start": 7.54,
   "end": 7.76
  },
  {
   "text": "pour",
   "start": 7.76,
-  "end": 7.9
+  "end": 7.88
  },
  {
   "text": "cela.",
-  "start": 7.9,
-  "end": 8.12
+  "start": 7.88,
+  "end": 8.08
  },
  {
   "text": "Elle",
-  "start": 8.28,
+  "start": 8.26,
   "end": 8.78
  },
  {
   "text": "n'a",
   "start": 8.78,
-  "end": 8.98
+  "end": 9.0
  },
  {
   "text": "ni",
-  "start": 8.98,
-  "end": 9.36
+  "start": 9.0,
+  "end": 9.28
  },
  {
   "text": "échoppe,",
-  "start": 9.36,
-  "end": 9.92
+  "start": 9.28,
+  "end": 9.86
  },
  {
   "text": "ni",
-  "start": 9.94,
-  "end": 10.22
+  "start": 9.86,
+  "end": 10.18
  },
  {
   "text": "armée,",
-  "start": 10.22,
-  "end": 10.72
+  "start": 10.18,
+  "end": 10.84
  },
  {
   "text": "ni",
-  "start": 10.74,
-  "end": 10.94
+  "start": 10.86,
+  "end": 11.22
  },
  {
   "text": "titre.",
-  "start": 10.94,
-  "end": 11.3
+  "start": 11.22,
+  "end": 11.64
  },
  {
   "text": "Cette",
-  "start": 11.76,
-  "end": 12.32
+  "start": 12.28,
+  "end": 12.8
  },
  {
   "text": "femme,",
-  "start": 12.32,
-  "end": 12.66
+  "start": 12.8,
+  "end": 13.18
  },
  {
   "text": "c'est",
-  "start": 12.7,
-  "end": 13.28
+  "start": 13.2,
+  "end": 13.8
  },
  {
   "text": "la",
-  "start": 13.28,
-  "end": 13.3
+  "start": 13.8,
+  "end": 13.88
  },
  {
   "text": "sagesse.",
-  "start": 13.3,
-  "end": 13.98
+  "start": 13.88,
+  "end": 14.54
  },
  {
   "text": "Et",
-  "start": 14.04,
-  "end": 14.58
+  "start": 14.54,
+  "end": 14.98
  },
  {
   "text": "elle",
-  "start": 14.58,
-  "end": 14.68
+  "start": 14.98,
+  "end": 15.08
  },
  {
   "text": "apparaît",
-  "start": 14.68,
-  "end": 15.1
+  "start": 15.08,
+  "end": 15.5
  },
  {
   "text": "dès",
-  "start": 15.1,
-  "end": 15.34
+  "start": 15.5,
+  "end": 15.72
  },
  {
   "text": "le",
-  "start": 15.34,
-  "end": 15.46
+  "start": 15.72,
+  "end": 15.86
  },
  {
   "text": "premier",
-  "start": 15.46,
-  "end": 15.76
+  "start": 15.86,
+  "end": 16.16
  },
  {
   "text": "chapitre",
-  "start": 15.76,
-  "end": 16.24
+  "start": 16.16,
+  "end": 16.7
  },
  {
   "text": "du",
-  "start": 16.24,
-  "end": 16.4
+  "start": 16.7,
+  "end": 16.82
  },
  {
   "text": "livre",
-  "start": 16.4,
-  "end": 16.68
+  "start": 16.82,
+  "end": 17.04
  },
  {
   "text": "des",
-  "start": 16.68,
-  "end": 16.84
+  "start": 17.04,
+  "end": 17.18
  },
  {
   "text": "Proverbes.",
-  "start": 16.84,
-  "end": 17.3
+  "start": 17.18,
+  "end": 17.6
  },
  {
   "text": "Une",
-  "start": 17.8,
-  "end": 18.36
+  "start": 18.28,
+  "end": 18.8
  },
  {
   "text": "question",
-  "start": 18.36,
-  "end": 18.64
+  "start": 18.8,
+  "end": 19.06
  },
  {
   "text": "revient",
-  "start": 18.64,
-  "end": 19.0
+  "start": 19.06,
+  "end": 19.44
  },
  {
   "text": "souvent",
-  "start": 19.0,
-  "end": 19.26
+  "start": 19.44,
+  "end": 19.7
  },
  {
   "text": "chez",
-  "start": 19.26,
-  "end": 19.52
+  "start": 19.7,
+  "end": 19.94
  },
  {
   "text": "ceux",
-  "start": 19.52,
-  "end": 19.74
+  "start": 19.94,
+  "end": 20.22
  },
  {
   "text": "qui",
-  "start": 19.74,
-  "end": 19.84
+  "start": 20.22,
+  "end": 20.32
  },
  {
   "text": "ouvrent",
-  "start": 19.84,
-  "end": 20.12
+  "start": 20.32,
+  "end": 20.58
  },
  {
   "text": "la",
-  "start": 20.12,
-  "end": 20.24
+  "start": 20.58,
+  "end": 20.7
  },
  {
   "text": "Bible.",
-  "start": 20.24,
-  "end": 20.44
+  "start": 20.7,
+  "end": 20.92
  },
  {
   "text": "Par",
-  "start": 20.8,
-  "end": 21.14
+  "start": 21.28,
+  "end": 21.7
  },
  {
   "text": "où",
-  "start": 21.14,
-  "end": 21.32
+  "start": 21.7,
+  "end": 21.88
  },
  {
   "text": "commencer",
-  "start": 21.32,
-  "end": 21.82
+  "start": 21.88,
+  "end": 22.38
  },
  {
   "text": "pour",
-  "start": 21.82,
-  "end": 22.16
+  "start": 22.38,
+  "end": 22.84
  },
  {
   "text": "tout",
-  "start": 22.16,
-  "end": 22.34
+  "start": 22.84,
+  "end": 23.0
  },
  {
   "text": "comprendre?",
-  "start": 22.34,
-  "end": 22.96
+  "start": 23.0,
+  "end": 23.68
  },
  {
   "text": "On",
-  "start": 22.96,
-  "end": 23.5
+  "start": 24.16,
+  "end": 24.42
  },
  {
   "text": "garde",
-  "start": 23.5,
-  "end": 23.66
+  "start": 24.42,
+  "end": 24.6
  },
  {
   "text": "parfois",
-  "start": 23.66,
-  "end": 23.94
- },
- {
-  "text": "la",
-  "start": 23.94,
-  "end": 24.14
- },
- {
-  "text": "sensation",
-  "start": 24.14,
-  "end": 24.38
- },
- {
-  "text": "qu'il",
-  "start": 24.38,
-  "end": 24.72
- },
- {
-  "text": "manque",
-  "start": 24.72,
+  "start": 24.6,
   "end": 24.88
  },
  {
-  "text": "une",
+  "text": "la",
   "start": 24.88,
   "end": 25.06
  },
  {
-  "text": "clé.",
+  "text": "sensation",
   "start": 25.06,
-  "end": 25.4
+  "end": 25.3
  },
  {
-  "text": "Et",
-  "start": 25.4,
-  "end": 25.58
+  "text": "qu'il",
+  "start": 25.3,
+  "end": 25.64
  },
  {
-  "text": "dans",
-  "start": 25.58,
-  "end": 26.1
- },
- {
-  "text": "cette",
-  "start": 26.1,
-  "end": 26.34
- },
- {
-  "text": "étude,",
-  "start": 26.34,
-  "end": 26.76
- },
- {
-  "text": "nous",
-  "start": 26.76,
-  "end": 27.22
- },
- {
-  "text": "allons",
-  "start": 27.22,
-  "end": 27.42
- },
- {
-  "text": "voir",
-  "start": 27.42,
-  "end": 27.64
- },
- {
-  "text": "pourquoi",
-  "start": 27.64,
-  "end": 27.94
- },
- {
-  "text": "Proverbe",
-  "start": 27.94,
-  "end": 28.52
- },
- {
-  "text": "1",
-  "start": 28.52,
-  "end": 28.74
- },
- {
-  "text": "peut",
-  "start": 28.74,
-  "end": 29.24
- },
- {
-  "text": "jouer",
-  "start": 29.24,
-  "end": 29.52
- },
- {
-  "text": "ce",
-  "start": 29.52,
-  "end": 29.66
- },
- {
-  "text": "rôle.",
-  "start": 29.66,
-  "end": 29.9
- },
- {
-  "text": "Pas",
-  "start": 30.12,
-  "end": 30.68
- },
- {
-  "text": "comme",
-  "start": 30.68,
-  "end": 30.9
- },
- {
-  "text": "la",
-  "start": 30.9,
-  "end": 31.04
- },
- {
-  "text": "seule",
-  "start": 31.04,
-  "end": 31.3
- },
- {
-  "text": "clé,",
-  "start": 31.3,
-  "end": 31.66
- },
- {
-  "text": "mais",
-  "start": 31.66,
-  "end": 32.16
- },
- {
-  "text": "comme",
-  "start": 32.16,
-  "end": 32.38
+  "text": "manque",
+  "start": 25.64,
+  "end": 25.82
  },
  {
   "text": "une",
-  "start": 32.38,
-  "end": 32.54
+  "start": 25.82,
+  "end": 26.0
  },
  {
-  "text": "clé",
-  "start": 32.54,
-  "end": 32.86
+  "text": "clé.",
+  "start": 26.0,
+  "end": 26.36
  },
  {
-  "text": "de",
-  "start": 32.86,
-  "end": 32.9
+  "text": "Dans",
+  "start": 26.9,
+  "end": 27.18
  },
  {
-  "text": "lecture",
-  "start": 32.9,
-  "end": 33.2
+  "text": "cette",
+  "start": 27.18,
+  "end": 27.44
  },
  {
-  "text": "que",
-  "start": 33.2,
-  "end": 33.76
- },
- {
-  "text": "la",
-  "start": 33.76,
-  "end": 33.92
- },
- {
-  "text": "Bible",
-  "start": 33.92,
-  "end": 34.16
- },
- {
-  "text": "elle-même",
-  "start": 34.16,
-  "end": 34.72
+  "text": "étude,",
+  "start": 27.44,
+  "end": 27.84
  },
  {
   "text": "nous",
-  "start": 34.72,
-  "end": 34.88
+  "start": 27.84,
+  "end": 28.4
  },
  {
-  "text": "donne.",
-  "start": 34.88,
-  "end": 35.1
+  "text": "allons",
+  "start": 28.4,
+  "end": 28.58
  },
  {
-  "text": "Commençons",
-  "start": 35.68,
-  "end": 36.24
+  "text": "voir",
+  "start": 28.58,
+  "end": 28.82
  },
  {
-  "text": "par",
-  "start": 36.24,
-  "end": 36.42
+  "text": "pourquoi",
+  "start": 28.82,
+  "end": 29.2
  },
  {
-  "text": "le",
-  "start": 36.42,
-  "end": 36.54
+  "text": "Proverbes",
+  "start": 29.2,
+  "end": 29.84
  },
  {
-  "text": "contexte.",
-  "start": 36.54,
-  "end": 37.02
+  "text": "1",
+  "start": 29.84,
+  "end": 30.04
  },
  {
-  "text": "Le",
-  "start": 37.38,
-  "end": 37.9
+  "text": "peut",
+  "start": 30.04,
+  "end": 30.48
  },
  {
-  "text": "livre",
-  "start": 37.9,
-  "end": 38.26
+  "text": "jouer",
+  "start": 30.48,
+  "end": 30.7
  },
  {
-  "text": "s'ouvre",
-  "start": 38.26,
-  "end": 38.76
+  "text": "ce",
+  "start": 30.7,
+  "end": 30.92
  },
  {
-  "text": "ainsi.",
-  "start": 38.76,
-  "end": 39.06
+  "text": "rôle.",
+  "start": 30.92,
+  "end": 31.16
  },
  {
-  "text": "Proverbe",
-  "start": 39.94,
-  "end": 40.5
- },
- {
-  "text": "de",
-  "start": 40.5,
-  "end": 40.64
- },
- {
-  "text": "Salomon,",
-  "start": 40.64,
-  "end": 41.22
- },
- {
-  "text": "fils",
-  "start": 41.32,
-  "end": 41.96
- },
- {
-  "text": "de",
-  "start": 41.96,
-  "end": 42.36
- },
- {
-  "text": "David,",
-  "start": 42.36,
-  "end": 42.74
- },
- {
-  "text": "roi",
-  "start": 43.06,
-  "end": 43.72
- },
- {
-  "text": "d'Israël.",
-  "start": 43.72,
-  "end": 44.3
- },
- {
-  "text": "Salomon",
-  "start": 45.4,
-  "end": 45.96
- },
- {
-  "text": "règne",
-  "start": 45.96,
-  "end": 46.52
- },
- {
-  "text": "vers",
-  "start": 46.52,
-  "end": 46.72
- },
- {
-  "text": "le",
-  "start": 46.72,
-  "end": 46.9
- },
- {
-  "text": "Xe",
-  "start": 46.9,
-  "end": 47.36
- },
- {
-  "text": "siècle",
-  "start": 47.36,
-  "end": 47.72
- },
- {
-  "text": "avant",
-  "start": 47.72,
-  "end": 48.24
- },
- {
-  "text": "notre",
-  "start": 48.24,
-  "end": 48.46
- },
- {
-  "text": "ère.",
-  "start": 48.46,
-  "end": 48.82
- },
- {
-  "text": "La",
-  "start": 49.5,
-  "end": 49.78
- },
- {
-  "text": "tradition",
-  "start": 49.78,
-  "end": 50.12
- },
- {
-  "text": "le",
-  "start": 50.12,
-  "end": 50.36
- },
- {
-  "text": "présente",
-  "start": 50.36,
-  "end": 50.78
+  "text": "Pas",
+  "start": 31.68,
+  "end": 31.96
  },
  {
   "text": "comme",
-  "start": 50.78,
+  "start": 31.96,
+  "end": 32.18
+ },
+ {
+  "text": "la",
+  "start": 32.18,
+  "end": 32.32
+ },
+ {
+  "text": "seule",
+  "start": 32.32,
+  "end": 32.56
+ },
+ {
+  "text": "clé,",
+  "start": 32.56,
+  "end": 32.92
+ },
+ {
+  "text": "mais",
+  "start": 32.94,
+  "end": 33.4
+ },
+ {
+  "text": "comme",
+  "start": 33.4,
+  "end": 33.58
+ },
+ {
+  "text": "une",
+  "start": 33.58,
+  "end": 33.72
+ },
+ {
+  "text": "clé",
+  "start": 33.72,
+  "end": 34.06
+ },
+ {
+  "text": "de",
+  "start": 34.06,
+  "end": 34.14
+ },
+ {
+  "text": "lecture",
+  "start": 34.14,
+  "end": 34.38
+ },
+ {
+  "text": "que",
+  "start": 34.38,
+  "end": 34.74
+ },
+ {
+  "text": "la",
+  "start": 34.74,
+  "end": 34.84
+ },
+ {
+  "text": "Bible",
+  "start": 34.84,
+  "end": 35.06
+ },
+ {
+  "text": "elle-même",
+  "start": 35.06,
+  "end": 35.62
+ },
+ {
+  "text": "nous",
+  "start": 35.62,
+  "end": 35.84
+ },
+ {
+  "text": "donne.",
+  "start": 35.84,
+  "end": 36.08
+ },
+ {
+  "text": "Commençons",
+  "start": 36.7,
+  "end": 37.26
+ },
+ {
+  "text": "par",
+  "start": 37.26,
+  "end": 37.4
+ },
+ {
+  "text": "le",
+  "start": 37.4,
+  "end": 37.54
+ },
+ {
+  "text": "contexte.",
+  "start": 37.54,
+  "end": 37.98
+ },
+ {
+  "text": "Le",
+  "start": 38.76,
+  "end": 39.04
+ },
+ {
+  "text": "livre",
+  "start": 39.04,
+  "end": 39.48
+ },
+ {
+  "text": "s'ouvre",
+  "start": 39.48,
+  "end": 40.12
+ },
+ {
+  "text": "ainsi.",
+  "start": 40.12,
+  "end": 40.36
+ },
+ {
+  "text": "Proverbes",
+  "start": 41.34,
+  "end": 41.9
+ },
+ {
+  "text": "de",
+  "start": 41.9,
+  "end": 42.06
+ },
+ {
+  "text": "Salomon,",
+  "start": 42.06,
+  "end": 42.58
+ },
+ {
+  "text": "fils",
+  "start": 42.68,
+  "end": 43.24
+ },
+ {
+  "text": "de",
+  "start": 43.24,
+  "end": 43.5
+ },
+ {
+  "text": "David,",
+  "start": 43.5,
+  "end": 43.76
+ },
+ {
+  "text": "roi",
+  "start": 44.04,
+  "end": 44.74
+ },
+ {
+  "text": "d'Israël.",
+  "start": 44.74,
+  "end": 45.3
+ },
+ {
+  "text": "Salomon",
+  "start": 46.66,
+  "end": 47.22
+ },
+ {
+  "text": "règne",
+  "start": 47.22,
+  "end": 47.78
+ },
+ {
+  "text": "vers",
+  "start": 47.78,
+  "end": 47.94
+ },
+ {
+  "text": "le",
+  "start": 47.94,
+  "end": 48.12
+ },
+ {
+  "text": "dixième",
+  "start": 48.12,
+  "end": 48.58
+ },
+ {
+  "text": "siècle",
+  "start": 48.58,
+  "end": 48.96
+ },
+ {
+  "text": "avant",
+  "start": 48.96,
+  "end": 49.26
+ },
+ {
+  "text": "notre",
+  "start": 49.26,
+  "end": 49.48
+ },
+ {
+  "text": "ère.",
+  "start": 49.48,
+  "end": 49.84
+ },
+ {
+  "text": "La",
+  "start": 50.38,
+  "end": 50.66
+ },
+ {
+  "text": "tradition",
+  "start": 50.66,
   "end": 51.0
  },
  {
   "text": "le",
   "start": 51.0,
-  "end": 51.22
+  "end": 51.3
  },
  {
-  "text": "roi",
-  "start": 51.22,
-  "end": 51.5
+  "text": "présente",
+  "start": 51.3,
+  "end": 51.7
+ },
+ {
+  "text": "comme",
+  "start": 51.7,
+  "end": 51.9
  },
  {
   "text": "le",
-  "start": 51.5,
-  "end": 51.58
+  "start": 51.9,
+  "end": 52.1
+ },
+ {
+  "text": "roi",
+  "start": 52.1,
+  "end": 52.34
+ },
+ {
+  "text": "le",
+  "start": 52.34,
+  "end": 52.42
  },
  {
   "text": "plus",
-  "start": 51.58,
-  "end": 51.82
+  "start": 52.42,
+  "end": 52.64
  },
  {
   "text": "sage",
-  "start": 51.82,
-  "end": 52.18
+  "start": 52.64,
+  "end": 53.0
  },
  {
   "text": "de",
-  "start": 52.18,
-  "end": 52.46
+  "start": 53.0,
+  "end": 53.38
  },
  {
   "text": "son",
-  "start": 52.46,
-  "end": 52.62
+  "start": 53.38,
+  "end": 53.56
  },
  {
   "text": "temps.",
-  "start": 52.62,
-  "end": 52.9
+  "start": 53.56,
+  "end": 53.78
  },
  {
   "text": "Les",
-  "start": 52.9,
-  "end": 54.04
+  "start": 54.3,
+  "end": 54.82
  },
  {
   "text": "historiens",
-  "start": 54.04,
-  "end": 54.58
+  "start": 54.82,
+  "end": 55.32
  },
  {
   "text": "pensent",
-  "start": 54.58,
-  "end": 54.98
+  "start": 55.32,
+  "end": 55.7
  },
  {
   "text": "que",
-  "start": 54.98,
-  "end": 55.08
+  "start": 55.7,
+  "end": 55.8
  },
  {
   "text": "le",
-  "start": 55.08,
-  "end": 55.2
+  "start": 55.8,
+  "end": 55.92
  },
  {
   "text": "livre",
-  "start": 55.2,
-  "end": 55.56
+  "start": 55.92,
+  "end": 56.2
  },
  {
   "text": "a",
-  "start": 55.56,
-  "end": 55.76
+  "start": 56.2,
+  "end": 56.3
  },
  {
   "text": "pris",
-  "start": 55.76,
-  "end": 56.0
- },
- {
-  "text": "sa",
-  "start": 56.0,
-  "end": 56.18
- },
- {
-  "text": "forme",
-  "start": 56.18,
+  "start": 56.3,
   "end": 56.44
  },
  {
-  "text": "actuelle",
+  "text": "sa",
   "start": 56.44,
-  "end": 56.92
+  "end": 56.58
+ },
+ {
+  "text": "forme",
+  "start": 56.58,
+  "end": 56.8
+ },
+ {
+  "text": "actuelle",
+  "start": 56.8,
+  "end": 57.2
  },
  {
   "text": "plus",
-  "start": 56.92,
-  "end": 57.22
+  "start": 57.2,
+  "end": 57.44
  },
  {
   "text": "tard.",
-  "start": 57.22,
-  "end": 57.42
+  "start": 57.44,
+  "end": 57.64
  },
  {
   "text": "Le",
-  "start": 58.36,
-  "end": 58.68
+  "start": 57.98,
+  "end": 58.5
  },
  {
   "text": "texte",
-  "start": 58.68,
-  "end": 59.04
+  "start": 58.5,
+  "end": 58.82
  },
  {
   "text": "lui-même",
-  "start": 59.04,
-  "end": 59.54
+  "start": 58.82,
+  "end": 59.16
  },
  {
   "text": "le",
-  "start": 59.54,
-  "end": 60.0
+  "start": 59.16,
+  "end": 59.32
  },
  {
   "text": "laisse",
-  "start": 60.0,
-  "end": 60.16
+  "start": 59.32,
+  "end": 59.5
  },
  {
   "text": "entendre.",
-  "start": 60.16,
-  "end": 60.62
+  "start": 59.5,
+  "end": 59.92
  },
  {
   "text": "Au",
-  "start": 61.24,
-  "end": 61.6
+  "start": 59.96,
+  "end": 60.18
  },
  {
   "text": "chapitre",
-  "start": 61.6,
-  "end": 62.0
+  "start": 60.18,
+  "end": 60.56
  },
  {
-  "text": "25,",
-  "start": 62.0,
-  "end": 62.18
+  "text": "vingt-cinq,",
+  "start": 60.56,
+  "end": 60.76
  },
  {
   "text": "il",
-  "start": 62.56,
-  "end": 62.96
+  "start": 61.14,
+  "end": 61.38
  },
  {
   "text": "dit",
-  "start": 62.96,
-  "end": 63.18
+  "start": 61.38,
+  "end": 61.6
  },
  {
   "text": "que",
-  "start": 63.18,
-  "end": 63.38
+  "start": 61.6,
+  "end": 61.74
  },
  {
   "text": "des",
-  "start": 63.38,
-  "end": 63.7
+  "start": 61.74,
+  "end": 61.88
  },
  {
   "text": "hommes",
-  "start": 63.7,
-  "end": 63.96
+  "start": 61.88,
+  "end": 62.12
  },
  {
   "text": "du",
-  "start": 63.96,
-  "end": 64.14
+  "start": 62.12,
+  "end": 62.26
  },
  {
   "text": "roi",
-  "start": 64.14,
-  "end": 64.4
+  "start": 62.26,
+  "end": 62.56
  },
  {
   "text": "Ézéchias",
-  "start": 64.4,
-  "end": 65.0
+  "start": 62.56,
+  "end": 63.22
  },
  {
   "text": "ont",
-  "start": 65.0,
-  "end": 65.42
+  "start": 63.22,
+  "end": 63.56
  },
  {
   "text": "recopié",
-  "start": 65.42,
-  "end": 66.08
+  "start": 63.56,
+  "end": 64.2
  },
  {
   "text": "d'autres",
-  "start": 66.08,
-  "end": 66.48
+  "start": 64.2,
+  "end": 64.58
  },
  {
   "text": "proverbes",
-  "start": 66.48,
-  "end": 67.22
+  "start": 64.58,
+  "end": 65.28
  },
  {
   "text": "de",
-  "start": 67.22,
-  "end": 67.38
+  "start": 65.28,
+  "end": 65.44
  },
  {
   "text": "Salomon.",
-  "start": 67.38,
-  "end": 67.74
+  "start": 65.44,
+  "end": 65.76
  },
  {
   "text": "Plusieurs",
-  "start": 68.54,
-  "end": 69.18
+  "start": 66.9,
+  "end": 67.42
  },
  {
   "text": "spécialistes",
-  "start": 69.18,
-  "end": 69.7
+  "start": 67.42,
+  "end": 67.94
  },
  {
   "text": "relèvent",
-  "start": 69.7,
-  "end": 70.06
+  "start": 67.94,
+  "end": 68.24
  },
  {
   "text": "aussi",
-  "start": 70.06,
-  "end": 70.26
+  "start": 68.24,
+  "end": 68.48
  },
  {
   "text": "des",
-  "start": 70.26,
-  "end": 70.4
+  "start": 68.48,
+  "end": 68.68
  },
  {
   "text": "ressemblances",
-  "start": 70.4,
-  "end": 70.96
+  "start": 68.68,
+  "end": 69.18
  },
  {
   "text": "avec",
-  "start": 70.96,
-  "end": 71.22
+  "start": 69.18,
+  "end": 69.34
  },
  {
   "text": "un",
-  "start": 71.22,
-  "end": 71.46
+  "start": 69.34,
+  "end": 69.52
  },
  {
   "text": "texte",
-  "start": 71.46,
-  "end": 71.9
+  "start": 69.52,
+  "end": 69.8
  },
  {
   "text": "de",
-  "start": 71.9,
-  "end": 72.0
+  "start": 69.8,
+  "end": 69.86
  },
  {
   "text": "sagesse",
-  "start": 72.0,
-  "end": 72.46
+  "start": 69.86,
+  "end": 70.28
  },
  {
   "text": "égyptien,",
-  "start": 72.46,
-  "end": 73.1
+  "start": 70.28,
+  "end": 70.84
  },
  {
-  "text": "l'instruction",
-  "start": 73.56,
-  "end": 74.52
+  "text": "l'Instruction",
+  "start": 70.9,
+  "end": 71.88
  },
  {
-  "text": "d'Amenémopée.",
-  "start": 74.52,
-  "end": 75.36
+  "text": "d'Amenemopé,",
+  "start": 71.88,
+  "end": 72.68
  },
  {
-  "text": "Signe",
-  "start": 75.92,
-  "end": 76.56
+  "text": "signe",
+  "start": 72.8,
+  "end": 73.74
  },
  {
   "text": "que",
-  "start": 76.56,
-  "end": 76.74
+  "start": 73.74,
+  "end": 73.9
  },
  {
   "text": "la",
-  "start": 76.74,
-  "end": 76.96
+  "start": 73.9,
+  "end": 74.06
  },
  {
   "text": "sagesse",
-  "start": 76.96,
-  "end": 77.34
+  "start": 74.06,
+  "end": 74.44
  },
  {
   "text": "était",
-  "start": 77.34,
-  "end": 77.5
+  "start": 74.44,
+  "end": 74.58
  },
  {
   "text": "un",
-  "start": 77.5,
-  "end": 77.7
+  "start": 74.58,
+  "end": 74.78
  },
  {
   "text": "langage",
-  "start": 77.7,
-  "end": 78.04
+  "start": 74.78,
+  "end": 75.1
  },
  {
   "text": "commun",
-  "start": 78.04,
-  "end": 78.38
+  "start": 75.1,
+  "end": 75.36
  },
  {
   "text": "dans",
-  "start": 78.38,
-  "end": 78.94
+  "start": 75.36,
+  "end": 75.66
  },
  {
   "text": "le",
-  "start": 78.94,
-  "end": 79.02
+  "start": 75.66,
+  "end": 75.76
  },
  {
   "text": "monde",
-  "start": 79.02,
-  "end": 79.22
+  "start": 75.76,
+  "end": 75.92
  },
  {
   "text": "ancien.",
-  "start": 79.22,
-  "end": 79.66
- },
- {
-  "text": "« ",
-  "start": 79.66,
-  "end": 79.82
+  "start": 75.92,
+  "end": 76.3
  },
  {
   "text": "Si",
-  "start": 79.82,
-  "end": 80.82
+  "start": 77.02,
+  "end": 77.52
  },
  {
   "text": "tu",
-  "start": 80.82,
-  "end": 80.94
+  "start": 77.52,
+  "end": 77.68
  },
  {
   "text": "aimes",
-  "start": 80.94,
-  "end": 81.08
+  "start": 77.68,
+  "end": 77.88
  },
  {
   "text": "avancer",
-  "start": 81.08,
-  "end": 81.6
+  "start": 77.88,
+  "end": 78.22
  },
  {
   "text": "ainsi,",
-  "start": 81.6,
-  "end": 81.94
+  "start": 78.22,
+  "end": 78.5
  },
  {
   "text": "un",
-  "start": 82.12,
-  "end": 82.58
+  "start": 78.78,
+  "end": 79.24
  },
  {
   "text": "passage",
-  "start": 82.58,
-  "end": 82.94
+  "start": 79.24,
+  "end": 79.6
  },
  {
   "text": "à",
-  "start": 82.94,
-  "end": 83.14
+  "start": 79.6,
+  "end": 79.86
  },
  {
   "text": "la",
-  "start": 83.14,
-  "end": 83.16
+  "start": 79.86,
+  "end": 79.9
  },
  {
   "text": "fois,",
-  "start": 83.16,
-  "end": 83.4
+  "start": 79.9,
+  "end": 80.14
  },
  {
   "text": "reste",
-  "start": 83.58,
-  "end": 84.3
+  "start": 80.28,
+  "end": 81.12
  },
  {
   "text": "un",
-  "start": 84.3,
-  "end": 84.44
+  "start": 81.12,
+  "end": 81.42
  },
  {
   "text": "moment",
-  "start": 84.44,
-  "end": 84.62
+  "start": 81.42,
+  "end": 81.66
  },
  {
   "text": "avec",
-  "start": 84.62,
-  "end": 84.82
+  "start": 81.66,
+  "end": 81.88
  },
  {
   "text": "nous.",
-  "start": 84.82,
-  "end": 85.02
+  "start": 81.88,
+  "end": 82.08
  },
  {
   "text": "Ce",
-  "start": 85.52,
-  "end": 85.96
+  "start": 82.54,
+  "end": 82.8
  },
  {
   "text": "chemin",
-  "start": 85.96,
-  "end": 86.22
+  "start": 82.8,
+  "end": 83.08
  },
  {
   "text": "se",
-  "start": 86.22,
-  "end": 86.38
+  "start": 83.08,
+  "end": 83.3
  },
  {
   "text": "fait",
-  "start": 86.38,
-  "end": 86.56
+  "start": 83.3,
+  "end": 83.46
  },
  {
   "text": "mieux",
-  "start": 86.56,
-  "end": 86.86
+  "start": 83.46,
+  "end": 83.74
  },
  {
   "text": "à",
-  "start": 86.86,
-  "end": 87.26
+  "start": 83.74,
+  "end": 84.04
  },
  {
-  "text": "plusieurs. »",
-  "start": 87.26,
-  "end": 88.72
+  "text": "plusieurs.",
+  "start": 84.04,
+  "end": 84.32
  },
  {
   "text": "Mais",
-  "start": 88.72,
-  "end": 88.94
+  "start": 85.12,
+  "end": 85.64
  },
  {
   "text": "que",
-  "start": 88.94,
-  "end": 89.18
+  "start": 85.64,
+  "end": 85.84
  },
  {
   "text": "veut",
-  "start": 89.18,
-  "end": 89.4
+  "start": 85.84,
+  "end": 86.02
  },
  {
   "text": "faire",
-  "start": 89.4,
-  "end": 89.66
+  "start": 86.02,
+  "end": 86.28
  },
  {
   "text": "ce",
-  "start": 89.66,
-  "end": 89.86
+  "start": 86.28,
+  "end": 86.44
  },
  {
   "text": "livre?",
-  "start": 89.86,
-  "end": 90.32
+  "start": 86.44,
+  "end": 86.86
  },
  {
   "text": "Il",
-  "start": 90.32,
-  "end": 91.06
+  "start": 87.32,
+  "end": 87.58
  },
  {
   "text": "le",
-  "start": 91.06,
-  "end": 91.16
+  "start": 87.58,
+  "end": 87.7
  },
  {
   "text": "dit",
-  "start": 91.16,
-  "end": 91.32
+  "start": 87.7,
+  "end": 87.86
  },
  {
   "text": "tout",
-  "start": 91.32,
-  "end": 91.42
+  "start": 87.86,
+  "end": 88.04
  },
  {
   "text": "de",
-  "start": 91.42,
-  "end": 91.52
+  "start": 88.04,
+  "end": 88.16
  },
  {
   "text": "suite,",
-  "start": 91.52,
-  "end": 91.7
+  "start": 88.16,
+  "end": 88.36
  },
  {
   "text": "dans",
-  "start": 91.74,
-  "end": 92.18
+  "start": 88.4,
+  "end": 88.86
  },
  {
-  "text": "ses",
-  "start": 92.18,
-  "end": 92.32
+  "text": "ces",
+  "start": 88.86,
+  "end": 89.02
  },
  {
   "text": "premiers",
-  "start": 92.32,
-  "end": 92.58
+  "start": 89.02,
+  "end": 89.32
  },
  {
   "text": "versets.",
-  "start": 92.58,
-  "end": 92.94
+  "start": 89.32,
+  "end": 89.7
  },
  {
   "text": "Voici",
-  "start": 93.82,
-  "end": 94.26
+  "start": 90.26,
+  "end": 90.78
  },
  {
   "text": "ce",
-  "start": 94.26,
-  "end": 94.48
+  "start": 90.78,
+  "end": 90.92
  },
  {
   "text": "qu'il",
-  "start": 94.48,
-  "end": 94.68
+  "start": 90.92,
+  "end": 91.1
  },
  {
-  "text": "annonce,",
-  "start": 94.68,
-  "end": 95.3
+  "text": "annonce",
+  "start": 91.1,
+  "end": 91.66
  },
  {
   "text": "dans",
-  "start": 95.32,
-  "end": 95.84
+  "start": 91.66,
+  "end": 91.96
  },
  {
   "text": "la",
-  "start": 95.84,
-  "end": 95.98
+  "start": 91.96,
+  "end": 92.1
  },
  {
   "text": "Louis",
-  "start": 95.98,
-  "end": 96.16
+  "start": 92.1,
+  "end": 92.26
  },
  {
-  "text": "II",
-  "start": 96.16,
-  "end": 96.36
+  "text": "Segond",
+  "start": 92.26,
+  "end": 92.58
  },
  {
   "text": "1910.",
-  "start": 96.36,
-  "end": 97.16
- },
- {
-  "text": "« ",
-  "start": 97.16,
-  "end": 97.56
+  "start": 92.58,
+  "end": 93.48
  },
  {
   "text": "Pour",
-  "start": 97.56,
-  "end": 98.58
+  "start": 94.22,
+  "end": 94.74
  },
  {
   "text": "connaître",
-  "start": 98.58,
-  "end": 99.26
+  "start": 94.74,
+  "end": 95.16
  },
  {
   "text": "la",
-  "start": 99.26,
-  "end": 99.44
+  "start": 95.16,
+  "end": 95.3
  },
  {
   "text": "sagesse",
-  "start": 99.44,
-  "end": 100.14
+  "start": 95.3,
+  "end": 95.82
  },
  {
   "text": "et",
-  "start": 100.14,
-  "end": 100.4
+  "start": 95.82,
+  "end": 95.92
  },
  {
   "text": "l'instruction,",
-  "start": 100.4,
-  "end": 101.02
+  "start": 95.92,
+  "end": 96.46
  },
  {
   "text": "pour",
-  "start": 101.24,
-  "end": 102.08
+  "start": 96.62,
+  "end": 97.02
  },
  {
   "text": "comprendre",
-  "start": 102.08,
-  "end": 102.54
+  "start": 97.02,
+  "end": 97.44
  },
  {
   "text": "les",
-  "start": 102.54,
-  "end": 102.92
+  "start": 97.44,
+  "end": 97.78
  },
  {
   "text": "paroles",
-  "start": 102.92,
-  "end": 103.44
+  "start": 97.78,
+  "end": 98.36
  },
  {
   "text": "de",
-  "start": 103.44,
-  "end": 103.58
+  "start": 98.36,
+  "end": 98.48
  },
  {
   "text": "l'intelligence,",
-  "start": 103.58,
-  "end": 104.28
+  "start": 98.48,
+  "end": 99.14
  },
  {
   "text": "pour",
-  "start": 105.08,
-  "end": 105.42
+  "start": 99.44,
+  "end": 99.84
  },
  {
   "text": "recevoir",
-  "start": 105.42,
-  "end": 105.94
+  "start": 99.84,
+  "end": 100.32
  },
  {
   "text": "des",
-  "start": 105.94,
-  "end": 106.16
+  "start": 100.32,
+  "end": 100.52
  },
  {
   "text": "leçons",
-  "start": 106.16,
-  "end": 106.6
+  "start": 100.52,
+  "end": 100.92
  },
  {
   "text": "de",
-  "start": 106.6,
-  "end": 106.76
+  "start": 100.92,
+  "end": 101.06
  },
  {
   "text": "bon",
-  "start": 106.76,
-  "end": 107.0
+  "start": 101.06,
+  "end": 101.24
  },
  {
   "text": "sens,",
-  "start": 107.0,
-  "end": 107.3
+  "start": 101.24,
+  "end": 101.5
  },
  {
   "text": "de",
-  "start": 107.72,
-  "end": 108.12
+  "start": 101.68,
+  "end": 101.98
  },
  {
   "text": "justice,",
-  "start": 108.12,
-  "end": 108.52
+  "start": 101.98,
+  "end": 102.34
  },
  {
   "text": "d'équité",
-  "start": 108.92,
-  "end": 109.88
+  "start": 102.74,
+  "end": 103.48
  },
  {
   "text": "et",
-  "start": 109.88,
-  "end": 110.3
+  "start": 103.48,
+  "end": 103.72
  },
  {
   "text": "de",
-  "start": 110.3,
-  "end": 110.44
+  "start": 103.72,
+  "end": 103.82
  },
  {
   "text": "droiture,",
-  "start": 110.44,
-  "end": 110.88
+  "start": 103.82,
+  "end": 104.26
  },
  {
   "text": "pour",
-  "start": 111.62,
-  "end": 112.3
+  "start": 105.02,
+  "end": 105.28
  },
  {
   "text": "donner",
-  "start": 112.3,
-  "end": 112.6
+  "start": 105.28,
+  "end": 105.52
  },
  {
-  "text": "au",
-  "start": 112.6,
-  "end": 112.72
+  "text": "aux",
+  "start": 105.52,
+  "end": 105.62
  },
  {
-  "text": "simple",
-  "start": 112.72,
-  "end": 113.12
+  "text": "simples",
+  "start": 105.62,
+  "end": 105.98
  },
  {
   "text": "de",
-  "start": 113.12,
-  "end": 113.28
+  "start": 105.98,
+  "end": 106.16
  },
  {
   "text": "la",
-  "start": 113.28,
-  "end": 113.44
+  "start": 106.16,
+  "end": 106.26
  },
  {
   "text": "prudence,",
-  "start": 113.44,
-  "end": 114.04
+  "start": 106.26,
+  "end": 106.9
  },
  {
   "text": "au",
-  "start": 114.18,
-  "end": 114.8
+  "start": 107.0,
+  "end": 107.24
  },
  {
   "text": "jeune",
-  "start": 114.8,
-  "end": 115.1
+  "start": 107.24,
+  "end": 107.46
  },
  {
   "text": "homme",
-  "start": 115.1,
-  "end": 115.26
+  "start": 107.46,
+  "end": 107.62
  },
  {
   "text": "de",
-  "start": 115.26,
-  "end": 115.48
+  "start": 107.62,
+  "end": 107.78
  },
  {
   "text": "la",
+  "start": 107.78,
+  "end": 107.84
+ },
+ {
+  "text": "science",
+  "start": 107.84,
+  "end": 108.18
+ },
+ {
+  "text": "et",
+  "start": 108.18,
+  "end": 108.54
+ },
+ {
+  "text": "de",
+  "start": 108.54,
+  "end": 108.62
+ },
+ {
+  "text": "la",
+  "start": 108.62,
+  "end": 108.72
+ },
+ {
+  "text": "réflexion.",
+  "start": 108.72,
+  "end": 109.48
+ },
+ {
+  "text": "Arrêtons-nous",
+  "start": 110.38,
+  "end": 111.08
+ },
+ {
+  "text": "sur",
+  "start": 111.08,
+  "end": 111.26
+ },
+ {
+  "text": "trois",
+  "start": 111.26,
+  "end": 111.52
+ },
+ {
+  "text": "mots",
+  "start": 111.52,
+  "end": 111.72
+ },
+ {
+  "text": "hébreux.",
+  "start": 111.72,
+  "end": 112.22
+ },
+ {
+  "text": "Le",
+  "start": 112.56,
+  "end": 113.08
+ },
+ {
+  "text": "premier",
+  "start": 113.08,
+  "end": 113.38
+ },
+ {
+  "text": "est",
+  "start": 113.38,
+  "end": 113.7
+ },
+ {
+  "text": "« ",
+  "start": 113.7,
+  "end": 113.78
+ },
+ {
+  "text": "ḥokhmah",
+  "start": 113.78,
+  "end": 114.26
+ },
+ {
+  "text": "»,",
+  "start": 114.26,
+  "end": 114.42
+ },
+ {
+  "text": "que",
+  "start": 114.42,
+  "end": 114.84
+ },
+ {
+  "text": "l'on",
+  "start": 114.84,
+  "end": 114.96
+ },
+ {
+  "text": "traduit",
+  "start": 114.96,
+  "end": 115.3
+ },
+ {
+  "text": "par",
+  "start": 115.3,
+  "end": 115.48
+ },
+ {
+  "text": "« ",
   "start": 115.48,
   "end": 115.6
  },
  {
-  "text": "science",
-  "start": 115.6,
-  "end": 115.98
- },
- {
-  "text": "et",
-  "start": 115.98,
-  "end": 116.34
- },
- {
-  "text": "de",
-  "start": 116.34,
-  "end": 116.42
- },
- {
-  "text": "la",
-  "start": 116.42,
-  "end": 116.52
- },
- {
-  "text": "réflexion. »",
-  "start": 116.52,
-  "end": 118.2
- },
- {
-  "text": "Arrêtons-nous",
-  "start": 118.2,
-  "end": 118.84
- },
- {
-  "text": "sur",
-  "start": 118.84,
-  "end": 118.98
- },
- {
-  "text": "trois",
-  "start": 118.98,
-  "end": 119.28
- },
- {
-  "text": "mots",
-  "start": 119.28,
-  "end": 119.46
- },
- {
-  "text": "hébreux.",
-  "start": 119.46,
-  "end": 120.02
- },
- {
-  "text": "Le",
-  "start": 120.46,
-  "end": 121.14
- },
- {
-  "text": "premier",
-  "start": 121.14,
-  "end": 121.5
- },
- {
-  "text": "est",
-  "start": 121.5,
-  "end": 121.86
- },
- {
-  "text": "« ",
-  "start": 121.86,
-  "end": 121.96
- },
- {
-  "text": "Chorma",
-  "start": 121.96,
-  "end": 122.4
- },
- {
-  "text": "»,",
-  "start": 122.4,
-  "end": 122.6
- },
- {
-  "text": "que",
-  "start": 122.6,
-  "end": 123.3
- },
- {
-  "text": "l'on",
-  "start": 123.3,
-  "end": 123.44
- },
- {
-  "text": "traduit",
-  "start": 123.44,
-  "end": 123.78
- },
- {
-  "text": "par",
-  "start": 123.78,
-  "end": 123.98
- },
- {
-  "text": "« ",
-  "start": 123.98,
-  "end": 124.14
- },
- {
   "text": "sagesse",
-  "start": 124.14,
-  "end": 124.92
+  "start": 115.6,
+  "end": 116.24
  },
  {
   "text": "».",
-  "start": 124.92,
-  "end": 125.02
+  "start": 116.24,
+  "end": 116.36
  },
  {
   "text": "Dans",
-  "start": 125.7,
-  "end": 125.98
+  "start": 116.36,
+  "end": 116.96
  },
  {
   "text": "la",
-  "start": 125.98,
-  "end": 126.1
+  "start": 116.96,
+  "end": 117.08
  },
  {
   "text": "Bible",
-  "start": 126.1,
-  "end": 126.32
+  "start": 117.08,
+  "end": 117.24
  },
  {
   "text": "hébraïque,",
-  "start": 126.32,
-  "end": 126.8
+  "start": 117.24,
+  "end": 117.76
  },
  {
   "text": "ce",
-  "start": 126.9,
-  "end": 127.4
+  "start": 117.84,
+  "end": 118.08
  },
  {
   "text": "mot",
-  "start": 127.4,
-  "end": 127.58
+  "start": 118.08,
+  "end": 118.24
  },
  {
   "text": "ne",
-  "start": 127.58,
-  "end": 127.68
+  "start": 118.24,
+  "end": 118.32
  },
  {
   "text": "désigne",
-  "start": 127.68,
-  "end": 128.04
+  "start": 118.32,
+  "end": 118.66
  },
  {
   "text": "pas",
-  "start": 128.04,
-  "end": 128.16
+  "start": 118.66,
+  "end": 118.78
  },
  {
   "text": "d'abord",
-  "start": 128.16,
-  "end": 128.4
+  "start": 118.78,
+  "end": 119.04
  },
  {
   "text": "une",
-  "start": 128.4,
-  "end": 128.6
+  "start": 119.04,
+  "end": 119.2
  },
  {
   "text": "intelligence",
-  "start": 128.6,
-  "end": 128.98
+  "start": 119.2,
+  "end": 119.5
  },
  {
   "text": "théorique.",
-  "start": 128.98,
-  "end": 129.66
+  "start": 119.5,
+  "end": 120.2
  },
  {
   "text": "Il",
-  "start": 130.18,
-  "end": 130.46
+  "start": 120.38,
+  "end": 120.86
  },
  {
   "text": "sert",
-  "start": 130.46,
-  "end": 130.68
+  "start": 120.86,
+  "end": 121.08
  },
  {
   "text": "aussi",
-  "start": 130.68,
-  "end": 130.92
+  "start": 121.08,
+  "end": 121.28
  },
  {
   "text": "pour",
-  "start": 130.92,
-  "end": 131.12
+  "start": 121.28,
+  "end": 121.48
  },
  {
   "text": "l'habileté",
-  "start": 131.12,
-  "end": 131.74
+  "start": 121.48,
+  "end": 122.2
  },
  {
   "text": "d'un",
-  "start": 131.74,
-  "end": 131.94
+  "start": 122.2,
+  "end": 122.4
  },
  {
   "text": "artisan.",
-  "start": 131.94,
-  "end": 132.38
+  "start": 122.4,
+  "end": 122.82
  },
  {
   "text": "Dans",
-  "start": 133.02,
-  "end": 133.58
+  "start": 123.0,
+  "end": 123.52
  },
  {
   "text": "l'Exode,",
-  "start": 133.58,
-  "end": 133.98
+  "start": 123.52,
+  "end": 123.9
  },
  {
-  "text": "Bethsa",
-  "start": 134.14,
-  "end": 135.12
- },
- {
-  "text": "Léel,",
-  "start": 135.12,
-  "end": 135.46
+  "text": "Betsaleel,",
+  "start": 124.0,
+  "end": 124.84
  },
  {
   "text": "qui",
-  "start": 135.52,
-  "end": 135.68
+  "start": 124.86,
+  "end": 125.14
  },
  {
   "text": "construit",
-  "start": 135.68,
-  "end": 136.12
+  "start": 125.14,
+  "end": 125.62
  },
  {
   "text": "le",
-  "start": 136.12,
-  "end": 136.2
+  "start": 125.62,
+  "end": 125.68
  },
  {
   "text": "sanctuaire,",
-  "start": 136.2,
-  "end": 136.86
+  "start": 125.68,
+  "end": 126.22
  },
  {
   "text": "reçoit",
-  "start": 136.88,
-  "end": 137.66
+  "start": 126.34,
+  "end": 126.98
  },
  {
   "text": "de",
-  "start": 137.66,
-  "end": 137.76
+  "start": 126.98,
+  "end": 127.06
  },
  {
   "text": "la",
-  "start": 137.76,
-  "end": 137.86
+  "start": 127.06,
+  "end": 127.16
  },
  {
   "text": "sagesse",
-  "start": 137.86,
-  "end": 138.46
+  "start": 127.16,
+  "end": 127.78
  },
  {
   "text": "pour",
-  "start": 138.46,
-  "end": 138.56
+  "start": 127.78,
+  "end": 127.9
  },
  {
   "text": "son",
-  "start": 138.56,
-  "end": 138.7
+  "start": 127.9,
+  "end": 128.04
  },
  {
   "text": "travail.",
-  "start": 138.7,
-  "end": 138.96
+  "start": 128.04,
+  "end": 128.36
  },
  {
   "text": "La",
-  "start": 139.76,
-  "end": 140.32
+  "start": 128.88,
+  "end": 129.14
  },
  {
   "text": "sagesse,",
-  "start": 140.32,
-  "end": 140.88
+  "start": 129.14,
+  "end": 129.6
  },
  {
   "text": "c'est",
-  "start": 140.88,
-  "end": 141.2
+  "start": 129.6,
+  "end": 129.96
  },
  {
   "text": "savoir",
-  "start": 141.2,
-  "end": 141.46
+  "start": 129.96,
+  "end": 130.26
  },
  {
   "text": "faire",
+  "start": 130.26,
+  "end": 130.6
+ },
+ {
+  "text": "et",
+  "start": 130.6,
+  "end": 131.06
+ },
+ {
+  "text": "savoir",
+  "start": 131.06,
+  "end": 131.44
+ },
+ {
+  "text": "vivre.",
+  "start": 131.44,
+  "end": 131.86
+ },
+ {
+  "text": "Le",
+  "start": 132.46,
+  "end": 132.98
+ },
+ {
+  "text": "deuxième",
+  "start": 132.98,
+  "end": 133.24
+ },
+ {
+  "text": "mot",
+  "start": 133.24,
+  "end": 133.46
+ },
+ {
+  "text": "est",
+  "start": 133.46,
+  "end": 133.64
+ },
+ {
+  "text": "« ",
+  "start": 133.64,
+  "end": 133.74
+ },
+ {
+  "text": "moussar",
+  "start": 133.74,
+  "end": 134.08
+ },
+ {
+  "text": "»,",
+  "start": 134.08,
+  "end": 134.36
+ },
+ {
+  "text": "instruction",
+  "start": 134.36,
+  "end": 135.06
+ },
+ {
+  "text": "ou",
+  "start": 135.06,
+  "end": 135.66
+ },
+ {
+  "text": "discipline.",
+  "start": 135.66,
+  "end": 136.2
+ },
+ {
+  "text": "C'est",
+  "start": 136.2,
+  "end": 137.26
+ },
+ {
+  "text": "l'éducation",
+  "start": 137.26,
+  "end": 137.88
+ },
+ {
+  "text": "qui",
+  "start": 137.88,
+  "end": 138.06
+ },
+ {
+  "text": "enseigne",
+  "start": 138.06,
+  "end": 138.74
+ },
+ {
+  "text": "autant",
+  "start": 138.74,
+  "end": 139.02
+ },
+ {
+  "text": "qu'elle",
+  "start": 139.02,
+  "end": 139.3
+ },
+ {
+  "text": "corrige.",
+  "start": 139.3,
+  "end": 139.82
+ },
+ {
+  "text": "Le",
+  "start": 139.94,
+  "end": 140.44
+ },
+ {
+  "text": "troisième",
+  "start": 140.44,
+  "end": 140.7
+ },
+ {
+  "text": "se",
+  "start": 140.7,
+  "end": 141.1
+ },
+ {
+  "text": "trouve",
+  "start": 141.1,
+  "end": 141.34
+ },
+ {
+  "text": "au",
+  "start": 141.34,
+  "end": 141.46
+ },
+ {
+  "text": "verset",
   "start": 141.46,
   "end": 141.82
  },
  {
-  "text": "et",
+  "text": "sept.",
   "start": 141.82,
-  "end": 142.5
+  "end": 142.1
  },
  {
-  "text": "savoir",
+  "text": "yirʾah,",
   "start": 142.5,
-  "end": 142.96
- },
- {
-  "text": "vivre.",
-  "start": 142.96,
-  "end": 143.36
- },
- {
-  "text": "Le",
-  "start": 144.26,
-  "end": 144.82
- },
- {
-  "text": "deuxième",
-  "start": 144.82,
-  "end": 145.12
- },
- {
-  "text": "mot",
-  "start": 145.12,
-  "end": 145.36
- },
- {
-  "text": "est",
-  "start": 145.36,
-  "end": 145.68
- },
- {
-  "text": "moussar,",
-  "start": 145.68,
-  "end": 146.12
- },
- {
-  "text": "instruction",
-  "start": 146.36,
-  "end": 147.16
- },
- {
-  "text": "ou",
-  "start": 147.16,
-  "end": 148.04
- },
- {
-  "text": "discipline.",
-  "start": 148.04,
-  "end": 148.42
- },
- {
-  "text": "C'est",
-  "start": 149.14,
-  "end": 149.82
- },
- {
-  "text": "l'éducation",
-  "start": 149.82,
-  "end": 150.28
- },
- {
-  "text": "qui",
-  "start": 150.28,
-  "end": 150.46
- },
- {
-  "text": "enseigne",
-  "start": 150.46,
-  "end": 150.94
- },
- {
-  "text": "autant",
-  "start": 150.94,
-  "end": 151.24
- },
- {
-  "text": "qu'elle",
-  "start": 151.24,
-  "end": 151.56
- },
- {
-  "text": "corrige.",
-  "start": 151.56,
-  "end": 151.94
- },
- {
-  "text": "Le",
-  "start": 152.72,
-  "end": 153.28
- },
- {
-  "text": "troisième",
-  "start": 153.28,
-  "end": 153.58
- },
- {
-  "text": "se",
-  "start": 153.58,
-  "end": 153.8
- },
- {
-  "text": "trouve",
-  "start": 153.8,
-  "end": 153.98
- },
- {
-  "text": "au",
-  "start": 153.98,
-  "end": 154.1
- },
- {
-  "text": "verset",
-  "start": 154.1,
-  "end": 154.4
- },
- {
-  "text": "7.",
-  "start": 154.4,
-  "end": 154.64
- },
- {
-  "text": "« ",
-  "start": 155.4,
-  "end": 155.4
- },
- {
-  "text": "Ira,",
-  "start": 155.4,
-  "end": 155.7
+  "end": 143.5
  },
  {
   "text": "la",
-  "start": 155.92,
-  "end": 156.58
+  "start": 143.6,
+  "end": 143.8
  },
  {
-  "text": "crainte. »",
-  "start": 156.58,
-  "end": 158.0
+  "text": "crainte.",
+  "start": 143.9,
+  "end": 144.7
  },
  {
   "text": "Voici",
-  "start": 158.0,
-  "end": 158.76
+  "start": 144.94,
+  "end": 145.5
  },
  {
   "text": "le",
-  "start": 158.76,
-  "end": 159.02
+  "start": 145.5,
+  "end": 145.7
  },
  {
-  "text": "verset.",
-  "start": 159.02,
-  "end": 159.48
+  "text": "verset",
+  "start": 145.7,
+  "end": 146.18
  },
  {
   "text": "« ",
-  "start": 159.54,
-  "end": 160.0
+  "start": 146.18,
+  "end": 146.34
  },
  {
   "text": "La",
-  "start": 160.0,
-  "end": 160.28
+  "start": 146.34,
+  "end": 147.1
  },
  {
   "text": "crainte",
-  "start": 160.28,
-  "end": 160.86
+  "start": 147.1,
+  "end": 147.58
  },
  {
   "text": "de",
-  "start": 160.86,
-  "end": 161.02
+  "start": 147.58,
+  "end": 147.82
  },
  {
   "text": "l'éternel",
-  "start": 161.02,
-  "end": 161.6
+  "start": 147.82,
+  "end": 148.44
  },
  {
   "text": "est",
-  "start": 161.6,
-  "end": 161.86
+  "start": 148.44,
+  "end": 148.76
  },
  {
   "text": "le",
-  "start": 161.86,
-  "end": 162.04
+  "start": 148.76,
+  "end": 148.92
  },
  {
   "text": "commencement",
-  "start": 162.04,
-  "end": 162.58
+  "start": 148.92,
+  "end": 149.3
  },
  {
   "text": "de",
-  "start": 162.58,
-  "end": 163.02
+  "start": 149.3,
+  "end": 149.68
  },
  {
   "text": "la",
-  "start": 163.02,
-  "end": 163.1
+  "start": 149.68,
+  "end": 149.78
  },
  {
   "text": "science.",
-  "start": 163.1,
-  "end": 163.4
+  "start": 149.78,
+  "end": 150.08
  },
  {
   "text": "Les",
-  "start": 163.84,
-  "end": 164.4
+  "start": 150.82,
+  "end": 151.1
  },
  {
   "text": "insensés",
-  "start": 164.4,
-  "end": 165.1
+  "start": 151.1,
+  "end": 151.66
  },
  {
   "text": "méprisent",
-  "start": 165.1,
-  "end": 166.08
+  "start": 151.66,
+  "end": 152.34
  },
  {
   "text": "la",
-  "start": 166.08,
-  "end": 166.24
+  "start": 152.34,
+  "end": 152.46
  },
  {
   "text": "sagesse",
-  "start": 166.24,
-  "end": 166.78
+  "start": 152.46,
+  "end": 153.0
  },
  {
   "text": "et",
-  "start": 166.78,
-  "end": 166.92
+  "start": 153.0,
+  "end": 153.14
  },
  {
   "text": "l'instruction. »",
-  "start": 166.92,
-  "end": 168.46
+  "start": 153.14,
+  "end": 154.58
  },
  {
   "text": "Le",
-  "start": 168.46,
-  "end": 168.6
+  "start": 154.58,
+  "end": 154.66
  },
  {
   "text": "mot",
-  "start": 168.6,
-  "end": 168.78
+  "start": 154.66,
+  "end": 154.84
  },
  {
   "text": "« ",
-  "start": 168.78,
-  "end": 168.88
+  "start": 154.84,
+  "end": 154.92
  },
  {
   "text": "crainte »",
-  "start": 168.88,
-  "end": 169.42
+  "start": 154.92,
+  "end": 155.54
  },
  {
   "text": "peut",
-  "start": 169.42,
-  "end": 169.56
+  "start": 155.54,
+  "end": 155.66
  },
  {
   "text": "surprendre.",
-  "start": 169.56,
-  "end": 170.18
+  "start": 155.66,
+  "end": 156.24
  },
  {
   "text": "Dans",
-  "start": 170.42,
-  "end": 170.98
+  "start": 156.74,
+  "end": 157.02
  },
  {
   "text": "l'Ancien",
-  "start": 170.98,
-  "end": 171.34
+  "start": 157.02,
+  "end": 157.38
  },
  {
   "text": "Testament,",
-  "start": 171.34,
-  "end": 171.62
+  "start": 157.38,
+  "end": 157.68
  },
  {
   "text": "il",
-  "start": 171.88,
-  "end": 172.34
+  "start": 157.86,
+  "end": 158.32
  },
  {
   "text": "ne",
-  "start": 172.34,
-  "end": 172.46
+  "start": 158.32,
+  "end": 158.48
  },
  {
   "text": "décrit",
-  "start": 172.46,
-  "end": 172.74
+  "start": 158.48,
+  "end": 158.76
  },
  {
   "text": "pas",
-  "start": 172.74,
-  "end": 172.86
+  "start": 158.76,
+  "end": 158.88
  },
  {
   "text": "seulement",
-  "start": 172.86,
-  "end": 173.08
+  "start": 158.88,
+  "end": 159.1
  },
  {
   "text": "la",
-  "start": 173.08,
-  "end": 173.4
+  "start": 159.1,
+  "end": 159.34
  },
  {
   "text": "peur.",
-  "start": 173.4,
-  "end": 173.66
+  "start": 159.34,
+  "end": 159.68
  },
  {
   "text": "Il",
-  "start": 173.94,
-  "end": 174.46
+  "start": 160.0,
+  "end": 160.48
  },
  {
   "text": "couvre",
-  "start": 174.46,
-  "end": 174.8
+  "start": 160.48,
+  "end": 160.82
  },
  {
   "text": "aussi",
-  "start": 174.8,
-  "end": 174.98
+  "start": 160.82,
+  "end": 160.98
  },
  {
   "text": "le",
-  "start": 174.98,
-  "end": 175.24
+  "start": 160.98,
+  "end": 161.12
  },
  {
   "text": "respect,",
-  "start": 175.24,
-  "end": 175.6
+  "start": 161.12,
+  "end": 161.46
  },
  {
   "text": "l'émerveillement,",
-  "start": 176.14,
-  "end": 176.9
+  "start": 161.7,
+  "end": 162.8
  },
  {
   "text": "la",
-  "start": 176.96,
-  "end": 177.58
+  "start": 162.86,
+  "end": 163.22
  },
  {
   "text": "conscience",
-  "start": 177.58,
-  "end": 178.1
+  "start": 163.22,
+  "end": 163.58
  },
  {
   "text": "de",
-  "start": 178.1,
-  "end": 178.6
+  "start": 163.58,
+  "end": 163.94
  },
  {
   "text": "qui",
-  "start": 178.6,
-  "end": 178.84
+  "start": 163.94,
+  "end": 164.12
  },
  {
   "text": "est",
-  "start": 178.84,
-  "end": 179.2
+  "start": 164.12,
+  "end": 164.34
  },
  {
   "text": "Dieu",
-  "start": 179.2,
-  "end": 179.56
+  "start": 164.34,
+  "end": 164.6
  },
  {
   "text": "et",
-  "start": 179.56,
-  "end": 180.14
+  "start": 164.6,
+  "end": 165.56
  },
  {
   "text": "de",
-  "start": 180.14,
-  "end": 180.28
+  "start": 165.56,
+  "end": 165.68
  },
  {
   "text": "qui",
-  "start": 180.28,
-  "end": 180.42
+  "start": 165.68,
+  "end": 165.78
  },
  {
   "text": "nous",
-  "start": 180.42,
-  "end": 180.62
+  "start": 165.78,
+  "end": 165.98
  },
  {
   "text": "sommes.",
-  "start": 180.62,
-  "end": 180.96
+  "start": 165.98,
+  "end": 166.26
  },
  {
   "text": "Et",
-  "start": 180.96,
-  "end": 181.88
+  "start": 166.96,
+  "end": 167.44
  },
  {
   "text": "ce",
-  "start": 181.88,
-  "end": 182.04
+  "start": 167.44,
+  "end": 167.54
  },
  {
   "text": "verset",
-  "start": 182.04,
-  "end": 182.5
+  "start": 167.54,
+  "end": 167.86
  },
  {
   "text": "pose",
-  "start": 182.5,
-  "end": 183.06
+  "start": 167.86,
+  "end": 168.04
  },
  {
   "text": "un",
-  "start": 183.06,
-  "end": 183.22
+  "start": 168.04,
+  "end": 168.32
  },
  {
   "text": "ordre.",
-  "start": 183.22,
-  "end": 183.7
+  "start": 168.32,
+  "end": 168.8
  },
  {
   "text": "On",
-  "start": 184.24,
-  "end": 184.5
+  "start": 169.1,
+  "end": 169.58
  },
  {
   "text": "ne",
-  "start": 184.5,
-  "end": 184.62
+  "start": 169.58,
+  "end": 169.66
  },
  {
   "text": "commence",
-  "start": 184.62,
-  "end": 184.82
+  "start": 169.66,
+  "end": 169.9
  },
  {
   "text": "pas",
-  "start": 184.82,
-  "end": 184.98
+  "start": 169.9,
+  "end": 170.08
  },
  {
   "text": "à",
-  "start": 184.98,
-  "end": 185.12
+  "start": 170.08,
+  "end": 170.2
  },
  {
   "text": "comprendre",
-  "start": 185.12,
-  "end": 185.44
+  "start": 170.2,
+  "end": 170.56
  },
  {
   "text": "en",
-  "start": 185.44,
-  "end": 185.78
+  "start": 170.56,
+  "end": 170.96
  },
  {
   "text": "se",
-  "start": 185.78,
-  "end": 185.9
+  "start": 170.96,
+  "end": 171.08
  },
  {
   "text": "plaçant",
-  "start": 185.9,
-  "end": 186.34
+  "start": 171.08,
+  "end": 171.46
  },
  {
   "text": "au",
-  "start": 186.34,
-  "end": 186.6
+  "start": 171.46,
+  "end": 171.56
  },
  {
   "text": "centre,",
-  "start": 186.6,
-  "end": 186.96
+  "start": 171.56,
+  "end": 171.86
  },
  {
   "text": "mais",
-  "start": 187.06,
-  "end": 187.52
+  "start": 171.94,
+  "end": 172.46
  },
  {
   "text": "en",
-  "start": 187.52,
-  "end": 187.72
+  "start": 172.46,
+  "end": 172.6
  },
  {
   "text": "reconnaissant",
-  "start": 187.72,
-  "end": 188.48
+  "start": 172.6,
+  "end": 173.24
  },
  {
   "text": "Dieu",
-  "start": 188.48,
-  "end": 188.82
+  "start": 173.24,
+  "end": 173.58
  },
  {
   "text": "à",
-  "start": 188.82,
-  "end": 189.22
+  "start": 173.58,
+  "end": 173.84
  },
  {
   "text": "sa",
-  "start": 189.22,
-  "end": 189.32
+  "start": 173.84,
+  "end": 173.94
  },
  {
   "text": "place.",
-  "start": 189.32,
-  "end": 189.62
+  "start": 173.94,
+  "end": 174.2
  },
  {
   "text": "C'est",
-  "start": 190.08,
-  "end": 190.7
+  "start": 174.86,
+  "end": 175.44
  },
  {
   "text": "là,",
-  "start": 190.7,
-  "end": 190.78
+  "start": 175.44,
+  "end": 175.54
  },
  {
   "text": "pour",
-  "start": 190.86,
-  "end": 191.18
+  "start": 175.58,
+  "end": 175.74
  },
  {
   "text": "beaucoup",
-  "start": 191.18,
-  "end": 191.46
+  "start": 175.74,
+  "end": 176.02
  },
  {
   "text": "de",
-  "start": 191.46,
-  "end": 191.56
+  "start": 176.02,
+  "end": 176.1
  },
  {
   "text": "lecteurs,",
-  "start": 191.56,
-  "end": 191.9
+  "start": 176.1,
+  "end": 176.38
  },
  {
   "text": "que",
-  "start": 192.02,
-  "end": 192.32
+  "start": 176.52,
+  "end": 176.84
  },
  {
   "text": "se",
-  "start": 192.32,
-  "end": 192.42
+  "start": 176.84,
+  "end": 176.94
  },
  {
   "text": "trouve",
-  "start": 192.42,
-  "end": 192.66
+  "start": 176.94,
+  "end": 177.18
  },
  {
   "text": "la",
-  "start": 192.66,
-  "end": 192.84
+  "start": 177.18,
+  "end": 177.4
  },
  {
   "text": "clé.",
-  "start": 192.84,
-  "end": 193.12
+  "start": 177.4,
+  "end": 177.68
  },
  {
   "text": "Le",
-  "start": 193.44,
-  "end": 193.96
+  "start": 178.3,
+  "end": 178.78
  },
  {
   "text": "livre",
-  "start": 193.96,
-  "end": 194.22
+  "start": 178.78,
+  "end": 179.02
  },
  {
   "text": "ne",
-  "start": 194.22,
-  "end": 194.38
+  "start": 179.02,
+  "end": 179.14
  },
  {
   "text": "dit",
-  "start": 194.38,
-  "end": 194.58
+  "start": 179.14,
+  "end": 179.32
  },
  {
   "text": "pas",
-  "start": 194.58,
-  "end": 194.76
+  "start": 179.32,
+  "end": 179.48
  },
  {
   "text": "« ",
-  "start": 194.76,
-  "end": 195.04
+  "start": 179.48,
+  "end": 179.6
  },
  {
   "text": "Sois",
-  "start": 195.04,
-  "end": 195.48
+  "start": 179.6,
+  "end": 179.96
  },
  {
   "text": "intelligent",
-  "start": 195.48,
-  "end": 195.82
+  "start": 179.96,
+  "end": 180.3
  },
  {
   "text": "et",
-  "start": 195.82,
-  "end": 196.24
+  "start": 180.3,
+  "end": 180.84
  },
  {
   "text": "tu",
-  "start": 196.24,
-  "end": 196.4
+  "start": 180.84,
+  "end": 181.08
  },
  {
   "text": "trouveras",
-  "start": 196.4,
-  "end": 196.72
+  "start": 181.08,
+  "end": 181.46
  },
  {
   "text": "Dieu",
-  "start": 196.72,
-  "end": 196.9
+  "start": 181.46,
+  "end": 181.62
  },
  {
   "text": "».",
-  "start": 196.9,
-  "end": 197.06
+  "start": 181.62,
+  "end": 181.82
  },
  {
   "text": "Il",
-  "start": 197.06,
-  "end": 197.7
+  "start": 181.82,
+  "end": 182.46
  },
  {
   "text": "dit",
-  "start": 197.7,
-  "end": 197.9
+  "start": 182.46,
+  "end": 182.64
  },
  {
   "text": "« ",
-  "start": 197.9,
-  "end": 198.12
+  "start": 182.64,
+  "end": 182.84
  },
  {
   "text": "Reconnais",
-  "start": 198.12,
-  "end": 198.96
+  "start": 182.84,
+  "end": 183.48
  },
  {
   "text": "Dieu",
-  "start": 198.96,
-  "end": 199.22
+  "start": 183.48,
+  "end": 183.7
  },
  {
   "text": "et",
-  "start": 199.22,
-  "end": 199.84
+  "start": 183.7,
+  "end": 184.4
  },
  {
   "text": "l'intelligence",
-  "start": 199.84,
-  "end": 200.5
+  "start": 184.4,
+  "end": 184.98
  },
  {
   "text": "commencera",
-  "start": 200.5,
-  "end": 201.1
+  "start": 184.98,
+  "end": 185.4
  },
  {
   "text": "».",
-  "start": 201.1,
-  "end": 201.4
+  "start": 185.4,
+  "end": 185.76
  },
  {
   "text": "Après",
-  "start": 202.04,
-  "end": 202.3
+  "start": 185.76,
+  "end": 186.94
  },
  {
   "text": "ce",
-  "start": 202.3,
-  "end": 202.48
+  "start": 186.94,
+  "end": 187.14
  },
  {
   "text": "prologue,",
-  "start": 202.48,
-  "end": 202.9
+  "start": 187.14,
+  "end": 187.6
  },
  {
   "text": "le",
-  "start": 202.96,
-  "end": 203.3
+  "start": 187.64,
+  "end": 187.9
  },
  {
   "text": "chapitre",
-  "start": 203.3,
-  "end": 203.72
+  "start": 187.9,
+  "end": 188.32
  },
  {
   "text": "se",
-  "start": 203.72,
-  "end": 203.86
+  "start": 188.32,
+  "end": 188.46
  },
  {
   "text": "déroule",
-  "start": 203.86,
-  "end": 204.18
+  "start": 188.46,
+  "end": 188.86
  },
  {
   "text": "en",
-  "start": 204.18,
-  "end": 204.3
+  "start": 188.86,
+  "end": 189.04
  },
  {
   "text": "deux",
-  "start": 204.3,
-  "end": 204.5
+  "start": 189.04,
+  "end": 189.28
  },
  {
   "text": "scènes.",
-  "start": 204.5,
-  "end": 204.8
+  "start": 189.28,
+  "end": 189.62
  },
  {
   "text": "Première",
-  "start": 205.18,
-  "end": 205.7
+  "start": 190.42,
+  "end": 190.72
  },
  {
   "text": "scène,",
-  "start": 205.7,
-  "end": 205.92
+  "start": 190.72,
+  "end": 190.94
  },
  {
   "text": "versets",
-  "start": 206.06,
-  "end": 206.6
+  "start": 191.08,
+  "end": 191.72
  },
  {
-  "text": "8",
-  "start": 206.6,
-  "end": 206.78
+  "text": "huit",
+  "start": 191.72,
+  "end": 191.9
  },
  {
   "text": "à",
-  "start": 206.78,
-  "end": 207.04
+  "start": 191.9,
+  "end": 192.18
  },
  {
-  "text": "19.",
-  "start": 207.04,
-  "end": 207.3
+  "text": "dix-neuf.",
+  "start": 192.18,
+  "end": 192.46
  },
  {
   "text": "Un",
-  "start": 207.8,
-  "end": 208.32
+  "start": 193.18,
+  "end": 193.48
  },
  {
   "text": "père",
-  "start": 208.32,
-  "end": 208.6
+  "start": 193.48,
+  "end": 193.76
  },
  {
   "text": "parle",
-  "start": 208.6,
-  "end": 209.1
+  "start": 193.76,
+  "end": 194.16
  },
  {
   "text": "à",
-  "start": 209.1,
-  "end": 209.2
+  "start": 194.16,
+  "end": 194.24
  },
  {
   "text": "son",
-  "start": 209.2,
-  "end": 209.32
+  "start": 194.24,
+  "end": 194.36
  },
  {
   "text": "fils.",
-  "start": 209.32,
-  "end": 209.54
+  "start": 194.36,
+  "end": 194.56
  },
  {
   "text": "« ",
-  "start": 209.54,
-  "end": 209.66
+  "start": 195.48,
+  "end": 195.48
  },
  {
   "text": "Écoute,",
-  "start": 209.66,
-  "end": 211.14
+  "start": 195.48,
+  "end": 196.24
  },
  {
   "text": "mon",
-  "start": 211.16,
-  "end": 211.46
+  "start": 196.24,
+  "end": 196.46
  },
  {
   "text": "fils,",
-  "start": 211.46,
-  "end": 211.76
+  "start": 196.46,
+  "end": 196.8
  },
  {
   "text": "l'instruction",
-  "start": 212.02,
-  "end": 212.92
+  "start": 197.08,
+  "end": 198.06
  },
  {
   "text": "de",
-  "start": 212.92,
-  "end": 213.22
+  "start": 198.06,
+  "end": 198.36
  },
  {
   "text": "ton",
-  "start": 213.22,
-  "end": 213.38
+  "start": 198.36,
+  "end": 198.54
  },
  {
   "text": "père,",
-  "start": 213.38,
-  "end": 213.68
+  "start": 198.54,
+  "end": 198.84
  },
  {
   "text": "et",
-  "start": 213.9,
-  "end": 214.46
+  "start": 199.08,
+  "end": 199.38
  },
  {
   "text": "ne",
-  "start": 214.46,
-  "end": 214.54
+  "start": 199.38,
+  "end": 199.52
  },
  {
   "text": "rejette",
-  "start": 214.54,
-  "end": 214.9
+  "start": 199.52,
+  "end": 200.1
  },
  {
   "text": "pas",
-  "start": 214.9,
-  "end": 215.14
+  "start": 200.1,
+  "end": 200.36
  },
  {
   "text": "l'enseignement",
-  "start": 215.14,
-  "end": 215.88
+  "start": 200.36,
+  "end": 201.2
  },
  {
   "text": "de",
-  "start": 215.88,
-  "end": 216.06
+  "start": 201.2,
+  "end": 201.36
  },
  {
   "text": "ta",
-  "start": 216.06,
-  "end": 216.12
+  "start": 201.36,
+  "end": 201.44
  },
  {
   "text": "mère. »",
-  "start": 216.12,
-  "end": 217.36
+  "start": 201.44,
+  "end": 202.8
  },
  {
   "text": "Puis,",
-  "start": 217.36,
-  "end": 217.54
+  "start": 202.8,
+  "end": 203.06
  },
  {
   "text": "il",
-  "start": 217.64,
-  "end": 217.96
+  "start": 203.1,
+  "end": 203.72
  },
  {
-  "text": "l'avertit,",
-  "start": 217.96,
-  "end": 218.52
+  "text": "l'avertit.",
+  "start": 203.72,
+  "end": 204.34
  },
  {
-  "text": "des",
-  "start": 218.64,
-  "end": 219.32
+  "text": "Des",
+  "start": 204.5,
+  "end": 205.0
  },
  {
   "text": "hommes",
-  "start": 219.32,
-  "end": 219.62
+  "start": 205.0,
+  "end": 205.3
  },
  {
   "text": "vont",
-  "start": 219.62,
-  "end": 219.82
+  "start": 205.3,
+  "end": 205.54
  },
  {
   "text": "venir",
-  "start": 219.82,
-  "end": 220.1
+  "start": 205.54,
+  "end": 205.88
  },
  {
   "text": "lui",
-  "start": 220.1,
-  "end": 220.26
+  "start": 205.88,
+  "end": 206.08
  },
  {
   "text": "proposer",
-  "start": 220.26,
-  "end": 220.74
+  "start": 206.08,
+  "end": 206.84
  },
  {
   "text": "de",
-  "start": 220.74,
-  "end": 220.8
+  "start": 206.84,
+  "end": 206.94
  },
  {
   "text": "les",
-  "start": 220.8,
-  "end": 220.9
+  "start": 206.94,
+  "end": 207.06
  },
  {
   "text": "suivre.",
-  "start": 220.9,
-  "end": 221.24
- },
- {
-  "text": "Ils",
-  "start": 221.4,
-  "end": 221.86
- },
- {
-  "text": "lui",
-  "start": 221.86,
-  "end": 222.0
- },
- {
-  "text": "offrent",
-  "start": 222.0,
-  "end": 222.4
- },
- {
-  "text": "une",
-  "start": 222.4,
-  "end": 222.54
- },
- {
-  "text": "part",
-  "start": 222.54,
-  "end": 222.72
- },
- {
-  "text": "du",
-  "start": 222.72,
-  "end": 222.9
- },
- {
-  "text": "butin",
-  "start": 222.9,
-  "end": 223.28
- },
- {
-  "text": "et",
-  "start": 223.28,
-  "end": 223.62
- },
- {
-  "text": "une",
-  "start": 223.62,
-  "end": 223.76
- },
- {
-  "text": "bourse",
-  "start": 223.76,
-  "end": 224.04
- },
- {
-  "text": "commune.",
-  "start": 224.04,
-  "end": 224.5
- },
- {
-  "text": "Le",
-  "start": 224.94,
-  "end": 225.5
- },
- {
-  "text": "texte",
-  "start": 225.5,
-  "end": 225.88
- },
- {
-  "text": "démasque",
-  "start": 225.88,
-  "end": 226.28
- },
- {
-  "text": "l'ironie.",
-  "start": 226.28,
-  "end": 226.82
- },
- {
-  "text": "Ces",
-  "start": 226.96,
-  "end": 227.24
- },
- {
-  "text": "hommes",
-  "start": 227.24,
-  "end": 227.5
- },
- {
-  "text": "dressent",
-  "start": 227.5,
-  "end": 228.04
- },
- {
-  "text": "des",
-  "start": 228.04,
-  "end": 228.12
- },
- {
-  "text": "pièges,",
-  "start": 228.12,
-  "end": 228.56
- },
- {
-  "text": "mais",
-  "start": 228.72,
-  "end": 228.96
- },
- {
-  "text": "les",
-  "start": 228.96,
-  "end": 229.08
- },
- {
-  "text": "pièges",
-  "start": 229.08,
-  "end": 229.38
- },
- {
-  "text": "se",
-  "start": 229.38,
-  "end": 229.66
- },
- {
-  "text": "referment",
-  "start": 229.66,
-  "end": 230.16
- },
- {
-  "text": "sur",
-  "start": 230.16,
-  "end": 230.34
- },
- {
-  "text": "eux.",
-  "start": 230.34,
-  "end": 230.48
- },
- {
-  "text": "Voilà",
-  "start": 231.1,
-  "end": 231.66
- },
- {
-  "text": "le",
-  "start": 231.66,
-  "end": 231.84
- },
- {
-  "text": "premier",
-  "start": 231.84,
-  "end": 232.14
- },
- {
-  "text": "choix",
-  "start": 232.14,
-  "end": 232.4
- },
- {
-  "text": "du",
-  "start": 232.4,
-  "end": 232.58
- },
- {
-  "text": "livre.",
-  "start": 232.58,
-  "end": 232.86
- },
- {
-  "text": "Deux",
-  "start": 233.16,
-  "end": 233.72
- },
- {
-  "text": "chemins.",
-  "start": 233.72,
-  "end": 234.04
- },
- {
-  "text": "Celui",
-  "start": 234.32,
-  "end": 234.88
- },
- {
-  "text": "qui",
-  "start": 234.88,
-  "end": 235.04
- },
- {
-  "text": "promet",
-  "start": 235.04,
-  "end": 235.28
- },
- {
-  "text": "vite",
-  "start": 235.28,
-  "end": 235.64
- },
- {
-  "text": "et",
-  "start": 235.64,
-  "end": 236.24
- },
- {
-  "text": "celui",
-  "start": 236.24,
-  "end": 236.54
- },
- {
-  "text": "qui",
-  "start": 236.54,
-  "end": 236.82
- },
- {
-  "text": "construit",
-  "start": 236.82,
-  "end": 237.36
- },
- {
-  "text": "lentement.",
-  "start": 237.36,
-  "end": 237.74
- },
- {
-  "text": "Seconde",
-  "start": 238.68,
-  "end": 239.16
- },
- {
-  "text": "scène,",
-  "start": 239.16,
-  "end": 239.3
- },
- {
-  "text": "versets",
-  "start": 239.44,
-  "end": 240.1
- },
- {
-  "text": "20",
-  "start": 240.1,
-  "end": 240.36
- },
- {
-  "text": "à",
-  "start": 240.36,
-  "end": 240.5
- },
- {
-  "text": "33,",
-  "start": 240.5,
-  "end": 240.78
- },
- {
-  "text": "la",
-  "start": 241.02,
-  "end": 241.48
- },
- {
-  "text": "sagesse",
-  "start": 241.48,
-  "end": 242.04
- },
- {
-  "text": "elle-même",
-  "start": 242.04,
-  "end": 242.58
- },
- {
-  "text": "prend",
-  "start": 242.58,
-  "end": 242.98
- },
- {
-  "text": "la",
-  "start": 242.98,
-  "end": 243.12
- },
- {
-  "text": "parole.",
-  "start": 243.12,
-  "end": 243.38
- },
- {
-  "text": "La",
-  "start": 244.04,
-  "end": 244.52
- },
- {
-  "text": "sagesse",
-  "start": 244.52,
-  "end": 245.0
- },
- {
-  "text": "crie",
-  "start": 245.0,
-  "end": 245.38
- },
- {
-  "text": "dans",
-  "start": 245.38,
-  "end": 245.7
- },
- {
-  "text": "les",
-  "start": 245.7,
-  "end": 245.82
- },
- {
-  "text": "rues.",
-  "start": 245.82,
-  "end": 246.02
- },
- {
-  "text": "Elle",
-  "start": 246.2,
-  "end": 246.68
- },
- {
-  "text": "élève",
-  "start": 246.68,
-  "end": 247.14
- },
- {
-  "text": "sa",
-  "start": 247.14,
-  "end": 247.24
- },
- {
-  "text": "voix",
-  "start": 247.24,
-  "end": 247.44
- },
- {
-  "text": "dans",
-  "start": 247.44,
-  "end": 247.66
- },
- {
-  "text": "les",
-  "start": 247.66,
-  "end": 247.78
- },
- {
-  "text": "places.",
-  "start": 247.78,
-  "end": 248.0
- },
- {
-  "text": "Elle",
-  "start": 248.28,
-  "end": 248.72
- },
- {
-  "text": "crie",
-  "start": 248.72,
-  "end": 249.08
- },
- {
-  "text": "à",
-  "start": 249.08,
-  "end": 249.18
- },
- {
-  "text": "l'entrée",
-  "start": 249.18,
-  "end": 249.54
- },
- {
-  "text": "des",
-  "start": 249.54,
-  "end": 249.66
- },
- {
-  "text": "lieux",
-  "start": 249.66,
-  "end": 249.88
- },
- {
-  "text": "bruyants,",
-  "start": 249.88,
-  "end": 250.24
- },
- {
-  "text": "aux",
-  "start": 250.34,
-  "end": 250.66
- },
- {
-  "text": "portes,",
-  "start": 250.66,
-  "end": 251.12
- },
- {
-  "text": "dans",
-  "start": 251.12,
-  "end": 251.52
- },
- {
-  "text": "la",
-  "start": 251.52,
-  "end": 251.66
- },
- {
-  "text": "ville.",
-  "start": 251.66,
-  "end": 251.86
- },
- {
-  "text": "Elle",
-  "start": 252.0,
-  "end": 252.48
- },
- {
-  "text": "dit",
-  "start": 252.48,
-  "end": 252.7
- },
- {
-  "text": "ses",
-  "start": 252.7,
-  "end": 252.84
- },
- {
-  "text": "paroles.",
-  "start": 252.84,
-  "end": 253.18
- },
- {
-  "text": "Une",
-  "start": 254.0,
-  "end": 254.48
- },
- {
-  "text": "sagesse",
-  "start": 254.48,
-  "end": 254.96
- },
- {
-  "text": "qui",
-  "start": 254.96,
-  "end": 255.12
- },
- {
-  "text": "crie",
-  "start": 255.12,
-  "end": 255.66
- },
- {
-  "text": "dans",
-  "start": 255.66,
-  "end": 255.96
- },
- {
-  "text": "les",
-  "start": 255.96,
-  "end": 256.1
- },
- {
-  "text": "rues.",
-  "start": 256.1,
-  "end": 256.36
- },
- {
-  "text": "Elle",
-  "start": 256.86,
-  "end": 257.34
- },
- {
-  "text": "n'est",
-  "start": 257.34,
-  "end": 257.54
- },
- {
-  "text": "pas",
-  "start": 257.54,
-  "end": 257.64
- },
- {
-  "text": "cachée",
-  "start": 257.64,
-  "end": 257.98
- },
- {
-  "text": "au",
-  "start": 257.98,
-  "end": 258.06
- },
- {
-  "text": "sommet",
-  "start": 258.06,
-  "end": 258.38
- },
- {
-  "text": "d'une",
-  "start": 258.38,
-  "end": 258.52
- },
- {
-  "text": "montagne,",
-  "start": 258.52,
-  "end": 259.16
- },
- {
-  "text": "réservée",
-  "start": 259.16,
-  "end": 259.96
- },
- {
-  "text": "à",
-  "start": 259.96,
-  "end": 260.14
- },
- {
-  "text": "une",
-  "start": 260.14,
-  "end": 260.32
- },
- {
-  "text": "élite.",
-  "start": 260.32,
-  "end": 260.76
- },
- {
-  "text": "Elle",
-  "start": 261.26,
-  "end": 261.74
- },
- {
-  "text": "est",
-  "start": 261.74,
-  "end": 261.9
- },
- {
-  "text": "offerte",
-  "start": 261.9,
-  "end": 262.3
- },
- {
-  "text": "à",
-  "start": 262.3,
-  "end": 262.38
- },
- {
-  "text": "tous,",
-  "start": 262.38,
-  "end": 262.62
- },
- {
-  "text": "au",
-  "start": 262.84,
-  "end": 263.44
- },
- {
-  "text": "milieu",
-  "start": 263.44,
-  "end": 263.7
- },
- {
-  "text": "du",
-  "start": 263.7,
-  "end": 263.88
- },
- {
-  "text": "bruit.",
-  "start": 263.88,
-  "end": 264.2
- },
- {
-  "text": "Mais",
-  "start": 265.06,
-  "end": 265.54
- },
- {
-  "text": "elle",
-  "start": 265.54,
-  "end": 265.72
- },
- {
-  "text": "se",
-  "start": 265.72,
-  "end": 265.9
- },
- {
-  "text": "heurte",
-  "start": 265.9,
-  "end": 266.26
- },
- {
-  "text": "à",
-  "start": 266.26,
-  "end": 266.5
- },
- {
-  "text": "un",
-  "start": 266.5,
-  "end": 266.62
- },
- {
-  "text": "refus.",
-  "start": 266.62,
-  "end": 267.1
- },
- {
-  "text": "Elle",
-  "start": 267.74,
-  "end": 268.06
- },
- {
-  "text": "appelle",
-  "start": 268.06,
-  "end": 268.3
- },
- {
-  "text": "et",
-  "start": 268.3,
-  "end": 268.72
- },
- {
-  "text": "on",
-  "start": 268.72,
-  "end": 269.02
- },
- {
-  "text": "ne",
-  "start": 269.02,
-  "end": 269.1
- },
- {
-  "text": "l'écoute",
-  "start": 269.1,
-  "end": 269.44
- },
- {
-  "text": "pas.",
-  "start": 269.44,
-  "end": 269.62
- },
- {
-  "text": "Le",
-  "start": 270.42,
-  "end": 270.74
- },
- {
-  "text": "texte",
-  "start": 270.74,
-  "end": 271.2
- },
- {
-  "text": "présente",
-  "start": 271.2,
-  "end": 271.62
- },
- {
-  "text": "alors",
-  "start": 271.62,
-  "end": 271.78
- },
- {
-  "text": "les",
-  "start": 271.78,
-  "end": 271.98
- },
- {
-  "text": "conséquences",
-  "start": 271.98,
-  "end": 272.62
- },
- {
-  "text": "comme",
-  "start": 272.62,
-  "end": 272.82
- },
- {
-  "text": "le",
-  "start": 272.82,
-  "end": 272.98
- },
- {
-  "text": "fruit",
-  "start": 272.98,
-  "end": 273.28
- },
- {
-  "text": "de",
-  "start": 273.28,
-  "end": 273.48
- },
- {
-  "text": "nos",
-  "start": 273.48,
-  "end": 273.62
- },
- {
-  "text": "propres",
-  "start": 273.62,
-  "end": 274.02
- },
- {
-  "text": "choix.",
-  "start": 274.02,
-  "end": 274.34
- },
- {
-  "text": "Et",
-  "start": 275.2,
-  "end": 275.52
- },
- {
-  "text": "le",
-  "start": 275.52,
-  "end": 275.62
- },
- {
-  "text": "chapitre",
-  "start": 275.62,
-  "end": 276.04
- },
- {
-  "text": "se",
-  "start": 276.04,
-  "end": 276.14
- },
- {
-  "text": "termine",
-  "start": 276.14,
-  "end": 276.48
- },
- {
-  "text": "sur",
-  "start": 276.48,
-  "end": 276.68
- },
- {
-  "text": "une",
-  "start": 276.68,
-  "end": 276.84
- },
- {
-  "text": "promesse.",
-  "start": 276.84,
-  "end": 277.22
- },
- {
-  "text": "Mais",
-  "start": 277.62,
-  "end": 278.1
- },
- {
-  "text": "celui",
-  "start": 278.1,
-  "end": 278.44
- },
- {
-  "text": "qui",
-  "start": 278.44,
-  "end": 278.7
- },
- {
-  "text": "m'écoute",
-  "start": 278.7,
-  "end": 279.16
- },
- {
-  "text": "reposera",
-  "start": 279.16,
-  "end": 280.12
- },
- {
-  "text": "avec",
-  "start": 280.12,
-  "end": 280.54
- },
- {
-  "text": "assurance.",
-  "start": 280.54,
-  "end": 280.96
+  "start": 207.06,
+  "end": 207.44
  },
  {
   "text": "Il",
-  "start": 281.2,
-  "end": 281.84
+  "start": 207.78,
+  "end": 208.18
  },
  {
-  "text": "vivra",
-  "start": 281.84,
-  "end": 282.2
+  "text": "lui",
+  "start": 208.18,
+  "end": 208.36
  },
  {
-  "text": "tranquille",
-  "start": 282.2,
-  "end": 282.86
- },
- {
-  "text": "sans",
-  "start": 282.86,
-  "end": 283.18
- },
- {
-  "text": "craindre",
-  "start": 283.18,
-  "end": 283.68
- },
- {
-  "text": "aucun",
-  "start": 283.68,
-  "end": 284.04
- },
- {
-  "text": "mal.",
-  "start": 284.04,
-  "end": 284.44
- },
- {
-  "text": "Alors",
-  "start": 285.68,
-  "end": 286.32
- },
- {
-  "text": "pourquoi",
-  "start": 286.32,
-  "end": 286.52
- },
- {
-  "text": "parler",
-  "start": 286.52,
-  "end": 286.92
- },
- {
-  "text": "d'une",
-  "start": 286.92,
-  "end": 287.2
- },
- {
-  "text": "clé",
-  "start": 287.2,
-  "end": 287.86
- },
- {
-  "text": "pour",
-  "start": 287.86,
-  "end": 288.1
- },
- {
-  "text": "toute",
-  "start": 288.1,
-  "end": 288.3
- },
- {
-  "text": "la",
-  "start": 288.3,
-  "end": 288.44
- },
- {
-  "text": "Bible?",
-  "start": 288.44,
-  "end": 288.94
- },
- {
-  "text": "D'abord",
-  "start": 289.44,
-  "end": 289.92
- },
- {
-  "text": "parce",
-  "start": 289.92,
-  "end": 290.12
- },
- {
-  "text": "que",
-  "start": 290.12,
-  "end": 290.28
- },
- {
-  "text": "cette",
-  "start": 290.28,
-  "end": 290.42
- },
- {
-  "text": "idée",
-  "start": 290.42,
-  "end": 290.62
- },
- {
-  "text": "traverse",
-  "start": 290.62,
-  "end": 290.92
- },
- {
-  "text": "d'autres",
-  "start": 290.92,
-  "end": 291.48
- },
- {
-  "text": "livres.",
-  "start": 291.48,
-  "end": 291.86
- },
- {
-  "text": "Dans",
-  "start": 292.36,
-  "end": 292.84
- },
- {
-  "text": "le",
-  "start": 292.84,
-  "end": 292.96
- },
- {
-  "text": "psaume",
-  "start": 292.96,
-  "end": 293.26
- },
- {
-  "text": "111,",
-  "start": 293.26,
-  "end": 293.76
- },
- {
-  "text": "verset",
-  "start": 293.88,
-  "end": 294.22
- },
- {
-  "text": "10,",
-  "start": 294.22,
-  "end": 294.4
- },
- {
-  "text": "la",
-  "start": 294.6,
-  "end": 295.16
- },
- {
-  "text": "crainte",
-  "start": 295.16,
-  "end": 295.64
- },
- {
-  "text": "de",
-  "start": 295.64,
-  "end": 295.82
- },
- {
-  "text": "l'éternel",
-  "start": 295.82,
-  "end": 296.34
- },
- {
-  "text": "est",
-  "start": 296.34,
-  "end": 296.54
- },
- {
-  "text": "le",
-  "start": 296.54,
-  "end": 296.74
- },
- {
-  "text": "commencement",
-  "start": 296.74,
-  "end": 297.12
- },
- {
-  "text": "de",
-  "start": 297.12,
-  "end": 297.48
- },
- {
-  "text": "la",
-  "start": 297.48,
-  "end": 297.58
- },
- {
-  "text": "sagesse.",
-  "start": 297.58,
-  "end": 298.08
- },
- {
-  "text": "Presque",
-  "start": 298.32,
-  "end": 298.8
- },
- {
-  "text": "les",
-  "start": 298.8,
-  "end": 298.92
- },
- {
-  "text": "mêmes",
-  "start": 298.92,
-  "end": 299.06
- },
- {
-  "text": "mots.",
-  "start": 299.06,
-  "end": 299.26
- },
- {
-  "text": "Dans",
-  "start": 299.74,
-  "end": 300.22
- },
- {
-  "text": "le",
-  "start": 300.22,
-  "end": 300.32
- },
- {
-  "text": "livre",
-  "start": 300.32,
-  "end": 300.56
- },
- {
-  "text": "de",
-  "start": 300.56,
-  "end": 300.72
- },
- {
-  "text": "Job,",
-  "start": 300.72,
-  "end": 300.96
- },
- {
-  "text": "au",
-  "start": 301.04,
-  "end": 301.22
- },
- {
-  "text": "chapitre",
-  "start": 301.22,
-  "end": 301.58
- },
- {
-  "text": "28,",
-  "start": 301.58,
-  "end": 301.86
- },
- {
-  "text": "après",
-  "start": 302.12,
-  "end": 302.52
+  "text": "offrent",
+  "start": 208.36,
+  "end": 208.68
  },
  {
   "text": "une",
-  "start": 302.52,
-  "end": 302.7
+  "start": 208.68,
+  "end": 208.86
  },
  {
-  "text": "longue",
-  "start": 302.7,
-  "end": 303.02
- },
- {
-  "text": "recherche",
-  "start": 303.02,
-  "end": 303.4
- },
- {
-  "text": "de",
-  "start": 303.4,
-  "end": 303.66
- },
- {
-  "text": "la",
-  "start": 303.66,
-  "end": 303.74
- },
- {
-  "text": "sagesse,",
-  "start": 303.74,
-  "end": 304.2
- },
- {
-  "text": "comme",
-  "start": 304.22,
-  "end": 304.6
- },
- {
-  "text": "on",
-  "start": 304.6,
-  "end": 304.7
- },
- {
-  "text": "cherche",
-  "start": 304.7,
-  "end": 304.94
- },
- {
-  "text": "de",
-  "start": 304.94,
-  "end": 305.1
- },
- {
-  "text": "l'or",
-  "start": 305.1,
-  "end": 305.32
- },
- {
-  "text": "dans",
-  "start": 305.32,
-  "end": 305.5
- },
- {
-  "text": "la",
-  "start": 305.5,
-  "end": 305.62
- },
- {
-  "text": "terre,",
-  "start": 305.62,
-  "end": 305.84
- },
- {
-  "text": "la",
-  "start": 306.26,
-  "end": 306.44
- },
- {
-  "text": "réponse",
-  "start": 306.44,
-  "end": 306.7
- },
- {
-  "text": "tombe.",
-  "start": 306.7,
-  "end": 307.08
- },
- {
-  "text": "Voici,",
-  "start": 307.76,
-  "end": 308.24
- },
- {
-  "text": "la",
-  "start": 308.32,
-  "end": 308.9
- },
- {
-  "text": "crainte",
-  "start": 308.9,
-  "end": 309.36
+  "text": "part",
+  "start": 208.86,
+  "end": 209.1
  },
  {
   "text": "du",
-  "start": 309.36,
-  "end": 309.52
+  "start": 209.1,
+  "end": 209.34
  },
  {
-  "text": "Seigneur,",
-  "start": 309.52,
-  "end": 310.1
- },
- {
-  "text": "c'est",
-  "start": 310.1,
-  "end": 310.66
- },
- {
-  "text": "la",
-  "start": 310.66,
-  "end": 310.74
- },
- {
-  "text": "sagesse.",
-  "start": 310.74,
-  "end": 311.34
- },
- {
-  "text": "S'éloigner",
-  "start": 311.4,
-  "end": 312.22
- },
- {
-  "text": "du",
-  "start": 312.22,
-  "end": 312.36
- },
- {
-  "text": "mal,",
-  "start": 312.36,
-  "end": 312.54
- },
- {
-  "text": "c'est",
-  "start": 312.7,
-  "end": 313.2
- },
- {
-  "text": "l'intelligence.",
-  "start": 313.2,
-  "end": 313.64
- },
- {
-  "text": "Et",
-  "start": 314.46,
-  "end": 314.94
- },
- {
-  "text": "l'ecclésiaste,",
-  "start": 314.94,
-  "end": 315.74
- },
- {
-  "text": "après",
-  "start": 315.88,
-  "end": 316.26
- },
- {
-  "text": "avoir",
-  "start": 316.26,
-  "end": 316.46
- },
- {
-  "text": "Avoir",
-  "start": 316.46,
-  "end": 316.5
- },
- {
-  "text": "tout",
-  "start": 316.5,
-  "end": 316.7
- },
- {
-  "text": "essayé",
-  "start": 316.7,
-  "end": 317.24
- },
- {
-  "text": "conclut",
-  "start": 317.24,
-  "end": 318.06
- },
- {
-  "text": "à",
-  "start": 318.06,
-  "end": 318.2
- },
- {
-  "text": "sa",
-  "start": 318.2,
-  "end": 318.3
- },
- {
-  "text": "façon.",
-  "start": 318.3,
-  "end": 318.6
- },
- {
-  "text": "Crains",
-  "start": 319.18,
-  "end": 319.7
- },
- {
-  "text": "Dieu",
-  "start": 319.7,
-  "end": 319.96
+  "text": "butin",
+  "start": 209.34,
+  "end": 209.8
  },
  {
   "text": "et",
-  "start": 319.96,
-  "end": 320.58
+  "start": 209.8,
+  "end": 210.1
  },
  {
-  "text": "observe",
-  "start": 320.58,
-  "end": 321.08
+  "text": "une",
+  "start": 210.1,
+  "end": 210.26
  },
  {
-  "text": "ses",
-  "start": 321.08,
-  "end": 321.38
+  "text": "bourse",
+  "start": 210.26,
+  "end": 210.62
  },
  {
-  "text": "commandements.",
-  "start": 321.38,
-  "end": 321.86
+  "text": "commune.",
+  "start": 210.62,
+  "end": 211.24
  },
  {
-  "text": "C'est",
-  "start": 322.12,
-  "end": 322.8
+  "text": "Le",
+  "start": 212.08,
+  "end": 212.38
  },
  {
-  "text": "là",
-  "start": 322.8,
-  "end": 322.98
+  "text": "texte",
+  "start": 212.38,
+  "end": 212.84
  },
  {
-  "text": "ce",
-  "start": 322.98,
-  "end": 323.2
+  "text": "démasque",
+  "start": 212.84,
+  "end": 213.26
  },
  {
-  "text": "que",
-  "start": 323.2,
-  "end": 323.34
+  "text": "l'ironie.",
+  "start": 213.26,
+  "end": 213.76
  },
  {
-  "text": "doit",
-  "start": 323.34,
-  "end": 323.48
+  "text": "Ces",
+  "start": 214.16,
+  "end": 214.46
  },
  {
-  "text": "faire",
-  "start": 323.48,
-  "end": 323.72
+  "text": "hommes",
+  "start": 214.46,
+  "end": 214.78
  },
  {
-  "text": "tout",
-  "start": 323.72,
-  "end": 323.9
+  "text": "dressent",
+  "start": 214.78,
+  "end": 215.26
  },
  {
-  "text": "homme.",
-  "start": 323.9,
-  "end": 324.14
+  "text": "des",
+  "start": 215.26,
+  "end": 215.34
  },
  {
-  "text": "Ensuite,",
-  "start": 324.84,
-  "end": 325.36
+  "text": "pièges,",
+  "start": 215.34,
+  "end": 215.72
+ },
+ {
+  "text": "mais",
+  "start": 215.88,
+  "end": 216.4
+ },
+ {
+  "text": "les",
+  "start": 216.4,
+  "end": 216.52
+ },
+ {
+  "text": "pièges",
+  "start": 216.52,
+  "end": 216.9
+ },
+ {
+  "text": "se",
+  "start": 216.9,
+  "end": 217.36
+ },
+ {
+  "text": "referment",
+  "start": 217.36,
+  "end": 217.92
+ },
+ {
+  "text": "sur",
+  "start": 217.92,
+  "end": 218.12
+ },
+ {
+  "text": "eux.",
+  "start": 218.12,
+  "end": 218.3
+ },
+ {
+  "text": "Voilà",
+  "start": 219.04,
+  "end": 219.3
  },
  {
   "text": "le",
-  "start": 325.56,
-  "end": 325.9
+  "start": 219.3,
+  "end": 219.6
  },
  {
-  "text": "Nouveau",
-  "start": 325.9,
-  "end": 326.28
+  "text": "premier",
+  "start": 219.6,
+  "end": 219.9
  },
  {
-  "text": "Testament",
-  "start": 326.28,
-  "end": 326.56
+  "text": "choix",
+  "start": 219.9,
+  "end": 220.16
  },
  {
-  "text": "reprend",
-  "start": 326.56,
-  "end": 327.14
+  "text": "du",
+  "start": 220.16,
+  "end": 220.34
+ },
+ {
+  "text": "livre.",
+  "start": 220.34,
+  "end": 220.6
+ },
+ {
+  "text": "Deux",
+  "start": 220.88,
+  "end": 221.4
+ },
+ {
+  "text": "chemins.",
+  "start": 221.4,
+  "end": 221.72
+ },
+ {
+  "text": "Celui",
+  "start": 222.14,
+  "end": 222.66
+ },
+ {
+  "text": "qui",
+  "start": 222.66,
+  "end": 222.88
+ },
+ {
+  "text": "promet",
+  "start": 222.88,
+  "end": 223.14
+ },
+ {
+  "text": "vite",
+  "start": 223.14,
+  "end": 223.54
+ },
+ {
+  "text": "et",
+  "start": 223.54,
+  "end": 223.82
+ },
+ {
+  "text": "celui",
+  "start": 223.82,
+  "end": 224.4
+ },
+ {
+  "text": "qui",
+  "start": 224.4,
+  "end": 224.66
+ },
+ {
+  "text": "construit",
+  "start": 224.66,
+  "end": 225.32
+ },
+ {
+  "text": "lentement.",
+  "start": 225.32,
+  "end": 225.78
+ },
+ {
+  "text": "Seconde",
+  "start": 226.54,
+  "end": 227.06
+ },
+ {
+  "text": "scène,",
+  "start": 227.06,
+  "end": 227.22
+ },
+ {
+  "text": "versets",
+  "start": 227.4,
+  "end": 228.08
+ },
+ {
+  "text": "vingt",
+  "start": 228.08,
+  "end": 228.28
+ },
+ {
+  "text": "à",
+  "start": 228.28,
+  "end": 228.36
+ },
+ {
+  "text": "trente-trois.",
+  "start": 228.36,
+  "end": 228.62
+ },
+ {
+  "text": "La",
+  "start": 229.06,
+  "end": 229.58
+ },
+ {
+  "text": "sagesse",
+  "start": 229.58,
+  "end": 230.36
+ },
+ {
+  "text": "elle-même",
+  "start": 230.36,
+  "end": 230.94
+ },
+ {
+  "text": "prend",
+  "start": 230.94,
+  "end": 231.18
+ },
+ {
+  "text": "la",
+  "start": 231.18,
+  "end": 231.32
+ },
+ {
+  "text": "parole.",
+  "start": 231.32,
+  "end": 231.56
+ },
+ {
+  "text": "La",
+  "start": 232.28,
+  "end": 232.8
+ },
+ {
+  "text": "sagesse",
+  "start": 232.8,
+  "end": 233.32
+ },
+ {
+  "text": "crie",
+  "start": 233.32,
+  "end": 233.58
+ },
+ {
+  "text": "dans",
+  "start": 233.58,
+  "end": 233.72
+ },
+ {
+  "text": "les",
+  "start": 233.72,
+  "end": 233.84
+ },
+ {
+  "text": "rues.",
+  "start": 233.84,
+  "end": 234.08
+ },
+ {
+  "text": "Elle",
+  "start": 234.18,
+  "end": 234.62
+ },
+ {
+  "text": "élève",
+  "start": 234.62,
+  "end": 235.12
+ },
+ {
+  "text": "sa",
+  "start": 235.12,
+  "end": 235.24
+ },
+ {
+  "text": "voix",
+  "start": 235.24,
+  "end": 235.5
+ },
+ {
+  "text": "dans",
+  "start": 235.5,
+  "end": 235.72
+ },
+ {
+  "text": "les",
+  "start": 235.72,
+  "end": 235.84
+ },
+ {
+  "text": "places.",
+  "start": 235.84,
+  "end": 236.12
+ },
+ {
+  "text": "Elle",
+  "start": 236.44,
+  "end": 236.82
+ },
+ {
+  "text": "crie",
+  "start": 236.82,
+  "end": 237.2
+ },
+ {
+  "text": "à",
+  "start": 237.2,
+  "end": 237.3
+ },
+ {
+  "text": "l'entrée",
+  "start": 237.3,
+  "end": 237.68
+ },
+ {
+  "text": "des",
+  "start": 237.68,
+  "end": 237.8
+ },
+ {
+  "text": "lieux",
+  "start": 237.8,
+  "end": 238.02
+ },
+ {
+  "text": "bruyants,",
+  "start": 238.02,
+  "end": 238.44
+ },
+ {
+  "text": "aux",
+  "start": 238.48,
+  "end": 238.82
+ },
+ {
+  "text": "portes,",
+  "start": 238.82,
+  "end": 239.38
+ },
+ {
+  "text": "dans",
+  "start": 239.38,
+  "end": 239.78
+ },
+ {
+  "text": "la",
+  "start": 239.78,
+  "end": 239.96
+ },
+ {
+  "text": "ville.",
+  "start": 239.96,
+  "end": 240.16
+ },
+ {
+  "text": "Elle",
+  "start": 240.3,
+  "end": 240.82
+ },
+ {
+  "text": "dit",
+  "start": 240.82,
+  "end": 241.04
+ },
+ {
+  "text": "ces",
+  "start": 241.04,
+  "end": 241.2
+ },
+ {
+  "text": "paroles.",
+  "start": 241.2,
+  "end": 241.58
+ },
+ {
+  "text": "Une",
+  "start": 242.62,
+  "end": 243.14
+ },
+ {
+  "text": "sagesse",
+  "start": 243.14,
+  "end": 243.66
+ },
+ {
+  "text": "qui",
+  "start": 243.66,
+  "end": 243.86
+ },
+ {
+  "text": "crie",
+  "start": 243.86,
+  "end": 244.34
+ },
+ {
+  "text": "dans",
+  "start": 244.34,
+  "end": 244.54
+ },
+ {
+  "text": "les",
+  "start": 244.54,
+  "end": 244.72
+ },
+ {
+  "text": "rues.",
+  "start": 244.72,
+  "end": 245.06
+ },
+ {
+  "text": "Elle",
+  "start": 245.56,
+  "end": 245.86
+ },
+ {
+  "text": "n'est",
+  "start": 245.86,
+  "end": 246.06
+ },
+ {
+  "text": "pas",
+  "start": 246.06,
+  "end": 246.18
+ },
+ {
+  "text": "cachée",
+  "start": 246.18,
+  "end": 246.68
+ },
+ {
+  "text": "au",
+  "start": 246.68,
+  "end": 246.8
+ },
+ {
+  "text": "sommet",
+  "start": 246.8,
+  "end": 247.3
+ },
+ {
+  "text": "d'une",
+  "start": 247.3,
+  "end": 247.46
+ },
+ {
+  "text": "montagne,",
+  "start": 247.46,
+  "end": 248.04
+ },
+ {
+  "text": "réservée",
+  "start": 248.08,
+  "end": 248.72
+ },
+ {
+  "text": "à",
+  "start": 248.72,
+  "end": 248.84
+ },
+ {
+  "text": "une",
+  "start": 248.84,
+  "end": 249.0
+ },
+ {
+  "text": "élite.",
+  "start": 249.0,
+  "end": 249.34
+ },
+ {
+  "text": "Elle",
+  "start": 249.68,
+  "end": 249.98
+ },
+ {
+  "text": "est",
+  "start": 249.98,
+  "end": 250.14
+ },
+ {
+  "text": "offerte",
+  "start": 250.14,
+  "end": 250.7
+ },
+ {
+  "text": "à",
+  "start": 250.7,
+  "end": 250.84
+ },
+ {
+  "text": "tous,",
+  "start": 250.84,
+  "end": 251.1
+ },
+ {
+  "text": "au",
+  "start": 251.32,
+  "end": 251.7
+ },
+ {
+  "text": "milieu",
+  "start": 251.7,
+  "end": 252.06
+ },
+ {
+  "text": "du",
+  "start": 252.06,
+  "end": 252.4
+ },
+ {
+  "text": "bruit.",
+  "start": 252.4,
+  "end": 252.64
+ },
+ {
+  "text": "Mais",
+  "start": 252.92,
+  "end": 253.52
+ },
+ {
+  "text": "elle",
+  "start": 253.52,
+  "end": 253.72
+ },
+ {
+  "text": "se",
+  "start": 253.72,
+  "end": 253.92
+ },
+ {
+  "text": "heurte",
+  "start": 253.92,
+  "end": 254.52
+ },
+ {
+  "text": "à",
+  "start": 254.52,
+  "end": 254.84
+ },
+ {
+  "text": "un",
+  "start": 254.84,
+  "end": 254.92
+ },
+ {
+  "text": "refus.",
+  "start": 254.92,
+  "end": 255.54
+ },
+ {
+  "text": "Elle",
+  "start": 255.86,
+  "end": 256.16
+ },
+ {
+  "text": "appelle",
+  "start": 256.16,
+  "end": 256.4
+ },
+ {
+  "text": "et",
+  "start": 256.4,
+  "end": 256.94
+ },
+ {
+  "text": "on",
+  "start": 256.94,
+  "end": 257.26
+ },
+ {
+  "text": "ne",
+  "start": 257.26,
+  "end": 257.42
+ },
+ {
+  "text": "l'écoute",
+  "start": 257.42,
+  "end": 257.9
+ },
+ {
+  "text": "pas.",
+  "start": 257.9,
+  "end": 258.12
+ },
+ {
+  "text": "Le",
+  "start": 258.84,
+  "end": 259.14
+ },
+ {
+  "text": "texte",
+  "start": 259.14,
+  "end": 259.44
+ },
+ {
+  "text": "présente",
+  "start": 259.44,
+  "end": 259.74
+ },
+ {
+  "text": "alors",
+  "start": 259.74,
+  "end": 259.9
+ },
+ {
+  "text": "les",
+  "start": 259.9,
+  "end": 260.06
+ },
+ {
+  "text": "conséquences",
+  "start": 260.06,
+  "end": 260.66
+ },
+ {
+  "text": "comme",
+  "start": 260.66,
+  "end": 260.8
+ },
+ {
+  "text": "le",
+  "start": 260.8,
+  "end": 260.94
+ },
+ {
+  "text": "fruit",
+  "start": 260.94,
+  "end": 261.14
+ },
+ {
+  "text": "de",
+  "start": 261.14,
+  "end": 261.26
+ },
+ {
+  "text": "nos",
+  "start": 261.26,
+  "end": 261.38
+ },
+ {
+  "text": "propres",
+  "start": 261.38,
+  "end": 261.9
+ },
+ {
+  "text": "choix.",
+  "start": 261.9,
+  "end": 262.14
+ },
+ {
+  "text": "Et",
+  "start": 262.72,
+  "end": 263.02
+ },
+ {
+  "text": "le",
+  "start": 263.02,
+  "end": 263.1
+ },
+ {
+  "text": "chapitre",
+  "start": 263.1,
+  "end": 263.52
+ },
+ {
+  "text": "se",
+  "start": 263.52,
+  "end": 263.64
+ },
+ {
+  "text": "termine",
+  "start": 263.64,
+  "end": 263.98
+ },
+ {
+  "text": "sur",
+  "start": 263.98,
+  "end": 264.18
+ },
+ {
+  "text": "une",
+  "start": 264.18,
+  "end": 264.34
+ },
+ {
+  "text": "promesse.",
+  "start": 264.34,
+  "end": 264.76
+ },
+ {
+  "text": "Mais",
+  "start": 265.38,
+  "end": 265.82
+ },
+ {
+  "text": "celui",
+  "start": 265.82,
+  "end": 266.18
+ },
+ {
+  "text": "qui",
+  "start": 266.18,
+  "end": 266.46
+ },
+ {
+  "text": "m'écoute",
+  "start": 266.46,
+  "end": 266.92
+ },
+ {
+  "text": "reposera",
+  "start": 266.92,
+  "end": 267.82
+ },
+ {
+  "text": "avec",
+  "start": 267.82,
+  "end": 268.18
+ },
+ {
+  "text": "assurance.",
+  "start": 268.18,
+  "end": 268.64
+ },
+ {
+  "text": "Il",
+  "start": 268.9,
+  "end": 269.5
+ },
+ {
+  "text": "vivra",
+  "start": 269.5,
+  "end": 269.88
+ },
+ {
+  "text": "tranquille,",
+  "start": 269.88,
+  "end": 270.7
+ },
+ {
+  "text": "sans",
+  "start": 270.7,
+  "end": 271.32
+ },
+ {
+  "text": "craindre",
+  "start": 271.32,
+  "end": 271.8
+ },
+ {
+  "text": "aucun",
+  "start": 271.8,
+  "end": 272.2
+ },
+ {
+  "text": "mal.",
+  "start": 272.2,
+  "end": 272.52
+ },
+ {
+  "text": "Alors,",
+  "start": 274.06,
+  "end": 274.54
+ },
+ {
+  "text": "pourquoi",
+  "start": 274.6,
+  "end": 275.08
+ },
+ {
+  "text": "parler",
+  "start": 275.08,
+  "end": 275.38
+ },
+ {
+  "text": "d'une",
+  "start": 275.38,
+  "end": 275.56
+ },
+ {
+  "text": "clé",
+  "start": 275.56,
+  "end": 276.02
+ },
+ {
+  "text": "pour",
+  "start": 276.02,
+  "end": 276.26
+ },
+ {
+  "text": "toute",
+  "start": 276.26,
+  "end": 276.58
+ },
+ {
+  "text": "la",
+  "start": 276.58,
+  "end": 276.78
+ },
+ {
+  "text": "Bible?",
+  "start": 276.78,
+  "end": 277.18
+ },
+ {
+  "text": "D'abord",
+  "start": 277.18,
+  "end": 277.88
+ },
+ {
+  "text": "parce",
+  "start": 277.88,
+  "end": 278.08
+ },
+ {
+  "text": "que",
+  "start": 278.08,
+  "end": 278.22
+ },
+ {
+  "text": "cette",
+  "start": 278.22,
+  "end": 278.34
+ },
+ {
+  "text": "idée",
+  "start": 278.34,
+  "end": 278.54
+ },
+ {
+  "text": "traverse",
+  "start": 278.54,
+  "end": 278.88
+ },
+ {
+  "text": "d'autres",
+  "start": 278.88,
+  "end": 279.32
+ },
+ {
+  "text": "livres.",
+  "start": 279.32,
+  "end": 279.64
+ },
+ {
+  "text": "Dans",
+  "start": 279.82,
+  "end": 280.3
+ },
+ {
+  "text": "le",
+  "start": 280.3,
+  "end": 280.4
+ },
+ {
+  "text": "psaume",
+  "start": 280.4,
+  "end": 280.7
+ },
+ {
+  "text": "cent onze,",
+  "start": 280.7,
+  "end": 281.2
+ },
+ {
+  "text": "verset",
+  "start": 281.28,
+  "end": 281.56
+ },
+ {
+  "text": "dix,",
+  "start": 281.56,
+  "end": 281.74
+ },
+ {
+  "text": "la",
+  "start": 281.98,
+  "end": 282.44
+ },
+ {
+  "text": "crainte",
+  "start": 282.44,
+  "end": 282.98
+ },
+ {
+  "text": "de",
+  "start": 282.98,
+  "end": 283.16
+ },
+ {
+  "text": "l'éternel",
+  "start": 283.16,
+  "end": 283.72
+ },
+ {
+  "text": "est",
+  "start": 283.72,
+  "end": 284.04
+ },
+ {
+  "text": "le",
+  "start": 284.04,
+  "end": 284.2
+ },
+ {
+  "text": "commencement",
+  "start": 284.2,
+  "end": 284.64
+ },
+ {
+  "text": "de",
+  "start": 284.64,
+  "end": 285.12
+ },
+ {
+  "text": "la",
+  "start": 285.12,
+  "end": 285.22
+ },
+ {
+  "text": "sagesse.",
+  "start": 285.22,
+  "end": 285.74
+ },
+ {
+  "text": "Presque",
+  "start": 286.0,
+  "end": 286.48
+ },
+ {
+  "text": "les",
+  "start": 286.48,
+  "end": 286.64
+ },
+ {
+  "text": "mêmes",
+  "start": 286.64,
+  "end": 286.86
+ },
+ {
+  "text": "mots.",
+  "start": 286.86,
+  "end": 287.1
+ },
+ {
+  "text": "Dans",
+  "start": 287.48,
+  "end": 287.96
+ },
+ {
+  "text": "le",
+  "start": 287.96,
+  "end": 288.04
+ },
+ {
+  "text": "livre",
+  "start": 288.04,
+  "end": 288.3
+ },
+ {
+  "text": "de",
+  "start": 288.3,
+  "end": 288.46
+ },
+ {
+  "text": "Job,",
+  "start": 288.46,
+  "end": 288.7
+ },
+ {
+  "text": "au",
+  "start": 288.82,
+  "end": 289.16
+ },
+ {
+  "text": "chapitre",
+  "start": 289.16,
+  "end": 289.54
+ },
+ {
+  "text": "vingt-huit,",
+  "start": 289.54,
+  "end": 289.74
+ },
+ {
+  "text": "après",
+  "start": 289.98,
+  "end": 290.44
+ },
+ {
+  "text": "une",
+  "start": 290.44,
+  "end": 290.58
+ },
+ {
+  "text": "longue",
+  "start": 290.58,
+  "end": 291.02
+ },
+ {
+  "text": "recherche",
+  "start": 291.02,
+  "end": 291.42
+ },
+ {
+  "text": "de",
+  "start": 291.42,
+  "end": 291.62
+ },
+ {
+  "text": "la",
+  "start": 291.62,
+  "end": 291.72
+ },
+ {
+  "text": "sagesse",
+  "start": 291.72,
+  "end": 292.24
+ },
+ {
+  "text": "comme",
+  "start": 292.24,
+  "end": 292.44
+ },
+ {
+  "text": "on",
+  "start": 292.44,
+  "end": 292.56
+ },
+ {
+  "text": "cherche",
+  "start": 292.56,
+  "end": 292.84
+ },
+ {
+  "text": "de",
+  "start": 292.84,
+  "end": 293.04
+ },
+ {
+  "text": "l'or",
+  "start": 293.04,
+  "end": 293.28
+ },
+ {
+  "text": "dans",
+  "start": 293.28,
+  "end": 293.48
+ },
+ {
+  "text": "la",
+  "start": 293.48,
+  "end": 293.58
+ },
+ {
+  "text": "terre,",
+  "start": 293.58,
+  "end": 293.82
+ },
+ {
+  "text": "la",
+  "start": 294.08,
+  "end": 294.6
+ },
+ {
+  "text": "réponse",
+  "start": 294.6,
+  "end": 294.86
+ },
+ {
+  "text": "tombe.",
+  "start": 294.86,
+  "end": 295.3
+ },
+ {
+  "text": "Voici,",
+  "start": 295.96,
+  "end": 296.44
+ },
+ {
+  "text": "la",
+  "start": 296.58,
+  "end": 297.38
+ },
+ {
+  "text": "crainte",
+  "start": 297.38,
+  "end": 297.88
+ },
+ {
+  "text": "du",
+  "start": 297.88,
+  "end": 298.08
+ },
+ {
+  "text": "seigneur",
+  "start": 298.08,
+  "end": 298.66
+ },
+ {
+  "text": "c'est",
+  "start": 298.66,
+  "end": 299.2
+ },
+ {
+  "text": "la",
+  "start": 299.2,
+  "end": 299.32
+ },
+ {
+  "text": "sagesse",
+  "start": 299.32,
+  "end": 299.88
+ },
+ {
+  "text": "s'éloigner",
+  "start": 299.88,
+  "end": 300.88
+ },
+ {
+  "text": "du",
+  "start": 300.88,
+  "end": 301.04
+ },
+ {
+  "text": "mal",
+  "start": 301.04,
+  "end": 301.26
+ },
+ {
+  "text": "c'est",
+  "start": 301.26,
+  "end": 302.06
+ },
+ {
+  "text": "l'intelligence",
+  "start": 302.06,
+  "end": 302.64
+ },
+ {
+  "text": "et",
+  "start": 302.64,
+  "end": 303.74
+ },
+ {
+  "text": "l'ecclésiaste",
+  "start": 303.74,
+  "end": 304.4
+ },
+ {
+  "text": "après",
+  "start": 304.4,
+  "end": 305.1
+ },
+ {
+  "text": "avoir",
+  "start": 305.1,
+  "end": 305.34
+ },
+ {
+  "text": "tout",
+  "start": 305.34,
+  "end": 305.7
+ },
+ {
+  "text": "essayé",
+  "start": 305.7,
+  "end": 306.32
+ },
+ {
+  "text": "conclut",
+  "start": 306.32,
+  "end": 307.12
+ },
+ {
+  "text": "à",
+  "start": 307.12,
+  "end": 307.3
+ },
+ {
+  "text": "sa",
+  "start": 307.3,
+  "end": 307.42
+ },
+ {
+  "text": "façon",
+  "start": 307.42,
+  "end": 307.72
+ },
+ {
+  "text": "crains",
+  "start": 307.72,
+  "end": 308.7
+ },
+ {
+  "text": "dieu",
+  "start": 308.7,
+  "end": 309.16
+ },
+ {
+  "text": "et",
+  "start": 309.16,
+  "end": 309.8
+ },
+ {
+  "text": "observe",
+  "start": 309.8,
+  "end": 310.26
+ },
+ {
+  "text": "ces",
+  "start": 310.26,
+  "end": 310.56
+ },
+ {
+  "text": "commandements",
+  "start": 310.56,
+  "end": 311.1
+ },
+ {
+  "text": "c'est",
+  "start": 311.1,
+  "end": 312.14
+ },
+ {
+  "text": "là",
+  "start": 312.14,
+  "end": 312.22
  },
  {
   "text": "ce",
-  "start": 327.14,
-  "end": 327.26
+  "start": 312.22,
+  "end": 312.54
  },
  {
-  "text": "langage.",
-  "start": 327.26,
-  "end": 327.62
+  "text": "que",
+  "start": 312.54,
+  "end": 312.68
  },
  {
-  "text": "Jésus",
-  "start": 328.04,
-  "end": 328.56
+  "text": "doit",
+  "start": 312.68,
+  "end": 312.82
+ },
+ {
+  "text": "faire",
+  "start": 312.82,
+  "end": 313.0
+ },
+ {
+  "text": "tout",
+  "start": 313.0,
+  "end": 313.16
+ },
+ {
+  "text": "homme",
+  "start": 313.16,
+  "end": 313.38
+ },
+ {
+  "text": "ensuite",
+  "start": 313.38,
+  "end": 314.56
+ },
+ {
+  "text": "le",
+  "start": 314.56,
+  "end": 315.2
+ },
+ {
+  "text": "nouveau",
+  "start": 315.2,
+  "end": 315.42
+ },
+ {
+  "text": "testament",
+  "start": 315.42,
+  "end": 315.78
+ },
+ {
+  "text": "reprend",
+  "start": 315.78,
+  "end": 316.36
+ },
+ {
+  "text": "ce",
+  "start": 316.36,
+  "end": 316.48
+ },
+ {
+  "text": "langage",
+  "start": 316.48,
+  "end": 316.86
+ },
+ {
+  "text": "jésus",
+  "start": 316.86,
+  "end": 317.78
  },
  {
   "text": "déclare",
-  "start": 328.56,
-  "end": 328.92
+  "start": 317.78,
+  "end": 318.14
+ },
+ {
+  "text": "qu'il",
+  "start": 318.14,
+  "end": 318.32
+ },
+ {
+  "text": "y",
+  "start": 318.32,
+  "end": 318.42
+ },
+ {
+  "text": "a",
+  "start": 318.42,
+  "end": 318.44
+ },
+ {
+  "text": "ici",
+  "start": 318.44,
+  "end": 318.64
+ },
+ {
+  "text": "plus",
+  "start": 318.64,
+  "end": 319.44
+ },
+ {
+  "text": "que",
+  "start": 319.44,
+  "end": 319.72
+ },
+ {
+  "text": "salomon",
+  "start": 319.72,
+  "end": 320.16
+ },
+ {
+  "text": "paul",
+  "start": 320.16,
+  "end": 321.32
+ },
+ {
+  "text": "écrit",
+  "start": 321.32,
+  "end": 321.5
+ },
+ {
+  "text": "que",
+  "start": 321.5,
+  "end": 321.76
+ },
+ {
+  "text": "christ",
+  "start": 321.76,
+  "end": 322.04
+ },
+ {
+  "text": "est",
+  "start": 322.04,
+  "end": 322.34
+ },
+ {
+  "text": "puissance",
+  "start": 322.34,
+  "end": 322.96
+ },
+ {
+  "text": "de",
+  "start": 322.96,
+  "end": 323.2
+ },
+ {
+  "text": "dieu",
+  "start": 323.2,
+  "end": 323.54
+ },
+ {
+  "text": "et",
+  "start": 323.54,
+  "end": 323.86
+ },
+ {
+  "text": "sagesse",
+  "start": 323.86,
+  "end": 324.48
+ },
+ {
+  "text": "de",
+  "start": 324.48,
+  "end": 324.62
+ },
+ {
+  "text": "dieu",
+  "start": 324.62,
+  "end": 324.98
+ },
+ {
+  "text": "et",
+  "start": 324.98,
+  "end": 325.72
+ },
+ {
+  "text": "jacques",
+  "start": 325.72,
+  "end": 325.94
+ },
+ {
+  "text": "écrit",
+  "start": 325.94,
+  "end": 326.16
+ },
+ {
+  "text": "Si",
+  "start": 326.86,
+  "end": 326.9
+ },
+ {
+  "text": "quelqu'un",
+  "start": 326.9,
+  "end": 327.3
+ },
+ {
+  "text": "d'entre",
+  "start": 327.3,
+  "end": 327.52
+ },
+ {
+  "text": "vous",
+  "start": 327.52,
+  "end": 327.78
+ },
+ {
+  "text": "manque",
+  "start": 327.78,
+  "end": 328.1
+ },
+ {
+  "text": "de",
+  "start": 328.1,
+  "end": 328.34
+ },
+ {
+  "text": "sagesse,",
+  "start": 328.34,
+  "end": 328.9
  },
  {
   "text": "qu'il",
   "start": 328.92,
-  "end": 329.1
+  "end": 329.4
  },
  {
-  "text": "y",
-  "start": 329.1,
-  "end": 329.18
+  "text": "la",
+  "start": 329.4,
+  "end": 329.52
  },
  {
-  "text": "a",
-  "start": 329.18,
-  "end": 329.28
+  "text": "demande",
+  "start": 329.52,
+  "end": 329.86
  },
  {
-  "text": "ici",
-  "start": 329.28,
-  "end": 329.5
- },
- {
-  "text": "plus",
-  "start": 329.5,
-  "end": 330.08
- },
- {
-  "text": "que",
-  "start": 330.08,
-  "end": 330.32
- },
- {
-  "text": "Salomon.",
-  "start": 330.32,
-  "end": 330.7
- },
- {
-  "text": "Paul",
-  "start": 331.1,
-  "end": 331.62
- },
- {
-  "text": "écrit",
-  "start": 331.62,
-  "end": 331.82
- },
- {
-  "text": "que",
-  "start": 331.82,
-  "end": 332.06
- },
- {
-  "text": "Christ",
-  "start": 332.06,
-  "end": 332.34
- },
- {
-  "text": "est",
-  "start": 332.34,
-  "end": 332.66
- },
- {
-  "text": "puissance",
-  "start": 332.66,
-  "end": 333.5
- },
- {
-  "text": "de",
-  "start": 333.5,
-  "end": 333.78
- },
- {
-  "text": "Dieu",
-  "start": 333.78,
-  "end": 333.98
- },
- {
-  "text": "et",
-  "start": 333.98,
-  "end": 334.46
- },
- {
-  "text": "sagesse",
-  "start": 334.46,
-  "end": 335.04
- },
- {
-  "text": "de",
-  "start": 335.04,
-  "end": 335.2
+  "text": "à",
+  "start": 329.86,
+  "end": 330.06
  },
  {
   "text": "Dieu.",
-  "start": 335.2,
-  "end": 335.4
- },
- {
-  "text": "Et",
-  "start": 335.88,
-  "end": 336.28
- },
- {
-  "text": "Jacques",
-  "start": 336.28,
-  "end": 336.52
- },
- {
-  "text": "écrit",
-  "start": 336.52,
-  "end": 336.78
- },
- {
-  "text": "« ",
-  "start": 336.78,
-  "end": 336.98
- },
- {
-  "text": "Si",
-  "start": 336.98,
-  "end": 337.58
- },
- {
-  "text": "quelqu'un",
-  "start": 337.58,
-  "end": 338.08
- },
- {
-  "text": "d'entre",
-  "start": 338.08,
-  "end": 338.26
- },
- {
-  "text": "vous",
-  "start": 338.26,
-  "end": 338.52
- },
- {
-  "text": "manque",
-  "start": 338.52,
-  "end": 338.78
- },
- {
-  "text": "de",
-  "start": 338.78,
-  "end": 338.96
- },
- {
-  "text": "sagesse,",
-  "start": 338.96,
-  "end": 339.48
- },
- {
-  "text": "qu'il",
-  "start": 339.48,
-  "end": 339.98
- },
- {
-  "text": "la",
-  "start": 339.98,
-  "end": 340.12
- },
- {
-  "text": "demande",
-  "start": 340.12,
-  "end": 340.52
- },
- {
-  "text": "à",
-  "start": 340.52,
-  "end": 340.8
- },
- {
-  "text": "Dieu. »",
-  "start": 340.8,
-  "end": 341.92
+  "start": 330.06,
+  "end": 330.22
  },
  {
   "text": "Ici,",
-  "start": 341.92,
-  "end": 342.2
+  "start": 330.68,
+  "end": 331.16
  },
  {
   "text": "soyons",
-  "start": 342.34,
-  "end": 342.9
+  "start": 331.28,
+  "end": 331.86
  },
  {
-  "text": "honnêtes.",
-  "start": 342.9,
-  "end": 343.22
+  "text": "honnêtes,",
+  "start": 331.86,
+  "end": 332.2
  },
  {
-  "text": "Lire",
-  "start": 343.74,
-  "end": 343.98
+  "text": "lire",
+  "start": 332.42,
+  "end": 332.96
  },
  {
   "text": "Jésus",
-  "start": 343.98,
-  "end": 344.44
+  "start": 332.96,
+  "end": 333.38
  },
  {
   "text": "comme",
-  "start": 344.44,
-  "end": 344.66
+  "start": 333.38,
+  "end": 333.62
  },
  {
   "text": "la",
-  "start": 344.66,
-  "end": 344.82
+  "start": 333.62,
+  "end": 333.8
  },
  {
   "text": "sagesse",
-  "start": 344.82,
-  "end": 345.4
+  "start": 333.8,
+  "end": 334.28
  },
  {
   "text": "de",
-  "start": 345.4,
-  "end": 345.5
+  "start": 334.28,
+  "end": 334.36
  },
  {
   "text": "Dieu",
-  "start": 345.5,
-  "end": 345.68
+  "start": 334.36,
+  "end": 334.56
  },
  {
   "text": "est",
-  "start": 345.68,
-  "end": 346.04
+  "start": 334.56,
+  "end": 334.98
  },
  {
   "text": "une",
-  "start": 346.04,
-  "end": 346.4
+  "start": 334.98,
+  "end": 335.14
  },
  {
   "text": "lecture",
-  "start": 346.4,
-  "end": 346.64
+  "start": 335.14,
+  "end": 335.4
  },
  {
   "text": "chrétienne,",
-  "start": 346.64,
-  "end": 347.12
+  "start": 335.4,
+  "end": 336.0
  },
  {
   "text": "appuyée",
-  "start": 347.22,
-  "end": 348.0
+  "start": 336.1,
+  "end": 336.86
  },
  {
   "text": "sur",
-  "start": 348.0,
-  "end": 348.24
+  "start": 336.86,
+  "end": 337.06
  },
  {
-  "text": "ses",
-  "start": 348.24,
-  "end": 348.34
+  "text": "ces",
+  "start": 337.06,
+  "end": 337.14
  },
  {
   "text": "textes.",
-  "start": 348.34,
-  "end": 348.8
+  "start": 337.14,
+  "end": 337.54
  },
  {
   "text": "Les",
-  "start": 348.88,
-  "end": 349.36
+  "start": 337.96,
+  "end": 338.44
  },
  {
   "text": "lecteurs",
-  "start": 349.36,
-  "end": 349.7
+  "start": 338.44,
+  "end": 338.82
  },
  {
   "text": "juifs",
-  "start": 349.7,
-  "end": 349.94
+  "start": 338.82,
+  "end": 339.26
  },
  {
   "text": "de",
-  "start": 349.94,
-  "end": 350.08
+  "start": 339.26,
+  "end": 339.38
  },
  {
   "text": "proverbes",
-  "start": 350.08,
-  "end": 350.48
+  "start": 339.38,
+  "end": 339.78
  },
  {
   "text": "ne",
-  "start": 350.48,
-  "end": 350.74
+  "start": 339.78,
+  "end": 340.14
  },
  {
   "text": "la",
-  "start": 350.74,
-  "end": 350.86
+  "start": 340.14,
+  "end": 340.24
  },
  {
   "text": "font",
-  "start": 350.86,
-  "end": 351.02
+  "start": 340.24,
+  "end": 340.38
  },
  {
   "text": "pas.",
-  "start": 351.02,
-  "end": 351.2
+  "start": 340.38,
+  "end": 340.56
  },
  {
   "text": "Ce",
-  "start": 351.86,
-  "end": 352.34
+  "start": 341.1,
+  "end": 341.58
  },
  {
   "text": "que",
-  "start": 352.34,
-  "end": 352.46
+  "start": 341.58,
+  "end": 341.72
  },
  {
   "text": "dit",
-  "start": 352.46,
-  "end": 352.56
+  "start": 341.72,
+  "end": 341.84
  },
  {
-  "text": "Proverbe",
-  "start": 352.56,
-  "end": 352.94
+  "text": "Proverbes",
+  "start": 341.84,
+  "end": 342.28
  },
  {
   "text": "1,",
-  "start": 352.94,
-  "end": 353.14
+  "start": 342.28,
+  "end": 342.46
  },
  {
   "text": "c'est",
-  "start": 353.24,
-  "end": 353.84
+  "start": 342.58,
+  "end": 343.06
  },
  {
   "text": "que",
-  "start": 353.84,
-  "end": 353.88
+  "start": 343.06,
+  "end": 343.1
  },
  {
   "text": "la",
-  "start": 353.88,
-  "end": 354.0
+  "start": 343.1,
+  "end": 343.22
  },
  {
   "text": "sagesse",
-  "start": 354.0,
-  "end": 354.44
+  "start": 343.22,
+  "end": 343.68
  },
  {
   "text": "commence",
-  "start": 354.44,
-  "end": 354.74
+  "start": 343.68,
+  "end": 343.88
  },
  {
   "text": "par",
-  "start": 354.74,
-  "end": 355.12
+  "start": 343.88,
+  "end": 344.18
  },
  {
   "text": "la",
-  "start": 355.12,
-  "end": 355.28
+  "start": 344.18,
+  "end": 344.38
  },
  {
   "text": "relation",
-  "start": 355.28,
-  "end": 355.58
+  "start": 344.38,
+  "end": 344.7
  },
  {
   "text": "avec",
-  "start": 355.58,
-  "end": 355.86
+  "start": 344.7,
+  "end": 345.04
  },
  {
   "text": "Dieu,",
-  "start": 355.86,
-  "end": 356.12
+  "start": 345.04,
+  "end": 345.3
  },
  {
   "text": "et",
-  "start": 356.2,
-  "end": 356.68
+  "start": 345.38,
+  "end": 345.98
  },
  {
   "text": "qu'elle",
-  "start": 356.68,
-  "end": 356.86
+  "start": 345.98,
+  "end": 346.16
  },
  {
   "text": "appelle",
-  "start": 356.86,
-  "end": 357.12
+  "start": 346.16,
+  "end": 346.4
  },
  {
   "text": "chacun.",
-  "start": 357.12,
-  "end": 357.6
+  "start": 346.4,
+  "end": 346.74
  },
  {
   "text": "Ce",
-  "start": 358.52,
-  "end": 359.0
+  "start": 347.44,
+  "end": 347.92
  },
  {
   "text": "que",
-  "start": 359.0,
-  "end": 359.12
+  "start": 347.92,
+  "end": 348.06
  },
  {
   "text": "la",
-  "start": 359.12,
-  "end": 359.22
+  "start": 348.06,
+  "end": 348.18
  },
  {
   "text": "tradition",
-  "start": 359.22,
-  "end": 359.5
+  "start": 348.18,
+  "end": 348.48
  },
  {
   "text": "chrétienne",
-  "start": 359.5,
-  "end": 360.0
+  "start": 348.48,
+  "end": 349.02
  },
  {
   "text": "ajoute,",
-  "start": 360.0,
-  "end": 360.36
+  "start": 349.02,
+  "end": 349.52
  },
  {
   "text": "c'est",
-  "start": 360.4,
-  "end": 361.0
+  "start": 349.54,
+  "end": 350.04
  },
  {
   "text": "que",
-  "start": 361.0,
-  "end": 361.06
+  "start": 350.04,
+  "end": 350.1
  },
  {
   "text": "cette",
-  "start": 361.06,
-  "end": 361.26
+  "start": 350.1,
+  "end": 350.3
  },
  {
   "text": "sagesse",
-  "start": 361.26,
-  "end": 361.92
+  "start": 350.3,
+  "end": 350.84
  },
  {
   "text": "a",
-  "start": 361.92,
-  "end": 362.26
+  "start": 350.84,
+  "end": 351.0
  },
  {
   "text": "pris",
-  "start": 362.26,
-  "end": 362.48
+  "start": 351.0,
+  "end": 351.22
  },
  {
   "text": "un",
-  "start": 362.48,
-  "end": 362.62
+  "start": 351.22,
+  "end": 351.38
  },
  {
   "text": "visage.",
-  "start": 362.62,
-  "end": 363.06
+  "start": 351.38,
+  "end": 351.8
  },
  {
   "text": "Alors,",
-  "start": 364.14,
-  "end": 364.62
+  "start": 352.38,
+  "end": 352.86
  },
  {
   "text": "une",
-  "start": 364.62,
-  "end": 365.1
+  "start": 353.18,
+  "end": 353.6
  },
  {
   "text": "clé",
-  "start": 365.1,
-  "end": 365.58
+  "start": 353.6,
+  "end": 354.0
  },
  {
   "text": "pour",
-  "start": 365.58,
-  "end": 365.76
+  "start": 354.0,
+  "end": 354.18
  },
  {
   "text": "toute",
-  "start": 365.76,
-  "end": 365.98
+  "start": 354.18,
+  "end": 354.34
  },
  {
   "text": "la",
-  "start": 365.98,
-  "end": 366.12
+  "start": 354.34,
+  "end": 354.6
  },
  {
   "text": "Bible?",
-  "start": 366.12,
-  "end": 366.74
+  "start": 354.6,
+  "end": 355.1
  },
  {
   "text": "Voici",
-  "start": 367.24,
-  "end": 367.72
+  "start": 355.68,
+  "end": 356.2
  },
  {
   "text": "ce",
-  "start": 367.72,
-  "end": 367.88
+  "start": 356.2,
+  "end": 356.36
  },
  {
   "text": "que",
-  "start": 367.88,
-  "end": 368.02
+  "start": 356.36,
+  "end": 356.48
  },
  {
   "text": "l'on",
-  "start": 368.02,
-  "end": 368.14
+  "start": 356.48,
+  "end": 356.58
  },
  {
   "text": "peut",
-  "start": 368.14,
-  "end": 368.28
+  "start": 356.58,
+  "end": 356.68
  },
  {
   "text": "affirmer",
-  "start": 368.28,
-  "end": 368.72
+  "start": 356.68,
+  "end": 357.12
  },
  {
   "text": "honnêtement.",
-  "start": 368.72,
-  "end": 369.3
+  "start": 357.12,
+  "end": 357.84
  },
  {
-  "text": "Proverbe",
-  "start": 370.04,
-  "end": 370.52
+  "text": "Proverbes",
+  "start": 358.6,
+  "end": 359.12
  },
  {
   "text": "1",
-  "start": 370.52,
-  "end": 370.76
+  "start": 359.12,
+  "end": 359.3
  },
  {
   "text": "donne",
-  "start": 370.76,
-  "end": 371.1
+  "start": 359.3,
+  "end": 360.0
  },
  {
   "text": "une",
-  "start": 371.1,
-  "end": 371.64
+  "start": 360.0,
+  "end": 360.4
  },
  {
   "text": "clé",
-  "start": 371.64,
-  "end": 372.12
+  "start": 360.4,
+  "end": 360.7
  },
  {
   "text": "de",
-  "start": 372.12,
-  "end": 372.2
+  "start": 360.7,
+  "end": 360.74
  },
  {
   "text": "lecture.",
-  "start": 372.2,
-  "end": 372.44
+  "start": 360.74,
+  "end": 361.0
  },
  {
   "text": "Elle",
-  "start": 373.22,
-  "end": 373.36
+  "start": 361.44,
+  "end": 361.96
  },
  {
   "text": "dit",
-  "start": 373.36,
-  "end": 373.56
- },
- {
-  "text": "« ",
-  "start": 373.56,
-  "end": 373.64
+  "start": 361.96,
+  "end": 362.1
  },
  {
   "text": "comment",
-  "start": 373.64,
-  "end": 374.12
+  "start": 362.1,
+  "end": 362.44
  },
  {
-  "text": "lire »",
-  "start": 374.12,
-  "end": 374.66
+  "text": "lire,",
+  "start": 362.44,
+  "end": 362.72
  },
  {
   "text": "avec",
-  "start": 374.66,
-  "end": 375.44
+  "start": 362.94,
+  "end": 363.6
  },
  {
   "text": "humilité,",
-  "start": 375.44,
-  "end": 376.28
+  "start": 363.6,
+  "end": 364.32
  },
  {
   "text": "en",
-  "start": 376.38,
-  "end": 377.02
+  "start": 364.42,
+  "end": 364.92
  },
  {
   "text": "cherchant",
-  "start": 377.02,
-  "end": 377.44
+  "start": 364.92,
+  "end": 365.22
  },
  {
   "text": "à",
-  "start": 377.44,
-  "end": 377.58
+  "start": 365.22,
+  "end": 365.34
  },
  {
   "text": "vivre",
-  "start": 377.58,
-  "end": 377.86
+  "start": 365.34,
+  "end": 365.66
  },
  {
   "text": "ce",
-  "start": 377.86,
-  "end": 378.06
+  "start": 365.66,
+  "end": 365.86
  },
  {
   "text": "que",
-  "start": 378.06,
-  "end": 378.18
+  "start": 365.86,
+  "end": 365.98
  },
  {
   "text": "l'on",
-  "start": 378.18,
-  "end": 378.32
+  "start": 365.98,
+  "end": 366.08
  },
  {
   "text": "comprend",
-  "start": 378.32,
-  "end": 378.56
+  "start": 366.08,
+  "end": 366.34
  },
  {
   "text": "plutôt",
-  "start": 378.56,
-  "end": 378.9
+  "start": 366.34,
+  "end": 366.86
  },
  {
   "text": "qu'à",
-  "start": 378.9,
-  "end": 379.18
+  "start": 366.86,
+  "end": 367.08
  },
  {
   "text": "collectionner",
-  "start": 379.18,
-  "end": 379.72
+  "start": 367.08,
+  "end": 367.58
  },
  {
   "text": "des",
-  "start": 379.72,
-  "end": 379.82
+  "start": 367.58,
+  "end": 367.66
  },
  {
   "text": "informations.",
-  "start": 379.82,
-  "end": 380.14
+  "start": 367.66,
+  "end": 367.9
  },
  {
   "text": "Cette",
-  "start": 381.22,
-  "end": 381.7
+  "start": 369.0,
+  "end": 369.52
  },
  {
   "text": "semaine,",
-  "start": 381.7,
-  "end": 382.02
+  "start": 369.52,
+  "end": 369.88
  },
  {
   "text": "essaie",
-  "start": 382.08,
-  "end": 382.8
+  "start": 369.94,
+  "end": 370.64
  },
  {
   "text": "ceci.",
-  "start": 382.8,
-  "end": 383.14
+  "start": 370.64,
+  "end": 370.94
  },
  {
   "text": "Relis",
-  "start": 383.78,
-  "end": 384.26
+  "start": 371.34,
+  "end": 371.86
  },
  {
   "text": "lentement",
-  "start": 384.26,
-  "end": 385.2
+  "start": 371.86,
+  "end": 372.32
  },
  {
   "text": "les",
-  "start": 385.2,
-  "end": 385.62
+  "start": 372.32,
+  "end": 372.58
  },
  {
   "text": "sept",
-  "start": 385.62,
-  "end": 385.94
+  "start": 372.58,
+  "end": 372.86
  },
  {
   "text": "premiers",
-  "start": 385.94,
-  "end": 386.24
+  "start": 372.86,
+  "end": 373.14
  },
  {
   "text": "versets.",
-  "start": 386.24,
-  "end": 386.74
+  "start": 373.14,
+  "end": 373.54
  },
  {
   "text": "Puis",
-  "start": 387.06,
-  "end": 387.54
+  "start": 373.9,
+  "end": 374.42
  },
  {
   "text": "pose-toi",
-  "start": 387.54,
-  "end": 388.32
+  "start": 374.42,
+  "end": 375.24
  },
  {
   "text": "une",
-  "start": 388.32,
-  "end": 388.44
+  "start": 375.24,
+  "end": 375.32
  },
  {
   "text": "question",
-  "start": 388.44,
-  "end": 388.7
+  "start": 375.32,
+  "end": 375.56
  },
  {
   "text": "simple.",
-  "start": 388.7,
-  "end": 389.12
+  "start": 375.56,
+  "end": 375.94
  },
  {
   "text": "À",
-  "start": 389.64,
-  "end": 389.94
+  "start": 376.6,
+  "end": 376.9
  },
  {
   "text": "quel",
-  "start": 389.94,
-  "end": 390.2
+  "start": 376.9,
+  "end": 377.14
  },
  {
   "text": "carrefour",
-  "start": 390.2,
-  "end": 390.68
+  "start": 377.14,
+  "end": 377.54
  },
  {
   "text": "de",
-  "start": 390.68,
-  "end": 390.82
+  "start": 377.54,
+  "end": 377.62
  },
  {
   "text": "ma",
-  "start": 390.82,
-  "end": 390.92
+  "start": 377.62,
+  "end": 377.72
  },
  {
   "text": "vie",
-  "start": 390.92,
-  "end": 391.2
+  "start": 377.72,
+  "end": 377.94
  },
  {
   "text": "une",
-  "start": 391.2,
-  "end": 391.54
+  "start": 377.94,
+  "end": 378.46
  },
  {
   "text": "voix",
-  "start": 391.54,
-  "end": 391.78
+  "start": 378.46,
+  "end": 378.72
  },
  {
   "text": "crie-t-elle?",
-  "start": 391.78,
-  "end": 392.44
+  "start": 378.72,
+  "end": 379.52
  },
  {
   "text": "Et",
-  "start": 392.44,
-  "end": 393.14
+  "start": 379.52,
+  "end": 380.26
  },
  {
   "text": "que",
-  "start": 393.14,
-  "end": 393.24
+  "start": 380.26,
+  "end": 380.4
  },
  {
   "text": "fais-je",
-  "start": 393.24,
-  "end": 393.72
+  "start": 380.4,
+  "end": 380.98
  },
  {
   "text": "de",
-  "start": 393.72,
-  "end": 393.82
+  "start": 380.98,
+  "end": 381.3
  },
  {
   "text": "ce",
-  "start": 393.82,
-  "end": 393.88
+  "start": 381.3,
+  "end": 381.38
  },
  {
   "text": "que",
-  "start": 393.88,
-  "end": 394.04
+  "start": 381.38,
+  "end": 381.44
  },
  {
   "text": "j'entends",
-  "start": 394.04,
-  "end": 394.36
+  "start": 381.44,
+  "end": 381.68
  },
  {
   "text": "déjà?",
-  "start": 394.36,
-  "end": 394.88
+  "start": 381.68,
+  "end": 382.22
  },
  {
   "text": "Y",
-  "start": 395.44,
-  "end": 395.68
+  "start": 382.22,
+  "end": 382.74
  },
  {
   "text": "a-t-il",
-  "start": 395.68,
-  "end": 395.92
+  "start": 382.74,
+  "end": 383.0
  },
  {
   "text": "un",
-  "start": 395.92,
-  "end": 395.96
+  "start": 383.0,
+  "end": 383.12
  },
  {
   "text": "verset",
-  "start": 395.96,
-  "end": 396.36
+  "start": 383.12,
+  "end": 383.64
  },
  {
   "text": "des",
-  "start": 396.36,
-  "end": 396.46
+  "start": 383.64,
+  "end": 383.78
  },
  {
   "text": "proverbes",
-  "start": 396.46,
-  "end": 396.86
+  "start": 383.78,
+  "end": 384.18
  },
  {
   "text": "qui",
-  "start": 396.86,
-  "end": 397.02
+  "start": 384.18,
+  "end": 384.32
  },
  {
   "text": "t'a",
-  "start": 397.02,
-  "end": 397.22
+  "start": 384.32,
+  "end": 384.46
  },
  {
   "text": "déjà",
-  "start": 397.22,
-  "end": 397.4
+  "start": 384.46,
+  "end": 384.64
  },
  {
-  "text": "guidé?",
-  "start": 397.4,
-  "end": 397.88
+  "text": "guidé",
+  "start": 384.64,
+  "end": 385.04
  },
  {
-  "text": "Ou",
-  "start": 397.88,
-  "end": 398.54
+  "text": "ou",
+  "start": 385.04,
+  "end": 385.46
  },
  {
   "text": "une",
-  "start": 398.54,
-  "end": 398.64
+  "start": 385.46,
+  "end": 385.76
  },
  {
   "text": "décision",
-  "start": 398.64,
-  "end": 399.08
+  "start": 385.76,
+  "end": 386.56
  },
  {
   "text": "pour",
-  "start": 399.08,
-  "end": 399.28
+  "start": 386.56,
+  "end": 386.72
  },
  {
   "text": "laquelle",
-  "start": 399.28,
-  "end": 399.48
+  "start": 386.72,
+  "end": 386.92
  },
  {
   "text": "tu",
-  "start": 399.48,
-  "end": 399.7
+  "start": 386.92,
+  "end": 387.12
  },
  {
   "text": "cherches",
-  "start": 399.7,
-  "end": 400.0
+  "start": 387.12,
+  "end": 387.36
  },
  {
   "text": "encore",
-  "start": 400.0,
-  "end": 400.18
+  "start": 387.36,
+  "end": 387.68
  },
  {
   "text": "la",
-  "start": 400.18,
-  "end": 400.44
+  "start": 387.68,
+  "end": 387.88
  },
  {
   "text": "sagesse?",
-  "start": 400.44,
-  "end": 401.14
+  "start": 387.88,
+  "end": 388.76
  },
  {
   "text": "Écris-le",
-  "start": 401.78,
-  "end": 402.04
+  "start": 388.76,
+  "end": 389.36
  },
  {
   "text": "en",
-  "start": 402.04,
-  "end": 402.14
+  "start": 389.36,
+  "end": 389.46
  },
  {
-  "text": "commentaire",
-  "start": 402.14,
-  "end": 402.54
+  "text": "commentaire,",
+  "start": 389.46,
+  "end": 389.88
  },
  {
   "text": "sans",
-  "start": 402.54,
-  "end": 402.68
+  "start": 389.88,
+  "end": 390.04
  },
  {
   "text": "pression.",
-  "start": 402.68,
-  "end": 403.12
+  "start": 390.04,
+  "end": 390.36
  },
  {
   "text": "Nous",
-  "start": 403.56,
-  "end": 404.0
+  "start": 390.72,
+  "end": 391.14
  },
  {
   "text": "lisons",
-  "start": 404.0,
-  "end": 404.26
+  "start": 391.14,
+  "end": 391.34
  },
  {
   "text": "tous",
-  "start": 404.26,
-  "end": 404.42
+  "start": 391.34,
+  "end": 391.46
  },
  {
   "text": "ensemble.",
-  "start": 404.42,
-  "end": 404.74
+  "start": 391.46,
+  "end": 391.72
  },
  {
   "text": "La",
-  "start": 405.6,
-  "end": 406.04
+  "start": 392.28,
+  "end": 392.7
  },
  {
   "text": "femme",
-  "start": 406.04,
-  "end": 406.22
+  "start": 392.7,
+  "end": 392.98
  },
  {
   "text": "du",
-  "start": 406.22,
-  "end": 406.34
+  "start": 392.98,
+  "end": 393.12
  },
  {
   "text": "marché",
-  "start": 406.34,
-  "end": 406.58
+  "start": 393.12,
+  "end": 393.34
  },
  {
   "text": "crie",
-  "start": 406.58,
-  "end": 406.86
+  "start": 393.34,
+  "end": 393.68
  },
  {
   "text": "toujours.",
-  "start": 406.86,
-  "end": 407.1
+  "start": 393.68,
+  "end": 393.96
  },
  {
   "text": "Elle",
-  "start": 407.62,
-  "end": 408.06
+  "start": 394.46,
+  "end": 394.88
  },
  {
   "text": "ne",
-  "start": 408.06,
-  "end": 408.18
+  "start": 394.88,
+  "end": 394.96
  },
  {
   "text": "crie",
-  "start": 408.18,
-  "end": 408.34
+  "start": 394.96,
+  "end": 395.14
  },
  {
   "text": "pas",
-  "start": 408.34,
-  "end": 408.42
+  "start": 395.14,
+  "end": 395.22
  },
  {
   "text": "pour",
-  "start": 408.42,
-  "end": 408.54
+  "start": 395.22,
+  "end": 395.34
  },
  {
   "text": "te",
-  "start": 408.54,
-  "end": 408.64
+  "start": 395.34,
+  "end": 395.42
  },
  {
   "text": "faire",
-  "start": 408.64,
-  "end": 408.82
+  "start": 395.42,
+  "end": 395.58
  },
  {
   "text": "honte,",
-  "start": 408.82,
-  "end": 409.22
+  "start": 395.58,
+  "end": 395.9
  },
  {
   "text": "mais",
-  "start": 409.26,
-  "end": 409.74
+  "start": 395.92,
+  "end": 396.22
  },
  {
   "text": "parce",
-  "start": 409.74,
-  "end": 409.96
+  "start": 396.22,
+  "end": 396.42
  },
  {
   "text": "qu'elle",
-  "start": 409.96,
-  "end": 410.08
+  "start": 396.42,
+  "end": 396.54
  },
  {
   "text": "sait",
-  "start": 410.08,
-  "end": 410.4
+  "start": 396.54,
+  "end": 396.82
  },
  {
   "text": "où",
-  "start": 410.4,
-  "end": 410.72
+  "start": 396.82,
+  "end": 397.08
  },
  {
   "text": "mènent",
-  "start": 410.72,
-  "end": 411.02
+  "start": 397.08,
+  "end": 397.3
  },
  {
   "text": "les",
-  "start": 411.02,
-  "end": 411.16
+  "start": 397.3,
+  "end": 397.46
  },
  {
   "text": "deux",
-  "start": 411.16,
-  "end": 411.3
+  "start": 397.46,
+  "end": 397.6
  },
  {
   "text": "chemins.",
-  "start": 411.3,
-  "end": 411.7
+  "start": 397.6,
+  "end": 397.82
  },
  {
   "text": "Elle",
-  "start": 412.08,
-  "end": 412.52
+  "start": 398.24,
+  "end": 398.6
  },
  {
   "text": "n'attend",
-  "start": 412.52,
-  "end": 412.74
+  "start": 398.6,
+  "end": 398.78
  },
  {
   "text": "pas",
-  "start": 412.74,
-  "end": 412.86
+  "start": 398.78,
+  "end": 398.92
  },
  {
   "text": "que",
-  "start": 412.86,
-  "end": 412.96
+  "start": 398.92,
+  "end": 399.02
  },
  {
   "text": "tu",
-  "start": 412.96,
-  "end": 413.04
+  "start": 399.02,
+  "end": 399.1
  },
  {
   "text": "saches",
-  "start": 413.04,
-  "end": 413.26
+  "start": 399.1,
+  "end": 399.32
  },
  {
   "text": "tout.",
-  "start": 413.26,
-  "end": 413.46
+  "start": 399.32,
+  "end": 399.54
  },
  {
   "text": "Elle",
-  "start": 413.78,
-  "end": 414.22
+  "start": 399.7,
+  "end": 400.12
  },
  {
   "text": "te",
-  "start": 414.22,
-  "end": 414.34
+  "start": 400.12,
+  "end": 400.24
  },
  {
   "text": "demande",
-  "start": 414.34,
-  "end": 414.6
+  "start": 400.24,
+  "end": 400.44
  },
  {
   "text": "seulement",
-  "start": 414.6,
-  "end": 414.96
+  "start": 400.44,
+  "end": 400.76
  },
  {
   "text": "de",
-  "start": 414.96,
-  "end": 415.34
+  "start": 400.76,
+  "end": 400.98
  },
  {
   "text": "commencer",
-  "start": 415.34,
-  "end": 415.68
+  "start": 400.98,
+  "end": 401.26
  },
  {
   "text": "au",
-  "start": 415.68,
-  "end": 416.08
+  "start": 401.26,
+  "end": 401.62
  },
  {
   "text": "bon",
-  "start": 416.08,
-  "end": 416.28
+  "start": 401.62,
+  "end": 401.82
  },
  {
-  "text": "endroit.",
-  "start": 416.28,
-  "end": 416.58
+  "text": "endroit,",
+  "start": 401.82,
+  "end": 402.1
  },
  {
-  "text": "Reconnaître",
-  "start": 417.38,
-  "end": 417.82
+  "text": "reconnaître",
+  "start": 402.3,
+  "end": 403.18
  },
  {
   "text": "Dieu",
-  "start": 417.82,
-  "end": 418.12
+  "start": 403.18,
+  "end": 403.46
  },
  {
   "text": "à",
-  "start": 418.12,
-  "end": 418.42
+  "start": 403.46,
+  "end": 403.68
  },
  {
   "text": "sa",
-  "start": 418.42,
-  "end": 418.54
+  "start": 403.68,
+  "end": 403.8
  },
  {
   "text": "place.",
-  "start": 418.54,
-  "end": 418.8
+  "start": 403.8,
+  "end": 404.06
  },
  {
   "text": "Chaque",
-  "start": 419.72,
-  "end": 420.16
+  "start": 405.18,
+  "end": 405.6
  },
  {
   "text": "semaine,",
-  "start": 420.16,
-  "end": 420.36
+  "start": 405.6,
+  "end": 405.86
  },
  {
   "text": "nous",
-  "start": 420.44,
-  "end": 420.84
+  "start": 405.94,
+  "end": 406.04
  },
  {
   "text": "reprenons",
-  "start": 420.84,
-  "end": 421.22
+  "start": 406.04,
+  "end": 406.38
  },
  {
   "text": "un",
-  "start": 421.22,
-  "end": 421.32
+  "start": 406.38,
+  "end": 406.48
  },
  {
   "text": "passage",
-  "start": 421.32,
-  "end": 421.54
+  "start": 406.48,
+  "end": 406.68
  },
  {
   "text": "de",
-  "start": 421.54,
-  "end": 421.74
+  "start": 406.68,
+  "end": 406.84
  },
  {
   "text": "la",
-  "start": 421.74,
-  "end": 421.82
+  "start": 406.84,
+  "end": 406.94
  },
  {
   "text": "Bible",
-  "start": 421.82,
-  "end": 422.02
+  "start": 406.94,
+  "end": 407.14
  },
  {
   "text": "pour",
-  "start": 422.02,
-  "end": 422.28
+  "start": 407.14,
+  "end": 407.38
  },
  {
   "text": "l'éclairer",
-  "start": 422.28,
-  "end": 422.7
+  "start": 407.38,
+  "end": 407.76
  },
  {
   "text": "simplement.",
-  "start": 422.7,
-  "end": 422.96
+  "start": 407.76,
+  "end": 408.0
  },
  {
   "text": "Si",
-  "start": 423.48,
-  "end": 423.92
+  "start": 408.52,
+  "end": 408.94
  },
  {
   "text": "ce",
-  "start": 423.92,
-  "end": 424.06
+  "start": 408.94,
+  "end": 409.1
  },
  {
   "text": "chemin",
-  "start": 424.06,
-  "end": 424.32
+  "start": 409.1,
+  "end": 409.3
  },
  {
   "text": "te",
-  "start": 424.32,
-  "end": 424.4
+  "start": 409.3,
+  "end": 409.4
  },
  {
   "text": "parle,",
-  "start": 424.4,
-  "end": 424.66
+  "start": 409.4,
+  "end": 409.66
  },
  {
   "text": "rejoins-nous",
-  "start": 424.76,
-  "end": 425.7
+  "start": 409.78,
+  "end": 410.52
  },
  {
   "text": "pour",
-  "start": 425.7,
-  "end": 425.8
+  "start": 410.52,
+  "end": 410.88
  },
  {
   "text": "les",
-  "start": 425.8,
-  "end": 425.92
+  "start": 410.88,
+  "end": 411.0
  },
  {
   "text": "prochaines",
-  "start": 425.92,
-  "end": 426.28
+  "start": 411.0,
+  "end": 411.26
  },
  {
   "text": "études.",
-  "start": 426.28,
-  "end": 426.56
- },
- {
-  "text": "Sous-titrage",
-  "start": 426.56,
-  "end": 427.02
- },
- {
-  "text": "ST'501",
-  "start": 427.02,
-  "end": 427.02
+  "start": 411.26,
+  "end": 411.5
  }
 ]
