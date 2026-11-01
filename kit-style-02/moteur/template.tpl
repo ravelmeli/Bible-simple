@@ -205,6 +205,8 @@
         background: linear-gradient(90deg, rgba({{ACC_RGB}}, 0), rgba({{ACC_RGB}}, 0.2), rgba({{ACC_RGB}}, 0));
         transform: skewX(-16deg);
       }
+      .kq .kw { display: inline; }
+      .glow { pointer-events: none; }
       .stamp { padding: 6px 28px 10px; font-weight: 900; letter-spacing: 6px; text-transform: uppercase; color: {{ACC}}; border: 8px solid {{ACC}}; white-space: nowrap; }
       .burst line { stroke: {{ACC}}; stroke-width: 9; stroke-linecap: round; }
       .ring { border: 8px solid {{ACC}}; border-radius: 50%; box-sizing: border-box; }

@@ -329,6 +329,64 @@ def teaser(station, x, y, text, t, hold=2.6):
     return i
 
 
+# ---------------------------------------------------------------- animations réutilisables (autocollants et citations)
+def animate(i, kind, t, dur=3.0, k=1.0):
+    """Anime un autocollant déjà posé (id renvoyé par sticker()) à partir de t pendant dur secondes.
+    kind : "rock" (balance qui oscille), "grow" (arbre qui pousse, depuis la base), "unroll" (rouleau qui se déroule),
+           "turn" (clé qui tourne), "zoom" (lent zoom avant sur une photo), "pulse" (battement, ex. lampe, couronne),
+           "open" (porte ou rideau qui s'ouvre : l'autocollant s'élargit depuis le centre)."""
+    sel = f"#{i} img"
+    if kind == "rock":
+        reps = max(1, int(dur / 0.9) - 1)
+        tw.append(f'tl.fromTo("{sel}", {{ rotation: {-7 * k}, transformOrigin: "50% 12%" }}, {{ rotation: {7 * k}, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: {reps}, immediateRender: false }}, {at(t)});')
+    elif kind == "grow":
+        tw.append(f'tl.fromTo("{sel}", {{ scaleY: 0.05, scaleX: 0.6, transformOrigin: "50% 100%" }}, {{ scaleY: 1, scaleX: 1, duration: {min(dur, 1.4)}, ease: "back.out(1.4)", immediateRender: false }}, {at(t)});')
+    elif kind == "unroll":
+        tw.append(f'tl.fromTo("{sel}", {{ clipPath: "inset(0% 100% 0% 0%)" }}, {{ clipPath: "inset(0% 0% 0% 0%)", duration: {min(dur, 1.2)}, ease: "power2.out", immediateRender: false }}, {at(t)});')
+    elif kind == "turn":
+        tw.append(f'tl.fromTo("{sel}", {{ rotation: 0, transformOrigin: "50% 50%" }}, {{ rotation: {-40 * k}, duration: 0.45, ease: "power2.inOut", yoyo: true, repeat: 3, immediateRender: false }}, {at(t)});')
+        sfx("click", t + 0.45, 0.8)
+    elif kind == "zoom":
+        tw.append(f'tl.fromTo("{sel}", {{ scale: 1 }}, {{ scale: {1 + 0.12 * k}, duration: {dur}, ease: "none", immediateRender: false }}, {at(t)});')
+    elif kind == "pulse":
+        reps = max(1, int(dur / 0.6) - 1)
+        tw.append(f'tl.fromTo("{sel}", {{ scale: 1 }}, {{ scale: {1 + 0.07 * k}, duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: {reps}, immediateRender: false }}, {at(t)});')
+    elif kind == "open":
+        tw.append(f'tl.fromTo("{sel}", {{ scaleX: 0.3, transformOrigin: "50% 50%" }}, {{ scaleX: 1, duration: 0.8, ease: "power3.out", immediateRender: false }}, {at(t)});')
+
+
+def glow(station, x, y, t, size=420, dur=4.0, color=None):
+    """Halo de lumière qui bat doucement derrière un objet (lampe, porte ouverte, couronne). Poser avant l'autocollant."""
+    c = color or "255, 200, 90"
+    i = put(station, x - size // 2, y - size // 2, "", "glow", f"width:{size}px;height:{size}px;opacity:0;background:radial-gradient(circle, rgba({c}, 0.55) 0%, rgba({c}, 0.0) 68%);border-radius:50%")
+    reps = max(1, int(dur / 0.7) - 1)
+    tw.append(f'tl.fromTo("#{i}", {{ opacity: 0, scale: 0.5 }}, {{ opacity: 1, scale: 1, duration: 0.5, ease: "power2.out", immediateRender: false }}, {at(t)});')
+    tw.append(f'tl.fromTo("#{i}", {{ scale: 0.92 }}, {{ scale: 1.08, duration: 0.7, ease: "sine.inOut", yoyo: true, repeat: {reps}, immediateRender: false }}, {at(t + 0.5)});')
+    return i
+
+
+def kinetic_quote(station, x, y, ref_txt, text, t0, t1, width=1000, size=40):
+    """Citation qui se révèle mot par mot au rythme de la voix (t0 → t1) : le texte grisé s'allume à mesure qu'il est dit.
+    Les mots de la transcription entre t0 et t1 servent de repères ; sinon répartition proportionnelle aux lettres."""
+    toks = text.split()
+    spans = "".join(f'<span class="kw" id="{{ID}}k{n}">{w} </span>' for n, w in enumerate(toks))
+    i = put(station, x, y, f"<small>{ref_txt}</small>{spans}", "box wide kq", f"width:{width}px;font-size:{size}px")
+    html[-1] = html[-1].replace("{ID}", i)
+    blur_in(i, t0 - 0.1, 14)
+    spoken = [w for w in words if t0 - 0.05 <= w["start"] <= t1 + 0.05 and re.sub(r"[^\wÀ-ÿ]", "", w["text"])]
+    if len(spoken) >= len(toks) * 0.8:
+        starts = [spoken[min(len(spoken) - 1, round(n * (len(spoken) - 1) / max(1, len(toks) - 1)))]["start"] for n in range(len(toks))]
+    else:
+        tot = sum(len(w) + 1 for w in toks)
+        acc, starts = 0, []
+        for w in toks:
+            starts.append(t0 + (t1 - t0) * acc / tot)
+            acc += len(w) + 1
+    for n, st_ in enumerate(starts):
+        tw.append(f'tl.fromTo("#{i}k{n}", {{ opacity: 0.22 }}, {{ opacity: 1, duration: 0.12, immediateRender: true }}, {at(st_)});')
+    return i
+
+
 def dark_mode(t):
     """Passage au fond sombre (révélation) : la toile s'assombrit et la barre de chapitres passe en clair."""
     tween("#darkbg", "opacity: 0", 'opacity: 1, duration: 0.6, ease: "power2.inOut"', t)
