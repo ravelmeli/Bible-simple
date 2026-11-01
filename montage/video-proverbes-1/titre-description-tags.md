@@ -22,19 +22,20 @@ Le chapitre se déroule ensuite en deux scènes : un père avertit son fils des 
 
 DANS CETTE VIDÉO :
 
-▸ Une femme qui crie en plein marché  
-▸ Par où commencer pour comprendre la Bible ?  
-▸ Le contexte : Salomon, Ézéchias et l'Égypte  
-▸ Ce que veut faire le livre des Proverbes  
-▸ Trois mots hébreux : ḥokhmah, moussar, yirʾah  
-▸ La crainte de l'Éternel : un ordre, pas une peur  
-▸ Première scène : le père, le fils et les hommes qui séduisent  
-▸ Deux chemins : celui qui promet vite, celui qui construit lentement  
-▸ Seconde scène : la Sagesse prend la parole  
-▸ Une clé qui traverse la Bible : Psaume 111, Job 28, Ecclésiaste 12  
-▸ Le Nouveau Testament : Matthieu, 1 Corinthiens, Jacques  
-▸ Ce que dit le texte et ce que la tradition chrétienne ajoute  
-▸ Une clé de lecture : comment lire avec humilité
+00:00 Une femme qui crie en plein marché
+00:18 Par où commencer pour comprendre la Bible ?
+00:36 Le contexte : Salomon, Ézéchias et l'Égypte
+01:25 Ce que veut faire le livre des Proverbes
+01:50 Trois mots hébreux : ḥokhmah et moussar
+02:19 La crainte de l'Éternel : yirʾah, un ordre, pas une peur
+03:05 Première scène : le père, le fils, les hommes qui séduisent et les deux chemins
+03:46 Seconde scène : la Sagesse prend la parole
+04:34 Une clé qui traverse la Bible : Psaume 111, Job 28, Ecclésiaste 12
+05:13 Le Nouveau Testament : Matthieu, 1 Corinthiens, Jacques
+05:30 Ce que dit le texte et ce que la tradition chrétienne ajoute
+05:52 Une clé de lecture : comment lire avec humilité
+06:09 Ton carrefour : que faire cette semaine
+06:32 Elle crie toujours : conclusion
 
 💬 VOTRE AVIS EN COMMENTAIRE : Y a-t-il un verset des Proverbes qui vous a déjà guidé, ou une décision pour laquelle vous cherchez encore la sagesse ?
 
