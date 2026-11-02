@@ -1,0 +1,5632 @@
+[
+ {
+  "text": "Sur",
+  "start": 0.0,
+  "end": 0.36
+ },
+ {
+  "text": "la",
+  "start": 0.36,
+  "end": 0.48
+ },
+ {
+  "text": "montagne",
+  "start": 0.48,
+  "end": 0.9
+ },
+ {
+  "text": "d'Horeb,",
+  "start": 0.9,
+  "end": 1.22
+ },
+ {
+  "text": "le",
+  "start": 1.36,
+  "end": 1.72
+ },
+ {
+  "text": "prophète",
+  "start": 1.72,
+  "end": 2.14
+ },
+ {
+  "text": "Élie",
+  "start": 2.14,
+  "end": 2.44
+ },
+ {
+  "text": "attend.",
+  "start": 2.44,
+  "end": 2.74
+ },
+ {
+  "text": "Un",
+  "start": 3.62,
+  "end": 4.02
+ },
+ {
+  "text": "vent",
+  "start": 4.02,
+  "end": 4.22
+ },
+ {
+  "text": "si",
+  "start": 4.22,
+  "end": 4.4
+ },
+ {
+  "text": "fort",
+  "start": 4.4,
+  "end": 4.9
+ },
+ {
+  "text": "qui",
+  "start": 4.9,
+  "end": 5.18
+ },
+ {
+  "text": "fend",
+  "start": 5.18,
+  "end": 5.52
+ },
+ {
+  "text": "les",
+  "start": 5.52,
+  "end": 5.64
+ },
+ {
+  "text": "rochers",
+  "start": 5.64,
+  "end": 5.96
+ },
+ {
+  "text": "passe",
+  "start": 5.96,
+  "end": 6.26
+ },
+ {
+  "text": "devant",
+  "start": 6.26,
+  "end": 6.46
+ },
+ {
+  "text": "lui,",
+  "start": 6.46,
+  "end": 6.7
+ },
+ {
+  "text": "puis",
+  "start": 6.82,
+  "end": 7.4
+ },
+ {
+  "text": "un",
+  "start": 7.4,
+  "end": 7.56
+ },
+ {
+  "text": "tremblement",
+  "start": 7.56,
+  "end": 7.96
+ },
+ {
+  "text": "de",
+  "start": 7.96,
+  "end": 8.06
+ },
+ {
+  "text": "terre,",
+  "start": 8.06,
+  "end": 8.26
+ },
+ {
+  "text": "puis",
+  "start": 8.44,
+  "end": 8.82
+ },
+ {
+  "text": "un",
+  "start": 8.82,
+  "end": 8.96
+ },
+ {
+  "text": "feu.",
+  "start": 8.96,
+  "end": 9.14
+ },
+ {
+  "text": "Et",
+  "start": 9.58,
+  "end": 9.98
+ },
+ {
+  "text": "le",
+  "start": 9.98,
+  "end": 10.08
+ },
+ {
+  "text": "texte",
+  "start": 10.08,
+  "end": 10.46
+ },
+ {
+  "text": "répète",
+  "start": 10.46,
+  "end": 10.9
+ },
+ {
+  "text": "trois",
+  "start": 10.9,
+  "end": 11.22
+ },
+ {
+  "text": "fois",
+  "start": 11.22,
+  "end": 11.52
+ },
+ {
+  "text": "« ",
+  "start": 11.52,
+  "end": 12.14
+ },
+ {
+  "text": "l'Éternel",
+  "start": 12.14,
+  "end": 12.76
+ },
+ {
+  "text": "n'était",
+  "start": 12.76,
+  "end": 13.24
+ },
+ {
+  "text": "pas",
+  "start": 13.24,
+  "end": 13.5
+ },
+ {
+  "text": "là",
+  "start": 13.5,
+  "end": 13.72
+ },
+ {
+  "text": "».",
+  "start": 13.72,
+  "end": 14.0
+ },
+ {
+  "text": "Pourtant,",
+  "start": 14.54,
+  "end": 14.94
+ },
+ {
+  "text": "le",
+  "start": 14.94,
+  "end": 15.06
+ },
+ {
+  "text": "mot",
+  "start": 15.06,
+  "end": 15.26
+ },
+ {
+  "text": "que",
+  "start": 15.26,
+  "end": 15.38
+ },
+ {
+  "text": "le",
+  "start": 15.38,
+  "end": 15.5
+ },
+ {
+  "text": "texte",
+  "start": 15.5,
+  "end": 15.76
+ },
+ {
+  "text": "emploie",
+  "start": 15.76,
+  "end": 15.98
+ },
+ {
+  "text": "pour",
+  "start": 15.98,
+  "end": 16.12
+ },
+ {
+  "text": "ce",
+  "start": 16.12,
+  "end": 16.24
+ },
+ {
+  "text": "vent",
+  "start": 16.24,
+  "end": 16.44
+ },
+ {
+  "text": "est",
+  "start": 16.44,
+  "end": 16.88
+ },
+ {
+  "text": "le",
+  "start": 16.88,
+  "end": 17.04
+ },
+ {
+  "text": "même",
+  "start": 17.04,
+  "end": 17.28
+ },
+ {
+  "text": "que",
+  "start": 17.28,
+  "end": 17.46
+ },
+ {
+  "text": "celui",
+  "start": 17.46,
+  "end": 17.64
+ },
+ {
+  "text": "qui",
+  "start": 17.64,
+  "end": 17.82
+ },
+ {
+  "text": "veut",
+  "start": 17.82,
+  "end": 17.92
+ },
+ {
+  "text": "dire",
+  "start": 17.92,
+  "end": 18.14
+ },
+ {
+  "text": "« ",
+  "start": 18.14,
+  "end": 18.3
+ },
+ {
+  "text": "esprit",
+  "start": 18.3,
+  "end": 18.62
+ },
+ {
+  "text": "».",
+  "start": 18.62,
+  "end": 18.82
+ },
+ {
+  "text": "Ce",
+  "start": 19.28,
+  "end": 19.68
+ },
+ {
+  "text": "mot,",
+  "start": 19.68,
+  "end": 19.92
+ },
+ {
+  "text": "c'est",
+  "start": 19.96,
+  "end": 20.4
+ },
+ {
+  "text": "« ",
+  "start": 20.4,
+  "end": 20.52
+ },
+ {
+  "text": "ruach",
+  "start": 20.52,
+  "end": 20.74
+ },
+ {
+  "text": "».",
+  "start": 20.74,
+  "end": 20.92
+ },
+ {
+  "text": "En",
+  "start": 21.52,
+  "end": 21.72
+ },
+ {
+  "text": "français,",
+  "start": 21.72,
+  "end": 22.04
+ },
+ {
+  "text": "il",
+  "start": 22.08,
+  "end": 22.2
+ },
+ {
+  "text": "se",
+  "start": 22.2,
+  "end": 22.28
+ },
+ {
+  "text": "traduit",
+  "start": 22.28,
+  "end": 22.62
+ },
+ {
+  "text": "par",
+  "start": 22.62,
+  "end": 22.74
+ },
+ {
+  "text": "« ",
+  "start": 22.74,
+  "end": 22.86
+ },
+ {
+  "text": "vent",
+  "start": 22.86,
+  "end": 23.04
+ },
+ {
+  "text": "»,",
+  "start": 23.04,
+  "end": 23.14
+ },
+ {
+  "text": "par",
+  "start": 23.14,
+  "end": 23.52
+ },
+ {
+  "text": "« ",
+  "start": 23.52,
+  "end": 23.62
+ },
+ {
+  "text": "souffle »",
+  "start": 23.62,
+  "end": 24.06
+ },
+ {
+  "text": "ou",
+  "start": 24.06,
+  "end": 24.48
+ },
+ {
+  "text": "par",
+  "start": 24.48,
+  "end": 24.62
+ },
+ {
+  "text": "« ",
+  "start": 24.62,
+  "end": 24.74
+ },
+ {
+  "text": "esprit",
+  "start": 24.74,
+  "end": 25.0
+ },
+ {
+  "text": "».",
+  "start": 25.0,
+  "end": 25.18
+ },
+ {
+  "text": "Trois",
+  "start": 25.68,
+  "end": 26.08
+ },
+ {
+  "text": "mots",
+  "start": 26.08,
+  "end": 26.22
+ },
+ {
+  "text": "pour",
+  "start": 26.22,
+  "end": 26.68
+ },
+ {
+  "text": "un",
+  "start": 26.68,
+  "end": 26.8
+ },
+ {
+  "text": "seul",
+  "start": 26.8,
+  "end": 27.08
+ },
+ {
+  "text": "mot",
+  "start": 27.08,
+  "end": 27.24
+ },
+ {
+  "text": "hébreu.",
+  "start": 27.24,
+  "end": 27.56
+ },
+ {
+  "text": "Notre",
+  "start": 28.24,
+  "end": 28.62
+ },
+ {
+  "text": "mot",
+  "start": 28.62,
+  "end": 28.88
+ },
+ {
+  "text": "« ",
+  "start": 28.88,
+  "end": 28.96
+ },
+ {
+  "text": "esprit »",
+  "start": 28.96,
+  "end": 29.3
+ },
+ {
+  "text": "lui-même",
+  "start": 29.3,
+  "end": 29.64
+ },
+ {
+  "text": "vient",
+  "start": 29.64,
+  "end": 29.82
+ },
+ {
+  "text": "du",
+  "start": 29.82,
+  "end": 29.94
+ },
+ {
+  "text": "latin",
+  "start": 29.94,
+  "end": 30.28
+ },
+ {
+  "text": "« ",
+  "start": 30.28,
+  "end": 30.32
+ },
+ {
+  "text": "spiritus",
+  "start": 30.32,
+  "end": 30.9
+ },
+ {
+  "text": "»,",
+  "start": 30.9,
+  "end": 30.98
+ },
+ {
+  "text": "qui",
+  "start": 30.98,
+  "end": 31.38
+ },
+ {
+  "text": "voulait",
+  "start": 31.38,
+  "end": 31.6
+ },
+ {
+  "text": "aussi",
+  "start": 31.6,
+  "end": 31.74
+ },
+ {
+  "text": "dire",
+  "start": 31.74,
+  "end": 31.94
+ },
+ {
+  "text": "« ",
+  "start": 31.94,
+  "end": 32.04
+ },
+ {
+  "text": "souffle",
+  "start": 32.04,
+  "end": 32.34
+ },
+ {
+  "text": "».",
+  "start": 32.34,
+  "end": 32.42
+ },
+ {
+  "text": "Le",
+  "start": 32.99,
+  "end": 33.18
+ },
+ {
+  "text": "grec",
+  "start": 33.18,
+  "end": 33.46
+ },
+ {
+  "text": "fait",
+  "start": 33.46,
+  "end": 33.56
+ },
+ {
+  "text": "la",
+  "start": 33.56,
+  "end": 33.68
+ },
+ {
+  "text": "même",
+  "start": 33.68,
+  "end": 33.82
+ },
+ {
+  "text": "chose",
+  "start": 33.82,
+  "end": 34.06
+ },
+ {
+  "text": "avec",
+  "start": 34.06,
+  "end": 34.24
+ },
+ {
+  "text": "le",
+  "start": 34.24,
+  "end": 34.36
+ },
+ {
+  "text": "mot",
+  "start": 34.36,
+  "end": 34.46
+ },
+ {
+  "text": "« ",
+  "start": 34.46,
+  "end": 34.5
+ },
+ {
+  "text": "pneuma",
+  "start": 34.5,
+  "end": 34.74
+ },
+ {
+  "text": "».",
+  "start": 34.74,
+  "end": 34.88
+ },
+ {
+  "text": "Alors",
+  "start": 35.58,
+  "end": 35.96
+ },
+ {
+  "text": "pourquoi?",
+  "start": 35.96,
+  "end": 36.68
+ },
+ {
+  "text": "Est-ce",
+  "start": 36.68,
+  "end": 37.36
+ },
+ {
+  "text": "une",
+  "start": 37.36,
+  "end": 37.4
+ },
+ {
+  "text": "confusion",
+  "start": 37.4,
+  "end": 37.72
+ },
+ {
+  "text": "ou",
+  "start": 37.72,
+  "end": 38.1
+ },
+ {
+  "text": "un",
+  "start": 38.1,
+  "end": 38.3
+ },
+ {
+  "text": "message?",
+  "start": 38.3,
+  "end": 39.02
+ },
+ {
+  "text": "Dans",
+  "start": 39.66,
+  "end": 40.04
+ },
+ {
+  "text": "cette",
+  "start": 40.04,
+  "end": 40.2
+ },
+ {
+  "text": "étude,",
+  "start": 40.2,
+  "end": 40.52
+ },
+ {
+  "text": "nous",
+  "start": 40.54,
+  "end": 40.86
+ },
+ {
+  "text": "allons",
+  "start": 40.86,
+  "end": 41.06
+ },
+ {
+  "text": "suivre",
+  "start": 41.06,
+  "end": 41.46
+ },
+ {
+  "text": "ruach",
+  "start": 41.46,
+  "end": 41.76
+ },
+ {
+  "text": "à",
+  "start": 41.76,
+  "end": 41.94
+ },
+ {
+  "text": "travers",
+  "start": 41.94,
+  "end": 42.24
+ },
+ {
+  "text": "la",
+  "start": 42.24,
+  "end": 42.44
+ },
+ {
+  "text": "Bible,",
+  "start": 42.44,
+  "end": 42.62
+ },
+ {
+  "text": "un",
+  "start": 42.72,
+  "end": 43.0
+ },
+ {
+  "text": "passage",
+  "start": 43.0,
+  "end": 43.32
+ },
+ {
+  "text": "après",
+  "start": 43.32,
+  "end": 43.7
+ },
+ {
+  "text": "l'autre.",
+  "start": 43.7,
+  "end": 44.0
+ },
+ {
+  "text": "Commençons",
+  "start": 44.78,
+  "end": 45.16
+ },
+ {
+  "text": "par",
+  "start": 45.16,
+  "end": 45.32
+ },
+ {
+  "text": "la",
+  "start": 45.32,
+  "end": 45.46
+ },
+ {
+  "text": "scène",
+  "start": 45.46,
+  "end": 45.64
+ },
+ {
+  "text": "d'Horeb,",
+  "start": 45.64,
+  "end": 45.94
+ },
+ {
+  "text": "dans",
+  "start": 46.02,
+  "end": 46.38
+ },
+ {
+  "text": "le",
+  "start": 46.38,
+  "end": 46.46
+ },
+ {
+  "text": "premier",
+  "start": 46.46,
+  "end": 46.72
+ },
+ {
+  "text": "livre",
+  "start": 46.72,
+  "end": 46.9
+ },
+ {
+  "text": "des",
+  "start": 46.9,
+  "end": 47.08
+ },
+ {
+  "text": "rois,",
+  "start": 47.08,
+  "end": 47.3
+ },
+ {
+  "text": "au",
+  "start": 47.3,
+  "end": 47.44
+ },
+ {
+  "text": "chapitre",
+  "start": 47.44,
+  "end": 47.82
+ },
+ {
+  "text": "dix-neuf.",
+  "start": 47.82,
+  "end": 48.0
+ },
+ {
+  "text": "Voici",
+  "start": 48.84,
+  "end": 49.22
+ },
+ {
+  "text": "ce",
+  "start": 49.22,
+  "end": 49.34
+ },
+ {
+  "text": "que",
+  "start": 49.34,
+  "end": 49.42
+ },
+ {
+  "text": "dit",
+  "start": 49.42,
+  "end": 49.52
+ },
+ {
+  "text": "le",
+  "start": 49.52,
+  "end": 49.64
+ },
+ {
+  "text": "texte",
+  "start": 49.64,
+  "end": 49.96
+ },
+ {
+  "text": "dans",
+  "start": 49.96,
+  "end": 50.08
+ },
+ {
+  "text": "la",
+  "start": 50.08,
+  "end": 50.2
+ },
+ {
+  "text": "Louis",
+  "start": 50.2,
+  "end": 50.36
+ },
+ {
+  "text": "Segond",
+  "start": 50.36,
+  "end": 50.5
+ },
+ {
+  "text": "1910.",
+  "start": 50.5,
+  "end": 51.08
+ },
+ {
+  "text": "Et",
+  "start": 51.94,
+  "end": 52.3
+ },
+ {
+  "text": "voici,",
+  "start": 52.3,
+  "end": 52.66
+ },
+ {
+  "text": "l'Éternel",
+  "start": 52.7,
+  "end": 53.4
+ },
+ {
+  "text": "passa.",
+  "start": 53.4,
+  "end": 53.66
+ },
+ {
+  "text": "Et",
+  "start": 54.12,
+  "end": 54.48
+ },
+ {
+  "text": "devant",
+  "start": 54.48,
+  "end": 54.74
+ },
+ {
+  "text": "l'Éternel,",
+  "start": 54.74,
+  "end": 55.32
+ },
+ {
+  "text": "il",
+  "start": 55.32,
+  "end": 55.62
+ },
+ {
+  "text": "y",
+  "start": 55.62,
+  "end": 55.74
+ },
+ {
+  "text": "eut",
+  "start": 55.74,
+  "end": 55.88
+ },
+ {
+  "text": "un",
+  "start": 55.88,
+  "end": 56.0
+ },
+ {
+  "text": "vent",
+  "start": 56.0,
+  "end": 56.16
+ },
+ {
+  "text": "fort",
+  "start": 56.16,
+  "end": 56.68
+ },
+ {
+  "text": "et",
+  "start": 56.68,
+  "end": 56.94
+ },
+ {
+  "text": "violent",
+  "start": 56.94,
+  "end": 57.34
+ },
+ {
+  "text": "qui",
+  "start": 57.34,
+  "end": 57.62
+ },
+ {
+  "text": "déchirait",
+  "start": 57.62,
+  "end": 58.26
+ },
+ {
+  "text": "les",
+  "start": 58.26,
+  "end": 58.42
+ },
+ {
+  "text": "montagnes",
+  "start": 58.42,
+  "end": 58.86
+ },
+ {
+  "text": "et",
+  "start": 58.86,
+  "end": 59.0
+ },
+ {
+  "text": "brisait",
+  "start": 59.0,
+  "end": 59.44
+ },
+ {
+  "text": "les",
+  "start": 59.44,
+  "end": 59.56
+ },
+ {
+  "text": "rochers.",
+  "start": 59.56,
+  "end": 59.82
+ },
+ {
+  "text": "L'Éternel",
+  "start": 60.5,
+  "end": 61.22
+ },
+ {
+  "text": "n'était",
+  "start": 61.22,
+  "end": 61.38
+ },
+ {
+  "text": "pas",
+  "start": 61.38,
+  "end": 61.56
+ },
+ {
+  "text": "dans",
+  "start": 61.56,
+  "end": 61.68
+ },
+ {
+  "text": "le",
+  "start": 61.68,
+  "end": 61.8
+ },
+ {
+  "text": "vent.",
+  "start": 61.8,
+  "end": 61.92
+ },
+ {
+  "text": "Et",
+  "start": 62.48,
+  "end": 62.84
+ },
+ {
+  "text": "après",
+  "start": 62.84,
+  "end": 63.06
+ },
+ {
+  "text": "le",
+  "start": 63.06,
+  "end": 63.2
+ },
+ {
+  "text": "vent,",
+  "start": 63.2,
+  "end": 63.38
+ },
+ {
+  "text": "ce",
+  "start": 63.42,
+  "end": 63.7
+ },
+ {
+  "text": "fut",
+  "start": 63.7,
+  "end": 63.86
+ },
+ {
+  "text": "un",
+  "start": 63.86,
+  "end": 64.0
+ },
+ {
+  "text": "tremblement",
+  "start": 64.0,
+  "end": 64.38
+ },
+ {
+  "text": "de",
+  "start": 64.38,
+  "end": 64.5
+ },
+ {
+  "text": "terre.",
+  "start": 64.5,
+  "end": 64.64
+ },
+ {
+  "text": "L'Éternel",
+  "start": 65.12,
+  "end": 65.84
+ },
+ {
+  "text": "n'était",
+  "start": 65.84,
+  "end": 66.02
+ },
+ {
+  "text": "pas",
+  "start": 66.02,
+  "end": 66.24
+ },
+ {
+  "text": "dans",
+  "start": 66.24,
+  "end": 66.42
+ },
+ {
+  "text": "le",
+  "start": 66.42,
+  "end": 66.46
+ },
+ {
+  "text": "tremblement",
+  "start": 66.46,
+  "end": 66.9
+ },
+ {
+  "text": "de",
+  "start": 66.9,
+  "end": 66.98
+ },
+ {
+  "text": "terre.",
+  "start": 66.98,
+  "end": 67.12
+ },
+ {
+  "text": "Ici,",
+  "start": 68.1,
+  "end": 68.46
+ },
+ {
+  "text": "ruach",
+  "start": 68.46,
+  "end": 68.82
+ },
+ {
+  "text": "désigne",
+  "start": 68.82,
+  "end": 69.26
+ },
+ {
+  "text": "un",
+  "start": 69.26,
+  "end": 69.42
+ },
+ {
+  "text": "vrai",
+  "start": 69.42,
+  "end": 69.62
+ },
+ {
+  "text": "vent,",
+  "start": 69.62,
+  "end": 69.82
+ },
+ {
+  "text": "un",
+  "start": 69.88,
+  "end": 70.26
+ },
+ {
+  "text": "phénomène",
+  "start": 70.26,
+  "end": 70.68
+ },
+ {
+  "text": "de",
+  "start": 70.68,
+  "end": 70.8
+ },
+ {
+  "text": "la",
+  "start": 70.8,
+  "end": 70.86
+ },
+ {
+  "text": "nature.",
+  "start": 70.86,
+  "end": 71.12
+ },
+ {
+  "text": "C'est",
+  "start": 71.58,
+  "end": 72.02
+ },
+ {
+  "text": "le",
+  "start": 72.02,
+  "end": 72.06
+ },
+ {
+  "text": "premier",
+  "start": 72.06,
+  "end": 72.32
+ },
+ {
+  "text": "sens",
+  "start": 72.32,
+  "end": 72.52
+ },
+ {
+  "text": "du",
+  "start": 72.52,
+  "end": 72.68
+ },
+ {
+  "text": "mot.",
+  "start": 72.68,
+  "end": 72.82
+ },
+ {
+  "text": "Dans",
+  "start": 73.24,
+  "end": 73.6
+ },
+ {
+  "text": "la",
+  "start": 73.6,
+  "end": 73.7
+ },
+ {
+  "text": "Bible,",
+  "start": 73.7,
+  "end": 73.88
+ },
+ {
+  "text": "le",
+  "start": 73.98,
+  "end": 74.26
+ },
+ {
+  "text": "vent",
+  "start": 74.26,
+  "end": 74.42
+ },
+ {
+  "text": "n'est",
+  "start": 74.42,
+  "end": 74.58
+ },
+ {
+  "text": "jamais",
+  "start": 74.58,
+  "end": 74.76
+ },
+ {
+  "text": "loin",
+  "start": 74.76,
+  "end": 75.0
+ },
+ {
+  "text": "de",
+  "start": 75.0,
+  "end": 75.16
+ },
+ {
+  "text": "l'action",
+  "start": 75.16,
+  "end": 75.34
+ },
+ {
+  "text": "de",
+  "start": 75.34,
+  "end": 75.52
+ },
+ {
+  "text": "Dieu.",
+  "start": 75.52,
+  "end": 75.68
+ },
+ {
+  "text": "Quand",
+  "start": 76.2,
+  "end": 76.56
+ },
+ {
+  "text": "Israël",
+  "start": 76.56,
+  "end": 76.92
+ },
+ {
+  "text": "est",
+  "start": 76.92,
+  "end": 77.02
+ },
+ {
+  "text": "coincé",
+  "start": 77.02,
+  "end": 77.38
+ },
+ {
+  "text": "devant",
+  "start": 77.38,
+  "end": 77.52
+ },
+ {
+  "text": "la",
+  "start": 77.52,
+  "end": 77.68
+ },
+ {
+  "text": "mer",
+  "start": 77.68,
+  "end": 77.82
+ },
+ {
+  "text": "dans",
+  "start": 77.82,
+  "end": 78.04
+ },
+ {
+  "text": "le",
+  "start": 78.04,
+  "end": 78.12
+ },
+ {
+  "text": "livre",
+  "start": 78.12,
+  "end": 78.34
+ },
+ {
+  "text": "de",
+  "start": 78.34,
+  "end": 78.46
+ },
+ {
+  "text": "l'Exode,",
+  "start": 78.46,
+  "end": 78.76
+ },
+ {
+  "text": "le",
+  "start": 78.76,
+  "end": 79.2
+ },
+ {
+  "text": "texte",
+  "start": 79.2,
+  "end": 79.5
+ },
+ {
+  "text": "dit",
+  "start": 79.5,
+  "end": 79.64
+ },
+ {
+  "text": "« ",
+  "start": 79.64,
+  "end": 79.74
+ },
+ {
+  "text": "L'Éternel",
+  "start": 79.74,
+  "end": 80.36
+ },
+ {
+  "text": "refoula",
+  "start": 80.36,
+  "end": 80.98
+ },
+ {
+  "text": "la",
+  "start": 80.98,
+  "end": 81.12
+ },
+ {
+  "text": "mer",
+  "start": 81.12,
+  "end": 81.3
+ },
+ {
+  "text": "par",
+  "start": 81.3,
+  "end": 81.5
+ },
+ {
+  "text": "un",
+  "start": 81.5,
+  "end": 81.64
+ },
+ {
+  "text": "vent",
+  "start": 81.64,
+  "end": 81.9
+ },
+ {
+  "text": "d'Orient",
+  "start": 81.9,
+  "end": 82.28
+ },
+ {
+  "text": "impétueux",
+  "start": 82.28,
+  "end": 82.74
+ },
+ {
+  "text": "toute",
+  "start": 82.74,
+  "end": 82.98
+ },
+ {
+  "text": "la",
+  "start": 82.98,
+  "end": 83.22
+ },
+ {
+  "text": "nuit",
+  "start": 83.22,
+  "end": 83.42
+ },
+ {
+  "text": "».",
+  "start": 83.42,
+  "end": 83.6
+ },
+ {
+  "text": "C'est",
+  "start": 83.6,
+  "end": 84.26
+ },
+ {
+  "text": "encore",
+  "start": 84.26,
+  "end": 84.46
+ },
+ {
+  "text": "le",
+  "start": 84.46,
+  "end": 84.64
+ },
+ {
+  "text": "mot",
+  "start": 84.64,
+  "end": 84.74
+ },
+ {
+  "text": "« ",
+  "start": 84.74,
+  "end": 84.82
+ },
+ {
+  "text": "ruach",
+  "start": 84.82,
+  "end": 84.88
+ },
+ {
+  "text": "».",
+  "start": 84.88,
+  "end": 85.06
+ },
+ {
+  "text": "Et",
+  "start": 85.06,
+  "end": 85.68
+ },
+ {
+  "text": "c'est",
+  "start": 85.68,
+  "end": 85.84
+ },
+ {
+  "text": "aussi",
+  "start": 85.84,
+  "end": 85.98
+ },
+ {
+  "text": "lui",
+  "start": 85.98,
+  "end": 86.16
+ },
+ {
+  "text": "qui",
+  "start": 86.16,
+  "end": 86.28
+ },
+ {
+  "text": "désigne",
+  "start": 86.28,
+  "end": 86.62
+ },
+ {
+  "text": "les",
+  "start": 86.62,
+  "end": 86.76
+ },
+ {
+  "text": "quatre",
+  "start": 86.76,
+  "end": 87.04
+ },
+ {
+  "text": "vents,",
+  "start": 87.04,
+  "end": 87.32
+ },
+ {
+  "text": "les",
+  "start": 87.42,
+  "end": 87.82
+ },
+ {
+  "text": "quatre",
+  "start": 87.82,
+  "end": 88.02
+ },
+ {
+  "text": "directions",
+  "start": 88.02,
+  "end": 88.46
+ },
+ {
+  "text": "d'où",
+  "start": 88.46,
+  "end": 88.72
+ },
+ {
+  "text": "le",
+  "start": 88.72,
+  "end": 88.76
+ },
+ {
+  "text": "souffle",
+  "start": 88.76,
+  "end": 89.06
+ },
+ {
+  "text": "arrive.",
+  "start": 89.06,
+  "end": 89.26
+ },
+ {
+  "text": "Premier",
+  "start": 89.92,
+  "end": 90.32
+ },
+ {
+  "text": "sens,",
+  "start": 90.32,
+  "end": 90.56
+ },
+ {
+  "text": "le",
+  "start": 90.82,
+  "end": 91.28
+ },
+ {
+  "text": "vent.",
+  "start": 91.28,
+  "end": 91.46
+ },
+ {
+  "text": "Une",
+  "start": 91.84,
+  "end": 92.24
+ },
+ {
+  "text": "force",
+  "start": 92.24,
+  "end": 92.48
+ },
+ {
+  "text": "que",
+  "start": 92.48,
+  "end": 92.64
+ },
+ {
+  "text": "l'on",
+  "start": 92.64,
+  "end": 92.78
+ },
+ {
+  "text": "ne",
+  "start": 92.78,
+  "end": 92.8
+ },
+ {
+  "text": "voit",
+  "start": 92.8,
+  "end": 93.02
+ },
+ {
+  "text": "pas,",
+  "start": 93.02,
+  "end": 93.18
+ },
+ {
+  "text": "mais",
+  "start": 93.26,
+  "end": 93.62
+ },
+ {
+  "text": "dont",
+  "start": 93.62,
+  "end": 93.74
+ },
+ {
+  "text": "on",
+  "start": 93.74,
+  "end": 93.88
+ },
+ {
+  "text": "voit",
+  "start": 93.88,
+  "end": 94.08
+ },
+ {
+  "text": "les",
+  "start": 94.08,
+  "end": 94.2
+ },
+ {
+  "text": "effets.",
+  "start": 94.2,
+  "end": 94.56
+ },
+ {
+  "text": "Si",
+  "start": 95.1,
+  "end": 95.5
+ },
+ {
+  "text": "tu",
+  "start": 95.5,
+  "end": 95.6
+ },
+ {
+  "text": "aimes",
+  "start": 95.6,
+  "end": 95.76
+ },
+ {
+  "text": "avancer",
+  "start": 95.76,
+  "end": 96.06
+ },
+ {
+  "text": "ainsi",
+  "start": 96.06,
+  "end": 96.32
+ },
+ {
+  "text": "un",
+  "start": 96.32,
+  "end": 96.7
+ },
+ {
+  "text": "mot",
+  "start": 96.7,
+  "end": 96.84
+ },
+ {
+  "text": "à",
+  "start": 96.84,
+  "end": 96.96
+ },
+ {
+  "text": "la",
+  "start": 96.96,
+  "end": 97.0
+ },
+ {
+  "text": "fois,",
+  "start": 97.0,
+  "end": 97.22
+ },
+ {
+  "text": "reste",
+  "start": 97.34,
+  "end": 97.86
+ },
+ {
+  "text": "encore",
+  "start": 97.86,
+  "end": 98.06
+ },
+ {
+  "text": "un",
+  "start": 98.06,
+  "end": 98.24
+ },
+ {
+  "text": "peu",
+  "start": 98.24,
+  "end": 98.28
+ },
+ {
+  "text": "avec",
+  "start": 98.28,
+  "end": 98.46
+ },
+ {
+  "text": "nous.",
+  "start": 98.46,
+  "end": 98.6
+ },
+ {
+  "text": "Le",
+  "start": 98.9,
+  "end": 99.3
+ },
+ {
+  "text": "chemin",
+  "start": 99.3,
+  "end": 99.52
+ },
+ {
+  "text": "devient",
+  "start": 99.52,
+  "end": 99.76
+ },
+ {
+  "text": "plus",
+  "start": 99.76,
+  "end": 100.06
+ },
+ {
+  "text": "beau",
+  "start": 100.06,
+  "end": 100.3
+ },
+ {
+  "text": "à",
+  "start": 100.3,
+  "end": 100.4
+ },
+ {
+  "text": "mesure",
+  "start": 100.4,
+  "end": 100.54
+ },
+ {
+  "text": "qu'on",
+  "start": 100.54,
+  "end": 100.76
+ },
+ {
+  "text": "avance.",
+  "start": 100.76,
+  "end": 101.02
+ },
+ {
+  "text": "Deuxième",
+  "start": 102.1,
+  "end": 102.5
+ },
+ {
+  "text": "sens,",
+  "start": 102.5,
+  "end": 102.68
+ },
+ {
+  "text": "le",
+  "start": 102.92,
+  "end": 103.4
+ },
+ {
+  "text": "souffle.",
+  "start": 103.4,
+  "end": 103.84
+ },
+ {
+  "text": "Celui",
+  "start": 104.3,
+  "end": 104.7
+ },
+ {
+  "text": "qui",
+  "start": 104.7,
+  "end": 104.82
+ },
+ {
+  "text": "sort",
+  "start": 104.82,
+  "end": 105.04
+ },
+ {
+  "text": "de",
+  "start": 105.04,
+  "end": 105.18
+ },
+ {
+  "text": "ta",
+  "start": 105.18,
+  "end": 105.26
+ },
+ {
+  "text": "bouche",
+  "start": 105.26,
+  "end": 105.52
+ },
+ {
+  "text": "en",
+  "start": 105.52,
+  "end": 105.68
+ },
+ {
+  "text": "ce",
+  "start": 105.68,
+  "end": 105.76
+ },
+ {
+  "text": "moment-même.",
+  "start": 105.76,
+  "end": 106.16
+ },
+ {
+  "text": "Dans",
+  "start": 106.78,
+  "end": 107.22
+ },
+ {
+  "text": "le",
+  "start": 107.22,
+  "end": 107.34
+ },
+ {
+  "text": "psaume",
+  "start": 107.34,
+  "end": 107.68
+ },
+ {
+  "text": "cent quatre,",
+  "start": 107.68,
+  "end": 107.98
+ },
+ {
+  "text": "le",
+  "start": 108.32,
+  "end": 108.56
+ },
+ {
+  "text": "poète",
+  "start": 108.56,
+  "end": 108.88
+ },
+ {
+  "text": "regarde",
+  "start": 108.88,
+  "end": 109.14
+ },
+ {
+  "text": "tous",
+  "start": 109.14,
+  "end": 109.54
+ },
+ {
+  "text": "les",
+  "start": 109.54,
+  "end": 109.74
+ },
+ {
+  "text": "êtres",
+  "start": 109.74,
+  "end": 109.96
+ },
+ {
+  "text": "vivants",
+  "start": 109.96,
+  "end": 110.38
+ },
+ {
+  "text": "et",
+  "start": 110.38,
+  "end": 110.66
+ },
+ {
+  "text": "dit",
+  "start": 110.66,
+  "end": 110.86
+ },
+ {
+  "text": "à",
+  "start": 110.86,
+  "end": 110.98
+ },
+ {
+  "text": "Dieu",
+  "start": 110.98,
+  "end": 111.18
+ },
+ {
+  "text": "« ",
+  "start": 111.18,
+  "end": 111.52
+ },
+ {
+  "text": "Tu",
+  "start": 111.52,
+  "end": 111.98
+ },
+ {
+  "text": "leur",
+  "start": 111.98,
+  "end": 112.18
+ },
+ {
+  "text": "retires",
+  "start": 112.18,
+  "end": 112.64
+ },
+ {
+  "text": "le",
+  "start": 112.64,
+  "end": 112.74
+ },
+ {
+  "text": "souffle,",
+  "start": 112.74,
+  "end": 113.12
+ },
+ {
+  "text": "ils",
+  "start": 113.14,
+  "end": 113.52
+ },
+ {
+  "text": "expirent",
+  "start": 113.52,
+  "end": 114.14
+ },
+ {
+  "text": "et",
+  "start": 114.14,
+  "end": 114.44
+ },
+ {
+  "text": "retournent",
+  "start": 114.44,
+  "end": 114.98
+ },
+ {
+  "text": "dans",
+  "start": 114.98,
+  "end": 115.14
+ },
+ {
+  "text": "leur",
+  "start": 115.14,
+  "end": 115.24
+ },
+ {
+  "text": "poussière.",
+  "start": 115.24,
+  "end": 115.66
+ },
+ {
+  "text": "Tu",
+  "start": 116.2,
+  "end": 116.64
+ },
+ {
+  "text": "envoies",
+  "start": 116.64,
+  "end": 117.08
+ },
+ {
+  "text": "ton",
+  "start": 117.08,
+  "end": 117.22
+ },
+ {
+  "text": "souffle,",
+  "start": 117.22,
+  "end": 117.66
+ },
+ {
+  "text": "ils",
+  "start": 117.68,
+  "end": 118.1
+ },
+ {
+  "text": "sont",
+  "start": 118.1,
+  "end": 118.26
+ },
+ {
+  "text": "créés",
+  "start": 118.26,
+  "end": 118.66
+ },
+ {
+  "text": "et",
+  "start": 118.66,
+  "end": 119.14
+ },
+ {
+  "text": "tu",
+  "start": 119.14,
+  "end": 119.34
+ },
+ {
+  "text": "renouvelles",
+  "start": 119.34,
+  "end": 119.92
+ },
+ {
+  "text": "la",
+  "start": 119.92,
+  "end": 120.1
+ },
+ {
+  "text": "face",
+  "start": 120.1,
+  "end": 120.34
+ },
+ {
+  "text": "de",
+  "start": 120.34,
+  "end": 120.5
+ },
+ {
+  "text": "la",
+  "start": 120.5,
+  "end": 120.6
+ },
+ {
+  "text": "terre. »",
+  "start": 120.6,
+  "end": 121.8
+ },
+ {
+  "text": "Ici,",
+  "start": 121.8,
+  "end": 122.14
+ },
+ {
+  "text": "ruach",
+  "start": 122.2,
+  "end": 122.72
+ },
+ {
+  "text": "est",
+  "start": 122.72,
+  "end": 123.0
+ },
+ {
+  "text": "le",
+  "start": 123.0,
+  "end": 123.14
+ },
+ {
+  "text": "souffle",
+  "start": 123.14,
+  "end": 123.52
+ },
+ {
+  "text": "de",
+  "start": 123.52,
+  "end": 123.56
+ },
+ {
+  "text": "vie.",
+  "start": 123.56,
+  "end": 123.72
+ },
+ {
+  "text": "Quand",
+  "start": 124.0,
+  "end": 124.44
+ },
+ {
+  "text": "il",
+  "start": 124.44,
+  "end": 124.6
+ },
+ {
+  "text": "part,",
+  "start": 124.6,
+  "end": 124.8
+ },
+ {
+  "text": "la",
+  "start": 124.96,
+  "end": 125.3
+ },
+ {
+  "text": "vie",
+  "start": 125.3,
+  "end": 125.42
+ },
+ {
+  "text": "s'arrête.",
+  "start": 125.42,
+  "end": 125.7
+ },
+ {
+  "text": "Quand",
+  "start": 125.92,
+  "end": 126.36
+ },
+ {
+  "text": "il",
+  "start": 126.36,
+  "end": 126.52
+ },
+ {
+  "text": "est",
+  "start": 126.52,
+  "end": 126.64
+ },
+ {
+  "text": "envoyé,",
+  "start": 126.64,
+  "end": 127.1
+ },
+ {
+  "text": "la",
+  "start": 127.14,
+  "end": 127.48
+ },
+ {
+  "text": "vie",
+  "start": 127.48,
+  "end": 127.68
+ },
+ {
+  "text": "recommence.",
+  "start": 127.68,
+  "end": 128.24
+ },
+ {
+  "text": "Un",
+  "start": 128.74,
+  "end": 129.18
+ },
+ {
+  "text": "détail",
+  "start": 129.18,
+  "end": 129.46
+ },
+ {
+  "text": "à",
+  "start": 129.46,
+  "end": 129.62
+ },
+ {
+  "text": "connaître.",
+  "start": 129.62,
+  "end": 130.0
+ },
+ {
+  "text": "Dans",
+  "start": 130.12,
+  "end": 130.5
+ },
+ {
+  "text": "le",
+  "start": 130.5,
+  "end": 130.62
+ },
+ {
+  "text": "récit",
+  "start": 130.62,
+  "end": 130.94
+ },
+ {
+  "text": "où",
+  "start": 130.94,
+  "end": 131.1
+ },
+ {
+  "text": "Dieu",
+  "start": 131.1,
+  "end": 131.38
+ },
+ {
+  "text": "forme",
+  "start": 131.38,
+  "end": 131.76
+ },
+ {
+  "text": "l'homme,",
+  "start": 131.76,
+  "end": 131.98
+ },
+ {
+  "text": "au",
+  "start": 132.1,
+  "end": 132.26
+ },
+ {
+  "text": "chapitre",
+  "start": 132.26,
+  "end": 132.6
+ },
+ {
+  "text": "deux",
+  "start": 132.6,
+  "end": 132.84
+ },
+ {
+  "text": "de",
+  "start": 132.84,
+  "end": 132.96
+ },
+ {
+  "text": "la",
+  "start": 132.96,
+  "end": 133.06
+ },
+ {
+  "text": "Genèse,",
+  "start": 133.06,
+  "end": 133.4
+ },
+ {
+  "text": "le",
+  "start": 133.6,
+  "end": 134.0
+ },
+ {
+  "text": "texte",
+  "start": 134.0,
+  "end": 134.38
+ },
+ {
+  "text": "parle",
+  "start": 134.38,
+  "end": 134.58
+ },
+ {
+  "text": "d'un",
+  "start": 134.58,
+  "end": 134.76
+ },
+ {
+  "text": "souffle",
+  "start": 134.76,
+  "end": 135.18
+ },
+ {
+  "text": "de",
+  "start": 135.18,
+  "end": 135.24
+ },
+ {
+  "text": "de",
+  "start": 135.24,
+  "end": 135.24
+ },
+ {
+  "text": "vie.",
+  "start": 135.24,
+  "end": 135.42
+ },
+ {
+  "text": "Mais",
+  "start": 135.78,
+  "end": 136.22
+ },
+ {
+  "text": "le",
+  "start": 136.22,
+  "end": 136.36
+ },
+ {
+  "text": "mot",
+  "start": 136.36,
+  "end": 136.52
+ },
+ {
+  "text": "hébreu",
+  "start": 136.52,
+  "end": 136.88
+ },
+ {
+  "text": "n'est",
+  "start": 136.88,
+  "end": 137.08
+ },
+ {
+  "text": "pas",
+  "start": 137.08,
+  "end": 137.22
+ },
+ {
+  "text": "ruach,",
+  "start": 137.22,
+  "end": 137.58
+ },
+ {
+  "text": "c'est",
+  "start": 137.74,
+  "end": 138.2
+ },
+ {
+  "text": "un",
+  "start": 138.2,
+  "end": 138.28
+ },
+ {
+  "text": "autre",
+  "start": 138.28,
+  "end": 138.5
+ },
+ {
+  "text": "mot,",
+  "start": 138.5,
+  "end": 138.72
+ },
+ {
+  "text": "neshamah.",
+  "start": 138.86,
+  "end": 139.46
+ },
+ {
+  "text": "Les",
+  "start": 139.94,
+  "end": 140.38
+ },
+ {
+  "text": "deux",
+  "start": 140.38,
+  "end": 140.58
+ },
+ {
+  "text": "mots",
+  "start": 140.58,
+  "end": 140.76
+ },
+ {
+  "text": "sont",
+  "start": 140.76,
+  "end": 140.96
+ },
+ {
+  "text": "proches,",
+  "start": 140.96,
+  "end": 141.34
+ },
+ {
+  "text": "mais",
+  "start": 141.38,
+  "end": 141.68
+ },
+ {
+  "text": "ils",
+  "start": 141.68,
+  "end": 141.84
+ },
+ {
+  "text": "ne",
+  "start": 141.84,
+  "end": 141.92
+ },
+ {
+  "text": "sont",
+  "start": 141.92,
+  "end": 142.16
+ },
+ {
+  "text": "pas",
+  "start": 142.16,
+  "end": 142.38
+ },
+ {
+  "text": "interchangeables.",
+  "start": 142.38,
+  "end": 143.18
+ },
+ {
+  "text": "La",
+  "start": 143.4,
+  "end": 143.82
+ },
+ {
+  "text": "Bible",
+  "start": 143.82,
+  "end": 144.04
+ },
+ {
+  "text": "a",
+  "start": 144.04,
+  "end": 144.18
+ },
+ {
+  "text": "plusieurs",
+  "start": 144.18,
+  "end": 144.5
+ },
+ {
+  "text": "mots",
+  "start": 144.5,
+  "end": 144.84
+ },
+ {
+  "text": "pour",
+  "start": 144.84,
+  "end": 145.02
+ },
+ {
+  "text": "le",
+  "start": 145.02,
+  "end": 145.14
+ },
+ {
+  "text": "souffle,",
+  "start": 145.14,
+  "end": 145.46
+ },
+ {
+  "text": "et",
+  "start": 145.46,
+  "end": 145.78
+ },
+ {
+  "text": "ruach",
+  "start": 145.78,
+  "end": 146.12
+ },
+ {
+  "text": "est",
+  "start": 146.12,
+  "end": 146.32
+ },
+ {
+  "text": "souvent",
+  "start": 146.32,
+  "end": 146.62
+ },
+ {
+  "text": "lié",
+  "start": 146.62,
+  "end": 146.98
+ },
+ {
+  "text": "au",
+  "start": 146.98,
+  "end": 147.1
+ },
+ {
+  "text": "mouvement",
+  "start": 147.1,
+  "end": 147.46
+ },
+ {
+  "text": "et",
+  "start": 147.46,
+  "end": 147.74
+ },
+ {
+  "text": "à",
+  "start": 147.74,
+  "end": 147.86
+ },
+ {
+  "text": "la",
+  "start": 147.86,
+  "end": 147.94
+ },
+ {
+  "text": "force.",
+  "start": 147.94,
+  "end": 148.26
+ },
+ {
+  "text": "L'ecclésiaste",
+  "start": 148.78,
+  "end": 149.7
+ },
+ {
+  "text": "qui",
+  "start": 149.7,
+  "end": 150.02
+ },
+ {
+  "text": "parle",
+  "start": 150.02,
+  "end": 150.24
+ },
+ {
+  "text": "de",
+  "start": 150.24,
+  "end": 150.4
+ },
+ {
+  "text": "la",
+  "start": 150.4,
+  "end": 150.5
+ },
+ {
+  "text": "mort",
+  "start": 150.5,
+  "end": 150.7
+ },
+ {
+  "text": "écrit",
+  "start": 150.7,
+  "end": 151.12
+ },
+ {
+  "text": "« ",
+  "start": 151.12,
+  "end": 151.48
+ },
+ {
+  "text": "la",
+  "start": 151.48,
+  "end": 151.86
+ },
+ {
+  "text": "poussière",
+  "start": 151.86,
+  "end": 152.38
+ },
+ {
+  "text": "retourne",
+  "start": 152.38,
+  "end": 152.9
+ },
+ {
+  "text": "à",
+  "start": 152.9,
+  "end": 152.96
+ },
+ {
+  "text": "la",
+  "start": 152.96,
+  "end": 153.04
+ },
+ {
+  "text": "terre",
+  "start": 153.04,
+  "end": 153.28
+ },
+ {
+  "text": "comme",
+  "start": 153.28,
+  "end": 153.72
+ },
+ {
+  "text": "elle",
+  "start": 153.72,
+  "end": 153.88
+ },
+ {
+  "text": "y",
+  "start": 153.88,
+  "end": 153.98
+ },
+ {
+  "text": "avait",
+  "start": 153.98,
+  "end": 154.12
+ },
+ {
+  "text": "été,",
+  "start": 154.12,
+  "end": 154.38
+ },
+ {
+  "text": "et",
+  "start": 154.54,
+  "end": 154.94
+ },
+ {
+  "text": "l'esprit",
+  "start": 154.94,
+  "end": 155.34
+ },
+ {
+  "text": "retourne",
+  "start": 155.34,
+  "end": 155.92
+ },
+ {
+  "text": "à",
+  "start": 155.92,
+  "end": 155.94
+ },
+ {
+  "text": "Dieu",
+  "start": 155.94,
+  "end": 156.16
+ },
+ {
+  "text": "qui",
+  "start": 156.16,
+  "end": 156.42
+ },
+ {
+  "text": "l'a",
+  "start": 156.42,
+  "end": 156.62
+ },
+ {
+  "text": "donné",
+  "start": 156.62,
+  "end": 156.8
+ },
+ {
+  "text": "».",
+  "start": 156.8,
+  "end": 157.08
+ },
+ {
+  "text": "Voilà",
+  "start": 157.08,
+  "end": 157.8
+ },
+ {
+  "text": "le",
+  "start": 157.8,
+  "end": 158.04
+ },
+ {
+  "text": "troisième",
+  "start": 158.04,
+  "end": 158.48
+ },
+ {
+  "text": "sens",
+  "start": 158.48,
+  "end": 158.76
+ },
+ {
+  "text": "qui",
+  "start": 158.76,
+  "end": 158.96
+ },
+ {
+  "text": "apparaît,",
+  "start": 158.96,
+  "end": 159.32
+ },
+ {
+  "text": "l'esprit.",
+  "start": 159.42,
+  "end": 160.16
+ },
+ {
+  "text": "Troisième",
+  "start": 160.68,
+  "end": 161.12
+ },
+ {
+  "text": "sens,",
+  "start": 161.12,
+  "end": 161.42
+ },
+ {
+  "text": "l'esprit.",
+  "start": 161.62,
+  "end": 162.24
+ },
+ {
+  "text": "La",
+  "start": 162.44,
+  "end": 162.88
+ },
+ {
+  "text": "vie",
+  "start": 162.88,
+  "end": 163.08
+ },
+ {
+  "text": "intérieure",
+  "start": 163.08,
+  "end": 163.74
+ },
+ {
+  "text": "d'une",
+  "start": 163.74,
+  "end": 163.86
+ },
+ {
+  "text": "personne",
+  "start": 163.86,
+  "end": 164.16
+ },
+ {
+  "text": "et",
+  "start": 164.16,
+  "end": 164.6
+ },
+ {
+  "text": "et",
+  "start": 164.6,
+  "end": 164.64
+ },
+ {
+  "text": "l'Esprit",
+  "start": 164.64,
+  "end": 165.04
+ },
+ {
+  "text": "de",
+  "start": 165.04,
+  "end": 165.12
+ },
+ {
+  "text": "Dieu.",
+  "start": 165.12,
+  "end": 165.3
+ },
+ {
+  "text": "Dès",
+  "start": 165.9,
+  "end": 166.3
+ },
+ {
+  "text": "le",
+  "start": 166.3,
+  "end": 166.38
+ },
+ {
+  "text": "deuxième",
+  "start": 166.38,
+  "end": 166.72
+ },
+ {
+  "text": "verset",
+  "start": 166.72,
+  "end": 167.16
+ },
+ {
+  "text": "de",
+  "start": 167.16,
+  "end": 167.22
+ },
+ {
+  "text": "la",
+  "start": 167.22,
+  "end": 167.3
+ },
+ {
+  "text": "Bible,",
+  "start": 167.3,
+  "end": 167.46
+ },
+ {
+  "text": "Ruach",
+  "start": 167.7,
+  "end": 168.08
+ },
+ {
+  "text": "est",
+  "start": 168.08,
+  "end": 168.28
+ },
+ {
+  "text": "là.",
+  "start": 168.28,
+  "end": 168.46
+ },
+ {
+  "text": "L'Esprit",
+  "start": 168.72,
+  "end": 169.48
+ },
+ {
+  "text": "de",
+  "start": 169.48,
+  "end": 169.56
+ },
+ {
+  "text": "Dieu",
+  "start": 169.56,
+  "end": 169.8
+ },
+ {
+  "text": "se",
+  "start": 169.8,
+  "end": 169.92
+ },
+ {
+  "text": "mouvait",
+  "start": 169.92,
+  "end": 170.32
+ },
+ {
+  "text": "au-dessus",
+  "start": 170.32,
+  "end": 170.78
+ },
+ {
+  "text": "des",
+  "start": 170.78,
+  "end": 170.96
+ },
+ {
+  "text": "eaux.",
+  "start": 170.96,
+  "end": 171.16
+ },
+ {
+  "text": "Ici,",
+  "start": 171.54,
+  "end": 171.94
+ },
+ {
+  "text": "soyons",
+  "start": 172.1,
+  "end": 172.64
+ },
+ {
+  "text": "honnêtes,",
+  "start": 172.64,
+  "end": 172.88
+ },
+ {
+  "text": "les",
+  "start": 173.02,
+  "end": 173.22
+ },
+ {
+  "text": "traducteurs",
+  "start": 173.22,
+  "end": 173.72
+ },
+ {
+  "text": "ne",
+  "start": 173.72,
+  "end": 173.82
+ },
+ {
+  "text": "sont",
+  "start": 173.82,
+  "end": 173.98
+ },
+ {
+  "text": "pas",
+  "start": 173.98,
+  "end": 174.14
+ },
+ {
+  "text": "d'accord.",
+  "start": 174.14,
+  "end": 174.38
+ },
+ {
+  "text": "Certains",
+  "start": 175.02,
+  "end": 175.42
+ },
+ {
+  "text": "écrivent",
+  "start": 175.42,
+  "end": 175.72
+ },
+ {
+  "text": "l'Esprit",
+  "start": 175.72,
+  "end": 176.28
+ },
+ {
+  "text": "de",
+  "start": 176.28,
+  "end": 176.38
+ },
+ {
+  "text": "Dieu,",
+  "start": 176.38,
+  "end": 176.58
+ },
+ {
+  "text": "d'autres",
+  "start": 176.7,
+  "end": 177.3
+ },
+ {
+  "text": "un",
+  "start": 177.3,
+  "end": 177.56
+ },
+ {
+  "text": "vent",
+  "start": 177.56,
+  "end": 177.88
+ },
+ {
+  "text": "de",
+  "start": 177.88,
+  "end": 178.04
+ },
+ {
+  "text": "Dieu,",
+  "start": 178.04,
+  "end": 178.22
+ },
+ {
+  "text": "ou",
+  "start": 178.3,
+  "end": 178.48
+ },
+ {
+  "text": "un",
+  "start": 178.48,
+  "end": 178.6
+ },
+ {
+  "text": "vent",
+  "start": 178.6,
+  "end": 178.84
+ },
+ {
+  "text": "violent.",
+  "start": 178.84,
+  "end": 179.1
+ },
+ {
+  "text": "Le",
+  "start": 179.5,
+  "end": 179.9
+ },
+ {
+  "text": "mot",
+  "start": 179.9,
+  "end": 180.06
+ },
+ {
+  "text": "hébreu",
+  "start": 180.06,
+  "end": 180.32
+ },
+ {
+  "text": "permet",
+  "start": 180.32,
+  "end": 180.56
+ },
+ {
+  "text": "les",
+  "start": 180.56,
+  "end": 180.76
+ },
+ {
+  "text": "deux",
+  "start": 180.76,
+  "end": 180.9
+ },
+ {
+  "text": "lectures,",
+  "start": 180.9,
+  "end": 181.18
+ },
+ {
+  "text": "et",
+  "start": 181.36,
+  "end": 181.58
+ },
+ {
+  "text": "le",
+  "start": 181.58,
+  "end": 181.68
+ },
+ {
+  "text": "texte",
+  "start": 181.68,
+  "end": 182.0
+ },
+ {
+  "text": "ne",
+  "start": 182.0,
+  "end": 182.04
+ },
+ {
+  "text": "tranche",
+  "start": 182.04,
+  "end": 182.32
+ },
+ {
+  "text": "pas.",
+  "start": 182.32,
+  "end": 182.48
+ },
+ {
+  "text": "Ruach",
+  "start": 182.98,
+  "end": 183.38
+ },
+ {
+  "text": "peut",
+  "start": 183.38,
+  "end": 183.58
+ },
+ {
+  "text": "aussi",
+  "start": 183.58,
+  "end": 183.76
+ },
+ {
+  "text": "désigner",
+  "start": 183.76,
+  "end": 184.16
+ },
+ {
+  "text": "l'intérieur",
+  "start": 184.16,
+  "end": 184.58
+ },
+ {
+  "text": "d'une",
+  "start": 184.58,
+  "end": 185.0
+ },
+ {
+  "text": "personne.",
+  "start": 185.0,
+  "end": 185.28
+ },
+ {
+  "text": "Quand",
+  "start": 185.54,
+  "end": 185.92
+ },
+ {
+  "text": "Jacob",
+  "start": 185.92,
+  "end": 186.16
+ },
+ {
+  "text": "apprend",
+  "start": 186.16,
+  "end": 186.52
+ },
+ {
+  "text": "que",
+  "start": 186.52,
+  "end": 186.64
+ },
+ {
+  "text": "son",
+  "start": 186.64,
+  "end": 186.78
+ },
+ {
+  "text": "fils",
+  "start": 186.78,
+  "end": 186.96
+ },
+ {
+  "text": "Joseph",
+  "start": 186.96,
+  "end": 187.26
+ },
+ {
+  "text": "est",
+  "start": 187.26,
+  "end": 187.52
+ },
+ {
+  "text": "vivant,",
+  "start": 187.52,
+  "end": 187.86
+ },
+ {
+  "text": "la",
+  "start": 187.94,
+  "end": 188.18
+ },
+ {
+  "text": "Bible",
+  "start": 188.18,
+  "end": 188.38
+ },
+ {
+  "text": "dit",
+  "start": 188.38,
+  "end": 188.56
+ },
+ {
+  "text": "que",
+  "start": 188.56,
+  "end": 188.76
+ },
+ {
+  "text": "l'Esprit",
+  "start": 188.76,
+  "end": 189.34
+ },
+ {
+  "text": "de",
+  "start": 189.34,
+  "end": 189.44
+ },
+ {
+  "text": "Jacob",
+  "start": 189.44,
+  "end": 189.7
+ },
+ {
+  "text": "se",
+  "start": 189.7,
+  "end": 189.94
+ },
+ {
+  "text": "ranima.",
+  "start": 189.94,
+  "end": 190.32
+ },
+ {
+  "text": "Et",
+  "start": 190.64,
+  "end": 191.04
+ },
+ {
+  "text": "le",
+  "start": 191.04,
+  "end": 191.12
+ },
+ {
+  "text": "Le",
+  "start": 191.12,
+  "end": 191.14
+ },
+ {
+  "text": "psaume",
+  "start": 191.14,
+  "end": 191.34
+ },
+ {
+  "text": "trente-quatre",
+  "start": 191.34,
+  "end": 191.68
+ },
+ {
+  "text": "promet",
+  "start": 191.68,
+  "end": 192.1
+ },
+ {
+  "text": "« ",
+  "start": 192.1,
+  "end": 192.3
+ },
+ {
+  "text": "L'Éternel",
+  "start": 192.3,
+  "end": 193.24
+ },
+ {
+  "text": "est",
+  "start": 193.24,
+  "end": 193.42
+ },
+ {
+  "text": "près",
+  "start": 193.42,
+  "end": 193.7
+ },
+ {
+  "text": "de",
+  "start": 193.7,
+  "end": 193.9
+ },
+ {
+  "text": "ceux",
+  "start": 193.9,
+  "end": 194.1
+ },
+ {
+  "text": "qui",
+  "start": 194.1,
+  "end": 194.2
+ },
+ {
+  "text": "ont",
+  "start": 194.2,
+  "end": 194.34
+ },
+ {
+  "text": "le",
+  "start": 194.34,
+  "end": 194.46
+ },
+ {
+  "text": "cœur",
+  "start": 194.46,
+  "end": 194.6
+ },
+ {
+  "text": "brisé,",
+  "start": 194.6,
+  "end": 194.96
+ },
+ {
+  "text": "et",
+  "start": 195.06,
+  "end": 195.46
+ },
+ {
+  "text": "il",
+  "start": 195.46,
+  "end": 195.58
+ },
+ {
+  "text": "sauve",
+  "start": 195.58,
+  "end": 196.02
+ },
+ {
+  "text": "ceux",
+  "start": 196.02,
+  "end": 196.12
+ },
+ {
+  "text": "qui",
+  "start": 196.12,
+  "end": 196.34
+ },
+ {
+  "text": "ont",
+  "start": 196.34,
+  "end": 196.48
+ },
+ {
+  "text": "l'esprit",
+  "start": 196.48,
+  "end": 196.82
+ },
+ {
+  "text": "dans",
+  "start": 196.82,
+  "end": 197.02
+ },
+ {
+  "text": "l'abattement. »",
+  "start": 197.02,
+  "end": 197.94
+ },
+ {
+  "text": "Un",
+  "start": 197.94,
+  "end": 198.02
+ },
+ {
+  "text": "seul",
+  "start": 198.02,
+  "end": 198.28
+ },
+ {
+  "text": "mot,",
+  "start": 198.28,
+  "end": 198.46
+ },
+ {
+  "text": "un",
+  "start": 198.56,
+  "end": 198.96
+ },
+ {
+  "text": "vent,",
+  "start": 198.96,
+  "end": 199.22
+ },
+ {
+  "text": "un",
+  "start": 199.36,
+  "end": 199.76
+ },
+ {
+  "text": "souffle,",
+  "start": 199.76,
+  "end": 200.22
+ },
+ {
+  "text": "un",
+  "start": 200.24,
+  "end": 200.58
+ },
+ {
+  "text": "esprit.",
+  "start": 200.58,
+  "end": 200.94
+ },
+ {
+  "text": "Mais",
+  "start": 201.42,
+  "end": 201.82
+ },
+ {
+  "text": "où",
+  "start": 201.82,
+  "end": 202.06
+ },
+ {
+  "text": "voit-on",
+  "start": 202.06,
+  "end": 202.46
+ },
+ {
+  "text": "les",
+  "start": 202.46,
+  "end": 202.6
+ },
+ {
+  "text": "trois",
+  "start": 202.6,
+  "end": 202.84
+ },
+ {
+  "text": "réunis?",
+  "start": 202.84,
+  "end": 203.52
+ },
+ {
+  "text": "Dans",
+  "start": 203.52,
+  "end": 204.1
+ },
+ {
+  "text": "une",
+  "start": 204.1,
+  "end": 204.3
+ },
+ {
+  "text": "vallée,",
+  "start": 204.3,
+  "end": 204.6
+ },
+ {
+  "text": "au",
+  "start": 204.66,
+  "end": 204.96
+ },
+ {
+  "text": "livre",
+  "start": 204.96,
+  "end": 205.14
+ },
+ {
+  "text": "d'Ézéchiel.",
+  "start": 205.14,
+  "end": 205.66
+ },
+ {
+  "text": "Chapitre",
+  "start": 206.28,
+  "end": 206.68
+ },
+ {
+  "text": "trente-sept.",
+  "start": 206.68,
+  "end": 206.98
+ },
+ {
+  "text": "Le",
+  "start": 207.28,
+  "end": 207.68
+ },
+ {
+  "text": "prophète",
+  "start": 207.68,
+  "end": 207.98
+ },
+ {
+  "text": "se",
+  "start": 207.98,
+  "end": 208.08
+ },
+ {
+  "text": "tient",
+  "start": 208.08,
+  "end": 208.3
+ },
+ {
+  "text": "au",
+  "start": 208.3,
+  "end": 208.38
+ },
+ {
+  "text": "milieu",
+  "start": 208.38,
+  "end": 208.54
+ },
+ {
+  "text": "d'une",
+  "start": 208.54,
+  "end": 208.74
+ },
+ {
+  "text": "vallée",
+  "start": 208.74,
+  "end": 209.02
+ },
+ {
+  "text": "remplie",
+  "start": 209.02,
+  "end": 209.52
+ },
+ {
+  "text": "d'ossements",
+  "start": 209.52,
+  "end": 209.8
+ },
+ {
+  "text": "secs.",
+  "start": 209.8,
+  "end": 210.18
+ },
+ {
+  "text": "Dieu",
+  "start": 210.62,
+  "end": 211.02
+ },
+ {
+  "text": "lui",
+  "start": 211.02,
+  "end": 211.16
+ },
+ {
+  "text": "demande",
+  "start": 211.16,
+  "end": 211.4
+ },
+ {
+  "text": "de",
+  "start": 211.4,
+  "end": 211.58
+ },
+ {
+  "text": "parler",
+  "start": 211.58,
+  "end": 211.82
+ },
+ {
+  "text": "à",
+  "start": 211.82,
+  "end": 212.0
+ },
+ {
+  "text": "ces",
+  "start": 212.0,
+  "end": 212.14
+ },
+ {
+  "text": "eaux.",
+  "start": 212.14,
+  "end": 212.32
+ },
+ {
+  "text": "Puis",
+  "start": 212.64,
+  "end": 213.04
+ },
+ {
+  "text": "lui",
+  "start": 213.04,
+  "end": 213.18
+ },
+ {
+  "text": "dit",
+  "start": 213.18,
+  "end": 213.42
+ },
+ {
+  "text": "« ",
+  "start": 213.42,
+  "end": 213.56
+ },
+ {
+  "text": "Prophétise",
+  "start": 213.56,
+  "end": 214.46
+ },
+ {
+  "text": "et",
+  "start": 214.46,
+  "end": 214.68
+ },
+ {
+  "text": "parle",
+  "start": 214.68,
+  "end": 215.06
+ },
+ {
+  "text": "à",
+  "start": 215.06,
+  "end": 215.2
+ },
+ {
+  "text": "l'esprit. »",
+  "start": 215.2,
+  "end": 216.1
+ },
+ {
+  "text": "« ",
+  "start": 216.1,
+  "end": 216.28
+ },
+ {
+  "text": "Prophétise,",
+  "start": 216.28,
+  "end": 217.08
+ },
+ {
+  "text": "fils",
+  "start": 217.1,
+  "end": 217.28
+ },
+ {
+  "text": "de",
+  "start": 217.28,
+  "end": 217.46
+ },
+ {
+  "text": "l'homme,",
+  "start": 217.46,
+  "end": 217.66
+ },
+ {
+  "text": "et",
+  "start": 217.76,
+  "end": 218.06
+ },
+ {
+  "text": "dis",
+  "start": 218.06,
+  "end": 218.28
+ },
+ {
+  "text": "à",
+  "start": 218.28,
+  "end": 218.46
+ },
+ {
+  "text": "l'esprit.",
+  "start": 218.46,
+  "end": 218.84
+ },
+ {
+  "text": "Ainsi",
+  "start": 219.22,
+  "end": 219.72
+ },
+ {
+  "text": "parle",
+  "start": 219.72,
+  "end": 220.04
+ },
+ {
+  "text": "le",
+  "start": 220.04,
+  "end": 220.16
+ },
+ {
+  "text": "Seigneur,",
+  "start": 220.16,
+  "end": 220.64
+ },
+ {
+  "text": "l'Éternel.",
+  "start": 220.64,
+  "end": 221.24
+ },
+ {
+  "text": "Esprit,",
+  "start": 221.7,
+  "end": 222.2
+ },
+ {
+  "text": "viens",
+  "start": 222.3,
+  "end": 222.88
+ },
+ {
+  "text": "des",
+  "start": 222.88,
+  "end": 223.12
+ },
+ {
+  "text": "quatre",
+  "start": 223.12,
+  "end": 223.36
+ },
+ {
+  "text": "vents,",
+  "start": 223.36,
+  "end": 223.7
+ },
+ {
+  "text": "souffle",
+  "start": 223.82,
+  "end": 224.54
+ },
+ {
+  "text": "sur",
+  "start": 224.54,
+  "end": 224.68
+ },
+ {
+  "text": "ces",
+  "start": 224.68,
+  "end": 224.84
+ },
+ {
+  "text": "morts",
+  "start": 224.84,
+  "end": 225.24
+ },
+ {
+  "text": "et",
+  "start": 225.24,
+  "end": 225.6
+ },
+ {
+  "text": "qu'ils",
+  "start": 225.6,
+  "end": 225.82
+ },
+ {
+  "text": "revivent.",
+  "start": 225.82,
+  "end": 226.44
+ },
+ {
+  "text": "Dans",
+  "start": 227.3,
+  "end": 227.8
+ },
+ {
+  "text": "l'hébreu,",
+  "start": 227.8,
+  "end": 228.2
+ },
+ {
+  "text": "un",
+  "start": 228.22,
+  "end": 228.54
+ },
+ {
+  "text": "seul",
+  "start": 228.54,
+  "end": 228.84
+ },
+ {
+  "text": "mot",
+  "start": 228.84,
+  "end": 229.04
+ },
+ {
+  "text": "revient",
+  "start": 229.04,
+  "end": 229.44
+ },
+ {
+  "text": "sans",
+  "start": 229.44,
+  "end": 229.7
+ },
+ {
+  "text": "cesse",
+  "start": 229.7,
+  "end": 230.1
+ },
+ {
+  "text": "dans",
+  "start": 230.1,
+  "end": 230.24
+ },
+ {
+  "text": "ce",
+  "start": 230.24,
+  "end": 230.36
+ },
+ {
+  "text": "chapitre.",
+  "start": 230.36,
+  "end": 230.84
+ },
+ {
+  "text": "ruach,",
+  "start": 231.04,
+  "end": 231.56
+ },
+ {
+  "text": "vent,",
+  "start": 231.76,
+  "end": 232.5
+ },
+ {
+  "text": "souffle,",
+  "start": 232.68,
+  "end": 233.52
+ },
+ {
+  "text": "esprit.",
+  "start": 233.52,
+  "end": 234.1
+ },
+ {
+  "text": "Le",
+  "start": 234.74,
+  "end": 235.0
+ },
+ {
+  "text": "texte",
+  "start": 235.0,
+  "end": 235.42
+ },
+ {
+  "text": "joue",
+  "start": 235.42,
+  "end": 235.56
+ },
+ {
+  "text": "avec",
+  "start": 235.56,
+  "end": 235.78
+ },
+ {
+  "text": "les",
+  "start": 235.78,
+  "end": 235.96
+ },
+ {
+  "text": "trois",
+  "start": 235.96,
+  "end": 236.2
+ },
+ {
+  "text": "sens",
+  "start": 236.2,
+  "end": 236.48
+ },
+ {
+  "text": "à",
+  "start": 236.48,
+  "end": 236.64
+ },
+ {
+  "text": "la",
+  "start": 236.64,
+  "end": 236.68
+ },
+ {
+  "text": "fois",
+  "start": 236.68,
+  "end": 236.94
+ },
+ {
+  "text": "et",
+  "start": 236.94,
+  "end": 237.2
+ },
+ {
+  "text": "plusieurs",
+  "start": 237.2,
+  "end": 237.56
+ },
+ {
+  "text": "spécialistes",
+  "start": 237.56,
+  "end": 238.24
+ },
+ {
+  "text": "le",
+  "start": 238.24,
+  "end": 238.36
+ },
+ {
+  "text": "relèvent.",
+  "start": 238.36,
+  "end": 238.68
+ },
+ {
+  "text": "Le",
+  "start": 239.18,
+  "end": 239.7
+ },
+ {
+  "text": "texte",
+  "start": 239.7,
+  "end": 240.04
+ },
+ {
+  "text": "donne",
+  "start": 240.04,
+  "end": 240.2
+ },
+ {
+  "text": "lui-même",
+  "start": 240.2,
+  "end": 240.64
+ },
+ {
+  "text": "la",
+  "start": 240.64,
+  "end": 240.8
+ },
+ {
+  "text": "clé",
+  "start": 240.8,
+  "end": 241.0
+ },
+ {
+  "text": "de",
+  "start": 241.0,
+  "end": 241.08
+ },
+ {
+  "text": "l'image.",
+  "start": 241.08,
+  "end": 241.26
+ },
+ {
+  "text": "ces",
+  "start": 241.62,
+  "end": 241.92
+ },
+ {
+  "text": "ossements,",
+  "start": 241.92,
+  "end": 242.22
+ },
+ {
+  "text": "c'est",
+  "start": 242.36,
+  "end": 242.72
+ },
+ {
+  "text": "toute",
+  "start": 242.72,
+  "end": 243.04
+ },
+ {
+  "text": "la",
+  "start": 243.04,
+  "end": 243.26
+ },
+ {
+  "text": "maison",
+  "start": 243.26,
+  "end": 243.52
+ },
+ {
+  "text": "d'Israël,",
+  "start": 243.52,
+  "end": 244.06
+ },
+ {
+  "text": "découragée,",
+  "start": 244.1,
+  "end": 244.9
+ },
+ {
+  "text": "en",
+  "start": 244.96,
+  "end": 245.32
+ },
+ {
+  "text": "exil.",
+  "start": 245.32,
+  "end": 245.68
+ },
+ {
+  "text": "Et",
+  "start": 246.24,
+  "end": 246.64
+ },
+ {
+  "text": "la",
+  "start": 246.64,
+  "end": 246.76
+ },
+ {
+  "text": "promesse",
+  "start": 246.76,
+  "end": 247.08
+ },
+ {
+  "text": "finale",
+  "start": 247.08,
+  "end": 247.3
+ },
+ {
+  "text": "tient",
+  "start": 247.3,
+  "end": 247.88
+ },
+ {
+  "text": "en",
+  "start": 247.88,
+  "end": 247.96
+ },
+ {
+  "text": "une",
+  "start": 247.96,
+  "end": 248.14
+ },
+ {
+  "text": "phrase.",
+  "start": 248.14,
+  "end": 248.46
+ },
+ {
+  "text": "« ",
+  "start": 248.78,
+  "end": 249.18
+ },
+ {
+  "text": "Je",
+  "start": 249.18,
+  "end": 249.3
+ },
+ {
+  "text": "mettrai",
+  "start": 249.3,
+  "end": 249.8
+ },
+ {
+  "text": "mon",
+  "start": 249.8,
+  "end": 249.94
+ },
+ {
+  "text": "esprit",
+  "start": 249.94,
+  "end": 250.34
+ },
+ {
+  "text": "en",
+  "start": 250.34,
+  "end": 250.46
+ },
+ {
+  "text": "vous,",
+  "start": 250.46,
+  "end": 250.66
+ },
+ {
+  "text": "et",
+  "start": 250.76,
+  "end": 251.2
+ },
+ {
+  "text": "vous",
+  "start": 251.2,
+  "end": 251.34
+ },
+ {
+  "text": "vivrez. »",
+  "start": 251.34,
+  "end": 252.62
+ },
+ {
+  "text": "Le",
+  "start": 252.62,
+  "end": 253.14
+ },
+ {
+  "text": "Nouveau",
+  "start": 253.14,
+  "end": 253.4
+ },
+ {
+  "text": "Testament,",
+  "start": 253.4,
+  "end": 253.68
+ },
+ {
+  "text": "écrit",
+  "start": 253.84,
+  "end": 254.0
+ },
+ {
+  "text": "en",
+  "start": 254.0,
+  "end": 254.24
+ },
+ {
+  "text": "grec,",
+  "start": 254.24,
+  "end": 254.48
+ },
+ {
+  "text": "garde",
+  "start": 254.6,
+  "end": 255.18
+ },
+ {
+  "text": "ce",
+  "start": 255.18,
+  "end": 255.32
+ },
+ {
+  "text": "jeu",
+  "start": 255.32,
+  "end": 255.5
+ },
+ {
+  "text": "de",
+  "start": 255.5,
+  "end": 255.56
+ },
+ {
+  "text": "mots",
+  "start": 255.56,
+  "end": 255.68
+ },
+ {
+  "text": "avec",
+  "start": 255.68,
+  "end": 255.9
+ },
+ {
+  "text": "pneuma,",
+  "start": 255.9,
+  "end": 256.4
+ },
+ {
+  "text": "qui",
+  "start": 256.52,
+  "end": 256.84
+ },
+ {
+  "text": "veut",
+  "start": 256.84,
+  "end": 256.98
+ },
+ {
+  "text": "aussi",
+  "start": 256.98,
+  "end": 257.2
+ },
+ {
+  "text": "dire",
+  "start": 257.2,
+  "end": 257.42
+ },
+ {
+  "text": "vent,",
+  "start": 257.42,
+  "end": 257.68
+ },
+ {
+  "text": "souffle",
+  "start": 257.82,
+  "end": 258.38
+ },
+ {
+  "text": "et",
+  "start": 258.38,
+  "end": 258.52
+ },
+ {
+  "text": "esprit.",
+  "start": 258.52,
+  "end": 258.84
+ },
+ {
+  "text": "Dans",
+  "start": 259.7,
+  "end": 260.1
+ },
+ {
+  "text": "la",
+  "start": 260.1,
+  "end": 260.24
+ },
+ {
+  "text": "nuit,",
+  "start": 260.24,
+  "end": 260.44
+ },
+ {
+  "text": "Jésus",
+  "start": 260.58,
+  "end": 260.92
+ },
+ {
+  "text": "parle",
+  "start": 260.92,
+  "end": 261.12
+ },
+ {
+  "text": "avec",
+  "start": 261.12,
+  "end": 261.32
+ },
+ {
+  "text": "un",
+  "start": 261.32,
+  "end": 261.48
+ },
+ {
+  "text": "homme,",
+  "start": 261.48,
+  "end": 261.68
+ },
+ {
+  "text": "Nicodème.",
+  "start": 261.78,
+  "end": 262.24
+ },
+ {
+  "text": "Il",
+  "start": 262.52,
+  "end": 262.92
+ },
+ {
+  "text": "dit",
+  "start": 262.92,
+  "end": 263.08
+ },
+ {
+  "text": "« ",
+  "start": 263.08,
+  "end": 263.22
+ },
+ {
+  "text": "Le",
+  "start": 263.22,
+  "end": 263.66
+ },
+ {
+  "text": "vent",
+  "start": 263.66,
+  "end": 263.96
+ },
+ {
+  "text": "souffle",
+  "start": 263.96,
+  "end": 264.54
+ },
+ {
+  "text": "où",
+  "start": 264.54,
+  "end": 264.66
+ },
+ {
+  "text": "il",
+  "start": 264.66,
+  "end": 264.8
+ },
+ {
+  "text": "veut,",
+  "start": 264.8,
+  "end": 265.0
+ },
+ {
+  "text": "et",
+  "start": 265.1,
+  "end": 265.44
+ },
+ {
+  "text": "tu",
+  "start": 265.44,
+  "end": 265.54
+ },
+ {
+  "text": "en",
+  "start": 265.54,
+  "end": 265.66
+ },
+ {
+  "text": "entends",
+  "start": 265.66,
+  "end": 265.96
+ },
+ {
+  "text": "le",
+  "start": 265.96,
+  "end": 266.06
+ },
+ {
+  "text": "bruit.",
+  "start": 266.06,
+  "end": 266.32
+ },
+ {
+  "text": "Mais",
+  "start": 266.48,
+  "end": 266.88
+ },
+ {
+  "text": "tu",
+  "start": 266.88,
+  "end": 267.0
+ },
+ {
+  "text": "ne",
+  "start": 267.0,
+  "end": 267.12
+ },
+ {
+  "text": "sais",
+  "start": 267.12,
+  "end": 267.26
+ },
+ {
+  "text": "d'où",
+  "start": 267.26,
+  "end": 267.54
+ },
+ {
+  "text": "il",
+  "start": 267.54,
+  "end": 267.66
+ },
+ {
+  "text": "vient,",
+  "start": 267.66,
+  "end": 268.02
+ },
+ {
+  "text": "ni",
+  "start": 268.04,
+  "end": 268.32
+ },
+ {
+  "text": "où",
+  "start": 268.32,
+  "end": 268.44
+ },
+ {
+  "text": "il",
+  "start": 268.44,
+  "end": 268.6
+ },
+ {
+  "text": "va.",
+  "start": 268.6,
+  "end": 268.78
+ },
+ {
+  "text": "Il",
+  "start": 269.04,
+  "end": 269.44
+ },
+ {
+  "text": "en",
+  "start": 269.44,
+  "end": 269.58
+ },
+ {
+  "text": "est",
+  "start": 269.58,
+  "end": 269.7
+ },
+ {
+  "text": "ainsi",
+  "start": 269.7,
+  "end": 270.0
+ },
+ {
+  "text": "de",
+  "start": 270.0,
+  "end": 270.18
+ },
+ {
+  "text": "tout",
+  "start": 270.18,
+  "end": 270.42
+ },
+ {
+  "text": "homme",
+  "start": 270.42,
+  "end": 270.76
+ },
+ {
+  "text": "qui",
+  "start": 270.76,
+  "end": 271.18
+ },
+ {
+  "text": "est",
+  "start": 271.18,
+  "end": 271.28
+ },
+ {
+  "text": "né",
+  "start": 271.28,
+  "end": 271.38
+ },
+ {
+  "text": "de",
+  "start": 271.38,
+  "end": 271.5
+ },
+ {
+  "text": "l'esprit. »",
+  "start": 271.5,
+  "end": 272.84
+ },
+ {
+  "text": "Dans",
+  "start": 272.84,
+  "end": 273.04
+ },
+ {
+  "text": "le",
+  "start": 273.04,
+  "end": 273.12
+ },
+ {
+  "text": "grec,",
+  "start": 273.12,
+  "end": 273.42
+ },
+ {
+  "text": "c'est",
+  "start": 273.44,
+  "end": 273.84
+ },
+ {
+  "text": "le",
+  "start": 273.84,
+  "end": 273.86
+ },
+ {
+  "text": "même",
+  "start": 273.86,
+  "end": 274.1
+ },
+ {
+  "text": "mot",
+  "start": 274.1,
+  "end": 274.3
+ },
+ {
+  "text": "pour",
+  "start": 274.3,
+  "end": 274.5
+ },
+ {
+  "text": "vent",
+  "start": 274.5,
+  "end": 274.74
+ },
+ {
+  "text": "et",
+  "start": 274.74,
+  "end": 274.94
+ },
+ {
+  "text": "pour",
+  "start": 274.94,
+  "end": 275.1
+ },
+ {
+  "text": "esprit.",
+  "start": 275.1,
+  "end": 275.48
+ },
+ {
+  "text": "Jésus",
+  "start": 276.02,
+  "end": 276.46
+ },
+ {
+  "text": "parlait",
+  "start": 276.46,
+  "end": 276.74
+ },
+ {
+  "text": "araméen,",
+  "start": 276.74,
+  "end": 277.34
+ },
+ {
+  "text": "et",
+  "start": 277.36,
+  "end": 277.52
+ },
+ {
+  "text": "le",
+  "start": 277.52,
+  "end": 277.62
+ },
+ {
+  "text": "mot",
+  "start": 277.62,
+  "end": 277.78
+ },
+ {
+  "text": "araméen",
+  "start": 277.78,
+  "end": 278.28
+ },
+ {
+  "text": "apparenté",
+  "start": 278.28,
+  "end": 278.76
+ },
+ {
+  "text": "a",
+  "start": 278.76,
+  "end": 278.84
+ },
+ {
+  "text": "lui",
+  "start": 278.84,
+  "end": 279.0
+ },
+ {
+  "text": "aussi",
+  "start": 279.0,
+  "end": 279.36
+ },
+ {
+  "text": "ces",
+  "start": 279.36,
+  "end": 279.54
+ },
+ {
+  "text": "sens.",
+  "start": 279.54,
+  "end": 279.76
+ },
+ {
+  "text": "Ce",
+  "start": 280.14,
+  "end": 280.58
+ },
+ {
+  "text": "jeu",
+  "start": 280.58,
+  "end": 280.74
+ },
+ {
+  "text": "de",
+  "start": 280.74,
+  "end": 280.8
+ },
+ {
+  "text": "mots",
+  "start": 280.8,
+  "end": 280.92
+ },
+ {
+  "text": "lui",
+  "start": 280.92,
+  "end": 281.04
+ },
+ {
+  "text": "était",
+  "start": 281.04,
+  "end": 281.24
+ },
+ {
+  "text": "donc",
+  "start": 281.24,
+  "end": 281.38
+ },
+ {
+  "text": "probablement",
+  "start": 281.38,
+  "end": 282.0
+ },
+ {
+  "text": "naturel.",
+  "start": 282.0,
+  "end": 282.48
+ },
+ {
+  "text": "C'est",
+  "start": 282.54,
+  "end": 283.06
+ },
+ {
+  "text": "une",
+  "start": 283.06,
+  "end": 283.16
+ },
+ {
+  "text": "hypothèse",
+  "start": 283.16,
+  "end": 283.52
+ },
+ {
+  "text": "raisonnable,",
+  "start": 283.52,
+  "end": 283.94
+ },
+ {
+  "text": "pas",
+  "start": 284.0,
+  "end": 284.28
+ },
+ {
+  "text": "une",
+  "start": 284.28,
+  "end": 284.4
+ },
+ {
+  "text": "certitude.",
+  "start": 284.4,
+  "end": 284.82
+ },
+ {
+  "text": "Après",
+  "start": 285.5,
+  "end": 285.94
+ },
+ {
+  "text": "la",
+  "start": 285.94,
+  "end": 286.08
+ },
+ {
+  "text": "résurrection,",
+  "start": 286.08,
+  "end": 286.48
+ },
+ {
+  "text": "dans",
+  "start": 286.62,
+  "end": 286.92
+ },
+ {
+  "text": "l'évangile",
+  "start": 286.92,
+  "end": 287.34
+ },
+ {
+  "text": "de",
+  "start": 287.34,
+  "end": 287.42
+ },
+ {
+  "text": "Jean,",
+  "start": 287.42,
+  "end": 287.58
+ },
+ {
+  "text": "Jésus",
+  "start": 287.7,
+  "end": 288.22
+ },
+ {
+  "text": "souffla",
+  "start": 288.22,
+  "end": 288.98
+ },
+ {
+  "text": "sur",
+  "start": 288.98,
+  "end": 289.2
+ },
+ {
+  "text": "eux",
+  "start": 289.2,
+  "end": 289.44
+ },
+ {
+  "text": "et",
+  "start": 289.44,
+  "end": 289.68
+ },
+ {
+  "text": "leur",
+  "start": 289.68,
+  "end": 289.82
+ },
+ {
+  "text": "dit",
+  "start": 289.82,
+  "end": 290.0
+ },
+ {
+  "text": "« ",
+  "start": 290.0,
+  "end": 290.14
+ },
+ {
+  "text": "Recevez",
+  "start": 290.14,
+  "end": 290.94
+ },
+ {
+  "text": "le",
+  "start": 290.94,
+  "end": 291.08
+ },
+ {
+  "text": "Saint-Esprit",
+  "start": 291.08,
+  "end": 291.74
+ },
+ {
+  "text": "».",
+  "start": 291.74,
+  "end": 291.88
+ },
+ {
+  "text": "Un",
+  "start": 292.4,
+  "end": 292.62
+ },
+ {
+  "text": "souffle.",
+  "start": 292.62,
+  "end": 293.02
+ },
+ {
+  "text": "Et",
+  "start": 293.46,
+  "end": 293.9
+ },
+ {
+  "text": "à",
+  "start": 293.9,
+  "end": 294.0
+ },
+ {
+  "text": "la",
+  "start": 294.0,
+  "end": 294.0
+ },
+ {
+  "text": "Pentecôte,",
+  "start": 294.0,
+  "end": 294.48
+ },
+ {
+  "text": "il",
+  "start": 294.5,
+  "end": 294.8
+ },
+ {
+  "text": "vint",
+  "start": 294.8,
+  "end": 294.96
+ },
+ {
+  "text": "du",
+  "start": 294.96,
+  "end": 295.06
+ },
+ {
+  "text": "ciel",
+  "start": 295.06,
+  "end": 295.3
+ },
+ {
+  "text": "un",
+  "start": 295.3,
+  "end": 295.7
+ },
+ {
+  "text": "bruit",
+  "start": 295.7,
+  "end": 296.14
+ },
+ {
+  "text": "comme",
+  "start": 296.14,
+  "end": 296.3
+ },
+ {
+  "text": "celui",
+  "start": 296.3,
+  "end": 296.58
+ },
+ {
+  "text": "d'un",
+  "start": 296.58,
+  "end": 296.8
+ },
+ {
+  "text": "vent",
+  "start": 296.8,
+  "end": 297.04
+ },
+ {
+  "text": "impétueux.",
+  "start": 297.04,
+  "end": 297.76
+ },
+ {
+  "text": "Du",
+  "start": 298.34,
+  "end": 298.76
+ },
+ {
+  "text": "vent",
+  "start": 298.76,
+  "end": 298.94
+ },
+ {
+  "text": "d'Horeb",
+  "start": 298.94,
+  "end": 299.26
+ },
+ {
+  "text": "au",
+  "start": 299.26,
+  "end": 299.44
+ },
+ {
+  "text": "vent",
+  "start": 299.44,
+  "end": 299.64
+ },
+ {
+  "text": "de",
+  "start": 299.64,
+  "end": 299.78
+ },
+ {
+  "text": "la",
+  "start": 299.78,
+  "end": 299.88
+ },
+ {
+  "text": "Pentecôte,",
+  "start": 299.88,
+  "end": 300.28
+ },
+ {
+  "text": "la",
+  "start": 300.4,
+  "end": 300.72
+ },
+ {
+  "text": "Bible",
+  "start": 300.72,
+  "end": 300.94
+ },
+ {
+  "text": "garde",
+  "start": 300.94,
+  "end": 301.22
+ },
+ {
+  "text": "ce",
+  "start": 301.22,
+  "end": 301.46
+ },
+ {
+  "text": "mot,",
+  "start": 301.46,
+  "end": 301.66
+ },
+ {
+  "text": "l'invisible",
+  "start": 301.78,
+  "end": 302.66
+ },
+ {
+  "text": "qui",
+  "start": 302.66,
+  "end": 303.08
+ },
+ {
+  "text": "agit.",
+  "start": 303.08,
+  "end": 303.46
+ },
+ {
+  "text": "Mais",
+  "start": 304.06,
+  "end": 304.28
+ },
+ {
+  "text": "attention,",
+  "start": 304.28,
+  "end": 304.52
+ },
+ {
+  "text": "ce",
+  "start": 304.72,
+  "end": 305.06
+ },
+ {
+  "text": "n'est",
+  "start": 305.06,
+  "end": 305.16
+ },
+ {
+  "text": "pas",
+  "start": 305.16,
+  "end": 305.24
+ },
+ {
+  "text": "parce",
+  "start": 305.24,
+  "end": 305.38
+ },
+ {
+  "text": "qu'un",
+  "start": 305.38,
+  "end": 305.52
+ },
+ {
+  "text": "mot",
+  "start": 305.52,
+  "end": 305.66
+ },
+ {
+  "text": "a",
+  "start": 305.66,
+  "end": 305.76
+ },
+ {
+  "text": "trois",
+  "start": 305.76,
+  "end": 306.0
+ },
+ {
+  "text": "sens",
+  "start": 306.0,
+  "end": 306.26
+ },
+ {
+  "text": "que",
+  "start": 306.26,
+  "end": 306.44
+ },
+ {
+  "text": "les",
+  "start": 306.44,
+  "end": 306.58
+ },
+ {
+  "text": "trois",
+  "start": 306.58,
+  "end": 306.74
+ },
+ {
+  "text": "se",
+  "start": 306.74,
+  "end": 306.9
+ },
+ {
+  "text": "valent",
+  "start": 306.9,
+  "end": 307.14
+ },
+ {
+  "text": "partout.",
+  "start": 307.14,
+  "end": 307.36
+ },
+ {
+  "text": "Le",
+  "start": 307.52,
+  "end": 307.86
+ },
+ {
+  "text": "contexte",
+  "start": 307.86,
+  "end": 308.44
+ },
+ {
+  "text": "décide.",
+  "start": 308.44,
+  "end": 308.86
+ },
+ {
+  "text": "La",
+  "start": 309.24,
+  "end": 309.68
+ },
+ {
+  "text": "Bible",
+  "start": 309.68,
+  "end": 309.86
+ },
+ {
+  "text": "ne",
+  "start": 309.86,
+  "end": 309.98
+ },
+ {
+  "text": "dit",
+  "start": 309.98,
+  "end": 310.14
+ },
+ {
+  "text": "pas",
+  "start": 310.14,
+  "end": 310.28
+ },
+ {
+  "text": "que",
+  "start": 310.28,
+  "end": 310.42
+ },
+ {
+  "text": "Dieu",
+  "start": 310.42,
+  "end": 310.68
+ },
+ {
+  "text": "est",
+  "start": 310.68,
+  "end": 310.96
+ },
+ {
+  "text": "le",
+  "start": 310.96,
+  "end": 311.14
+ },
+ {
+  "text": "vent.",
+  "start": 311.14,
+  "end": 311.36
+ },
+ {
+  "text": "Élie",
+  "start": 311.72,
+  "end": 312.16
+ },
+ {
+  "text": "nous",
+  "start": 312.16,
+  "end": 312.26
+ },
+ {
+  "text": "le",
+  "start": 312.26,
+  "end": 312.34
+ },
+ {
+  "text": "rappelle,",
+  "start": 312.34,
+  "end": 312.56
+ },
+ {
+  "text": "l'éternel",
+  "start": 312.88,
+  "end": 313.58
+ },
+ {
+  "text": "n'était",
+  "start": 313.58,
+  "end": 313.9
+ },
+ {
+  "text": "pas",
+  "start": 313.9,
+  "end": 314.24
+ },
+ {
+  "text": "dans",
+  "start": 314.24,
+  "end": 314.44
+ },
+ {
+  "text": "le",
+  "start": 314.44,
+  "end": 314.54
+ },
+ {
+  "text": "vent.",
+  "start": 314.54,
+  "end": 314.76
+ },
+ {
+  "text": "Le",
+  "start": 315.12,
+  "end": 315.56
+ },
+ {
+  "text": "vent",
+  "start": 315.56,
+  "end": 315.76
+ },
+ {
+  "text": "est",
+  "start": 315.76,
+  "end": 315.86
+ },
+ {
+  "text": "un",
+  "start": 315.86,
+  "end": 316.02
+ },
+ {
+  "text": "signe,",
+  "start": 316.02,
+  "end": 316.44
+ },
+ {
+  "text": "pas",
+  "start": 316.46,
+  "end": 316.78
+ },
+ {
+  "text": "Dieu",
+  "start": 316.78,
+  "end": 316.96
+ },
+ {
+  "text": "lui-même.",
+  "start": 316.96,
+  "end": 317.3
+ },
+ {
+  "text": "Cette",
+  "start": 318.14,
+  "end": 318.58
+ },
+ {
+  "text": "semaine,",
+  "start": 318.58,
+  "end": 318.92
+ },
+ {
+  "text": "et",
+  "start": 318.98,
+  "end": 319.34
+ },
+ {
+  "text": "c'est",
+  "start": 319.34,
+  "end": 319.56
+ },
+ {
+  "text": "ceci.",
+  "start": 319.56,
+  "end": 319.78
+ },
+ {
+  "text": "Prends",
+  "start": 320.32,
+  "end": 320.76
+ },
+ {
+  "text": "une",
+  "start": 320.76,
+  "end": 320.94
+ },
+ {
+  "text": "minute,",
+  "start": 320.94,
+  "end": 321.28
+ },
+ {
+  "text": "seul.",
+  "start": 321.46,
+  "end": 321.94
+ },
+ {
+  "text": "Écoute",
+  "start": 322.52,
+  "end": 322.96
+ },
+ {
+  "text": "ta",
+  "start": 322.96,
+  "end": 323.14
+ },
+ {
+  "text": "respiration",
+  "start": 323.14,
+  "end": 323.58
+ },
+ {
+  "text": "sans",
+  "start": 323.58,
+  "end": 323.9
+ },
+ {
+  "text": "rien",
+  "start": 323.9,
+  "end": 324.14
+ },
+ {
+  "text": "faire",
+  "start": 324.14,
+  "end": 324.36
+ },
+ {
+  "text": "d'autre.",
+  "start": 324.36,
+  "end": 324.6
+ },
+ {
+  "text": "Puis",
+  "start": 325.02,
+  "end": 325.46
+ },
+ {
+  "text": "relis",
+  "start": 325.46,
+  "end": 325.8
+ },
+ {
+  "text": "lentement",
+  "start": 325.8,
+  "end": 326.16
+ },
+ {
+  "text": "le",
+  "start": 326.16,
+  "end": 326.3
+ },
+ {
+  "text": "psaume",
+  "start": 326.3,
+  "end": 326.56
+ },
+ {
+  "text": "trente-quatre,",
+  "start": 326.56,
+  "end": 326.94
+ },
+ {
+  "text": "verset",
+  "start": 327.18,
+  "end": 327.56
+ },
+ {
+  "text": "dix-neuf.",
+  "start": 327.56,
+  "end": 327.8
+ },
+ {
+  "text": "Si",
+  "start": 328.26,
+  "end": 328.7
+ },
+ {
+  "text": "tu",
+  "start": 328.7,
+  "end": 328.86
+ },
+ {
+  "text": "traverses",
+  "start": 328.86,
+  "end": 329.28
+ },
+ {
+  "text": "un",
+  "start": 329.28,
+  "end": 329.34
+ },
+ {
+  "text": "moment",
+  "start": 329.34,
+  "end": 329.54
+ },
+ {
+  "text": "où",
+  "start": 329.54,
+  "end": 329.76
+ },
+ {
+  "text": "l'esprit",
+  "start": 329.76,
+  "end": 330.06
+ },
+ {
+  "text": "est",
+  "start": 330.06,
+  "end": 330.22
+ },
+ {
+  "text": "abattu,",
+  "start": 330.22,
+  "end": 331.08
+ },
+ {
+  "text": "« ",
+  "start": 331.08,
+  "end": 331.2
+ },
+ {
+  "text": "Souviens-toi",
+  "start": 331.2,
+  "end": 332.06
+ },
+ {
+  "text": "qu'un",
+  "start": 332.06,
+  "end": 332.34
+ },
+ {
+  "text": "accompagnement,",
+  "start": 332.34,
+  "end": 333.04
+ },
+ {
+  "text": "médecin,",
+  "start": 333.12,
+  "end": 333.76
+ },
+ {
+  "text": "psychologue",
+  "start": 333.86,
+  "end": 334.46
+ },
+ {
+  "text": "ou",
+  "start": 334.46,
+  "end": 334.62
+ },
+ {
+  "text": "proche",
+  "start": 334.62,
+  "end": 334.92
+ },
+ {
+  "text": "peut",
+  "start": 334.92,
+  "end": 335.22
+ },
+ {
+  "text": "t'aider.",
+  "start": 335.22,
+  "end": 335.5
+ },
+ {
+  "text": "La",
+  "start": 335.66,
+  "end": 336.1
+ },
+ {
+  "text": "foi",
+  "start": 336.1,
+  "end": 336.3
+ },
+ {
+  "text": "et",
+  "start": 336.3,
+  "end": 336.5
+ },
+ {
+  "text": "les",
+  "start": 336.5,
+  "end": 336.6
+ },
+ {
+  "text": "soins",
+  "start": 336.6,
+  "end": 336.9
+ },
+ {
+  "text": "ne",
+  "start": 336.9,
+  "end": 337.06
+ },
+ {
+  "text": "s'opposent",
+  "start": 337.06,
+  "end": 337.4
+ },
+ {
+  "text": "pas. »",
+  "start": 337.4,
+  "end": 338.48
+ },
+ {
+  "text": "Y",
+  "start": 338.48,
+  "end": 339.18
+ },
+ {
+  "text": "a-t-il",
+  "start": 339.18,
+  "end": 339.46
+ },
+ {
+  "text": "un",
+  "start": 339.46,
+  "end": 339.54
+ },
+ {
+  "text": "moment",
+  "start": 339.54,
+  "end": 339.78
+ },
+ {
+  "text": "où",
+  "start": 339.78,
+  "end": 339.98
+ },
+ {
+  "text": "un",
+  "start": 339.98,
+  "end": 340.12
+ },
+ {
+  "text": "souffle,",
+  "start": 340.12,
+  "end": 340.72
+ },
+ {
+  "text": "une",
+  "start": 340.72,
+  "end": 340.92
+ },
+ {
+  "text": "force",
+  "start": 340.92,
+  "end": 341.26
+ },
+ {
+  "text": "invisible",
+  "start": 341.26,
+  "end": 341.94
+ },
+ {
+  "text": "t'a",
+  "start": 341.94,
+  "end": 342.3
+ },
+ {
+  "text": "remis",
+  "start": 342.3,
+  "end": 342.54
+ },
+ {
+  "text": "debout?",
+  "start": 342.54,
+  "end": 342.92
+ },
+ {
+  "text": "Dis-le",
+  "start": 343.4,
+  "end": 343.72
+ },
+ {
+  "text": "en",
+  "start": 343.72,
+  "end": 343.84
+ },
+ {
+  "text": "commentaire",
+  "start": 343.84,
+  "end": 344.26
+ },
+ {
+  "text": "si",
+  "start": 344.26,
+  "end": 344.38
+ },
+ {
+  "text": "tu",
+  "start": 344.38,
+  "end": 344.5
+ },
+ {
+  "text": "le",
+  "start": 344.5,
+  "end": 344.6
+ },
+ {
+  "text": "souhaites.",
+  "start": 344.6,
+  "end": 344.9
+ },
+ {
+  "text": "Revenons",
+  "start": 346.46,
+  "end": 346.9
+ },
+ {
+  "text": "à",
+  "start": 346.9,
+  "end": 347.02
+ },
+ {
+  "text": "Horeb.",
+  "start": 347.02,
+  "end": 347.28
+ },
+ {
+  "text": "Après",
+  "start": 347.76,
+  "end": 348.2
+ },
+ {
+  "text": "le",
+  "start": 348.2,
+  "end": 348.36
+ },
+ {
+  "text": "vent,",
+  "start": 348.36,
+  "end": 348.58
+ },
+ {
+  "text": "le",
+  "start": 348.64,
+  "end": 348.84
+ },
+ {
+  "text": "tremblement",
+  "start": 348.84,
+  "end": 349.4
+ },
+ {
+  "text": "et",
+  "start": 349.4,
+  "end": 349.48
+ },
+ {
+  "text": "le",
+  "start": 349.48,
+  "end": 349.58
+ },
+ {
+  "text": "feu,",
+  "start": 349.58,
+  "end": 349.84
+ },
+ {
+  "text": "Élie",
+  "start": 350.44,
+  "end": 350.66
+ },
+ {
+  "text": "entend",
+  "start": 350.66,
+  "end": 350.86
+ },
+ {
+  "text": "un",
+  "start": 350.86,
+  "end": 351.74
+ },
+ {
+  "text": "murmure",
+  "start": 351.74,
+  "end": 352.46
+ },
+ {
+  "text": "doux",
+  "start": 352.46,
+  "end": 353.02
+ },
+ {
+  "text": "et",
+  "start": 353.02,
+  "end": 353.24
+ },
+ {
+  "text": "léger.",
+  "start": 353.24,
+  "end": 353.5
+ },
+ {
+  "text": "Le",
+  "start": 354.2,
+  "end": 354.64
+ },
+ {
+  "text": "mot",
+  "start": 354.64,
+  "end": 354.88
+ },
+ {
+  "text": "qui",
+  "start": 354.88,
+  "end": 355.04
+ },
+ {
+  "text": "déchire",
+  "start": 355.04,
+  "end": 355.6
+ },
+ {
+  "text": "les",
+  "start": 355.6,
+  "end": 355.72
+ },
+ {
+  "text": "montagnes",
+  "start": 355.72,
+  "end": 356.16
+ },
+ {
+  "text": "est",
+  "start": 356.16,
+  "end": 356.6
+ },
+ {
+  "text": "aussi",
+  "start": 356.6,
+  "end": 356.8
+ },
+ {
+  "text": "celui",
+  "start": 356.8,
+  "end": 357.0
+ },
+ {
+  "text": "qui",
+  "start": 357.0,
+  "end": 357.24
+ },
+ {
+  "text": "rend",
+  "start": 357.24,
+  "end": 357.46
+ },
+ {
+  "text": "la",
+  "start": 357.46,
+  "end": 357.66
+ },
+ {
+  "text": "vie",
+  "start": 357.66,
+  "end": 357.9
+ },
+ {
+  "text": "à",
+  "start": 357.9,
+  "end": 358.04
+ },
+ {
+  "text": "des",
+  "start": 358.04,
+  "end": 358.18
+ },
+ {
+  "text": "ossements",
+  "start": 358.18,
+  "end": 358.46
+ },
+ {
+  "text": "secs.",
+  "start": 358.46,
+  "end": 358.94
+ },
+ {
+  "text": "et",
+  "start": 358.94,
+  "end": 359.54
+ },
+ {
+  "text": "le",
+  "start": 359.54,
+  "end": 359.62
+ },
+ {
+  "text": "souffle",
+  "start": 359.62,
+  "end": 360.06
+ },
+ {
+  "text": "qui",
+  "start": 360.06,
+  "end": 360.16
+ },
+ {
+  "text": "te",
+  "start": 360.16,
+  "end": 360.24
+ },
+ {
+  "text": "traverse",
+  "start": 360.24,
+  "end": 360.56
+ },
+ {
+  "text": "en",
+  "start": 360.56,
+  "end": 360.72
+ },
+ {
+  "text": "ce",
+  "start": 360.72,
+  "end": 360.84
+ },
+ {
+  "text": "moment",
+  "start": 360.84,
+  "end": 361.04
+ },
+ {
+  "text": "appartient",
+  "start": 361.04,
+  "end": 362.0
+ },
+ {
+  "text": "à",
+  "start": 362.0,
+  "end": 362.16
+ },
+ {
+  "text": "la",
+  "start": 362.16,
+  "end": 362.24
+ },
+ {
+  "text": "même",
+  "start": 362.24,
+  "end": 362.46
+ },
+ {
+  "text": "histoire.",
+  "start": 362.46,
+  "end": 362.72
+ },
+ {
+  "text": "Un",
+  "start": 363.86,
+  "end": 364.26
+ },
+ {
+  "text": "mot,",
+  "start": 364.26,
+  "end": 364.52
+ },
+ {
+  "text": "un",
+  "start": 364.62,
+  "end": 364.94
+ },
+ {
+  "text": "passage,",
+  "start": 364.94,
+  "end": 365.28
+ },
+ {
+  "text": "un",
+  "start": 365.58,
+  "end": 365.84
+ },
+ {
+  "text": "souffle",
+  "start": 365.84,
+  "end": 366.22
+ },
+ {
+  "text": "de",
+  "start": 366.22,
+  "end": 366.28
+ },
+ {
+  "text": "plus",
+  "start": 366.28,
+  "end": 366.46
+ },
+ {
+  "text": "chaque",
+  "start": 366.46,
+  "end": 366.76
+ },
+ {
+  "text": "semaine.",
+  "start": 366.76,
+  "end": 367.1
+ },
+ {
+  "text": "Si",
+  "start": 367.3,
+  "end": 367.7
+ },
+ {
+  "text": "ce",
+  "start": 367.7,
+  "end": 367.9
+ },
+ {
+  "text": "chemin",
+  "start": 367.9,
+  "end": 368.22
+ },
+ {
+  "text": "te",
+  "start": 368.22,
+  "end": 368.38
+ },
+ {
+  "text": "fait",
+  "start": 368.38,
+  "end": 368.54
+ },
+ {
+  "text": "du",
+  "start": 368.54,
+  "end": 368.64
+ },
+ {
+  "text": "bien,",
+  "start": 368.64,
+  "end": 368.84
+ },
+ {
+  "text": "reviens",
+  "start": 368.92,
+  "end": 369.62
+ },
+ {
+  "text": "nous",
+  "start": 369.62,
+  "end": 369.7
+ },
+ {
+  "text": "retrouver.",
+  "start": 369.7,
+  "end": 369.88
+ }
+]

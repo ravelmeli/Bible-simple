@@ -387,6 +387,41 @@ def kinetic_quote(station, x, y, ref_txt, text, t0, t1, width=1000, size=40):
     return i
 
 
+def wind(station, x, y, t, size=520, dur=6.0, color=None):
+    """Rafales de vent dessinées en code : traits courbes qui s'écoulent vers la droite (tirets animés), avec quelques feuilles. Réutilisable."""
+    c = color or ACC
+    sx, sy = st(*station)
+    i = uid()
+    paths = [("M10 120 C 120 40, 220 200, 330 110 S 470 60, 510 90", 5, 0.0), ("M0 180 C 100 120, 220 260, 340 180 S 460 140, 520 170", 4, 0.25),
+             ("M30 60 C 140 0, 230 120, 340 50 S 450 20, 500 40", 3, 0.5), ("M20 240 C 130 200, 240 300, 350 240 S 460 220, 510 235", 3, 0.75)]
+    ps = "".join(f'<path id="{i}p{k}" d="{d}" stroke-width="{w}" stroke-dasharray="70 90" fill="none" stroke-linecap="round"/>' for k, (d, w, _) in enumerate(paths))
+    leaves = "".join(f'<ellipse id="{i}l{k}" cx="{40 + k * 60}" cy="{150 + (k % 2) * 60}" rx="14" ry="7" fill="{c}" opacity="0.8" transform="rotate({k * 35} {40 + k * 60} {150 + (k % 2) * 60})"/>' for k in range(4))
+    html.append(f'<svg class="node wind" id="{i}" style="left:{sx + _tx(x)}px;top:{sy + _ty(y)}px;opacity:0;stroke:{c}" width="{size}" height="{round(size * 0.6)}" viewBox="0 0 520 310">{ps}{leaves}</svg>')
+    tw.append(f'tl.fromTo("#{i}", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.4, immediateRender: false }}, {at(t)});')
+    for k, (d, w, dl) in enumerate(paths):
+        tw.append(f'tl.fromTo("#{i}p{k}", {{ strokeDashoffset: 0 }}, {{ strokeDashoffset: -{160 * max(2, int(dur))}, duration: {dur}, ease: "none", immediateRender: false }}, {at(t + dl * 0.3)});')
+    for k in range(4):
+        tw.append(f'tl.fromTo("#{i}l{k}", {{ x: -40, y: 0, opacity: 0 }}, {{ x: 520, y: {-30 + k * 25}, opacity: 0.9, duration: {dur / 2:.1f}, ease: "sine.inOut", repeat: 1, immediateRender: false }}, {at(t + 0.4 + k * 0.6)});')
+    tw.append(f'tl.to("#{i}", {{ opacity: 0, duration: 0.5 }}, {at(t + dur)});')
+    return i
+
+
+def breath(station, x, y, t, size=360, dur=4.0, color=None, pulses=3):
+    """Souffle qui sort d'une bouche (à gauche) : volutes qui grandissent et s'éloignent vers la droite, plusieurs fois. Réutilisable."""
+    c = color or "#B3A58D"
+    sx, sy = st(*station)
+    i = uid()
+    swirls = "".join(f'<path id="{i}s{k}" d="M0 100 C 40 {40 + k * 10}, 90 {160 - k * 8}, 150 100 S 240 {60 + k * 12}, 300 100" fill="none" stroke-width="{7 - k}" stroke-linecap="round"/>' for k in range(3))
+    html.append(f'<svg class="node breath" id="{i}" style="left:{sx + _tx(x)}px;top:{sy + _ty(y)}px;stroke:{c}" width="{size}" height="{round(size * 0.55)}" viewBox="0 0 320 200">{swirls}</svg>')
+    for n in range(pulses):
+        t0 = t + n * (dur / pulses)
+        for k in range(3):
+            tw.append(f'tl.fromTo("#{i}s{k}", {{ opacity: 0, x: -30, scaleX: 0.3, transformOrigin: "0% 50%" }}, {{ opacity: 0.9, x: {40 + k * 18}, scaleX: 1, duration: {dur / pulses * 0.75:.2f}, ease: "power2.out", immediateRender: false }}, {at(t0 + k * 0.12)});')
+            tw.append(f'tl.to("#{i}s{k}", {{ opacity: 0, duration: {dur / pulses * 0.25:.2f} }}, {at(t0 + dur / pulses * 0.75 + k * 0.05)});')
+    tw.append(f'tl.set("#{i}", {{ opacity: 1 }}, 0);')
+    return i
+
+
 def dark_mode(t):
     """Passage au fond sombre (révélation) : la toile s'assombrit et la barre de chapitres passe en clair."""
     tween("#darkbg", "opacity: 0", 'opacity: 1, duration: 0.6, ease: "power2.inOut"', t)
