@@ -291,14 +291,14 @@ def burst(station, x, y, t, n=12, r0=70, r1=150):
     lines = "".join(f'<line x1="{200 + r0 * math.cos(a):.1f}" y1="{200 + r0 * math.sin(a):.1f}" x2="{200 + r1 * math.cos(a):.1f}" y2="{200 + r1 * math.sin(a):.1f}" />'
                     for a in (k * 2 * math.pi / n for k in range(n)))
     html.append(f'<svg class="node burst" id="{i}" style="left:{sx + _tx(x) - 200}px;top:{sy + _ty(y) - 200}px;opacity:0" width="400" height="400" viewBox="0 0 400 400">{lines}</svg>')
-    tween(f"#{i}", 'opacity: 1, scale: 0.35, transformOrigin: "50% 50%"', 'opacity: 0, scale: 1.3, duration: 0.55, ease: "power2.out"', t)
+    tw.append(f'tl.fromTo("#{i}", {{ opacity: 1, scale: 0.35, transformOrigin: "50% 50%" }}, {{ opacity: 0, scale: 1.3, duration: 0.55, ease: "power2.out", immediateRender: false }}, {at(t)});')
     return i
 
 
 def ring(station, x, y, t, size=240):
     """Anneau d'accent qui se dilate puis disparaît (nom prononcé, chiffre qui tombe)."""
     i = put(station, x - size // 2, y - size // 2, "", "ring", f"width:{size}px;height:{size}px;opacity:0")
-    tween(f"#{i}", 'opacity: 1, scale: 0.25', 'opacity: 0, scale: 1.5, duration: 0.7, ease: "power2.out"', t)
+    tw.append(f'tl.fromTo("#{i}", {{ opacity: 1, scale: 0.25 }}, {{ opacity: 0, scale: 1.5, duration: 0.7, ease: "power2.out", immediateRender: false }}, {at(t)});')
     return i
 
 
@@ -411,7 +411,7 @@ def breath(station, x, y, t, size=360, dur=4.0, color=None, pulses=3):
     c = color or "#B3A58D"
     sx, sy = st(*station)
     i = uid()
-    swirls = "".join(f'<path id="{i}s{k}" d="M0 100 C 40 {40 + k * 10}, 90 {160 - k * 8}, 150 100 S 240 {60 + k * 12}, 300 100" fill="none" stroke-width="{7 - k}" stroke-linecap="round"/>' for k in range(3))
+    swirls = "".join(f'<path id="{i}s{k}" d="M0 100 C 40 {40 + k * 10}, 90 {160 - k * 8}, 150 100 S 240 {60 + k * 12}, 300 100" fill="none" stroke-width="{7 - k}" stroke-linecap="round" style="opacity:0"/>' for k in range(3))
     html.append(f'<svg class="node breath" id="{i}" style="left:{sx + _tx(x)}px;top:{sy + _ty(y)}px;stroke:{c}" width="{size}" height="{round(size * 0.55)}" viewBox="0 0 320 200">{swirls}</svg>')
     for n in range(pulses):
         t0 = t + n * (dur / pulses)
