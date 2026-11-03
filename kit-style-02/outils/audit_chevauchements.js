@@ -69,7 +69,7 @@ const minArea = parseFloat(process.argv[4] || "1200");
         if (r.left + r.width < 0 || r.left > 1920 || r.top + r.height < 0 || r.top > 1080) continue; // hors écran
         const sc = el.offsetWidth ? el.getBoundingClientRect().width / el.offsetWidth : 1;
         if (sc < 0.75 && /\b(sticker|headline|tag|kq|card|stamp|word|label)\b/.test(c) && sc > 0) { if (!window.__zo) window.__zo = {}; }
-        out.push({ sc, id: el.id, c, x: r.left, y: r.top, w: r.width, h: r.height, txt: (el.innerText || "").replace(/\s+/g, " ").slice(0, 28) });
+        out.push({ sc, id: el.id, c, x: r.left, y: r.top, w: r.width, h: r.height, txt: ((el.innerText || "").replace(/\s+/g, " ").slice(0, 28)) || ((el.querySelector("img") || {}).src || "").split("/").pop().replace(".png", "") });
       }
       for (const el of document.querySelectorAll(".clip.cap")) {
         const s = parseFloat(el.dataset.start), d = parseFloat(el.dataset.duration);
