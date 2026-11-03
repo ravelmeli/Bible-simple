@@ -1,0 +1,646 @@
+{
+  "version": 1,
+  "historyId": "0e756c00-e1a5-4fe9-9e41-c1da8db0c82a",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/audio/jingle.wav": {
+      "hash": "a017952e2aba152373a1deca9a56981c4a774418f7123342865888a0003b7afb",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/a0/a017952e2aba152373a1deca9a56981c4a774418f7123342865888a0003b7afb"
+    },
+    "assets/audio/lib/click-soft.mp3": {
+      "hash": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/07/075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d"
+    },
+    "assets/audio/lib/impact-bass-2.mp3": {
+      "hash": "fb832995477784f44ba8533359d20caf706195b52117ecc2a33b3e63e3c1307b",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/fb/fb832995477784f44ba8533359d20caf706195b52117ecc2a33b3e63e3c1307b"
+    },
+    "assets/audio/lib/pop.mp3": {
+      "hash": "19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/19/19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352"
+    },
+    "assets/audio/lib/sparkle.mp3": {
+      "hash": "a66b2829a307bcb5b1f6551d7cdc72fe45bbe9a91abfb994d28db8d5e4e42ea8",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/a6/a66b2829a307bcb5b1f6551d7cdc72fe45bbe9a91abfb994d28db8d5e4e42ea8"
+    },
+    "assets/audio/lib/typing.mp3": {
+      "hash": "944160652faeb7b32acc9341ede4d735a5c9a4ce3fe8509ef7eab91efb430487",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/94/944160652faeb7b32acc9341ede4d735a5c9a4ce3fe8509ef7eab91efb430487"
+    },
+    "assets/audio/lib/whoosh-short.mp3": {
+      "hash": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+    },
+    "assets/fonts/Inter.ttf": {
+      "hash": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/29/29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    "assets/fonts/OFL-Inter.txt": {
+      "hash": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/5b/5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    "assets/source/photos/credits-brouillon.md": {
+      "hash": "fa99ed0c6c749edaeb11854f4df59dca99b86c8f19a490f25436ff2bfd914ba4",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/fa/fa99ed0c6c749edaeb11854f4df59dca99b86c8f19a490f25436ff2bfd914ba4"
+    },
+    "assets/source/photos/met-202374.jpg": {
+      "hash": "86b7c6667b04c62e7cc9093a17bf7cf40fbe9f5a3c5b6bd5c44ab5576f42376a",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/86/86b7c6667b04c62e7cc9093a17bf7cf40fbe9f5a3c5b6bd5c44ab5576f42376a"
+    },
+    "assets/source/planche-H-personnages.jpg": {
+      "hash": "464380f6ccd95331df72d4c8733603f9ba97f59f692120f120f0d8efebf00273",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/46/464380f6ccd95331df72d4c8733603f9ba97f59f692120f120f0d8efebf00273"
+    },
+    "assets/source/planche-I-personnages.jpg": {
+      "hash": "2a2581480b61b858e17611c0f6f7734ca4a4f5cb3f933e906e4ecd3be4ed2030",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/2a/2a2581480b61b858e17611c0f6f7734ca4a4f5cb3f933e906e4ecd3be4ed2030"
+    },
+    "assets/source/selection-photos.jpg": {
+      "hash": "b23f9321d0ccb504f22b9a7a25b3518a7f2ac27c4e3ac3b54923e43d164f3f8d",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/b2/b23f9321d0ccb504f22b9a7a25b3518a7f2ac27c4e3ac3b54923e43d164f3f8d"
+    },
+    "assets/stickers/ancien.png": {
+      "hash": "f264ca4697a542fbe68142efc9f5052e279b658a4a1a2f8efb19961bc0f79337",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/f2/f264ca4697a542fbe68142efc9f5052e279b658a4a1a2f8efb19961bc0f79337"
+    },
+    "assets/stickers/animateur.png": {
+      "hash": "d62aedbb03a059deeeb1d0ddf3aeef5d0d9612d2b562fbfc56110f426a0bd25c",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/d6/d62aedbb03a059deeeb1d0ddf3aeef5d0d9612d2b562fbfc56110f426a0bd25c"
+    },
+    "assets/stickers/astrolabe.png": {
+      "hash": "c30ad8d282f5ccba23371a888b0f8268340e4e43e8f82efc3cf8b673a30af3cd",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/c3/c30ad8d282f5ccba23371a888b0f8268340e4e43e8f82efc3cf8b673a30af3cd"
+    },
+    "assets/stickers/etudiant.png": {
+      "hash": "ff821eb8c01b1d8a57fc910b6a9c19160b2842e8d03bd2904eca47d0bbea277f",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/ff/ff821eb8c01b1d8a57fc910b6a9c19160b2842e8d03bd2904eca47d0bbea277f"
+    },
+    "assets/stickers/foule.png": {
+      "hash": "a7b65be12a1b166f18dcdde158c43263cfbd21189961bb8e6cef176217c46ba6",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/a7/a7b65be12a1b166f18dcdde158c43263cfbd21189961bb8e6cef176217c46ba6"
+    },
+    "assets/stickers/jean-pied.png": {
+      "hash": "d7803f1619b6e4a35f97587aadbe096ef78c000d5150d23e298b880e8cbc8931",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/d7/d7803f1619b6e4a35f97587aadbe096ef78c000d5150d23e298b880e8cbc8931"
+    },
+    "assets/stickers/jean-portrait.png": {
+      "hash": "7d6336d95502cf901d93803004a4824afa36c84fbccc8acb3d4caf59964b4760",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/7d/7d6336d95502cf901d93803004a4824afa36c84fbccc8acb3d4caf59964b4760"
+    },
+    "assets/stickers/jesus-pied.png": {
+      "hash": "dc1fc672b2a6efb06ead94c77073f08d7430425eb3192b1db75ad33c310532d2",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/dc/dc1fc672b2a6efb06ead94c77073f08d7430425eb3192b1db75ad33c310532d2"
+    },
+    "assets/stickers/jesus-portrait.png": {
+      "hash": "df391a0285f1d68aefb608721e7d60430c7a2f5ce1372ac01ddc6d2d499fdfba",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/df/df391a0285f1d68aefb608721e7d60430c7a2f5ce1372ac01ddc6d2d499fdfba"
+    },
+    "assets/stickers/jonas.png": {
+      "hash": "e50d96bed522e21271e96b7b4c37c1be2e20df09b98d2b79468c9afbd1da5584",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/e5/e50d96bed522e21271e96b7b4c37c1be2e20df09b98d2b79468c9afbd1da5584"
+    },
+    "assets/stickers/lampe.png": {
+      "hash": "f5c645ef1a240230f06e765d74e5f30434b251679415d70d836e0ec4aa0a63ff",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/f5/f5c645ef1a240230f06e765d74e5f30434b251679415d70d836e0ec4aa0a63ff"
+    },
+    "assets/stickers/mains-lampe.png": {
+      "hash": "53c7613f320252c9a4c3c250a63a02b3deb247ac13e0d2ada830e7241d96248b",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/53/53c7613f320252c9a4c3c250a63a02b3deb247ac13e0d2ada830e7241d96248b"
+    },
+    "assets/stickers/miller.png": {
+      "hash": "38f47948776f24fbd109c29219da07d2c5ac7655a681a775f8945ce4c82b9562",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/38/38f47948776f24fbd109c29219da07d2c5ac7655a681a775f8945ce4c82b9562"
+    },
+    "assets/stickers/montagne.png": {
+      "hash": "41c1c4ce6a048648b7d456839d350c7dfc941ec7678c356a931c333d97fcd33b",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/41/41c1c4ce6a048648b7d456839d350c7dfc941ec7678c356a931c333d97fcd33b"
+    },
+    "assets/stickers/nostradamus-pied.png": {
+      "hash": "a90c5561ad9abdc51d966d6b3e61c113b1bf214657f5ce54eaae9ab0bacd61b9",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/a9/a90c5561ad9abdc51d966d6b3e61c113b1bf214657f5ce54eaae9ab0bacd61b9"
+    },
+    "assets/stickers/nostradamus-portrait.png": {
+      "hash": "efa289a9e0a7c12f3b48c809d2bc94d4e35ef0ddc3727788828f3a6cea0da169",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/ef/efa289a9e0a7c12f3b48c809d2bc94d4e35ef0ddc3727788828f3a6cea0da169"
+    },
+    "assets/stickers/pain.png": {
+      "hash": "8bfadea99924c926925c7138c96c38699e713de15eeceb3b7396ce124d63daf2",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/8b/8bfadea99924c926925c7138c96c38699e713de15eeceb3b7396ce124d63daf2"
+    },
+    "assets/stickers/paul.png": {
+      "hash": "a278e4471693ecc79636856ce083b0e0f2091dd7a93f1bd363ea9adf39014e42",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/a2/a278e4471693ecc79636856ce083b0e0f2091dd7a93f1bd363ea9adf39014e42"
+    },
+    "assets/stickers/paysan.png": {
+      "hash": "d37e7b8710e7949de9750f136cfc942e16db38be85c67684af939a730b9263d3",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/d3/d37e7b8710e7949de9750f136cfc942e16db38be85c67684af939a730b9263d3"
+    },
+    "assets/stickers/rouleau.png": {
+      "hash": "b46d2f43d10e32574bee117e137377034490801111949be031a7e9baf28b628c",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/b4/b46d2f43d10e32574bee117e137377034490801111949be031a7e9baf28b628c"
+    },
+    "assets/stickers/sablier.png": {
+      "hash": "349f245d12140bac579db2d9448625e046e2ea0a365576f7970395cb24cb62b2",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/34/349f245d12140bac579db2d9448625e046e2ea0a365576f7970395cb24cb62b2"
+    },
+    "assets/stickers/sym-balance.png": {
+      "hash": "317d9e56da984221ce64429cb1dcf809192f0ad2d5f1d8efd7d5678ae167d93b",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/31/317d9e56da984221ce64429cb1dcf809192f0ad2d5f1d8efd7d5678ae167d93b"
+    },
+    "assets/stickers/veilleur.png": {
+      "hash": "1bdb6b1577e4e4d4b3a782d264f4b75921f5ce52d0dc6d15824a6fb3c31860c5",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/1b/1bdb6b1577e4e4d4b3a782d264f4b75921f5ce52d0dc6d15824a6fb3c31860c5"
+    },
+    "assets/stickers/vierge-lampe.png": {
+      "hash": "18f4c77d47250c75814555715da499cffef0a3df30792eeb7598e58fa7ced1be",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/18/18f4c77d47250c75814555715da499cffef0a3df30792eeb7598e58fa7ced1be"
+    },
+    "assets/stickers/villageois.png": {
+      "hash": "b5ab89a842b70c47d7a550a9a7d481b2f488398d55408ba5ee0f5258b9c7e8ee",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/b5/b5ab89a842b70c47d7a550a9a7d481b2f488398d55408ba5ee0f5258b9c7e8ee"
+    },
+    "build.py": {
+      "hash": "6e0edbf0ebd5de605f070a20d505b63c699fc05d4ceed79d42982a9d5e1d43cf",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/6e/6e0edbf0ebd5de605f070a20d505b63c699fc05d4ceed79d42982a9d5e1d43cf"
+    },
+    "index.html": {
+      "hash": "d9d7f49926341f1c05cc96eabea3ffd804620ca567790ff840cff15eb8dd5826",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/d9/d9d7f49926341f1c05cc96eabea3ffd804620ca567790ff840cff15eb8dd5826"
+    },
+    "prompts-images.md": {
+      "hash": "9ac492ca852a87c94d3994a0fa37769c8fe96443421370552c106610d0268a90",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/9a/9ac492ca852a87c94d3994a0fa37769c8fe96443421370552c106610d0268a90"
+    },
+    "script.md": {
+      "hash": "82eda3e305acfa3ef1000b4981db197aa66752b0322a9748d972824fb751fd28",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/82/82eda3e305acfa3ef1000b4981db197aa66752b0322a9748d972824fb751fd28"
+    },
+    "transcript-merged.json": {
+      "hash": "b81904b17d523149b262376ff15e80fdf4d27be5eb265a4f4f0b50b376885c66",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/b8/b81904b17d523149b262376ff15e80fdf4d27be5eb265a4f4f0b50b376885c66"
+    },
+    "transcript-raw.json": {
+      "hash": "a078f137d01e33c25bafc922660d7e64ce56d3930908ee7cb26b723c6d2d82fd",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/a0/a078f137d01e33c25bafc922660d7e64ce56d3930908ee7cb26b723c6d2d82fd"
+    },
+    "transcript.json": {
+      "hash": "3e9aaf00a17bdeb4f6ebae28d1b38d7f704eb7b7b37d46d2fb069f3ec892184c",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/3e/3e9aaf00a17bdeb4f6ebae28d1b38d7f704eb7b7b37d46d2fb069f3ec892184c"
+    },
+    "assets/audio/mg1.wav": {
+      "hash": "afc481c6004b5c19be9417c3fed851469969a3cf1b0fd6403d219fd3cdeda1e8",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/af/afc481c6004b5c19be9417c3fed851469969a3cf1b0fd6403d219fd3cdeda1e8"
+    },
+    "assets/audio/mg2.wav": {
+      "hash": "61206bf9a742f4cab6af65665f1fe64c4c5dc9f30b3f5119748923ec3cc3b88f",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/61/61206bf9a742f4cab6af65665f1fe64c4c5dc9f30b3f5119748923ec3cc3b88f"
+    },
+    "assets/audio/mg3.wav": {
+      "hash": "f51a29aa0ffca7ccdf54e6527af4c544b127aadbc8781d54027d393b69984b3a",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/f5/f51a29aa0ffca7ccdf54e6527af4c544b127aadbc8781d54027d393b69984b3a"
+    },
+    "assets/audio/music.wav": {
+      "hash": "951b8f726bd95b23873d7134bc09236231b69a95fad7a3a12bb6daa6606b0715",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/95/951b8f726bd95b23873d7134bc09236231b69a95fad7a3a12bb6daa6606b0715"
+    },
+    "assets/audio/pulse.wav": {
+      "hash": "cfbdd76c7ac8910ebe5f5ddd9bd7406675521a9f74c4ccd9c2c6edae9b09c046",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/cf/cfbdd76c7ac8910ebe5f5ddd9bd7406675521a9f74c4ccd9c2c6edae9b09c046"
+    },
+    "assets/source/photos/arc-de-titus.jpg": {
+      "hash": "ff9af16f08ebce9d2a764b631ae561ecc3b3545964695e19b7b62a622fe60a09",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/ff/ff9af16f08ebce9d2a764b631ae561ecc3b3545964695e19b7b62a622fe60a09"
+    },
+    "assets/source/photos/cav-durer-quatre-cavaliers.jpg": {
+      "hash": "dabb157b38ea1684a5d40adaba2f61997e8bfb0309dc8d07f86b5ec37c8e4740",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/da/dabb157b38ea1684a5d40adaba2f61997e8bfb0309dc8d07f86b5ec37c8e4740"
+    },
+    "assets/source/photos/met-364540.jpg": {
+      "hash": "1fde626f1526bd789bd423ef0232ca15f48ae87ff4965abaedab97207ad5634e",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/1f/1fde626f1526bd789bd423ef0232ca15f48ae87ff4965abaedab97207ad5634e"
+    },
+    "assets/source/photos/met-383065.jpg": {
+      "hash": "d83fc1a1c9c4719aefc5545fe7534fcfa9f97b9651050714b0f43dfc3a8ff34b",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/d8/d83fc1a1c9c4719aefc5545fe7534fcfa9f97b9651050714b0f43dfc3a8ff34b"
+    },
+    "assets/source/photos/met-387568.jpg": {
+      "hash": "686782976e991b60d80e85cd0f345a047d305561719f019cbcb299bd28455e19",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/68/686782976e991b60d80e85cd0f345a047d305561719f019cbcb299bd28455e19"
+    },
+    "assets/source/photos/met-388426.jpg": {
+      "hash": "8719f5d7a8a6beae8a547dc8f6b6208b7d8eb7c997651dc6811306f47252a9b3",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/87/8719f5d7a8a6beae8a547dc8f6b6208b7d8eb7c997651dc6811306f47252a9b3"
+    },
+    "assets/source/photos/met-397057.jpg": {
+      "hash": "b9f95755a8e9373911c2254b186cb5920cae0a1838389c495e5cc7dc67803c97",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/b9/b9f95755a8e9373911c2254b186cb5920cae0a1838389c495e5cc7dc67803c97"
+    },
+    "assets/source/photos/met-923639.jpg": {
+      "hash": "6e34ec6199e09a41152a17986a395e820711b2f22206477c09e2a2592123dd2d",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/6e/6e34ec6199e09a41152a17986a395e820711b2f22206477c09e2a2592123dd2d"
+    },
+    "assets/source/voix-originale.wav": {
+      "hash": "a27d27a0d717593ae56bbb245e43fd2d58fa876e8f0dc11cff3eb0b6e6904c83",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/a2/a27d27a0d717593ae56bbb245e43fd2d58fa876e8f0dc11cff3eb0b6e6904c83"
+    },
+    "assets/stickers/arc-titus.png": {
+      "hash": "1913feed947e6a1e752d0793f11c47f2542bbdb38e3d052e2b3681864f1eac7f",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/19/1913feed947e6a1e752d0793f11c47f2542bbdb38e3d052e2b3681864f1eac7f"
+    },
+    "assets/stickers/cavaliers.png": {
+      "hash": "1060283e6726f9af25eb6491f7db3705d35eba783a31d08cbc8663ea71869247",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/10/1060283e6726f9af25eb6491f7db3705d35eba783a31d08cbc8663ea71869247"
+    },
+    "assets/voix.wav": {
+      "hash": "b71ebbc698a3a432238a986a789d736459ce0faee339cca313e8efc77ad174e9",
+      "content": "/root/.cache/hyperframes/history/0e756c00-e1a5-4fe9-9e41-c1da8db0c82a/blobs/b7/b71ebbc698a3a432238a986a789d736459ce0faee339cca313e8efc77ad174e9"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "0e6a313d-b16b-41c1-add2-74a537fdbb2d"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "0e6a313d-b16b-41c1-add2-74a537fdbb2d",
+        "scope": "project",
+        "report": "/home/user/Bible-simple/montage/video-fin-du-monde/.hyperframes/artifacts/checks/0e6a313d-b16b-41c1-add2-74a537fdbb2d.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793706036663,
+        "contentHash": "b84fcc6c2d08ca7624370925835f2c4f9ddaad957c9054828ff908033fd7e20c",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-16"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-0",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-00-at-3s.png",
+        "time": 3,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118154,
+        "contentHash": "e9f8c67a26bb8a42aa0303fcdedc7943203117d8f9ee316df36c642841a8ba1d",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-1",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-01-at-17s.png",
+        "time": 17,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118154,
+        "contentHash": "11e380e2d2ba7fc976a2de71eafbea5b9cb49e3ca2e204d09196838f36427718",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-2",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-02-at-45s.png",
+        "time": 45,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118154,
+        "contentHash": "f752e71d1b20e6dcf7be5fca2bc9e0d07ad7017e33195a370556f0e5f3b32476",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-3",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-03-at-70s.png",
+        "time": 70,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118154,
+        "contentHash": "73c1633d33924bc398b5132fe9ec95298c91a26cf25fff5755d6928e16c15665",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-4",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-04-at-105s.png",
+        "time": 105,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "14f05b6e717654e2a93f07eea94175b1dabdd246abc8a19a7b3d7853b2b6cbb0",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-5",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-05-at-130s.png",
+        "time": 130,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "a9ac7f5dfa39dd6728e205a5a4b83c1adba66ca83eb86d46aa1fc9ac6922f83c",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-6",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-06-at-185s.png",
+        "time": 185,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "f5af111d7df22af1a407dfa697be264e16fe4623f47cfe69eddd504bfab0bbf9",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-7",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-07-at-215s.png",
+        "time": 215,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "97aceddfc430fc0efe21ee58a04f1d8ed7a1768e1f52f1693237cb9880501a8e",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-8",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-08-at-262s.png",
+        "time": 262,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "4e8689fcacb5ab7026779cb12c58970a76a46345701b424a9089f5f36a70c164",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-9",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-09-at-305s.png",
+        "time": 305,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "cf97cf73a8dac69b328ad9a0f4cc6509b908c6dabc10e72560e80a5a6b2ed8fd",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-10",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-10-at-350s.png",
+        "time": 350,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "024a4419c15707016895faf2cd46622dcbda551df04f6df7742c73297abe47be",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-11",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-11-at-390s.png",
+        "time": 390,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "f68504069a765daa11f88b9dd9f5d72d406bbb6d4105e0f40dc5a9dba75ad7ba",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-12",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-12-at-410s.png",
+        "time": 410,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "d4b71a529edbba6b4994b18137f1c4355f190acc7aa8c06485d0f5c3c1d41cad",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-13",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-13-at-440s.png",
+        "time": 440,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "db0486df5b80e5ae4776fec8248b60db551c9c712450a50ce7b48f53f0728705",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-14",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-14-at-478s.png",
+        "time": 478,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "57c5bce102d95252330d5d8451d2c837b04183587f74932ac6045b755273a6f7",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-15",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-15-at-498s.png",
+        "time": 498,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "a6a0581b1de2e3763adcbbbada3bddbc1a94185cd8dac6657042caab8e6358d8",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "56b9d6b8-2e17-44f0-976a-e54077b91069-16",
+        "image": "/home/user/Bible-simple/montage/video-fin-du-monde/snap/frame-16-at-525s.png",
+        "time": 525,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793706118155,
+        "contentHash": "8694ddf7a20561173bb9fff238dfd59e02eea4538a70bf717f83e799e4d566a7",
+        "revision": null,
+        "inputFingerprint": "55790fc8bbcd5e5f71e139fcadd777b777e1c042b77b45afc5d6804d5a818fbd",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}
