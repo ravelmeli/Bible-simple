@@ -1,0 +1,7 @@
+- `met-923639` — « Astrolabe », German or Italian, 1462 — https://www.metmuseum.org/art/collection/search/923639 — The Cloisters Collection, 2025 — Public Domain (CC0, Met Open Access)
+- `met-202374` — « Hourglass », , 18th century — https://www.metmuseum.org/art/collection/search/202374 — Gift of Estate of James Hazen Hyde, 1959 — Public Domain (CC0, Met Open Access)
+- `met-397057` — « Four Horsemen of the Apocalypse, from "The Apocalypse" », Albrecht Dürer, ca. 1497/1498 — https://www.metmuseum.org/art/collection/search/397057 — Gift of Mrs. Felix M. Warburg, 1940 — Public Domain (CC0, Met Open Access)
+- `met-388426` — « Arch of Titus », Giovanni Volpato, ca. 1780 — https://www.metmuseum.org/art/collection/search/388426 — Gift of Mrs. Charles Wrightsman, 2009 — Public Domain (CC0, Met Open Access)
+- `met-364540` — « View of Jerusalem with the Temple of Solomon », Philippe de Champaigne, 17th century — https://www.metmuseum.org/art/collection/search/364540 — Purchase, 2002 Benefit Fund and Gift of Dr. Mortimer D. Sackler, Theresa Sackler and Family, 2004 — Public Domain (CC0, Met Open Access)
+- `met-383065` — « The Parable of the Wise and Foolish Virgins », Pieter Bruegel the Elder, ca. 1560–63 — https://www.metmuseum.org/art/collection/search/383065 — Harris Brisbane Dick Fund, 1928 — Public Domain (CC0, Met Open Access)
+- `met-387568` — « The Martyrdom of Saint John, from "The Apocalypse" », Albrecht Dürer, 1511 — https://www.metmuseum.org/art/collection/search/387568 — Gift of Junius Spencer Morgan, 1919 — Public Domain (CC0, Met Open Access)
