@@ -18,6 +18,12 @@ L'utilisateur précise à chaque fois s'il s'agit d'un **short** (1 min à 1 min
 
 Committer et pousser à chaque étape qui produit des fichiers.
 
+## Chaînes par langue
+
+- **Français** : « La Bible Simple » (Louis Segond 1910 pour les citations).
+- **Anglais** : « Faith Engineering » (World English Bible).
+- **Italien** : « La Bibbia Semplice » (nom choisi par l'utilisateur). Traduction biblique des citations : Riveduta (Luzzi), à confirmer par l'utilisateur ; la CEI est sous droits, ne pas la citer en entier. Même déroulé que pour le français : script traduit, validation, voix (Gemini TTS en italien, à vérifier), puis montage.
+
 ## Règles éditoriales
 
 - Distinguer ce que dit le texte biblique, la tradition, le consensus historique et les hypothèses. Une hypothèse (ex. Néron = 666) est présentée comme telle.
