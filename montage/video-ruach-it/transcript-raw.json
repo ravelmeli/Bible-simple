@@ -1,0 +1,5432 @@
+[
+ {
+  "text": "Sul",
+  "start": 0.0,
+  "end": 0.5
+ },
+ {
+  "text": "monte",
+  "start": 0.5,
+  "end": 0.98
+ },
+ {
+  "text": "Oreb",
+  "start": 0.98,
+  "end": 1.62
+ },
+ {
+  "text": "il",
+  "start": 1.62,
+  "end": 1.9
+ },
+ {
+  "text": "profeta",
+  "start": 1.9,
+  "end": 2.56
+ },
+ {
+  "text": "Elia",
+  "start": 2.56,
+  "end": 2.92
+ },
+ {
+  "text": "aspetta.",
+  "start": 2.92,
+  "end": 4.0
+ },
+ {
+  "text": "Un",
+  "start": 4.3,
+  "end": 4.94
+ },
+ {
+  "text": "vento",
+  "start": 4.94,
+  "end": 5.44
+ },
+ {
+  "text": "così",
+  "start": 5.44,
+  "end": 5.7
+ },
+ {
+  "text": "forte",
+  "start": 5.7,
+  "end": 6.24
+ },
+ {
+  "text": "da",
+  "start": 6.24,
+  "end": 6.48
+ },
+ {
+  "text": "spaccare",
+  "start": 6.48,
+  "end": 7.1
+ },
+ {
+  "text": "le",
+  "start": 7.1,
+  "end": 7.32
+ },
+ {
+  "text": "rocce",
+  "start": 7.32,
+  "end": 7.62
+ },
+ {
+  "text": "passa",
+  "start": 7.62,
+  "end": 7.94
+ },
+ {
+  "text": "davanti",
+  "start": 7.94,
+  "end": 8.52
+ },
+ {
+  "text": "a",
+  "start": 8.52,
+  "end": 8.6
+ },
+ {
+  "text": "lui.",
+  "start": 8.6,
+  "end": 8.76
+ },
+ {
+  "text": "Poi",
+  "start": 9.08,
+  "end": 9.72
+ },
+ {
+  "text": "un",
+  "start": 9.72,
+  "end": 9.82
+ },
+ {
+  "text": "terremoto,",
+  "start": 9.82,
+  "end": 10.34
+ },
+ {
+  "text": "poi",
+  "start": 10.44,
+  "end": 10.82
+ },
+ {
+  "text": "un",
+  "start": 10.82,
+  "end": 11.06
+ },
+ {
+  "text": "fuoco.",
+  "start": 11.06,
+  "end": 11.48
+ },
+ {
+  "text": "E",
+  "start": 11.7,
+  "end": 12.34
+ },
+ {
+  "text": "il",
+  "start": 12.34,
+  "end": 12.44
+ },
+ {
+  "text": "testo",
+  "start": 12.44,
+  "end": 12.92
+ },
+ {
+  "text": "ripete,",
+  "start": 12.92,
+  "end": 13.4
+ },
+ {
+  "text": "tre",
+  "start": 13.44,
+  "end": 13.8
+ },
+ {
+  "text": "volte,",
+  "start": 13.8,
+  "end": 14.28
+ },
+ {
+  "text": "l'Eterno",
+  "start": 14.84,
+  "end": 15.7
+ },
+ {
+  "text": "non",
+  "start": 15.7,
+  "end": 16.06
+ },
+ {
+  "text": "era",
+  "start": 16.06,
+  "end": 16.38
+ },
+ {
+  "text": "lì.",
+  "start": 16.38,
+  "end": 16.74
+ },
+ {
+  "text": "Eppure,",
+  "start": 17.62,
+  "end": 18.26
+ },
+ {
+  "text": "la",
+  "start": 18.26,
+  "end": 18.56
+ },
+ {
+  "text": "parola",
+  "start": 18.56,
+  "end": 18.88
+ },
+ {
+  "text": "che",
+  "start": 18.88,
+  "end": 19.02
+ },
+ {
+  "text": "il",
+  "start": 19.02,
+  "end": 19.1
+ },
+ {
+  "text": "testo",
+  "start": 19.1,
+  "end": 19.4
+ },
+ {
+  "text": "usa",
+  "start": 19.4,
+  "end": 19.56
+ },
+ {
+  "text": "per",
+  "start": 19.56,
+  "end": 19.74
+ },
+ {
+  "text": "questo",
+  "start": 19.74,
+  "end": 20.0
+ },
+ {
+  "text": "vento",
+  "start": 20.0,
+  "end": 20.48
+ },
+ {
+  "text": "è",
+  "start": 20.48,
+  "end": 20.66
+ },
+ {
+  "text": "la",
+  "start": 20.66,
+  "end": 20.82
+ },
+ {
+  "text": "stessa",
+  "start": 20.82,
+  "end": 21.22
+ },
+ {
+  "text": "che",
+  "start": 21.22,
+  "end": 21.4
+ },
+ {
+  "text": "significa",
+  "start": 21.4,
+  "end": 21.72
+ },
+ {
+  "text": "spirito.",
+  "start": 21.72,
+  "end": 22.72
+ },
+ {
+  "text": "Questa",
+  "start": 22.96,
+  "end": 23.6
+ },
+ {
+  "text": "parola",
+  "start": 23.6,
+  "end": 23.98
+ },
+ {
+  "text": "è",
+  "start": 23.98,
+  "end": 24.14
+ },
+ {
+  "text": "è",
+  "start": 24.14,
+  "end": 24.2
+ },
+ {
+  "text": "ruach.",
+  "start": 24.2,
+  "end": 24.7
+ },
+ {
+  "text": "In",
+  "start": 24.98,
+  "end": 25.58
+ },
+ {
+  "text": "italiano",
+  "start": 25.58,
+  "end": 25.88
+ },
+ {
+  "text": "si",
+  "start": 25.88,
+  "end": 26.2
+ },
+ {
+  "text": "traduce",
+  "start": 26.2,
+  "end": 26.64
+ },
+ {
+  "text": "con",
+  "start": 26.64,
+  "end": 26.8
+ },
+ {
+  "text": "vento,",
+  "start": 26.8,
+  "end": 27.28
+ },
+ {
+  "text": "con",
+  "start": 27.28,
+  "end": 27.52
+ },
+ {
+  "text": "soffio",
+  "start": 27.52,
+  "end": 28.16
+ },
+ {
+  "text": "o",
+  "start": 28.16,
+  "end": 28.44
+ },
+ {
+  "text": "con",
+  "start": 28.44,
+  "end": 28.62
+ },
+ {
+  "text": "spirito,",
+  "start": 28.62,
+  "end": 29.18
+ },
+ {
+  "text": "tre",
+  "start": 29.18,
+  "end": 29.66
+ },
+ {
+  "text": "parole",
+  "start": 29.66,
+  "end": 30.04
+ },
+ {
+  "text": "per",
+  "start": 30.04,
+  "end": 30.36
+ },
+ {
+  "text": "un'unica",
+  "start": 30.36,
+  "end": 30.84
+ },
+ {
+  "text": "parola",
+  "start": 30.84,
+  "end": 31.08
+ },
+ {
+  "text": "ebraica.",
+  "start": 31.08,
+  "end": 31.46
+ },
+ {
+  "text": "Anche",
+  "start": 32.04,
+  "end": 32.64
+ },
+ {
+  "text": "la",
+  "start": 32.64,
+  "end": 32.74
+ },
+ {
+  "text": "nostra",
+  "start": 32.74,
+  "end": 32.92
+ },
+ {
+  "text": "parola",
+  "start": 32.92,
+  "end": 33.3
+ },
+ {
+  "text": "spirico",
+  "start": 33.3,
+  "end": 33.76
+ },
+ {
+  "text": "viene",
+  "start": 33.76,
+  "end": 33.94
+ },
+ {
+  "text": "dal",
+  "start": 33.94,
+  "end": 34.24
+ },
+ {
+  "text": "latino",
+  "start": 34.24,
+  "end": 34.6
+ },
+ {
+  "text": "spiritus,",
+  "start": 34.6,
+  "end": 35.38
+ },
+ {
+  "text": "che",
+  "start": 35.42,
+  "end": 35.64
+ },
+ {
+  "text": "voleva",
+  "start": 35.64,
+  "end": 35.92
+ },
+ {
+  "text": "dire",
+  "start": 35.92,
+  "end": 36.06
+ },
+ {
+  "text": "anche",
+  "start": 36.06,
+  "end": 36.36
+ },
+ {
+  "text": "soffio.",
+  "start": 36.36,
+  "end": 36.86
+ },
+ {
+  "text": "Il",
+  "start": 37.0,
+  "end": 37.6
+ },
+ {
+  "text": "greco",
+  "start": 37.6,
+  "end": 37.94
+ },
+ {
+  "text": "fa",
+  "start": 37.94,
+  "end": 38.06
+ },
+ {
+  "text": "la",
+  "start": 38.06,
+  "end": 38.18
+ },
+ {
+  "text": "stessa",
+  "start": 38.18,
+  "end": 38.44
+ },
+ {
+  "text": "cosa",
+  "start": 38.44,
+  "end": 38.7
+ },
+ {
+  "text": "con",
+  "start": 38.7,
+  "end": 38.86
+ },
+ {
+  "text": "la",
+  "start": 38.86,
+  "end": 38.96
+ },
+ {
+  "text": "parola",
+  "start": 38.96,
+  "end": 39.24
+ },
+ {
+  "text": "pneuma.",
+  "start": 39.24,
+  "end": 39.62
+ },
+ {
+  "text": "Allora",
+  "start": 40.36,
+  "end": 40.96
+ },
+ {
+  "text": "perché?",
+  "start": 40.96,
+  "end": 41.18
+ },
+ {
+  "text": "È",
+  "start": 41.56,
+  "end": 42.16
+ },
+ {
+  "text": "una",
+  "start": 42.16,
+  "end": 42.28
+ },
+ {
+  "text": "confusione",
+  "start": 42.28,
+  "end": 42.78
+ },
+ {
+  "text": "o",
+  "start": 42.78,
+  "end": 43.26
+ },
+ {
+  "text": "un",
+  "start": 43.26,
+  "end": 43.66
+ },
+ {
+  "text": "messaggio?",
+  "start": 43.66,
+  "end": 44.12
+ },
+ {
+  "text": "In",
+  "start": 44.66,
+  "end": 45.26
+ },
+ {
+  "text": "questo",
+  "start": 45.26,
+  "end": 45.46
+ },
+ {
+  "text": "studio",
+  "start": 45.46,
+  "end": 45.76
+ },
+ {
+  "text": "seguiremo",
+  "start": 45.76,
+  "end": 46.36
+ },
+ {
+  "text": "ruach",
+  "start": 46.36,
+  "end": 46.76
+ },
+ {
+  "text": "attraverso",
+  "start": 46.76,
+  "end": 47.46
+ },
+ {
+  "text": "la",
+  "start": 47.46,
+  "end": 47.56
+ },
+ {
+  "text": "Bibbia,",
+  "start": 47.56,
+  "end": 47.94
+ },
+ {
+  "text": "un",
+  "start": 47.98,
+  "end": 48.22
+ },
+ {
+  "text": "passo",
+  "start": 48.22,
+  "end": 48.58
+ },
+ {
+  "text": "dopo",
+  "start": 48.58,
+  "end": 48.94
+ },
+ {
+  "text": "l'altro.",
+  "start": 48.94,
+  "end": 49.3
+ },
+ {
+  "text": "Cominciamo",
+  "start": 50.12,
+  "end": 50.7
+ },
+ {
+  "text": "dalla",
+  "start": 50.7,
+  "end": 50.86
+ },
+ {
+  "text": "scena",
+  "start": 50.86,
+  "end": 51.26
+ },
+ {
+  "text": "dell'Oreb,",
+  "start": 51.26,
+  "end": 51.66
+ },
+ {
+  "text": "nel",
+  "start": 51.78,
+  "end": 52.16
+ },
+ {
+  "text": "primo",
+  "start": 52.16,
+  "end": 52.42
+ },
+ {
+  "text": "libro",
+  "start": 52.42,
+  "end": 52.74
+ },
+ {
+  "text": "d'Ere,",
+  "start": 52.74,
+  "end": 53.0
+ },
+ {
+  "text": "al",
+  "start": 53.1,
+  "end": 53.34
+ },
+ {
+  "text": "capitolo",
+  "start": 53.34,
+  "end": 53.7
+ },
+ {
+  "text": "19.",
+  "start": 53.7,
+  "end": 53.9
+ },
+ {
+  "text": "Ecco",
+  "start": 54.72,
+  "end": 55.3
+ },
+ {
+  "text": "che",
+  "start": 55.3,
+  "end": 55.36
+ },
+ {
+  "text": "cosa",
+  "start": 55.36,
+  "end": 55.58
+ },
+ {
+  "text": "dice",
+  "start": 55.58,
+  "end": 55.82
+ },
+ {
+  "text": "il",
+  "start": 55.82,
+  "end": 56.0
+ },
+ {
+  "text": "testo",
+  "start": 56.0,
+  "end": 56.38
+ },
+ {
+  "text": "nella",
+  "start": 56.38,
+  "end": 56.52
+ },
+ {
+  "text": "riveduta,",
+  "start": 56.52,
+  "end": 57.0
+ },
+ {
+  "text": "la",
+  "start": 57.12,
+  "end": 57.32
+ },
+ {
+  "text": "traduzione",
+  "start": 57.32,
+  "end": 57.88
+ },
+ {
+  "text": "del",
+  "start": 57.88,
+  "end": 58.0
+ },
+ {
+  "text": "1927.",
+  "start": 58.0,
+  "end": 58.94
+ },
+ {
+  "text": "Ed",
+  "start": 59.72,
+  "end": 60.3
+ },
+ {
+  "text": "ecco",
+  "start": 60.3,
+  "end": 60.64
+ },
+ {
+  "text": "passare",
+  "start": 60.64,
+  "end": 61.1
+ },
+ {
+  "text": "l'Eterno.",
+  "start": 61.1,
+  "end": 61.66
+ },
+ {
+  "text": "Un",
+  "start": 61.76,
+  "end": 62.34
+ },
+ {
+  "text": "vento",
+  "start": 62.34,
+  "end": 62.8
+ },
+ {
+  "text": "forte",
+  "start": 62.8,
+  "end": 63.24
+ },
+ {
+  "text": "e",
+  "start": 63.24,
+  "end": 63.4
+ },
+ {
+  "text": "impetuoso",
+  "start": 63.4,
+  "end": 63.94
+ },
+ {
+  "text": "spaccava",
+  "start": 63.94,
+  "end": 64.6
+ },
+ {
+  "text": "i",
+  "start": 64.6,
+  "end": 64.64
+ },
+ {
+  "text": "monti",
+  "start": 64.64,
+  "end": 65.02
+ },
+ {
+  "text": "e",
+  "start": 65.02,
+  "end": 65.04
+ },
+ {
+  "text": "spezzava",
+  "start": 65.04,
+  "end": 65.66
+ },
+ {
+  "text": "le",
+  "start": 65.66,
+  "end": 65.8
+ },
+ {
+  "text": "rocce",
+  "start": 65.8,
+  "end": 66.1
+ },
+ {
+  "text": "davanti",
+  "start": 66.1,
+  "end": 66.5
+ },
+ {
+  "text": "all'Eterno,",
+  "start": 66.5,
+  "end": 67.06
+ },
+ {
+  "text": "ma",
+  "start": 67.08,
+  "end": 67.52
+ },
+ {
+  "text": "l'Eterno",
+  "start": 67.52,
+  "end": 68.06
+ },
+ {
+  "text": "non",
+  "start": 68.06,
+  "end": 68.26
+ },
+ {
+  "text": "era",
+  "start": 68.26,
+  "end": 68.54
+ },
+ {
+  "text": "nel",
+  "start": 68.54,
+  "end": 68.74
+ },
+ {
+  "text": "vento.",
+  "start": 68.74,
+  "end": 69.26
+ },
+ {
+  "text": "E",
+  "start": 69.26,
+  "end": 69.8
+ },
+ {
+  "text": "dopo",
+  "start": 69.8,
+  "end": 70.04
+ },
+ {
+  "text": "il",
+  "start": 70.04,
+  "end": 70.22
+ },
+ {
+  "text": "vento",
+  "start": 70.22,
+  "end": 70.56
+ },
+ {
+  "text": "un",
+  "start": 70.56,
+  "end": 70.64
+ },
+ {
+  "text": "terremoto,",
+  "start": 70.64,
+  "end": 71.24
+ },
+ {
+  "text": "ma",
+  "start": 71.32,
+  "end": 71.52
+ },
+ {
+  "text": "l'Eterno",
+  "start": 71.52,
+  "end": 71.96
+ },
+ {
+  "text": "non",
+  "start": 71.96,
+  "end": 72.24
+ },
+ {
+  "text": "era",
+  "start": 72.24,
+  "end": 72.48
+ },
+ {
+  "text": "nel",
+  "start": 72.48,
+  "end": 72.7
+ },
+ {
+  "text": "terremoto.",
+  "start": 72.7,
+  "end": 73.14
+ },
+ {
+  "text": "Qui",
+  "start": 73.84,
+  "end": 74.42
+ },
+ {
+  "text": "Ruach",
+  "start": 74.42,
+  "end": 75.0
+ },
+ {
+  "text": "indica",
+  "start": 75.0,
+  "end": 75.52
+ },
+ {
+  "text": "un",
+  "start": 75.52,
+  "end": 75.62
+ },
+ {
+  "text": "vento",
+  "start": 75.62,
+  "end": 75.9
+ },
+ {
+  "text": "vero,",
+  "start": 75.9,
+  "end": 76.22
+ },
+ {
+  "text": "un",
+  "start": 76.22,
+  "end": 76.44
+ },
+ {
+  "text": "fenomeno",
+  "start": 76.44,
+  "end": 76.92
+ },
+ {
+  "text": "della",
+  "start": 76.92,
+  "end": 77.06
+ },
+ {
+  "text": "natura.",
+  "start": 77.06,
+  "end": 77.44
+ },
+ {
+  "text": "È",
+  "start": 77.58,
+  "end": 77.92
+ },
+ {
+  "text": "il",
+  "start": 77.92,
+  "end": 78.0
+ },
+ {
+  "text": "primo",
+  "start": 78.0,
+  "end": 78.22
+ },
+ {
+  "text": "significato",
+  "start": 78.22,
+  "end": 78.84
+ },
+ {
+  "text": "della",
+  "start": 78.84,
+  "end": 78.96
+ },
+ {
+  "text": "parola.",
+  "start": 78.96,
+  "end": 79.36
+ },
+ {
+  "text": "Nella",
+  "start": 79.78,
+  "end": 80.3
+ },
+ {
+  "text": "Bibbia",
+  "start": 80.3,
+  "end": 80.64
+ },
+ {
+  "text": "il",
+  "start": 80.64,
+  "end": 80.72
+ },
+ {
+  "text": "vento",
+  "start": 80.72,
+  "end": 81.1
+ },
+ {
+  "text": "non",
+  "start": 81.1,
+  "end": 81.2
+ },
+ {
+  "text": "è",
+  "start": 81.2,
+  "end": 81.34
+ },
+ {
+  "text": "mai",
+  "start": 81.34,
+  "end": 81.56
+ },
+ {
+  "text": "lontano",
+  "start": 81.56,
+  "end": 82.1
+ },
+ {
+  "text": "dall'azione",
+  "start": 82.1,
+  "end": 82.5
+ },
+ {
+  "text": "di",
+  "start": 82.5,
+  "end": 82.76
+ },
+ {
+  "text": "Dio.",
+  "start": 82.76,
+  "end": 83.04
+ },
+ {
+  "text": "Quando",
+  "start": 83.32,
+  "end": 83.84
+ },
+ {
+  "text": "Israele",
+  "start": 83.84,
+  "end": 84.26
+ },
+ {
+  "text": "è",
+  "start": 84.26,
+  "end": 84.36
+ },
+ {
+  "text": "bloccato",
+  "start": 84.36,
+  "end": 84.84
+ },
+ {
+  "text": "davanti",
+  "start": 84.84,
+  "end": 85.26
+ },
+ {
+  "text": "al",
+  "start": 85.26,
+  "end": 85.34
+ },
+ {
+  "text": "mare,",
+  "start": 85.34,
+  "end": 85.6
+ },
+ {
+  "text": "nel",
+  "start": 85.74,
+  "end": 86.0
+ },
+ {
+  "text": "libro",
+  "start": 86.0,
+  "end": 86.24
+ },
+ {
+  "text": "dell'Esodo,",
+  "start": 86.24,
+  "end": 86.7
+ },
+ {
+  "text": "il",
+  "start": 86.84,
+  "end": 87.3
+ },
+ {
+  "text": "testo",
+  "start": 87.3,
+  "end": 87.66
+ },
+ {
+  "text": "dice",
+  "start": 87.66,
+  "end": 87.88
+ },
+ {
+  "text": "« l'Eterno",
+  "start": 87.88,
+  "end": 88.68
+ },
+ {
+  "text": "fece",
+  "start": 88.68,
+  "end": 88.98
+ },
+ {
+  "text": "ritirare",
+  "start": 88.98,
+  "end": 89.46
+ },
+ {
+  "text": "il",
+  "start": 89.46,
+  "end": 89.6
+ },
+ {
+  "text": "mare",
+  "start": 89.6,
+  "end": 89.74
+ },
+ {
+  "text": "per",
+  "start": 89.74,
+  "end": 89.98
+ },
+ {
+  "text": "mezzo",
+  "start": 89.98,
+  "end": 90.26
+ },
+ {
+  "text": "di",
+  "start": 90.26,
+  "end": 90.4
+ },
+ {
+  "text": "un",
+  "start": 90.4,
+  "end": 90.5
+ },
+ {
+  "text": "forte",
+  "start": 90.5,
+  "end": 90.9
+ },
+ {
+  "text": "vento",
+  "start": 90.9,
+  "end": 91.34
+ },
+ {
+  "text": "orientale",
+  "start": 91.34,
+  "end": 91.84
+ },
+ {
+  "text": "durato",
+  "start": 91.84,
+  "end": 92.24
+ },
+ {
+  "text": "tutta",
+  "start": 92.24,
+  "end": 92.72
+ },
+ {
+  "text": "la",
+  "start": 92.72,
+  "end": 92.82
+ },
+ {
+  "text": "notte».",
+  "start": 92.82,
+  "end": 93.32
+ },
+ {
+  "text": "È",
+  "start": 93.32,
+  "end": 93.9
+ },
+ {
+  "text": "ancora",
+  "start": 93.9,
+  "end": 94.16
+ },
+ {
+  "text": "la",
+  "start": 94.16,
+  "end": 94.4
+ },
+ {
+  "text": "parola",
+  "start": 94.4,
+  "end": 94.68
+ },
+ {
+  "text": "ruach.",
+  "start": 94.68,
+  "end": 94.98
+ },
+ {
+  "text": "Ed",
+  "start": 95.36,
+  "end": 95.88
+ },
+ {
+  "text": "è",
+  "start": 95.88,
+  "end": 95.94
+ },
+ {
+  "text": "anche",
+  "start": 95.94,
+  "end": 96.12
+ },
+ {
+  "text": "quella",
+  "start": 96.12,
+  "end": 96.34
+ },
+ {
+  "text": "che",
+  "start": 96.34,
+  "end": 96.52
+ },
+ {
+  "text": "indica",
+  "start": 96.52,
+  "end": 96.82
+ },
+ {
+  "text": "i",
+  "start": 96.82,
+  "end": 96.88
+ },
+ {
+  "text": "quattro",
+  "start": 96.88,
+  "end": 97.36
+ },
+ {
+  "text": "venti,",
+  "start": 97.36,
+  "end": 97.74
+ },
+ {
+  "text": "le",
+  "start": 97.76,
+  "end": 97.94
+ },
+ {
+  "text": "quattro",
+  "start": 97.94,
+  "end": 98.46
+ },
+ {
+  "text": "direzioni",
+  "start": 98.46,
+  "end": 99.0
+ },
+ {
+  "text": "da",
+  "start": 99.0,
+  "end": 99.14
+ },
+ {
+  "text": "cui",
+  "start": 99.14,
+  "end": 99.28
+ },
+ {
+  "text": "arriva",
+  "start": 99.28,
+  "end": 99.76
+ },
+ {
+  "text": "il",
+  "start": 99.76,
+  "end": 99.86
+ },
+ {
+  "text": "soffio.",
+  "start": 99.86,
+  "end": 100.22
+ },
+ {
+  "text": "Primo",
+  "start": 100.68,
+  "end": 101.2
+ },
+ {
+  "text": "significato,",
+  "start": 101.2,
+  "end": 101.8
+ },
+ {
+  "text": "il",
+  "start": 101.82,
+  "end": 102.14
+ },
+ {
+  "text": "vento.",
+  "start": 102.14,
+  "end": 102.6
+ },
+ {
+  "text": "Una",
+  "start": 102.72,
+  "end": 103.24
+ },
+ {
+  "text": "forza",
+  "start": 103.24,
+  "end": 103.66
+ },
+ {
+  "text": "che",
+  "start": 103.66,
+  "end": 103.78
+ },
+ {
+  "text": "non",
+  "start": 103.78,
+  "end": 104.02
+ },
+ {
+  "text": "si",
+  "start": 104.02,
+  "end": 104.22
+ },
+ {
+  "text": "si",
+  "start": 104.22,
+  "end": 104.3
+ },
+ {
+  "text": "vede",
+  "start": 104.3,
+  "end": 104.56
+ },
+ {
+  "text": "ma",
+  "start": 104.56,
+  "end": 104.8
+ },
+ {
+  "text": "di",
+  "start": 104.8,
+  "end": 104.94
+ },
+ {
+  "text": "cui",
+  "start": 104.94,
+  "end": 105.1
+ },
+ {
+  "text": "si",
+  "start": 105.1,
+  "end": 105.24
+ },
+ {
+  "text": "vedono",
+  "start": 105.24,
+  "end": 105.52
+ },
+ {
+  "text": "gli",
+  "start": 105.52,
+  "end": 105.68
+ },
+ {
+  "text": "effetti",
+  "start": 105.68,
+  "end": 106.12
+ },
+ {
+  "text": "se",
+  "start": 106.12,
+  "end": 106.82
+ },
+ {
+  "text": "ti",
+  "start": 106.82,
+  "end": 107.0
+ },
+ {
+  "text": "piace",
+  "start": 107.0,
+  "end": 107.18
+ },
+ {
+  "text": "procedere",
+  "start": 107.18,
+  "end": 107.66
+ },
+ {
+  "text": "così",
+  "start": 107.66,
+  "end": 107.86
+ },
+ {
+  "text": "una",
+  "start": 107.86,
+  "end": 108.32
+ },
+ {
+  "text": "parola",
+  "start": 108.32,
+  "end": 108.72
+ },
+ {
+  "text": "alla",
+  "start": 108.72,
+  "end": 108.82
+ },
+ {
+  "text": "volta",
+  "start": 108.82,
+  "end": 109.1
+ },
+ {
+  "text": "resta",
+  "start": 109.1,
+  "end": 109.68
+ },
+ {
+  "text": "ancora",
+  "start": 109.68,
+  "end": 109.86
+ },
+ {
+  "text": "un",
+  "start": 109.86,
+  "end": 110.08
+ },
+ {
+  "text": "po",
+  "start": 110.08,
+  "end": 110.12
+ },
+ {
+  "text": "con",
+  "start": 110.12,
+  "end": 110.28
+ },
+ {
+  "text": "noi",
+  "start": 110.28,
+  "end": 110.5
+ },
+ {
+  "text": "il",
+  "start": 110.5,
+  "end": 111.12
+ },
+ {
+  "text": "cammino",
+  "start": 111.12,
+  "end": 111.52
+ },
+ {
+  "text": "diventa",
+  "start": 111.52,
+  "end": 111.86
+ },
+ {
+  "text": "più",
+  "start": 111.86,
+  "end": 112.02
+ },
+ {
+  "text": "bello",
+  "start": 112.02,
+  "end": 112.44
+ },
+ {
+  "text": "man",
+  "start": 112.44,
+  "end": 112.56
+ },
+ {
+  "text": "mano",
+  "start": 112.56,
+  "end": 112.74
+ },
+ {
+  "text": "che",
+  "start": 112.74,
+  "end": 112.92
+ },
+ {
+  "text": "si",
+  "start": 112.92,
+  "end": 113.02
+ },
+ {
+  "text": "avanza",
+  "start": 113.02,
+  "end": 113.3
+ },
+ {
+  "text": "secondo",
+  "start": 113.3,
+  "end": 114.54
+ },
+ {
+  "text": "significato",
+  "start": 114.54,
+  "end": 115.4
+ },
+ {
+  "text": "il",
+  "start": 115.4,
+  "end": 116.0
+ },
+ {
+  "text": "soffio",
+  "start": 116.0,
+  "end": 116.58
+ },
+ {
+  "text": "quello",
+  "start": 116.58,
+  "end": 117.38
+ },
+ {
+  "text": "che",
+  "start": 117.38,
+  "end": 117.52
+ },
+ {
+  "text": "esce",
+  "start": 117.52,
+  "end": 117.82
+ },
+ {
+  "text": "dalla",
+  "start": 117.82,
+  "end": 117.94
+ },
+ {
+  "text": "tua",
+  "start": 117.94,
+  "end": 118.18
+ },
+ {
+  "text": "bocca",
+  "start": 118.18,
+  "end": 118.54
+ },
+ {
+  "text": "in",
+  "start": 118.54,
+  "end": 118.72
+ },
+ {
+  "text": "questo",
+  "start": 118.72,
+  "end": 118.88
+ },
+ {
+  "text": "preciso",
+  "start": 118.88,
+  "end": 119.22
+ },
+ {
+  "text": "momento",
+  "start": 119.22,
+  "end": 119.58
+ },
+ {
+  "text": "nel",
+  "start": 119.58,
+  "end": 120.64
+ },
+ {
+  "text": "salmo",
+  "start": 120.64,
+  "end": 121.0
+ },
+ {
+  "text": "104",
+  "start": 121.0,
+  "end": 121.34
+ },
+ {
+  "text": "il",
+  "start": 121.34,
+  "end": 121.88
+ },
+ {
+  "text": "poeta",
+  "start": 121.88,
+  "end": 122.2
+ },
+ {
+  "text": "guarda",
+  "start": 122.2,
+  "end": 122.6
+ },
+ {
+  "text": "tutti",
+  "start": 122.6,
+  "end": 122.78
+ },
+ {
+  "text": "gli",
+  "start": 122.78,
+  "end": 123.08
+ },
+ {
+  "text": "esseri",
+  "start": 123.08,
+  "end": 123.42
+ },
+ {
+  "text": "viventi",
+  "start": 123.42,
+  "end": 123.88
+ },
+ {
+  "text": "e",
+  "start": 123.88,
+  "end": 124.28
+ },
+ {
+  "text": "dice",
+  "start": 124.28,
+  "end": 124.54
+ },
+ {
+  "text": "addio",
+  "start": 124.54,
+  "end": 124.96
+ },
+ {
+  "text": "tu",
+  "start": 124.96,
+  "end": 125.44
+ },
+ {
+  "text": "ritiri",
+  "start": 125.44,
+  "end": 126.12
+ },
+ {
+  "text": "il",
+  "start": 126.12,
+  "end": 126.18
+ },
+ {
+  "text": "loro",
+  "start": 126.18,
+  "end": 126.34
+ },
+ {
+  "text": "fiato",
+  "start": 126.34,
+  "end": 126.8
+ },
+ {
+  "text": "e",
+  "start": 126.8,
+  "end": 127.18
+ },
+ {
+  "text": "si",
+  "start": 127.18,
+  "end": 127.34
+ },
+ {
+  "text": "muoiono",
+  "start": 127.34,
+  "end": 127.88
+ },
+ {
+  "text": "e",
+  "start": 127.88,
+  "end": 128.1
+ },
+ {
+  "text": "ritornano",
+  "start": 128.1,
+  "end": 128.64
+ },
+ {
+  "text": "nella",
+  "start": 128.64,
+  "end": 128.86
+ },
+ {
+  "text": "loro",
+  "start": 128.86,
+  "end": 129.08
+ },
+ {
+  "text": "polvere",
+  "start": 129.08,
+  "end": 129.5
+ },
+ {
+  "text": "risolvere",
+  "start": 129.5,
+  "end": 129.5
+ },
+ {
+  "text": "questo",
+  "start": 129.5,
+  "end": 130.38
+ },
+ {
+  "text": "qui",
+  "start": 130.38,
+  "end": 130.72
+ },
+ {
+  "text": "è",
+  "start": 130.72,
+  "end": 130.94
+ },
+ {
+  "text": "il",
+  "start": 130.94,
+  "end": 131.08
+ },
+ {
+  "text": "punto",
+  "start": 131.08,
+  "end": 131.3
+ },
+ {
+  "text": "di",
+  "start": 131.3,
+  "end": 131.5
+ },
+ {
+  "text": "arrivo",
+  "start": 131.5,
+  "end": 131.9
+ },
+ {
+  "text": "di",
+  "start": 131.9,
+  "end": 132.02
+ },
+ {
+  "text": "tutto",
+  "start": 132.02,
+  "end": 132.3
+ },
+ {
+  "text": "questo",
+  "start": 132.3,
+  "end": 132.6
+ },
+ {
+  "text": "cammino",
+  "start": 132.6,
+  "end": 133.14
+ },
+ {
+  "text": "e",
+  "start": 133.14,
+  "end": 133.24
+ },
+ {
+  "text": "di",
+  "start": 133.24,
+  "end": 133.38
+ },
+ {
+  "text": "tutto",
+  "start": 133.38,
+  "end": 133.72
+ },
+ {
+  "text": "quello",
+  "start": 133.72,
+  "end": 134.02
+ },
+ {
+  "text": "che",
+  "start": 134.02,
+  "end": 134.2
+ },
+ {
+  "text": "abbiamo",
+  "start": 134.2,
+  "end": 134.32
+ },
+ {
+  "text": "scoperto",
+  "start": 134.32,
+  "end": 134.78
+ },
+ {
+  "text": "oggi",
+  "start": 134.78,
+  "end": 135.08
+ },
+ {
+  "text": "lo",
+  "start": 135.08,
+  "end": 135.86
+ },
+ {
+  "text": "vedi",
+  "start": 135.86,
+  "end": 136.1
+ },
+ {
+  "text": "come",
+  "start": 136.1,
+  "end": 136.26
+ },
+ {
+  "text": "bello",
+  "start": 136.26,
+  "end": 136.64
+ },
+ {
+  "text": "tu",
+  "start": 136.64,
+  "end": 137.42
+ },
+ {
+  "text": "mandi",
+  "start": 137.42,
+  "end": 138.14
+ },
+ {
+  "text": "il",
+  "start": 138.14,
+  "end": 138.18
+ },
+ {
+  "text": "tuo",
+  "start": 138.18,
+  "end": 138.34
+ },
+ {
+  "text": "spirito",
+  "start": 138.34,
+  "end": 138.92
+ },
+ {
+  "text": "e",
+  "start": 138.92,
+  "end": 139.2
+ },
+ {
+  "text": "sono",
+  "start": 139.2,
+  "end": 139.44
+ },
+ {
+  "text": "creati",
+  "start": 139.44,
+  "end": 140.08
+ },
+ {
+  "text": "e",
+  "start": 140.08,
+  "end": 140.36
+ },
+ {
+  "text": "tu",
+  "start": 140.36,
+  "end": 140.52
+ },
+ {
+  "text": "rinnovi",
+  "start": 140.52,
+  "end": 141.1
+ },
+ {
+  "text": "la",
+  "start": 141.1,
+  "end": 141.22
+ },
+ {
+  "text": "faccia",
+  "start": 141.22,
+  "end": 141.58
+ },
+ {
+  "text": "della",
+  "start": 141.58,
+  "end": 141.72
+ },
+ {
+  "text": "terra",
+  "start": 141.72,
+  "end": 142.1
+ },
+ {
+  "text": "qui",
+  "start": 142.1,
+  "end": 142.98
+ },
+ {
+  "text": "ruach",
+  "start": 142.98,
+  "end": 143.56
+ },
+ {
+  "text": "è",
+  "start": 143.56,
+  "end": 143.8
+ },
+ {
+  "text": "il",
+  "start": 143.8,
+  "end": 144.02
+ },
+ {
+  "text": "soffio",
+  "start": 144.02,
+  "end": 144.5
+ },
+ {
+  "text": "di",
+  "start": 144.5,
+  "end": 144.64
+ },
+ {
+  "text": "vita",
+  "start": 144.64,
+  "end": 144.86
+ },
+ {
+  "text": "quando",
+  "start": 144.86,
+  "end": 145.64
+ },
+ {
+  "text": "se",
+  "start": 145.64,
+  "end": 145.84
+ },
+ {
+  "text": "ne",
+  "start": 145.84,
+  "end": 145.92
+ },
+ {
+  "text": "va",
+  "start": 145.92,
+  "end": 146.12
+ },
+ {
+  "text": "la",
+  "start": 146.12,
+  "end": 146.34
+ },
+ {
+  "text": "vita",
+  "start": 146.34,
+  "end": 146.64
+ },
+ {
+  "text": "si",
+  "start": 146.64,
+  "end": 146.94
+ },
+ {
+  "text": "ferma",
+  "start": 146.94,
+  "end": 147.36
+ },
+ {
+  "text": "quando",
+  "start": 147.36,
+  "end": 147.9
+ },
+ {
+  "text": "viene",
+  "start": 147.9,
+  "end": 148.16
+ },
+ {
+  "text": "mandato",
+  "start": 148.16,
+  "end": 148.74
+ },
+ {
+  "text": "la",
+  "start": 148.74,
+  "end": 149.1
+ },
+ {
+  "text": "vita",
+  "start": 149.1,
+  "end": 149.3
+ },
+ {
+  "text": "ricomincia",
+  "start": 149.3,
+  "end": 149.96
+ },
+ {
+  "text": "un",
+  "start": 149.96,
+  "end": 151.02
+ },
+ {
+  "text": "dettaglio",
+  "start": 151.02,
+  "end": 151.52
+ },
+ {
+  "text": "da",
+  "start": 151.52,
+  "end": 151.62
+ },
+ {
+  "text": "conoscere",
+  "start": 151.62,
+  "end": 152.14
+ },
+ {
+  "text": "nel",
+  "start": 152.14,
+  "end": 152.64
+ },
+ {
+  "text": "racconto",
+  "start": 152.64,
+  "end": 152.96
+ },
+ {
+  "text": "in",
+  "start": 152.96,
+  "end": 153.14
+ },
+ {
+  "text": "cui",
+  "start": 153.14,
+  "end": 153.24
+ },
+ {
+  "text": "dio",
+  "start": 153.24,
+  "end": 153.48
+ },
+ {
+  "text": "forma",
+  "start": 153.48,
+  "end": 153.86
+ },
+ {
+  "text": "l'uomo",
+  "start": 153.86,
+  "end": 154.28
+ },
+ {
+  "text": "al",
+  "start": 154.28,
+  "end": 154.64
+ },
+ {
+  "text": "capitolo",
+  "start": 154.64,
+  "end": 154.98
+ },
+ {
+  "text": "2",
+  "start": 154.98,
+  "end": 155.18
+ },
+ {
+  "text": "della",
+  "start": 155.18,
+  "end": 155.34
+ },
+ {
+  "text": "Genesi,",
+  "start": 155.34,
+  "end": 155.84
+ },
+ {
+  "text": "il",
+  "start": 155.96,
+  "end": 156.46
+ },
+ {
+  "text": "testo",
+  "start": 156.46,
+  "end": 156.8
+ },
+ {
+  "text": "parla",
+  "start": 156.8,
+  "end": 157.1
+ },
+ {
+  "text": "di",
+  "start": 157.1,
+  "end": 157.2
+ },
+ {
+  "text": "un",
+  "start": 157.2,
+  "end": 157.34
+ },
+ {
+  "text": "soffio",
+  "start": 157.34,
+  "end": 157.98
+ },
+ {
+  "text": "di",
+  "start": 157.98,
+  "end": 158.04
+ },
+ {
+  "text": "vita,",
+  "start": 158.04,
+  "end": 158.32
+ },
+ {
+  "text": "ma",
+  "start": 158.44,
+  "end": 158.98
+ },
+ {
+  "text": "la",
+  "start": 158.98,
+  "end": 159.24
+ },
+ {
+  "text": "parola",
+  "start": 159.24,
+  "end": 159.56
+ },
+ {
+  "text": "ebraica",
+  "start": 159.56,
+  "end": 159.98
+ },
+ {
+  "text": "non",
+  "start": 159.98,
+  "end": 160.26
+ },
+ {
+  "text": "è",
+  "start": 160.26,
+  "end": 160.46
+ },
+ {
+  "text": "ruach,",
+  "start": 160.46,
+  "end": 160.92
+ },
+ {
+  "text": "è",
+  "start": 161.08,
+  "end": 161.42
+ },
+ {
+  "text": "un'altra",
+  "start": 161.42,
+  "end": 161.8
+ },
+ {
+  "text": "parola,",
+  "start": 161.8,
+  "end": 162.26
+ },
+ {
+  "text": "neshama.",
+  "start": 162.32,
+  "end": 163.06
+ },
+ {
+  "text": "Le",
+  "start": 163.42,
+  "end": 163.98
+ },
+ {
+  "text": "due",
+  "start": 163.98,
+  "end": 164.12
+ },
+ {
+  "text": "parole",
+  "start": 164.12,
+  "end": 164.38
+ },
+ {
+  "text": "sono",
+  "start": 164.38,
+  "end": 164.56
+ },
+ {
+  "text": "vicine,",
+  "start": 164.56,
+  "end": 165.02
+ },
+ {
+  "text": "ma",
+  "start": 165.02,
+  "end": 165.2
+ },
+ {
+  "text": "non",
+  "start": 165.2,
+  "end": 165.38
+ },
+ {
+  "text": "sono",
+  "start": 165.38,
+  "end": 165.64
+ },
+ {
+  "text": "intercambiabili.",
+  "start": 165.64,
+  "end": 166.38
+ },
+ {
+  "text": "La",
+  "start": 166.58,
+  "end": 167.0
+ },
+ {
+  "text": "Bibbia",
+  "start": 167.0,
+  "end": 167.44
+ },
+ {
+  "text": "ha",
+  "start": 167.44,
+  "end": 167.58
+ },
+ {
+  "text": "più",
+  "start": 167.58,
+  "end": 167.86
+ },
+ {
+  "text": "parole",
+  "start": 167.86,
+  "end": 168.24
+ },
+ {
+  "text": "per",
+  "start": 168.24,
+  "end": 168.44
+ },
+ {
+  "text": "il",
+  "start": 168.44,
+  "end": 168.6
+ },
+ {
+  "text": "soffio,",
+  "start": 168.6,
+  "end": 169.02
+ },
+ {
+  "text": "e",
+  "start": 169.04,
+  "end": 169.4
+ },
+ {
+  "text": "ruach",
+  "start": 169.4,
+  "end": 169.8
+ },
+ {
+  "text": "è",
+  "start": 169.8,
+  "end": 170.0
+ },
+ {
+  "text": "spesso",
+  "start": 170.0,
+  "end": 170.46
+ },
+ {
+  "text": "legata",
+  "start": 170.46,
+  "end": 170.78
+ },
+ {
+  "text": "al",
+  "start": 170.78,
+  "end": 170.88
+ },
+ {
+  "text": "movimento",
+  "start": 170.88,
+  "end": 171.14
+ },
+ {
+  "text": "e",
+  "start": 171.14,
+  "end": 171.62
+ },
+ {
+  "text": "alla",
+  "start": 171.62,
+  "end": 171.78
+ },
+ {
+  "text": "forza.",
+  "start": 171.78,
+  "end": 172.24
+ },
+ {
+  "text": "L'Ecclesiaste,",
+  "start": 172.84,
+  "end": 173.94
+ },
+ {
+  "text": "che",
+  "start": 174.02,
+  "end": 174.16
+ },
+ {
+  "text": "parla",
+  "start": 174.16,
+  "end": 174.42
+ },
+ {
+  "text": "della",
+  "start": 174.42,
+  "end": 174.54
+ },
+ {
+  "text": "morte,",
+  "start": 174.54,
+  "end": 174.88
+ },
+ {
+  "text": "scrive",
+  "start": 174.98,
+  "end": 175.34
+ },
+ {
+  "text": "« la",
+  "start": 175.34,
+  "end": 175.92
+ },
+ {
+  "text": "polvere",
+  "start": 175.92,
+  "end": 176.4
+ },
+ {
+  "text": "torni",
+  "start": 176.4,
+  "end": 176.82
+ },
+ {
+  "text": "alla",
+  "start": 176.82,
+  "end": 176.92
+ },
+ {
+  "text": "terra,",
+  "start": 176.92,
+  "end": 177.24
+ },
+ {
+  "text": "come",
+  "start": 177.42,
+  "end": 177.82
+ },
+ {
+  "text": "era",
+  "start": 177.82,
+  "end": 177.96
+ },
+ {
+  "text": "prima,",
+  "start": 177.96,
+  "end": 178.18
+ },
+ {
+  "text": "e",
+  "start": 178.38,
+  "end": 178.84
+ },
+ {
+  "text": "lo",
+  "start": 178.84,
+  "end": 179.02
+ },
+ {
+  "text": "spirito",
+  "start": 179.02,
+  "end": 179.64
+ },
+ {
+  "text": "torni",
+  "start": 179.64,
+  "end": 180.08
+ },
+ {
+  "text": "a",
+  "start": 180.08,
+  "end": 180.14
+ },
+ {
+  "text": "a",
+  "start": 180.14,
+  "end": 180.22
+ },
+ {
+  "text": "Dio",
+  "start": 180.22,
+  "end": 180.48
+ },
+ {
+  "text": "che",
+  "start": 180.48,
+  "end": 180.8
+ },
+ {
+  "text": "l'ha",
+  "start": 180.8,
+  "end": 180.98
+ },
+ {
+  "text": "dato.",
+  "start": 180.98,
+  "end": 181.26
+ },
+ {
+  "text": "Ecco",
+  "start": 181.62,
+  "end": 182.3
+ },
+ {
+  "text": "che",
+  "start": 182.3,
+  "end": 182.38
+ },
+ {
+  "text": "appare",
+  "start": 182.38,
+  "end": 182.66
+ },
+ {
+  "text": "il",
+  "start": 182.66,
+  "end": 182.74
+ },
+ {
+  "text": "terzo",
+  "start": 182.74,
+  "end": 183.1
+ },
+ {
+  "text": "significato,",
+  "start": 183.1,
+  "end": 183.78
+ },
+ {
+  "text": "lo",
+  "start": 183.8,
+  "end": 184.2
+ },
+ {
+  "text": "spirito.",
+  "start": 184.2,
+  "end": 184.88
+ },
+ {
+  "text": "Terzo",
+  "start": 185.14,
+  "end": 185.82
+ },
+ {
+  "text": "significato,",
+  "start": 185.82,
+  "end": 186.46
+ },
+ {
+  "text": "lo",
+  "start": 186.48,
+  "end": 186.86
+ },
+ {
+  "text": "spirito.",
+  "start": 186.86,
+  "end": 187.46
+ },
+ {
+  "text": "La",
+  "start": 187.46,
+  "end": 187.98
+ },
+ {
+  "text": "vita",
+  "start": 187.98,
+  "end": 188.18
+ },
+ {
+  "text": "interiore",
+  "start": 188.18,
+  "end": 188.66
+ },
+ {
+  "text": "di",
+  "start": 188.66,
+  "end": 188.8
+ },
+ {
+  "text": "una",
+  "start": 188.8,
+  "end": 188.9
+ },
+ {
+  "text": "persona",
+  "start": 188.9,
+  "end": 189.3
+ },
+ {
+  "text": "è",
+  "start": 189.3,
+  "end": 189.76
+ },
+ {
+  "text": "lo",
+  "start": 189.76,
+  "end": 190.1
+ },
+ {
+  "text": "spirito",
+  "start": 190.1,
+  "end": 190.66
+ },
+ {
+  "text": "di",
+  "start": 190.66,
+  "end": 190.76
+ },
+ {
+  "text": "Dio.",
+  "start": 190.76,
+  "end": 191.14
+ },
+ {
+  "text": "Fin",
+  "start": 191.66,
+  "end": 192.34
+ },
+ {
+  "text": "dal",
+  "start": 192.34,
+  "end": 192.5
+ },
+ {
+  "text": "secondo",
+  "start": 192.5,
+  "end": 192.76
+ },
+ {
+  "text": "versetto",
+  "start": 192.76,
+  "end": 193.24
+ },
+ {
+  "text": "della",
+  "start": 193.24,
+  "end": 193.4
+ },
+ {
+  "text": "Bibbia,",
+  "start": 193.4,
+  "end": 193.8
+ },
+ {
+  "text": "Ruach",
+  "start": 193.82,
+  "end": 194.16
+ },
+ {
+  "text": "è",
+  "start": 194.16,
+  "end": 194.26
+ },
+ {
+  "text": "presente.",
+  "start": 194.26,
+  "end": 194.6
+ },
+ {
+  "text": "Lo",
+  "start": 194.94,
+  "end": 195.36
+ },
+ {
+  "text": "spirito",
+  "start": 195.36,
+  "end": 196.02
+ },
+ {
+  "text": "di",
+  "start": 196.02,
+  "end": 196.1
+ },
+ {
+  "text": "Dio",
+  "start": 196.1,
+  "end": 196.44
+ },
+ {
+  "text": "aleggiava",
+  "start": 196.44,
+  "end": 196.98
+ },
+ {
+  "text": "sulla",
+  "start": 196.98,
+  "end": 197.14
+ },
+ {
+  "text": "superficie",
+  "start": 197.14,
+  "end": 197.88
+ },
+ {
+  "text": "delle",
+  "start": 197.88,
+  "end": 198.0
+ },
+ {
+  "text": "acque.",
+  "start": 198.0,
+  "end": 198.38
+ },
+ {
+  "text": "Qui",
+  "start": 198.94,
+  "end": 199.28
+ },
+ {
+  "text": "siamo",
+  "start": 199.28,
+  "end": 199.68
+ },
+ {
+  "text": "onesti,",
+  "start": 199.68,
+  "end": 200.14
+ },
+ {
+  "text": "i",
+  "start": 200.3,
+  "end": 200.42
+ },
+ {
+  "text": "traduttori",
+  "start": 200.42,
+  "end": 200.94
+ },
+ {
+  "text": "non",
+  "start": 200.94,
+  "end": 201.1
+ },
+ {
+  "text": "sono",
+  "start": 201.1,
+  "end": 201.34
+ },
+ {
+  "text": "d'accordo.",
+  "start": 201.34,
+  "end": 201.96
+ },
+ {
+  "text": "Alcuni",
+  "start": 202.06,
+  "end": 202.74
+ },
+ {
+  "text": "scrivono",
+  "start": 202.74,
+  "end": 203.18
+ },
+ {
+  "text": "lo",
+  "start": 203.18,
+  "end": 203.6
+ },
+ {
+  "text": "spirito",
+  "start": 203.6,
+  "end": 204.22
+ },
+ {
+  "text": "di",
+  "start": 204.22,
+  "end": 204.3
+ },
+ {
+  "text": "Dio,",
+  "start": 204.3,
+  "end": 204.68
+ },
+ {
+  "text": "altri",
+  "start": 204.72,
+  "end": 205.32
+ },
+ {
+  "text": "un",
+  "start": 205.32,
+  "end": 205.8
+ },
+ {
+  "text": "un",
+  "start": 205.8,
+  "end": 205.88
+ },
+ {
+  "text": "vento",
+  "start": 205.88,
+  "end": 206.44
+ },
+ {
+  "text": "di",
+  "start": 206.44,
+  "end": 206.56
+ },
+ {
+  "text": "Dio",
+  "start": 206.56,
+  "end": 206.94
+ },
+ {
+  "text": "o",
+  "start": 206.94,
+  "end": 207.28
+ },
+ {
+  "text": "un",
+  "start": 207.28,
+  "end": 207.44
+ },
+ {
+  "text": "vento",
+  "start": 207.44,
+  "end": 207.9
+ },
+ {
+  "text": "violento.",
+  "start": 207.9,
+  "end": 208.48
+ },
+ {
+  "text": "La",
+  "start": 208.54,
+  "end": 209.1
+ },
+ {
+  "text": "parola",
+  "start": 209.1,
+  "end": 209.44
+ },
+ {
+  "text": "ebraica",
+  "start": 209.44,
+  "end": 209.86
+ },
+ {
+  "text": "permette",
+  "start": 209.86,
+  "end": 210.2
+ },
+ {
+  "text": "entrambe",
+  "start": 210.2,
+  "end": 210.7
+ },
+ {
+  "text": "le",
+  "start": 210.7,
+  "end": 210.82
+ },
+ {
+  "text": "letture",
+  "start": 210.82,
+  "end": 211.3
+ },
+ {
+  "text": "e",
+  "start": 211.3,
+  "end": 211.46
+ },
+ {
+  "text": "il",
+  "start": 211.46,
+  "end": 211.66
+ },
+ {
+  "text": "testo",
+  "start": 211.66,
+  "end": 212.06
+ },
+ {
+  "text": "non",
+  "start": 212.06,
+  "end": 212.16
+ },
+ {
+  "text": "decide.",
+  "start": 212.16,
+  "end": 212.48
+ },
+ {
+  "text": "Ruach",
+  "start": 213.36,
+  "end": 213.96
+ },
+ {
+  "text": "può",
+  "start": 213.96,
+  "end": 214.1
+ },
+ {
+  "text": "indicare",
+  "start": 214.1,
+  "end": 214.56
+ },
+ {
+  "text": "anche",
+  "start": 214.56,
+  "end": 214.78
+ },
+ {
+  "text": "l'interno",
+  "start": 214.78,
+  "end": 215.34
+ },
+ {
+  "text": "di",
+  "start": 215.34,
+  "end": 215.42
+ },
+ {
+  "text": "una",
+  "start": 215.42,
+  "end": 215.56
+ },
+ {
+  "text": "persona.",
+  "start": 215.56,
+  "end": 215.86
+ },
+ {
+  "text": "Quando",
+  "start": 216.38,
+  "end": 216.7
+ },
+ {
+  "text": "Giacobbe",
+  "start": 216.7,
+  "end": 217.18
+ },
+ {
+  "text": "sa",
+  "start": 217.18,
+  "end": 217.34
+ },
+ {
+  "text": "che",
+  "start": 217.34,
+  "end": 217.52
+ },
+ {
+  "text": "suo",
+  "start": 217.52,
+  "end": 217.7
+ },
+ {
+  "text": "figlio",
+  "start": 217.7,
+  "end": 217.96
+ },
+ {
+  "text": "Giuseppe",
+  "start": 217.96,
+  "end": 218.28
+ },
+ {
+  "text": "è",
+  "start": 218.28,
+  "end": 218.42
+ },
+ {
+  "text": "vivo,",
+  "start": 218.42,
+  "end": 218.64
+ },
+ {
+  "text": "la",
+  "start": 218.8,
+  "end": 219.18
+ },
+ {
+  "text": "Bibbia",
+  "start": 219.18,
+  "end": 219.48
+ },
+ {
+  "text": "dice",
+  "start": 219.48,
+  "end": 219.66
+ },
+ {
+  "text": "che",
+  "start": 219.66,
+  "end": 219.9
+ },
+ {
+  "text": "lo",
+  "start": 219.9,
+  "end": 220.28
+ },
+ {
+  "text": "spirito",
+  "start": 220.28,
+  "end": 220.88
+ },
+ {
+  "text": "di",
+  "start": 220.88,
+  "end": 220.96
+ },
+ {
+  "text": "Giacobbe",
+  "start": 220.96,
+  "end": 221.42
+ },
+ {
+  "text": "si",
+  "start": 221.42,
+  "end": 221.56
+ },
+ {
+  "text": "ravvivò.",
+  "start": 221.56,
+  "end": 222.08
+ },
+ {
+  "text": "E",
+  "start": 222.24,
+  "end": 222.84
+ },
+ {
+  "text": "il",
+  "start": 222.84,
+  "end": 222.96
+ },
+ {
+  "text": "Salmo",
+  "start": 222.96,
+  "end": 223.32
+ },
+ {
+  "text": "34",
+  "start": 223.32,
+  "end": 223.56
+ },
+ {
+  "text": "promette",
+  "start": 223.56,
+  "end": 224.42
+ },
+ {
+  "text": "l'Eterno",
+  "start": 224.42,
+  "end": 225.38
+ },
+ {
+  "text": "è",
+  "start": 225.38,
+  "end": 225.5
+ },
+ {
+  "text": "vicino",
+  "start": 225.5,
+  "end": 225.86
+ },
+ {
+  "text": "a",
+  "start": 225.86,
+  "end": 225.94
+ },
+ {
+  "text": "quelli",
+  "start": 225.94,
+  "end": 226.22
+ },
+ {
+  "text": "che",
+  "start": 226.22,
+  "end": 226.34
+ },
+ {
+  "text": "hanno",
+  "start": 226.34,
+  "end": 226.52
+ },
+ {
+  "text": "il",
+  "start": 226.52,
+  "end": 226.72
+ },
+ {
+  "text": "cuore",
+  "start": 226.72,
+  "end": 227.06
+ },
+ {
+  "text": "afflitto",
+  "start": 227.06,
+  "end": 227.48
+ },
+ {
+  "text": "e",
+  "start": 227.48,
+  "end": 227.86
+ },
+ {
+  "text": "salva",
+  "start": 227.86,
+  "end": 228.5
+ },
+ {
+  "text": "quelli",
+  "start": 228.5,
+  "end": 228.74
+ },
+ {
+  "text": "che",
+  "start": 228.74,
+  "end": 228.86
+ },
+ {
+  "text": "hanno",
+  "start": 228.86,
+  "end": 229.02
+ },
+ {
+  "text": "lo",
+  "start": 229.02,
+  "end": 229.2
+ },
+ {
+  "text": "spirito",
+  "start": 229.2,
+  "end": 229.74
+ },
+ {
+  "text": "abbattuto.",
+  "start": 229.74,
+  "end": 230.14
+ },
+ {
+  "text": "Una",
+  "start": 230.48,
+  "end": 231.08
+ },
+ {
+  "text": "sola",
+  "start": 231.08,
+  "end": 231.4
+ },
+ {
+  "text": "parola,",
+  "start": 231.4,
+  "end": 231.92
+ },
+ {
+  "text": "un",
+  "start": 231.94,
+  "end": 232.42
+ },
+ {
+  "text": "vento,",
+  "start": 232.42,
+  "end": 232.9
+ },
+ {
+  "text": "un",
+  "start": 232.9,
+  "end": 233.32
+ },
+ {
+  "text": "soffio,",
+  "start": 233.32,
+  "end": 233.92
+ },
+ {
+  "text": "uno",
+  "start": 233.96,
+  "end": 234.5
+ },
+ {
+  "text": "spirito.",
+  "start": 234.5,
+  "end": 235.22
+ },
+ {
+  "text": "Ma",
+  "start": 235.28,
+  "end": 235.88
+ },
+ {
+  "text": "dove",
+  "start": 235.88,
+  "end": 236.16
+ },
+ {
+  "text": "li",
+  "start": 236.16,
+  "end": 236.3
+ },
+ {
+  "text": "vediamo",
+  "start": 236.3,
+  "end": 236.64
+ },
+ {
+  "text": "riuniti",
+  "start": 236.64,
+  "end": 237.02
+ },
+ {
+  "text": "tutti",
+  "start": 237.02,
+  "end": 237.32
+ },
+ {
+  "text": "e",
+  "start": 237.32,
+  "end": 237.52
+ },
+ {
+  "text": "tre?",
+  "start": 237.52,
+  "end": 237.7
+ },
+ {
+  "text": "In",
+  "start": 238.12,
+  "end": 238.72
+ },
+ {
+  "text": "una",
+  "start": 238.72,
+  "end": 238.84
+ },
+ {
+  "text": "valle,",
+  "start": 238.84,
+  "end": 239.14
+ },
+ {
+  "text": "nel",
+  "start": 239.3,
+  "end": 239.66
+ },
+ {
+  "text": "libro",
+  "start": 239.66,
+  "end": 239.96
+ },
+ {
+  "text": "di",
+  "start": 239.96,
+  "end": 240.1
+ },
+ {
+  "text": "Ezechiele.",
+  "start": 240.1,
+  "end": 240.62
+ },
+ {
+  "text": "Capitolo",
+  "start": 241.2,
+  "end": 241.8
+ },
+ {
+  "text": "37.",
+  "start": 241.8,
+  "end": 242.16
+ },
+ {
+  "text": "Il",
+  "start": 242.58,
+  "end": 243.18
+ },
+ {
+  "text": "profeta",
+  "start": 243.18,
+  "end": 243.5
+ },
+ {
+  "text": "si",
+  "start": 243.5,
+  "end": 243.66
+ },
+ {
+  "text": "trova",
+  "start": 243.66,
+  "end": 243.94
+ },
+ {
+  "text": "in",
+  "start": 243.94,
+  "end": 244.02
+ },
+ {
+  "text": "mezzo",
+  "start": 244.02,
+  "end": 244.22
+ },
+ {
+  "text": "a",
+  "start": 244.22,
+  "end": 244.3
+ },
+ {
+  "text": "una",
+  "start": 244.3,
+  "end": 244.46
+ },
+ {
+  "text": "valle",
+  "start": 244.46,
+  "end": 244.66
+ },
+ {
+  "text": "piena",
+  "start": 244.66,
+  "end": 245.38
+ },
+ {
+  "text": "di",
+  "start": 245.38,
+  "end": 245.5
+ },
+ {
+  "text": "ossa",
+  "start": 245.5,
+  "end": 245.76
+ },
+ {
+  "text": "secche.",
+  "start": 245.76,
+  "end": 246.1
+ },
+ {
+  "text": "Dio",
+  "start": 246.38,
+  "end": 246.98
+ },
+ {
+  "text": "gli",
+  "start": 246.98,
+  "end": 247.08
+ },
+ {
+  "text": "chiede",
+  "start": 247.08,
+  "end": 247.4
+ },
+ {
+  "text": "di",
+  "start": 247.4,
+  "end": 247.5
+ },
+ {
+  "text": "parlare",
+  "start": 247.5,
+  "end": 247.82
+ },
+ {
+  "text": "a",
+  "start": 247.82,
+  "end": 247.94
+ },
+ {
+  "text": "quelle",
+  "start": 247.94,
+  "end": 248.08
+ },
+ {
+  "text": "ossa.",
+  "start": 248.08,
+  "end": 248.48
+ },
+ {
+  "text": "Poi",
+  "start": 248.7,
+  "end": 249.3
+ },
+ {
+  "text": "gli",
+  "start": 249.3,
+  "end": 249.4
+ },
+ {
+  "text": "dice,",
+  "start": 249.4,
+  "end": 249.72
+ },
+ {
+  "text": "profetizza",
+  "start": 249.78,
+  "end": 250.84
+ },
+ {
+  "text": "allo",
+  "start": 250.84,
+  "end": 251.1
+ },
+ {
+  "text": "spirito,",
+  "start": 251.1,
+  "end": 251.64
+ },
+ {
+  "text": "profetizza",
+  "start": 251.64,
+  "end": 252.46
+ },
+ {
+  "text": "figlio",
+  "start": 252.46,
+  "end": 252.76
+ },
+ {
+  "text": "al",
+  "start": 252.76,
+  "end": 252.86
+ },
+ {
+  "text": "Duomo,",
+  "start": 252.86,
+  "end": 253.12
+ },
+ {
+  "text": "e",
+  "start": 253.24,
+  "end": 253.7
+ },
+ {
+  "text": "di",
+  "start": 253.7,
+  "end": 253.86
+ },
+ {
+  "text": "allo",
+  "start": 253.86,
+  "end": 254.14
+ },
+ {
+  "text": "spirito,",
+  "start": 254.14,
+  "end": 254.62
+ },
+ {
+  "text": "così",
+  "start": 254.62,
+  "end": 255.24
+ },
+ {
+  "text": "dice",
+  "start": 255.24,
+  "end": 255.56
+ },
+ {
+  "text": "il",
+  "start": 255.56,
+  "end": 255.74
+ },
+ {
+  "text": "Signore",
+  "start": 255.74,
+  "end": 256.14
+ },
+ {
+  "text": "l'Eterno.",
+  "start": 256.14,
+  "end": 256.66
+ },
+ {
+  "text": "Vieni",
+  "start": 256.96,
+  "end": 257.56
+ },
+ {
+  "text": "dai",
+  "start": 257.56,
+  "end": 257.7
+ },
+ {
+  "text": "quattro",
+  "start": 257.7,
+  "end": 258.12
+ },
+ {
+  "text": "venti",
+  "start": 258.12,
+  "end": 258.52
+ },
+ {
+  "text": "o",
+  "start": 258.52,
+  "end": 258.84
+ },
+ {
+  "text": "spirito",
+  "start": 258.84,
+  "end": 259.46
+ },
+ {
+  "text": "soffia",
+  "start": 259.46,
+  "end": 260.26
+ },
+ {
+  "text": "su",
+  "start": 260.26,
+  "end": 260.42
+ },
+ {
+  "text": "questi",
+  "start": 260.42,
+  "end": 260.64
+ },
+ {
+  "text": "uccisi",
+  "start": 260.64,
+  "end": 261.12
+ },
+ {
+  "text": "e",
+  "start": 261.12,
+  "end": 261.54
+ },
+ {
+  "text": "fa",
+  "start": 261.54,
+  "end": 261.74
+ },
+ {
+  "text": "che",
+  "start": 261.74,
+  "end": 261.9
+ },
+ {
+  "text": "rivivano",
+  "start": 261.9,
+  "end": 262.4
+ },
+ {
+  "text": "in",
+  "start": 262.4,
+  "end": 263.26
+ },
+ {
+  "text": "ebraico",
+  "start": 263.26,
+  "end": 263.72
+ },
+ {
+  "text": "una",
+  "start": 263.72,
+  "end": 264.34
+ },
+ {
+  "text": "sola",
+  "start": 264.34,
+  "end": 264.72
+ },
+ {
+  "text": "parola",
+  "start": 264.72,
+  "end": 265.2
+ },
+ {
+  "text": "ritorna",
+  "start": 265.2,
+  "end": 265.58
+ },
+ {
+  "text": "continuamente",
+  "start": 265.58,
+  "end": 266.24
+ },
+ {
+  "text": "in",
+  "start": 266.24,
+  "end": 266.46
+ },
+ {
+  "text": "questo",
+  "start": 266.46,
+  "end": 266.62
+ },
+ {
+  "text": "capitolo",
+  "start": 266.62,
+  "end": 267.14
+ },
+ {
+  "text": "ruach",
+  "start": 267.14,
+  "end": 268.0
+ },
+ {
+  "text": "vento",
+  "start": 268.0,
+  "end": 269.32
+ },
+ {
+  "text": "soffio",
+  "start": 269.32,
+  "end": 270.0
+ },
+ {
+  "text": "spirito",
+  "start": 270.0,
+  "end": 270.86
+ },
+ {
+  "text": "il",
+  "start": 270.86,
+  "end": 271.46
+ },
+ {
+  "text": "testo",
+  "start": 271.46,
+  "end": 271.84
+ },
+ {
+  "text": "gioca",
+  "start": 271.84,
+  "end": 272.12
+ },
+ {
+  "text": "con",
+  "start": 272.12,
+  "end": 272.28
+ },
+ {
+  "text": "tutti",
+  "start": 272.28,
+  "end": 272.54
+ },
+ {
+  "text": "e",
+  "start": 272.54,
+  "end": 272.68
+ },
+ {
+  "text": "tre",
+  "start": 272.68,
+  "end": 272.78
+ },
+ {
+  "text": "i",
+  "start": 272.78,
+  "end": 272.88
+ },
+ {
+  "text": "significati",
+  "start": 272.88,
+  "end": 273.36
+ },
+ {
+  "text": "insieme",
+  "start": 273.36,
+  "end": 273.78
+ },
+ {
+  "text": "e",
+  "start": 273.78,
+  "end": 273.98
+ },
+ {
+  "text": "diversi",
+  "start": 273.98,
+  "end": 274.5
+ },
+ {
+  "text": "studiosi",
+  "start": 274.5,
+  "end": 274.94
+ },
+ {
+  "text": "lo",
+  "start": 274.94,
+  "end": 275.02
+ },
+ {
+  "text": "notano",
+  "start": 275.02,
+  "end": 275.36
+ },
+ {
+  "text": "il",
+  "start": 275.36,
+  "end": 276.02
+ },
+ {
+  "text": "testo",
+  "start": 276.02,
+  "end": 276.28
+ },
+ {
+  "text": "stesso",
+  "start": 276.28,
+  "end": 276.52
+ },
+ {
+  "text": "dalla",
+  "start": 276.52,
+  "end": 276.76
+ },
+ {
+  "text": "chiave",
+  "start": 276.76,
+  "end": 277.16
+ },
+ {
+  "text": "dell'immagine",
+  "start": 277.16,
+  "end": 277.74
+ },
+ {
+  "text": "queste",
+  "start": 277.74,
+  "end": 278.04
+ },
+ {
+  "text": "ossa",
+  "start": 278.04,
+  "end": 278.38
+ },
+ {
+  "text": "sono",
+  "start": 278.38,
+  "end": 278.58
+ },
+ {
+  "text": "tutta",
+  "start": 278.58,
+  "end": 279.18
+ },
+ {
+  "text": "la",
+  "start": 279.18,
+  "end": 279.3
+ },
+ {
+  "text": "casa",
+  "start": 279.3,
+  "end": 279.58
+ },
+ {
+  "text": "di",
+  "start": 279.58,
+  "end": 279.68
+ },
+ {
+  "text": "israele",
+  "start": 279.68,
+  "end": 280.04
+ },
+ {
+  "text": "scoraggiata",
+  "start": 280.04,
+  "end": 280.84
+ },
+ {
+  "text": "in",
+  "start": 280.84,
+  "end": 281.08
+ },
+ {
+  "text": "esilio",
+  "start": 281.08,
+  "end": 281.5
+ },
+ {
+  "text": "e",
+  "start": 281.5,
+  "end": 282.12
+ },
+ {
+  "text": "la",
+  "start": 282.12,
+  "end": 282.26
+ },
+ {
+  "text": "promessa",
+  "start": 282.26,
+  "end": 282.76
+ },
+ {
+  "text": "finale",
+  "start": 282.76,
+  "end": 282.96
+ },
+ {
+  "text": "sta",
+  "start": 282.96,
+  "end": 283.4
+ },
+ {
+  "text": "in",
+  "start": 283.4,
+  "end": 283.54
+ },
+ {
+  "text": "una",
+  "start": 283.54,
+  "end": 283.68
+ },
+ {
+  "text": "frase.",
+  "start": 283.68,
+  "end": 283.98
+ },
+ {
+  "text": "Metterò",
+  "start": 284.46,
+  "end": 284.98
+ },
+ {
+  "text": "il",
+  "start": 284.98,
+  "end": 285.08
+ },
+ {
+  "text": "mio",
+  "start": 285.08,
+  "end": 285.22
+ },
+ {
+  "text": "spirito",
+  "start": 285.22,
+  "end": 285.68
+ },
+ {
+  "text": "in",
+  "start": 285.68,
+  "end": 285.76
+ },
+ {
+  "text": "voi",
+  "start": 285.76,
+  "end": 285.94
+ },
+ {
+  "text": "e",
+  "start": 285.94,
+  "end": 286.2
+ },
+ {
+  "text": "voi",
+  "start": 286.2,
+  "end": 286.46
+ },
+ {
+  "text": "vivrete.",
+  "start": 286.46,
+  "end": 286.98
+ },
+ {
+  "text": "Il",
+  "start": 287.48,
+  "end": 288.0
+ },
+ {
+  "text": "Nuovo",
+  "start": 288.0,
+  "end": 288.26
+ },
+ {
+  "text": "Testamento,",
+  "start": 288.26,
+  "end": 288.8
+ },
+ {
+  "text": "scritto",
+  "start": 288.8,
+  "end": 289.14
+ },
+ {
+  "text": "in",
+  "start": 289.14,
+  "end": 289.28
+ },
+ {
+  "text": "greco,",
+  "start": 289.28,
+  "end": 289.56
+ },
+ {
+  "text": "conserva",
+  "start": 289.62,
+  "end": 290.18
+ },
+ {
+  "text": "questo",
+  "start": 290.18,
+  "end": 290.32
+ },
+ {
+  "text": "gioco",
+  "start": 290.32,
+  "end": 290.58
+ },
+ {
+  "text": "di",
+  "start": 290.58,
+  "end": 290.7
+ },
+ {
+  "text": "parole",
+  "start": 290.7,
+  "end": 290.9
+ },
+ {
+  "text": "con",
+  "start": 290.9,
+  "end": 291.14
+ },
+ {
+  "text": "pneuma,",
+  "start": 291.14,
+  "end": 291.62
+ },
+ {
+  "text": "che",
+  "start": 291.68,
+  "end": 291.84
+ },
+ {
+  "text": "significa",
+  "start": 291.84,
+  "end": 292.12
+ },
+ {
+  "text": "anch'esso",
+  "start": 292.12,
+  "end": 292.6
+ },
+ {
+  "text": "vento,",
+  "start": 292.6,
+  "end": 293.46
+ },
+ {
+  "text": "soffio",
+  "start": 293.46,
+  "end": 294.04
+ },
+ {
+  "text": "e",
+  "start": 294.04,
+  "end": 294.2
+ },
+ {
+  "text": "spirito.",
+  "start": 294.2,
+  "end": 294.74
+ },
+ {
+  "text": "Di",
+  "start": 294.94,
+  "end": 295.4
+ },
+ {
+  "text": "notte",
+  "start": 295.4,
+  "end": 295.68
+ },
+ {
+  "text": "Gesù",
+  "start": 295.68,
+  "end": 295.94
+ },
+ {
+  "text": "parla",
+  "start": 295.94,
+  "end": 296.18
+ },
+ {
+  "text": "con",
+  "start": 296.18,
+  "end": 296.3
+ },
+ {
+  "text": "un",
+  "start": 296.3,
+  "end": 296.44
+ },
+ {
+  "text": "uomo,",
+  "start": 296.44,
+  "end": 296.66
+ },
+ {
+  "text": "Nicodemo.",
+  "start": 296.74,
+  "end": 297.24
+ },
+ {
+  "text": "Dice,",
+  "start": 297.44,
+  "end": 297.96
+ },
+ {
+  "text": "il",
+  "start": 298.0,
+  "end": 298.44
+ },
+ {
+  "text": "vento",
+  "start": 298.44,
+  "end": 298.9
+ },
+ {
+  "text": "soffia",
+  "start": 298.9,
+  "end": 299.26
+ },
+ {
+  "text": "dove",
+  "start": 299.26,
+  "end": 299.42
+ },
+ {
+  "text": "vuole",
+  "start": 299.42,
+  "end": 299.84
+ },
+ {
+  "text": "e",
+  "start": 299.84,
+  "end": 300.02
+ },
+ {
+  "text": "tu",
+  "start": 300.02,
+  "end": 300.18
+ },
+ {
+  "text": "ne",
+  "start": 300.18,
+  "end": 300.32
+ },
+ {
+  "text": "odi",
+  "start": 300.32,
+  "end": 300.58
+ },
+ {
+  "text": "il",
+  "start": 300.58,
+  "end": 300.66
+ },
+ {
+  "text": "rumore,",
+  "start": 300.66,
+  "end": 301.08
+ },
+ {
+  "text": "ma",
+  "start": 301.12,
+  "end": 301.38
+ },
+ {
+  "text": "non",
+  "start": 301.38,
+  "end": 301.54
+ },
+ {
+  "text": "sai",
+  "start": 301.54,
+  "end": 301.8
+ },
+ {
+  "text": "né",
+  "start": 301.8,
+  "end": 302.0
+ },
+ {
+  "text": "dove",
+  "start": 302.0,
+  "end": 302.24
+ },
+ {
+  "text": "viene",
+  "start": 302.24,
+  "end": 302.62
+ },
+ {
+  "text": "né",
+  "start": 302.62,
+  "end": 302.92
+ },
+ {
+  "text": "dove",
+  "start": 302.92,
+  "end": 303.18
+ },
+ {
+  "text": "va.",
+  "start": 303.18,
+  "end": 303.36
+ },
+ {
+  "text": "Così",
+  "start": 303.7,
+  "end": 304.22
+ },
+ {
+  "text": "è",
+  "start": 304.22,
+  "end": 304.32
+ },
+ {
+  "text": "di",
+  "start": 304.32,
+  "end": 304.44
+ },
+ {
+  "text": "chiunque",
+  "start": 304.44,
+  "end": 304.98
+ },
+ {
+  "text": "è",
+  "start": 304.98,
+  "end": 305.16
+ },
+ {
+  "text": "nato",
+  "start": 305.16,
+  "end": 305.42
+ },
+ {
+  "text": "dallo",
+  "start": 305.42,
+  "end": 305.6
+ },
+ {
+  "text": "spirito.",
+  "start": 305.6,
+  "end": 306.12
+ },
+ {
+  "text": "In",
+  "start": 306.38,
+  "end": 306.9
+ },
+ {
+  "text": "greco",
+  "start": 306.9,
+  "end": 307.22
+ },
+ {
+  "text": "è",
+  "start": 307.22,
+  "end": 307.34
+ },
+ {
+  "text": "la",
+  "start": 307.34,
+  "end": 307.46
+ },
+ {
+  "text": "stessa",
+  "start": 307.46,
+  "end": 307.78
+ },
+ {
+  "text": "parola",
+  "start": 307.78,
+  "end": 308.08
+ },
+ {
+  "text": "per",
+  "start": 308.08,
+  "end": 308.22
+ },
+ {
+  "text": "vento",
+  "start": 308.22,
+  "end": 308.76
+ },
+ {
+  "text": "e",
+  "start": 308.76,
+  "end": 308.76
+ },
+ {
+  "text": "per",
+  "start": 308.76,
+  "end": 308.92
+ },
+ {
+  "text": "spirito.",
+  "start": 308.92,
+  "end": 309.4
+ },
+ {
+  "text": "Gesù",
+  "start": 309.58,
+  "end": 310.1
+ },
+ {
+  "text": "parlava",
+  "start": 310.1,
+  "end": 310.4
+ },
+ {
+  "text": "aramaico",
+  "start": 310.4,
+  "end": 310.76
+ },
+ {
+  "text": "e",
+  "start": 310.76,
+  "end": 310.96
+ },
+ {
+  "text": "anche",
+  "start": 310.96,
+  "end": 311.14
+ },
+ {
+  "text": "la",
+  "start": 311.14,
+  "end": 311.28
+ },
+ {
+  "text": "parola",
+  "start": 311.28,
+  "end": 311.58
+ },
+ {
+  "text": "aramaica",
+  "start": 311.58,
+  "end": 311.92
+ },
+ {
+  "text": "affine",
+  "start": 311.92,
+  "end": 312.34
+ },
+ {
+  "text": "a",
+  "start": 312.34,
+  "end": 312.42
+ },
+ {
+  "text": "questi",
+  "start": 312.42,
+  "end": 312.6
+ },
+ {
+  "text": "significati.",
+  "start": 312.6,
+  "end": 313.3
+ },
+ {
+  "text": "Questo",
+  "start": 313.42,
+  "end": 313.92
+ },
+ {
+  "text": "gioco",
+  "start": 313.92,
+  "end": 314.18
+ },
+ {
+  "text": "di",
+  "start": 314.18,
+  "end": 314.32
+ },
+ {
+  "text": "parole",
+  "start": 314.32,
+  "end": 314.52
+ },
+ {
+  "text": "gli",
+  "start": 314.52,
+  "end": 314.72
+ },
+ {
+  "text": "era",
+  "start": 314.72,
+  "end": 314.84
+ },
+ {
+  "text": "dunque",
+  "start": 314.84,
+  "end": 315.14
+ },
+ {
+  "text": "probabilmente",
+  "start": 315.14,
+  "end": 315.84
+ },
+ {
+  "text": "naturale.",
+  "start": 315.84,
+  "end": 316.1
+ },
+ {
+  "text": "È",
+  "start": 316.44,
+  "end": 316.7
+ },
+ {
+  "text": "un'ipotesi",
+  "start": 316.7,
+  "end": 317.28
+ },
+ {
+  "text": "ragionevole,",
+  "start": 317.28,
+  "end": 317.8
+ },
+ {
+  "text": "non",
+  "start": 317.82,
+  "end": 318.0
+ },
+ {
+  "text": "una",
+  "start": 318.0,
+  "end": 318.2
+ },
+ {
+  "text": "certezza.",
+  "start": 318.2,
+  "end": 318.8
+ },
+ {
+  "text": "Dopo",
+  "start": 319.18,
+  "end": 319.7
+ },
+ {
+  "text": "la",
+  "start": 319.7,
+  "end": 319.78
+ },
+ {
+  "text": "risurrezione",
+  "start": 319.78,
+  "end": 320.48
+ },
+ {
+  "text": "nel",
+  "start": 320.48,
+  "end": 320.66
+ },
+ {
+  "text": "Vangelo",
+  "start": 320.66,
+  "end": 321.0
+ },
+ {
+  "text": "di",
+  "start": 321.0,
+  "end": 321.16
+ },
+ {
+  "text": "Giovanni,",
+  "start": 321.16,
+  "end": 321.54
+ },
+ {
+  "text": "Gesù",
+  "start": 321.62,
+  "end": 322.26
+ },
+ {
+  "text": "soffiò",
+  "start": 322.26,
+  "end": 322.76
+ },
+ {
+  "text": "su",
+  "start": 322.76,
+  "end": 322.92
+ },
+ {
+  "text": "di",
+  "start": 322.92,
+  "end": 323.02
+ },
+ {
+  "text": "loro",
+  "start": 323.02,
+  "end": 323.24
+ },
+ {
+  "text": "e",
+  "start": 323.24,
+  "end": 323.44
+ },
+ {
+  "text": "disse",
+  "start": 323.44,
+  "end": 323.64
+ },
+ {
+  "text": "ricevete",
+  "start": 323.64,
+  "end": 324.54
+ },
+ {
+  "text": "lo",
+  "start": 324.54,
+  "end": 324.74
+ },
+ {
+  "text": "Spirito",
+  "start": 324.74,
+  "end": 325.18
+ },
+ {
+  "text": "Santo.",
+  "start": 325.18,
+  "end": 325.38
+ },
+ {
+  "text": "Un",
+  "start": 325.64,
+  "end": 326.04
+ },
+ {
+  "text": "soffio.",
+  "start": 326.04,
+  "end": 326.46
+ },
+ {
+  "text": "E",
+  "start": 326.52,
+  "end": 327.04
+ },
+ {
+  "text": "alla",
+  "start": 327.04,
+  "end": 327.18
+ },
+ {
+  "text": "Pentecoste",
+  "start": 327.18,
+  "end": 327.82
+ },
+ {
+  "text": "venne",
+  "start": 327.82,
+  "end": 328.4
+ },
+ {
+  "text": "dal",
+  "start": 328.4,
+  "end": 328.52
+ },
+ {
+  "text": "cielo",
+  "start": 328.52,
+  "end": 328.8
+ },
+ {
+  "text": "un",
+  "start": 328.8,
+  "end": 328.96
+ },
+ {
+  "text": "rumore",
+  "start": 328.96,
+  "end": 329.52
+ },
+ {
+  "text": "come",
+  "start": 329.52,
+  "end": 329.74
+ },
+ {
+  "text": "di",
+  "start": 329.74,
+  "end": 329.94
+ },
+ {
+  "text": "un",
+  "start": 329.94,
+  "end": 330.06
+ },
+ {
+  "text": "vento",
+  "start": 330.06,
+  "end": 330.46
+ },
+ {
+  "text": "impetuoso.",
+  "start": 330.46,
+  "end": 331.0
+ },
+ {
+  "text": "Dal",
+  "start": 331.32,
+  "end": 331.84
+ },
+ {
+  "text": "vento",
+  "start": 331.84,
+  "end": 332.26
+ },
+ {
+  "text": "dell'Oreb",
+  "start": 332.26,
+  "end": 332.66
+ },
+ {
+  "text": "al",
+  "start": 332.66,
+  "end": 332.92
+ },
+ {
+  "text": "vento",
+  "start": 332.92,
+  "end": 333.34
+ },
+ {
+  "text": "della",
+  "start": 333.34,
+  "end": 333.48
+ },
+ {
+  "text": "Pentecoste",
+  "start": 333.48,
+  "end": 334.08
+ },
+ {
+  "text": "la",
+  "start": 334.08,
+  "end": 334.2
+ },
+ {
+  "text": "Bibbia",
+  "start": 334.2,
+  "end": 334.64
+ },
+ {
+  "text": "conserva",
+  "start": 334.64,
+  "end": 335.22
+ },
+ {
+  "text": "questa",
+  "start": 335.22,
+  "end": 335.38
+ },
+ {
+  "text": "parola,",
+  "start": 335.38,
+  "end": 335.84
+ },
+ {
+  "text": "l'invisibile",
+  "start": 335.86,
+  "end": 336.74
+ },
+ {
+  "text": "che",
+  "start": 336.74,
+  "end": 336.98
+ },
+ {
+  "text": "agisce.",
+  "start": 336.98,
+  "end": 337.44
+ },
+ {
+  "text": "Ma",
+  "start": 337.68,
+  "end": 338.2
+ },
+ {
+  "text": "attenzione,",
+  "start": 338.2,
+  "end": 338.84
+ },
+ {
+  "text": "non",
+  "start": 338.88,
+  "end": 339.3
+ },
+ {
+  "text": "è",
+  "start": 339.3,
+  "end": 339.42
+ },
+ {
+  "text": "perché",
+  "start": 339.42,
+  "end": 339.54
+ },
+ {
+  "text": "una",
+  "start": 339.54,
+  "end": 339.78
+ },
+ {
+  "text": "parola",
+  "start": 339.78,
+  "end": 340.12
+ },
+ {
+  "text": "ha",
+  "start": 340.12,
+  "end": 340.18
+ },
+ {
+  "text": "tre",
+  "start": 340.18,
+  "end": 340.32
+ },
+ {
+  "text": "significati",
+  "start": 340.32,
+  "end": 340.94
+ },
+ {
+  "text": "che",
+  "start": 340.94,
+  "end": 341.06
+ },
+ {
+  "text": "tutti",
+  "start": 341.06,
+  "end": 341.3
+ },
+ {
+  "text": "e",
+  "start": 341.3,
+  "end": 341.42
+ },
+ {
+  "text": "tre",
+  "start": 341.42,
+  "end": 341.52
+ },
+ {
+  "text": "valgano",
+  "start": 341.52,
+  "end": 341.86
+ },
+ {
+  "text": "ovunque,",
+  "start": 341.86,
+  "end": 342.4
+ },
+ {
+  "text": "il",
+  "start": 342.48,
+  "end": 342.76
+ },
+ {
+  "text": "contesto",
+  "start": 342.76,
+  "end": 343.36
+ },
+ {
+  "text": "decide.",
+  "start": 343.36,
+  "end": 343.6
+ },
+ {
+  "text": "La",
+  "start": 343.86,
+  "end": 344.38
+ },
+ {
+  "text": "Bibbia",
+  "start": 344.38,
+  "end": 344.66
+ },
+ {
+  "text": "non",
+  "start": 344.66,
+  "end": 344.78
+ },
+ {
+  "text": "dice",
+  "start": 344.78,
+  "end": 345.0
+ },
+ {
+  "text": "che",
+  "start": 345.0,
+  "end": 345.18
+ },
+ {
+  "text": "Dio",
+  "start": 345.18,
+  "end": 345.46
+ },
+ {
+  "text": "è",
+  "start": 345.46,
+  "end": 345.7
+ },
+ {
+  "text": "il",
+  "start": 345.7,
+  "end": 346.0
+ },
+ {
+  "text": "vento.",
+  "start": 346.0,
+  "end": 346.48
+ },
+ {
+  "text": "Elia",
+  "start": 346.54,
+  "end": 347.06
+ },
+ {
+  "text": "ce",
+  "start": 347.06,
+  "end": 347.14
+ },
+ {
+  "text": "lo",
+  "start": 347.14,
+  "end": 347.24
+ },
+ {
+  "text": "ricorda,",
+  "start": 347.24,
+  "end": 347.74
+ },
+ {
+  "text": "l'Eterno",
+  "start": 347.76,
+  "end": 348.28
+ },
+ {
+  "text": "non",
+  "start": 348.28,
+  "end": 348.5
+ },
+ {
+  "text": "era",
+  "start": 348.5,
+  "end": 348.78
+ },
+ {
+  "text": "nel",
+  "start": 348.78,
+  "end": 348.94
+ },
+ {
+  "text": "vento.",
+  "start": 348.94,
+  "end": 349.46
+ },
+ {
+  "text": "Il",
+  "start": 349.5,
+  "end": 350.02
+ },
+ {
+  "text": "vento",
+  "start": 350.02,
+  "end": 350.4
+ },
+ {
+  "text": "è",
+  "start": 350.4,
+  "end": 350.48
+ },
+ {
+  "text": "un",
+  "start": 350.48,
+  "end": 350.6
+ },
+ {
+  "text": "segno,",
+  "start": 350.6,
+  "end": 351.1
+ },
+ {
+  "text": "non",
+  "start": 351.12,
+  "end": 351.42
+ },
+ {
+  "text": "Dio",
+  "start": 351.42,
+  "end": 351.7
+ },
+ {
+  "text": "stesso.",
+  "start": 351.7,
+  "end": 351.96
+ },
+ {
+  "text": "Questa",
+  "start": 352.62,
+  "end": 353.14
+ },
+ {
+  "text": "settimana",
+  "start": 353.14,
+  "end": 353.64
+ },
+ {
+  "text": "prova",
+  "start": 353.64,
+  "end": 353.9
+ },
+ {
+  "text": "così.",
+  "start": 353.9,
+  "end": 354.26
+ },
+ {
+  "text": "Prenditi",
+  "start": 354.6,
+  "end": 355.08
+ },
+ {
+  "text": "un",
+  "start": 355.08,
+  "end": 355.36
+ },
+ {
+  "text": "minuto,",
+  "start": 355.36,
+  "end": 355.78
+ },
+ {
+  "text": "da",
+  "start": 355.82,
+  "end": 356.04
+ },
+ {
+  "text": "solo.",
+  "start": 356.04,
+  "end": 356.28
+ },
+ {
+  "text": "Ascolta",
+  "start": 356.72,
+  "end": 357.24
+ },
+ {
+  "text": "il",
+  "start": 357.24,
+  "end": 357.32
+ },
+ {
+  "text": "tuo",
+  "start": 357.32,
+  "end": 357.46
+ },
+ {
+  "text": "respiro,",
+  "start": 357.46,
+  "end": 357.92
+ },
+ {
+  "text": "senza",
+  "start": 357.98,
+  "end": 358.24
+ },
+ {
+  "text": "fare",
+  "start": 358.24,
+  "end": 358.5
+ },
+ {
+  "text": "altro.",
+  "start": 358.5,
+  "end": 358.82
+ },
+ {
+  "text": "Poi",
+  "start": 359.18,
+  "end": 359.7
+ },
+ {
+  "text": "rileggi",
+  "start": 359.7,
+  "end": 360.12
+ },
+ {
+  "text": "lentamente",
+  "start": 360.12,
+  "end": 360.72
+ },
+ {
+  "text": "il",
+  "start": 360.72,
+  "end": 360.9
+ },
+ {
+  "text": "Salmo",
+  "start": 360.9,
+  "end": 361.2
+ },
+ {
+  "text": "34,",
+  "start": 361.2,
+  "end": 361.48
+ },
+ {
+  "text": "versetto",
+  "start": 361.92,
+  "end": 362.3
+ },
+ {
+  "text": "18.",
+  "start": 362.3,
+  "end": 362.56
+ },
+ {
+  "text": "Se",
+  "start": 363.14,
+  "end": 363.66
+ },
+ {
+  "text": "stai",
+  "start": 363.66,
+  "end": 363.88
+ },
+ {
+  "text": "attraversando",
+  "start": 363.88,
+  "end": 364.44
+ },
+ {
+  "text": "un",
+  "start": 364.44,
+  "end": 364.52
+ },
+ {
+  "text": "momento",
+  "start": 364.52,
+  "end": 364.72
+ },
+ {
+  "text": "in",
+  "start": 364.72,
+  "end": 364.94
+ },
+ {
+  "text": "cui",
+  "start": 364.94,
+  "end": 365.06
+ },
+ {
+  "text": "lo",
+  "start": 365.06,
+  "end": 365.2
+ },
+ {
+  "text": "spirito",
+  "start": 365.2,
+  "end": 365.56
+ },
+ {
+  "text": "è",
+  "start": 365.56,
+  "end": 365.6
+ },
+ {
+  "text": "abbattuto,",
+  "start": 365.6,
+  "end": 366.04
+ },
+ {
+  "text": "ricorda",
+  "start": 366.16,
+  "end": 366.9
+ },
+ {
+  "text": "che",
+  "start": 366.9,
+  "end": 367.0
+ },
+ {
+  "text": "un",
+  "start": 367.0,
+  "end": 367.12
+ },
+ {
+  "text": "sostegno,",
+  "start": 367.12,
+  "end": 367.64
+ },
+ {
+  "text": "un",
+  "start": 367.68,
+  "end": 367.8
+ },
+ {
+  "text": "medico,",
+  "start": 367.8,
+  "end": 368.24
+ },
+ {
+  "text": "uno",
+  "start": 368.24,
+  "end": 368.36
+ },
+ {
+  "text": "psicologo",
+  "start": 368.36,
+  "end": 368.98
+ },
+ {
+  "text": "o",
+  "start": 368.98,
+  "end": 369.06
+ },
+ {
+  "text": "una",
+  "start": 369.06,
+  "end": 369.2
+ },
+ {
+  "text": "persona",
+  "start": 369.2,
+  "end": 369.44
+ },
+ {
+  "text": "vicina",
+  "start": 369.44,
+  "end": 369.9
+ },
+ {
+  "text": "può",
+  "start": 369.9,
+  "end": 370.12
+ },
+ {
+  "text": "aiutare.",
+  "start": 370.12,
+  "end": 370.7
+ },
+ {
+  "text": "La",
+  "start": 370.74,
+  "end": 371.2
+ },
+ {
+  "text": "fede",
+  "start": 371.2,
+  "end": 371.52
+ },
+ {
+  "text": "e",
+  "start": 371.52,
+  "end": 371.56
+ },
+ {
+  "text": "le",
+  "start": 371.56,
+  "end": 371.64
+ },
+ {
+  "text": "cure",
+  "start": 371.64,
+  "end": 371.88
+ },
+ {
+  "text": "non",
+  "start": 371.88,
+  "end": 372.14
+ },
+ {
+  "text": "si",
+  "start": 372.14,
+  "end": 372.34
+ },
+ {
+  "text": "oppongono.",
+  "start": 372.34,
+  "end": 372.86
+ },
+ {
+  "text": "C'è",
+  "start": 373.28,
+  "end": 373.86
+ },
+ {
+  "text": "un",
+  "start": 373.86,
+  "end": 373.98
+ },
+ {
+  "text": "momento",
+  "start": 373.98,
+  "end": 374.28
+ },
+ {
+  "text": "in",
+  "start": 374.28,
+  "end": 374.62
+ },
+ {
+  "text": "cui",
+  "start": 374.62,
+  "end": 374.76
+ },
+ {
+  "text": "un",
+  "start": 374.76,
+  "end": 374.96
+ },
+ {
+  "text": "soffio,",
+  "start": 374.96,
+  "end": 375.54
+ },
+ {
+  "text": "una",
+  "start": 375.56,
+  "end": 375.7
+ },
+ {
+  "text": "forza",
+  "start": 375.7,
+  "end": 376.06
+ },
+ {
+  "text": "invisibile",
+  "start": 376.06,
+  "end": 376.52
+ },
+ {
+  "text": "ti",
+  "start": 376.52,
+  "end": 376.66
+ },
+ {
+  "text": "ha",
+  "start": 376.66,
+  "end": 376.74
+ },
+ {
+  "text": "rimesso",
+  "start": 376.74,
+  "end": 377.0
+ },
+ {
+  "text": "in",
+  "start": 377.0,
+  "end": 377.1
+ },
+ {
+  "text": "piedi?",
+  "start": 377.1,
+  "end": 377.42
+ },
+ {
+  "text": "Raccontalo",
+  "start": 377.76,
+  "end": 378.24
+ },
+ {
+  "text": "nei",
+  "start": 378.24,
+  "end": 378.4
+ },
+ {
+  "text": "commenti",
+  "start": 378.4,
+  "end": 378.88
+ },
+ {
+  "text": "se",
+  "start": 378.88,
+  "end": 378.96
+ },
+ {
+  "text": "ti",
+  "start": 378.96,
+  "end": 379.1
+ },
+ {
+  "text": "va.",
+  "start": 379.1,
+  "end": 379.22
+ },
+ {
+  "text": "Torniamo",
+  "start": 379.8,
+  "end": 380.28
+ },
+ {
+  "text": "all'Oreb.",
+  "start": 380.28,
+  "end": 380.7
+ },
+ {
+  "text": "Dopo",
+  "start": 381.28,
+  "end": 381.76
+ },
+ {
+  "text": "il",
+  "start": 381.76,
+  "end": 381.86
+ },
+ {
+  "text": "vento,",
+  "start": 381.86,
+  "end": 382.54
+ },
+ {
+  "text": "il",
+  "start": 382.54,
+  "end": 382.7
+ },
+ {
+  "text": "terremoto",
+  "start": 382.7,
+  "end": 383.52
+ },
+ {
+  "text": "e",
+  "start": 383.52,
+  "end": 383.62
+ },
+ {
+  "text": "il",
+  "start": 383.62,
+  "end": 383.76
+ },
+ {
+  "text": "fuoco,",
+  "start": 383.76,
+  "end": 384.26
+ },
+ {
+  "text": "Elia",
+  "start": 384.36,
+  "end": 385.0
+ },
+ {
+  "text": "sente",
+  "start": 385.0,
+  "end": 385.22
+ },
+ {
+  "text": "un",
+  "start": 385.22,
+  "end": 385.54
+ },
+ {
+  "text": "sussurro",
+  "start": 385.54,
+  "end": 386.48
+ },
+ {
+  "text": "dolce",
+  "start": 386.48,
+  "end": 387.06
+ },
+ {
+  "text": "e",
+  "start": 387.06,
+  "end": 387.1
+ },
+ {
+  "text": "leggero.",
+  "start": 387.1,
+  "end": 387.68
+ },
+ {
+  "text": "La",
+  "start": 387.98,
+  "end": 388.46
+ },
+ {
+  "text": "parola",
+  "start": 388.46,
+  "end": 388.84
+ },
+ {
+  "text": "che",
+  "start": 388.84,
+  "end": 388.98
+ },
+ {
+  "text": "spacca",
+  "start": 388.98,
+  "end": 389.56
+ },
+ {
+  "text": "le",
+  "start": 389.56,
+  "end": 389.6
+ },
+ {
+  "text": "montagne",
+  "start": 389.6,
+  "end": 390.24
+ },
+ {
+  "text": "è",
+  "start": 390.24,
+  "end": 390.66
+ },
+ {
+  "text": "anche",
+  "start": 390.66,
+  "end": 390.92
+ },
+ {
+  "text": "quella",
+  "start": 390.92,
+  "end": 391.14
+ },
+ {
+  "text": "che",
+  "start": 391.14,
+  "end": 391.34
+ },
+ {
+  "text": "restituisce",
+  "start": 391.34,
+  "end": 391.92
+ },
+ {
+  "text": "la",
+  "start": 391.92,
+  "end": 392.16
+ },
+ {
+  "text": "vita",
+  "start": 392.16,
+  "end": 392.56
+ },
+ {
+  "text": "a",
+  "start": 392.56,
+  "end": 392.88
+ },
+ {
+  "text": "delle",
+  "start": 392.88,
+  "end": 393.08
+ },
+ {
+  "text": "ossa",
+  "start": 393.08,
+  "end": 393.5
+ },
+ {
+  "text": "secche.",
+  "start": 393.5,
+  "end": 393.9
+ },
+ {
+  "text": "E",
+  "start": 394.16,
+  "end": 394.64
+ },
+ {
+  "text": "E",
+  "start": 394.64,
+  "end": 394.7
+ },
+ {
+  "text": "il",
+  "start": 394.7,
+  "end": 394.8
+ },
+ {
+  "text": "soffio",
+  "start": 394.8,
+  "end": 395.16
+ },
+ {
+  "text": "che",
+  "start": 395.16,
+  "end": 395.32
+ },
+ {
+  "text": "ti",
+  "start": 395.32,
+  "end": 395.42
+ },
+ {
+  "text": "attraversa",
+  "start": 395.42,
+  "end": 395.98
+ },
+ {
+  "text": "in",
+  "start": 395.98,
+  "end": 396.06
+ },
+ {
+  "text": "questo",
+  "start": 396.06,
+  "end": 396.32
+ },
+ {
+  "text": "momento",
+  "start": 396.32,
+  "end": 396.68
+ },
+ {
+  "text": "appartiene",
+  "start": 396.68,
+  "end": 397.74
+ },
+ {
+  "text": "alla",
+  "start": 397.74,
+  "end": 397.96
+ },
+ {
+  "text": "stessa",
+  "start": 397.96,
+  "end": 398.64
+ },
+ {
+  "text": "storia.",
+  "start": 398.64,
+  "end": 399.2
+ },
+ {
+  "text": "Una",
+  "start": 399.62,
+  "end": 400.1
+ },
+ {
+  "text": "parola,",
+  "start": 400.1,
+  "end": 400.6
+ },
+ {
+  "text": "un",
+  "start": 400.6,
+  "end": 400.72
+ },
+ {
+  "text": "passo,",
+  "start": 400.72,
+  "end": 401.08
+ },
+ {
+  "text": "un",
+  "start": 401.3,
+  "end": 401.38
+ },
+ {
+  "text": "soffio",
+  "start": 401.38,
+  "end": 401.94
+ },
+ {
+  "text": "in",
+  "start": 401.94,
+  "end": 402.02
+ },
+ {
+  "text": "più",
+  "start": 402.02,
+  "end": 402.22
+ },
+ {
+  "text": "ogni",
+  "start": 402.22,
+  "end": 402.74
+ },
+ {
+  "text": "settimana.",
+  "start": 402.74,
+  "end": 403.38
+ },
+ {
+  "text": "Se",
+  "start": 403.56,
+  "end": 404.04
+ },
+ {
+  "text": "questo",
+  "start": 404.04,
+  "end": 404.28
+ },
+ {
+  "text": "cammino",
+  "start": 404.28,
+  "end": 404.74
+ },
+ {
+  "text": "ti",
+  "start": 404.74,
+  "end": 404.8
+ },
+ {
+  "text": "fa",
+  "start": 404.8,
+  "end": 404.92
+ },
+ {
+  "text": "bene,",
+  "start": 404.92,
+  "end": 405.22
+ },
+ {
+  "text": "torna",
+  "start": 405.28,
+  "end": 406.0
+ },
+ {
+  "text": "a",
+  "start": 406.0,
+  "end": 406.02
+ },
+ {
+  "text": "trovarci.",
+  "start": 406.02,
+  "end": 406.42
+ }
+]
