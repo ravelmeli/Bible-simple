@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "b292bcb6-ce69-4850-80a8-2c046a828467",
-  "currentRevision": null,
+  "currentRevision": "91713ac3-7e8b-4d62-a54c-068e50278045",
   "pendingChanges": false,
   "files": {
     "assets/audio/jingle.wav": {
@@ -77,16 +77,16 @@
       "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/fb/fb224c656942725af6af34f8060ec609532310d24dcf68f54e6c66d2d3f409a3"
     },
     "build.py": {
-      "hash": "8af2d265b62b10f14ab9055dfde34c749be203b34545871cc0ba95fb325a1ae0",
-      "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/8a/8af2d265b62b10f14ab9055dfde34c749be203b34545871cc0ba95fb325a1ae0"
+      "hash": "71dba8c69b6c0e9475680d0ef943fa715a6e3fcfa6401dec6cbb608c7980a5c4",
+      "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/71/71dba8c69b6c0e9475680d0ef943fa715a6e3fcfa6401dec6cbb608c7980a5c4"
     },
     "dur.json": {
       "hash": "777ccf625210460e2543ea11652d94e8acd9967498ac8962d739a4f1480b5710",
       "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/77/777ccf625210460e2543ea11652d94e8acd9967498ac8962d739a4f1480b5710"
     },
     "index.html": {
-      "hash": "a4b8cdac96f22a27cebdfe0534b1f03ce31fc4f6ef474af3d1977c84ce38b1db",
-      "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/a4/a4b8cdac96f22a27cebdfe0534b1f03ce31fc4f6ef474af3d1977c84ce38b1db"
+      "hash": "c0607dc05cc642ee9c852ea292a42fd13d53819a5cb5beeced59a14bea1d3a48",
+      "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/c0/c0607dc05cc642ee9c852ea292a42fd13d53819a5cb5beeced59a14bea1d3a48"
     },
     "script.md": {
       "hash": "e823a5acab0e7f31648442ed091f073c44a5457b92344ee3c3cb4c51833fb48c",
@@ -131,9 +131,45 @@
     "assets/voix.wav": {
       "hash": "f390b8f1fc678c99adc6adfc20c4cc59be38ada1eb48c19803ac777e493f52fb",
       "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/f3/f390b8f1fc678c99adc6adfc20c4cc59be38ada1eb48c19803ac777e493f52fb"
+    },
+    "titre-description-tags.md": {
+      "hash": "21750dc92a16c54e6ef775459afa3e915bf4b44ec6ae154801b853118ba36a0c",
+      "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/21/21750dc92a16c54e6ef775459afa3e915bf4b44ec6ae154801b853118ba36a0c"
+    },
+    "CREDITS.md": {
+      "hash": "39c5e587a7b6b44dd15b509b0d1ec5631a8882f8ca7a42171f54720355e964b3",
+      "content": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/39/39c5e587a7b6b44dd15b509b0d1ec5631a8882f8ca7a42171f54720355e964b3"
     }
   },
-  "revisions": {},
+  "revisions": {
+    "91713ac3-7e8b-4d62-a54c-068e50278045": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794043845228,
+      "endedAt": 1794043845244,
+      "files": {
+        "build.py": {
+          "before": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/8a/8af2d265b62b10f14ab9055dfde34c749be203b34545871cc0ba95fb325a1ae0",
+          "after": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/71/71dba8c69b6c0e9475680d0ef943fa715a6e3fcfa6401dec6cbb608c7980a5c4"
+        },
+        "CREDITS.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/39/39c5e587a7b6b44dd15b509b0d1ec5631a8882f8ca7a42171f54720355e964b3"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/a4/a4b8cdac96f22a27cebdfe0534b1f03ce31fc4f6ef474af3d1977c84ce38b1db",
+          "after": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/c0/c0607dc05cc642ee9c852ea292a42fd13d53819a5cb5beeced59a14bea1d3a48"
+        },
+        "titre-description-tags.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/b292bcb6-ce69-4850-80a8-2c046a828467/blobs/21/21750dc92a16c54e6ef775459afa3e915bf4b44ec6ae154801b853118ba36a0c"
+        }
+      }
+    }
+  },
   "checks": {
     "latest": null,
     "revisions": {},
@@ -146,13 +182,15 @@
   },
   "renders": {
     "latest": {
-      "id": "82660a2a-8f00-44c3-a042-ff6a8f5d7852",
-      "completedAt": 1794042271992,
+      "id": "9c2d93b6-f370-4db0-a27b-e0bd396cda5c",
+      "completedAt": 1794043974353,
       "output": "/home/user/Bible-simple/montage/short-noe-animaux-en/renders/short-noe-animaux-en-brouillon.mp4",
       "status": "completed",
-      "revision": null
+      "revision": "91713ac3-7e8b-4d62-a54c-068e50278045"
     },
-    "retainedRevisions": []
+    "retainedRevisions": [
+      "91713ac3-7e8b-4d62-a54c-068e50278045"
+    ]
   },
   "pendingArtifactCleanup": []
 }

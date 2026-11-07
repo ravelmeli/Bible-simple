@@ -17,7 +17,8 @@ import style02 as s  # noqa: E402
 LANG = "en" if HERE.endswith("-en") else "it" if HERE.endswith("-it") else "fr"
 DUR_ = json.load(open(os.path.join(HERE, "dur.json")))["dur"]
 BRAND = {"fr": "La Bible Simple", "en": "Faith Engineering", "it": "La Bibbia Semplice"}[LANG]
-THEME = {"brand": BRAND, "title": BRAND + " - Noé et les animaux - style 02", "lang": LANG}
+THEME = {"brand": BRAND, "title": BRAND + " - Noé et les animaux - style 02", "lang": LANG,
+         "bg": "#EFE4CC", "ink": "#2B2118", "grey": "#7A6C58", "grey2": "#B3A58D", "line": "#CDBFA3", "tile": "#DDD0B6", "land": "#E2D6BB"}
 s.setup(here=HERE, duration=DUR_, cols=3, rows=4, theme=THEME)
 from style02 import *  # noqa: E402,F401,F403
 import style02  # noqa: E402
@@ -198,31 +199,32 @@ t_all = LS[7] - 0.9
 cam(t_all, "all")
 t6 = LS[7] - 0.2
 cam(t6, S6)
-dark_mode(t6 - 0.1)
-headline(S6, 300, X["h6"], t6 + 0.1, kicker=X["k6"], hl_t=kk("trad"), size=104, dark=True)
+headline(S6, 300, X["h6"], t6 + 0.1, kicker=X["k6"], hl_t=kk("trad"), size=104)
 b1 = put(S6, 70, 640, f"<small>{X['b1s']}</small>{X['b1']}", "box out", "width:430px;font-size:48px")
 b2 = put(S6, 560, 640, f"<small>{X['b2s']}</small>{X['b2']}", "box out", "width:430px;font-size:48px")
 blur_in(b1, kk("trad") - 0.2, 14)
 blur_in(b2, kk("hypo") + 0.3, 14)
 sticker(S6, "tablette-atra-hasis", 120, 960, 300, kk("hypo") - 0.2, rot=-3)
-label_box(S6, 460, 1020, X["tab_lab"], X["tab_sub"], kk("hypo") - 0.1, dark=True)
+label_box(S6, 460, 1020, X["tab_lab"], X["tab_sub"], kk("hypo") - 0.1)
 hit(kk("hypo"), 0.8)
 
 # --- S7 · le mot hébreu min : « espèce » ou « sorte » ?
 t7 = LS[8] - 0.3
 cam(t7, S7)
-headline(S7, 300, X["h7"], t7 + 0.1, kicker=X["k7"], hl_t=kk("esp"), size=110, dark=True)
+headline(S7, 300, X["h7"], t7 + 0.1, kicker=X["k7"], hl_t=kk("esp"), size=110)
 m1 = put(S7, 70, 700, f"<small>{X['m1s']}</small>{X['m1']}", "box out", "width:430px;font-size:64px")
 m2 = put(S7, 560, 700, f"<small>{X['m2s']}</small>{X['m2']}", "box out", "width:430px;font-size:64px")
 blur_in(m1, kk("esp") - 0.2, 14)
 blur_in(m2, kk("sorte") - 0.2, 14)
-tag(S7, 70, 1000, X["note"], kk("mn") + 0.4, "acc", 44)
+sticker(S7, "moutons", 70, 900, 330, kk("esp") + 0.3, rot=-3)
+sticker(S7, "chameaux", 480, 900, 330, kk("sorte") + 0.1, rot=3)
+tag(S7, 70, 1240, X["note"], kk("mn") + 0.4, "acc", 40)
 hit(kk("mn"), 1.0)
 
 # --- S8 · réponse : incomplet
 t8 = LS[9] - 0.3
 cam(t8, S8)
-headline(S8, 300, X["h8"], t8 + 0.1, kicker=X["k8"], hl_t=kk("faux") if False else LS[9] + 0.5, size=118, dark=True)
+headline(S8, 300, X["h8"], t8 + 0.1, kicker=X["k8"], hl_t=kk("faux") if False else LS[9] + 0.5, size=118)
 sticker(S8, "noe-portrait", 560, 640, 400, t8 + 0.3, rot=3)
 stamp(S8, 60, 1160, X["st_inc"], kk("incomplet") - 0.1, rot=-4, size=80)
 hit(kk("incomplet"), 1.0)
@@ -230,7 +232,7 @@ hit(kk("incomplet"), 1.0)
 # --- S9 · appel à commenter
 t9 = LS[10] - 0.3
 cam(t9, S9)
-headline(S9, 300, X["h9"], t9 + 0.1, kicker=X["k9"], hl_t=kk("detail"), size=120, dark=True)
+headline(S9, 300, X["h9"], t9 + 0.1, kicker=X["k9"], hl_t=kk("detail"), size=120)
 sticker(S9, "noe-pied", 600, 640, 330, t9 + 0.2, rot=3)
 cta = put(S9, 70, 1150, '<svg viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z"/></svg>' + X["cta"], "cta")
 blur_in(cta, kk("comm") - 1.2, 14)
