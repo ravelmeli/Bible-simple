@@ -22,7 +22,7 @@ Le texte ne dit pas pourquoi les animaux purs sont plus nombreux, mais après le
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
-🎵 CREDITS: MusicGen (Meta), CC-BY-NC 4.0 weights — see CREDITS.md · SFX: Pixabay Content License.
+🎵 CRÉDITS AUDIO : musique générée avec MusicGen (Meta) · effets : bibliothèque Pixabay (Content License).
 
 Découvrez aussi : étude biblique simple, arche de Noé, Noé deux animaux de chaque espèce, Genèse 7 2, sept couples d'animaux purs, animaux purs et impurs, Genèse 6 19, sacrifice de Noé Genèse 8, le déluge expliqué, min hébreu espèce, traditions du déluge, vrai ou faux Bible, comprendre la Genèse, bible sans jargon, récit du déluge
 

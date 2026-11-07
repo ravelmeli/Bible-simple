@@ -22,7 +22,7 @@ Il testo non dice perché gli animali puri siano più numerosi, ma dopo il diluv
 
 👉 ISCRIVITI: Iscriviti a La Bibbia Semplice per scoprire la Bibbia, un racconto alla volta.
 
-🎵 CREDITS: MusicGen (Meta), CC-BY-NC 4.0 weights — see CREDITS.md · SFX: Pixabay Content License.
+🎵 CREDITI AUDIO: musica generata con MusicGen (Meta) · effetti sonori: libreria Pixabay (Content License).
 
 Ricerche correlate : studio biblico semplice, arca di Noè, Noè due animali per specie, Genesi 7 2, sette paia di animali puri, animali puri e immondi, Genesi 6 19, sacrificio di Noè Genesi 8, il diluvio spiegato, ebraico min specie genere, tradizioni del diluvio, vero o falso Bibbia, capire la Genesi, Bibbia senza paroloni, racconto del diluvio
 
