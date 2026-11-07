@@ -12,7 +12,10 @@ const minArea = parseFloat(process.argv[4] || "1200");
 
 (async () => {
   const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
+  const html0 = require("fs").readFileSync(path.join(dir, "index.html"), "utf8");
+  const VW = parseInt((html0.match(/data-width="(\d+)"/) || [0, 1920])[1]);
+  const VH = parseInt((html0.match(/data-height="(\d+)"/) || [0, 1080])[1]);
+  const page = await browser.newPage({ viewport: { width: VW, height: VH } });
   // GSAP vient d'un CDN dans index.html : on le sert depuis le dossier local de HyperFrames (hors ligne).
   const gsapLocal = require("child_process").execSync("find / -name gsap.min.js -not -path '/proc/*' 2>/dev/null | head -1").toString().trim();
   await page.route(/gsap.*\.min\.js/, (route) => route.fulfill({ path: gsapLocal, contentType: "application/javascript" }));
@@ -66,7 +69,7 @@ const minArea = parseFloat(process.argv[4] || "1200");
           if (l < 1e8) r = { left: l, top: tp, width: rr - l, height: bt - tp };
         }
         if (r.width < 8 || r.height < 8) continue;
-        if (r.left + r.width < 0 || r.left > 1920 || r.top + r.height < 0 || r.top > 1080) continue; // hors écran
+        if (r.left + r.width < 0 || r.left > window.innerWidth || r.top + r.height < 0 || r.top > window.innerHeight) continue; // hors écran
         const sc = el.offsetWidth ? el.getBoundingClientRect().width / el.offsetWidth : 1;
         if (sc < 0.75 && /\b(sticker|headline|tag|kq|card|stamp|word|label)\b/.test(c) && sc > 0) { if (!window.__zo) window.__zo = {}; }
         out.push({ sc, id: el.id, c, x: r.left, y: r.top, w: r.width, h: r.height, txt: ((el.innerText || "").replace(/\s+/g, " ").slice(0, 28)) || ((el.querySelector("img") || {}).src || "").split("/").pop().replace(".png", "") });
