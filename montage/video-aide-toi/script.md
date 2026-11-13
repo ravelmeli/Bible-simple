@@ -38,9 +38,10 @@ Le Nouveau Testament va encore plus loin. Paul écrit, dans l'épître aux Romai
 Et sur le salut, Paul est encore plus net, dans l'épître aux Éphésiens, au chapitre deux : « Car c'est par la grâce que vous êtes sauvés, par le moyen de la foi. Et cela ne vient pas de vous, c'est le don de Dieu. Ce n'est point par les œuvres, afin que personne ne se glorifie. »
 Autrement dit : si « Aide-toi, le ciel t'aidera » voulait dire « sauve-toi toi-même, et Dieu complétera », la Bible dirait non. Le salut est un don.
 Mais ce serait trop simple d'en rester là. Car la Bible ne dit pas non plus que l'effort est inutile.
-Écoute le livre des Proverbes, au chapitre six : « Va vers la fourmi, paresseux ; considère ses voies, et deviens sage. »
+Écoute le livre des Proverbes, au chapitre six : « Va vers la fourmi, paresseux. »
 Le texte valorise le travail, la prévoyance, la sagesse pratique.
 Paul aussi, dans sa deuxième lettre aux Thessaloniciens : « Si quelqu'un ne veut pas travailler, qu'il ne mange pas non plus. »
+L'effort personnel n'est pas interdit. Il est même valorisé comme une participation normale à la vie que Dieu nous donne.
 Mais attention au contexte : Paul parle de ceux qui refusent de travailler, pas de ceux qui ne peuvent pas. Lui-même rappelle qu'il a travaillé de ses mains pour ne pas être à la charge des autres.
 Alors, la Bible nous demande-t-elle d'agir, ou de nous confier à Dieu ? Les deux en même temps, et le texte le montre dans des scènes.
 Premier exemple : la mer Rouge. Les Hébreux sont coincés entre l'armée de Pharaon et la mer. Moïse leur dit, dans l'Exode, au chapitre quatorze : « L'Éternel combattra pour vous ; et vous, gardez le silence. »
