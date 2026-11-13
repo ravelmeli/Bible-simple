@@ -22,8 +22,6 @@ The first line of the inscription is incomplete: many scholars read "Tiberieum,"
 
 👉 SUBSCRIBE: Subscribe to Faith Engineering to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: music generated with MusicGen (Meta) · sound effects: Pixabay Content License library.
-
 Related searches : simple Bible study, Pilate stone, Pontius Pilate inscription, Pontius Pilatus, Caesarea 1961, Pontius Pilate prefect of Judea, Tiberieum, Luke 3:1, Pontius Pilate Josephus Tacitus, Bible archaeology, Israel Museum, trial of Jesus, Bible and archaeology, understand the Gospels, Bible without jargon
 
 \#FaithEngineering #Shorts #PontiusPilate #BibleArchaeology

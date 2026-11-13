@@ -22,8 +22,6 @@ When Paul wrote these words, he was in prison. He had already known beatings, sh
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
-
 📷 IMAGES: Greek papyrus letter and Roman inkwell with stylus: The Metropolitan Museum of Art (CC0). Map: Natural Earth (public domain). Bible quotations: World English Bible (public domain).
 
 See also: simple bible study, philippians 4 13 explained, i can do all things through christ who strengthens me, real meaning of philippians 4 13, philippians 4 11 12 contentment, paul in prison philippians, misquoted bible verse, filled and hungry philippians, greek word memyemai initiated, epaphroditus and the philippians, strength to endure bible, bible verse explained, bible without jargon, simple bible commentary.

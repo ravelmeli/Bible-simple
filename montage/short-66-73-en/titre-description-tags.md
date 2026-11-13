@@ -20,8 +20,6 @@ The New Testament is the same everywhere: twenty-seven books. The difference is 
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
-
 📷 IMAGES: Latin Bible manuscript leaves (France, c. 1280-1300) and "Saint Jerome" (Italy, 1440s): The Metropolitan Museum of Art (CC0).
 
 See also: simple bible study, 66 or 73 books, Catholic Bible vs Protestant Bible, deuterocanonical books, apocrypha, Septuagint, Jerome's Vulgate, Council of Trent 1546, Luther and the books of the Bible, Tobit Judith Wisdom Sirach Baruch Maccabees, biblical canon, bible without jargon, simple bible commentary.

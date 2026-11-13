@@ -22,8 +22,6 @@ La première ligne de l'inscription est incomplète : beaucoup de spécialistes 
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
-🎵 CRÉDITS AUDIO : musique générée avec MusicGen (Meta) · effets : bibliothèque Pixabay (Content License).
-
 Découvrez aussi : étude biblique simple, pierre de Pilate, inscription de Ponce Pilate, Pontius Pilatus, Césarée 1961, Ponce Pilate préfet de Judée, Tiberieum, Luc 3 1, Ponce Pilate Josèphe Tacite, archéologie de la Bible, musée d'Israël, procès de Jésus, bible et archéologie, comprendre les évangiles, bible sans jargon
 
 \#LaBibleSimple #Shorts #PoncePilate #ArchéologieBiblique

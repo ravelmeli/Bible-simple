@@ -22,8 +22,6 @@ A fragment of black basalt, reused in a later wall, carries an inscription in Ar
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
-
 📷 IMAGES: Tel Dan stele, photo by Gary Todd, Israel Museum (CC0) · Ivory plaque "woman at the window," The Metropolitan Museum of Art (CC0) · Map: Natural Earth (public domain). Bible quotation: World English Bible (public domain).
 
 See also: simple bible study, tel dan stele explained, did king david exist, house of david inscription, archaeology and the bible, biblical archaeological discoveries, aramaic inscription, hazael king of damascus, jehu joram ahaziah, 2 kings 9 explained, the dynasty of david, history of ancient israel, bible and history, bible without jargon, simple bible commentary.

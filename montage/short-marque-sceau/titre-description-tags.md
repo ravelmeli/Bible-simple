@@ -22,8 +22,6 @@ Jean reprend une image de l'Ancien Testament : dans le Deutéronome, les paroles
 
 👉 S'ABONNER : Abonnez-vous pour comprendre l'Apocalypse simplement, un symbole à la fois, chaque semaine.
 
-🎵 CRÉDITS AUDIO : "Deep Cinematic Impact" par MeijstroAudio (CC BY 4.0) — https://freesound.org/people/MeijstroAudio/sounds/377303 · "Suspense Whoosh/Transition" par tyops (CC BY 4.0) — https://freesound.org/people/tyops/sounds/275143 · "Beach/Ocean Ambience" par IanStarGem (CC0).
-
 Découvrez aussi : étude biblique simple, marque de la bête expliquée, sceau de dieu sur le front, apocalypse 13 16 expliqué, apocalypse 7 3 expliqué, apocalypse 22 4, deutéronome 6 8, main droite et front dans la bible, symboles de l'apocalypse décodés, comprendre l'apocalypse facilement, leçons de l'école du sabbat, bible sans jargon, verset biblique expliqué, prophétie biblique simple, commentaire biblique simple.
 
 \#LaBibleSimple \#Shorts \#EtudeBiblique \#Apocalypse

@@ -22,8 +22,6 @@ La prima riga dell'iscrizione è incompleta: molti studiosi vi leggono «Tiberie
 
 👉 ISCRIVITI: Iscriviti a La Bibbia Semplice per scoprire la Bibbia, un racconto alla volta.
 
-🎵 CREDITI AUDIO: musica generata con MusicGen (Meta) · effetti sonori: libreria Pixabay (Content License).
-
 Ricerche correlate : studio biblico semplice, pietra di Pilato, iscrizione di Ponzio Pilato, Pontius Pilatus, Cesarea 1961, Ponzio Pilato prefetto di Giudea, Tiberieum, Luca 3 1, Ponzio Pilato Giuseppe Flavio Tacito, archeologia biblica, Museo d'Israele, processo a Gesù, Bibbia e archeologia, capire i vangeli, Bibbia senza paroloni
 
 \#LaBibbiaSemplice #Shorts #PonzioPilato #ArcheologiaBiblica

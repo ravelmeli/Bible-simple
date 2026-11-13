@@ -22,8 +22,6 @@ Yeshua è una forma breve di Yehoshua, che si traduce «Giosuè», e questo nome
 
 👉 ISCRIVITI: Iscriviti a La Bibbia Semplice per scoprire la Bibbia, un racconto alla volta.
 
-🎵 CREDITI AUDIO: musica generata con MusicGen (Meta) · effetti sonori: libreria Pixabay (Content License).
-
 Ricerche correlate : studio biblico semplice, Yeshua, nome ebraico di Gesù, vero nome di Gesù, Gesù in ebraico, Yehoshua Giosuè, significato del nome Gesù, il Signore salva, Matteo 1 21, Iesous greco, Gesù parlava aramaico, Gesù di Nazaret, etimologia di Gesù, capire i vangeli, Bibbia senza paroloni
 
 \#LaBibbiaSemplice #Shorts #Yeshua #StudioBiblico

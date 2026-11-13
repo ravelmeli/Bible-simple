@@ -22,8 +22,6 @@ Sur la route qui descend de Jérusalem à Jéricho, environ 27 kilomètres et pr
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
-🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
-
 📷 IMAGES : Denier de Tibère, American Numismatic Society (CC0) · Vues aériennes de la route de Jéricho, Matson Photo Service, Library of Congress (domaine public) · Amphore à vin, The Metropolitan Museum of Art (CC0).
 
 Découvrez aussi : étude biblique simple, parabole du bon samaritain expliquée, qui est mon prochain selon jésus, luc 10 25-37 expliqué, aimer son prochain comme soi-même, va et toi fais de même, docteur de la loi et jésus, route de jérusalem à jéricho, qui étaient les samaritains, prêtre et lévite dans la parabole, deux deniers valeur, paraboles de jésus expliquées, bible sans jargon, leçons de l'école du sabbat, verset biblique expliqué, commentaire biblique simple.

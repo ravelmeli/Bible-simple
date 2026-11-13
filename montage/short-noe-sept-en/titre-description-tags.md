@@ -22,8 +22,6 @@ In Genesis chapter 6, God does ask for two of every kind, a male and a female. B
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
-
 📷 IMAGES: Stained glass "God Closing the Door of Noah's Ark," maiolica plate "Sacrifice of Noah," terracotta camel figurine and Atra-hasis tablet: The Metropolitan Museum of Art (CC0). Bible quotation: World English Bible (public domain).
 
 See also: simple bible study, noah's ark explained, how many animals were on the ark, genesis 7 2 explained, clean and unclean animals in the bible, two by two or seven pairs, noah's sacrifice genesis 8, leviticus 11 clean and unclean, the flood story, babylonian flood atra-hasis, biblical hebrew explained, bible without jargon, bible verse explained, simple bible commentary.

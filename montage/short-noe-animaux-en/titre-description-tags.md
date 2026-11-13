@@ -22,8 +22,6 @@ The text doesn't say why there are more clean animals, but after the flood Noah 
 
 👉 SUBSCRIBE: Subscribe to Faith Engineering to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: music generated with MusicGen (Meta) · sound effects: Pixabay Content License library.
-
 Related searches : simple Bible study, Noah's ark, Noah two of every animal, Genesis 7:2, seven pairs of clean animals, clean and unclean animals, Genesis 6:19, Noah's sacrifice Genesis 8, the flood explained, Hebrew min species kind, flood traditions, true or false Bible, understand Genesis, Bible without jargon, flood story
 
 \#FaithEngineering #Shorts #NoahsArk #BibleStudy

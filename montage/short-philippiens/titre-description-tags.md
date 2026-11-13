@@ -22,8 +22,6 @@ Quand Paul écrit ces mots, il est en prison. Il a déjà connu les coups, les n
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
-🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
-
 📷 IMAGES : Lettre sur papyrus en grec et encrier romain avec stylet : The Metropolitan Museum of Art (CC0). Carte : Natural Earth (domaine public).
 
 Découvrez aussi : étude biblique simple, philippiens 4 13 expliqué, je puis tout par celui qui me fortifie, vrai sens de philippiens 4 13, philippiens 4 11 12 contentement, paul en prison philippiens, verset biblique mal cité, rassasié et affamé philippiens, mot grec memyemai initié, épaphrodite et les philippiens, force pour tenir bible, verset biblique expliqué, bible sans jargon, leçons de l'école du sabbat, commentaire biblique simple.

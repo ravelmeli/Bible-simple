@@ -22,8 +22,6 @@ Yeshua is a short form of Yehoshua, which we translate "Joshua," and this name i
 
 👉 SUBSCRIBE: Subscribe to Faith Engineering to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: music generated with MusicGen (Meta) · sound effects: Pixabay Content License library.
-
 Related searches : simple Bible study, Yeshua, Hebrew name of Jesus, real name of Jesus, Jesus in Hebrew, Yehoshua Joshua, meaning of the name Jesus, the Lord saves, Matthew 1:21, Iesous Greek, Jesus spoke Aramaic, Jesus of Nazareth, etymology of Jesus, understand the Gospels, Bible without jargon
 
 \#FaithEngineering #Shorts #Yeshua #BibleStudy

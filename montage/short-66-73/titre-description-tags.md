@@ -20,8 +20,6 @@ Le Nouveau Testament est le même partout : vingt-sept livres. La différence se
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
-🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
-
 📷 IMAGES : Feuillets de Bible latine manuscrite (France, vers 1280-1300) et « Saint Jérôme » (Italie, années 1440) : The Metropolitan Museum of Art (CC0).
 
 Découvrez aussi : étude biblique simple, 66 ou 73 livres, Bible catholique et protestante, livres deutérocanoniques, apocryphes, Septante, Vulgate de Jérôme, concile de Trente 1546, Luther et les livres de la Bible, Tobie Judith Sagesse Siracide Baruch Maccabées, canon biblique, bible sans jargon, école du sabbat, commentaire biblique simple.

@@ -22,8 +22,6 @@ In first-century Palestine, Aramaic was the language of everyday life. The Gospe
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
-🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
-
 📷 IMAGES: Ostracon inscribed in Aramaic (Sasanian, c. AD 500-600, later than Jesus' time): The Metropolitan Museum of Art (CC0). Schematic map: Natural Earth (public domain). Bible quotations: World English Bible (public domain).
 
 See also: simple bible study, Jesus spoke Aramaic, language of Jesus, biblical Aramaic, talitha cumi meaning, ephphatha meaning, abba father meaning, eloi eloi lama sabachthani, Aramaic words in the Gospels, did Jesus speak Hebrew or Aramaic, gospel of Mark explained, bible without jargon, simple bible commentary.

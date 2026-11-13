@@ -22,8 +22,6 @@ Yeshoua est une forme courte de Yehoshoua, que l'on traduit « Josué », et ce 
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
-🎵 CRÉDITS AUDIO : musique générée avec MusicGen (Meta) · effets : bibliothèque Pixabay (Content License).
-
 Découvrez aussi : étude biblique simple, Yeshoua, nom hébreu de Jésus, vrai nom de Jésus, Jésus en hébreu, Yehoshoua Josué, signification du nom de Jésus, le Seigneur sauve, Matthieu 1 21, Iêsous grec, Jésus parlait araméen, Jésus de Nazareth, étymologie de Jésus, comprendre les évangiles, bible sans jargon
 
 \#LaBibleSimple #Shorts #Yeshoua #EtudeBiblique
