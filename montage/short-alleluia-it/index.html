@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>La Bibbia Semplice - Alléluia - style 02</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url("assets/fonts/Inter.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+      }
+      html, body { margin: 0; background: #EFE4CC; }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+        color: #2B2118;
+        background: #EFE4CC;
+      }
+      #darkbg { position: absolute; inset: 0; background: #2B2118; opacity: 0; }
+      #drift { position: absolute; inset: 0; transform-origin: 50% 50%; }
+      #world {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3240px;
+        height: 7680px;
+        transform-origin: 0 0;
+        background-image: radial-gradient(circle, rgba(43, 33, 24, 0.16) 2px, transparent 2.6px);
+        background-size: 40px 40px;
+      }
+
+      .node { position: absolute; }
+      .sticker img { display: block; filter: drop-shadow(0 18px 22px rgba(43, 33, 24, 0.28)) drop-shadow(0 3px 4px rgba(43, 33, 24, 0.18)); }
+
+      .headline .kick {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #7A6C58;
+        margin-bottom: 22px;
+      }
+      .headline .kick i { display: block; width: 18px; height: 18px; background: #F85830; }
+      .headline .h { font-weight: 800; line-height: 1.08; letter-spacing: -1.5px; }
+      .headline .sub { margin-top: 18px; font-size: 30px; color: #7A6C58; }
+      .headline.dark { color: #EFE4CC; }
+      .headline.dark .kick { color: #B3A58D; }
+      .hl { position: relative; display: inline-block; font-style: normal; }
+      .hl span { position: relative; z-index: 1; }
+      .hl i {
+        position: absolute;
+        left: -4px;
+        right: -4px;
+        bottom: 0.06em;
+        height: 0.26em;
+        background: #F85830;
+        transform-origin: 0 50%;
+        z-index: 0;
+      }
+
+      .lead { pointer-events: none; overflow: visible; }
+      .lead line, .lead path { stroke: #2B2118; stroke-width: 3; fill: none; }
+      .lead circle { fill: #F85830; }
+      .arrows path { stroke: #B3A58D; stroke-width: 6; stroke-linecap: round; }
+
+      .label { padding-left: 18px; border-left: 4px solid #F85830; }
+      .label.dark b { color: #EFE4CC; }
+      .label.dark span { color: #B3A58D; }
+      .label b { display: block; font-size: 36px; font-weight: 700; line-height: 1.15; white-space: nowrap; }
+      .label span { display: block; margin-top: 6px; font-size: 24px; color: #7A6C58; white-space: nowrap; }
+
+      .tag {
+        padding: 12px 24px 14px;
+        font-weight: 800;
+        line-height: 1.1;
+        white-space: nowrap;
+        color: #2B2118;
+        background: #FFFFFF;
+        border: 3px solid #2B2118;
+        box-shadow: 6px 6px 0 rgba(43, 33, 24, 0.18);
+      }
+      .tag.acc { color: #FFFFFF; background: #F85830; border-color: #F85830; }
+      .tag.dark { color: #EFE4CC; background: transparent; border-color: transparent; box-shadow: none; padding-left: 0; }
+      .ref {
+        padding: 6px 14px 8px;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #7A6C58;
+        border: 2px solid #CDBFA3;
+        white-space: nowrap;
+      }
+
+      .grid { display: grid; grid-template-columns: repeat(12, 38px); gap: 6px; }
+      .grid i { display: block; width: 38px; height: 38px; border-radius: 4px; background: #DDD0B6; }
+      .counter { font-weight: 800; letter-spacing: -2px; line-height: 1; color: #F85830; white-space: nowrap; }
+      .counter .unit { font-size: 0.42em; letter-spacing: 0; margin-left: 6px; color: #2B2118; font-weight: 700; }
+      .counter.dark .unit { color: #EFE4CC; }
+
+      .box {
+        width: 500px;
+        padding: 26px 30px 30px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.2;
+        background: #FFFFFF;
+        border: 3px solid #2B2118;
+        box-shadow: 8px 8px 0 rgba(43, 33, 24, 0.15);
+      }
+      .box.q { width: 620px; border-radius: 26px; }
+      .box.out { width: 300px; font-size: 64px; font-weight: 800; }
+      .box small { display: block; font-size: 24px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: #7A6C58; margin-bottom: 4px; }
+      .box.out small { color: inherit; opacity: 0.8; }
+
+      .day {
+        width: 280px;
+        padding: 28px 0 34px;
+        text-align: center;
+        font-size: 150px;
+        font-weight: 800;
+        line-height: 1;
+        border: 3px solid #2B2118;
+        box-shadow: 8px 8px 0 rgba(43, 33, 24, 0.15);
+      }
+      .day.wide { width: 300px; font-size: 64px; padding: 26px 0 30px; }
+      .day small { display: block; font-size: 26px; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.85; }
+      .dot { width: 30px; height: 30px; border-radius: 50%; background: #F85830; }
+      .bar { background: #2B2118; }
+      .bar.acc { background: #F85830; }
+      .zero { font-size: 400px; font-weight: 900; line-height: 0.9; color: #F85830; letter-spacing: -10px; }
+      .cta {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding: 22px 34px 26px;
+        font-size: 44px;
+        font-weight: 700;
+        color: #2B2118;
+        background: #FFFFFF;
+        white-space: nowrap;
+      }
+      .cta svg { width: 70px; height: 60px; }
+      .cta path { fill: none; stroke: #F85830; stroke-width: 9; stroke-linejoin: round; }
+
+      .map { display: block; overflow: hidden; }
+      .map .land { fill: #E2D6BB; stroke: #CDBFA3; stroke-width: 1.5; }
+      .map .empire { fill: rgba(248, 88, 48, 0.16); stroke: #F85830; stroke-width: 4; stroke-dasharray: 3000; stroke-linejoin: round; }
+      .map .pdot { fill: #F85830; }
+      .map .place circle { fill: #2B2118; stroke: #FFFFFF; stroke-width: 4; }
+      .map .place text { font-family: "Inter", sans-serif; font-size: 34px; font-weight: 700; fill: #2B2118; paint-order: stroke; stroke: #EFE4CC; stroke-width: 8px; }
+      .mapwrap { padding: 14px; background: #FFFFFF; border: 3px solid #2B2118; box-shadow: 8px 8px 0 rgba(43, 33, 24, 0.15); }
+      .route { pointer-events: none; overflow: visible; }
+      .route line { stroke: #F85830; stroke-width: 10; stroke-linecap: round; fill: none; }
+      .route circle { fill: #F85830; }
+      #grain {
+        position: absolute;
+        inset: -50%;
+        z-index: 65;
+        pointer-events: none;
+        opacity: 0.05;
+        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        animation: hf-grain 0.5s steps(1) infinite;
+      }
+      @keyframes hf-grain {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(-4%, 3%); }
+        50% { transform: translate(3%, -4%); }
+        75% { transform: translate(-3%, -2%); }
+      }
+      #endcard .es { position: absolute; filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.45)); }
+
+      /* ---- éléments de rétention (actifs seulement avec build(retention=True)) ---- */
+      #plx {
+        position: absolute;
+        left: -300px;
+        top: -300px;
+        width: 2652px;
+        height: 4824px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cpath d='M90 76v28M76 90h28' stroke='%23F85830' stroke-width='5' stroke-linecap='round' opacity='0.22'/%3E%3C/svg%3E");
+        background-size: 180px 180px;
+      }
+      #dust { position: absolute; inset: 0; overflow: hidden; }
+      #dust i { position: absolute; display: block; border-radius: 50%; }
+      #sweep {
+        position: absolute;
+        top: -10%;
+        left: -60%;
+        width: 60%;
+        height: 120%;
+        z-index: 55;
+        pointer-events: none;
+        opacity: 0;
+        background: linear-gradient(90deg, rgba(248, 88, 48, 0), rgba(248, 88, 48, 0.2), rgba(248, 88, 48, 0));
+        transform: skewX(-16deg);
+      }
+      .kq .kw { display: inline; }
+      .glow { pointer-events: none; }
+      .stamp { padding: 6px 28px 10px; font-weight: 900; letter-spacing: 6px; text-transform: uppercase; color: #F85830; border: 8px solid #F85830; white-space: nowrap; }
+      .burst line { stroke: #F85830; stroke-width: 9; stroke-linecap: round; }
+      .ring { border: 8px solid #F85830; border-radius: 50%; box-sizing: border-box; }
+      .arrow { pointer-events: none; overflow: visible; }
+      .arrow line { stroke: #F85830; stroke-width: 8; stroke-linecap: round; }
+      .arrow .hd { fill: none; stroke: #F85830; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .teaser {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 10px 22px 12px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: #2B2118;
+        background: #FFFFFF;
+        border: 2px solid #CDBFA3;
+      }
+      .teaser b { display: block; width: 16px; height: 16px; border-radius: 50%; background: #F85830; }
+
+      /* ---- screen-fixed chrome ---- */
+      #chrome { position: absolute; left: 70px; top: 160px; width: 870px; z-index: 50; color: #2B2118; }
+      #brand { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; }
+      #brand i { display: block; width: 16px; height: 16px; background: #F85830; }
+      #chapters { display: flex; gap: 16px; margin-top: 16px; }
+      .ch { position: relative; flex: 1; padding-bottom: 10px; font-size: 20px; font-weight: 600; white-space: nowrap; }
+      .ch b { font-weight: 800; color: inherit; }
+      .ch::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: currentColor; opacity: 0.18; }
+      .ch i { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: #F85830; transform-origin: 0 50%; }
+
+      .cap {
+        position: absolute;
+        left: 60px;
+        top: 1440px;
+        width: 820px;
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.15;
+        z-index: 60;
+      }
+      .capin {
+        display: inline-block;
+        padding: 12px 30px 16px;
+        color: #2B2118;
+        background: #FFFFFF;
+        border: 3px solid #2B2118;
+        box-shadow: 6px 6px 0 rgba(43, 33, 24, 0.2);
+      }
+      .cw { display: inline-block; }
+
+      #endcard {
+        position: absolute;
+        inset: 0;
+        z-index: 70;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #2B2118;
+        opacity: 0;
+      }
+      #endcard .kick { font-size: 28px; font-weight: 600; letter-spacing: 8px; text-transform: uppercase; color: #B3A58D; margin-bottom: 26px; }
+      #endcard .h { font-size: 132px; font-weight: 900; line-height: 1; letter-spacing: -3px; color: #EFE4CC; text-align: center; }
+      #endcard .sub2 {
+        margin-top: 70px;
+        padding: 24px 56px 28px;
+        font-size: 52px;
+        font-weight: 800;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #F85830;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="70.26">
+      <div id="darkbg"></div>
+      <div id="plx"></div>
+      <div id="dust"><i id="du0" style="left:184px;top:0;width:16px;height:16px;background:#F85830;opacity:0.28"></i><i id="du1" style="left:578px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.2"></i><i id="du2" style="left:549px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.14"></i><i id="du3" style="left:101px;top:0;width:10px;height:10px;background:#F85830;opacity:0.14"></i><i id="du4" style="left:876px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.14"></i><i id="du5" style="left:1000px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.28"></i><i id="du6" style="left:1029px;top:0;width:10px;height:10px;background:#F85830;opacity:0.14"></i><i id="du7" style="left:326px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.14"></i><i id="du8" style="left:345px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.14"></i><i id="du9" style="left:222px;top:0;width:12px;height:12px;background:#F85830;opacity:0.14"></i><i id="du10" style="left:607px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.28"></i><i id="du11" style="left:574px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.2"></i><i id="du12" style="left:494px;top:0;width:12px;height:12px;background:#F85830;opacity:0.2"></i><i id="du13" style="left:745px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.14"></i><i id="du14" style="left:536px;top:0;width:12px;height:12px;background:#2B2118;opacity:0.28"></i><i id="du15" style="left:1033px;top:0;width:8px;height:8px;background:#F85830;opacity:0.14"></i><i id="du16" style="left:805px;top:0;width:12px;height:12px;background:#2B2118;opacity:0.14"></i><i id="du17" style="left:70px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.28"></i><i id="du18" style="left:867px;top:0;width:12px;height:12px;background:#F85830;opacity:0.2"></i><i id="du19" style="left:538px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.14"></i><i id="du20" style="left:306px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.28"></i><i id="du21" style="left:778px;top:0;width:12px;height:12px;background:#F85830;opacity:0.28"></i><i id="du22" style="left:871px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.2"></i><i id="du23" style="left:714px;top:0;width:12px;height:12px;background:#2B2118;opacity:0.14"></i><i id="du24" style="left:655px;top:0;width:8px;height:8px;background:#F85830;opacity:0.2"></i><i id="du25" style="left:324px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.28"></i></div>
+      <div id="drift">
+        <div id="world">
+        <svg class="node route" id="x41" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="540" y1="1190" x2="1620" y2="1190" stroke-dasharray="1082"/><circle cx="1620" cy="1190" r="16"/></svg>
+        <svg class="node route" id="x42" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="1620" y1="1190" x2="2700" y2="1190" stroke-dasharray="1082"/><circle cx="2700" cy="1190" r="16"/></svg>
+        <svg class="node route" id="x43" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="2700" y1="1190" x2="2700" y2="3110" stroke-dasharray="1922"/><circle cx="2700" cy="3110" r="16"/></svg>
+        <svg class="node route" id="x44" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="2700" y1="3110" x2="1620" y2="3110" stroke-dasharray="1082"/><circle cx="1620" cy="3110" r="16"/></svg>
+        <svg class="node route" id="x45" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="1620" y1="3110" x2="540" y2="3110" stroke-dasharray="1082"/><circle cx="540" cy="3110" r="16"/></svg>
+        <svg class="node route" id="x46" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="540" y1="3110" x2="540" y2="5030" stroke-dasharray="1921"/><circle cx="540" cy="5030" r="16"/></svg>
+        <svg class="node route" id="x47" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="540" y1="5030" x2="1620" y2="5030" stroke-dasharray="1082"/><circle cx="1620" cy="5030" r="16"/></svg>
+        <svg class="node route" id="x48" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="1620" y1="5030" x2="2700" y2="5030" stroke-dasharray="1082"/><circle cx="2700" cy="5030" r="16"/></svg>
+        <svg class="node route" id="x49" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="2700" y1="5030" x2="2700" y2="6950" stroke-dasharray="1922"/><circle cx="2700" cy="6950" r="16"/></svg>
+        <svg class="node route" id="x50" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="2700" y1="6950" x2="1620" y2="6950" stroke-dasharray="1082"/><circle cx="1620" cy="6950" r="16"/></svg>
+        <svg class="node route" id="x51" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="1620" y1="6950" x2="540" y2="6950" stroke-dasharray="1082"/><circle cx="540" cy="6950" r="16"/></svg>
+        <style>@font-face{font-family:"Frank Ruhl Libre";src:url("assets/fonts/FrankRuhlLibre.ttf") format("truetype");font-weight:300 900}.heb{font-family:"Frank Ruhl Libre",serif;direction:rtl;display:block;line-height:1.1}.node.card{background:#fff;border:3px solid #2B2118;padding:22px 28px 26px;box-sizing:border-box;font-weight:700;line-height:1.3;box-shadow:8px 8px 0 rgba(43,33,24,.15)}.card small{display:block;font-size:24px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#7A6C58;margin-bottom:8px}</style>
+        <div class="node headline" id="x1" style="left:70px;top:300px;width:880px"><div class="kick"><i></i>Un ordine</div><div class="h" style="font-size:104px"><div>«<em class="hl"><span>Alleluia</span><i></i></em>»</div><div>non è un grido di gioia</div></div></div>
+        <div class="node sticker" id="x2" style="left:60px;top:740px;"><img src="assets/stickers/foule.png" style="width:440px;height:382px" /></div>
+        <div class="node stamp" id="x3" style="left:70px;top:1150px;font-size:90px">Un ordine</div>
+        <div class="node headline" id="x4" style="left:1150px;top:300px;width:880px"><div class="kick"><i></i>In ebraico</div><div class="h" style="font-size:112px"><div>Due <em class="hl"><span>parti</span><i></i></em></div></div></div>
+        <div class="node card" id="x5" style="left:1150px;top:700px;width:600px;font-size:64px"><small>Prima parte</small>Hallelu<span class='heb' style='font-size:120px'>הללו</span></div>
+        <div class="node card" id="x6" style="left:1150px;top:1010px;width:600px;font-size:64px;border-color:#F85830"><small>Seconda parte</small>Yah<span class='heb' style='font-size:120px'>יה</span></div>
+        <div class="node headline" id="x7" style="left:2230px;top:300px;width:880px"><div class="kick"><i></i>Hallelu · halal</div><div class="h" style="font-size:112px"><div>Un <em class="hl"><span>verbo</span><i></i></em></div></div></div>
+        <div class="node card" id="x8" style="left:2230px;top:700px;width:940px;font-size:66px"><small>Radice</small>halal: «lodare»</div>
+        <div class="node stamp" id="x9" style="left:2230px;top:940px;font-size:66px">Imperativo · plurale</div>
+        <div class="node card" id="x10" style="left:2230px;top:1090px;width:700px;font-size:84px;border-color:#F85830">«Lodate!»</div>
+        <div class="node headline" id="x11" style="left:2230px;top:2220px;width:880px"><div class="kick"><i></i>Un plurale</div><div class="h" style="font-size:100px"><div>Per un intero <em class="hl"><span>gruppo</span><i></i></em></div></div></div>
+        <div class="node card" id="x12" style="left:2230px;top:2620px;width:940px;font-size:70px">«Lodate, voi tutti!»</div>
+        <div class="node sticker" id="x13" style="left:2360px;top:2820px;"><img src="assets/stickers/foule.png" style="width:380px;height:329px" /></div>
+        <div class="node headline" id="x14" style="left:1150px;top:2220px;width:880px"><div class="kick"><i></i>Forma abbreviata</div><div class="h" style="font-size:100px"><div>Yah, il nome di <em class="hl"><span>Dio</span><i></i></em></div></div></div>
+        <div class="node card" id="x15" style="left:1150px;top:2620px;width:940px;font-size:96px;letter-spacing:8px"><small>Il nome di Dio</small>YHWH</div>
+        <div class="node tag acc" id="x16" style="left:1150px;top:2920px;font-size:50px">Yah: forma abbreviata</div>
+        <div class="node headline" id="x17" style="left:70px;top:2220px;width:880px"><div class="kick"><i></i>Il senso</div><div class="h" style="font-size:112px"><div>Alleluia =</div></div></div>
+        <div class="node card" id="x18" style="left:70px;top:2620px;width:940px;font-size:70px">Hallelu + Yah</div>
+        <div class="node card" id="x19" style="left:70px;top:2850px;width:940px;font-size:80px;border-color:#F85830">«Lodate Yah!»</div>
+        <div class="node stamp" id="x20" style="left:70px;top:3080px;font-size:70px">Un ordine</div>
+        <div class="node headline" id="x21" style="left:70px;top:4140px;width:880px"><div class="kick"><i></i>Salmo 150,6 · Riveduta</div><div class="h" style="font-size:112px"><div>Nei <em class="hl"><span>Salmi</span><i></i></em></div></div></div>
+        <div class="node tag " id="x22" style="left:60px;top:4540px;font-size:44px">Salmo 150,6 · Riveduta</div>
+        <div class="node box wide kq" id="x23" style="left:60px;top:4540px;width:960px;font-size:54px"><small>Salmo 150,6 · Riveduta</small><span class="kw" id="x23k0">«Ogni </span><span class="kw" id="x23k1">cosa </span><span class="kw" id="x23k2">che </span><span class="kw" id="x23k3">respira </span><span class="kw" id="x23k4">lodi </span><span class="kw" id="x23k5">l'Eterno! </span><span class="kw" id="x23k6">Alleluia!» </span></div>
+        <div class="node headline" id="x24" style="left:1150px;top:4140px;width:880px"><div class="kick"><i></i>L'ultima frase</div><div class="h" style="font-size:112px"><div>Nell'<em class="hl"><span>ebraico</span><i></i></em></div></div></div>
+        <div class="node card" id="x25" style="left:1150px;top:4540px;width:940px;font-size:76px"><small>Testo ebraico</small>Hallelu-Yah<span class='heb' style='font-size:170px;margin-top:10px'>הללו־יה</span></div>
+        <div class="node headline" id="x26" style="left:2230px;top:4140px;width:880px"><div class="kick"><i></i>Senza essere tradotta</div><div class="h" style="font-size:100px"><div>Una parola che <em class="hl"><span>viaggia</span><i></i></em></div></div></div>
+        <div class="node card" id="x27" style="left:2230px;top:4540px;width:440px;font-size:50px"><small>Ebraico</small><span class='heb' style='font-size:76px'>הללו־יה</span></div>
+        <div class="node card" id="x28" style="left:2720px;top:4540px;width:440px;font-size:50px"><small>Greco</small>ἁλληλουϊά</div>
+        <div class="node card" id="x29" style="left:2230px;top:4800px;width:440px;font-size:50px"><small>Latino</small>Alleluia</div>
+        <div class="node card" id="x30" style="left:2720px;top:4800px;width:440px;font-size:50px;border-color:#F85830"><small>Le nostre lingue</small>Alleluia · Hallelujah</div>
+        <div class="node headline" id="x31" style="left:2230px;top:6060px;width:880px"><div class="kick"><i></i>L'unico libro del Nuovo Testamento</div><div class="h" style="font-size:112px"><div>L'<em class="hl"><span>Apocalisse</span><i></i></em></div></div></div>
+        <div class="node card" id="x32" style="left:2230px;top:6460px;width:940px;font-size:70px"><small>Apocalisse 19</small>Una grande folla</div>
+        <div class="node sticker" id="x33" style="left:2360px;top:6660px;"><img src="assets/stickers/foule.png" style="width:380px;height:329px" /></div>
+        <div class="node headline" id="x34" style="left:1150px;top:6060px;width:880px"><div class="kick"><i></i>Un appello</div><div class="h" style="font-size:112px"><div>Non contro la <em class="hl"><span>gioia</span><i></i></em></div></div></div>
+        <div class="node card" id="x35" style="left:1150px;top:6460px;width:940px;font-size:62px">Lodare è spesso cantare</div>
+        <div class="node card" id="x36" style="left:1150px;top:6720px;width:940px;font-size:62px;border-color:#F85830">Un appello a lodare insieme</div>
+        <div class="node headline" id="x37" style="left:70px;top:6060px;width:880px"><div class="kick"><i></i>A te</div><div class="h" style="font-size:112px"><div>Si <em class="hl"><span>parla</span><i></i></em> a te</div></div></div>
+        <div class="node tag acc" id="x38" style="left:70px;top:6460px;font-size:44px">«Alleluia» si rivolge a te</div>
+        <div class="node card" id="x39" style="left:70px;top:6620px;width:940px;font-size:80px"><small>A te</small>Quale canto?</div>
+        <div class="node cta" id="x40" style="left:70px;top:6930px;"><svg viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z"/></svg>Dillo nei commenti</div>
+        </div>
+      </div>
+
+      <div id="chrome">
+        <div id="brand"><i></i>La Bibbia Semplice</div>
+        <div id="chapters"><div class="ch" id="ch0"><b>01</b> L'ordine<i></i></div><div class="ch" id="ch1"><b>02</b> Il senso<i></i></div><div class="ch" id="ch2"><b>03</b> Il viaggio<i></i></div><div class="ch" id="ch3"><b>04</b> Per te<i></i></div></div>
+      </div>
+
+      <div id="sweep"></div>
+      <p class="clip cap" id="cap0" data-start="0.000" data-duration="1.580"><span class="capin" id="ci0"><span class="cw" id="w0_0">«Alleluia»</span> <span class="cw" id="w0_1">non</span> <span class="cw" id="w0_2">è</span> <span class="cw" id="w0_3">un</span></span></p>
+      <p class="clip cap" id="cap1" data-start="1.580" data-duration="1.280"><span class="capin" id="ci1"><span class="cw" id="w1_0">grido</span> <span class="cw" id="w1_1">di</span> <span class="cw" id="w1_2">gioia.</span></span></p>
+      <p class="clip cap" id="cap2" data-start="2.860" data-duration="1.520"><span class="capin" id="ci2"><span class="cw" id="w2_0">È</span> <span class="cw" id="w2_1">un</span> <span class="cw" id="w2_2">ordine.</span></span></p>
+      <p class="clip cap" id="cap3" data-start="4.380" data-duration="1.080"><span class="capin" id="ci3"><span class="cw" id="w3_0">In</span> <span class="cw" id="w3_1">ebraico,</span></span></p>
+      <p class="clip cap" id="cap4" data-start="5.460" data-duration="0.860"><span class="capin" id="ci4"><span class="cw" id="w4_0">la</span> <span class="cw" id="w4_1">parola</span> <span class="cw" id="w4_2">ha</span> <span class="cw" id="w4_3">due</span></span></p>
+      <p class="clip cap" id="cap5" data-start="6.320" data-duration="0.620"><span class="capin" id="ci5"><span class="cw" id="w5_0">parti:</span></span></p>
+      <p class="clip cap" id="cap6" data-start="6.940" data-duration="0.700"><span class="capin" id="ci6"><span class="cw" id="w6_0">Hallelu,</span></span></p>
+      <p class="clip cap" id="cap7" data-start="7.640" data-duration="1.040"><span class="capin" id="ci7"><span class="cw" id="w7_0">e</span> <span class="cw" id="w7_1">Yah.</span></span></p>
+      <p class="clip cap" id="cap8" data-start="8.833" data-duration="1.340"><span class="capin" id="ci8"><span class="cw" id="w8_0">Hallelu</span> <span class="cw" id="w8_1">viene</span> <span class="cw" id="w8_2">dal</span> <span class="cw" id="w8_3">verbo</span></span></p>
+      <p class="clip cap" id="cap9" data-start="10.173" data-duration="0.600"><span class="capin" id="ci9"><span class="cw" id="w9_0">halal,</span></span></p>
+      <p class="clip cap" id="cap10" data-start="10.773" data-duration="0.620"><span class="capin" id="ci10"><span class="cw" id="w10_0">«lodare».</span></span></p>
+      <p class="clip cap" id="cap11" data-start="11.393" data-duration="1.000"><span class="capin" id="ci11"><span class="cw" id="w11_0">È</span> <span class="cw" id="w11_1">un</span> <span class="cw" id="w11_2">imperativo,</span></span></p>
+      <p class="clip cap" id="cap12" data-start="12.393" data-duration="0.820"><span class="capin" id="ci12"><span class="cw" id="w12_0">al</span> <span class="cw" id="w12_1">plurale:</span></span></p>
+      <p class="clip cap" id="cap13" data-start="13.213" data-duration="2.100"><span class="capin" id="ci13"><span class="cw" id="w13_0">«Lodate!»</span> <span class="cw" id="w13_1">Non</span> <span class="cw" id="w13_2">si</span> <span class="cw" id="w13_3">rivolge</span></span></p>
+      <p class="clip cap" id="cap14" data-start="15.313" data-duration="0.740"><span class="capin" id="ci14"><span class="cw" id="w14_0">dunque</span> <span class="cw" id="w14_1">a</span> <span class="cw" id="w14_2">una</span> <span class="cw" id="w14_3">persona</span></span></p>
+      <p class="clip cap" id="cap15" data-start="16.053" data-duration="0.400"><span class="capin" id="ci15"><span class="cw" id="w15_0">sola,</span></span></p>
+      <p class="clip cap" id="cap16" data-start="16.453" data-duration="0.980"><span class="capin" id="ci16"><span class="cw" id="w16_0">ma</span> <span class="cw" id="w16_1">a</span> <span class="cw" id="w16_2">un</span> <span class="cw" id="w16_3">intero</span></span></p>
+      <p class="clip cap" id="cap17" data-start="17.433" data-duration="0.520"><span class="capin" id="ci17"><span class="cw" id="w17_0">gruppo:</span></span></p>
+      <p class="clip cap" id="cap18" data-start="17.953" data-duration="0.560"><span class="capin" id="ci18"><span class="cw" id="w18_0">«Lodate,</span></span></p>
+      <p class="clip cap" id="cap19" data-start="18.513" data-duration="1.860"><span class="capin" id="ci19"><span class="cw" id="w19_0">voi</span> <span class="cw" id="w19_1">tutti!»</span> <span class="cw" id="w19_2">E</span> <span class="cw" id="w19_3">Yah</span></span></p>
+      <p class="clip cap" id="cap20" data-start="20.373" data-duration="1.340"><span class="capin" id="ci20"><span class="cw" id="w20_0">è</span> <span class="cw" id="w20_1">una</span> <span class="cw" id="w20_2">forma</span> <span class="cw" id="w20_3">abbreviata</span></span></p>
+      <p class="clip cap" id="cap21" data-start="21.713" data-duration="0.860"><span class="capin" id="ci21"><span class="cw" id="w21_0">del</span> <span class="cw" id="w21_1">nome</span> <span class="cw" id="w21_2">di</span> <span class="cw" id="w21_3">Dio,</span></span></p>
+      <p class="clip cap" id="cap22" data-start="22.573" data-duration="0.820"><span class="capin" id="ci22"><span class="cw" id="w22_0">quello</span> <span class="cw" id="w22_1">che</span> <span class="cw" id="w22_2">si</span> <span class="cw" id="w22_3">scrive</span></span></p>
+      <p class="clip cap" id="cap23" data-start="23.393" data-duration="1.160"><span class="capin" id="ci23"><span class="cw" id="w23_0">YHWH.</span></span></p>
+      <p class="clip cap" id="cap24" data-start="24.711" data-duration="1.340"><span class="capin" id="ci24"><span class="cw" id="w24_0">Alleluia</span> <span class="cw" id="w24_1">vuol</span> <span class="cw" id="w24_2">dire</span> <span class="cw" id="w24_3">dunque:</span></span></p>
+      <p class="clip cap" id="cap25" data-start="26.051" data-duration="1.915"><span class="capin" id="ci25"><span class="cw" id="w25_0">«Lodate</span> <span class="cw" id="w25_1">Yah!»</span> <span class="cw" id="w25_2">Lo</span> <span class="cw" id="w25_3">si</span></span></p>
+      <p class="clip cap" id="cap26" data-start="27.966" data-duration="1.480"><span class="capin" id="ci26"><span class="cw" id="w26_0">trova</span> <span class="cw" id="w26_1">soprattutto</span> <span class="cw" id="w26_2">nei</span> <span class="cw" id="w26_3">Salmi.</span></span></p>
+      <p class="clip cap" id="cap27" data-start="29.446" data-duration="1.540"><span class="capin" id="ci27"><span class="cw" id="w27_0">L'ultimo</span> <span class="cw" id="w27_1">finisce</span> <span class="cw" id="w27_2">così,</span></span></p>
+      <p class="clip cap" id="cap28" data-start="30.986" data-duration="0.960"><span class="capin" id="ci28"><span class="cw" id="w28_0">nella</span> <span class="cw" id="w28_1">Riveduta:</span></span></p>
+      <p class="clip cap" id="cap31" data-start="34.966" data-duration="2.120"><span class="capin" id="ci31"><span class="cw" id="w31_0">Alleluia!»</span> <span class="cw" id="w31_1">Nel</span> <span class="cw" id="w31_2">testo</span> <span class="cw" id="w31_3">ebraico,</span></span></p>
+      <p class="clip cap" id="cap32" data-start="37.086" data-duration="1.100"><span class="capin" id="ci32"><span class="cw" id="w32_0">quest'ultima</span> <span class="cw" id="w32_1">frase</span> <span class="cw" id="w32_2">è:</span></span></p>
+      <p class="clip cap" id="cap33" data-start="38.186" data-duration="1.200"><span class="capin" id="ci33"><span class="cw" id="w33_0">Hallelu-Yah.</span></span></p>
+      <p class="clip cap" id="cap34" data-start="39.513" data-duration="1.560"><span class="capin" id="ci34"><span class="cw" id="w34_0">La</span> <span class="cw" id="w34_1">parola</span> <span class="cw" id="w34_2">ha</span> <span class="cw" id="w34_3">viaggiato:</span></span></p>
+      <p class="clip cap" id="cap35" data-start="41.073" data-duration="1.120"><span class="capin" id="ci35"><span class="cw" id="w35_0">il</span> <span class="cw" id="w35_1">greco</span> <span class="cw" id="w35_2">l'ha</span> <span class="cw" id="w35_3">scritta</span></span></p>
+      <p class="clip cap" id="cap36" data-start="42.193" data-duration="0.880"><span class="capin" id="ci36"><span class="cw" id="w36_0">senza</span> <span class="cw" id="w36_1">tradurla,</span></span></p>
+      <p class="clip cap" id="cap37" data-start="43.073" data-duration="0.680"><span class="capin" id="ci37"><span class="cw" id="w37_0">poi</span> <span class="cw" id="w37_1">il</span> <span class="cw" id="w37_2">latino,</span></span></p>
+      <p class="clip cap" id="cap38" data-start="43.753" data-duration="1.260"><span class="capin" id="ci38"><span class="cw" id="w38_0">poi</span> <span class="cw" id="w38_1">le</span> <span class="cw" id="w38_2">nostre</span> <span class="cw" id="w38_3">lingue.</span></span></p>
+      <p class="clip cap" id="cap39" data-start="45.053" data-duration="1.260"><span class="capin" id="ci39"><span class="cw" id="w39_0">Nel</span> <span class="cw" id="w39_1">Nuovo</span> <span class="cw" id="w39_2">Testamento,</span></span></p>
+      <p class="clip cap" id="cap40" data-start="46.313" data-duration="0.780"><span class="capin" id="ci40"><span class="cw" id="w40_0">la</span> <span class="cw" id="w40_1">si</span> <span class="cw" id="w40_2">trova</span> <span class="cw" id="w40_3">solo</span></span></p>
+      <p class="clip cap" id="cap41" data-start="47.093" data-duration="0.880"><span class="capin" id="ci41"><span class="cw" id="w41_0">nell'Apocalisse,</span></span></p>
+      <p class="clip cap" id="cap42" data-start="47.973" data-duration="1.100"><span class="capin" id="ci42"><span class="cw" id="w42_0">al</span> <span class="cw" id="w42_1">capitolo</span> <span class="cw" id="w42_2">diciannove,</span></span></p>
+      <p class="clip cap" id="cap43" data-start="49.253" data-duration="0.720"><span class="capin" id="ci43"><span class="cw" id="w43_0">sulla</span> <span class="cw" id="w43_1">bocca</span> <span class="cw" id="w43_2">di</span> <span class="cw" id="w43_3">una</span></span></p>
+      <p class="clip cap" id="cap44" data-start="49.973" data-duration="1.040"><span class="capin" id="ci44"><span class="cw" id="w44_0">grande</span> <span class="cw" id="w44_1">folla.</span></span></p>
+      <p class="clip cap" id="cap45" data-start="51.147" data-duration="1.100"><span class="capin" id="ci45"><span class="cw" id="w45_0">Non</span> <span class="cw" id="w45_1">è</span> <span class="cw" id="w45_2">contro</span> <span class="cw" id="w45_3">la</span></span></p>
+      <p class="clip cap" id="cap46" data-start="52.247" data-duration="0.460"><span class="capin" id="ci46"><span class="cw" id="w46_0">gioia:</span></span></p>
+      <p class="clip cap" id="cap47" data-start="52.707" data-duration="1.600"><span class="capin" id="ci47"><span class="cw" id="w47_0">lodare</span> <span class="cw" id="w47_1">è</span> <span class="cw" id="w47_2">spesso</span> <span class="cw" id="w47_3">cantare.</span></span></p>
+      <p class="clip cap" id="cap48" data-start="54.307" data-duration="1.280"><span class="capin" id="ci48"><span class="cw" id="w48_0">Ma</span> <span class="cw" id="w48_1">la</span> <span class="cw" id="w48_2">parola</span> <span class="cw" id="w48_3">stessa</span></span></p>
+      <p class="clip cap" id="cap49" data-start="55.587" data-duration="0.800"><span class="capin" id="ci49"><span class="cw" id="w49_0">è</span> <span class="cw" id="w49_1">prima</span> <span class="cw" id="w49_2">di</span> <span class="cw" id="w49_3">tutto</span></span></p>
+      <p class="clip cap" id="cap50" data-start="56.387" data-duration="0.740"><span class="capin" id="ci50"><span class="cw" id="w50_0">un</span> <span class="cw" id="w50_1">appello,</span></span></p>
+      <p class="clip cap" id="cap51" data-start="57.127" data-duration="1.540"><span class="capin" id="ci51"><span class="cw" id="w51_0">a</span> <span class="cw" id="w51_1">lodare</span> <span class="cw" id="w51_2">insieme.</span></span></p>
+      <p class="clip cap" id="cap52" data-start="58.927" data-duration="1.260"><span class="capin" id="ci52"><span class="cw" id="w52_0">La</span> <span class="cw" id="w52_1">prossima</span> <span class="cw" id="w52_2">volta</span> <span class="cw" id="w52_3">che</span></span></p>
+      <p class="clip cap" id="cap53" data-start="60.187" data-duration="0.680"><span class="capin" id="ci53"><span class="cw" id="w53_0">senti</span> <span class="cw" id="w53_1">«alleluia»,</span></span></p>
+      <p class="clip cap" id="cap54" data-start="60.867" data-duration="0.680"><span class="capin" id="ci54"><span class="cw" id="w54_0">ricordati:</span></span></p>
+      <p class="clip cap" id="cap55" data-start="61.547" data-duration="1.040"><span class="capin" id="ci55"><span class="cw" id="w55_0">si</span> <span class="cw" id="w55_1">parla</span> <span class="cw" id="w55_2">a</span> <span class="cw" id="w55_3">te.</span></span></p>
+      <p class="clip cap" id="cap56" data-start="62.736" data-duration="1.500"><span class="capin" id="ci56"><span class="cw" id="w56_0">Quale</span> <span class="cw" id="w56_1">canto</span> <span class="cw" id="w56_2">di</span> <span class="cw" id="w56_3">alleluia</span></span></p>
+      <p class="clip cap" id="cap57" data-start="64.236" data-duration="0.860"><span class="capin" id="ci57"><span class="cw" id="w57_0">ti</span> <span class="cw" id="w57_1">tocca</span> <span class="cw" id="w57_2">di</span> <span class="cw" id="w57_3">più?</span></span></p>
+      <p class="clip cap" id="cap58" data-start="65.096" data-duration="1.260"><span class="capin" id="ci58"><span class="cw" id="w58_0">Dillo</span> <span class="cw" id="w58_1">nei</span> <span class="cw" id="w58_2">commenti.</span></span></p>
+
+      <div id="endcard">
+        <div class="kick">Iscriviti</div>
+        <div class="h">La Bibbia<br /><em class="hl"><span>Semplice</span><i></i></em></div>
+        <div class="sub2">Iscriviti</div>
+        <img class="es" id="es1" src="assets/stickers/foule.png" style="left:30px;top:1450px;width:420px;height:364px;transform:rotate(-4deg)" />
+        <img class="es" id="es2" src="assets/stickers/jesus-pied.png" style="left:800px;top:1480px;width:200px;height:369px;transform:rotate(5deg)" />
+      </div>
+      <div id="grain"></div>
+
+      <audio id="voix" src="assets/voix.wav" data-start="0" data-duration="70.26" data-volume="1"></audio>
+      <audio id="music" src="assets/audio/music.wav" data-start="0" data-duration="70.26" data-volume="0.075"></audio>
+      <audio id="jingle" src="assets/audio/jingle.wav" data-start="0" data-duration="1.2" data-volume="0.12"></audio>
+      <audio id="pulse" src="assets/audio/pulse.wav" data-start="0" data-duration="70.26" data-volume="0.05"></audio>
+      <audio id="a0" src="assets/audio/lib/impact-bass-2.mp3" data-start="3.8" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a1" src="assets/audio/lib/pop.mp3" data-start="3.8" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a2" src="assets/audio/lib/impact-bass-2.mp3" data-start="3.64" data-duration="2.0" data-volume="0.063"></audio>
+      <audio id="a3" src="assets/audio/lib/pop.mp3" data-start="3.64" data-duration="0.72" data-volume="0.353"></audio>
+      <audio id="a4" src="assets/audio/lib/impact-bass-2.mp3" data-start="12.033" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a5" src="assets/audio/lib/pop.mp3" data-start="12.033" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a6" src="assets/audio/lib/pop.mp3" data-start="17.233" data-duration="0.72" data-volume="0.09"></audio>
+      <audio id="a7" src="assets/audio/lib/impact-bass-2.mp3" data-start="26.611" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a8" src="assets/audio/lib/pop.mp3" data-start="26.611" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a9" src="assets/audio/lib/impact-bass-2.mp3" data-start="38.186" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a10" src="assets/audio/lib/pop.mp3" data-start="38.186" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a11" src="assets/audio/lib/pop.mp3" data-start="50.013" data-duration="0.72" data-volume="0.09"></audio>
+      <audio id="a12" src="assets/audio/lib/click-soft.mp3" data-start="64.436" data-duration="0.37" data-volume="0.176"></audio>
+      <audio id="a13" src="assets/audio/lib/whoosh-short.mp3" data-start="4.08" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a14" src="assets/audio/lib/whoosh-short.mp3" data-start="8.533" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a15" src="assets/audio/lib/whoosh-short.mp3" data-start="13.913" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a16" src="assets/audio/lib/whoosh-short.mp3" data-start="19.273" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a17" src="assets/audio/lib/whoosh-short.mp3" data-start="24.411" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a18" src="assets/audio/lib/whoosh-short.mp3" data-start="26.986" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a19" src="assets/audio/lib/whoosh-short.mp3" data-start="35.586" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a20" src="assets/audio/lib/whoosh-short.mp3" data-start="39.213" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a21" src="assets/audio/lib/whoosh-short.mp3" data-start="44.753" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a22" src="assets/audio/lib/whoosh-short.mp3" data-start="50.847" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a23" src="assets/audio/lib/whoosh-short.mp3" data-start="58.627" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a24" src="assets/audio/lib/whoosh-short.mp3" data-start="65.936" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a25" src="assets/audio/lib/impact-bass-2.mp3" data-start="67.136" data-duration="2.0" data-volume="0.035"></audio>
+      <audio id="a26" src="assets/audio/lib/pop.mp3" data-start="67.136" data-duration="0.72" data-volume="0.196"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.set("#world", { x: 0.0, y: 0.0, scale: 1.0 }, 0);
+      tl.set("#plx", { x: 0.0, y: 0.0 }, 0);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 4.08, ease: "none", immediateRender: false }, 0.000);
+      tl.fromTo("#world", { x: 0.0, y: 0.0, scale: 1.0000 }, { x: -1080.0, y: 0.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 4.080);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 4.080);
+      tl.fromTo("#plx", { x: 0.0, y: 0.0 }, { x: -324.0, y: 0.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 4.080);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 4.080);
+      tl.set("#sweep", { opacity: 0 }, 5.000);
+      tl.fromTo("#x41 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 4.080);
+      tl.fromTo("#x41 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 4.680);
+      tl.to("#x41", { opacity: 0, duration: 0.5 }, 5.130);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 3.70, ease: "none", immediateRender: false }, 4.830);
+      tl.fromTo("#world", { x: -1080.0, y: 0.0, scale: 1.0000 }, { x: -2160.0, y: 0.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 8.533);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 8.533);
+      tl.fromTo("#plx", { x: -324.0, y: 0.0 }, { x: -648.0, y: 0.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 8.533);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 8.533);
+      tl.set("#sweep", { opacity: 0 }, 9.453);
+      tl.fromTo("#x42 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 8.533);
+      tl.fromTo("#x42 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 9.133);
+      tl.to("#x42", { opacity: 0, duration: 0.5 }, 9.583);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 4.63, ease: "none", immediateRender: false }, 9.283);
+      tl.fromTo("#world", { x: -2160.0, y: 0.0, scale: 1.0000 }, { x: -2160.0, y: -1920.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 13.913);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 13.913);
+      tl.fromTo("#plx", { x: -648.0, y: 0.0 }, { x: -648.0, y: -576.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 13.913);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 13.913);
+      tl.set("#sweep", { opacity: 0 }, 14.833);
+      tl.fromTo("#x43 line", { strokeDashoffset: 1922 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 13.913);
+      tl.fromTo("#x43 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 14.513);
+      tl.to("#x43", { opacity: 0, duration: 0.5 }, 14.963);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 4.61, ease: "none", immediateRender: false }, 14.663);
+      tl.fromTo("#world", { x: -2160.0, y: -1920.0, scale: 1.0000 }, { x: -1080.0, y: -1920.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 19.273);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 19.273);
+      tl.fromTo("#plx", { x: -648.0, y: -576.0 }, { x: -324.0, y: -576.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 19.273);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 19.273);
+      tl.set("#sweep", { opacity: 0 }, 20.193);
+      tl.fromTo("#x44 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 19.273);
+      tl.fromTo("#x44 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 19.873);
+      tl.to("#x44", { opacity: 0, duration: 0.5 }, 20.323);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 4.39, ease: "none", immediateRender: false }, 20.023);
+      tl.fromTo("#world", { x: -1080.0, y: -1920.0, scale: 1.0000 }, { x: 0.0, y: -1920.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 24.411);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 24.411);
+      tl.fromTo("#plx", { x: -324.0, y: -576.0 }, { x: 0.0, y: -576.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 24.411);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 24.411);
+      tl.set("#sweep", { opacity: 0 }, 25.331);
+      tl.fromTo("#x45 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 24.411);
+      tl.fromTo("#x45 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 25.011);
+      tl.to("#x45", { opacity: 0, duration: 0.5 }, 25.461);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 1.83, ease: "none", immediateRender: false }, 25.161);
+      tl.fromTo("#world", { x: 0.0, y: -1920.0, scale: 1.0000 }, { x: 0.0, y: -3840.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 26.986);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 26.986);
+      tl.fromTo("#plx", { x: 0.0, y: -576.0 }, { x: 0.0, y: -1152.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 26.986);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 26.986);
+      tl.set("#sweep", { opacity: 0 }, 27.906);
+      tl.fromTo("#x46 line", { strokeDashoffset: 1921 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 26.986);
+      tl.fromTo("#x46 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 27.586);
+      tl.to("#x46", { opacity: 0, duration: 0.5 }, 28.036);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 7.85, ease: "none", immediateRender: false }, 27.736);
+      tl.fromTo("#world", { x: 0.0, y: -3840.0, scale: 1.0000 }, { x: -1080.0, y: -3840.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 35.586);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 35.586);
+      tl.fromTo("#plx", { x: 0.0, y: -1152.0 }, { x: -324.0, y: -1152.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 35.586);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 35.586);
+      tl.set("#sweep", { opacity: 0 }, 36.506);
+      tl.fromTo("#x47 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 35.586);
+      tl.fromTo("#x47 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 36.186);
+      tl.to("#x47", { opacity: 0, duration: 0.5 }, 36.636);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 2.88, ease: "none", immediateRender: false }, 36.336);
+      tl.fromTo("#world", { x: -1080.0, y: -3840.0, scale: 1.0000 }, { x: -2160.0, y: -3840.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 39.213);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 39.213);
+      tl.fromTo("#plx", { x: -324.0, y: -1152.0 }, { x: -648.0, y: -1152.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 39.213);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 39.213);
+      tl.set("#sweep", { opacity: 0 }, 40.133);
+      tl.fromTo("#x48 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 39.213);
+      tl.fromTo("#x48 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 39.813);
+      tl.to("#x48", { opacity: 0, duration: 0.5 }, 40.263);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 4.79, ease: "none", immediateRender: false }, 39.963);
+      tl.fromTo("#world", { x: -2160.0, y: -3840.0, scale: 1.0000 }, { x: -2160.0, y: -5760.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 44.753);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 44.753);
+      tl.fromTo("#plx", { x: -648.0, y: -1152.0 }, { x: -648.0, y: -1728.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 44.753);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 44.753);
+      tl.set("#sweep", { opacity: 0 }, 45.673);
+      tl.fromTo("#x49 line", { strokeDashoffset: 1922 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 44.753);
+      tl.fromTo("#x49 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 45.353);
+      tl.to("#x49", { opacity: 0, duration: 0.5 }, 45.803);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 5.34, ease: "none", immediateRender: false }, 45.503);
+      tl.fromTo("#world", { x: -2160.0, y: -5760.0, scale: 1.0000 }, { x: -1080.0, y: -5760.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 50.847);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 50.847);
+      tl.fromTo("#plx", { x: -648.0, y: -1728.0 }, { x: -324.0, y: -1728.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 50.847);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 50.847);
+      tl.set("#sweep", { opacity: 0 }, 51.767);
+      tl.fromTo("#x50 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 50.847);
+      tl.fromTo("#x50 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 51.447);
+      tl.to("#x50", { opacity: 0, duration: 0.5 }, 51.897);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 7.03, ease: "none", immediateRender: false }, 51.597);
+      tl.fromTo("#world", { x: -1080.0, y: -5760.0, scale: 1.0000 }, { x: 0.0, y: -5760.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 58.627);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 58.627);
+      tl.fromTo("#plx", { x: -324.0, y: -1728.0 }, { x: 0.0, y: -1728.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 58.627);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 58.627);
+      tl.set("#sweep", { opacity: 0 }, 59.547);
+      tl.fromTo("#x51 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 58.627);
+      tl.fromTo("#x51 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 59.227);
+      tl.to("#x51", { opacity: 0, duration: 0.5 }, 59.677);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 6.56, ease: "none", immediateRender: false }, 59.377);
+      tl.fromTo("#world", { x: 0.0, y: -5760.0, scale: 1.0000 }, { x: 167.4, y: 76.8, scale: 0.2300, duration: 0.95, ease: "power3.inOut", immediateRender: false }, 65.936);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(2px)", duration: 0.475, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 65.936);
+      tl.fromTo("#plx", { x: 0.0, y: -1728.0 }, { x: 50.2, y: 23.0, duration: 0.95, ease: "power3.inOut", immediateRender: false }, 65.936);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 1.10, ease: "power2.inOut", immediateRender: false }, 65.936);
+      tl.set("#sweep", { opacity: 0 }, 67.056);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 3.37, ease: "none", immediateRender: false }, 66.886);
+      tl.fromTo("#x1", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 0.000);
+      tl.fromTo("#x1 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 3.040);
+      tl.fromTo("#x2", { opacity: 1, scale: 1.14, rotation: -5 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.9, ease: "power3.out" }, 0.000);
+      tl.fromTo("#x3", { opacity: 0, scale: 2.4, rotation: 10 }, { opacity: 1, scale: 1, rotation: -4, duration: 0.28, ease: "power4.in" }, 3.540);
+      tl.fromTo("#drift", { x: 0 }, { x: 9, duration: 0.04, yoyo: true, repeat: 5, ease: "none", immediateRender: false }, 3.800);
+      tl.set("#drift", { x: 0 }, 4.060);
+      tl.fromTo("#x4", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 4.180);
+      tl.fromTo("#x4 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 6.940);
+      tl.fromTo("#x5", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 6.740);
+      tl.fromTo("#x6", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 7.900);
+      tl.fromTo("#x7", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 8.633);
+      tl.fromTo("#x7 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 10.173);
+      tl.fromTo("#x8", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 9.973);
+      tl.fromTo("#x9", { opacity: 0, scale: 2.4, rotation: 10 }, { opacity: 1, scale: 1, rotation: -4, duration: 0.28, ease: "power4.in" }, 11.773);
+      tl.fromTo("#drift", { x: 0 }, { x: 9, duration: 0.04, yoyo: true, repeat: 5, ease: "none", immediateRender: false }, 12.033);
+      tl.set("#drift", { x: 0 }, 12.293);
+      tl.fromTo("#x10", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 11.273);
+      tl.fromTo("#x11", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 14.013);
+      tl.fromTo("#x11 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 17.433);
+      tl.fromTo("#x12", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 15.213);
+      tl.fromTo("#x13", { opacity: 0, scale: 0.55, rotation: -6 }, { opacity: 1, scale: 1, rotation: 2, duration: 0.6, ease: "back.out(1.9)" }, 17.233);
+      tl.fromTo("#x14", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 19.373);
+      tl.fromTo("#x14 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 22.593);
+      tl.fromTo("#x15", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 22.893);
+      tl.fromTo("#x16", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 19.933);
+      tl.fromTo("#x17", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 24.511);
+      tl.fromTo("#x17 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 24.711);
+      tl.fromTo("#x18", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 25.011);
+      tl.fromTo("#x19", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 25.851);
+      tl.fromTo("#x20", { opacity: 0, scale: 2.4, rotation: 10 }, { opacity: 1, scale: 1, rotation: -4, duration: 0.28, ease: "power4.in" }, 26.351);
+      tl.fromTo("#drift", { x: 0 }, { x: 9, duration: 0.04, yoyo: true, repeat: 5, ease: "none", immediateRender: false }, 26.611);
+      tl.set("#drift", { x: 0 }, 26.871);
+      tl.fromTo("#x21", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 27.086);
+      tl.fromTo("#x21 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 28.866);
+      tl.fromTo("#x22", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 27.486);
+      tl.to("#x22", { opacity: 0, duration: 0.3, ease: "power1.in", immediateRender: false }, 31.696);
+      tl.fromTo("#x23", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 31.796);
+      tl.fromTo("#x23k0", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 31.946);
+      tl.fromTo("#x23k1", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 32.506);
+      tl.fromTo("#x23k2", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 32.826);
+      tl.fromTo("#x23k3", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 33.006);
+      tl.fromTo("#x23k4", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 33.526);
+      tl.fromTo("#x23k5", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 34.026);
+      tl.fromTo("#x23k6", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 34.966);
+      tl.to("#x23", { opacity: 0, duration: 0.3, ease: "power1.in", immediateRender: false }, 35.486);
+      tl.fromTo("#x24", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 35.686);
+      tl.fromTo("#x24 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 36.746);
+      tl.fromTo("#x25", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 36.486);
+      tl.fromTo("#x26", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 39.313);
+      tl.fromTo("#x26 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 40.953);
+      tl.fromTo("#x27", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 40.013);
+      tl.fromTo("#x28", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 41.053);
+      tl.fromTo("#x29", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 43.033);
+      tl.fromTo("#x30", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 44.153);
+      tl.fromTo("#x31", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 44.853);
+      tl.fromTo("#x31 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 47.093);
+      tl.fromTo("#x32", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 47.293);
+      tl.fromTo("#x33", { opacity: 0, scale: 0.55, rotation: -6 }, { opacity: 1, scale: 1, rotation: 2, duration: 0.6, ease: "back.out(1.9)" }, 50.013);
+      tl.fromTo("#x34", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 50.947);
+      tl.fromTo("#x34 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 52.247);
+      tl.fromTo("#x35", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 53.487);
+      tl.fromTo("#x36", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 56.247);
+      tl.fromTo("#x37", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 58.727);
+      tl.fromTo("#x37 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 61.107);
+      tl.fromTo("#x38", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 59.327);
+      tl.fromTo("#x39", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 62.936);
+      tl.fromTo("#x40", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 64.436);
+      tl.fromTo("#world", { opacity: 1 }, { opacity: 0, duration: 0.4, ease: "power1.in", immediateRender: false }, 66.336);
+      tl.fromTo("#chrome", { opacity: 1 }, { opacity: 0, duration: 0.3, immediateRender: false }, 65.936);
+      tl.fromTo("#endcard", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 66.436);
+      tl.fromTo("#endcard .h", { y: 40, filter: "blur(12px)" }, { y: 0, filter: "blur(0px)", duration: 0.6, ease: "power3.out" }, 66.486);
+      tl.fromTo("#endcard .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 66.936);
+      tl.fromTo("#es1, #es2", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.6)", stagger: 0.12 }, 66.686);
+      tl.fromTo("#endcard .sub2", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, 67.136);
+      tl.fromTo("#endcard .sub2", { scale: 1 }, { scale: 1.06, duration: 0.4, yoyo: true, repeat: 1, ease: "sine.inOut", immediateRender: false }, 67.636);
+      tl.fromTo("#ch0 i", { scaleX: 0 }, { scaleX: 1, duration: 8.83, ease: "none", immediateRender: true }, 0.000);
+      tl.fromTo("#ch0", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: true }, 0.000);
+      tl.to("#ch0", { opacity: 0.45, duration: 0.2 }, 8.833);
+      tl.fromTo("#ch1 i", { scaleX: 0 }, { scaleX: 1, duration: 18.45, ease: "none", immediateRender: false }, 8.833);
+      tl.fromTo("#ch1", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: false }, 8.833);
+      tl.to("#ch1", { opacity: 0.45, duration: 0.2 }, 27.286);
+      tl.fromTo("#ch2 i", { scaleX: 0 }, { scaleX: 1, duration: 23.86, ease: "none", immediateRender: false }, 27.286);
+      tl.fromTo("#ch2", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: false }, 27.286);
+      tl.to("#ch2", { opacity: 0.45, duration: 0.2 }, 51.147);
+      tl.fromTo("#ch3 i", { scaleX: 0 }, { scaleX: 1, duration: 19.11, ease: "none", immediateRender: false }, 51.147);
+      tl.fromTo("#ch3", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: false }, 51.147);
+      tl.fromTo("#ci0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 0.000);
+      tl.fromTo("#w0_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 0.000);
+      tl.to("#w0_0", { color: "#2B2118", duration: 0.12 }, 0.820);
+      tl.fromTo("#w0_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 0.820);
+      tl.to("#w0_1", { color: "#2B2118", duration: 0.12 }, 1.100);
+      tl.fromTo("#w0_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 1.100);
+      tl.to("#w0_2", { color: "#2B2118", duration: 0.12 }, 1.420);
+      tl.fromTo("#w0_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 1.420);
+      tl.to("#w0_3", { color: "#2B2118", duration: 0.12 }, 1.580);
+      tl.fromTo("#ci1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 1.580);
+      tl.fromTo("#w1_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 1.580);
+      tl.to("#w1_0", { color: "#2B2118", duration: 0.12 }, 2.120);
+      tl.fromTo("#w1_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 2.120);
+      tl.to("#w1_1", { color: "#2B2118", duration: 0.12 }, 2.280);
+      tl.fromTo("#w1_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 2.260);
+      tl.to("#w1_2", { color: "#2B2118", duration: 0.12 }, 2.780);
+      tl.fromTo("#ci2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 2.860);
+      tl.fromTo("#w2_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 2.860);
+      tl.to("#w2_0", { color: "#2B2118", duration: 0.12 }, 3.440);
+      tl.fromTo("#w2_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 3.440);
+      tl.to("#w2_1", { color: "#2B2118", duration: 0.12 }, 3.640);
+      tl.fromTo("#w2_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 3.640);
+      tl.to("#w2_2", { color: "#2B2118", duration: 0.12 }, 4.180);
+      tl.fromTo("#ci3", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 4.380);
+      tl.fromTo("#w3_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 4.380);
+      tl.to("#w3_0", { color: "#2B2118", duration: 0.12 }, 4.940);
+      tl.fromTo("#w3_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 4.940);
+      tl.to("#w3_1", { color: "#2B2118", duration: 0.12 }, 5.460);
+      tl.fromTo("#ci4", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 5.460);
+      tl.fromTo("#w4_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 5.460);
+      tl.to("#w4_0", { color: "#2B2118", duration: 0.12 }, 5.660);
+      tl.fromTo("#w4_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 5.660);
+      tl.to("#w4_1", { color: "#2B2118", duration: 0.12 }, 5.980);
+      tl.fromTo("#w4_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 5.980);
+      tl.to("#w4_2", { color: "#2B2118", duration: 0.12 }, 6.140);
+      tl.fromTo("#w4_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 6.100);
+      tl.to("#w4_3", { color: "#2B2118", duration: 0.12 }, 6.320);
+      tl.fromTo("#ci5", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 6.320);
+      tl.fromTo("#w5_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 6.320);
+      tl.to("#w5_0", { color: "#2B2118", duration: 0.12 }, 6.740);
+      tl.fromTo("#ci6", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 6.940);
+      tl.fromTo("#w6_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 6.940);
+      tl.to("#w6_0", { color: "#2B2118", duration: 0.12 }, 7.640);
+      tl.fromTo("#ci7", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 7.640);
+      tl.fromTo("#w7_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 7.640);
+      tl.to("#w7_0", { color: "#2B2118", duration: 0.12 }, 8.100);
+      tl.fromTo("#w7_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 8.100);
+      tl.to("#w7_1", { color: "#2B2118", duration: 0.12 }, 8.460);
+      tl.fromTo("#ci8", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 8.833);
+      tl.fromTo("#w8_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 8.833);
+      tl.to("#w8_0", { color: "#2B2118", duration: 0.12 }, 9.393);
+      tl.fromTo("#w8_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 9.393);
+      tl.to("#w8_1", { color: "#2B2118", duration: 0.12 }, 9.613);
+      tl.fromTo("#w8_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 9.613);
+      tl.to("#w8_2", { color: "#2B2118", duration: 0.12 }, 9.873);
+      tl.fromTo("#w8_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 9.873);
+      tl.to("#w8_3", { color: "#2B2118", duration: 0.12 }, 10.173);
+      tl.fromTo("#ci9", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 10.173);
+      tl.fromTo("#w9_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 10.173);
+      tl.to("#w9_0", { color: "#2B2118", duration: 0.12 }, 10.733);
+      tl.fromTo("#ci10", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 10.773);
+      tl.fromTo("#w10_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 10.773);
+      tl.to("#w10_0", { color: "#2B2118", duration: 0.12 }, 11.273);
+      tl.fromTo("#ci11", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 11.393);
+      tl.fromTo("#w11_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 11.393);
+      tl.to("#w11_0", { color: "#2B2118", duration: 0.12 }, 11.753);
+      tl.fromTo("#w11_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 11.753);
+      tl.to("#w11_1", { color: "#2B2118", duration: 0.12 }, 11.913);
+      tl.fromTo("#w11_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 11.873);
+      tl.to("#w11_2", { color: "#2B2118", duration: 0.12 }, 12.393);
+      tl.fromTo("#ci12", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 12.393);
+      tl.fromTo("#w12_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 12.393);
+      tl.to("#w12_0", { color: "#2B2118", duration: 0.12 }, 12.613);
+      tl.fromTo("#w12_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 12.613);
+      tl.to("#w12_1", { color: "#2B2118", duration: 0.12 }, 13.133);
+      tl.fromTo("#ci13", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 13.213);
+      tl.fromTo("#w13_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 13.213);
+      tl.to("#w13_0", { color: "#2B2118", duration: 0.12 }, 13.853);
+      tl.fromTo("#w13_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 14.213);
+      tl.to("#w13_1", { color: "#2B2118", duration: 0.12 }, 14.773);
+      tl.fromTo("#w13_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 14.773);
+      tl.to("#w13_2", { color: "#2B2118", duration: 0.12 }, 14.933);
+      tl.fromTo("#w13_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 14.913);
+      tl.to("#w13_3", { color: "#2B2118", duration: 0.12 }, 15.313);
+      tl.fromTo("#ci14", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 15.313);
+      tl.fromTo("#w14_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 15.313);
+      tl.to("#w14_0", { color: "#2B2118", duration: 0.12 }, 15.553);
+      tl.fromTo("#w14_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 15.553);
+      tl.to("#w14_1", { color: "#2B2118", duration: 0.12 }, 15.713);
+      tl.fromTo("#w14_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 15.633);
+      tl.to("#w14_2", { color: "#2B2118", duration: 0.12 }, 15.793);
+      tl.fromTo("#w14_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 15.793);
+      tl.to("#w14_3", { color: "#2B2118", duration: 0.12 }, 16.053);
+      tl.fromTo("#ci15", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 16.053);
+      tl.fromTo("#w15_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 16.053);
+      tl.to("#w15_0", { color: "#2B2118", duration: 0.12 }, 16.313);
+      tl.fromTo("#ci16", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 16.453);
+      tl.fromTo("#w16_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 16.453);
+      tl.to("#w16_0", { color: "#2B2118", duration: 0.12 }, 16.833);
+      tl.fromTo("#w16_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 16.833);
+      tl.to("#w16_1", { color: "#2B2118", duration: 0.12 }, 16.993);
+      tl.fromTo("#w16_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 16.913);
+      tl.to("#w16_2", { color: "#2B2118", duration: 0.12 }, 17.073);
+      tl.fromTo("#w16_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.053);
+      tl.to("#w16_3", { color: "#2B2118", duration: 0.12 }, 17.433);
+      tl.fromTo("#ci17", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 17.433);
+      tl.fromTo("#w17_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.433);
+      tl.to("#w17_0", { color: "#2B2118", duration: 0.12 }, 17.813);
+      tl.fromTo("#ci18", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 17.953);
+      tl.fromTo("#w18_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.953);
+      tl.to("#w18_0", { color: "#2B2118", duration: 0.12 }, 18.513);
+      tl.fromTo("#ci19", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 18.513);
+      tl.fromTo("#w19_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 18.513);
+      tl.to("#w19_0", { color: "#2B2118", duration: 0.12 }, 18.833);
+      tl.fromTo("#w19_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 18.833);
+      tl.to("#w19_1", { color: "#2B2118", duration: 0.12 }, 19.133);
+      tl.fromTo("#w19_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 19.573);
+      tl.to("#w19_2", { color: "#2B2118", duration: 0.12 }, 20.133);
+      tl.fromTo("#w19_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 20.133);
+      tl.to("#w19_3", { color: "#2B2118", duration: 0.12 }, 20.373);
+      tl.fromTo("#ci20", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 20.373);
+      tl.fromTo("#w20_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 20.373);
+      tl.to("#w20_0", { color: "#2B2118", duration: 0.12 }, 20.653);
+      tl.fromTo("#w20_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 20.653);
+      tl.to("#w20_1", { color: "#2B2118", duration: 0.12 }, 20.953);
+      tl.fromTo("#w20_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 20.953);
+      tl.to("#w20_2", { color: "#2B2118", duration: 0.12 }, 21.133);
+      tl.fromTo("#w20_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 21.133);
+      tl.to("#w20_3", { color: "#2B2118", duration: 0.12 }, 21.713);
+      tl.fromTo("#ci21", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 21.713);
+      tl.fromTo("#w21_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 21.713);
+      tl.to("#w21_0", { color: "#2B2118", duration: 0.12 }, 21.873);
+      tl.fromTo("#w21_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 21.833);
+      tl.to("#w21_1", { color: "#2B2118", duration: 0.12 }, 22.033);
+      tl.fromTo("#w21_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 22.033);
+      tl.to("#w21_2", { color: "#2B2118", duration: 0.12 }, 22.213);
+      tl.fromTo("#w21_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 22.213);
+      tl.to("#w21_3", { color: "#2B2118", duration: 0.12 }, 22.533);
+      tl.fromTo("#ci22", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 22.573);
+      tl.fromTo("#w22_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 22.573);
+      tl.to("#w22_0", { color: "#2B2118", duration: 0.12 }, 22.833);
+      tl.fromTo("#w22_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 22.833);
+      tl.to("#w22_1", { color: "#2B2118", duration: 0.12 }, 22.993);
+      tl.fromTo("#w22_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 22.933);
+      tl.to("#w22_2", { color: "#2B2118", duration: 0.12 }, 23.093);
+      tl.fromTo("#w22_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 23.033);
+      tl.to("#w22_3", { color: "#2B2118", duration: 0.12 }, 23.393);
+      tl.fromTo("#ci23", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 23.393);
+      tl.fromTo("#w23_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 23.393);
+      tl.to("#w23_0", { color: "#2B2118", duration: 0.12 }, 24.333);
+      tl.fromTo("#ci24", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 24.711);
+      tl.fromTo("#w24_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 24.711);
+      tl.to("#w24_0", { color: "#2B2118", duration: 0.12 }, 25.271);
+      tl.fromTo("#w24_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 25.271);
+      tl.to("#w24_1", { color: "#2B2118", duration: 0.12 }, 25.531);
+      tl.fromTo("#w24_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 25.531);
+      tl.to("#w24_2", { color: "#2B2118", duration: 0.12 }, 25.691);
+      tl.fromTo("#w24_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 25.651);
+      tl.to("#w24_3", { color: "#2B2118", duration: 0.12 }, 26.051);
+      tl.fromTo("#ci25", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 26.051);
+      tl.fromTo("#w25_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 26.051);
+      tl.to("#w25_0", { color: "#2B2118", duration: 0.12 }, 26.481);
+      tl.fromTo("#w25_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 26.481);
+      tl.to("#w25_1", { color: "#2B2118", duration: 0.12 }, 26.911);
+      tl.fromTo("#w25_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 27.286);
+      tl.to("#w25_2", { color: "#2B2118", duration: 0.12 }, 27.846);
+      tl.fromTo("#w25_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 27.846);
+      tl.to("#w25_3", { color: "#2B2118", duration: 0.12 }, 28.006);
+      tl.fromTo("#ci26", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 27.966);
+      tl.fromTo("#w26_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 27.966);
+      tl.to("#w26_0", { color: "#2B2118", duration: 0.12 }, 28.266);
+      tl.fromTo("#w26_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 28.266);
+      tl.to("#w26_1", { color: "#2B2118", duration: 0.12 }, 28.466);
+      tl.fromTo("#w26_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 28.466);
+      tl.to("#w26_2", { color: "#2B2118", duration: 0.12 }, 28.866);
+      tl.fromTo("#w26_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 28.866);
+      tl.to("#w26_3", { color: "#2B2118", duration: 0.12 }, 29.346);
+      tl.fromTo("#ci27", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 29.446);
+      tl.fromTo("#w27_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 29.446);
+      tl.to("#w27_0", { color: "#2B2118", duration: 0.12 }, 30.366);
+      tl.fromTo("#w27_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 30.366);
+      tl.to("#w27_1", { color: "#2B2118", duration: 0.12 }, 30.666);
+      tl.fromTo("#w27_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 30.666);
+      tl.to("#w27_2", { color: "#2B2118", duration: 0.12 }, 30.906);
+      tl.fromTo("#ci28", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 30.986);
+      tl.fromTo("#w28_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 30.986);
+      tl.to("#w28_0", { color: "#2B2118", duration: 0.12 }, 31.226);
+      tl.fromTo("#w28_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 31.226);
+      tl.to("#w28_1", { color: "#2B2118", duration: 0.12 }, 31.726);
+      tl.fromTo("#ci31", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 34.966);
+      tl.fromTo("#w31_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 34.966);
+      tl.to("#w31_0", { color: "#2B2118", duration: 0.12 }, 35.526);
+      tl.fromTo("#w31_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 35.886);
+      tl.to("#w31_1", { color: "#2B2118", duration: 0.12 }, 36.446);
+      tl.fromTo("#w31_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 36.446);
+      tl.to("#w31_2", { color: "#2B2118", duration: 0.12 }, 36.746);
+      tl.fromTo("#w31_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 36.746);
+      tl.to("#w31_3", { color: "#2B2118", duration: 0.12 }, 37.086);
+      tl.fromTo("#ci32", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 37.086);
+      tl.fromTo("#w32_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 37.086);
+      tl.to("#w32_0", { color: "#2B2118", duration: 0.12 }, 37.706);
+      tl.fromTo("#w32_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 37.706);
+      tl.to("#w32_1", { color: "#2B2118", duration: 0.12 }, 37.966);
+      tl.fromTo("#w32_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 37.966);
+      tl.to("#w32_2", { color: "#2B2118", duration: 0.12 }, 38.186);
+      tl.fromTo("#ci33", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 38.186);
+      tl.fromTo("#w33_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 38.186);
+      tl.to("#w33_0", { color: "#2B2118", duration: 0.12 }, 39.166);
+      tl.fromTo("#ci34", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 39.513);
+      tl.fromTo("#w34_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 39.513);
+      tl.to("#w34_0", { color: "#2B2118", duration: 0.12 }, 40.073);
+      tl.fromTo("#w34_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 40.073);
+      tl.to("#w34_1", { color: "#2B2118", duration: 0.12 }, 40.393);
+      tl.fromTo("#w34_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 40.393);
+      tl.to("#w34_2", { color: "#2B2118", duration: 0.12 }, 40.553);
+      tl.fromTo("#w34_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 40.453);
+      tl.to("#w34_3", { color: "#2B2118", duration: 0.12 }, 41.013);
+      tl.fromTo("#ci35", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 41.073);
+      tl.fromTo("#w35_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 41.073);
+      tl.to("#w35_0", { color: "#2B2118", duration: 0.12 }, 41.353);
+      tl.fromTo("#w35_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 41.353);
+      tl.to("#w35_1", { color: "#2B2118", duration: 0.12 }, 41.773);
+      tl.fromTo("#w35_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 41.773);
+      tl.to("#w35_2", { color: "#2B2118", duration: 0.12 }, 41.933);
+      tl.fromTo("#w35_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 41.933);
+      tl.to("#w35_3", { color: "#2B2118", duration: 0.12 }, 42.193);
+      tl.fromTo("#ci36", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 42.193);
+      tl.fromTo("#w36_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 42.193);
+      tl.to("#w36_0", { color: "#2B2118", duration: 0.12 }, 42.433);
+      tl.fromTo("#w36_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 42.433);
+      tl.to("#w36_1", { color: "#2B2118", duration: 0.12 }, 42.993);
+      tl.fromTo("#ci37", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 43.073);
+      tl.fromTo("#w37_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 43.073);
+      tl.to("#w37_0", { color: "#2B2118", duration: 0.12 }, 43.233);
+      tl.fromTo("#w37_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 43.213);
+      tl.to("#w37_1", { color: "#2B2118", duration: 0.12 }, 43.373);
+      tl.fromTo("#w37_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 43.333);
+      tl.to("#w37_2", { color: "#2B2118", duration: 0.12 }, 43.753);
+      tl.fromTo("#ci38", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 43.753);
+      tl.fromTo("#w38_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 43.753);
+      tl.to("#w38_0", { color: "#2B2118", duration: 0.12 }, 43.953);
+      tl.fromTo("#w38_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 43.953);
+      tl.to("#w38_1", { color: "#2B2118", duration: 0.12 }, 44.113);
+      tl.fromTo("#w38_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 44.113);
+      tl.to("#w38_2", { color: "#2B2118", duration: 0.12 }, 44.453);
+      tl.fromTo("#w38_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 44.453);
+      tl.to("#w38_3", { color: "#2B2118", duration: 0.12 }, 44.793);
+      tl.fromTo("#ci39", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 45.053);
+      tl.fromTo("#w39_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 45.053);
+      tl.to("#w39_0", { color: "#2B2118", duration: 0.12 }, 45.613);
+      tl.fromTo("#w39_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 45.613);
+      tl.to("#w39_1", { color: "#2B2118", duration: 0.12 }, 45.833);
+      tl.fromTo("#w39_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 45.833);
+      tl.to("#w39_2", { color: "#2B2118", duration: 0.12 }, 46.313);
+      tl.fromTo("#ci40", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 46.313);
+      tl.fromTo("#w40_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 46.313);
+      tl.to("#w40_0", { color: "#2B2118", duration: 0.12 }, 46.513);
+      tl.fromTo("#w40_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 46.513);
+      tl.to("#w40_1", { color: "#2B2118", duration: 0.12 }, 46.673);
+      tl.fromTo("#w40_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 46.613);
+      tl.to("#w40_2", { color: "#2B2118", duration: 0.12 }, 46.873);
+      tl.fromTo("#w40_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 46.873);
+      tl.to("#w40_3", { color: "#2B2118", duration: 0.12 }, 47.093);
+      tl.fromTo("#ci41", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 47.093);
+      tl.fromTo("#w41_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 47.093);
+      tl.to("#w41_0", { color: "#2B2118", duration: 0.12 }, 47.913);
+      tl.fromTo("#ci42", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 47.973);
+      tl.fromTo("#w42_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 47.973);
+      tl.to("#w42_0", { color: "#2B2118", duration: 0.12 }, 48.273);
+      tl.fromTo("#w42_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 48.273);
+      tl.to("#w42_1", { color: "#2B2118", duration: 0.12 }, 48.613);
+      tl.fromTo("#w42_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 48.613);
+      tl.to("#w42_2", { color: "#2B2118", duration: 0.12 }, 48.853);
+      tl.fromTo("#ci43", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 49.253);
+      tl.fromTo("#w43_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 49.253);
+      tl.to("#w43_0", { color: "#2B2118", duration: 0.12 }, 49.473);
+      tl.fromTo("#w43_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 49.473);
+      tl.to("#w43_1", { color: "#2B2118", duration: 0.12 }, 49.793);
+      tl.fromTo("#w43_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 49.793);
+      tl.to("#w43_2", { color: "#2B2118", duration: 0.12 }, 49.953);
+      tl.fromTo("#w43_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 49.873);
+      tl.to("#w43_3", { color: "#2B2118", duration: 0.12 }, 50.033);
+      tl.fromTo("#ci44", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 49.973);
+      tl.fromTo("#w44_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 49.973);
+      tl.to("#w44_0", { color: "#2B2118", duration: 0.12 }, 50.313);
+      tl.fromTo("#w44_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 50.313);
+      tl.to("#w44_1", { color: "#2B2118", duration: 0.12 }, 50.793);
+      tl.fromTo("#ci45", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 51.147);
+      tl.fromTo("#w45_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 51.147);
+      tl.to("#w45_0", { color: "#2B2118", duration: 0.12 }, 51.667);
+      tl.fromTo("#w45_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 51.667);
+      tl.to("#w45_1", { color: "#2B2118", duration: 0.12 }, 51.827);
+      tl.fromTo("#w45_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 51.827);
+      tl.to("#w45_2", { color: "#2B2118", duration: 0.12 }, 52.047);
+      tl.fromTo("#w45_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 52.047);
+      tl.to("#w45_3", { color: "#2B2118", duration: 0.12 }, 52.247);
+      tl.fromTo("#ci46", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 52.247);
+      tl.fromTo("#w46_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 52.247);
+      tl.to("#w46_0", { color: "#2B2118", duration: 0.12 }, 52.607);
+      tl.fromTo("#ci47", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 52.707);
+      tl.fromTo("#w47_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 52.707);
+      tl.to("#w47_0", { color: "#2B2118", duration: 0.12 }, 53.387);
+      tl.fromTo("#w47_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 53.387);
+      tl.to("#w47_1", { color: "#2B2118", duration: 0.12 }, 53.547);
+      tl.fromTo("#w47_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 53.467);
+      tl.to("#w47_2", { color: "#2B2118", duration: 0.12 }, 53.787);
+      tl.fromTo("#w47_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 53.787);
+      tl.to("#w47_3", { color: "#2B2118", duration: 0.12 }, 54.287);
+      tl.fromTo("#ci48", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 54.307);
+      tl.fromTo("#w48_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 54.307);
+      tl.to("#w48_0", { color: "#2B2118", duration: 0.12 }, 54.807);
+      tl.fromTo("#w48_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 54.807);
+      tl.to("#w48_1", { color: "#2B2118", duration: 0.12 }, 54.967);
+      tl.fromTo("#w48_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 54.947);
+      tl.to("#w48_2", { color: "#2B2118", duration: 0.12 }, 55.207);
+      tl.fromTo("#w48_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 55.207);
+      tl.to("#w48_3", { color: "#2B2118", duration: 0.12 }, 55.587);
+      tl.fromTo("#ci49", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 55.587);
+      tl.fromTo("#w49_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 55.587);
+      tl.to("#w49_0", { color: "#2B2118", duration: 0.12 }, 55.767);
+      tl.fromTo("#w49_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 55.767);
+      tl.to("#w49_1", { color: "#2B2118", duration: 0.12 }, 56.007);
+      tl.fromTo("#w49_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 56.007);
+      tl.to("#w49_2", { color: "#2B2118", duration: 0.12 }, 56.167);
+      tl.fromTo("#w49_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 56.147);
+      tl.to("#w49_3", { color: "#2B2118", duration: 0.12 }, 56.387);
+      tl.fromTo("#ci50", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 56.387);
+      tl.fromTo("#w50_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 56.387);
+      tl.to("#w50_0", { color: "#2B2118", duration: 0.12 }, 56.547);
+      tl.fromTo("#w50_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 56.547);
+      tl.to("#w50_1", { color: "#2B2118", duration: 0.12 }, 57.067);
+      tl.fromTo("#ci51", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 57.127);
+      tl.fromTo("#w51_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.127);
+      tl.to("#w51_0", { color: "#2B2118", duration: 0.12 }, 57.467);
+      tl.fromTo("#w51_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.467);
+      tl.to("#w51_1", { color: "#2B2118", duration: 0.12 }, 57.867);
+      tl.fromTo("#w51_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.867);
+      tl.to("#w51_2", { color: "#2B2118", duration: 0.12 }, 58.447);
+      tl.fromTo("#ci52", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 58.927);
+      tl.fromTo("#w52_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 58.927);
+      tl.to("#w52_0", { color: "#2B2118", duration: 0.12 }, 59.447);
+      tl.fromTo("#w52_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 59.447);
+      tl.to("#w52_1", { color: "#2B2118", duration: 0.12 }, 59.787);
+      tl.fromTo("#w52_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 59.787);
+      tl.to("#w52_2", { color: "#2B2118", duration: 0.12 }, 59.987);
+      tl.fromTo("#w52_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 59.987);
+      tl.to("#w52_3", { color: "#2B2118", duration: 0.12 }, 60.187);
+      tl.fromTo("#ci53", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 60.187);
+      tl.fromTo("#w53_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 60.187);
+      tl.to("#w53_0", { color: "#2B2118", duration: 0.12 }, 60.467);
+      tl.fromTo("#w53_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 60.467);
+      tl.to("#w53_1", { color: "#2B2118", duration: 0.12 }, 60.867);
+      tl.fromTo("#ci54", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 60.867);
+      tl.fromTo("#w54_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 60.867);
+      tl.to("#w54_0", { color: "#2B2118", duration: 0.12 }, 61.407);
+      tl.fromTo("#ci55", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 61.547);
+      tl.fromTo("#w55_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 61.547);
+      tl.to("#w55_0", { color: "#2B2118", duration: 0.12 }, 61.907);
+      tl.fromTo("#w55_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 61.907);
+      tl.to("#w55_1", { color: "#2B2118", duration: 0.12 }, 62.067);
+      tl.fromTo("#w55_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 62.061);
+      tl.to("#w55_2", { color: "#2B2118", duration: 0.12 }, 62.221);
+      tl.fromTo("#w55_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 62.214);
+      tl.to("#w55_3", { color: "#2B2118", duration: 0.12 }, 62.374);
+      tl.fromTo("#ci56", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 62.736);
+      tl.fromTo("#w56_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 62.736);
+      tl.to("#w56_0", { color: "#2B2118", duration: 0.12 }, 63.256);
+      tl.fromTo("#w56_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 63.256);
+      tl.to("#w56_1", { color: "#2B2118", duration: 0.12 }, 63.636);
+      tl.fromTo("#w56_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 63.636);
+      tl.to("#w56_2", { color: "#2B2118", duration: 0.12 }, 63.796);
+      tl.fromTo("#w56_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 63.716);
+      tl.to("#w56_3", { color: "#2B2118", duration: 0.12 }, 64.236);
+      tl.fromTo("#ci57", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 64.236);
+      tl.fromTo("#w57_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 64.236);
+      tl.to("#w57_0", { color: "#2B2118", duration: 0.12 }, 64.396);
+      tl.fromTo("#w57_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 64.336);
+      tl.to("#w57_1", { color: "#2B2118", duration: 0.12 }, 64.616);
+      tl.fromTo("#w57_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 64.616);
+      tl.to("#w57_2", { color: "#2B2118", duration: 0.12 }, 64.776);
+      tl.fromTo("#w57_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 64.736);
+      tl.to("#w57_3", { color: "#2B2118", duration: 0.12 }, 64.896);
+      tl.fromTo("#ci58", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 65.096);
+      tl.fromTo("#w58_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 65.096);
+      tl.to("#w58_0", { color: "#2B2118", duration: 0.12 }, 65.496);
+      tl.fromTo("#w58_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 65.496);
+      tl.to("#w58_1", { color: "#2B2118", duration: 0.12 }, 65.656);
+      tl.fromTo("#w58_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 65.636);
+      tl.to("#w58_2", { color: "#2B2118", duration: 0.12 }, 66.136);
+      tl.fromTo("#x2 img", { y: 0, rotation: -1.2 }, { y: -10, rotation: 1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 54, immediateRender: false }, 0.900);
+      tl.fromTo("#x13 img", { y: 0, rotation: 1.2 }, { y: -10, rotation: -1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 40, immediateRender: false }, 17.933);
+      tl.fromTo("#x33 img", { y: 0, rotation: -1.2 }, { y: -10, rotation: 1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 14, immediateRender: false }, 50.713);
+      tl.fromTo("#du0", { y: 98 }, { y: -40, duration: 0.80, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du0", { y: 1950 }, { y: -40, duration: 11.59, ease: "none", repeat: 7, immediateRender: false }, 0.804);
+      tl.fromTo("#du0", { x: -14 }, { x: 14, duration: 3.86, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du1", { y: 1193 }, { y: -40, duration: 5.94, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du1", { y: 1950 }, { y: -40, duration: 9.58, ease: "none", repeat: 8, immediateRender: false }, 5.935);
+      tl.fromTo("#du1", { x: -14 }, { x: 14, duration: 3.19, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du2", { y: 176 }, { y: -40, duration: 1.03, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du2", { y: 1950 }, { y: -40, duration: 9.46, ease: "none", repeat: 8, immediateRender: false }, 1.027);
+      tl.fromTo("#du2", { x: -14 }, { x: 14, duration: 3.15, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du3", { y: 1128 }, { y: -40, duration: 7.32, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du3", { y: 1950 }, { y: -40, duration: 12.47, ease: "none", repeat: 6, immediateRender: false }, 7.319);
+      tl.fromTo("#du3", { x: -14 }, { x: 14, duration: 4.16, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du4", { y: 1291 }, { y: -40, duration: 8.29, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du4", { y: 1950 }, { y: -40, duration: 12.40, ease: "none", repeat: 6, immediateRender: false }, 8.291);
+      tl.fromTo("#du4", { x: -14 }, { x: 14, duration: 4.13, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du5", { y: 1199 }, { y: -40, duration: 8.73, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du5", { y: 1950 }, { y: -40, duration: 14.02, ease: "none", repeat: 6, immediateRender: false }, 8.729);
+      tl.fromTo("#du5", { x: -14 }, { x: 14, duration: 4.67, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du6", { y: 1140 }, { y: -40, duration: 7.22, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du6", { y: 1950 }, { y: -40, duration: 12.17, ease: "none", repeat: 6, immediateRender: false }, 7.218);
+      tl.fromTo("#du6", { x: -14 }, { x: 14, duration: 4.06, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du7", { y: 1107 }, { y: -40, duration: 9.15, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du7", { y: 1950 }, { y: -40, duration: 15.87, ease: "none", repeat: 5, immediateRender: false }, 9.146);
+      tl.fromTo("#du7", { x: -14 }, { x: 14, duration: 5.29, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du8", { y: 1191 }, { y: -40, duration: 6.15, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du8", { y: 1950 }, { y: -40, duration: 9.94, ease: "none", repeat: 8, immediateRender: false }, 6.150);
+      tl.fromTo("#du8", { x: -14 }, { x: 14, duration: 3.31, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du9", { y: 1121 }, { y: -40, duration: 7.92, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du9", { y: 1950 }, { y: -40, duration: 13.57, ease: "none", repeat: 6, immediateRender: false }, 7.917);
+      tl.fromTo("#du9", { x: -14 }, { x: 14, duration: 4.52, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du10", { y: 421 }, { y: -40, duration: 3.40, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du10", { y: 1950 }, { y: -40, duration: 14.70, ease: "none", repeat: 5, immediateRender: false }, 3.405);
+      tl.fromTo("#du10", { x: -14 }, { x: 14, duration: 4.90, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du11", { y: 953 }, { y: -40, duration: 6.47, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du11", { y: 1950 }, { y: -40, duration: 12.97, ease: "none", repeat: 6, immediateRender: false }, 6.473);
+      tl.fromTo("#du11", { x: -14 }, { x: 14, duration: 4.32, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du12", { y: 508 }, { y: -40, duration: 3.77, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du12", { y: 1950 }, { y: -40, duration: 13.68, ease: "none", repeat: 6, immediateRender: false }, 3.768);
+      tl.fromTo("#du12", { x: -14 }, { x: 14, duration: 4.56, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du13", { y: 1176 }, { y: -40, duration: 9.38, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du13", { y: 1950 }, { y: -40, duration: 15.36, ease: "none", repeat: 5, immediateRender: false }, 9.383);
+      tl.fromTo("#du13", { x: -14 }, { x: 14, duration: 5.12, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du14", { y: 919 }, { y: -40, duration: 5.49, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du14", { y: 1950 }, { y: -40, duration: 11.40, ease: "none", repeat: 7, immediateRender: false }, 5.495);
+      tl.fromTo("#du14", { x: -14 }, { x: 14, duration: 3.80, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du15", { y: 1048 }, { y: -40, duration: 6.18, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du15", { y: 1950 }, { y: -40, duration: 11.30, ease: "none", repeat: 7, immediateRender: false }, 6.180);
+      tl.fromTo("#du15", { x: -14 }, { x: 14, duration: 3.77, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du16", { y: 1911 }, { y: -40, duration: 12.10, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du16", { y: 1950 }, { y: -40, duration: 12.34, ease: "none", repeat: 6, immediateRender: false }, 12.103);
+      tl.fromTo("#du16", { x: -14 }, { x: 14, duration: 4.11, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du17", { y: 1173 }, { y: -40, duration: 7.87, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du17", { y: 1950 }, { y: -40, duration: 12.91, ease: "none", repeat: 6, immediateRender: false }, 7.870);
+      tl.fromTo("#du17", { x: -14 }, { x: 14, duration: 4.30, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du18", { y: 1423 }, { y: -40, duration: 11.26, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du18", { y: 1950 }, { y: -40, duration: 15.31, ease: "none", repeat: 5, immediateRender: false }, 11.258);
+      tl.fromTo("#du18", { x: -14 }, { x: 14, duration: 5.10, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du19", { y: 1720 }, { y: -40, duration: 10.44, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du19", { y: 1950 }, { y: -40, duration: 11.80, ease: "none", repeat: 6, immediateRender: false }, 10.437);
+      tl.fromTo("#du19", { x: -14 }, { x: 14, duration: 3.93, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du20", { y: 1360 }, { y: -40, duration: 6.86, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du20", { y: 1950 }, { y: -40, duration: 9.75, ease: "none", repeat: 8, immediateRender: false }, 6.858);
+      tl.fromTo("#du20", { x: -14 }, { x: 14, duration: 3.25, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du21", { y: 1183 }, { y: -40, duration: 5.85, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du21", { y: 1950 }, { y: -40, duration: 9.52, ease: "none", repeat: 8, immediateRender: false }, 5.851);
+      tl.fromTo("#du21", { x: -14 }, { x: 14, duration: 3.17, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du22", { y: 1467 }, { y: -40, duration: 12.83, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du22", { y: 1950 }, { y: -40, duration: 16.94, ease: "none", repeat: 5, immediateRender: false }, 12.832);
+      tl.fromTo("#du22", { x: -14 }, { x: 14, duration: 5.65, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du23", { y: 945 }, { y: -40, duration: 5.98, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du23", { y: 1950 }, { y: -40, duration: 12.09, ease: "none", repeat: 6, immediateRender: false }, 5.982);
+      tl.fromTo("#du23", { x: -14 }, { x: 14, duration: 4.03, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du24", { y: 120 }, { y: -40, duration: 0.95, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du24", { y: 1950 }, { y: -40, duration: 11.84, ease: "none", repeat: 6, immediateRender: false }, 0.952);
+      tl.fromTo("#du24", { x: -14 }, { x: 14, duration: 3.95, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du25", { y: 507 }, { y: -40, duration: 2.95, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du25", { y: 1950 }, { y: -40, duration: 10.75, ease: "none", repeat: 7, immediateRender: false }, 2.954);
+      tl.fromTo("#du25", { x: -14 }, { x: 14, duration: 3.58, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#w0_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 0.000);
+      tl.fromTo("#w0_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 0.820);
+      tl.fromTo("#w0_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 1.100);
+      tl.fromTo("#w0_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 1.420);
+      tl.fromTo("#w1_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 1.580);
+      tl.fromTo("#w1_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 2.120);
+      tl.fromTo("#w1_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 2.260);
+      tl.fromTo("#w2_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 2.860);
+      tl.fromTo("#w2_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 3.440);
+      tl.fromTo("#w2_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 3.640);
+      tl.fromTo("#w3_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 4.380);
+      tl.fromTo("#w3_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 4.940);
+      tl.fromTo("#w4_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 5.460);
+      tl.fromTo("#w4_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 5.660);
+      tl.fromTo("#w4_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 5.980);
+      tl.fromTo("#w4_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 6.100);
+      tl.fromTo("#w5_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 6.320);
+      tl.fromTo("#w6_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 6.940);
+      tl.fromTo("#w7_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 7.640);
+      tl.fromTo("#w7_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 8.100);
+      tl.fromTo("#w8_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 8.833);
+      tl.fromTo("#w8_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 9.393);
+      tl.fromTo("#w8_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 9.613);
+      tl.fromTo("#w8_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 9.873);
+      tl.fromTo("#w9_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 10.173);
+      tl.fromTo("#w10_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 10.773);
+      tl.fromTo("#w11_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 11.393);
+      tl.fromTo("#w11_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 11.753);
+      tl.fromTo("#w11_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 11.873);
+      tl.fromTo("#w12_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 12.393);
+      tl.fromTo("#w12_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 12.613);
+      tl.fromTo("#w13_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 13.213);
+      tl.fromTo("#w13_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 14.213);
+      tl.fromTo("#w13_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 14.773);
+      tl.fromTo("#w13_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 14.913);
+      tl.fromTo("#w14_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 15.313);
+      tl.fromTo("#w14_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 15.553);
+      tl.fromTo("#w14_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 15.633);
+      tl.fromTo("#w14_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 15.793);
+      tl.fromTo("#w15_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 16.053);
+      tl.fromTo("#w16_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 16.453);
+      tl.fromTo("#w16_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 16.833);
+      tl.fromTo("#w16_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 16.913);
+      tl.fromTo("#w16_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.053);
+      tl.fromTo("#w17_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.433);
+      tl.fromTo("#w18_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.953);
+      tl.fromTo("#w19_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 18.513);
+      tl.fromTo("#w19_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 18.833);
+      tl.fromTo("#w19_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 19.573);
+      tl.fromTo("#w19_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 20.133);
+      tl.fromTo("#w20_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 20.373);
+      tl.fromTo("#w20_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 20.653);
+      tl.fromTo("#w20_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 20.953);
+      tl.fromTo("#w20_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 21.133);
+      tl.fromTo("#w21_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 21.713);
+      tl.fromTo("#w21_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 21.833);
+      tl.fromTo("#w21_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 22.033);
+      tl.fromTo("#w21_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 22.213);
+      tl.fromTo("#w22_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 22.573);
+      tl.fromTo("#w22_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 22.833);
+      tl.fromTo("#w22_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 22.933);
+      tl.fromTo("#w22_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 23.033);
+      tl.fromTo("#w23_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 23.393);
+      tl.fromTo("#w24_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 24.711);
+      tl.fromTo("#w24_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 25.271);
+      tl.fromTo("#w24_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 25.531);
+      tl.fromTo("#w24_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 25.651);
+      tl.fromTo("#w25_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 26.051);
+      tl.fromTo("#w25_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 26.481);
+      tl.fromTo("#w25_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 27.286);
+      tl.fromTo("#w25_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 27.846);
+      tl.fromTo("#w26_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 27.966);
+      tl.fromTo("#w26_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 28.266);
+      tl.fromTo("#w26_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 28.466);
+      tl.fromTo("#w26_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 28.866);
+      tl.fromTo("#w27_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 29.446);
+      tl.fromTo("#w27_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 30.366);
+      tl.fromTo("#w27_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 30.666);
+      tl.fromTo("#w28_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 30.986);
+      tl.fromTo("#w28_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 31.226);
+      tl.fromTo("#w31_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 34.966);
+      tl.fromTo("#w31_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 35.886);
+      tl.fromTo("#w31_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 36.446);
+      tl.fromTo("#w31_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 36.746);
+      tl.fromTo("#w32_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 37.086);
+      tl.fromTo("#w32_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 37.706);
+      tl.fromTo("#w32_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 37.966);
+      tl.fromTo("#w33_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 38.186);
+      tl.fromTo("#w34_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 39.513);
+      tl.fromTo("#w34_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 40.073);
+      tl.fromTo("#w34_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 40.393);
+      tl.fromTo("#w34_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 40.453);
+      tl.fromTo("#w35_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 41.073);
+      tl.fromTo("#w35_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 41.353);
+      tl.fromTo("#w35_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 41.773);
+      tl.fromTo("#w35_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 41.933);
+      tl.fromTo("#w36_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 42.193);
+      tl.fromTo("#w36_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 42.433);
+      tl.fromTo("#w37_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 43.073);
+      tl.fromTo("#w37_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 43.213);
+      tl.fromTo("#w37_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 43.333);
+      tl.fromTo("#w38_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 43.753);
+      tl.fromTo("#w38_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 43.953);
+      tl.fromTo("#w38_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 44.113);
+      tl.fromTo("#w38_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 44.453);
+      tl.fromTo("#w39_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 45.053);
+      tl.fromTo("#w39_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 45.613);
+      tl.fromTo("#w39_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 45.833);
+      tl.fromTo("#w40_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 46.313);
+      tl.fromTo("#w40_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 46.513);
+      tl.fromTo("#w40_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 46.613);
+      tl.fromTo("#w40_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 46.873);
+      tl.fromTo("#w41_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 47.093);
+      tl.fromTo("#w42_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 47.973);
+      tl.fromTo("#w42_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 48.273);
+      tl.fromTo("#w42_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 48.613);
+      tl.fromTo("#w43_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 49.253);
+      tl.fromTo("#w43_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 49.473);
+      tl.fromTo("#w43_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 49.793);
+      tl.fromTo("#w43_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 49.873);
+      tl.fromTo("#w44_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 49.973);
+      tl.fromTo("#w44_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 50.313);
+      tl.fromTo("#w45_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 51.147);
+      tl.fromTo("#w45_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 51.667);
+      tl.fromTo("#w45_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 51.827);
+      tl.fromTo("#w45_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 52.047);
+      tl.fromTo("#w46_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 52.247);
+      tl.fromTo("#w47_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 52.707);
+      tl.fromTo("#w47_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 53.387);
+      tl.fromTo("#w47_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 53.467);
+      tl.fromTo("#w47_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 53.787);
+      tl.fromTo("#w48_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 54.307);
+      tl.fromTo("#w48_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 54.807);
+      tl.fromTo("#w48_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 54.947);
+      tl.fromTo("#w48_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 55.207);
+      tl.fromTo("#w49_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 55.587);
+      tl.fromTo("#w49_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 55.767);
+      tl.fromTo("#w49_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 56.007);
+      tl.fromTo("#w49_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 56.147);
+      tl.fromTo("#w50_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 56.387);
+      tl.fromTo("#w50_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 56.547);
+      tl.fromTo("#w51_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.127);
+      tl.fromTo("#w51_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.467);
+      tl.fromTo("#w51_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.867);
+      tl.fromTo("#w52_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 58.927);
+      tl.fromTo("#w52_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 59.447);
+      tl.fromTo("#w52_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 59.787);
+      tl.fromTo("#w52_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 59.987);
+      tl.fromTo("#w53_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 60.187);
+      tl.fromTo("#w53_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 60.467);
+      tl.fromTo("#w54_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 60.867);
+      tl.fromTo("#w55_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 61.547);
+      tl.fromTo("#w55_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 61.907);
+      tl.fromTo("#w55_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 62.061);
+      tl.fromTo("#w55_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 62.214);
+      tl.fromTo("#w56_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 62.736);
+      tl.fromTo("#w56_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 63.256);
+      tl.fromTo("#w56_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 63.636);
+      tl.fromTo("#w56_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 63.716);
+      tl.fromTo("#w57_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 64.236);
+      tl.fromTo("#w57_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 64.336);
+      tl.fromTo("#w57_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 64.616);
+      tl.fromTo("#w57_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 64.736);
+      tl.fromTo("#w58_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 65.096);
+      tl.fromTo("#w58_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 65.496);
+      tl.fromTo("#w58_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 65.636);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
