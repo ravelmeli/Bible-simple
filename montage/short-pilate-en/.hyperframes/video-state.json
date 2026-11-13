@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "historyId": "72bfca43-2462-4ff7-90c9-62c95bd03f71",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/audio/jingle.wav": {
+      "hash": "a017952e2aba152373a1deca9a56981c4a774418f7123342865888a0003b7afb",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/a0/a017952e2aba152373a1deca9a56981c4a774418f7123342865888a0003b7afb"
+    },
+    "assets/audio/lib/click-soft.mp3": {
+      "hash": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/07/075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d"
+    },
+    "assets/audio/lib/impact-bass-2.mp3": {
+      "hash": "fb832995477784f44ba8533359d20caf706195b52117ecc2a33b3e63e3c1307b",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/fb/fb832995477784f44ba8533359d20caf706195b52117ecc2a33b3e63e3c1307b"
+    },
+    "assets/audio/lib/pop.mp3": {
+      "hash": "19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/19/19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352"
+    },
+    "assets/audio/lib/sparkle.mp3": {
+      "hash": "a66b2829a307bcb5b1f6551d7cdc72fe45bbe9a91abfb994d28db8d5e4e42ea8",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/a6/a66b2829a307bcb5b1f6551d7cdc72fe45bbe9a91abfb994d28db8d5e4e42ea8"
+    },
+    "assets/audio/lib/typing.mp3": {
+      "hash": "944160652faeb7b32acc9341ede4d735a5c9a4ce3fe8509ef7eab91efb430487",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/94/944160652faeb7b32acc9341ede4d735a5c9a4ce3fe8509ef7eab91efb430487"
+    },
+    "assets/audio/lib/whoosh-short.mp3": {
+      "hash": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+    },
+    "assets/fonts/Inter.ttf": {
+      "hash": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/29/29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    "assets/fonts/OFL-Inter.txt": {
+      "hash": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/5b/5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    "assets/stickers/anneau-tibere.png": {
+      "hash": "7fd76c91783fb10ed1d461cfb59b7edf3008c8183ba4725ba3a503a77bd5cf3d",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/7f/7fd76c91783fb10ed1d461cfb59b7edf3008c8183ba4725ba3a503a77bd5cf3d"
+    },
+    "assets/stickers/pierre-pilate.png": {
+      "hash": "417e23cd9deeab8f8055c20c49d22a7a4c1b8d5388ef65fedf7fbe0e9a0c1857",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/41/417e23cd9deeab8f8055c20c49d22a7a4c1b8d5388ef65fedf7fbe0e9a0c1857"
+    },
+    "build.py": {
+      "hash": "adf27b1407be847cde8d44e39f59425789f0fb86340048a9962d97c24fb313ac",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/ad/adf27b1407be847cde8d44e39f59425789f0fb86340048a9962d97c24fb313ac"
+    },
+    "dur.json": {
+      "hash": "b85072172b1d9961a452ef859fb4e137e949527c8f07bbdd6fef96c376073c57",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/b8/b85072172b1d9961a452ef859fb4e137e949527c8f07bbdd6fef96c376073c57"
+    },
+    "index.html": {
+      "hash": "a622c95c1e2d4e22359cf051602ddf6fe05e6094dfa2ae9d45c862c092712556",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/a6/a622c95c1e2d4e22359cf051602ddf6fe05e6094dfa2ae9d45c862c092712556"
+    },
+    "script.md": {
+      "hash": "4791bbec2fd7e8203107d58508a85089bcc47e6649fc334c7038093189aa78f2",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/47/4791bbec2fd7e8203107d58508a85089bcc47e6649fc334c7038093189aa78f2"
+    },
+    "transcript.json": {
+      "hash": "3f9bcfeae245e432f2ec5996f5503ac6dd90e3c921a5113a7e35fa7db9f6d07d",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/3f/3f9bcfeae245e432f2ec5996f5503ac6dd90e3c921a5113a7e35fa7db9f6d07d"
+    },
+    "assets/audio/music.wav": {
+      "hash": "17149e3284c2464b25af43da07cc54bef3e4cc990a37c0564add75ce3a66f53c",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/17/17149e3284c2464b25af43da07cc54bef3e4cc990a37c0564add75ce3a66f53c"
+    },
+    "assets/audio/pulse.wav": {
+      "hash": "cfbdd76c7ac8910ebe5f5ddd9bd7406675521a9f74c4ccd9c2c6edae9b09c046",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/cf/cfbdd76c7ac8910ebe5f5ddd9bd7406675521a9f74c4ccd9c2c6edae9b09c046"
+    },
+    "assets/source/voix-normalisee-avant-coupes.wav": {
+      "hash": "f63765f8bd004f11e4ddd9ee7a695cdc83a757624d3edc8b970f398de710d6e2",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/f6/f63765f8bd004f11e4ddd9ee7a695cdc83a757624d3edc8b970f398de710d6e2"
+    },
+    "assets/source/voix-originale.wav": {
+      "hash": "e40b623a8f695f20656560cdc84899e18b9111ba878b899160c51b2f58aaf09c",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/e4/e40b623a8f695f20656560cdc84899e18b9111ba878b899160c51b2f58aaf09c"
+    },
+    "assets/voix.wav": {
+      "hash": "bf5bd23d306729d9892717d389fb5c80afc4e15ea7b1f3bfc9d15f8c62417b1f",
+      "content": "/root/.cache/hyperframes/history/72bfca43-2462-4ff7-90c9-62c95bd03f71/blobs/bf/bf5bd23d306729d9892717d389fb5c80afc4e15ea7b1f3bfc9d15f8c62417b1f"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "9313065b-4d7d-4b0a-918b-67230e8c00e6",
+      "completedAt": 1794555408764,
+      "output": "/home/user/Bible-simple/montage/short-pilate-en/renders/short-pilate-en-brouillon.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}
