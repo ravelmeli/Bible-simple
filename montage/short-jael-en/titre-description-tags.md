@@ -22,6 +22,8 @@ The king of Canaan has oppressed Israel for twenty years. His commander, Sisera,
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
+🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
+
 📷 IMAGES: Faience tablet with a chariot (Egypt, c. 1390 BC): The Metropolitan Museum of Art (CC0). Schematic map: Natural Earth (public domain). Bible quotations: World English Bible (public domain).
 
 See also: simple bible study, Jael and Sisera, Judges 4 explained, Jael tent peg story, Deborah and Barak, women of the Bible, biblical heroines, Judges 5 24 most blessed of women, Sisera nine hundred iron chariots, book of Judges explained, bible story in one minute, bible without jargon, simple bible commentary.

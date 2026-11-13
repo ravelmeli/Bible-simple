@@ -22,6 +22,8 @@ Le roi de Canaan opprime Israël depuis vingt ans. Son chef de guerre, Sisera, c
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
+🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
+
 📷 IMAGES : Tablette en faïence avec un char (Égypte, vers 1390 av. J.-C.) : The Metropolitan Museum of Art (CC0). Carte schématique : Natural Earth (domaine public).
 
 Découvrez aussi : étude biblique simple, Jaël juges 4, Jaël et Sisera, histoire de Jaël expliquée, Débora et Barak, piquet de tente Jaël, Juges 5 24 béni soit entre les femmes, femmes de la Bible, héroïnes de la Bible, Sisera neuf cents chars de fer, livre des Juges expliqué, récit biblique en une minute, bible sans jargon, commentaire biblique simple.

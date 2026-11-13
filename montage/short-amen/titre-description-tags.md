@@ -22,6 +22,8 @@ En hébreu, amen vient d'une racine qui veut dire « solide », « ferme », « 
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
+🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
+
 📷 IMAGES : Bible hébraïque (Espagne, 1300–1350), vitrail du prophète Ésaïe (vers 1325) et évangéliaire carolingien : The Metropolitan Museum of Art (CC0).
 
 Découvrez aussi : étude biblique simple, que veut dire amen, amen en hébreu, sens du mot amen, amen ainsi soit-il, racine hébraïque, foi et vérité en hébreu, exode 17 12 mains fermes, ésaïe 7 9 si vous ne croyez pas, néhémie 8 6 amen amen, en vérité je vous le dis, apocalypse 3 14 l'amen, mots hébreux de la bible, bible sans jargon, leçons de l'école du sabbat, commentaire biblique simple.

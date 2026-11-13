@@ -22,6 +22,8 @@ Dieu lui demande de construire une arche de 300 coudées de long, soit plus de 1
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois, chaque semaine.
 
+🎵 CRÉDITS AUDIO : Musique générée avec MusicGen (Meta). Effets sonores : Pixabay (Pixabay Content License).
+
 Découvrez aussi : étude biblique simple, histoire de Noé expliquée, arche de Noé et déluge, genèse 6 expliqué, genèse 7 expliqué, noé prédicateur de la justice, 2 pierre 2 5, hébreux 11 7 la foi de noé, les huit personnes de l'arche, qui était noé dans la bible, récit biblique simple, bible sans jargon, leçons de l'école du sabbat, verset biblique expliqué, commentaire biblique simple.
 
 \#LaBibleSimple \#Shorts \#EtudeBiblique \#Noé

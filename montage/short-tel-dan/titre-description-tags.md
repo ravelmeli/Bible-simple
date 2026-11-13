@@ -22,6 +22,8 @@ Un fragment de basalte noir, remployé dans un mur plus tardif, porte une inscri
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
+🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
+
 📷 IMAGES : Stèle de Tel Dan, photo de Gary Todd, Musée d'Israël (CC0) · Plaque d'ivoire « femme à la fenêtre », The Metropolitan Museum of Art (CC0) · Carte : Natural Earth (domaine public).
 
 Découvrez aussi : étude biblique simple, stèle de tel dan expliquée, le roi david a-t-il existé, maison de david inscription, archéologie et bible, découvertes archéologiques bibliques, inscription araméenne, hazaël roi de damas, jéhu joram achazia, 2 rois 9 expliqué, dynastie de david, histoire d'israël antique, bible et histoire, bible sans jargon, leçons de l'école du sabbat, commentaire biblique simple.

@@ -22,6 +22,8 @@ On the road from Jerusalem down to Jericho, about 17 miles and more than 3,000 f
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
+🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
+
 📷 IMAGES: Denarius of Tiberius, American Numismatic Society (CC0) · Aerial views of the Jericho road, Matson Photo Service, Library of Congress (public domain) · Wine amphora, The Metropolitan Museum of Art (CC0). Bible quotations: World English Bible (public domain).
 
 See also: simple bible study, the good samaritan explained, who is my neighbor according to jesus, luke 10 25-37 explained, love your neighbor as yourself, go and do likewise meaning, the teacher of the law and jesus, the road from jerusalem to jericho, who were the samaritans, the priest and the levite in the parable, how much was a denarius, parables of jesus explained, bible without jargon, bible verse explained, simple bible commentary.

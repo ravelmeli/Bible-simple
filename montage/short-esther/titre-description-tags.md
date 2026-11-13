@@ -22,6 +22,8 @@ Seul le sceptre d'or tendu par le roi pouvait lui sauver la vie. Son cousin Mard
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois, chaque semaine.
 
+🎵 CRÉDITS AUDIO : Effets sonores : Pixabay (Pixabay Content License).
+
 Découvrez aussi : étude biblique simple, histoire d'Esther expliquée, qui est la reine Esther, livre d'Esther résumé, haman et mardochée, fête de purim origine, esther 4 16 si je dois périr je périrai, pour un temps comme celui-ci, sceptre d'or esther, le livre d'esther ne nomme jamais dieu, femmes courageuses de la bible, récit biblique simple, bible sans jargon, leçons de l'école du sabbat, verset biblique expliqué, commentaire biblique simple.
 
 \#LaBibleSimple \#Shorts \#EtudeBiblique \#Esther

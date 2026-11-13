@@ -22,6 +22,8 @@ En hébreu, Néron César s'écrit נרון קסר. En additionnant la valeur de
 
 👉 S'ABONNER : Abonnez-vous pour étudier la Bible simplement chaque semaine.
 
+🎵 CRÉDITS AUDIO : "Deep Cinematic Impact" par MeijstroAudio (CC BY 4.0) — https://freesound.org/people/MeijstroAudio/sounds/377303 · "Suspense Whoosh/Transition" par tyops (CC BY 4.0) — https://freesound.org/people/tyops/sounds/275143 · "Beach/Ocean Ambience" par IanStarGem (CC0).
+
 Découvrez aussi : étude biblique simple, signification du 666, nombre de la bête expliqué, apocalypse 13 18 expliqué, néron césar 666, gématrie hébraïque, valeur numérique des lettres hébraïques, apôtre jean île de patmos, premiers chrétiens et empire romain, comprendre l'apocalypse facilement, leçons de l'école du sabbat, bible sans jargon, verset biblique expliqué, histoire des premiers chrétiens, commentaire biblique simple.
 
 \#LaBibleSimple \#Shorts \#EtudeBiblique \#Apocalypse

@@ -22,6 +22,8 @@ In Hebrew, amen comes from a root that means "solid," "firm," "reliable"; the sa
 
 👉 SUBSCRIBE: Subscribe to discover the Bible, one story at a time.
 
+🎵 AUDIO CREDITS: Music: "Ambiant Hope" by Komiku (CC0, public domain). Sound effects: Pixabay (Pixabay Content License).
+
 📷 IMAGES: Hebrew Bible (Spain, 1300–1350), stained glass of the prophet Isaiah (c. 1325) and Carolingian Gospel book: The Metropolitan Museum of Art (CC0). Bible quotations: World English Bible (public domain).
 
 See also: simple bible study, what does amen mean, amen in hebrew, meaning of the word amen, amen so be it, hebrew root, faith and truth in hebrew, exodus 17 12 steady hands, isaiah 7 9 if you will not believe, nehemiah 8 6 amen amen, truly i tell you, revelation 3 14 the amen, hebrew words in the bible, bible without jargon, simple bible commentary.

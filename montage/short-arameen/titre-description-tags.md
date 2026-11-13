@@ -22,6 +22,8 @@ Dans la Palestine du Ier siècle, l'araméen est la langue de tous les jours. Le
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
+🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
+
 📷 IMAGES : Tesson inscrit en araméen (Perse sassanide, vers 500-600 apr. J.-C., plus tardif que l'époque de Jésus) : The Metropolitan Museum of Art (CC0). Carte schématique : Natural Earth (domaine public).
 
 Découvrez aussi : étude biblique simple, Jésus parlait araméen, langue de Jésus, araméen biblique, talitha koumi, éphphatha, abba père, éloï éloï lama sabachthani, mots araméens dans les évangiles, Jésus hébreu ou araméen, évangile de Marc expliqué, bible sans jargon, école du sabbat, commentaire biblique simple.

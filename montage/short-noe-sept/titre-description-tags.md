@@ -22,6 +22,8 @@ Au chapitre 6 de la Genèse, Dieu demande bien deux animaux de chaque espèce, u
 
 👉 S'ABONNER : Abonnez-vous pour découvrir la Bible, un récit à la fois.
 
+🎵 CRÉDITS AUDIO : Musique : « Ambiant Hope » par Komiku (CC0, domaine public). Effets sonores : Pixabay (Pixabay Content License).
+
 📷 IMAGES : Vitrail « Dieu ferme la porte de l'arche », plat « Le sacrifice de Noé », figurine de chameau et tablette d'Atra-hasis : The Metropolitan Museum of Art (CC0).
 
 Découvrez aussi : étude biblique simple, arche de noé expliquée, combien d'animaux dans l'arche, genèse 7 2 expliqué, animaux purs et impurs dans la bible, deux par deux ou sept couples, sacrifice de noé genèse 8, lévitique 11 pur et impur, récit du déluge, déluge babylonien atra-hasis, hébreu biblique expliqué, bible sans jargon, leçons de l'école du sabbat, verset biblique expliqué, commentaire biblique simple.
