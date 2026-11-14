@@ -56,9 +56,9 @@ Mais il reste un dernier épisode, le plus surprenant, et le plus risqué.
 Nous sommes maintenant au chapitre dix-neuf. Jésus a été crucifié sous Ponce Pilate. Les disciples se sont dispersés.
 Un homme demande à Pilate le droit d'enlever le corps : Joseph d'Arimathée, que l'évangile décrit comme « disciple de Jésus, mais secrètement par crainte des Juifs ».
 Joseph, lui, avait peur. Le texte le dit. Pour Nicodème, l'évangile ne parle pas de peur.
-Deux hommes, deux profils différents, deux peurs possibles. Pourtant, ils font le même geste, ensemble, au pire moment.
-Et voici ce qu'il écrit : « Nicodème, qui d'abord était allé de nuit vers Jésus, vint aussi, apportant un mélange d'environ cent livres de myrrhe et d'aloès. »
+Et voici ce que l'évangile écrit : « Nicodème, qui d'abord était allé de nuit vers Jésus, vint aussi, apportant un mélange d'environ cent livres de myrrhe et d'aloès. »
 Cent livres romaines, cela représente plus de trente kilos de parfums et d'aromates. Une quantité énorme, et très coûteuse.
+Deux hommes, deux profils différents, deux peurs possibles. Pourtant, ils font le même geste, ensemble, au pire moment.
 Beaucoup de lecteurs y voient un geste de funérailles royales, presque excessif, une manière d'honorer Jésus comme un roi. C'est une interprétation courante, pas une certitude.
 Imagine la scène. Jésus vient de mourir sur une croix romaine, la mort réservée aux condamnés. Ses disciples se cachent. Et un membre du Sanhédrin, un homme riche, un notable, vient s'occuper de son corps.
 Se montrer à cet instant, c'est risquer sa réputation, peut-être sa position, peut-être davantage.
