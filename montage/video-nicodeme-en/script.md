@@ -35,7 +35,7 @@ And Jesus answers him, with a touch of gentle irony: "Are you the teacher of Isr
 For a teacher, this is a shock. What Nicodemus thought he had mastered slips away from him.
 Then comes a sentence many people know: "As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up, that whoever believes in him should not perish, but have eternal life."
 Jesus points back to an episode in the book of Numbers: Israelites bitten by snakes are healed by looking at a bronze serpent set on a pole.
-And the text continues: "For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life."
+And the text continues,
 Scholars discuss where exactly Jesus' words end and the evangelist's comment begins. But the general meaning stays the same.
 And then? Nothing. Nicodemus no longer answers. The Gospel says neither that he believes, nor that he refuses, nor even that he leaves. The scene stops, and the night closes again.
 That is what is beautiful, and a little unsettling, in this story: the conversation does not end with a conversion. It ends with a silence.
