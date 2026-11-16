@@ -26,9 +26,9 @@ Gesù non lo ringrazia. Va dritto all'essenziale: «In verità, in verità ti di
 La parola greca è anōthen. Ha due sensi: «di nuovo», ma anche «dall'alto».
 Nicodemo capisce «di nuovo». Risponde: «Come può un uomo nascere quando è vecchio? Può egli entrare una seconda volta nel seno di sua madre e nascere?»
 Non è uno sciocco: prende le parole sul serio, come un buon studioso della legge. Ma la parola è ambigua.
-Gesù precisa: «In verità, in verità ti dico che se uno non è nato d'acqua e di Spirito, non può entrare nel regno di Dio.»
+Gesù precisa.
 Parla di una nascita che non viene da noi: ricevuta, come un dono, non guadagnata.
-Poi aggiunge un'immagine: «Il vento soffia dove vuole, e tu ne odi il suono, ma non sai né d'onde viene né dove va; così è di chiunque è nato dallo Spirito.»
+Poi aggiunge un'immagine.
 La parola greca pneuma significa insieme «vento» e «Spirito». Gesù gioca su questo doppio senso, come per la parola ebraica ruach vista in un altro studio.
 Nicodemo, sconcertato, chiede: «Come può essere ciò?»
 E Gesù gli risponde, con una punta di dolce ironia: «Tu sei il dottor d'Israele, e non sai queste cose?»
