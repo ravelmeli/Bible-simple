@@ -1,0 +1,927 @@
+[
+ {
+  "text": "Ce",
+  "start": 0.0,
+  "end": 0.28
+ },
+ {
+  "text": "prophète",
+  "start": 0.28,
+  "end": 0.82
+ },
+ {
+  "text": "a",
+  "start": 0.82,
+  "end": 1.06
+ },
+ {
+  "text": "marché",
+  "start": 1.06,
+  "end": 1.46
+ },
+ {
+  "text": "nu",
+  "start": 1.46,
+  "end": 1.84
+ },
+ {
+  "text": "et",
+  "start": 1.84,
+  "end": 2.12
+ },
+ {
+  "text": "déchaussé",
+  "start": 2.12,
+  "end": 2.9
+ },
+ {
+  "text": "pendant",
+  "start": 2.9,
+  "end": 3.14
+ },
+ {
+  "text": "trois",
+  "start": 3.14,
+  "end": 3.78
+ },
+ {
+  "text": "ans.",
+  "start": 3.78,
+  "end": 4.12
+ },
+ {
+  "text": "Sur",
+  "start": 4.18,
+  "end": 4.66
+ },
+ {
+  "text": "ordre",
+  "start": 4.66,
+  "end": 5.02
+ },
+ {
+  "text": "de",
+  "start": 5.02,
+  "end": 5.12
+ },
+ {
+  "text": "Dieu.",
+  "start": 5.12,
+  "end": 5.26
+ },
+ {
+  "text": "Ce",
+  "start": 5.5,
+  "end": 5.98
+ },
+ {
+  "text": "n'est",
+  "start": 5.98,
+  "end": 6.1
+ },
+ {
+  "text": "pas",
+  "start": 6.1,
+  "end": 6.2
+ },
+ {
+  "text": "une",
+  "start": 6.2,
+  "end": 6.34
+ },
+ {
+  "text": "légende",
+  "start": 6.34,
+  "end": 6.7
+ },
+ {
+  "text": "c'est",
+  "start": 6.76,
+  "end": 7.08
+ },
+ {
+  "text": "Ésaïe,",
+  "start": 7.08,
+  "end": 7.64
+ },
+ {
+  "text": "au",
+  "start": 7.64,
+  "end": 7.84
+ },
+ {
+  "text": "chapitre",
+  "start": 7.84,
+  "end": 8.5
+ },
+ {
+  "text": "vingt.",
+  "start": 8.5,
+  "end": 8.72
+ },
+ {
+  "text": "Vers",
+  "start": 9.28,
+  "end": 9.76
+ },
+ {
+  "text": "711",
+  "start": 9.76,
+  "end": 10.24
+ },
+ {
+  "text": "avant",
+  "start": 10.24,
+  "end": 10.64
+ },
+ {
+  "text": "notre",
+  "start": 10.64,
+  "end": 10.82
+ },
+ {
+  "text": "ère,",
+  "start": 10.82,
+  "end": 11.1
+ },
+ {
+  "text": "l'armée",
+  "start": 11.22,
+  "end": 11.82
+ },
+ {
+  "text": "assyrienne",
+  "start": 11.82,
+  "end": 12.24
+ },
+ {
+  "text": "prend",
+  "start": 12.24,
+  "end": 12.44
+ },
+ {
+  "text": "Ashdod,",
+  "start": 12.44,
+  "end": 13.02
+ },
+ {
+  "text": "une",
+  "start": 13.14,
+  "end": 13.38
+ },
+ {
+  "text": "ville",
+  "start": 13.38,
+  "end": 13.54
+ },
+ {
+  "text": "voisine.",
+  "start": 13.54,
+  "end": 13.94
+ },
+ {
+  "text": "À",
+  "start": 14.12,
+  "end": 14.6
+ },
+ {
+  "text": "Jérusalem,",
+  "start": 14.6,
+  "end": 14.98
+ },
+ {
+  "text": "certains",
+  "start": 15.12,
+  "end": 15.56
+ },
+ {
+  "text": "pensent",
+  "start": 15.56,
+  "end": 15.86
+ },
+ {
+  "text": "chercher",
+  "start": 15.86,
+  "end": 16.04
+ },
+ {
+  "text": "l'appui",
+  "start": 16.04,
+  "end": 16.6
+ },
+ {
+  "text": "de",
+  "start": 16.6,
+  "end": 16.72
+ },
+ {
+  "text": "l'Égypte.",
+  "start": 16.72,
+  "end": 17.2
+ },
+ {
+  "text": "Voici",
+  "start": 17.5,
+  "end": 17.98
+ },
+ {
+  "text": "la",
+  "start": 17.98,
+  "end": 18.1
+ },
+ {
+  "text": "scène,",
+  "start": 18.1,
+  "end": 18.28
+ },
+ {
+  "text": "dans",
+  "start": 18.28,
+  "end": 18.44
+ },
+ {
+  "text": "la",
+  "start": 18.44,
+  "end": 18.52
+ },
+ {
+  "text": "Louis",
+  "start": 18.52,
+  "end": 18.66
+ },
+ {
+  "text": "Segond",
+  "start": 18.66,
+  "end": 18.84
+ },
+ {
+  "text": "1910",
+  "start": 18.84,
+  "end": 19.42
+ },
+ {
+  "text": "Va,",
+  "start": 19.837,
+  "end": 19.957
+ },
+ {
+  "text": "détache",
+  "start": 20.097,
+  "end": 20.857
+ },
+ {
+  "text": "le",
+  "start": 20.857,
+  "end": 20.977
+ },
+ {
+  "text": "sac",
+  "start": 20.977,
+  "end": 21.277
+ },
+ {
+  "text": "de",
+  "start": 21.277,
+  "end": 21.377
+ },
+ {
+  "text": "tes",
+  "start": 21.377,
+  "end": 21.487
+ },
+ {
+  "text": "reins,",
+  "start": 21.487,
+  "end": 21.597
+ },
+ {
+  "text": "et",
+  "start": 21.597,
+  "end": 22.037
+ },
+ {
+  "text": "ôte",
+  "start": 22.037,
+  "end": 22.417
+ },
+ {
+  "text": "tes",
+  "start": 22.417,
+  "end": 22.557
+ },
+ {
+  "text": "souliers",
+  "start": 22.557,
+  "end": 22.877
+ },
+ {
+  "text": "de",
+  "start": 22.877,
+  "end": 23.017
+ },
+ {
+  "text": "tes",
+  "start": 23.017,
+  "end": 23.137
+ },
+ {
+  "text": "pieds.",
+  "start": 23.137,
+  "end": 24.097
+ },
+ {
+  "text": "Il",
+  "start": 24.097,
+  "end": 24.177
+ },
+ {
+  "text": "fit",
+  "start": 24.177,
+  "end": 24.357
+ },
+ {
+  "text": "ainsi,",
+  "start": 24.357,
+  "end": 24.557
+ },
+ {
+  "text": "marchant",
+  "start": 24.757,
+  "end": 25.417
+ },
+ {
+  "text": "nu",
+  "start": 25.417,
+  "end": 25.577
+ },
+ {
+  "text": "et",
+  "start": 25.577,
+  "end": 25.777
+ },
+ {
+  "text": "déchaussé.",
+  "start": 25.777,
+  "end": 26.437
+ },
+ {
+  "text": "Que",
+  "start": 26.871,
+  "end": 27.351
+ },
+ {
+  "text": "veut",
+  "start": 27.351,
+  "end": 27.491
+ },
+ {
+  "text": "dire",
+  "start": 27.491,
+  "end": 27.771
+ },
+ {
+  "text": "nu",
+  "start": 27.951,
+  "end": 28.591
+ },
+ {
+  "text": "Le",
+  "start": 28.591,
+  "end": 29.131
+ },
+ {
+  "text": "mot",
+  "start": 29.131,
+  "end": 29.271
+ },
+ {
+  "text": "hébreu",
+  "start": 29.271,
+  "end": 29.531
+ },
+ {
+  "text": "peut",
+  "start": 29.531,
+  "end": 29.611
+ },
+ {
+  "text": "désigner",
+  "start": 29.611,
+  "end": 29.931
+ },
+ {
+  "text": "quelqu'un",
+  "start": 29.931,
+  "end": 30.311
+ },
+ {
+  "text": "sans",
+  "start": 30.311,
+  "end": 30.451
+ },
+ {
+  "text": "manteau,",
+  "start": 30.451,
+  "end": 30.851
+ },
+ {
+  "text": "en",
+  "start": 30.891,
+  "end": 31.211
+ },
+ {
+  "text": "simple",
+  "start": 31.211,
+  "end": 31.611
+ },
+ {
+  "text": "tunique.",
+  "start": 31.611,
+  "end": 32.011
+ },
+ {
+  "text": "Les",
+  "start": 32.211,
+  "end": 32.651
+ },
+ {
+  "text": "spécialistes",
+  "start": 32.651,
+  "end": 33.111
+ },
+ {
+  "text": "en",
+  "start": 33.111,
+  "end": 33.211
+ },
+ {
+  "text": "débattent.",
+  "start": 33.211,
+  "end": 33.551
+ },
+ {
+  "text": "Et",
+  "start": 33.931,
+  "end": 34.411
+ },
+ {
+  "text": "les",
+  "start": 34.411,
+  "end": 34.551
+ },
+ {
+  "text": "trois",
+  "start": 34.551,
+  "end": 34.811
+ },
+ {
+  "text": "ans",
+  "start": 34.811,
+  "end": 35.171
+ },
+ {
+  "text": "Selon",
+  "start": 35.556,
+  "end": 35.796
+ },
+ {
+  "text": "les",
+  "start": 35.796,
+  "end": 35.896
+ },
+ {
+  "text": "traductions,",
+  "start": 35.896,
+  "end": 36.256
+ },
+ {
+  "text": "c'est",
+  "start": 36.356,
+  "end": 36.856
+ },
+ {
+  "text": "Ésaïe",
+  "start": 36.856,
+  "end": 37.416
+ },
+ {
+  "text": "qui",
+  "start": 37.416,
+  "end": 37.596
+ },
+ {
+  "text": "marche",
+  "start": 37.596,
+  "end": 37.896
+ },
+ {
+  "text": "trois",
+  "start": 37.896,
+  "end": 38.136
+ },
+ {
+  "text": "ans,",
+  "start": 38.136,
+  "end": 38.376
+ },
+ {
+  "text": "ou",
+  "start": 38.376,
+  "end": 38.856
+ },
+ {
+  "text": "le",
+  "start": 38.856,
+  "end": 39.076
+ },
+ {
+  "text": "signe",
+  "start": 39.076,
+  "end": 39.476
+ },
+ {
+  "text": "qui",
+  "start": 39.476,
+  "end": 39.856
+ },
+ {
+  "text": "dure",
+  "start": 39.856,
+  "end": 40.116
+ },
+ {
+  "text": "trois",
+  "start": 40.116,
+  "end": 40.316
+ },
+ {
+  "text": "ans.",
+  "start": 40.316,
+  "end": 40.496
+ },
+ {
+  "text": "Le",
+  "start": 40.596,
+  "end": 41.016
+ },
+ {
+  "text": "texte",
+  "start": 41.016,
+  "end": 41.236
+ },
+ {
+  "text": "est",
+  "start": 41.236,
+  "end": 41.336
+ },
+ {
+  "text": "ambigu.",
+  "start": 41.336,
+  "end": 41.516
+ },
+ {
+  "text": "Le",
+  "start": 41.977,
+  "end": 42.457
+ },
+ {
+  "text": "sens,",
+  "start": 42.457,
+  "end": 42.877
+ },
+ {
+  "text": "lui,",
+  "start": 42.897,
+  "end": 43.057
+ },
+ {
+  "text": "est",
+  "start": 43.137,
+  "end": 43.337
+ },
+ {
+  "text": "clair.",
+  "start": 43.337,
+  "end": 43.577
+ },
+ {
+  "text": "Dieu",
+  "start": 44.017,
+  "end": 44.457
+ },
+ {
+  "text": "explique",
+  "start": 44.457,
+  "end": 44.997
+ },
+ {
+  "text": "le",
+  "start": 45.217,
+  "end": 45.697
+ },
+ {
+  "text": "roi",
+  "start": 45.697,
+  "end": 45.977
+ },
+ {
+  "text": "d'Assyrie",
+  "start": 45.977,
+  "end": 46.397
+ },
+ {
+  "text": "emmènera",
+  "start": 46.397,
+  "end": 47.037
+ },
+ {
+  "text": "des",
+  "start": 47.037,
+  "end": 47.137
+ },
+ {
+  "text": "captifs",
+  "start": 47.137,
+  "end": 47.677
+ },
+ {
+  "text": "d'Égypte",
+  "start": 47.677,
+  "end": 48.157
+ },
+ {
+  "text": "et",
+  "start": 48.157,
+  "end": 48.237
+ },
+ {
+  "text": "d'Éthiopie,",
+  "start": 48.237,
+  "end": 48.777
+ },
+ {
+  "text": "nus",
+  "start": 48.777,
+  "end": 49.517
+ },
+ {
+  "text": "et",
+  "start": 49.517,
+  "end": 49.837
+ },
+ {
+  "text": "déchaussés.",
+  "start": 49.837,
+  "end": 50.377
+ },
+ {
+  "text": "Le",
+  "start": 50.837,
+  "end": 51.317
+ },
+ {
+  "text": "message",
+  "start": 51.317,
+  "end": 51.537
+ },
+ {
+  "text": "ne",
+  "start": 51.777,
+  "end": 52.177
+ },
+ {
+  "text": "mettez",
+  "start": 52.177,
+  "end": 52.557
+ },
+ {
+  "text": "pas",
+  "start": 52.557,
+  "end": 52.697
+ },
+ {
+  "text": "votre",
+  "start": 52.697,
+  "end": 52.877
+ },
+ {
+  "text": "espoir",
+  "start": 52.877,
+  "end": 53.237
+ },
+ {
+  "text": "dans",
+  "start": 53.237,
+  "end": 53.397
+ },
+ {
+  "text": "l'Égypte.",
+  "start": 53.397,
+  "end": 53.777
+ },
+ {
+  "text": "Chez",
+  "start": 54.228,
+  "end": 54.668
+ },
+ {
+  "text": "les",
+  "start": 54.668,
+  "end": 54.668
+ },
+ {
+  "text": "prophètes,",
+  "start": 54.668,
+  "end": 55.068
+ },
+ {
+  "text": "un",
+  "start": 55.128,
+  "end": 55.308
+ },
+ {
+  "text": "geste",
+  "start": 55.308,
+  "end": 55.708
+ },
+ {
+  "text": "parle",
+  "start": 55.708,
+  "end": 55.908
+ },
+ {
+  "text": "parfois",
+  "start": 55.908,
+  "end": 56.148
+ },
+ {
+  "text": "plus",
+  "start": 56.148,
+  "end": 56.488
+ },
+ {
+  "text": "fort",
+  "start": 56.488,
+  "end": 56.868
+ },
+ {
+  "text": "qu'un",
+  "start": 56.868,
+  "end": 57.068
+ },
+ {
+  "text": "discours.",
+  "start": 57.068,
+  "end": 57.288
+ },
+ {
+  "text": "Jérémie",
+  "start": 57.734,
+  "end": 58.174
+ },
+ {
+  "text": "porte",
+  "start": 58.174,
+  "end": 58.354
+ },
+ {
+  "text": "un",
+  "start": 58.354,
+  "end": 58.554
+ },
+ {
+  "text": "joug,",
+  "start": 58.554,
+  "end": 58.654
+ },
+ {
+  "text": "Ézéchiel",
+  "start": 58.754,
+  "end": 59.634
+ },
+ {
+  "text": "dessine",
+  "start": 59.634,
+  "end": 60.254
+ },
+ {
+  "text": "un",
+  "start": 60.254,
+  "end": 60.374
+ },
+ {
+  "text": "siège.",
+  "start": 60.374,
+  "end": 60.734
+ },
+ {
+  "text": "Quel",
+  "start": 61.1,
+  "end": 61.54
+ },
+ {
+  "text": "geste",
+  "start": 61.54,
+  "end": 61.94
+ },
+ {
+  "text": "de",
+  "start": 61.94,
+  "end": 61.94
+ },
+ {
+  "text": "prophète",
+  "start": 61.94,
+  "end": 62.3
+ },
+ {
+  "text": "biblique",
+  "start": 62.3,
+  "end": 62.68
+ },
+ {
+  "text": "t'a",
+  "start": 62.68,
+  "end": 63.06
+ },
+ {
+  "text": "le",
+  "start": 63.06,
+  "end": 63.1
+ },
+ {
+  "text": "plus",
+  "start": 63.1,
+  "end": 63.32
+ },
+ {
+  "text": "surpris",
+  "start": 63.32,
+  "end": 63.9
+ },
+ {
+  "text": "Dis-le",
+  "start": 64.32,
+  "end": 64.6
+ },
+ {
+  "text": "en",
+  "start": 64.6,
+  "end": 64.7
+ },
+ {
+  "text": "commentaire.",
+  "start": 64.7,
+  "end": 65.14
+ },
+ {
+  "text": "Abonne-toi",
+  "start": 65.7,
+  "end": 66.24
+ },
+ {
+  "text": "pour",
+  "start": 66.24,
+  "end": 66.4
+ },
+ {
+  "text": "découvrir",
+  "start": 66.4,
+  "end": 66.66
+ },
+ {
+  "text": "la",
+  "start": 66.66,
+  "end": 66.82
+ },
+ {
+  "text": "Bible,",
+  "start": 66.82,
+  "end": 66.98
+ },
+ {
+  "text": "un",
+  "start": 67.08,
+  "end": 67.34
+ },
+ {
+  "text": "récit",
+  "start": 67.34,
+  "end": 67.66
+ },
+ {
+  "text": "à",
+  "start": 67.66,
+  "end": 67.76
+ },
+ {
+  "text": "la",
+  "start": 67.76,
+  "end": 67.82
+ },
+ {
+  "text": "fois.",
+  "start": 67.82,
+  "end": 67.96
+ }
+]

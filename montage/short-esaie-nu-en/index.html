@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Faith Engineering - Esaie nu - style 02</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url("assets/fonts/Inter.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+      }
+      html, body { margin: 0; background: #EFE4CC; }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Inter", sans-serif;
+        color: #2B2118;
+        background: #EFE4CC;
+      }
+      #darkbg { position: absolute; inset: 0; background: #2B2118; opacity: 0; }
+      #drift { position: absolute; inset: 0; transform-origin: 50% 50%; }
+      #world {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3240px;
+        height: 7680px;
+        transform-origin: 0 0;
+        background-image: radial-gradient(circle, rgba(43, 33, 24, 0.16) 2px, transparent 2.6px);
+        background-size: 40px 40px;
+      }
+
+      .node { position: absolute; }
+      .sticker img { display: block; filter: drop-shadow(0 18px 22px rgba(43, 33, 24, 0.28)) drop-shadow(0 3px 4px rgba(43, 33, 24, 0.18)); }
+
+      .headline .kick {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #7A6C58;
+        margin-bottom: 22px;
+      }
+      .headline .kick i { display: block; width: 18px; height: 18px; background: #F85830; }
+      .headline .h { font-weight: 800; line-height: 1.08; letter-spacing: -1.5px; }
+      .headline .sub { margin-top: 18px; font-size: 30px; color: #7A6C58; }
+      .headline.dark { color: #EFE4CC; }
+      .headline.dark .kick { color: #B3A58D; }
+      .hl { position: relative; display: inline-block; font-style: normal; }
+      .hl span { position: relative; z-index: 1; }
+      .hl i {
+        position: absolute;
+        left: -4px;
+        right: -4px;
+        bottom: 0.06em;
+        height: 0.26em;
+        background: #F85830;
+        transform-origin: 0 50%;
+        z-index: 0;
+      }
+
+      .lead { pointer-events: none; overflow: visible; }
+      .lead line, .lead path { stroke: #2B2118; stroke-width: 3; fill: none; }
+      .lead circle { fill: #F85830; }
+      .arrows path { stroke: #B3A58D; stroke-width: 6; stroke-linecap: round; }
+
+      .label { padding-left: 18px; border-left: 4px solid #F85830; }
+      .label.dark b { color: #EFE4CC; }
+      .label.dark span { color: #B3A58D; }
+      .label b { display: block; font-size: 36px; font-weight: 700; line-height: 1.15; white-space: nowrap; }
+      .label span { display: block; margin-top: 6px; font-size: 24px; color: #7A6C58; white-space: nowrap; }
+
+      .tag {
+        padding: 12px 24px 14px;
+        font-weight: 800;
+        line-height: 1.1;
+        white-space: nowrap;
+        color: #2B2118;
+        background: #FFFFFF;
+        border: 3px solid #2B2118;
+        box-shadow: 6px 6px 0 rgba(43, 33, 24, 0.18);
+      }
+      .tag.acc { color: #FFFFFF; background: #F85830; border-color: #F85830; }
+      .tag.dark { color: #EFE4CC; background: transparent; border-color: transparent; box-shadow: none; padding-left: 0; }
+      .ref {
+        padding: 6px 14px 8px;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #7A6C58;
+        border: 2px solid #CDBFA3;
+        white-space: nowrap;
+      }
+
+      .grid { display: grid; grid-template-columns: repeat(12, 38px); gap: 6px; }
+      .grid i { display: block; width: 38px; height: 38px; border-radius: 4px; background: #DDD0B6; }
+      .counter { font-weight: 800; letter-spacing: -2px; line-height: 1; color: #F85830; white-space: nowrap; }
+      .counter .unit { font-size: 0.42em; letter-spacing: 0; margin-left: 6px; color: #2B2118; font-weight: 700; }
+      .counter.dark .unit { color: #EFE4CC; }
+
+      .box {
+        width: 500px;
+        padding: 26px 30px 30px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1.2;
+        background: #FFFFFF;
+        border: 3px solid #2B2118;
+        box-shadow: 8px 8px 0 rgba(43, 33, 24, 0.15);
+      }
+      .box.q { width: 620px; border-radius: 26px; }
+      .box.out { width: 300px; font-size: 64px; font-weight: 800; }
+      .box small { display: block; font-size: 24px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: #7A6C58; margin-bottom: 4px; }
+      .box.out small { color: inherit; opacity: 0.8; }
+
+      .day {
+        width: 280px;
+        padding: 28px 0 34px;
+        text-align: center;
+        font-size: 150px;
+        font-weight: 800;
+        line-height: 1;
+        border: 3px solid #2B2118;
+        box-shadow: 8px 8px 0 rgba(43, 33, 24, 0.15);
+      }
+      .day.wide { width: 300px; font-size: 64px; padding: 26px 0 30px; }
+      .day small { display: block; font-size: 26px; font-weight: 600; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 10px; opacity: 0.85; }
+      .dot { width: 30px; height: 30px; border-radius: 50%; background: #F85830; }
+      .bar { background: #2B2118; }
+      .bar.acc { background: #F85830; }
+      .zero { font-size: 400px; font-weight: 900; line-height: 0.9; color: #F85830; letter-spacing: -10px; }
+      .cta {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding: 22px 34px 26px;
+        font-size: 44px;
+        font-weight: 700;
+        color: #2B2118;
+        background: #FFFFFF;
+        white-space: nowrap;
+      }
+      .cta svg { width: 70px; height: 60px; }
+      .cta path { fill: none; stroke: #F85830; stroke-width: 9; stroke-linejoin: round; }
+
+      .map { display: block; overflow: hidden; }
+      .map .land { fill: #E2D6BB; stroke: #CDBFA3; stroke-width: 1.5; }
+      .map .empire { fill: rgba(248, 88, 48, 0.16); stroke: #F85830; stroke-width: 4; stroke-dasharray: 3000; stroke-linejoin: round; }
+      .map .pdot { fill: #F85830; }
+      .map .place circle { fill: #2B2118; stroke: #FFFFFF; stroke-width: 4; }
+      .map .place text { font-family: "Inter", sans-serif; font-size: 34px; font-weight: 700; fill: #2B2118; paint-order: stroke; stroke: #EFE4CC; stroke-width: 8px; }
+      .mapwrap { padding: 14px; background: #FFFFFF; border: 3px solid #2B2118; box-shadow: 8px 8px 0 rgba(43, 33, 24, 0.15); }
+      .route { pointer-events: none; overflow: visible; }
+      .route line { stroke: #F85830; stroke-width: 10; stroke-linecap: round; fill: none; }
+      .route circle { fill: #F85830; }
+      #grain {
+        position: absolute;
+        inset: -50%;
+        z-index: 65;
+        pointer-events: none;
+        opacity: 0.05;
+        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        animation: hf-grain 0.5s steps(1) infinite;
+      }
+      @keyframes hf-grain {
+        0%, 100% { transform: translate(0, 0); }
+        25% { transform: translate(-4%, 3%); }
+        50% { transform: translate(3%, -4%); }
+        75% { transform: translate(-3%, -2%); }
+      }
+      #endcard .es { position: absolute; filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.45)); }
+
+      /* ---- éléments de rétention (actifs seulement avec build(retention=True)) ---- */
+      #plx {
+        position: absolute;
+        left: -300px;
+        top: -300px;
+        width: 2652px;
+        height: 4824px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cpath d='M90 76v28M76 90h28' stroke='%23F85830' stroke-width='5' stroke-linecap='round' opacity='0.22'/%3E%3C/svg%3E");
+        background-size: 180px 180px;
+      }
+      #dust { position: absolute; inset: 0; overflow: hidden; }
+      #dust i { position: absolute; display: block; border-radius: 50%; }
+      #sweep {
+        position: absolute;
+        top: -10%;
+        left: -60%;
+        width: 60%;
+        height: 120%;
+        z-index: 55;
+        pointer-events: none;
+        opacity: 0;
+        background: linear-gradient(90deg, rgba(248, 88, 48, 0), rgba(248, 88, 48, 0.2), rgba(248, 88, 48, 0));
+        transform: skewX(-16deg);
+      }
+      .kq .kw { display: inline; }
+      .glow { pointer-events: none; }
+      .stamp { padding: 6px 28px 10px; font-weight: 900; letter-spacing: 6px; text-transform: uppercase; color: #F85830; border: 8px solid #F85830; white-space: nowrap; }
+      .burst line { stroke: #F85830; stroke-width: 9; stroke-linecap: round; }
+      .ring { border: 8px solid #F85830; border-radius: 50%; box-sizing: border-box; }
+      .arrow { pointer-events: none; overflow: visible; }
+      .arrow line { stroke: #F85830; stroke-width: 8; stroke-linecap: round; }
+      .arrow .hd { fill: none; stroke: #F85830; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .teaser {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 10px 22px 12px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: #2B2118;
+        background: #FFFFFF;
+        border: 2px solid #CDBFA3;
+      }
+      .teaser b { display: block; width: 16px; height: 16px; border-radius: 50%; background: #F85830; }
+
+      /* ---- screen-fixed chrome ---- */
+      #chrome { position: absolute; left: 70px; top: 160px; width: 870px; z-index: 50; color: #2B2118; }
+      #brand { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; }
+      #brand i { display: block; width: 16px; height: 16px; background: #F85830; }
+      #chapters { display: flex; gap: 16px; margin-top: 16px; }
+      .ch { position: relative; flex: 1; padding-bottom: 10px; font-size: 20px; font-weight: 600; white-space: nowrap; }
+      .ch b { font-weight: 800; color: inherit; }
+      .ch::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: currentColor; opacity: 0.18; }
+      .ch i { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: #F85830; transform-origin: 0 50%; }
+
+      .cap {
+        position: absolute;
+        left: 60px;
+        top: 1440px;
+        width: 820px;
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.15;
+        z-index: 60;
+      }
+      .capin {
+        display: inline-block;
+        padding: 12px 30px 16px;
+        color: #2B2118;
+        background: #FFFFFF;
+        border: 3px solid #2B2118;
+        box-shadow: 6px 6px 0 rgba(43, 33, 24, 0.2);
+      }
+      .cw { display: inline-block; }
+
+      #endcard {
+        position: absolute;
+        inset: 0;
+        z-index: 70;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #2B2118;
+        opacity: 0;
+      }
+      #endcard .kick { font-size: 28px; font-weight: 600; letter-spacing: 8px; text-transform: uppercase; color: #B3A58D; margin-bottom: 26px; }
+      #endcard .h { font-size: 132px; font-weight: 900; line-height: 1; letter-spacing: -3px; color: #EFE4CC; text-align: center; }
+      #endcard .sub2 {
+        margin-top: 70px;
+        padding: 24px 56px 28px;
+        font-size: 52px;
+        font-weight: 800;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #F85830;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="73.79">
+      <div id="darkbg"></div>
+      <div id="plx"></div>
+      <div id="dust"><i id="du0" style="left:184px;top:0;width:16px;height:16px;background:#F85830;opacity:0.28"></i><i id="du1" style="left:578px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.2"></i><i id="du2" style="left:549px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.14"></i><i id="du3" style="left:101px;top:0;width:10px;height:10px;background:#F85830;opacity:0.14"></i><i id="du4" style="left:876px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.14"></i><i id="du5" style="left:1000px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.28"></i><i id="du6" style="left:1029px;top:0;width:10px;height:10px;background:#F85830;opacity:0.14"></i><i id="du7" style="left:326px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.14"></i><i id="du8" style="left:345px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.14"></i><i id="du9" style="left:222px;top:0;width:12px;height:12px;background:#F85830;opacity:0.14"></i><i id="du10" style="left:607px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.28"></i><i id="du11" style="left:574px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.2"></i><i id="du12" style="left:494px;top:0;width:12px;height:12px;background:#F85830;opacity:0.2"></i><i id="du13" style="left:745px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.14"></i><i id="du14" style="left:536px;top:0;width:12px;height:12px;background:#2B2118;opacity:0.28"></i><i id="du15" style="left:1033px;top:0;width:8px;height:8px;background:#F85830;opacity:0.14"></i><i id="du16" style="left:805px;top:0;width:12px;height:12px;background:#2B2118;opacity:0.14"></i><i id="du17" style="left:70px;top:0;width:8px;height:8px;background:#2B2118;opacity:0.28"></i><i id="du18" style="left:867px;top:0;width:12px;height:12px;background:#F85830;opacity:0.2"></i><i id="du19" style="left:538px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.14"></i><i id="du20" style="left:306px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.28"></i><i id="du21" style="left:778px;top:0;width:12px;height:12px;background:#F85830;opacity:0.28"></i><i id="du22" style="left:871px;top:0;width:16px;height:16px;background:#2B2118;opacity:0.2"></i><i id="du23" style="left:714px;top:0;width:12px;height:12px;background:#2B2118;opacity:0.14"></i><i id="du24" style="left:655px;top:0;width:8px;height:8px;background:#F85830;opacity:0.2"></i><i id="du25" style="left:324px;top:0;width:10px;height:10px;background:#2B2118;opacity:0.28"></i></div>
+      <div id="drift">
+        <div id="world">
+        <svg class="node route" id="x39" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="540" y1="1190" x2="1620" y2="1190" stroke-dasharray="1082"/><circle cx="1620" cy="1190" r="16"/></svg>
+        <svg class="node route" id="x40" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="1620" y1="1190" x2="2700" y2="1190" stroke-dasharray="1082"/><circle cx="2700" cy="1190" r="16"/></svg>
+        <svg class="node route" id="x41" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="2700" y1="1190" x2="2700" y2="3110" stroke-dasharray="1922"/><circle cx="2700" cy="3110" r="16"/></svg>
+        <svg class="node route" id="x42" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="2700" y1="3110" x2="1620" y2="3110" stroke-dasharray="1082"/><circle cx="1620" cy="3110" r="16"/></svg>
+        <svg class="node route" id="x43" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="1620" y1="3110" x2="540" y2="3110" stroke-dasharray="1082"/><circle cx="540" cy="3110" r="16"/></svg>
+        <svg class="node route" id="x44" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="540" y1="3110" x2="540" y2="5030" stroke-dasharray="1921"/><circle cx="540" cy="5030" r="16"/></svg>
+        <svg class="node route" id="x45" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="540" y1="5030" x2="1620" y2="5030" stroke-dasharray="1082"/><circle cx="1620" cy="5030" r="16"/></svg>
+        <svg class="node route" id="x46" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="1620" y1="5030" x2="2700" y2="5030" stroke-dasharray="1082"/><circle cx="2700" cy="5030" r="16"/></svg>
+        <svg class="node route" id="x47" style="left:0;top:0" width="3240" height="7680" viewBox="0 0 3240 7680"><line x1="2700" y1="5030" x2="2700" y2="6950" stroke-dasharray="1922"/><circle cx="2700" cy="6950" r="16"/></svg>
+        <style>.node.card{background:#fff;border:3px solid #2B2118;padding:22px 28px 26px;box-sizing:border-box;font-weight:700;line-height:1.3;box-shadow:8px 8px 0 rgba(43,33,24,.15)}.card small{display:block;font-size:24px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#7A6C58;margin-bottom:8px}</style>
+        <div class="node headline" id="x1" style="left:70px;top:300px;width:880px"><div class="kick"><i></i>Isaiah 20</div><div class="h" style="font-size:104px"><div>The <em class="hl"><span>naked</span><i></i></em> prophet</div></div></div>
+        <div class="node sticker" id="x2" style="left:60px;top:720px;"><img src="assets/stickers/ancien.png" style="width:230px;height:487px" /></div>
+        <div class="node card" id="x3" style="left:340px;top:740px;width:670px;font-size:56px">Naked and barefoot</div>
+        <div class="node stamp" id="x4" style="left:340px;top:960px;font-size:96px">3 years</div>
+        <div class="node tag acc" id="x5" style="left:340px;top:1130px;font-size:48px">On God's orders</div>
+        <div class="node headline" id="x6" style="left:1150px;top:300px;width:880px"><div class="kick"><i></i>Not a legend</div><div class="h" style="font-size:104px"><div>Isaiah, <em class="hl"><span>chapter 20</span><i></i></em></div></div></div>
+        <div class="node card" id="x7" style="left:1150px;top:720px;width:940px;font-size:80px"><small>In the Bible</small>Isaiah 20</div>
+        <div class="node sticker" id="x8" style="left:1150px;top:1020px;"><img src="assets/stickers/livres.png" style="width:280px;height:331px" /></div>
+        <div class="node headline" id="x9" style="left:2230px;top:300px;width:880px"><div class="kick"><i></i>The context</div><div class="h" style="font-size:104px"><div><em class="hl"><span>711</span><i></i></em> BC</div></div></div>
+        <div class="node tag " id="x10" style="left:2230px;top:720px;font-size:52px">Assyria takes Ashdod</div>
+        <div class="node tag acc" id="x11" style="left:2230px;top:860px;font-size:52px">Judah looks to Egypt</div>
+        <div class="node sticker" id="x12" style="left:3020px;top:700px;"><img src="assets/stickers/soldat.png" style="width:150px;height:343px" /></div>
+        <div class="node sticker" id="x13" style="left:2230px;top:1010px;"><img src="assets/stickers/porte-ville.png" style="width:330px;height:217px" /></div>
+        <div class="node headline" id="x14" style="left:2230px;top:2220px;width:880px"><div class="kick"><i></i>Isaiah 20:2</div><div class="h" style="font-size:112px"><div>The <em class="hl"><span>scene</span><i></i></em></div></div></div>
+        <div class="node tag " id="x15" style="left:2220px;top:2640px;font-size:40px">Isaiah 20:2 · World English Bible</div>
+        <div class="node box wide kq" id="x16" style="left:2220px;top:2640px;width:960px;font-size:52px"><small>Isaiah 20:2 · World English Bible</small><span class="kw" id="x16k0">“Go, </span><span class="kw" id="x16k1">and </span><span class="kw" id="x16k2">loosen </span><span class="kw" id="x16k3">the </span><span class="kw" id="x16k4">sackcloth </span><span class="kw" id="x16k5">from </span><span class="kw" id="x16k6">off </span><span class="kw" id="x16k7">your </span><span class="kw" id="x16k8">waist, </span><span class="kw" id="x16k9">and </span><span class="kw" id="x16k10">take </span><span class="kw" id="x16k11">your </span><span class="kw" id="x16k12">shoes </span><span class="kw" id="x16k13">from </span><span class="kw" id="x16k14">off </span><span class="kw" id="x16k15">your </span><span class="kw" id="x16k16">feet.” </span><span class="kw" id="x16k17">He </span><span class="kw" id="x16k18">did </span><span class="kw" id="x16k19">so, </span><span class="kw" id="x16k20">walking </span><span class="kw" id="x16k21">naked </span><span class="kw" id="x16k22">and </span><span class="kw" id="x16k23">barefoot. </span></div>
+        <div class="node headline" id="x17" style="left:1150px;top:2220px;width:880px"><div class="kick"><i></i>A debated Hebrew word</div><div class="h" style="font-size:100px"><div>What does “<em class="hl"><span>naked</span><i></i></em>” mean?</div></div></div>
+        <div class="node card" id="x18" style="left:1150px;top:2640px;width:940px;font-size:62px">Perhaps: without a cloak, in a tunic</div>
+        <div class="node stamp" id="x19" style="left:1150px;top:2990px;font-size:84px">Debated</div>
+        <div class="node headline" id="x20" style="left:70px;top:2220px;width:880px"><div class="kick"><i></i>An ambiguity</div><div class="h" style="font-size:104px"><div>And the <em class="hl"><span>three years</span><i></i></em>?</div></div></div>
+        <div class="node tag " id="x21" style="left:70px;top:2640px;font-size:54px">Isaiah walks three years</div>
+        <div class="node tag " id="x22" style="left:70px;top:2780px;font-size:54px">The sign lasts three years</div>
+        <div class="node stamp" id="x23" style="left:70px;top:2930px;font-size:76px">Ambiguous text</div>
+        <div class="node headline" id="x24" style="left:70px;top:4140px;width:880px"><div class="kick"><i></i>Isaiah 20:4</div><div class="h" style="font-size:104px"><div>The <em class="hl"><span>meaning</span><i></i></em> is clear</div></div></div>
+        <div class="node tag " id="x25" style="left:70px;top:4560px;font-size:56px">The king of Assyria</div>
+        <div class="node tag acc" id="x26" style="left:70px;top:4700px;font-size:56px">Captives from Egypt</div>
+        <div class="node tag acc" id="x27" style="left:70px;top:4840px;font-size:56px">and from Ethiopia</div>
+        <div class="node sticker" id="x28" style="left:690px;top:4900px;"><img src="assets/stickers/foule.png" style="width:320px;height:277px" /></div>
+        <div class="node headline" id="x29" style="left:1150px;top:4140px;width:880px"><div class="kick"><i></i>The message</div><div class="h" style="font-size:100px"><div>No hope in <em class="hl"><span>Egypt</span><i></i></em></div></div></div>
+        <div class="node card" id="x30" style="left:1150px;top:4560px;width:940px;font-size:64px;border-color:#F85830">Do not put your hope in Egypt</div>
+        <div class="node stamp" id="x31" style="left:1150px;top:4900px;font-size:84px">Not Egypt</div>
+        <div class="node headline" id="x32" style="left:2230px;top:4140px;width:880px"><div class="kick"><i></i>Among the prophets</div><div class="h" style="font-size:104px"><div>A <em class="hl"><span>gesture</span><i></i></em> that speaks</div></div></div>
+        <div class="node tag " id="x33" style="left:2230px;top:4560px;font-size:56px">Jeremiah: a yoke</div>
+        <div class="node tag acc" id="x34" style="left:2230px;top:4700px;font-size:56px">Ezekiel: a siege</div>
+        <div class="node sticker" id="x35" style="left:2230px;top:4850px;"><img src="assets/stickers/rouleau.png" style="width:300px;height:233px" /></div>
+        <div class="node headline" id="x36" style="left:2230px;top:6060px;width:880px"><div class="kick"><i></i>Your turn</div><div class="h" style="font-size:112px"><div>Which <em class="hl"><span>gesture</span><i></i></em>?</div></div></div>
+        <div class="node card" id="x37" style="left:2230px;top:6480px;width:940px;font-size:58px">Which prophet's gesture surprised you the most?</div>
+        <div class="node cta" id="x38" style="left:2230px;top:6840px;"><svg viewBox="0 0 120 100"><path d="M10 12 h100 a8 8 0 0 1 8 8 v46 a8 8 0 0 1 -8 8 h-58 l-22 20 v-20 h-20 a8 8 0 0 1 -8 -8 v-46 a8 8 0 0 1 8 -8 z"/></svg>Tell us in the comments</div>
+        </div>
+      </div>
+
+      <div id="chrome">
+        <div id="brand"><i></i>Faith Engineering</div>
+        <div id="chapters"><div class="ch" id="ch0"><b>01</b> The gesture<i></i></div><div class="ch" id="ch1"><b>02</b> The text<i></i></div><div class="ch" id="ch2"><b>03</b> The meaning<i></i></div><div class="ch" id="ch3"><b>04</b> For you<i></i></div></div>
+      </div>
+
+      <div id="sweep"></div>
+      <p class="clip cap" id="cap0" data-start="0.000" data-duration="2.320"><span class="capin" id="ci0"><span class="cw" id="w0_0">This</span> <span class="cw" id="w0_1">prophet</span> <span class="cw" id="w0_2">walked</span> <span class="cw" id="w0_3">naked</span></span></p>
+      <p class="clip cap" id="cap1" data-start="2.320" data-duration="1.720"><span class="capin" id="ci1"><span class="cw" id="w1_0">and</span> <span class="cw" id="w1_1">barefoot</span> <span class="cw" id="w1_2">for</span> <span class="cw" id="w1_3">three</span></span></p>
+      <p class="clip cap" id="cap2" data-start="4.040" data-duration="1.000"><span class="capin" id="ci2"><span class="cw" id="w2_0">years.</span></span></p>
+      <p class="clip cap" id="cap3" data-start="5.080" data-duration="1.520"><span class="capin" id="ci3"><span class="cw" id="w3_0">On</span> <span class="cw" id="w3_1">God's</span> <span class="cw" id="w3_2">orders.</span></span></p>
+      <p class="clip cap" id="cap4" data-start="6.640" data-duration="1.180"><span class="capin" id="ci4"><span class="cw" id="w4_0">It's</span> <span class="cw" id="w4_1">not</span> <span class="cw" id="w4_2">a</span> <span class="cw" id="w4_3">legend:</span></span></p>
+      <p class="clip cap" id="cap5" data-start="7.820" data-duration="0.720"><span class="capin" id="ci5"><span class="cw" id="w5_0">it's</span> <span class="cw" id="w5_1">Isaiah,</span></span></p>
+      <p class="clip cap" id="cap6" data-start="8.540" data-duration="1.100"><span class="capin" id="ci6"><span class="cw" id="w6_0">chapter</span> <span class="cw" id="w6_1">twenty.</span></span></p>
+      <p class="clip cap" id="cap7" data-start="9.900" data-duration="2.040"><span class="capin" id="ci7"><span class="cw" id="w7_0">Around</span> <span class="cw" id="w7_1">711</span> <span class="cw" id="w7_2">BC,</span></span></p>
+      <p class="clip cap" id="cap8" data-start="12.000" data-duration="1.600"><span class="capin" id="ci8"><span class="cw" id="w8_0">the</span> <span class="cw" id="w8_1">Assyrian</span> <span class="cw" id="w8_2">army</span> <span class="cw" id="w8_3">captures</span></span></p>
+      <p class="clip cap" id="cap9" data-start="13.600" data-duration="0.760"><span class="capin" id="ci9"><span class="cw" id="w9_0">Ashdod,</span></span></p>
+      <p class="clip cap" id="cap10" data-start="14.360" data-duration="0.960"><span class="capin" id="ci10"><span class="cw" id="w10_0">a</span> <span class="cw" id="w10_1">neighbouring</span> <span class="cw" id="w10_2">city.</span></span></p>
+      <p class="clip cap" id="cap11" data-start="15.400" data-duration="1.000"><span class="capin" id="ci11"><span class="cw" id="w11_0">In</span> <span class="cw" id="w11_1">Jerusalem,</span></span></p>
+      <p class="clip cap" id="cap12" data-start="16.420" data-duration="0.740"><span class="capin" id="ci12"><span class="cw" id="w12_0">some</span> <span class="cw" id="w12_1">want</span> <span class="cw" id="w12_2">to</span> <span class="cw" id="w12_3">look</span></span></p>
+      <p class="clip cap" id="cap13" data-start="17.160" data-duration="1.220"><span class="capin" id="ci13"><span class="cw" id="w13_0">to</span> <span class="cw" id="w13_1">Egypt</span> <span class="cw" id="w13_2">for</span> <span class="cw" id="w13_3">help.</span></span></p>
+      <p class="clip cap" id="cap14" data-start="18.540" data-duration="1.160"><span class="capin" id="ci14"><span class="cw" id="w14_0">Here</span> <span class="cw" id="w14_1">is</span> <span class="cw" id="w14_2">the</span> <span class="cw" id="w14_3">scene,</span></span></p>
+      <p class="clip cap" id="cap15" data-start="19.700" data-duration="0.800"><span class="capin" id="ci15"><span class="cw" id="w15_0">in</span> <span class="cw" id="w15_1">the</span> <span class="cw" id="w15_2">World</span> <span class="cw" id="w15_3">English</span></span></p>
+      <p class="clip cap" id="cap16" data-start="20.500" data-duration="0.550"><span class="capin" id="ci16"><span class="cw" id="w16_0">Bible:</span></span></p>
+      <p class="clip cap" id="cap24" data-start="29.320" data-duration="2.020"><span class="capin" id="ci24"><span class="cw" id="w24_0">What</span> <span class="cw" id="w24_1">does</span> <span class="cw" id="w24_2">"naked"</span> <span class="cw" id="w24_3">mean?</span></span></p>
+      <p class="clip cap" id="cap25" data-start="31.480" data-duration="1.340"><span class="capin" id="ci25"><span class="cw" id="w25_0">The</span> <span class="cw" id="w25_1">Hebrew</span> <span class="cw" id="w25_2">word</span> <span class="cw" id="w25_3">can</span></span></p>
+      <p class="clip cap" id="cap26" data-start="32.820" data-duration="1.240"><span class="capin" id="ci26"><span class="cw" id="w26_0">describe</span> <span class="cw" id="w26_1">someone</span> <span class="cw" id="w26_2">without</span> <span class="cw" id="w26_3">a</span></span></p>
+      <p class="clip cap" id="cap27" data-start="34.060" data-duration="0.460"><span class="capin" id="ci27"><span class="cw" id="w27_0">cloak,</span></span></p>
+      <p class="clip cap" id="cap28" data-start="34.520" data-duration="1.160"><span class="capin" id="ci28"><span class="cw" id="w28_0">in</span> <span class="cw" id="w28_1">a</span> <span class="cw" id="w28_2">simple</span> <span class="cw" id="w28_3">tunic.</span></span></p>
+      <p class="clip cap" id="cap29" data-start="35.680" data-duration="1.160"><span class="capin" id="ci29"><span class="cw" id="w29_0">Scholars</span> <span class="cw" id="w29_1">debate</span> <span class="cw" id="w29_2">it.</span></span></p>
+      <p class="clip cap" id="cap30" data-start="36.940" data-duration="1.480"><span class="capin" id="ci30"><span class="cw" id="w30_0">And</span> <span class="cw" id="w30_1">the</span> <span class="cw" id="w30_2">three</span> <span class="cw" id="w30_3">years?</span></span></p>
+      <p class="clip cap" id="cap31" data-start="38.540" data-duration="1.680"><span class="capin" id="ci31"><span class="cw" id="w31_0">Depending</span> <span class="cw" id="w31_1">on</span> <span class="cw" id="w31_2">the</span> <span class="cw" id="w31_3">translation,</span></span></p>
+      <p class="clip cap" id="cap32" data-start="40.320" data-duration="1.480"><span class="capin" id="ci32"><span class="cw" id="w32_0">either</span> <span class="cw" id="w32_1">Isaiah</span> <span class="cw" id="w32_2">walks</span> <span class="cw" id="w32_3">for</span></span></p>
+      <p class="clip cap" id="cap33" data-start="41.800" data-duration="0.640"><span class="capin" id="ci33"><span class="cw" id="w33_0">three</span> <span class="cw" id="w33_1">years,</span></span></p>
+      <p class="clip cap" id="cap34" data-start="42.440" data-duration="1.280"><span class="capin" id="ci34"><span class="cw" id="w34_0">or</span> <span class="cw" id="w34_1">the</span> <span class="cw" id="w34_2">sign</span> <span class="cw" id="w34_3">lasts</span></span></p>
+      <p class="clip cap" id="cap35" data-start="43.720" data-duration="0.860"><span class="capin" id="ci35"><span class="cw" id="w35_0">three</span> <span class="cw" id="w35_1">years.</span></span></p>
+      <p class="clip cap" id="cap36" data-start="44.580" data-duration="1.200"><span class="capin" id="ci36"><span class="cw" id="w36_0">The</span> <span class="cw" id="w36_1">text</span> <span class="cw" id="w36_2">is</span> <span class="cw" id="w36_3">ambiguous.</span></span></p>
+      <p class="clip cap" id="cap37" data-start="46.080" data-duration="1.060"><span class="capin" id="ci37"><span class="cw" id="w37_0">The</span> <span class="cw" id="w37_1">meaning,</span></span></p>
+      <p class="clip cap" id="cap38" data-start="47.140" data-duration="0.300"><span class="capin" id="ci38"><span class="cw" id="w38_0">however,</span></span></p>
+      <p class="clip cap" id="cap39" data-start="47.440" data-duration="0.860"><span class="capin" id="ci39"><span class="cw" id="w39_0">is</span> <span class="cw" id="w39_1">clear.</span></span></p>
+      <p class="clip cap" id="cap40" data-start="48.540" data-duration="1.040"><span class="capin" id="ci40"><span class="cw" id="w40_0">God</span> <span class="cw" id="w40_1">explains:</span></span></p>
+      <p class="clip cap" id="cap41" data-start="49.740" data-duration="1.200"><span class="capin" id="ci41"><span class="cw" id="w41_0">the</span> <span class="cw" id="w41_1">king</span> <span class="cw" id="w41_2">of</span> <span class="cw" id="w41_3">Assyria</span></span></p>
+      <p class="clip cap" id="cap42" data-start="50.940" data-duration="1.280"><span class="capin" id="ci42"><span class="cw" id="w42_0">will</span> <span class="cw" id="w42_1">lead</span> <span class="cw" id="w42_2">away</span> <span class="cw" id="w42_3">captives</span></span></p>
+      <p class="clip cap" id="cap43" data-start="52.220" data-duration="1.440"><span class="capin" id="ci43"><span class="cw" id="w43_0">from</span> <span class="cw" id="w43_1">Egypt</span> <span class="cw" id="w43_2">and</span> <span class="cw" id="w43_3">Ethiopia,</span></span></p>
+      <p class="clip cap" id="cap44" data-start="53.800" data-duration="1.340"><span class="capin" id="ci44"><span class="cw" id="w44_0">naked</span> <span class="cw" id="w44_1">and</span> <span class="cw" id="w44_2">barefoot.</span></span></p>
+      <p class="clip cap" id="cap45" data-start="55.140" data-duration="1.100"><span class="capin" id="ci45"><span class="cw" id="w45_0">The</span> <span class="cw" id="w45_1">message:</span></span></p>
+      <p class="clip cap" id="cap46" data-start="56.240" data-duration="1.240"><span class="capin" id="ci46"><span class="cw" id="w46_0">do</span> <span class="cw" id="w46_1">not</span> <span class="cw" id="w46_2">put</span> <span class="cw" id="w46_3">your</span></span></p>
+      <p class="clip cap" id="cap47" data-start="57.480" data-duration="1.000"><span class="capin" id="ci47"><span class="cw" id="w47_0">hope</span> <span class="cw" id="w47_1">in</span> <span class="cw" id="w47_2">Egypt.</span></span></p>
+      <p class="clip cap" id="cap48" data-start="58.621" data-duration="0.900"><span class="capin" id="ci48"><span class="cw" id="w48_0">Among</span> <span class="cw" id="w48_1">the</span> <span class="cw" id="w48_2">prophets,</span></span></p>
+      <p class="clip cap" id="cap49" data-start="59.701" data-duration="1.300"><span class="capin" id="ci49"><span class="cw" id="w49_0">a</span> <span class="cw" id="w49_1">gesture</span> <span class="cw" id="w49_2">sometimes</span> <span class="cw" id="w49_3">speaks</span></span></p>
+      <p class="clip cap" id="cap50" data-start="61.001" data-duration="1.260"><span class="capin" id="ci50"><span class="cw" id="w50_0">louder</span> <span class="cw" id="w50_1">than</span> <span class="cw" id="w50_2">a</span> <span class="cw" id="w50_3">speech.</span></span></p>
+      <p class="clip cap" id="cap51" data-start="62.321" data-duration="1.580"><span class="capin" id="ci51"><span class="cw" id="w51_0">Jeremiah</span> <span class="cw" id="w51_1">wears</span> <span class="cw" id="w51_2">a</span> <span class="cw" id="w51_3">yoke,</span></span></p>
+      <p class="clip cap" id="cap52" data-start="63.901" data-duration="1.780"><span class="capin" id="ci52"><span class="cw" id="w52_0">Ezekiel</span> <span class="cw" id="w52_1">draws</span> <span class="cw" id="w52_2">a</span> <span class="cw" id="w52_3">siege.</span></span></p>
+      <p class="clip cap" id="cap53" data-start="65.781" data-duration="1.760"><span class="capin" id="ci53"><span class="cw" id="w53_0">Which</span> <span class="cw" id="w53_1">prophet's</span> <span class="cw" id="w53_2">gesture</span> <span class="cw" id="w53_3">surprised</span></span></p>
+      <p class="clip cap" id="cap54" data-start="67.541" data-duration="0.980"><span class="capin" id="ci54"><span class="cw" id="w54_0">you</span> <span class="cw" id="w54_1">the</span> <span class="cw" id="w54_2">most?</span></span></p>
+      <p class="clip cap" id="cap55" data-start="68.521" data-duration="0.580"><span class="capin" id="ci55"><span class="cw" id="w55_0">Tell</span> <span class="cw" id="w55_1">us</span> <span class="cw" id="w55_2">in</span> <span class="cw" id="w55_3">the</span></span></p>
+
+      <div id="endcard">
+        <div class="kick">Subscribe</div>
+        <div class="h">Faith<br /><em class="hl"><span>Engineering</span><i></i></em></div>
+        <div class="sub2">Subscribe</div>
+        <img class="es" id="es1" src="assets/stickers/foule.png" style="left:30px;top:1450px;width:420px;height:364px;transform:rotate(-4deg)" />
+        <img class="es" id="es2" src="assets/stickers/jesus-pied.png" style="left:800px;top:1480px;width:200px;height:369px;transform:rotate(5deg)" />
+      </div>
+      <div id="grain"></div>
+
+      <audio id="voix" src="assets/voix.wav" data-start="0" data-duration="73.79" data-volume="1"></audio>
+      <audio id="music" src="assets/audio/music.wav" data-start="0" data-duration="73.79" data-volume="0.075"></audio>
+      <audio id="jingle" src="assets/audio/jingle.wav" data-start="0" data-duration="1.2" data-volume="0.12"></audio>
+      <audio id="pulse" src="assets/audio/pulse.wav" data-start="0" data-duration="73.79" data-volume="0.05"></audio>
+      <audio id="a0" src="assets/audio/lib/impact-bass-2.mp3" data-start="3.66" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a1" src="assets/audio/lib/pop.mp3" data-start="3.66" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a2" src="assets/audio/lib/impact-bass-2.mp3" data-start="3.5" data-duration="2.0" data-volume="0.063"></audio>
+      <audio id="a3" src="assets/audio/lib/pop.mp3" data-start="3.5" data-duration="0.72" data-volume="0.353"></audio>
+      <audio id="a4" src="assets/audio/lib/pop.mp3" data-start="7.44" data-duration="0.72" data-volume="0.09"></audio>
+      <audio id="a5" src="assets/audio/lib/pop.mp3" data-start="10.2" data-duration="0.72" data-volume="0.09"></audio>
+      <audio id="a6" src="assets/audio/lib/pop.mp3" data-start="10.7" data-duration="0.72" data-volume="0.09"></audio>
+      <audio id="a7" src="assets/audio/lib/impact-bass-2.mp3" data-start="36.06" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a8" src="assets/audio/lib/pop.mp3" data-start="36.06" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a9" src="assets/audio/lib/impact-bass-2.mp3" data-start="45.2" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a10" src="assets/audio/lib/pop.mp3" data-start="45.2" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a11" src="assets/audio/lib/pop.mp3" data-start="51.86" data-duration="0.72" data-volume="0.09"></audio>
+      <audio id="a12" src="assets/audio/lib/impact-bass-2.mp3" data-start="57.92" data-duration="2.0" data-volume="0.07"></audio>
+      <audio id="a13" src="assets/audio/lib/pop.mp3" data-start="57.92" data-duration="0.72" data-volume="0.392"></audio>
+      <audio id="a14" src="assets/audio/lib/pop.mp3" data-start="59.621" data-duration="0.72" data-volume="0.09"></audio>
+      <audio id="a15" src="assets/audio/lib/click-soft.mp3" data-start="67.901" data-duration="0.37" data-volume="0.176"></audio>
+      <audio id="a16" src="assets/audio/lib/whoosh-short.mp3" data-start="6.34" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a17" src="assets/audio/lib/whoosh-short.mp3" data-start="9.6" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a18" src="assets/audio/lib/whoosh-short.mp3" data-start="18.24" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a19" src="assets/audio/lib/whoosh-short.mp3" data-start="29.02" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a20" src="assets/audio/lib/whoosh-short.mp3" data-start="36.64" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a21" src="assets/audio/lib/whoosh-short.mp3" data-start="45.78" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a22" src="assets/audio/lib/whoosh-short.mp3" data-start="54.84" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a23" src="assets/audio/lib/whoosh-short.mp3" data-start="58.321" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a24" src="assets/audio/lib/whoosh-short.mp3" data-start="65.481" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a25" src="assets/audio/lib/whoosh-short.mp3" data-start="69.121" data-duration="0.57" data-volume="0.09"></audio>
+      <audio id="a26" src="assets/audio/lib/impact-bass-2.mp3" data-start="70.321" data-duration="2.0" data-volume="0.035"></audio>
+      <audio id="a27" src="assets/audio/lib/pop.mp3" data-start="70.321" data-duration="0.72" data-volume="0.196"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.set("#world", { x: 0.0, y: 0.0, scale: 1.0 }, 0);
+      tl.set("#plx", { x: 0.0, y: 0.0 }, 0);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 6.34, ease: "none", immediateRender: false }, 0.000);
+      tl.fromTo("#world", { x: 0.0, y: 0.0, scale: 1.0000 }, { x: -1080.0, y: 0.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 6.340);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 6.340);
+      tl.fromTo("#plx", { x: 0.0, y: 0.0 }, { x: -324.0, y: 0.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 6.340);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 6.340);
+      tl.set("#sweep", { opacity: 0 }, 7.260);
+      tl.fromTo("#x39 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 6.340);
+      tl.fromTo("#x39 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 6.940);
+      tl.to("#x39", { opacity: 0, duration: 0.5 }, 7.390);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 2.51, ease: "none", immediateRender: false }, 7.090);
+      tl.fromTo("#world", { x: -1080.0, y: 0.0, scale: 1.0000 }, { x: -2160.0, y: 0.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 9.600);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 9.600);
+      tl.fromTo("#plx", { x: -324.0, y: 0.0 }, { x: -648.0, y: 0.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 9.600);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 9.600);
+      tl.set("#sweep", { opacity: 0 }, 10.520);
+      tl.fromTo("#x40 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 9.600);
+      tl.fromTo("#x40 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 10.200);
+      tl.to("#x40", { opacity: 0, duration: 0.5 }, 10.650);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 7.89, ease: "none", immediateRender: false }, 10.350);
+      tl.fromTo("#world", { x: -2160.0, y: 0.0, scale: 1.0000 }, { x: -2160.0, y: -1920.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 18.240);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 18.240);
+      tl.fromTo("#plx", { x: -648.0, y: 0.0 }, { x: -648.0, y: -576.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 18.240);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 18.240);
+      tl.set("#sweep", { opacity: 0 }, 19.160);
+      tl.fromTo("#x41 line", { strokeDashoffset: 1922 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 18.240);
+      tl.fromTo("#x41 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 18.840);
+      tl.to("#x41", { opacity: 0, duration: 0.5 }, 19.290);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 10.03, ease: "none", immediateRender: false }, 18.990);
+      tl.fromTo("#world", { x: -2160.0, y: -1920.0, scale: 1.0000 }, { x: -1080.0, y: -1920.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 29.020);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 29.020);
+      tl.fromTo("#plx", { x: -648.0, y: -576.0 }, { x: -324.0, y: -576.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 29.020);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 29.020);
+      tl.set("#sweep", { opacity: 0 }, 29.940);
+      tl.fromTo("#x42 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 29.020);
+      tl.fromTo("#x42 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 29.620);
+      tl.to("#x42", { opacity: 0, duration: 0.5 }, 30.070);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 6.87, ease: "none", immediateRender: false }, 29.770);
+      tl.fromTo("#world", { x: -1080.0, y: -1920.0, scale: 1.0000 }, { x: 0.0, y: -1920.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 36.640);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 36.640);
+      tl.fromTo("#plx", { x: -324.0, y: -576.0 }, { x: 0.0, y: -576.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 36.640);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 36.640);
+      tl.set("#sweep", { opacity: 0 }, 37.560);
+      tl.fromTo("#x43 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 36.640);
+      tl.fromTo("#x43 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 37.240);
+      tl.to("#x43", { opacity: 0, duration: 0.5 }, 37.690);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 8.39, ease: "none", immediateRender: false }, 37.390);
+      tl.fromTo("#world", { x: 0.0, y: -1920.0, scale: 1.0000 }, { x: 0.0, y: -3840.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 45.780);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 45.780);
+      tl.fromTo("#plx", { x: 0.0, y: -576.0 }, { x: 0.0, y: -1152.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 45.780);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 45.780);
+      tl.set("#sweep", { opacity: 0 }, 46.700);
+      tl.fromTo("#x44 line", { strokeDashoffset: 1921 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 45.780);
+      tl.fromTo("#x44 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 46.380);
+      tl.to("#x44", { opacity: 0, duration: 0.5 }, 46.830);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 8.31, ease: "none", immediateRender: false }, 46.530);
+      tl.fromTo("#world", { x: 0.0, y: -3840.0, scale: 1.0000 }, { x: -1080.0, y: -3840.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 54.840);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 54.840);
+      tl.fromTo("#plx", { x: 0.0, y: -1152.0 }, { x: -324.0, y: -1152.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 54.840);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 54.840);
+      tl.set("#sweep", { opacity: 0 }, 55.760);
+      tl.fromTo("#x45 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 54.840);
+      tl.fromTo("#x45 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 55.440);
+      tl.to("#x45", { opacity: 0, duration: 0.5 }, 55.890);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 2.73, ease: "none", immediateRender: false }, 55.590);
+      tl.fromTo("#world", { x: -1080.0, y: -3840.0, scale: 1.0000 }, { x: -2160.0, y: -3840.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 58.321);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 58.321);
+      tl.fromTo("#plx", { x: -324.0, y: -1152.0 }, { x: -648.0, y: -1152.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 58.321);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 58.321);
+      tl.set("#sweep", { opacity: 0 }, 59.241);
+      tl.fromTo("#x46 line", { strokeDashoffset: 1082 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 58.321);
+      tl.fromTo("#x46 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 58.921);
+      tl.to("#x46", { opacity: 0, duration: 0.5 }, 59.371);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 6.41, ease: "none", immediateRender: false }, 59.071);
+      tl.fromTo("#world", { x: -2160.0, y: -3840.0, scale: 1.0000 }, { x: -2160.0, y: -5760.0, scale: 1.0000, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 65.481);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(5px)", duration: 0.375, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 65.481);
+      tl.fromTo("#plx", { x: -648.0, y: -1152.0 }, { x: -648.0, y: -1728.0, duration: 0.75, ease: "power3.inOut", immediateRender: false }, 65.481);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 0.90, ease: "power2.inOut", immediateRender: false }, 65.481);
+      tl.set("#sweep", { opacity: 0 }, 66.401);
+      tl.fromTo("#x47 line", { strokeDashoffset: 1922 }, { strokeDashoffset: 0, duration: 0.75, ease: "power3.inOut" }, 65.481);
+      tl.fromTo("#x47 circle", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(3)" }, 66.081);
+      tl.to("#x47", { opacity: 0, duration: 0.5 }, 66.531);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 2.89, ease: "none", immediateRender: false }, 66.231);
+      tl.fromTo("#world", { x: -2160.0, y: -5760.0, scale: 1.0000 }, { x: 167.4, y: 76.8, scale: 0.2300, duration: 0.95, ease: "power3.inOut", immediateRender: false }, 69.121);
+      tl.fromTo("#world", { filter: "blur(0px)" }, { filter: "blur(2px)", duration: 0.475, yoyo: true, repeat: 1, ease: "power2.in", immediateRender: false }, 69.121);
+      tl.fromTo("#plx", { x: -648.0, y: -1728.0 }, { x: 50.2, y: 23.0, duration: 0.95, ease: "power3.inOut", immediateRender: false }, 69.121);
+      tl.fromTo("#sweep", { x: 0, opacity: 1 }, { x: 2052, opacity: 1, duration: 1.10, ease: "power2.inOut", immediateRender: false }, 69.121);
+      tl.set("#sweep", { opacity: 0 }, 70.241);
+      tl.fromTo("#drift", { scale: 1 }, { scale: 1.06, duration: 3.72, ease: "none", immediateRender: false }, 70.071);
+      tl.fromTo("#x1", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 0.000);
+      tl.fromTo("#x1 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 1.040);
+      tl.fromTo("#x2", { opacity: 1, scale: 1.14, rotation: -5 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.9, ease: "power3.out" }, 0.000);
+      tl.fromTo("#x3", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 0.250);
+      tl.fromTo("#x4", { opacity: 0, scale: 2.4, rotation: 10 }, { opacity: 1, scale: 1, rotation: -4, duration: 0.28, ease: "power4.in" }, 3.400);
+      tl.fromTo("#drift", { x: 0 }, { x: 9, duration: 0.04, yoyo: true, repeat: 5, ease: "none", immediateRender: false }, 3.660);
+      tl.set("#drift", { x: 0 }, 3.920);
+      tl.fromTo("#x5", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 5.080);
+      tl.fromTo("#x6", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 6.440);
+      tl.fromTo("#x6 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 8.640);
+      tl.fromTo("#x7", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 7.140);
+      tl.fromTo("#x8", { opacity: 0, scale: 0.55, rotation: -10 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.6, ease: "back.out(1.9)" }, 7.440);
+      tl.fromTo("#x9", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 9.700);
+      tl.fromTo("#x9 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 10.300);
+      tl.fromTo("#x10", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 13.200);
+      tl.fromTo("#x11", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 16.520);
+      tl.fromTo("#x12", { opacity: 0, scale: 0.55, rotation: -6 }, { opacity: 1, scale: 1, rotation: 2, duration: 0.6, ease: "back.out(1.9)" }, 10.200);
+      tl.fromTo("#x13", { opacity: 0, scale: 0.55, rotation: -10 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.6, ease: "back.out(1.9)" }, 10.700);
+      tl.fromTo("#x14", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 18.340);
+      tl.fromTo("#x14 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 18.840);
+      tl.fromTo("#x15", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 18.740);
+      tl.to("#x15", { opacity: 0, duration: 0.3, ease: "power1.in", immediateRender: false }, 21.050);
+      tl.fromTo("#x16", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 21.150);
+      tl.fromTo("#x16k0", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 21.300);
+      tl.fromTo("#x16k1", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 21.700);
+      tl.fromTo("#x16k2", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 22.020);
+      tl.fromTo("#x16k3", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 22.480);
+      tl.fromTo("#x16k4", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 22.680);
+      tl.fromTo("#x16k5", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 23.160);
+      tl.fromTo("#x16k6", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 23.400);
+      tl.fromTo("#x16k7", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 23.620);
+      tl.fromTo("#x16k8", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 23.820);
+      tl.fromTo("#x16k9", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 24.200);
+      tl.fromTo("#x16k10", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 24.520);
+      tl.fromTo("#x16k11", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 24.700);
+      tl.fromTo("#x16k12", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 24.920);
+      tl.fromTo("#x16k13", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 25.220);
+      tl.fromTo("#x16k14", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 25.500);
+      tl.fromTo("#x16k15", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 25.740);
+      tl.fromTo("#x16k16", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 25.920);
+      tl.fromTo("#x16k17", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 26.260);
+      tl.fromTo("#x16k18", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 26.740);
+      tl.fromTo("#x16k19", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 26.900);
+      tl.fromTo("#x16k20", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 27.220);
+      tl.fromTo("#x16k21", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 27.640);
+      tl.fromTo("#x16k22", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 28.060);
+      tl.fromTo("#x16k23", { opacity: 0.22 }, { opacity: 1, duration: 0.12, immediateRender: true }, 28.400);
+      tl.to("#x16", { opacity: 0, duration: 0.3, ease: "power1.in", immediateRender: false }, 28.920);
+      tl.fromTo("#x17", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 29.120);
+      tl.fromTo("#x17 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 29.840);
+      tl.fromTo("#x18", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 30.220);
+      tl.fromTo("#x19", { opacity: 0, scale: 2.4, rotation: 10 }, { opacity: 1, scale: 1, rotation: -4, duration: 0.28, ease: "power4.in" }, 35.800);
+      tl.fromTo("#drift", { x: 0 }, { x: 9, duration: 0.04, yoyo: true, repeat: 5, ease: "none", immediateRender: false }, 36.060);
+      tl.set("#drift", { x: 0 }, 36.320);
+      tl.fromTo("#x20", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 36.740);
+      tl.fromTo("#x20 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 37.480);
+      tl.fromTo("#x21", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 37.380);
+      tl.fromTo("#x22", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 42.420);
+      tl.fromTo("#x23", { opacity: 0, scale: 2.4, rotation: 10 }, { opacity: 1, scale: 1, rotation: -4, duration: 0.28, ease: "power4.in" }, 44.940);
+      tl.fromTo("#drift", { x: 0 }, { x: 9, duration: 0.04, yoyo: true, repeat: 5, ease: "none", immediateRender: false }, 45.200);
+      tl.set("#drift", { x: 0 }, 45.460);
+      tl.fromTo("#x24", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 45.880);
+      tl.fromTo("#x24 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 47.480);
+      tl.fromTo("#x25", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 46.780);
+      tl.fromTo("#x26", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 51.360);
+      tl.fromTo("#x27", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 52.600);
+      tl.fromTo("#x28", { opacity: 0, scale: 0.55, rotation: -6 }, { opacity: 1, scale: 1, rotation: 2, duration: 0.6, ease: "back.out(1.9)" }, 51.860);
+      tl.fromTo("#x29", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 54.940);
+      tl.fromTo("#x29 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 57.460);
+      tl.fromTo("#x30", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 56.580);
+      tl.fromTo("#x31", { opacity: 0, scale: 2.4, rotation: 10 }, { opacity: 1, scale: 1, rotation: -4, duration: 0.28, ease: "power4.in" }, 57.660);
+      tl.fromTo("#drift", { x: 0 }, { x: 9, duration: 0.04, yoyo: true, repeat: 5, ease: "none", immediateRender: false }, 57.920);
+      tl.set("#drift", { x: 0 }, 58.180);
+      tl.fromTo("#x32", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 58.421);
+      tl.fromTo("#x32 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 59.581);
+      tl.fromTo("#x33", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 62.021);
+      tl.fromTo("#x34", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "power3.out" }, 63.601);
+      tl.fromTo("#x35", { opacity: 0, scale: 0.55, rotation: -10 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.6, ease: "back.out(1.9)" }, 59.621);
+      tl.fromTo("#x36", { opacity: 0, y: 30, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 65.581);
+      tl.fromTo("#x36 .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 66.081);
+      tl.fromTo("#x37", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 66.181);
+      tl.fromTo("#x38", { opacity: 0, y: 14, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 67.901);
+      tl.fromTo("#world", { opacity: 1 }, { opacity: 0, duration: 0.4, ease: "power1.in", immediateRender: false }, 69.521);
+      tl.fromTo("#chrome", { opacity: 1 }, { opacity: 0, duration: 0.3, immediateRender: false }, 69.121);
+      tl.fromTo("#endcard", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 69.621);
+      tl.fromTo("#endcard .h", { y: 40, filter: "blur(12px)" }, { y: 0, filter: "blur(0px)", duration: 0.6, ease: "power3.out" }, 69.671);
+      tl.fromTo("#endcard .hl i", { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: "power3.out" }, 70.121);
+      tl.fromTo("#es1, #es2", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.6)", stagger: 0.12 }, 69.871);
+      tl.fromTo("#endcard .sub2", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, 70.321);
+      tl.fromTo("#endcard .sub2", { scale: 1 }, { scale: 1.06, duration: 0.4, yoyo: true, repeat: 1, ease: "sine.inOut", immediateRender: false }, 70.821);
+      tl.fromTo("#ch0 i", { scaleX: 0 }, { scaleX: 1, duration: 18.54, ease: "none", immediateRender: true }, 0.000);
+      tl.fromTo("#ch0", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: true }, 0.000);
+      tl.to("#ch0", { opacity: 0.45, duration: 0.2 }, 18.540);
+      tl.fromTo("#ch1 i", { scaleX: 0 }, { scaleX: 1, duration: 27.54, ease: "none", immediateRender: false }, 18.540);
+      tl.fromTo("#ch1", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: false }, 18.540);
+      tl.to("#ch1", { opacity: 0.45, duration: 0.2 }, 46.080);
+      tl.fromTo("#ch2 i", { scaleX: 0 }, { scaleX: 1, duration: 12.54, ease: "none", immediateRender: false }, 46.080);
+      tl.fromTo("#ch2", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: false }, 46.080);
+      tl.to("#ch2", { opacity: 0.45, duration: 0.2 }, 58.621);
+      tl.fromTo("#ch3 i", { scaleX: 0 }, { scaleX: 1, duration: 15.17, ease: "none", immediateRender: false }, 58.621);
+      tl.fromTo("#ch3", { opacity: 0.45 }, { opacity: 1, duration: 0.2, immediateRender: false }, 58.621);
+      tl.fromTo("#ci0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 0.000);
+      tl.fromTo("#w0_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 0.000);
+      tl.to("#w0_0", { color: "#2B2118", duration: 0.12 }, 0.440);
+      tl.fromTo("#w0_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 0.440);
+      tl.to("#w0_1", { color: "#2B2118", duration: 0.12 }, 0.940);
+      tl.fromTo("#w0_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 0.940);
+      tl.to("#w0_2", { color: "#2B2118", duration: 0.12 }, 1.540);
+      tl.fromTo("#w0_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 1.540);
+      tl.to("#w0_3", { color: "#2B2118", duration: 0.12 }, 2.320);
+      tl.fromTo("#ci1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 2.320);
+      tl.fromTo("#w1_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 2.320);
+      tl.to("#w1_0", { color: "#2B2118", duration: 0.12 }, 2.700);
+      tl.fromTo("#w1_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 2.700);
+      tl.to("#w1_1", { color: "#2B2118", duration: 0.12 }, 3.100);
+      tl.fromTo("#w1_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 3.100);
+      tl.to("#w1_2", { color: "#2B2118", duration: 0.12 }, 3.500);
+      tl.fromTo("#w1_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 3.500);
+      tl.to("#w1_3", { color: "#2B2118", duration: 0.12 }, 4.040);
+      tl.fromTo("#ci2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 4.040);
+      tl.fromTo("#w2_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 4.040);
+      tl.to("#w2_0", { color: "#2B2118", duration: 0.12 }, 4.820);
+      tl.fromTo("#ci3", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 5.080);
+      tl.fromTo("#w3_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 5.080);
+      tl.to("#w3_0", { color: "#2B2118", duration: 0.12 }, 5.480);
+      tl.fromTo("#w3_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 5.480);
+      tl.to("#w3_1", { color: "#2B2118", duration: 0.12 }, 6.020);
+      tl.fromTo("#w3_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 6.020);
+      tl.to("#w3_2", { color: "#2B2118", duration: 0.12 }, 6.380);
+      tl.fromTo("#ci4", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 6.640);
+      tl.fromTo("#w4_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 6.640);
+      tl.to("#w4_0", { color: "#2B2118", duration: 0.12 }, 7.160);
+      tl.fromTo("#w4_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 7.160);
+      tl.to("#w4_1", { color: "#2B2118", duration: 0.12 }, 7.320);
+      tl.fromTo("#w4_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 7.320);
+      tl.to("#w4_2", { color: "#2B2118", duration: 0.12 }, 7.480);
+      tl.fromTo("#w4_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 7.420);
+      tl.to("#w4_3", { color: "#2B2118", duration: 0.12 }, 7.680);
+      tl.fromTo("#ci5", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 7.820);
+      tl.fromTo("#w5_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 7.820);
+      tl.to("#w5_0", { color: "#2B2118", duration: 0.12 }, 8.100);
+      tl.fromTo("#w5_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 8.100);
+      tl.to("#w5_1", { color: "#2B2118", duration: 0.12 }, 8.540);
+      tl.fromTo("#ci6", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 8.540);
+      tl.fromTo("#w6_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 8.540);
+      tl.to("#w6_0", { color: "#2B2118", duration: 0.12 }, 8.940);
+      tl.fromTo("#w6_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 8.940);
+      tl.to("#w6_1", { color: "#2B2118", duration: 0.12 }, 9.420);
+      tl.fromTo("#ci7", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 9.900);
+      tl.fromTo("#w7_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 9.900);
+      tl.to("#w7_0", { color: "#2B2118", duration: 0.12 }, 10.500);
+      tl.fromTo("#w7_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 10.500);
+      tl.to("#w7_1", { color: "#2B2118", duration: 0.12 }, 11.300);
+      tl.fromTo("#w7_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 11.300);
+      tl.to("#w7_2", { color: "#2B2118", duration: 0.12 }, 11.720);
+      tl.fromTo("#ci8", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 12.000);
+      tl.fromTo("#w8_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 12.000);
+      tl.to("#w8_0", { color: "#2B2118", duration: 0.12 }, 12.220);
+      tl.fromTo("#w8_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 12.220);
+      tl.to("#w8_1", { color: "#2B2118", duration: 0.12 }, 12.720);
+      tl.fromTo("#w8_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 12.720);
+      tl.to("#w8_2", { color: "#2B2118", duration: 0.12 }, 13.100);
+      tl.fromTo("#w8_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 13.100);
+      tl.to("#w8_3", { color: "#2B2118", duration: 0.12 }, 13.600);
+      tl.fromTo("#ci9", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 13.600);
+      tl.fromTo("#w9_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 13.600);
+      tl.to("#w9_0", { color: "#2B2118", duration: 0.12 }, 14.260);
+      tl.fromTo("#ci10", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 14.360);
+      tl.fromTo("#w10_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 14.360);
+      tl.to("#w10_0", { color: "#2B2118", duration: 0.12 }, 14.520);
+      tl.fromTo("#w10_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 14.480);
+      tl.to("#w10_1", { color: "#2B2118", duration: 0.12 }, 14.760);
+      tl.fromTo("#w10_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 14.760);
+      tl.to("#w10_2", { color: "#2B2118", duration: 0.12 }, 15.100);
+      tl.fromTo("#ci11", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 15.400);
+      tl.fromTo("#w11_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 15.400);
+      tl.to("#w11_0", { color: "#2B2118", duration: 0.12 }, 15.800);
+      tl.fromTo("#w11_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 15.800);
+      tl.to("#w11_1", { color: "#2B2118", duration: 0.12 }, 16.180);
+      tl.fromTo("#ci12", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 16.420);
+      tl.fromTo("#w12_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 16.420);
+      tl.to("#w12_0", { color: "#2B2118", duration: 0.12 }, 16.620);
+      tl.fromTo("#w12_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 16.620);
+      tl.to("#w12_1", { color: "#2B2118", duration: 0.12 }, 16.820);
+      tl.fromTo("#w12_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 16.820);
+      tl.to("#w12_2", { color: "#2B2118", duration: 0.12 }, 17.040);
+      tl.fromTo("#w12_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.040);
+      tl.to("#w12_3", { color: "#2B2118", duration: 0.12 }, 17.200);
+      tl.fromTo("#ci13", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 17.160);
+      tl.fromTo("#w13_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.160);
+      tl.to("#w13_0", { color: "#2B2118", duration: 0.12 }, 17.320);
+      tl.fromTo("#w13_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.320);
+      tl.to("#w13_1", { color: "#2B2118", duration: 0.12 }, 17.640);
+      tl.fromTo("#w13_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.640);
+      tl.to("#w13_2", { color: "#2B2118", duration: 0.12 }, 17.900);
+      tl.fromTo("#w13_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 17.900);
+      tl.to("#w13_3", { color: "#2B2118", duration: 0.12 }, 18.160);
+      tl.fromTo("#ci14", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 18.540);
+      tl.fromTo("#w14_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 18.540);
+      tl.to("#w14_0", { color: "#2B2118", duration: 0.12 }, 19.140);
+      tl.fromTo("#w14_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 19.140);
+      tl.to("#w14_1", { color: "#2B2118", duration: 0.12 }, 19.300);
+      tl.fromTo("#w14_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 19.280);
+      tl.to("#w14_2", { color: "#2B2118", duration: 0.12 }, 19.440);
+      tl.fromTo("#w14_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 19.420);
+      tl.to("#w14_3", { color: "#2B2118", duration: 0.12 }, 19.700);
+      tl.fromTo("#ci15", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 19.700);
+      tl.fromTo("#w15_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 19.700);
+      tl.to("#w15_0", { color: "#2B2118", duration: 0.12 }, 19.940);
+      tl.fromTo("#w15_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 19.940);
+      tl.to("#w15_1", { color: "#2B2118", duration: 0.12 }, 20.100);
+      tl.fromTo("#w15_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 20.060);
+      tl.to("#w15_2", { color: "#2B2118", duration: 0.12 }, 20.240);
+      tl.fromTo("#w15_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 20.240);
+      tl.to("#w15_3", { color: "#2B2118", duration: 0.12 }, 20.500);
+      tl.fromTo("#ci16", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 20.500);
+      tl.fromTo("#w16_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 20.500);
+      tl.to("#w16_0", { color: "#2B2118", duration: 0.12 }, 20.800);
+      tl.fromTo("#ci24", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 29.320);
+      tl.fromTo("#w24_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 29.320);
+      tl.to("#w24_0", { color: "#2B2118", duration: 0.12 }, 29.920);
+      tl.fromTo("#w24_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 29.920);
+      tl.to("#w24_1", { color: "#2B2118", duration: 0.12 }, 30.140);
+      tl.fromTo("#w24_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 30.140);
+      tl.to("#w24_2", { color: "#2B2118", duration: 0.12 }, 30.700);
+      tl.fromTo("#w24_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 30.700);
+      tl.to("#w24_3", { color: "#2B2118", duration: 0.12 }, 31.120);
+      tl.fromTo("#ci25", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 31.480);
+      tl.fromTo("#w25_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 31.480);
+      tl.to("#w25_0", { color: "#2B2118", duration: 0.12 }, 32.080);
+      tl.fromTo("#w25_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 32.080);
+      tl.to("#w25_1", { color: "#2B2118", duration: 0.12 }, 32.340);
+      tl.fromTo("#w25_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 32.340);
+      tl.to("#w25_2", { color: "#2B2118", duration: 0.12 }, 32.660);
+      tl.fromTo("#w25_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 32.660);
+      tl.to("#w25_3", { color: "#2B2118", duration: 0.12 }, 32.820);
+      tl.fromTo("#ci26", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 32.820);
+      tl.fromTo("#w26_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 32.820);
+      tl.to("#w26_0", { color: "#2B2118", duration: 0.12 }, 33.140);
+      tl.fromTo("#w26_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 33.140);
+      tl.to("#w26_1", { color: "#2B2118", duration: 0.12 }, 33.520);
+      tl.fromTo("#w26_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 33.520);
+      tl.to("#w26_2", { color: "#2B2118", duration: 0.12 }, 33.860);
+      tl.fromTo("#w26_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 33.860);
+      tl.to("#w26_3", { color: "#2B2118", duration: 0.12 }, 34.060);
+      tl.fromTo("#ci27", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 34.060);
+      tl.fromTo("#w27_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 34.060);
+      tl.to("#w27_0", { color: "#2B2118", duration: 0.12 }, 34.360);
+      tl.fromTo("#ci28", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 34.520);
+      tl.fromTo("#w28_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 34.520);
+      tl.to("#w28_0", { color: "#2B2118", duration: 0.12 }, 34.680);
+      tl.fromTo("#w28_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 34.680);
+      tl.to("#w28_1", { color: "#2B2118", duration: 0.12 }, 34.840);
+      tl.fromTo("#w28_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 34.780);
+      tl.to("#w28_2", { color: "#2B2118", duration: 0.12 }, 35.080);
+      tl.fromTo("#w28_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 35.080);
+      tl.to("#w28_3", { color: "#2B2118", duration: 0.12 }, 35.540);
+      tl.fromTo("#ci29", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 35.680);
+      tl.fromTo("#w29_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 35.680);
+      tl.to("#w29_0", { color: "#2B2118", duration: 0.12 }, 36.100);
+      tl.fromTo("#w29_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 36.100);
+      tl.to("#w29_1", { color: "#2B2118", duration: 0.12 }, 36.420);
+      tl.fromTo("#w29_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 36.420);
+      tl.to("#w29_2", { color: "#2B2118", duration: 0.12 }, 36.620);
+      tl.fromTo("#ci30", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 36.940);
+      tl.fromTo("#w30_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 36.940);
+      tl.to("#w30_0", { color: "#2B2118", duration: 0.12 }, 37.540);
+      tl.fromTo("#w30_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 37.540);
+      tl.to("#w30_1", { color: "#2B2118", duration: 0.12 }, 37.700);
+      tl.fromTo("#w30_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 37.680);
+      tl.to("#w30_2", { color: "#2B2118", duration: 0.12 }, 37.900);
+      tl.fromTo("#w30_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 37.900);
+      tl.to("#w30_3", { color: "#2B2118", duration: 0.12 }, 38.200);
+      tl.fromTo("#ci31", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 38.540);
+      tl.fromTo("#w31_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 38.540);
+      tl.to("#w31_0", { color: "#2B2118", duration: 0.12 }, 39.140);
+      tl.fromTo("#w31_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 39.140);
+      tl.to("#w31_1", { color: "#2B2118", duration: 0.12 }, 39.520);
+      tl.fromTo("#w31_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 39.520);
+      tl.to("#w31_2", { color: "#2B2118", duration: 0.12 }, 39.680);
+      tl.fromTo("#w31_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 39.620);
+      tl.to("#w31_3", { color: "#2B2118", duration: 0.12 }, 40.000);
+      tl.fromTo("#ci32", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 40.320);
+      tl.fromTo("#w32_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 40.320);
+      tl.to("#w32_0", { color: "#2B2118", duration: 0.12 }, 40.600);
+      tl.fromTo("#w32_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 40.600);
+      tl.to("#w32_1", { color: "#2B2118", duration: 0.12 }, 41.100);
+      tl.fromTo("#w32_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 41.100);
+      tl.to("#w32_2", { color: "#2B2118", duration: 0.12 }, 41.540);
+      tl.fromTo("#w32_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 41.540);
+      tl.to("#w32_3", { color: "#2B2118", duration: 0.12 }, 41.800);
+      tl.fromTo("#ci33", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 41.800);
+      tl.fromTo("#w33_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 41.800);
+      tl.to("#w33_0", { color: "#2B2118", duration: 0.12 }, 42.000);
+      tl.fromTo("#w33_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 42.000);
+      tl.to("#w33_1", { color: "#2B2118", duration: 0.12 }, 42.380);
+      tl.fromTo("#ci34", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 42.440);
+      tl.fromTo("#w34_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 42.440);
+      tl.to("#w34_0", { color: "#2B2118", duration: 0.12 }, 42.720);
+      tl.fromTo("#w34_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 42.720);
+      tl.to("#w34_1", { color: "#2B2118", duration: 0.12 }, 42.920);
+      tl.fromTo("#w34_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 42.920);
+      tl.to("#w34_2", { color: "#2B2118", duration: 0.12 }, 43.260);
+      tl.fromTo("#w34_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 43.260);
+      tl.to("#w34_3", { color: "#2B2118", duration: 0.12 }, 43.720);
+      tl.fromTo("#ci35", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 43.720);
+      tl.fromTo("#w35_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 43.720);
+      tl.to("#w35_0", { color: "#2B2118", duration: 0.12 }, 44.120);
+      tl.fromTo("#w35_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 44.120);
+      tl.to("#w35_1", { color: "#2B2118", duration: 0.12 }, 44.440);
+      tl.fromTo("#ci36", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 44.580);
+      tl.fromTo("#w36_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 44.580);
+      tl.to("#w36_0", { color: "#2B2118", duration: 0.12 }, 44.840);
+      tl.fromTo("#w36_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 44.840);
+      tl.to("#w36_1", { color: "#2B2118", duration: 0.12 }, 45.060);
+      tl.fromTo("#w36_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 45.060);
+      tl.to("#w36_2", { color: "#2B2118", duration: 0.12 }, 45.240);
+      tl.fromTo("#w36_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 45.240);
+      tl.to("#w36_3", { color: "#2B2118", duration: 0.12 }, 45.560);
+      tl.fromTo("#ci37", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 46.080);
+      tl.fromTo("#w37_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 46.080);
+      tl.to("#w37_0", { color: "#2B2118", duration: 0.12 }, 46.680);
+      tl.fromTo("#w37_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 46.680);
+      tl.to("#w37_1", { color: "#2B2118", duration: 0.12 }, 47.040);
+      tl.fromTo("#ci38", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 47.140);
+      tl.fromTo("#w38_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 47.140);
+      tl.to("#w38_0", { color: "#2B2118", duration: 0.12 }, 47.340);
+      tl.fromTo("#ci39", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 47.440);
+      tl.fromTo("#w39_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 47.440);
+      tl.to("#w39_0", { color: "#2B2118", duration: 0.12 }, 47.680);
+      tl.fromTo("#w39_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 47.680);
+      tl.to("#w39_1", { color: "#2B2118", duration: 0.12 }, 48.080);
+      tl.fromTo("#ci40", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 48.540);
+      tl.fromTo("#w40_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 48.540);
+      tl.to("#w40_0", { color: "#2B2118", duration: 0.12 }, 49.040);
+      tl.fromTo("#w40_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 49.040);
+      tl.to("#w40_1", { color: "#2B2118", duration: 0.12 }, 49.360);
+      tl.fromTo("#ci41", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 49.740);
+      tl.fromTo("#w41_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 49.740);
+      tl.to("#w41_0", { color: "#2B2118", duration: 0.12 }, 50.240);
+      tl.fromTo("#w41_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 50.240);
+      tl.to("#w41_1", { color: "#2B2118", duration: 0.12 }, 50.400);
+      tl.fromTo("#w41_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 50.380);
+      tl.to("#w41_2", { color: "#2B2118", duration: 0.12 }, 50.580);
+      tl.fromTo("#w41_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 50.580);
+      tl.to("#w41_3", { color: "#2B2118", duration: 0.12 }, 50.940);
+      tl.fromTo("#ci42", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 50.940);
+      tl.fromTo("#w42_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 50.940);
+      tl.to("#w42_0", { color: "#2B2118", duration: 0.12 }, 51.200);
+      tl.fromTo("#w42_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 51.200);
+      tl.to("#w42_1", { color: "#2B2118", duration: 0.12 }, 51.460);
+      tl.fromTo("#w42_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 51.460);
+      tl.to("#w42_2", { color: "#2B2118", duration: 0.12 }, 51.660);
+      tl.fromTo("#w42_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 51.660);
+      tl.to("#w42_3", { color: "#2B2118", duration: 0.12 }, 52.220);
+      tl.fromTo("#ci43", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 52.220);
+      tl.fromTo("#w43_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 52.220);
+      tl.to("#w43_0", { color: "#2B2118", duration: 0.12 }, 52.440);
+      tl.fromTo("#w43_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 52.440);
+      tl.to("#w43_1", { color: "#2B2118", duration: 0.12 }, 52.800);
+      tl.fromTo("#w43_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 52.800);
+      tl.to("#w43_2", { color: "#2B2118", duration: 0.12 }, 53.100);
+      tl.fromTo("#w43_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 53.100);
+      tl.to("#w43_3", { color: "#2B2118", duration: 0.12 }, 53.440);
+      tl.fromTo("#ci44", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 53.800);
+      tl.fromTo("#w44_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 53.800);
+      tl.to("#w44_0", { color: "#2B2118", duration: 0.12 }, 54.160);
+      tl.fromTo("#w44_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 54.160);
+      tl.to("#w44_1", { color: "#2B2118", duration: 0.12 }, 54.500);
+      tl.fromTo("#w44_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 54.500);
+      tl.to("#w44_2", { color: "#2B2118", duration: 0.12 }, 54.960);
+      tl.fromTo("#ci45", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 55.140);
+      tl.fromTo("#w45_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 55.140);
+      tl.to("#w45_0", { color: "#2B2118", duration: 0.12 }, 55.720);
+      tl.fromTo("#w45_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 55.720);
+      tl.to("#w45_1", { color: "#2B2118", duration: 0.12 }, 56.020);
+      tl.fromTo("#ci46", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 56.240);
+      tl.fromTo("#w46_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 56.240);
+      tl.to("#w46_0", { color: "#2B2118", duration: 0.12 }, 56.720);
+      tl.fromTo("#w46_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 56.720);
+      tl.to("#w46_1", { color: "#2B2118", duration: 0.12 }, 57.060);
+      tl.fromTo("#w46_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.060);
+      tl.to("#w46_2", { color: "#2B2118", duration: 0.12 }, 57.300);
+      tl.fromTo("#w46_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.300);
+      tl.to("#w46_3", { color: "#2B2118", duration: 0.12 }, 57.480);
+      tl.fromTo("#ci47", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 57.480);
+      tl.fromTo("#w47_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.480);
+      tl.to("#w47_0", { color: "#2B2118", duration: 0.12 }, 57.780);
+      tl.fromTo("#w47_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.780);
+      tl.to("#w47_1", { color: "#2B2118", duration: 0.12 }, 57.960);
+      tl.fromTo("#w47_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 57.960);
+      tl.to("#w47_2", { color: "#2B2118", duration: 0.12 }, 58.260);
+      tl.fromTo("#ci48", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 58.621);
+      tl.fromTo("#w48_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 58.621);
+      tl.to("#w48_0", { color: "#2B2118", duration: 0.12 }, 58.921);
+      tl.fromTo("#w48_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 58.921);
+      tl.to("#w48_1", { color: "#2B2118", duration: 0.12 }, 59.121);
+      tl.fromTo("#w48_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 59.121);
+      tl.to("#w48_2", { color: "#2B2118", duration: 0.12 }, 59.301);
+      tl.fromTo("#ci49", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 59.701);
+      tl.fromTo("#w49_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 59.701);
+      tl.to("#w49_0", { color: "#2B2118", duration: 0.12 }, 59.861);
+      tl.fromTo("#w49_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 59.781);
+      tl.to("#w49_1", { color: "#2B2118", duration: 0.12 }, 60.181);
+      tl.fromTo("#w49_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 60.181);
+      tl.to("#w49_2", { color: "#2B2118", duration: 0.12 }, 60.621);
+      tl.fromTo("#w49_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 60.621);
+      tl.to("#w49_3", { color: "#2B2118", duration: 0.12 }, 61.001);
+      tl.fromTo("#ci50", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 61.001);
+      tl.fromTo("#w50_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 61.001);
+      tl.to("#w50_0", { color: "#2B2118", duration: 0.12 }, 61.461);
+      tl.fromTo("#w50_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 61.461);
+      tl.to("#w50_1", { color: "#2B2118", duration: 0.12 }, 61.681);
+      tl.fromTo("#w50_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 61.681);
+      tl.to("#w50_2", { color: "#2B2118", duration: 0.12 }, 61.841);
+      tl.fromTo("#w50_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 61.801);
+      tl.to("#w50_3", { color: "#2B2118", duration: 0.12 }, 62.041);
+      tl.fromTo("#ci51", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 62.321);
+      tl.fromTo("#w51_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 62.321);
+      tl.to("#w51_0", { color: "#2B2118", duration: 0.12 }, 62.921);
+      tl.fromTo("#w51_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 62.921);
+      tl.to("#w51_1", { color: "#2B2118", duration: 0.12 }, 63.401);
+      tl.fromTo("#w51_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 63.401);
+      tl.to("#w51_2", { color: "#2B2118", duration: 0.12 }, 63.561);
+      tl.fromTo("#w51_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 63.521);
+      tl.to("#w51_3", { color: "#2B2118", duration: 0.12 }, 63.841);
+      tl.fromTo("#ci52", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 63.901);
+      tl.fromTo("#w52_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 63.901);
+      tl.to("#w52_0", { color: "#2B2118", duration: 0.12 }, 64.581);
+      tl.fromTo("#w52_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 64.581);
+      tl.to("#w52_1", { color: "#2B2118", duration: 0.12 }, 64.881);
+      tl.fromTo("#w52_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 64.881);
+      tl.to("#w52_2", { color: "#2B2118", duration: 0.12 }, 65.141);
+      tl.fromTo("#w52_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 65.141);
+      tl.to("#w52_3", { color: "#2B2118", duration: 0.12 }, 65.461);
+      tl.fromTo("#ci53", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 65.781);
+      tl.fromTo("#w53_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 65.781);
+      tl.to("#w53_0", { color: "#2B2118", duration: 0.12 }, 66.381);
+      tl.fromTo("#w53_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 66.381);
+      tl.to("#w53_1", { color: "#2B2118", duration: 0.12 }, 66.861);
+      tl.fromTo("#w53_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 66.861);
+      tl.to("#w53_2", { color: "#2B2118", duration: 0.12 }, 67.101);
+      tl.fromTo("#w53_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 67.101);
+      tl.to("#w53_3", { color: "#2B2118", duration: 0.12 }, 67.541);
+      tl.fromTo("#ci54", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 67.541);
+      tl.fromTo("#w54_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 67.541);
+      tl.to("#w54_0", { color: "#2B2118", duration: 0.12 }, 67.921);
+      tl.fromTo("#w54_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 67.921);
+      tl.to("#w54_1", { color: "#2B2118", duration: 0.12 }, 68.081);
+      tl.fromTo("#w54_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 68.061);
+      tl.to("#w54_2", { color: "#2B2118", duration: 0.12 }, 68.361);
+      tl.fromTo("#ci55", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, 68.521);
+      tl.fromTo("#w55_0", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 68.521);
+      tl.to("#w55_0", { color: "#2B2118", duration: 0.12 }, 68.801);
+      tl.fromTo("#w55_1", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 68.801);
+      tl.to("#w55_1", { color: "#2B2118", duration: 0.12 }, 68.961);
+      tl.fromTo("#w55_2", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 68.941);
+      tl.to("#w55_2", { color: "#2B2118", duration: 0.12 }, 69.101);
+      tl.fromTo("#w55_3", { color: "#2B2118" }, { color: "#F85830", duration: 0.08 }, 69.021);
+      tl.to("#w55_3", { color: "#2B2118", duration: 0.12 }, 69.181);
+      tl.fromTo("#x2 img", { y: 0, rotation: -1.2 }, { y: -10, rotation: 1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 57, immediateRender: false }, 0.900);
+      tl.fromTo("#x8 img", { y: 0, rotation: 1.2 }, { y: -10, rotation: -1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 51, immediateRender: false }, 8.140);
+      tl.fromTo("#x12 img", { y: 0, rotation: -1.2 }, { y: -10, rotation: 1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 49, immediateRender: false }, 10.900);
+      tl.fromTo("#x13 img", { y: 0, rotation: 1.2 }, { y: -10, rotation: -1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 48, immediateRender: false }, 11.400);
+      tl.fromTo("#x28 img", { y: 0, rotation: -1.2 }, { y: -10, rotation: 1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 15, immediateRender: false }, 52.560);
+      tl.fromTo("#x35 img", { y: 0, rotation: 1.2 }, { y: -10, rotation: -1.2, duration: 1.250, ease: "sine.inOut", yoyo: true, repeat: 9, immediateRender: false }, 60.321);
+      tl.fromTo("#du0", { y: 98 }, { y: -40, duration: 0.80, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du0", { y: 1950 }, { y: -40, duration: 11.59, ease: "none", repeat: 7, immediateRender: false }, 0.804);
+      tl.fromTo("#du0", { x: -14 }, { x: 14, duration: 3.86, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du1", { y: 1193 }, { y: -40, duration: 5.94, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du1", { y: 1950 }, { y: -40, duration: 9.58, ease: "none", repeat: 8, immediateRender: false }, 5.935);
+      tl.fromTo("#du1", { x: -14 }, { x: 14, duration: 3.19, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du2", { y: 176 }, { y: -40, duration: 1.03, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du2", { y: 1950 }, { y: -40, duration: 9.46, ease: "none", repeat: 8, immediateRender: false }, 1.027);
+      tl.fromTo("#du2", { x: -14 }, { x: 14, duration: 3.15, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du3", { y: 1128 }, { y: -40, duration: 7.32, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du3", { y: 1950 }, { y: -40, duration: 12.47, ease: "none", repeat: 6, immediateRender: false }, 7.319);
+      tl.fromTo("#du3", { x: -14 }, { x: 14, duration: 4.16, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du4", { y: 1291 }, { y: -40, duration: 8.29, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du4", { y: 1950 }, { y: -40, duration: 12.40, ease: "none", repeat: 6, immediateRender: false }, 8.291);
+      tl.fromTo("#du4", { x: -14 }, { x: 14, duration: 4.13, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du5", { y: 1199 }, { y: -40, duration: 8.73, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du5", { y: 1950 }, { y: -40, duration: 14.02, ease: "none", repeat: 6, immediateRender: false }, 8.729);
+      tl.fromTo("#du5", { x: -14 }, { x: 14, duration: 4.67, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du6", { y: 1140 }, { y: -40, duration: 7.22, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du6", { y: 1950 }, { y: -40, duration: 12.17, ease: "none", repeat: 7, immediateRender: false }, 7.218);
+      tl.fromTo("#du6", { x: -14 }, { x: 14, duration: 4.06, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du7", { y: 1107 }, { y: -40, duration: 9.15, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du7", { y: 1950 }, { y: -40, duration: 15.87, ease: "none", repeat: 5, immediateRender: false }, 9.146);
+      tl.fromTo("#du7", { x: -14 }, { x: 14, duration: 5.29, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du8", { y: 1191 }, { y: -40, duration: 6.15, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du8", { y: 1950 }, { y: -40, duration: 9.94, ease: "none", repeat: 8, immediateRender: false }, 6.150);
+      tl.fromTo("#du8", { x: -14 }, { x: 14, duration: 3.31, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du9", { y: 1121 }, { y: -40, duration: 7.92, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du9", { y: 1950 }, { y: -40, duration: 13.57, ease: "none", repeat: 6, immediateRender: false }, 7.917);
+      tl.fromTo("#du9", { x: -14 }, { x: 14, duration: 4.52, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du10", { y: 421 }, { y: -40, duration: 3.40, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du10", { y: 1950 }, { y: -40, duration: 14.70, ease: "none", repeat: 6, immediateRender: false }, 3.405);
+      tl.fromTo("#du10", { x: -14 }, { x: 14, duration: 4.90, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du11", { y: 953 }, { y: -40, duration: 6.47, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du11", { y: 1950 }, { y: -40, duration: 12.97, ease: "none", repeat: 6, immediateRender: false }, 6.473);
+      tl.fromTo("#du11", { x: -14 }, { x: 14, duration: 4.32, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du12", { y: 508 }, { y: -40, duration: 3.77, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du12", { y: 1950 }, { y: -40, duration: 13.68, ease: "none", repeat: 6, immediateRender: false }, 3.768);
+      tl.fromTo("#du12", { x: -14 }, { x: 14, duration: 4.56, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du13", { y: 1176 }, { y: -40, duration: 9.38, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du13", { y: 1950 }, { y: -40, duration: 15.36, ease: "none", repeat: 5, immediateRender: false }, 9.383);
+      tl.fromTo("#du13", { x: -14 }, { x: 14, duration: 5.12, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du14", { y: 919 }, { y: -40, duration: 5.49, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du14", { y: 1950 }, { y: -40, duration: 11.40, ease: "none", repeat: 7, immediateRender: false }, 5.495);
+      tl.fromTo("#du14", { x: -14 }, { x: 14, duration: 3.80, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du15", { y: 1048 }, { y: -40, duration: 6.18, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du15", { y: 1950 }, { y: -40, duration: 11.30, ease: "none", repeat: 7, immediateRender: false }, 6.180);
+      tl.fromTo("#du15", { x: -14 }, { x: 14, duration: 3.77, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du16", { y: 1911 }, { y: -40, duration: 12.10, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du16", { y: 1950 }, { y: -40, duration: 12.34, ease: "none", repeat: 6, immediateRender: false }, 12.103);
+      tl.fromTo("#du16", { x: -14 }, { x: 14, duration: 4.11, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du17", { y: 1173 }, { y: -40, duration: 7.87, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du17", { y: 1950 }, { y: -40, duration: 12.91, ease: "none", repeat: 6, immediateRender: false }, 7.870);
+      tl.fromTo("#du17", { x: -14 }, { x: 14, duration: 4.30, ease: "sine.inOut", yoyo: true, repeat: 19, immediateRender: false }, 0);
+      tl.fromTo("#du18", { y: 1423 }, { y: -40, duration: 11.26, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du18", { y: 1950 }, { y: -40, duration: 15.31, ease: "none", repeat: 5, immediateRender: false }, 11.258);
+      tl.fromTo("#du18", { x: -14 }, { x: 14, duration: 5.10, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du19", { y: 1720 }, { y: -40, duration: 10.44, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du19", { y: 1950 }, { y: -40, duration: 11.80, ease: "none", repeat: 7, immediateRender: false }, 10.437);
+      tl.fromTo("#du19", { x: -14 }, { x: 14, duration: 3.93, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du20", { y: 1360 }, { y: -40, duration: 6.86, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du20", { y: 1950 }, { y: -40, duration: 9.75, ease: "none", repeat: 8, immediateRender: false }, 6.858);
+      tl.fromTo("#du20", { x: -14 }, { x: 14, duration: 3.25, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du21", { y: 1183 }, { y: -40, duration: 5.85, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du21", { y: 1950 }, { y: -40, duration: 9.52, ease: "none", repeat: 8, immediateRender: false }, 5.851);
+      tl.fromTo("#du21", { x: -14 }, { x: 14, duration: 3.17, ease: "sine.inOut", yoyo: true, repeat: 25, immediateRender: false }, 0);
+      tl.fromTo("#du22", { y: 1467 }, { y: -40, duration: 12.83, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du22", { y: 1950 }, { y: -40, duration: 16.94, ease: "none", repeat: 5, immediateRender: false }, 12.832);
+      tl.fromTo("#du22", { x: -14 }, { x: 14, duration: 5.65, ease: "sine.inOut", yoyo: true, repeat: 16, immediateRender: false }, 0);
+      tl.fromTo("#du23", { y: 945 }, { y: -40, duration: 5.98, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du23", { y: 1950 }, { y: -40, duration: 12.09, ease: "none", repeat: 7, immediateRender: false }, 5.982);
+      tl.fromTo("#du23", { x: -14 }, { x: 14, duration: 4.03, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du24", { y: 120 }, { y: -40, duration: 0.95, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du24", { y: 1950 }, { y: -40, duration: 11.84, ease: "none", repeat: 7, immediateRender: false }, 0.952);
+      tl.fromTo("#du24", { x: -14 }, { x: 14, duration: 3.95, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#du25", { y: 507 }, { y: -40, duration: 2.95, ease: "none", immediateRender: true }, 0);
+      tl.fromTo("#du25", { y: 1950 }, { y: -40, duration: 10.75, ease: "none", repeat: 7, immediateRender: false }, 2.954);
+      tl.fromTo("#du25", { x: -14 }, { x: 14, duration: 3.58, ease: "sine.inOut", yoyo: true, repeat: 22, immediateRender: false }, 0);
+      tl.fromTo("#w0_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 0.000);
+      tl.fromTo("#w0_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 0.440);
+      tl.fromTo("#w0_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 0.940);
+      tl.fromTo("#w0_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 1.540);
+      tl.fromTo("#w1_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 2.320);
+      tl.fromTo("#w1_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 2.700);
+      tl.fromTo("#w1_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 3.100);
+      tl.fromTo("#w1_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 3.500);
+      tl.fromTo("#w2_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 4.040);
+      tl.fromTo("#w3_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 5.080);
+      tl.fromTo("#w3_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 5.480);
+      tl.fromTo("#w3_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 6.020);
+      tl.fromTo("#w4_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 6.640);
+      tl.fromTo("#w4_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 7.160);
+      tl.fromTo("#w4_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 7.320);
+      tl.fromTo("#w4_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 7.420);
+      tl.fromTo("#w5_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 7.820);
+      tl.fromTo("#w5_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 8.100);
+      tl.fromTo("#w6_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 8.540);
+      tl.fromTo("#w6_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 8.940);
+      tl.fromTo("#w7_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 9.900);
+      tl.fromTo("#w7_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 10.500);
+      tl.fromTo("#w7_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 11.300);
+      tl.fromTo("#w8_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 12.000);
+      tl.fromTo("#w8_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 12.220);
+      tl.fromTo("#w8_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 12.720);
+      tl.fromTo("#w8_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 13.100);
+      tl.fromTo("#w9_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 13.600);
+      tl.fromTo("#w10_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 14.360);
+      tl.fromTo("#w10_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 14.480);
+      tl.fromTo("#w10_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 14.760);
+      tl.fromTo("#w11_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 15.400);
+      tl.fromTo("#w11_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 15.800);
+      tl.fromTo("#w12_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 16.420);
+      tl.fromTo("#w12_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 16.620);
+      tl.fromTo("#w12_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 16.820);
+      tl.fromTo("#w12_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.040);
+      tl.fromTo("#w13_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.160);
+      tl.fromTo("#w13_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.320);
+      tl.fromTo("#w13_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.640);
+      tl.fromTo("#w13_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 17.900);
+      tl.fromTo("#w14_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 18.540);
+      tl.fromTo("#w14_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 19.140);
+      tl.fromTo("#w14_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 19.280);
+      tl.fromTo("#w14_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 19.420);
+      tl.fromTo("#w15_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 19.700);
+      tl.fromTo("#w15_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 19.940);
+      tl.fromTo("#w15_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 20.060);
+      tl.fromTo("#w15_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 20.240);
+      tl.fromTo("#w16_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 20.500);
+      tl.fromTo("#w24_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 29.320);
+      tl.fromTo("#w24_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 29.920);
+      tl.fromTo("#w24_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 30.140);
+      tl.fromTo("#w24_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 30.700);
+      tl.fromTo("#w25_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 31.480);
+      tl.fromTo("#w25_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 32.080);
+      tl.fromTo("#w25_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 32.340);
+      tl.fromTo("#w25_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 32.660);
+      tl.fromTo("#w26_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 32.820);
+      tl.fromTo("#w26_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 33.140);
+      tl.fromTo("#w26_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 33.520);
+      tl.fromTo("#w26_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 33.860);
+      tl.fromTo("#w27_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 34.060);
+      tl.fromTo("#w28_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 34.520);
+      tl.fromTo("#w28_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 34.680);
+      tl.fromTo("#w28_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 34.780);
+      tl.fromTo("#w28_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 35.080);
+      tl.fromTo("#w29_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 35.680);
+      tl.fromTo("#w29_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 36.100);
+      tl.fromTo("#w29_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 36.420);
+      tl.fromTo("#w30_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 36.940);
+      tl.fromTo("#w30_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 37.540);
+      tl.fromTo("#w30_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 37.680);
+      tl.fromTo("#w30_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 37.900);
+      tl.fromTo("#w31_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 38.540);
+      tl.fromTo("#w31_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 39.140);
+      tl.fromTo("#w31_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 39.520);
+      tl.fromTo("#w31_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 39.620);
+      tl.fromTo("#w32_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 40.320);
+      tl.fromTo("#w32_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 40.600);
+      tl.fromTo("#w32_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 41.100);
+      tl.fromTo("#w32_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 41.540);
+      tl.fromTo("#w33_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 41.800);
+      tl.fromTo("#w33_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 42.000);
+      tl.fromTo("#w34_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 42.440);
+      tl.fromTo("#w34_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 42.720);
+      tl.fromTo("#w34_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 42.920);
+      tl.fromTo("#w34_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 43.260);
+      tl.fromTo("#w35_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 43.720);
+      tl.fromTo("#w35_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 44.120);
+      tl.fromTo("#w36_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 44.580);
+      tl.fromTo("#w36_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 44.840);
+      tl.fromTo("#w36_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 45.060);
+      tl.fromTo("#w36_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 45.240);
+      tl.fromTo("#w37_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 46.080);
+      tl.fromTo("#w37_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 46.680);
+      tl.fromTo("#w38_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 47.140);
+      tl.fromTo("#w39_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 47.440);
+      tl.fromTo("#w39_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 47.680);
+      tl.fromTo("#w40_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 48.540);
+      tl.fromTo("#w40_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 49.040);
+      tl.fromTo("#w41_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 49.740);
+      tl.fromTo("#w41_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 50.240);
+      tl.fromTo("#w41_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 50.380);
+      tl.fromTo("#w41_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 50.580);
+      tl.fromTo("#w42_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 50.940);
+      tl.fromTo("#w42_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 51.200);
+      tl.fromTo("#w42_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 51.460);
+      tl.fromTo("#w42_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 51.660);
+      tl.fromTo("#w43_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 52.220);
+      tl.fromTo("#w43_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 52.440);
+      tl.fromTo("#w43_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 52.800);
+      tl.fromTo("#w43_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 53.100);
+      tl.fromTo("#w44_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 53.800);
+      tl.fromTo("#w44_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 54.160);
+      tl.fromTo("#w44_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 54.500);
+      tl.fromTo("#w45_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 55.140);
+      tl.fromTo("#w45_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 55.720);
+      tl.fromTo("#w46_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 56.240);
+      tl.fromTo("#w46_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 56.720);
+      tl.fromTo("#w46_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.060);
+      tl.fromTo("#w46_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.300);
+      tl.fromTo("#w47_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.480);
+      tl.fromTo("#w47_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.780);
+      tl.fromTo("#w47_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 57.960);
+      tl.fromTo("#w48_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 58.621);
+      tl.fromTo("#w48_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 58.921);
+      tl.fromTo("#w48_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 59.121);
+      tl.fromTo("#w49_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 59.701);
+      tl.fromTo("#w49_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 59.781);
+      tl.fromTo("#w49_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 60.181);
+      tl.fromTo("#w49_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 60.621);
+      tl.fromTo("#w50_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 61.001);
+      tl.fromTo("#w50_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 61.461);
+      tl.fromTo("#w50_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 61.681);
+      tl.fromTo("#w50_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 61.801);
+      tl.fromTo("#w51_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 62.321);
+      tl.fromTo("#w51_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 62.921);
+      tl.fromTo("#w51_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 63.401);
+      tl.fromTo("#w51_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 63.521);
+      tl.fromTo("#w52_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 63.901);
+      tl.fromTo("#w52_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 64.581);
+      tl.fromTo("#w52_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 64.881);
+      tl.fromTo("#w52_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 65.141);
+      tl.fromTo("#w53_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 65.781);
+      tl.fromTo("#w53_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 66.381);
+      tl.fromTo("#w53_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 66.861);
+      tl.fromTo("#w53_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 67.101);
+      tl.fromTo("#w54_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 67.541);
+      tl.fromTo("#w54_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 67.921);
+      tl.fromTo("#w54_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 68.061);
+      tl.fromTo("#w55_0", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 68.521);
+      tl.fromTo("#w55_1", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 68.801);
+      tl.fromTo("#w55_2", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 68.941);
+      tl.fromTo("#w55_3", { scale: 1.07 }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, 69.021);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
