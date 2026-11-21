@@ -6,7 +6,7 @@ Source des idées : `sujets/sujets-longs-source.md` (document fourni par l'utili
 
 | Sujet | Dossier | Origine |
 |---|---|---|
-| 666 : Pourquoi tout ce qu'on vous a raconté est FAUX | `montage/video-666/` | document, section « Décryptage de symboles » (titre imposé par l'utilisateur) |
+| 666 : Pourquoi tout ce qu'on vous a raconté est FAUX | `montage/video-666/` | document, section « Décryptage de symboles » (titre imposé par l'utilisateur) ; FR : script, voix, montage et brouillon faits ; EN et IT à faire sur demande |
 | Nicodème (visite de nuit) | `montage/video-nicodeme*/` | demande directe |
 | « Aide-toi, le ciel t'aidera » | `montage/video-aide-toi*/` | demande directe |
 | Guérisons | `montage/video-guerisons*/` | demande directe |
