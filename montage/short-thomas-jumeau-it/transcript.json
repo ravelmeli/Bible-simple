@@ -1,0 +1,832 @@
+[
+ {
+  "text": "Quale",
+  "start": 0.0,
+  "end": 0.66
+ },
+ {
+  "text": "apostolo",
+  "start": 0.66,
+  "end": 1.22
+ },
+ {
+  "text": "aveva",
+  "start": 1.22,
+  "end": 1.52
+ },
+ {
+  "text": "come",
+  "start": 1.52,
+  "end": 1.66
+ },
+ {
+  "text": "soprannome",
+  "start": 1.66,
+  "end": 2.36
+ },
+ {
+  "text": "«il",
+  "start": 2.36,
+  "end": 2.68
+ },
+ {
+  "text": "gemello»?",
+  "start": 2.68,
+  "end": 3.42
+ },
+ {
+  "text": "Tommaso.",
+  "start": 3.7,
+  "end": 4.3
+ },
+ {
+  "text": "Nel",
+  "start": 4.56,
+  "end": 5.16
+ },
+ {
+  "text": "vangelo",
+  "start": 5.16,
+  "end": 5.46
+ },
+ {
+  "text": "di",
+  "start": 5.46,
+  "end": 5.62
+ },
+ {
+  "text": "Giovanni",
+  "start": 5.62,
+  "end": 6.0
+ },
+ {
+  "text": "si",
+  "start": 6.0,
+  "end": 6.28
+ },
+ {
+  "text": "legge:",
+  "start": 6.28,
+  "end": 6.62
+ },
+ {
+  "text": "«Tommaso,",
+  "start": 6.62,
+  "end": 7.42
+ },
+ {
+  "text": "detto",
+  "start": 7.42,
+  "end": 7.92
+ },
+ {
+  "text": "Didimo».",
+  "start": 7.92,
+  "end": 8.74
+ },
+ {
+  "text": "Due",
+  "start": 9.16,
+  "end": 9.76
+ },
+ {
+  "text": "nomi",
+  "start": 9.76,
+  "end": 10.16
+ },
+ {
+  "text": "per",
+  "start": 10.16,
+  "end": 10.32
+ },
+ {
+  "text": "una",
+  "start": 10.32,
+  "end": 10.46
+ },
+ {
+  "text": "sola",
+  "start": 10.46,
+  "end": 10.68
+ },
+ {
+  "text": "idea.",
+  "start": 10.68,
+  "end": 10.88
+ },
+ {
+  "text": "«Tommaso»",
+  "start": 11.34,
+  "end": 11.94
+ },
+ {
+  "text": "viene",
+  "start": 11.94,
+  "end": 12.22
+ },
+ {
+  "text": "dall'aramaico,",
+  "start": 12.22,
+  "end": 13.04
+ },
+ {
+  "text": "«Didimo»",
+  "start": 13.2,
+  "end": 13.82
+ },
+ {
+  "text": "dal",
+  "start": 13.82,
+  "end": 14.16
+ },
+ {
+  "text": "greco,",
+  "start": 14.16,
+  "end": 14.64
+ },
+ {
+  "text": "e",
+  "start": 14.68,
+  "end": 15.06
+ },
+ {
+  "text": "tutti",
+  "start": 15.06,
+  "end": 15.36
+ },
+ {
+  "text": "e",
+  "start": 15.36,
+  "end": 15.52
+ },
+ {
+  "text": "due",
+  "start": 15.52,
+  "end": 15.7
+ },
+ {
+  "text": "significano",
+  "start": 15.7,
+  "end": 16.38
+ },
+ {
+  "text": "«gemello».",
+  "start": 16.38,
+  "end": 17.26
+ },
+ {
+  "text": "Gemello",
+  "start": 17.72,
+  "end": 18.32
+ },
+ {
+  "text": "di",
+  "start": 18.32,
+  "end": 18.44
+ },
+ {
+  "text": "chi?",
+  "start": 18.44,
+  "end": 18.56
+ },
+ {
+  "text": "La",
+  "start": 18.64,
+  "end": 19.16
+ },
+ {
+  "text": "Bibbia",
+  "start": 19.16,
+  "end": 19.48
+ },
+ {
+  "text": "non",
+  "start": 19.48,
+  "end": 19.68
+ },
+ {
+  "text": "lo",
+  "start": 19.68,
+  "end": 19.8
+ },
+ {
+  "text": "dice.",
+  "start": 19.8,
+  "end": 20.04
+ },
+ {
+  "text": "Antichi",
+  "start": 20.454,
+  "end": 21.054
+ },
+ {
+  "text": "scritti",
+  "start": 21.054,
+  "end": 21.554
+ },
+ {
+  "text": "non",
+  "start": 21.554,
+  "end": 21.794
+ },
+ {
+  "text": "biblici,",
+  "start": 21.794,
+  "end": 22.494
+ },
+ {
+  "text": "come",
+  "start": 22.494,
+  "end": 22.714
+ },
+ {
+  "text": "gli",
+  "start": 22.714,
+  "end": 22.854
+ },
+ {
+  "text": "Atti",
+  "start": 22.854,
+  "end": 23.174
+ },
+ {
+  "text": "di",
+  "start": 23.174,
+  "end": 23.254
+ },
+ {
+  "text": "Tommaso,",
+  "start": 23.254,
+  "end": 23.734
+ },
+ {
+  "text": "ne",
+  "start": 23.854,
+  "end": 24.014
+ },
+ {
+  "text": "fanno",
+  "start": 24.014,
+  "end": 24.254
+ },
+ {
+  "text": "il",
+  "start": 24.254,
+  "end": 24.414
+ },
+ {
+  "text": "gemello",
+  "start": 24.414,
+  "end": 24.794
+ },
+ {
+  "text": "di",
+  "start": 24.794,
+  "end": 24.974
+ },
+ {
+  "text": "Gesù.",
+  "start": 24.974,
+  "end": 25.434
+ },
+ {
+  "text": "È",
+  "start": 25.594,
+  "end": 26.154
+ },
+ {
+  "text": "una",
+  "start": 26.154,
+  "end": 26.314
+ },
+ {
+  "text": "tradizione",
+  "start": 26.314,
+  "end": 26.814
+ },
+ {
+  "text": "tarda,",
+  "start": 26.814,
+  "end": 27.354
+ },
+ {
+  "text": "senza",
+  "start": 27.354,
+  "end": 27.514
+ },
+ {
+  "text": "appoggio",
+  "start": 27.514,
+  "end": 28.194
+ },
+ {
+  "text": "nei",
+  "start": 28.194,
+  "end": 28.314
+ },
+ {
+  "text": "Vangeli.",
+  "start": 28.314,
+  "end": 28.694
+ },
+ {
+  "text": "Lo",
+  "start": 29.174,
+  "end": 29.734
+ },
+ {
+  "text": "si",
+  "start": 29.734,
+  "end": 29.854
+ },
+ {
+  "text": "chiama",
+  "start": 29.854,
+  "end": 30.094
+ },
+ {
+  "text": "spesso",
+  "start": 30.094,
+  "end": 30.514
+ },
+ {
+  "text": "«l'incredulo»,",
+  "start": 30.514,
+  "end": 31.294
+ },
+ {
+  "text": "a",
+  "start": 31.394,
+  "end": 31.674
+ },
+ {
+  "text": "causa",
+  "start": 31.674,
+  "end": 31.994
+ },
+ {
+  "text": "di",
+  "start": 31.994,
+  "end": 32.174
+ },
+ {
+  "text": "Giovanni",
+  "start": 32.174,
+  "end": 32.614
+ },
+ {
+  "text": "20.",
+  "start": 32.614,
+  "end": 32.854
+ },
+ {
+  "text": "Rifiuta",
+  "start": 33.294,
+  "end": 33.854
+ },
+ {
+  "text": "di",
+  "start": 33.854,
+  "end": 33.994
+ },
+ {
+  "text": "credere",
+  "start": 33.994,
+  "end": 34.434
+ },
+ {
+  "text": "alla",
+  "start": 34.434,
+  "end": 34.574
+ },
+ {
+  "text": "risurrezione",
+  "start": 34.574,
+  "end": 35.294
+ },
+ {
+  "text": "senza",
+  "start": 35.294,
+  "end": 35.574
+ },
+ {
+  "text": "vedere",
+  "start": 35.574,
+  "end": 35.894
+ },
+ {
+  "text": "e",
+  "start": 35.894,
+  "end": 36.234
+ },
+ {
+  "text": "toccare",
+  "start": 36.234,
+  "end": 36.654
+ },
+ {
+  "text": "le",
+  "start": 36.654,
+  "end": 36.854
+ },
+ {
+  "text": "piaghe",
+  "start": 36.854,
+  "end": 37.194
+ },
+ {
+  "text": "di",
+  "start": 37.194,
+  "end": 37.314
+ },
+ {
+  "text": "Gesù.",
+  "start": 37.314,
+  "end": 37.634
+ },
+ {
+  "text": "Otto",
+  "start": 37.854,
+  "end": 38.414
+ },
+ {
+  "text": "giorni",
+  "start": 38.414,
+  "end": 38.814
+ },
+ {
+  "text": "dopo,",
+  "start": 38.814,
+  "end": 38.974
+ },
+ {
+  "text": "Gesù",
+  "start": 38.974,
+  "end": 39.394
+ },
+ {
+  "text": "gli",
+  "start": 39.394,
+  "end": 39.454
+ },
+ {
+  "text": "dice,",
+  "start": 39.454,
+  "end": 39.774
+ },
+ {
+  "text": "nella",
+  "start": 39.874,
+  "end": 40.114
+ },
+ {
+  "text": "Riveduta:",
+  "start": 40.114,
+  "end": 40.654
+ },
+ {
+  "text": "«Perché",
+  "start": 40.734,
+  "end": 41.454
+ },
+ {
+  "text": "m'hai",
+  "start": 41.454,
+  "end": 41.714
+ },
+ {
+  "text": "veduto,",
+  "start": 41.714,
+  "end": 42.194
+ },
+ {
+  "text": "tu",
+  "start": 42.194,
+  "end": 42.474
+ },
+ {
+  "text": "hai",
+  "start": 42.474,
+  "end": 42.834
+ },
+ {
+  "text": "creduto;",
+  "start": 42.834,
+  "end": 43.354
+ },
+ {
+  "text": "beati",
+  "start": 43.474,
+  "end": 43.954
+ },
+ {
+  "text": "quelli",
+  "start": 43.954,
+  "end": 44.154
+ },
+ {
+  "text": "che",
+  "start": 44.154,
+  "end": 44.374
+ },
+ {
+  "text": "non",
+  "start": 44.374,
+  "end": 44.554
+ },
+ {
+  "text": "hanno",
+  "start": 44.554,
+  "end": 44.774
+ },
+ {
+  "text": "veduto,",
+  "start": 44.774,
+  "end": 45.314
+ },
+ {
+  "text": "e",
+  "start": 45.314,
+  "end": 45.574
+ },
+ {
+  "text": "hanno",
+  "start": 45.574,
+  "end": 45.794
+ },
+ {
+  "text": "creduto!»",
+  "start": 45.794,
+  "end": 46.254
+ },
+ {
+  "text": "Ma",
+  "start": 46.654,
+  "end": 46.934
+ },
+ {
+  "text": "Tommaso",
+  "start": 46.934,
+  "end": 47.314
+ },
+ {
+  "text": "è",
+  "start": 47.314,
+  "end": 47.414
+ },
+ {
+  "text": "anche",
+  "start": 47.414,
+  "end": 47.594
+ },
+ {
+  "text": "un",
+  "start": 47.594,
+  "end": 47.734
+ },
+ {
+  "text": "discepolo",
+  "start": 47.734,
+  "end": 48.174
+ },
+ {
+  "text": "coraggioso.",
+  "start": 48.174,
+  "end": 48.754
+ },
+ {
+  "text": "In",
+  "start": 48.994,
+  "end": 49.234
+ },
+ {
+  "text": "Giovanni",
+  "start": 49.234,
+  "end": 49.514
+ },
+ {
+  "text": "11,",
+  "start": 49.514,
+  "end": 49.914
+ },
+ {
+  "text": "dice",
+  "start": 49.914,
+  "end": 50.214
+ },
+ {
+  "text": "agli",
+  "start": 50.214,
+  "end": 50.474
+ },
+ {
+  "text": "altri:",
+  "start": 50.474,
+  "end": 50.694
+ },
+ {
+  "text": "«Andiamo",
+  "start": 50.814,
+  "end": 51.514
+ },
+ {
+  "text": "anche",
+  "start": 51.514,
+  "end": 51.774
+ },
+ {
+  "text": "noi,",
+  "start": 51.774,
+  "end": 52.074
+ },
+ {
+  "text": "per",
+  "start": 52.074,
+  "end": 52.214
+ },
+ {
+  "text": "morire",
+  "start": 52.214,
+  "end": 52.754
+ },
+ {
+  "text": "con",
+  "start": 52.754,
+  "end": 52.954
+ },
+ {
+  "text": "lui!»",
+  "start": 52.954,
+  "end": 53.254
+ },
+ {
+  "text": "Ed",
+  "start": 53.734,
+  "end": 54.254
+ },
+ {
+  "text": "è",
+  "start": 54.254,
+  "end": 54.314
+ },
+ {
+  "text": "lui",
+  "start": 54.314,
+  "end": 54.554
+ },
+ {
+  "text": "che",
+  "start": 54.554,
+  "end": 54.774
+ },
+ {
+  "text": "pronuncia",
+  "start": 54.774,
+  "end": 55.254
+ },
+ {
+  "text": "la",
+  "start": 55.254,
+  "end": 55.374
+ },
+ {
+  "text": "più",
+  "start": 55.374,
+  "end": 55.514
+ },
+ {
+  "text": "forte",
+  "start": 55.514,
+  "end": 55.974
+ },
+ {
+  "text": "confessione",
+  "start": 55.974,
+  "end": 56.834
+ },
+ {
+  "text": "del",
+  "start": 56.834,
+  "end": 56.894
+ },
+ {
+  "text": "Vangelo:",
+  "start": 56.894,
+  "end": 57.394
+ },
+ {
+  "text": "«Signor",
+  "start": 57.454,
+  "end": 58.394
+ },
+ {
+  "text": "mio",
+  "start": 58.394,
+  "end": 58.634
+ },
+ {
+  "text": "e",
+  "start": 58.634,
+  "end": 59.174
+ },
+ {
+  "text": "Dio",
+  "start": 59.174,
+  "end": 59.774
+ },
+ {
+  "text": "mio!»",
+  "start": 59.774,
+  "end": 59.994
+ },
+ {
+  "text": "Ti",
+  "start": 60.514,
+  "end": 61.034
+ },
+ {
+  "text": "riconosci",
+  "start": 61.034,
+  "end": 61.494
+ },
+ {
+  "text": "nel",
+  "start": 61.494,
+  "end": 61.614
+ },
+ {
+  "text": "dubbio",
+  "start": 61.614,
+  "end": 61.894
+ },
+ {
+  "text": "di",
+  "start": 61.894,
+  "end": 61.994
+ },
+ {
+  "text": "Tommaso?",
+  "start": 61.994,
+  "end": 62.334
+ },
+ {
+  "text": "Dillo",
+  "start": 62.554,
+  "end": 63.074
+ },
+ {
+  "text": "nei",
+  "start": 63.074,
+  "end": 63.194
+ },
+ {
+  "text": "commenti.",
+  "start": 63.194,
+  "end": 63.734
+ },
+ {
+  "text": "Iscriviti",
+  "start": 64.054,
+  "end": 64.574
+ },
+ {
+  "text": "per",
+  "start": 64.574,
+  "end": 64.754
+ },
+ {
+  "text": "scoprire",
+  "start": 64.754,
+  "end": 65.114
+ },
+ {
+  "text": "la",
+  "start": 65.114,
+  "end": 65.274
+ },
+ {
+  "text": "Bibbia,",
+  "start": 65.274,
+  "end": 65.714
+ },
+ {
+  "text": "un",
+  "start": 65.714,
+  "end": 65.954
+ },
+ {
+  "text": "racconto",
+  "start": 65.954,
+  "end": 66.474
+ },
+ {
+  "text": "alla",
+  "start": 66.474,
+  "end": 66.674
+ },
+ {
+  "text": "volta.",
+  "start": 66.674,
+  "end": 66.954
+ }
+]

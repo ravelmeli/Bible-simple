@@ -1,0 +1,917 @@
+[
+ {
+  "text": "Which",
+  "start": 0.0,
+  "end": 0.34
+ },
+ {
+  "text": "apostle",
+  "start": 0.34,
+  "end": 0.68
+ },
+ {
+  "text": "had",
+  "start": 0.68,
+  "end": 1.24
+ },
+ {
+  "text": "the",
+  "start": 1.24,
+  "end": 1.34
+ },
+ {
+  "text": "nickname",
+  "start": 1.34,
+  "end": 1.64
+ },
+ {
+  "text": "\"the",
+  "start": 1.88,
+  "end": 2.08
+ },
+ {
+  "text": "twin\"?",
+  "start": 2.08,
+  "end": 2.5
+ },
+ {
+  "text": "Thomas.",
+  "start": 2.92,
+  "end": 3.46
+ },
+ {
+  "text": "In",
+  "start": 3.86,
+  "end": 4.34
+ },
+ {
+  "text": "the",
+  "start": 4.34,
+  "end": 4.44
+ },
+ {
+  "text": "Gospel",
+  "start": 4.44,
+  "end": 4.68
+ },
+ {
+  "text": "of",
+  "start": 4.68,
+  "end": 4.96
+ },
+ {
+  "text": "John,",
+  "start": 4.96,
+  "end": 5.18
+ },
+ {
+  "text": "we",
+  "start": 5.32,
+  "end": 5.44
+ },
+ {
+  "text": "read:",
+  "start": 5.44,
+  "end": 5.72
+ },
+ {
+  "text": "\"Thomas,",
+  "start": 5.84,
+  "end": 6.32
+ },
+ {
+  "text": "who",
+  "start": 6.32,
+  "end": 6.62
+ },
+ {
+  "text": "is",
+  "start": 6.62,
+  "end": 6.78
+ },
+ {
+  "text": "called",
+  "start": 6.78,
+  "end": 7.08
+ },
+ {
+  "text": "Didymus.\"",
+  "start": 7.08,
+  "end": 7.82
+ },
+ {
+  "text": "Two",
+  "start": 7.96,
+  "end": 8.48
+ },
+ {
+  "text": "names",
+  "start": 8.48,
+  "end": 8.72
+ },
+ {
+  "text": "for",
+  "start": 8.72,
+  "end": 9.0
+ },
+ {
+  "text": "one",
+  "start": 9.0,
+  "end": 9.2
+ },
+ {
+  "text": "idea.",
+  "start": 9.2,
+  "end": 9.5
+ },
+ {
+  "text": "\"Thomas\"",
+  "start": 9.8,
+  "end": 10.3
+ },
+ {
+  "text": "comes",
+  "start": 10.3,
+  "end": 10.54
+ },
+ {
+  "text": "from",
+  "start": 10.54,
+  "end": 10.76
+ },
+ {
+  "text": "Aramaic,",
+  "start": 10.76,
+  "end": 11.4
+ },
+ {
+  "text": "\"Didymus\"",
+  "start": 11.42,
+  "end": 12.06
+ },
+ {
+  "text": "from",
+  "start": 12.06,
+  "end": 12.26
+ },
+ {
+  "text": "Greek,",
+  "start": 12.26,
+  "end": 12.6
+ },
+ {
+  "text": "and",
+  "start": 12.74,
+  "end": 12.98
+ },
+ {
+  "text": "both",
+  "start": 12.98,
+  "end": 13.26
+ },
+ {
+  "text": "mean",
+  "start": 13.26,
+  "end": 13.56
+ },
+ {
+  "text": "\"twin.\"",
+  "start": 13.56,
+  "end": 13.94
+ },
+ {
+  "text": "Twin",
+  "start": 14.42,
+  "end": 14.96
+ },
+ {
+  "text": "of",
+  "start": 14.96,
+  "end": 15.22
+ },
+ {
+  "text": "whom?",
+  "start": 15.22,
+  "end": 15.52
+ },
+ {
+  "text": "The",
+  "start": 15.72,
+  "end": 16.26
+ },
+ {
+  "text": "Bible",
+  "start": 16.26,
+  "end": 16.48
+ },
+ {
+  "text": "does",
+  "start": 16.48,
+  "end": 16.72
+ },
+ {
+  "text": "not",
+  "start": 16.72,
+  "end": 16.96
+ },
+ {
+  "text": "say.",
+  "start": 16.96,
+  "end": 17.18
+ },
+ {
+  "text": "Ancient",
+  "start": 17.46,
+  "end": 18.0
+ },
+ {
+  "text": "non-biblical",
+  "start": 18.0,
+  "end": 18.8
+ },
+ {
+  "text": "writings,",
+  "start": 18.8,
+  "end": 19.22
+ },
+ {
+  "text": "like",
+  "start": 19.28,
+  "end": 19.6
+ },
+ {
+  "text": "the",
+  "start": 19.6,
+  "end": 19.72
+ },
+ {
+  "text": "Acts",
+  "start": 19.72,
+  "end": 19.96
+ },
+ {
+  "text": "of",
+  "start": 19.96,
+  "end": 20.14
+ },
+ {
+  "text": "Thomas,",
+  "start": 20.14,
+  "end": 20.46
+ },
+ {
+  "text": "make",
+  "start": 20.62,
+  "end": 21.04
+ },
+ {
+  "text": "him",
+  "start": 21.04,
+  "end": 21.2
+ },
+ {
+  "text": "the",
+  "start": 21.2,
+  "end": 21.34
+ },
+ {
+  "text": "twin",
+  "start": 21.34,
+  "end": 21.6
+ },
+ {
+  "text": "of",
+  "start": 21.6,
+  "end": 21.84
+ },
+ {
+  "text": "Jesus.",
+  "start": 21.84,
+  "end": 22.18
+ },
+ {
+  "text": "It's",
+  "start": 22.6,
+  "end": 23.14
+ },
+ {
+  "text": "a",
+  "start": 23.14,
+  "end": 23.16
+ },
+ {
+  "text": "late",
+  "start": 23.16,
+  "end": 23.46
+ },
+ {
+  "text": "tradition,",
+  "start": 23.46,
+  "end": 23.76
+ },
+ {
+  "text": "with",
+  "start": 23.98,
+  "end": 24.18
+ },
+ {
+  "text": "no",
+  "start": 24.18,
+  "end": 24.44
+ },
+ {
+  "text": "support",
+  "start": 24.44,
+  "end": 24.78
+ },
+ {
+  "text": "in",
+  "start": 24.78,
+  "end": 24.98
+ },
+ {
+  "text": "the",
+  "start": 24.98,
+  "end": 25.06
+ },
+ {
+  "text": "Gospels.",
+  "start": 25.06,
+  "end": 25.46
+ },
+ {
+  "text": "He",
+  "start": 25.86,
+  "end": 26.4
+ },
+ {
+  "text": "is",
+  "start": 26.4,
+  "end": 26.54
+ },
+ {
+  "text": "often",
+  "start": 26.54,
+  "end": 26.8
+ },
+ {
+  "text": "called",
+  "start": 26.8,
+  "end": 27.24
+ },
+ {
+  "text": "\"the",
+  "start": 27.24,
+  "end": 27.56
+ },
+ {
+  "text": "doubter,\"",
+  "start": 27.56,
+  "end": 28.1
+ },
+ {
+  "text": "because",
+  "start": 28.12,
+  "end": 28.44
+ },
+ {
+  "text": "of",
+  "start": 28.44,
+  "end": 28.66
+ },
+ {
+  "text": "John",
+  "start": 28.66,
+  "end": 28.84
+ },
+ {
+  "text": "20.",
+  "start": 28.84,
+  "end": 29.22
+ },
+ {
+  "text": "He",
+  "start": 29.22,
+  "end": 29.66
+ },
+ {
+  "text": "refuses",
+  "start": 29.66,
+  "end": 30.18
+ },
+ {
+  "text": "to",
+  "start": 30.18,
+  "end": 30.4
+ },
+ {
+  "text": "believe",
+  "start": 30.4,
+  "end": 30.48
+ },
+ {
+  "text": "in",
+  "start": 30.48,
+  "end": 30.68
+ },
+ {
+  "text": "the",
+  "start": 30.68,
+  "end": 30.82
+ },
+ {
+  "text": "resurrection",
+  "start": 30.82,
+  "end": 31.1
+ },
+ {
+  "text": "without",
+  "start": 31.1,
+  "end": 31.54
+ },
+ {
+  "text": "seeing",
+  "start": 31.54,
+  "end": 32.02
+ },
+ {
+  "text": "and",
+  "start": 32.02,
+  "end": 32.28
+ },
+ {
+  "text": "touching",
+  "start": 32.28,
+  "end": 32.6
+ },
+ {
+  "text": "the",
+  "start": 32.6,
+  "end": 32.88
+ },
+ {
+  "text": "wounds",
+  "start": 32.88,
+  "end": 33.06
+ },
+ {
+  "text": "of",
+  "start": 33.06,
+  "end": 33.24
+ },
+ {
+  "text": "Jesus.",
+  "start": 33.24,
+  "end": 33.5
+ },
+ {
+  "text": "Eight",
+  "start": 33.98,
+  "end": 34.5
+ },
+ {
+  "text": "days",
+  "start": 34.5,
+  "end": 34.64
+ },
+ {
+  "text": "later,",
+  "start": 34.64,
+  "end": 35.0
+ },
+ {
+  "text": "Jesus",
+  "start": 35.12,
+  "end": 35.56
+ },
+ {
+  "text": "says",
+  "start": 35.56,
+  "end": 35.86
+ },
+ {
+  "text": "to",
+  "start": 35.86,
+  "end": 36.02
+ },
+ {
+  "text": "him,",
+  "start": 36.02,
+  "end": 36.24
+ },
+ {
+  "text": "in",
+  "start": 36.24,
+  "end": 36.46
+ },
+ {
+  "text": "the",
+  "start": 36.46,
+  "end": 36.6
+ },
+ {
+  "text": "World",
+  "start": 36.6,
+  "end": 36.9
+ },
+ {
+  "text": "English",
+  "start": 36.9,
+  "end": 37.2
+ },
+ {
+  "text": "Bible:",
+  "start": 37.2,
+  "end": 37.62
+ },
+ {
+  "text": "\"Because",
+  "start": 38.1,
+  "end": 38.38
+ },
+ {
+  "text": "you",
+  "start": 38.38,
+  "end": 38.68
+ },
+ {
+  "text": "have",
+  "start": 38.68,
+  "end": 38.82
+ },
+ {
+  "text": "seen",
+  "start": 38.82,
+  "end": 39.14
+ },
+ {
+  "text": "me,",
+  "start": 39.14,
+  "end": 39.36
+ },
+ {
+  "text": "you",
+  "start": 39.42,
+  "end": 39.66
+ },
+ {
+  "text": "have",
+  "start": 39.66,
+  "end": 39.8
+ },
+ {
+  "text": "believed.",
+  "start": 39.8,
+  "end": 40.16
+ },
+ {
+  "text": "Blessed",
+  "start": 40.48,
+  "end": 41.0
+ },
+ {
+  "text": "are",
+  "start": 41.0,
+  "end": 41.2
+ },
+ {
+  "text": "those",
+  "start": 41.2,
+  "end": 41.4
+ },
+ {
+  "text": "who",
+  "start": 41.4,
+  "end": 41.64
+ },
+ {
+  "text": "have",
+  "start": 41.64,
+  "end": 41.76
+ },
+ {
+  "text": "not",
+  "start": 41.76,
+  "end": 42.04
+ },
+ {
+  "text": "seen,",
+  "start": 42.04,
+  "end": 42.34
+ },
+ {
+  "text": "and",
+  "start": 42.34,
+  "end": 42.6
+ },
+ {
+  "text": "have",
+  "start": 42.6,
+  "end": 42.76
+ },
+ {
+  "text": "believed.\"",
+  "start": 42.76,
+  "end": 43.1
+ },
+ {
+  "text": "But",
+  "start": 43.66,
+  "end": 44.18
+ },
+ {
+  "text": "Thomas",
+  "start": 44.18,
+  "end": 44.5
+ },
+ {
+  "text": "is",
+  "start": 44.5,
+  "end": 44.72
+ },
+ {
+  "text": "also",
+  "start": 44.72,
+  "end": 44.98
+ },
+ {
+  "text": "a",
+  "start": 44.98,
+  "end": 45.18
+ },
+ {
+  "text": "courageous",
+  "start": 45.18,
+  "end": 45.64
+ },
+ {
+  "text": "disciple.",
+  "start": 45.64,
+  "end": 46.06
+ },
+ {
+  "text": "In",
+  "start": 46.42,
+  "end": 46.78
+ },
+ {
+  "text": "John",
+  "start": 46.78,
+  "end": 46.98
+ },
+ {
+  "text": "11,",
+  "start": 46.98,
+  "end": 47.22
+ },
+ {
+  "text": "he",
+  "start": 47.4,
+  "end": 47.5
+ },
+ {
+  "text": "says",
+  "start": 47.5,
+  "end": 47.7
+ },
+ {
+  "text": "to",
+  "start": 47.7,
+  "end": 47.88
+ },
+ {
+  "text": "the",
+  "start": 47.88,
+  "end": 47.98
+ },
+ {
+  "text": "others:",
+  "start": 47.98,
+  "end": 48.22
+ },
+ {
+  "text": "\"Let's",
+  "start": 48.4,
+  "end": 48.9
+ },
+ {
+  "text": "go",
+  "start": 48.9,
+  "end": 49.0
+ },
+ {
+  "text": "also,",
+  "start": 49.0,
+  "end": 49.3
+ },
+ {
+  "text": "that",
+  "start": 49.3,
+  "end": 49.56
+ },
+ {
+  "text": "we",
+  "start": 49.56,
+  "end": 49.68
+ },
+ {
+  "text": "may",
+  "start": 49.68,
+  "end": 49.82
+ },
+ {
+  "text": "die",
+  "start": 49.82,
+  "end": 50.08
+ },
+ {
+  "text": "with",
+  "start": 50.08,
+  "end": 50.3
+ },
+ {
+  "text": "him.\"",
+  "start": 50.3,
+  "end": 50.5
+ },
+ {
+  "text": "And",
+  "start": 50.72,
+  "end": 51.16
+ },
+ {
+  "text": "he",
+  "start": 51.16,
+  "end": 51.24
+ },
+ {
+  "text": "makes",
+  "start": 51.24,
+  "end": 51.42
+ },
+ {
+  "text": "the",
+  "start": 51.42,
+  "end": 51.54
+ },
+ {
+  "text": "strongest",
+  "start": 51.54,
+  "end": 52.06
+ },
+ {
+  "text": "confession",
+  "start": 52.06,
+  "end": 52.54
+ },
+ {
+  "text": "of",
+  "start": 52.54,
+  "end": 52.9
+ },
+ {
+  "text": "the",
+  "start": 52.9,
+  "end": 53.0
+ },
+ {
+  "text": "Gospel:",
+  "start": 53.0,
+  "end": 53.3
+ },
+ {
+  "text": "\"My",
+  "start": 53.56,
+  "end": 53.96
+ },
+ {
+  "text": "Lord",
+  "start": 53.96,
+  "end": 54.26
+ },
+ {
+  "text": "and",
+  "start": 54.26,
+  "end": 54.62
+ },
+ {
+  "text": "my",
+  "start": 54.62,
+  "end": 54.86
+ },
+ {
+  "text": "God!\"",
+  "start": 54.86,
+  "end": 55.18
+ },
+ {
+  "text": "Do",
+  "start": 55.68,
+  "end": 56.2
+ },
+ {
+  "text": "you",
+  "start": 56.2,
+  "end": 56.28
+ },
+ {
+  "text": "see",
+  "start": 56.28,
+  "end": 56.46
+ },
+ {
+  "text": "yourself",
+  "start": 56.46,
+  "end": 56.66
+ },
+ {
+  "text": "in",
+  "start": 56.66,
+  "end": 56.96
+ },
+ {
+  "text": "Thomas's",
+  "start": 56.96,
+  "end": 57.25
+ },
+ {
+  "text": "doubt?",
+  "start": 57.25,
+  "end": 57.54
+ },
+ {
+  "text": "Tell",
+  "start": 57.76,
+  "end": 58.26
+ },
+ {
+  "text": "us",
+  "start": 58.26,
+  "end": 58.38
+ },
+ {
+  "text": "in",
+  "start": 58.38,
+  "end": 58.48
+ },
+ {
+  "text": "the",
+  "start": 58.48,
+  "end": 58.56
+ },
+ {
+  "text": "comments.",
+  "start": 58.56,
+  "end": 58.82
+ },
+ {
+  "text": "Subscribe",
+  "start": 59.224,
+  "end": 59.704
+ },
+ {
+  "text": "to",
+  "start": 59.704,
+  "end": 59.944
+ },
+ {
+  "text": "discover",
+  "start": 59.944,
+  "end": 60.184
+ },
+ {
+  "text": "the",
+  "start": 60.184,
+  "end": 60.384
+ },
+ {
+  "text": "Bible,",
+  "start": 60.384,
+  "end": 60.584
+ },
+ {
+  "text": "one",
+  "start": 60.584,
+  "end": 61.084
+ },
+ {
+  "text": "story",
+  "start": 61.084,
+  "end": 61.384
+ },
+ {
+  "text": "at",
+  "start": 61.384,
+  "end": 61.684
+ },
+ {
+  "text": "a",
+  "start": 61.684,
+  "end": 61.804
+ },
+ {
+  "text": "time.",
+  "start": 61.804,
+  "end": 62.024
+ }
+]
