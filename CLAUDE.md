@@ -24,6 +24,14 @@ Committer et pousser à chaque étape qui produit des fichiers.
 - **Anglais** : « Faith Engineering » (World English Bible).
 - **Italien** : « La Bibbia Semplice » (nom choisi par l'utilisateur). Traduction biblique des citations : Riveduta (Luzzi), à confirmer par l'utilisateur ; la CEI est sous droits, ne pas la citer en entier. Même déroulé que pour le français : script traduit, validation, voix (Gemini TTS en italien, à vérifier), puis montage.
 
+## Sujets des vidéos longues
+
+- Les idées de sujets longs sont dans `sujets/sujets-longs-source.md` (document de l'utilisateur, à ne pas modifier). Le suivi des sujets déjà traités est dans `sujets/suivi-sujets-longs.md` : le mettre à jour à chaque nouvelle vidéo.
+- **À chaque nouvelle vidéo longue, sauf si l'utilisateur impose un sujet : piocher dans ce document le sujet au plus fort potentiel de viralité**, jamais un sujet déjà traité. Dire en une ou deux lignes quel sujet est retenu et pourquoi, avant d'écrire le script.
+- Critères de viralité : curiosité immédiate dans le titre ; idée reçue à corriger ; sujet déjà beaucoup recherché ; titre court ; vraie matière biblique ou historique. D'après le document : les titres « le mot hébreu/grec qui change tout » et « ce que personne ne vous a dit » performent le mieux ; les vidéos centrées sur un verset précis mal compris ont souvent le meilleur ratio vues/heure.
+- Un titre accrocheur doit rester honnête : le script ne promet que ce qu'il peut tenir. Vérifier chaque affirmation du titre avant d'écrire (le document contient des affirmations à vérifier, par exemple « ne crains point » apparu 365 fois, la racine du mot « bénédiction », « rahab » et le Psaume 119).
+- Durée : 10 minutes (environ 1 950 à 1 980 mots en FR), puis versions EN et IT sur demande.
+
 ## Règles éditoriales
 
 - Distinguer ce que dit le texte biblique, la tradition, le consensus historique et les hypothèses. Une hypothèse (ex. Néron = 666) est présentée comme telle.
