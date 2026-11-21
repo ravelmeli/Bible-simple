@@ -1,0 +1,882 @@
+[
+ {
+  "text": "Saviez-vous",
+  "start": 0.0,
+  "end": 0.86
+ },
+ {
+  "text": "que",
+  "start": 0.86,
+  "end": 1.02
+ },
+ {
+  "text": "la",
+  "start": 1.02,
+  "end": 1.18
+ },
+ {
+  "text": "Bible",
+  "start": 1.18,
+  "end": 1.54
+ },
+ {
+  "text": "a",
+  "start": 1.54,
+  "end": 1.76
+ },
+ {
+  "text": "été",
+  "start": 1.76,
+  "end": 2.04
+ },
+ {
+  "text": "écrite",
+  "start": 2.04,
+  "end": 2.44
+ },
+ {
+  "text": "sur",
+  "start": 2.44,
+  "end": 2.6
+ },
+ {
+  "text": "environ",
+  "start": 2.6,
+  "end": 2.84
+ },
+ {
+  "text": "1",
+  "start": 2.84,
+  "end": 3.21
+ },
+ {
+  "text": "500",
+  "start": 3.21,
+  "end": 3.58
+ },
+ {
+  "text": "ans",
+  "start": 3.58,
+  "end": 4.54
+ },
+ {
+  "text": "Ce",
+  "start": 4.54,
+  "end": 5.02
+ },
+ {
+  "text": "n'est",
+  "start": 5.02,
+  "end": 5.14
+ },
+ {
+  "text": "pas",
+  "start": 5.14,
+  "end": 5.28
+ },
+ {
+  "text": "un",
+  "start": 5.28,
+  "end": 5.58
+ },
+ {
+  "text": "seul",
+  "start": 5.58,
+  "end": 5.88
+ },
+ {
+  "text": "livre,",
+  "start": 5.88,
+  "end": 6.16
+ },
+ {
+  "text": "c'est",
+  "start": 6.26,
+  "end": 6.46
+ },
+ {
+  "text": "une",
+  "start": 6.46,
+  "end": 6.64
+ },
+ {
+  "text": "bibliothèque.",
+  "start": 6.64,
+  "end": 7.48
+ },
+ {
+  "text": "Le",
+  "start": 7.7,
+  "end": 8.14
+ },
+ {
+  "text": "mot",
+  "start": 8.14,
+  "end": 8.36
+ },
+ {
+  "text": "Bible",
+  "start": 8.48,
+  "end": 8.76
+ },
+ {
+  "text": "vient",
+  "start": 8.76,
+  "end": 8.94
+ },
+ {
+  "text": "du",
+  "start": 8.94,
+  "end": 9.12
+ },
+ {
+  "text": "grec",
+  "start": 9.12,
+  "end": 9.4
+ },
+ {
+  "text": "biblia,",
+  "start": 9.48,
+  "end": 10.04
+ },
+ {
+  "text": "qui",
+  "start": 10.18,
+  "end": 10.36
+ },
+ {
+  "text": "veut",
+  "start": 10.36,
+  "end": 10.48
+ },
+ {
+  "text": "dire",
+  "start": 10.48,
+  "end": 10.68
+ },
+ {
+  "text": "les",
+  "start": 10.86,
+  "end": 11.12
+ },
+ {
+  "text": "livres",
+  "start": 11.12,
+  "end": 11.46
+ },
+ {
+  "text": "La",
+  "start": 11.895,
+  "end": 12.115
+ },
+ {
+  "text": "plupart",
+  "start": 12.115,
+  "end": 12.355
+ },
+ {
+  "text": "des",
+  "start": 12.355,
+  "end": 12.595
+ },
+ {
+  "text": "Bibles",
+  "start": 12.595,
+  "end": 12.835
+ },
+ {
+  "text": "protestantes",
+  "start": 12.835,
+  "end": 13.395
+ },
+ {
+  "text": "en",
+  "start": 13.395,
+  "end": 13.535
+ },
+ {
+  "text": "comptent",
+  "start": 13.535,
+  "end": 13.855
+ },
+ {
+  "text": "soixante-six.",
+  "start": 13.855,
+  "end": 14.295
+ },
+ {
+  "text": "Les",
+  "start": 14.707,
+  "end": 15.147
+ },
+ {
+  "text": "textes",
+  "start": 15.147,
+  "end": 15.487
+ },
+ {
+  "text": "les",
+  "start": 15.487,
+  "end": 15.587
+ },
+ {
+  "text": "plus",
+  "start": 15.587,
+  "end": 15.747
+ },
+ {
+  "text": "anciens",
+  "start": 15.747,
+  "end": 16.107
+ },
+ {
+  "text": "remontent,",
+  "start": 16.107,
+  "end": 16.547
+ },
+ {
+  "text": "selon",
+  "start": 16.547,
+  "end": 16.807
+ },
+ {
+  "text": "la",
+  "start": 16.807,
+  "end": 16.967
+ },
+ {
+  "text": "tradition,",
+  "start": 16.967,
+  "end": 17.227
+ },
+ {
+  "text": "à",
+  "start": 17.467,
+  "end": 17.587
+ },
+ {
+  "text": "l'époque",
+  "start": 17.587,
+  "end": 17.747
+ },
+ {
+  "text": "de",
+  "start": 17.747,
+  "end": 17.947
+ },
+ {
+  "text": "Moïse,",
+  "start": 17.947,
+  "end": 18.247
+ },
+ {
+  "text": "vers",
+  "start": 18.367,
+  "end": 18.507
+ },
+ {
+  "text": "1",
+  "start": 18.507,
+  "end": 18.737
+ },
+ {
+  "text": "400",
+  "start": 18.737,
+  "end": 18.967
+ },
+ {
+  "text": "avant",
+  "start": 18.967,
+  "end": 19.327
+ },
+ {
+  "text": "notre",
+  "start": 19.327,
+  "end": 19.547
+ },
+ {
+  "text": "ère.",
+  "start": 19.547,
+  "end": 19.787
+ },
+ {
+  "text": "Le",
+  "start": 19.967,
+  "end": 20.407
+ },
+ {
+  "text": "dernier,",
+  "start": 20.407,
+  "end": 20.767
+ },
+ {
+  "text": "l'Apocalypse,",
+  "start": 20.867,
+  "end": 21.327
+ },
+ {
+  "text": "date",
+  "start": 21.467,
+  "end": 21.687
+ },
+ {
+  "text": "de",
+  "start": 21.687,
+  "end": 21.907
+ },
+ {
+  "text": "la",
+  "start": 21.907,
+  "end": 21.987
+ },
+ {
+  "text": "fin",
+  "start": 21.987,
+  "end": 22.207
+ },
+ {
+  "text": "du",
+  "start": 22.207,
+  "end": 22.327
+ },
+ {
+  "text": "premier",
+  "start": 22.327,
+  "end": 22.667
+ },
+ {
+  "text": "siècle.",
+  "start": 22.667,
+  "end": 22.907
+ },
+ {
+  "text": "Cela",
+  "start": 23.167,
+  "end": 23.587
+ },
+ {
+  "text": "fait",
+  "start": 23.587,
+  "end": 23.727
+ },
+ {
+  "text": "environ",
+  "start": 23.727,
+  "end": 23.927
+ },
+ {
+  "text": "quinze",
+  "start": 23.927,
+  "end": 24.387
+ },
+ {
+  "text": "siècles.",
+  "start": 24.387,
+  "end": 24.827
+ },
+ {
+  "text": "Beaucoup",
+  "start": 25.027,
+  "end": 25.467
+ },
+ {
+  "text": "de",
+  "start": 25.467,
+  "end": 25.567
+ },
+ {
+  "text": "chercheurs",
+  "start": 25.567,
+  "end": 25.927
+ },
+ {
+  "text": "proposent",
+  "start": 25.927,
+  "end": 26.307
+ },
+ {
+  "text": "plutôt",
+  "start": 26.307,
+  "end": 26.527
+ },
+ {
+  "text": "un",
+  "start": 26.527,
+  "end": 26.747
+ },
+ {
+  "text": "peu",
+  "start": 26.747,
+  "end": 26.907
+ },
+ {
+  "text": "plus",
+  "start": 26.907,
+  "end": 27.067
+ },
+ {
+  "text": "de",
+  "start": 27.067,
+  "end": 27.187
+ },
+ {
+  "text": "mille",
+  "start": 27.187,
+  "end": 27.327
+ },
+ {
+  "text": "ans.",
+  "start": 27.327,
+  "end": 27.487
+ },
+ {
+  "text": "La",
+  "start": 27.827,
+  "end": 28.047
+ },
+ {
+  "text": "durée",
+  "start": 28.047,
+  "end": 28.347
+ },
+ {
+  "text": "exacte",
+  "start": 28.347,
+  "end": 28.947
+ },
+ {
+  "text": "se",
+  "start": 28.947,
+  "end": 29.047
+ },
+ {
+  "text": "discute.",
+  "start": 29.047,
+  "end": 29.467
+ },
+ {
+  "text": "Une",
+  "start": 29.878,
+  "end": 30.318
+ },
+ {
+  "text": "quarantaine",
+  "start": 30.318,
+  "end": 30.758
+ },
+ {
+  "text": "d'auteurs",
+  "start": 30.758,
+  "end": 31.078
+ },
+ {
+  "text": "y",
+  "start": 31.078,
+  "end": 31.158
+ },
+ {
+  "text": "ont",
+  "start": 31.158,
+  "end": 31.258
+ },
+ {
+  "text": "travaillé",
+  "start": 31.258,
+  "end": 31.698
+ },
+ {
+  "text": "un",
+  "start": 31.858,
+  "end": 32.298
+ },
+ {
+  "text": "roi",
+  "start": 32.298,
+  "end": 32.638
+ },
+ {
+  "text": "comme",
+  "start": 32.638,
+  "end": 32.778
+ },
+ {
+  "text": "David,",
+  "start": 32.778,
+  "end": 33.018
+ },
+ {
+  "text": "un",
+  "start": 33.218,
+  "end": 33.398
+ },
+ {
+  "text": "berger",
+  "start": 33.398,
+  "end": 33.758
+ },
+ {
+  "text": "comme",
+  "start": 33.758,
+  "end": 33.938
+ },
+ {
+  "text": "Amos,",
+  "start": 33.938,
+  "end": 34.258
+ },
+ {
+  "text": "un",
+  "start": 34.398,
+  "end": 34.678
+ },
+ {
+  "text": "médecin",
+  "start": 34.678,
+  "end": 35.058
+ },
+ {
+  "text": "comme",
+  "start": 35.058,
+  "end": 35.338
+ },
+ {
+  "text": "Luc.",
+  "start": 35.338,
+  "end": 35.578
+ },
+ {
+  "text": "Trois",
+  "start": 36.038,
+  "end": 36.478
+ },
+ {
+  "text": "langues",
+  "start": 36.478,
+  "end": 36.798
+ },
+ {
+  "text": "l'hébreu,",
+  "start": 36.818,
+  "end": 37.378
+ },
+ {
+  "text": "un",
+  "start": 37.378,
+  "end": 37.718
+ },
+ {
+  "text": "peu",
+  "start": 37.718,
+  "end": 37.858
+ },
+ {
+  "text": "d'araméen,",
+  "start": 37.858,
+  "end": 38.438
+ },
+ {
+  "text": "et",
+  "start": 38.438,
+  "end": 38.618
+ },
+ {
+  "text": "le",
+  "start": 38.618,
+  "end": 38.738
+ },
+ {
+  "text": "grec.",
+  "start": 38.738,
+  "end": 39.038
+ },
+ {
+  "text": "Pour",
+  "start": 39.418,
+  "end": 39.858
+ },
+ {
+  "text": "les",
+  "start": 39.858,
+  "end": 39.998
+ },
+ {
+  "text": "croyants,",
+  "start": 39.998,
+  "end": 40.398
+ },
+ {
+  "text": "un",
+  "start": 40.458,
+  "end": 40.778
+ },
+ {
+  "text": "même",
+  "start": 40.778,
+  "end": 41.058
+ },
+ {
+  "text": "fil",
+  "start": 41.058,
+  "end": 41.318
+ },
+ {
+  "text": "relie",
+  "start": 41.318,
+  "end": 41.638
+ },
+ {
+  "text": "tous",
+  "start": 41.638,
+  "end": 41.898
+ },
+ {
+  "text": "ces",
+  "start": 41.898,
+  "end": 42.118
+ },
+ {
+  "text": "textes",
+  "start": 42.118,
+  "end": 42.538
+ },
+ {
+  "text": "la",
+  "start": 42.558,
+  "end": 42.998
+ },
+ {
+  "text": "relation",
+  "start": 42.998,
+  "end": 43.398
+ },
+ {
+  "text": "entre",
+  "start": 43.398,
+  "end": 43.918
+ },
+ {
+  "text": "Dieu",
+  "start": 43.918,
+  "end": 44.258
+ },
+ {
+  "text": "et",
+  "start": 44.258,
+  "end": 44.478
+ },
+ {
+  "text": "les",
+  "start": 44.478,
+  "end": 44.678
+ },
+ {
+  "text": "humains.",
+  "start": 44.678,
+  "end": 44.998
+ },
+ {
+  "text": "Lire",
+  "start": 45.518,
+  "end": 45.958
+ },
+ {
+  "text": "la",
+  "start": 45.958,
+  "end": 46.118
+ },
+ {
+  "text": "Bible,",
+  "start": 46.118,
+  "end": 46.318
+ },
+ {
+  "text": "c'est",
+  "start": 46.398,
+  "end": 46.718
+ },
+ {
+  "text": "donc",
+  "start": 46.718,
+  "end": 46.858
+ },
+ {
+  "text": "traverser",
+  "start": 46.858,
+  "end": 47.358
+ },
+ {
+  "text": "des",
+  "start": 47.358,
+  "end": 47.498
+ },
+ {
+  "text": "siècles",
+  "start": 47.498,
+  "end": 47.978
+ },
+ {
+  "text": "chaque",
+  "start": 48.098,
+  "end": 48.538
+ },
+ {
+  "text": "texte",
+  "start": 48.538,
+  "end": 48.898
+ },
+ {
+  "text": "se",
+  "start": 48.898,
+  "end": 48.978
+ },
+ {
+  "text": "lit",
+  "start": 48.978,
+  "end": 49.178
+ },
+ {
+  "text": "mieux",
+  "start": 49.178,
+  "end": 49.358
+ },
+ {
+  "text": "remis",
+  "start": 49.358,
+  "end": 49.738
+ },
+ {
+  "text": "dans",
+  "start": 49.738,
+  "end": 49.858
+ },
+ {
+  "text": "son",
+  "start": 49.858,
+  "end": 50.018
+ },
+ {
+  "text": "époque.",
+  "start": 50.018,
+  "end": 50.358
+ },
+ {
+  "text": "Quel",
+  "start": 50.678,
+  "end": 51.118
+ },
+ {
+  "text": "livre",
+  "start": 51.118,
+  "end": 51.418
+ },
+ {
+  "text": "de",
+  "start": 51.418,
+  "end": 51.578
+ },
+ {
+  "text": "la",
+  "start": 51.578,
+  "end": 51.678
+ },
+ {
+  "text": "Bible",
+  "start": 51.678,
+  "end": 51.878
+ },
+ {
+  "text": "as-tu",
+  "start": 51.878,
+  "end": 52.058
+ },
+ {
+  "text": "envie",
+  "start": 52.058,
+  "end": 52.198
+ },
+ {
+  "text": "de",
+  "start": 52.198,
+  "end": 52.298
+ },
+ {
+  "text": "lire",
+  "start": 52.298,
+  "end": 52.398
+ },
+ {
+  "text": "en",
+  "start": 52.398,
+  "end": 52.498
+ },
+ {
+  "text": "premier",
+  "start": 52.498,
+  "end": 52.878
+ },
+ {
+  "text": "Dis-le",
+  "start": 52.878,
+  "end": 53.258
+ },
+ {
+  "text": "en",
+  "start": 53.258,
+  "end": 53.378
+ },
+ {
+  "text": "commentaire.",
+  "start": 53.378,
+  "end": 53.778
+ },
+ {
+  "text": "Abonne-toi",
+  "start": 54.138,
+  "end": 54.678
+ },
+ {
+  "text": "pour",
+  "start": 54.678,
+  "end": 54.878
+ },
+ {
+  "text": "découvrir",
+  "start": 54.878,
+  "end": 55.258
+ },
+ {
+  "text": "la",
+  "start": 55.258,
+  "end": 55.478
+ },
+ {
+  "text": "Bible,",
+  "start": 55.478,
+  "end": 55.678
+ },
+ {
+  "text": "un",
+  "start": 55.778,
+  "end": 56.018
+ },
+ {
+  "text": "récit",
+  "start": 56.018,
+  "end": 56.398
+ },
+ {
+  "text": "à",
+  "start": 56.398,
+  "end": 56.578
+ },
+ {
+  "text": "la",
+  "start": 56.578,
+  "end": 56.678
+ },
+ {
+  "text": "fois.",
+  "start": 56.678,
+  "end": 56.898
+ }
+]
