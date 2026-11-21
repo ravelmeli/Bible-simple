@@ -49,7 +49,7 @@ Cette variante est attestée par des manuscrits très anciens, dont un papyrus d
 Elle est difficile à expliquer autrement : quelqu'un, très tôt, a fait le même calcul, et l'a adapté à une autre orthographe.
 C'est un argument sérieux. Mais gardons la prudence : c'est une hypothèse savante, pas une certitude.
 Dès le deuxième siècle, l'évêque Irénée connaissait déjà la variante 616, et proposait lui-même d'autres noms.
-D'autres noms ont été proposés. Le calcul peut malheureusement donner des résultats variés selon les lettres que l'on choisit.
+Le calcul peut d'ailleurs donner des résultats variés, selon les lettres que l'on choisit.
 Pourquoi Néron ? Parce que, pour les premiers chrétiens, il représentait déjà la bête.
 En 64, un immense incendie ravage Rome. Selon l'historien romain Tacite, Néron accuse les chrétiens, et les fait mourir de façon atroce.
 Ce sont, à notre connaissance, les premières persécutions de chrétiens par l'État romain.
@@ -82,7 +82,7 @@ Des chrétiens sérieux lisent l'Apocalypse de façons différentes. Certains y 
 Cette chaîne ne vous demande pas de choisir un camp. Elle vous demande seulement de ne pas confondre ce que dit le texte et ce qu'une époque y a projeté.
 Jésus lui-même, dans l'Évangile de Matthieu, au chapitre 24, avertit : « Prenez garde que personne ne vous séduise. »
 Ce n'est pas un appel à la panique, c'est un appel à la vigilance, et à garder la tête claire.
-Et surtout, de ne pas laisser un nombre faire peur.
+Et surtout, ne laissez pas un nombre vous faire peur.
 Parce que beaucoup de personnes sont bel et bien angoissées par ce sujet. La peur de la fin des temps, la peur de « recevoir la marque » par erreur, peut peser très lourd.
 Si c'est votre cas, retenez ceci : le livre est écrit pour consoler et fortifier ses lecteurs, pas pour les terroriser.
 Il s'ouvre sur la promesse d'une bénédiction pour celui qui lit, et il se termine sur une promesse de consolation : « Dieu essuiera toute larme de leurs yeux. »
