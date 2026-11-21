@@ -1,0 +1,972 @@
+[
+ {
+  "text": "Nothing",
+  "start": 0.0,
+  "end": 0.7
+ },
+ {
+  "text": "in",
+  "start": 0.7,
+  "end": 1.18
+ },
+ {
+  "text": "the",
+  "start": 1.18,
+  "end": 1.36
+ },
+ {
+  "text": "Bible",
+  "start": 1.36,
+  "end": 1.58
+ },
+ {
+  "text": "says",
+  "start": 1.58,
+  "end": 1.88
+ },
+ {
+  "text": "that",
+  "start": 1.88,
+  "end": 2.2
+ },
+ {
+  "text": "Mary",
+  "start": 2.2,
+  "end": 2.42
+ },
+ {
+  "text": "Magdalene",
+  "start": 2.42,
+  "end": 2.98
+ },
+ {
+  "text": "was",
+  "start": 2.98,
+  "end": 3.12
+ },
+ {
+  "text": "a",
+  "start": 3.12,
+  "end": 3.26
+ },
+ {
+  "text": "prostitute.",
+  "start": 3.26,
+  "end": 3.78
+ },
+ {
+  "text": "Her",
+  "start": 4.14,
+  "end": 4.66
+ },
+ {
+  "text": "name",
+  "start": 4.66,
+  "end": 4.88
+ },
+ {
+  "text": "comes",
+  "start": 4.88,
+  "end": 5.08
+ },
+ {
+  "text": "from",
+  "start": 5.08,
+  "end": 5.38
+ },
+ {
+  "text": "Magdala,",
+  "start": 5.38,
+  "end": 5.78
+ },
+ {
+  "text": "a",
+  "start": 5.92,
+  "end": 6.14
+ },
+ {
+  "text": "village",
+  "start": 6.14,
+  "end": 6.42
+ },
+ {
+  "text": "on",
+  "start": 6.42,
+  "end": 6.58
+ },
+ {
+  "text": "the",
+  "start": 6.58,
+  "end": 6.66
+ },
+ {
+  "text": "shore",
+  "start": 6.66,
+  "end": 6.86
+ },
+ {
+  "text": "of",
+  "start": 6.86,
+  "end": 7.06
+ },
+ {
+  "text": "the",
+  "start": 7.06,
+  "end": 7.12
+ },
+ {
+  "text": "Sea",
+  "start": 7.12,
+  "end": 7.32
+ },
+ {
+  "text": "of",
+  "start": 7.32,
+  "end": 7.46
+ },
+ {
+  "text": "Galilee.",
+  "start": 7.46,
+  "end": 7.82
+ },
+ {
+  "text": "The",
+  "start": 8.28,
+  "end": 8.8
+ },
+ {
+  "text": "first",
+  "start": 8.8,
+  "end": 9.14
+ },
+ {
+  "text": "text",
+  "start": 9.14,
+  "end": 9.58
+ },
+ {
+  "text": "that",
+  "start": 9.58,
+  "end": 9.84
+ },
+ {
+  "text": "mentions",
+  "start": 9.84,
+  "end": 10.14
+ },
+ {
+  "text": "her",
+  "start": 10.14,
+  "end": 10.36
+ },
+ {
+  "text": "is",
+  "start": 10.36,
+  "end": 10.62
+ },
+ {
+  "text": "Luke",
+  "start": 10.62,
+  "end": 10.86
+ },
+ {
+  "text": "8,",
+  "start": 10.86,
+  "end": 11.14
+ },
+ {
+  "text": "in",
+  "start": 11.14,
+  "end": 11.54
+ },
+ {
+  "text": "the",
+  "start": 11.54,
+  "end": 11.68
+ },
+ {
+  "text": "World",
+  "start": 11.68,
+  "end": 11.82
+ },
+ {
+  "text": "English",
+  "start": 11.82,
+  "end": 12.04
+ },
+ {
+  "text": "Bible:",
+  "start": 12.04,
+  "end": 12.42
+ },
+ {
+  "text": "\"Mary",
+  "start": 12.88,
+  "end": 13.4
+ },
+ {
+  "text": "who",
+  "start": 13.48,
+  "end": 13.64
+ },
+ {
+  "text": "was",
+  "start": 13.64,
+  "end": 13.76
+ },
+ {
+  "text": "called",
+  "start": 13.76,
+  "end": 14.0
+ },
+ {
+  "text": "Magdalene,",
+  "start": 14.0,
+  "end": 14.64
+ },
+ {
+  "text": "from",
+  "start": 14.64,
+  "end": 14.9
+ },
+ {
+  "text": "whom",
+  "start": 14.9,
+  "end": 15.12
+ },
+ {
+  "text": "seven",
+  "start": 15.12,
+  "end": 15.46
+ },
+ {
+  "text": "demons",
+  "start": 15.46,
+  "end": 15.9
+ },
+ {
+  "text": "had",
+  "start": 15.9,
+  "end": 16.16
+ },
+ {
+  "text": "gone",
+  "start": 16.16,
+  "end": 16.34
+ },
+ {
+  "text": "out.\"",
+  "start": 16.34,
+  "end": 16.62
+ },
+ {
+  "text": "The",
+  "start": 16.92,
+  "end": 17.44
+ },
+ {
+  "text": "text",
+  "start": 17.44,
+  "end": 17.68
+ },
+ {
+  "text": "speaks",
+  "start": 17.68,
+  "end": 17.86
+ },
+ {
+  "text": "of",
+  "start": 17.86,
+  "end": 18.18
+ },
+ {
+  "text": "seven",
+  "start": 18.18,
+  "end": 18.46
+ },
+ {
+  "text": "demons,",
+  "start": 18.46,
+  "end": 18.88
+ },
+ {
+  "text": "not",
+  "start": 19.0,
+  "end": 19.26
+ },
+ {
+  "text": "of",
+  "start": 19.26,
+  "end": 19.5
+ },
+ {
+  "text": "sins,",
+  "start": 19.5,
+  "end": 19.84
+ },
+ {
+  "text": "and",
+  "start": 19.98,
+  "end": 20.22
+ },
+ {
+  "text": "never",
+  "start": 20.22,
+  "end": 20.66
+ },
+ {
+  "text": "of",
+  "start": 20.66,
+  "end": 20.92
+ },
+ {
+  "text": "prostitution.",
+  "start": 20.92,
+  "end": 21.5
+ },
+ {
+  "text": "So",
+  "start": 21.882,
+  "end": 22.402
+ },
+ {
+  "text": "where",
+  "start": 22.402,
+  "end": 22.682
+ },
+ {
+  "text": "does",
+  "start": 22.682,
+  "end": 22.882
+ },
+ {
+  "text": "the",
+  "start": 22.882,
+  "end": 23.042
+ },
+ {
+  "text": "idea",
+  "start": 23.042,
+  "end": 23.322
+ },
+ {
+  "text": "come",
+  "start": 23.322,
+  "end": 23.562
+ },
+ {
+  "text": "from?",
+  "start": 23.562,
+  "end": 23.842
+ },
+ {
+  "text": "From",
+  "start": 24.022,
+  "end": 24.542
+ },
+ {
+  "text": "a",
+  "start": 24.542,
+  "end": 24.722
+ },
+ {
+  "text": "mix-up.",
+  "start": 24.722,
+  "end": 25.202
+ },
+ {
+  "text": "In",
+  "start": 25.702,
+  "end": 25.982
+ },
+ {
+  "text": "Luke",
+  "start": 25.982,
+  "end": 26.222
+ },
+ {
+  "text": "7,",
+  "start": 26.222,
+  "end": 26.482
+ },
+ {
+  "text": "a",
+  "start": 26.662,
+  "end": 26.862
+ },
+ {
+  "text": "sinful",
+  "start": 26.862,
+  "end": 27.202
+ },
+ {
+  "text": "woman,",
+  "start": 27.202,
+  "end": 27.562
+ },
+ {
+  "text": "whose",
+  "start": 27.682,
+  "end": 27.882
+ },
+ {
+  "text": "name",
+  "start": 27.882,
+  "end": 28.082
+ },
+ {
+  "text": "is",
+  "start": 28.082,
+  "end": 28.242
+ },
+ {
+  "text": "not",
+  "start": 28.242,
+  "end": 28.462
+ },
+ {
+  "text": "given,",
+  "start": 28.462,
+  "end": 28.782
+ },
+ {
+  "text": "anoints",
+  "start": 28.982,
+  "end": 29.682
+ },
+ {
+  "text": "the",
+  "start": 29.682,
+  "end": 29.722
+ },
+ {
+  "text": "feet",
+  "start": 29.722,
+  "end": 29.962
+ },
+ {
+  "text": "of",
+  "start": 29.962,
+  "end": 30.082
+ },
+ {
+  "text": "Jesus.",
+  "start": 30.082,
+  "end": 30.322
+ },
+ {
+  "text": "In",
+  "start": 30.642,
+  "end": 31.142
+ },
+ {
+  "text": "591,",
+  "start": 31.142,
+  "end": 31.822
+ },
+ {
+  "text": "Pope",
+  "start": 32.062,
+  "end": 32.282
+ },
+ {
+  "text": "Gregory",
+  "start": 32.282,
+  "end": 32.602
+ },
+ {
+  "text": "the",
+  "start": 32.602,
+  "end": 32.902
+ },
+ {
+  "text": "Great",
+  "start": 32.902,
+  "end": 33.142
+ },
+ {
+  "text": "identified",
+  "start": 33.142,
+  "end": 33.762
+ },
+ {
+  "text": "the",
+  "start": 33.762,
+  "end": 34.042
+ },
+ {
+  "text": "two",
+  "start": 34.042,
+  "end": 34.222
+ },
+ {
+  "text": "women",
+  "start": 34.222,
+  "end": 34.502
+ },
+ {
+  "text": "in",
+  "start": 34.502,
+  "end": 34.742
+ },
+ {
+  "text": "a",
+  "start": 34.742,
+  "end": 34.802
+ },
+ {
+  "text": "homily.",
+  "start": 34.802,
+  "end": 35.122
+ },
+ {
+  "text": "That",
+  "start": 35.542,
+  "end": 36.102
+ },
+ {
+  "text": "reading",
+  "start": 36.102,
+  "end": 36.422
+ },
+ {
+  "text": "shaped",
+  "start": 36.422,
+  "end": 36.822
+ },
+ {
+  "text": "the",
+  "start": 36.822,
+  "end": 37.102
+ },
+ {
+  "text": "West",
+  "start": 37.102,
+  "end": 37.282
+ },
+ {
+  "text": "for",
+  "start": 37.282,
+  "end": 37.522
+ },
+ {
+  "text": "centuries.",
+  "start": 37.522,
+  "end": 38.002
+ },
+ {
+  "text": "But",
+  "start": 38.542,
+  "end": 39.102
+ },
+ {
+  "text": "no",
+  "start": 39.102,
+  "end": 39.342
+ },
+ {
+  "text": "biblical",
+  "start": 39.342,
+  "end": 39.702
+ },
+ {
+  "text": "passage",
+  "start": 39.702,
+  "end": 40.102
+ },
+ {
+  "text": "identifies",
+  "start": 40.102,
+  "end": 40.582
+ },
+ {
+  "text": "them.",
+  "start": 40.582,
+  "end": 41.002
+ },
+ {
+  "text": "The",
+  "start": 41.182,
+  "end": 41.662
+ },
+ {
+  "text": "Catholic",
+  "start": 41.662,
+  "end": 41.902
+ },
+ {
+  "text": "Church",
+  "start": 41.902,
+  "end": 42.142
+ },
+ {
+  "text": "itself",
+  "start": 42.142,
+  "end": 42.462
+ },
+ {
+  "text": "stopped",
+  "start": 42.462,
+  "end": 42.902
+ },
+ {
+  "text": "confusing",
+  "start": 42.902,
+  "end": 43.282
+ },
+ {
+  "text": "them",
+  "start": 43.282,
+  "end": 43.642
+ },
+ {
+  "text": "in",
+  "start": 43.642,
+  "end": 43.762
+ },
+ {
+  "text": "its",
+  "start": 43.762,
+  "end": 43.882
+ },
+ {
+  "text": "liturgical",
+  "start": 43.882,
+  "end": 44.282
+ },
+ {
+  "text": "calendar,",
+  "start": 44.282,
+  "end": 44.702
+ },
+ {
+  "text": "in",
+  "start": 44.702,
+  "end": 45.382
+ },
+ {
+  "text": "1969.",
+  "start": 45.382,
+  "end": 45.862
+ },
+ {
+  "text": "What",
+  "start": 46.33,
+  "end": 46.89
+ },
+ {
+  "text": "the",
+  "start": 46.89,
+  "end": 47.03
+ },
+ {
+  "text": "Gospels",
+  "start": 47.03,
+  "end": 47.43
+ },
+ {
+  "text": "say:",
+  "start": 47.43,
+  "end": 47.63
+ },
+ {
+  "text": "she",
+  "start": 47.83,
+  "end": 48.35
+ },
+ {
+  "text": "follows",
+  "start": 48.35,
+  "end": 48.69
+ },
+ {
+  "text": "Jesus,",
+  "start": 48.69,
+  "end": 49.07
+ },
+ {
+  "text": "she",
+  "start": 49.35,
+  "end": 49.77
+ },
+ {
+  "text": "is",
+  "start": 49.77,
+  "end": 49.89
+ },
+ {
+  "text": "present",
+  "start": 49.89,
+  "end": 50.25
+ },
+ {
+  "text": "at",
+  "start": 50.25,
+  "end": 50.43
+ },
+ {
+  "text": "the",
+  "start": 50.43,
+  "end": 50.55
+ },
+ {
+  "text": "cross,",
+  "start": 50.55,
+  "end": 50.81
+ },
+ {
+  "text": "and",
+  "start": 51.03,
+  "end": 51.59
+ },
+ {
+  "text": "she",
+  "start": 51.59,
+  "end": 51.69
+ },
+ {
+  "text": "is",
+  "start": 51.69,
+  "end": 51.81
+ },
+ {
+  "text": "the",
+  "start": 51.81,
+  "end": 51.93
+ },
+ {
+  "text": "first",
+  "start": 51.93,
+  "end": 52.29
+ },
+ {
+  "text": "to",
+  "start": 52.29,
+  "end": 52.57
+ },
+ {
+  "text": "see",
+  "start": 52.57,
+  "end": 52.83
+ },
+ {
+  "text": "the",
+  "start": 52.83,
+  "end": 53.01
+ },
+ {
+  "text": "risen",
+  "start": 53.01,
+  "end": 53.21
+ },
+ {
+  "text": "Christ,",
+  "start": 53.21,
+  "end": 53.57
+ },
+ {
+  "text": "in",
+  "start": 53.75,
+  "end": 54.09
+ },
+ {
+  "text": "John",
+  "start": 54.09,
+  "end": 54.27
+ },
+ {
+  "text": "20.",
+  "start": 54.27,
+  "end": 54.55
+ },
+ {
+  "text": "In",
+  "start": 54.938,
+  "end": 55.218
+ },
+ {
+  "text": "2016,",
+  "start": 55.218,
+  "end": 55.698
+ },
+ {
+  "text": "Pope",
+  "start": 56.018,
+  "end": 56.258
+ },
+ {
+  "text": "Francis",
+  "start": 56.258,
+  "end": 56.618
+ },
+ {
+  "text": "honored",
+  "start": 56.618,
+  "end": 56.978
+ },
+ {
+  "text": "her",
+  "start": 56.978,
+  "end": 57.218
+ },
+ {
+  "text": "with",
+  "start": 57.218,
+  "end": 57.358
+ },
+ {
+  "text": "the",
+  "start": 57.358,
+  "end": 57.438
+ },
+ {
+  "text": "title",
+  "start": 57.438,
+  "end": 57.758
+ },
+ {
+  "text": "\"apostle",
+  "start": 57.758,
+  "end": 58.558
+ },
+ {
+  "text": "of",
+  "start": 58.558,
+  "end": 58.718
+ },
+ {
+  "text": "the",
+  "start": 58.718,
+  "end": 58.798
+ },
+ {
+  "text": "apostles.\"",
+  "start": 58.798,
+  "end": 59.418
+ },
+ {
+  "text": "Which",
+  "start": 59.918,
+  "end": 60.478
+ },
+ {
+  "text": "common",
+  "start": 60.478,
+  "end": 60.838
+ },
+ {
+  "text": "idea",
+  "start": 60.838,
+  "end": 61.198
+ },
+ {
+  "text": "about",
+  "start": 61.198,
+  "end": 61.558
+ },
+ {
+  "text": "the",
+  "start": 61.558,
+  "end": 61.738
+ },
+ {
+  "text": "Bible",
+  "start": 61.738,
+  "end": 61.978
+ },
+ {
+  "text": "surprised",
+  "start": 61.978,
+  "end": 62.338
+ },
+ {
+  "text": "you",
+  "start": 62.338,
+  "end": 62.718
+ },
+ {
+  "text": "the",
+  "start": 62.718,
+  "end": 62.818
+ },
+ {
+  "text": "most?",
+  "start": 62.818,
+  "end": 63.118
+ },
+ {
+  "text": "Tell",
+  "start": 63.238,
+  "end": 63.738
+ },
+ {
+  "text": "us",
+  "start": 63.738,
+  "end": 63.878
+ },
+ {
+  "text": "in",
+  "start": 63.878,
+  "end": 63.998
+ },
+ {
+  "text": "the",
+  "start": 63.998,
+  "end": 64.038
+ },
+ {
+  "text": "comments.",
+  "start": 64.038,
+  "end": 64.318
+ },
+ {
+  "text": "Subscribe",
+  "start": 64.618,
+  "end": 65.178
+ },
+ {
+  "text": "to",
+  "start": 65.178,
+  "end": 65.538
+ },
+ {
+  "text": "discover",
+  "start": 65.538,
+  "end": 65.798
+ },
+ {
+  "text": "the",
+  "start": 65.798,
+  "end": 66.058
+ },
+ {
+  "text": "Bible,",
+  "start": 66.058,
+  "end": 66.318
+ },
+ {
+  "text": "one",
+  "start": 66.318,
+  "end": 66.838
+ },
+ {
+  "text": "story",
+  "start": 66.838,
+  "end": 67.138
+ },
+ {
+  "text": "at",
+  "start": 67.138,
+  "end": 67.478
+ },
+ {
+  "text": "a",
+  "start": 67.478,
+  "end": 67.598
+ },
+ {
+  "text": "time.",
+  "start": 67.598,
+  "end": 67.798
+ }
+]

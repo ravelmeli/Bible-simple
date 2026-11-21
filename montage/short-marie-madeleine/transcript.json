@@ -1,0 +1,957 @@
+[
+ {
+  "text": "Rien",
+  "start": 0.0,
+  "end": 0.68
+ },
+ {
+  "text": "dans",
+  "start": 0.68,
+  "end": 0.9
+ },
+ {
+  "text": "la",
+  "start": 0.9,
+  "end": 1.04
+ },
+ {
+  "text": "Bible",
+  "start": 1.04,
+  "end": 1.26
+ },
+ {
+  "text": "ne",
+  "start": 1.26,
+  "end": 1.46
+ },
+ {
+  "text": "dit",
+  "start": 1.46,
+  "end": 1.64
+ },
+ {
+  "text": "que",
+  "start": 1.64,
+  "end": 1.8
+ },
+ {
+  "text": "Marie-Madeleine",
+  "start": 1.8,
+  "end": 2.64
+ },
+ {
+  "text": "était",
+  "start": 2.64,
+  "end": 2.94
+ },
+ {
+  "text": "une",
+  "start": 2.94,
+  "end": 3.22
+ },
+ {
+  "text": "prostituée.",
+  "start": 3.22,
+  "end": 3.98
+ },
+ {
+  "text": "Son",
+  "start": 4.18,
+  "end": 4.58
+ },
+ {
+  "text": "nom",
+  "start": 4.58,
+  "end": 4.84
+ },
+ {
+  "text": "vient",
+  "start": 4.84,
+  "end": 5.0
+ },
+ {
+  "text": "de",
+  "start": 5.0,
+  "end": 5.22
+ },
+ {
+  "text": "Magdala,",
+  "start": 5.22,
+  "end": 5.64
+ },
+ {
+  "text": "un",
+  "start": 5.8,
+  "end": 6.02
+ },
+ {
+  "text": "village",
+  "start": 6.02,
+  "end": 6.32
+ },
+ {
+  "text": "au",
+  "start": 6.32,
+  "end": 6.54
+ },
+ {
+  "text": "bord",
+  "start": 6.54,
+  "end": 6.7
+ },
+ {
+  "text": "du",
+  "start": 6.7,
+  "end": 6.9
+ },
+ {
+  "text": "lac",
+  "start": 6.9,
+  "end": 7.06
+ },
+ {
+  "text": "de",
+  "start": 7.06,
+  "end": 7.22
+ },
+ {
+  "text": "Galilée.",
+  "start": 7.22,
+  "end": 7.66
+ },
+ {
+  "text": "Le",
+  "start": 7.86,
+  "end": 8.26
+ },
+ {
+  "text": "premier",
+  "start": 8.26,
+  "end": 8.52
+ },
+ {
+  "text": "texte",
+  "start": 8.52,
+  "end": 8.9
+ },
+ {
+  "text": "qui",
+  "start": 8.9,
+  "end": 9.0
+ },
+ {
+  "text": "parle",
+  "start": 9.0,
+  "end": 9.22
+ },
+ {
+  "text": "d'elle,",
+  "start": 9.22,
+  "end": 9.4
+ },
+ {
+  "text": "c'est",
+  "start": 9.52,
+  "end": 9.74
+ },
+ {
+  "text": "Luc",
+  "start": 9.74,
+  "end": 9.94
+ },
+ {
+  "text": "8,",
+  "start": 9.94,
+  "end": 10.24
+ },
+ {
+  "text": "dans",
+  "start": 10.32,
+  "end": 10.48
+ },
+ {
+  "text": "la",
+  "start": 10.48,
+  "end": 10.56
+ },
+ {
+  "text": "Louis",
+  "start": 10.56,
+  "end": 10.8
+ },
+ {
+  "text": "Segond",
+  "start": 10.8,
+  "end": 11.0
+ },
+ {
+  "text": "1910",
+  "start": 11.0,
+  "end": 11.72
+ },
+ {
+  "text": "Marie,",
+  "start": 12.073,
+  "end": 12.473
+ },
+ {
+  "text": "dite",
+  "start": 12.473,
+  "end": 12.873
+ },
+ {
+  "text": "de",
+  "start": 12.873,
+  "end": 13.033
+ },
+ {
+  "text": "Magdala,",
+  "start": 13.033,
+  "end": 13.493
+ },
+ {
+  "text": "de",
+  "start": 13.613,
+  "end": 13.813
+ },
+ {
+  "text": "laquelle",
+  "start": 13.813,
+  "end": 14.013
+ },
+ {
+  "text": "étaient",
+  "start": 14.013,
+  "end": 14.253
+ },
+ {
+  "text": "sortis",
+  "start": 14.253,
+  "end": 14.713
+ },
+ {
+  "text": "sept",
+  "start": 14.713,
+  "end": 14.973
+ },
+ {
+  "text": "démons.",
+  "start": 14.973,
+  "end": 15.353
+ },
+ {
+  "text": "Le",
+  "start": 15.813,
+  "end": 16.213
+ },
+ {
+  "text": "texte",
+  "start": 16.213,
+  "end": 16.553
+ },
+ {
+  "text": "parle",
+  "start": 16.553,
+  "end": 16.713
+ },
+ {
+  "text": "de",
+  "start": 16.713,
+  "end": 16.893
+ },
+ {
+  "text": "sept",
+  "start": 16.893,
+  "end": 17.093
+ },
+ {
+  "text": "démons,",
+  "start": 17.093,
+  "end": 17.473
+ },
+ {
+  "text": "pas",
+  "start": 17.493,
+  "end": 17.773
+ },
+ {
+  "text": "de",
+  "start": 17.773,
+  "end": 17.913
+ },
+ {
+  "text": "péchés,",
+  "start": 17.913,
+  "end": 18.273
+ },
+ {
+  "text": "et",
+  "start": 18.353,
+  "end": 18.533
+ },
+ {
+  "text": "jamais",
+  "start": 18.533,
+  "end": 18.933
+ },
+ {
+  "text": "de",
+  "start": 18.933,
+  "end": 19.133
+ },
+ {
+  "text": "prostitution.",
+  "start": 19.133,
+  "end": 19.653
+ },
+ {
+  "text": "Alors",
+  "start": 20.213,
+  "end": 20.613
+ },
+ {
+  "text": "d'où",
+  "start": 20.613,
+  "end": 20.953
+ },
+ {
+  "text": "vient",
+  "start": 20.953,
+  "end": 21.133
+ },
+ {
+  "text": "l'idée",
+  "start": 21.133,
+  "end": 21.573
+ },
+ {
+  "text": "D'un",
+  "start": 21.573,
+  "end": 22.173
+ },
+ {
+  "text": "mélange.",
+  "start": 22.173,
+  "end": 22.593
+ },
+ {
+  "text": "Dans",
+  "start": 22.833,
+  "end": 23.233
+ },
+ {
+  "text": "Luc",
+  "start": 23.233,
+  "end": 23.473
+ },
+ {
+  "text": "7,",
+  "start": 23.473,
+  "end": 23.713
+ },
+ {
+  "text": "une",
+  "start": 23.873,
+  "end": 24.133
+ },
+ {
+  "text": "femme",
+  "start": 24.133,
+  "end": 24.353
+ },
+ {
+  "text": "pécheresse,",
+  "start": 24.353,
+  "end": 24.933
+ },
+ {
+  "text": "dont",
+  "start": 24.953,
+  "end": 25.113
+ },
+ {
+  "text": "le",
+  "start": 25.113,
+  "end": 25.253
+ },
+ {
+  "text": "nom",
+  "start": 25.253,
+  "end": 25.473
+ },
+ {
+  "text": "n'est",
+  "start": 25.473,
+  "end": 25.613
+ },
+ {
+  "text": "pas",
+  "start": 25.613,
+  "end": 25.673
+ },
+ {
+  "text": "donné,",
+  "start": 25.673,
+  "end": 25.873
+ },
+ {
+  "text": "parfume",
+  "start": 25.993,
+  "end": 26.673
+ },
+ {
+  "text": "les",
+  "start": 26.673,
+  "end": 26.773
+ },
+ {
+  "text": "pieds",
+  "start": 26.773,
+  "end": 27.053
+ },
+ {
+  "text": "de",
+  "start": 27.053,
+  "end": 27.133
+ },
+ {
+  "text": "Jésus.",
+  "start": 27.133,
+  "end": 27.433
+ },
+ {
+  "text": "En",
+  "start": 27.433,
+  "end": 28.073
+ },
+ {
+  "text": "591,",
+  "start": 28.073,
+  "end": 28.753
+ },
+ {
+  "text": "le",
+  "start": 28.973,
+  "end": 29.073
+ },
+ {
+  "text": "pape",
+  "start": 29.073,
+  "end": 29.293
+ },
+ {
+  "text": "Grégoire",
+  "start": 29.293,
+  "end": 29.713
+ },
+ {
+  "text": "le",
+  "start": 29.713,
+  "end": 29.853
+ },
+ {
+  "text": "Grand",
+  "start": 29.853,
+  "end": 30.013
+ },
+ {
+  "text": "a",
+  "start": 30.013,
+  "end": 30.173
+ },
+ {
+  "text": "identifié",
+  "start": 30.173,
+  "end": 30.853
+ },
+ {
+  "text": "les",
+  "start": 30.853,
+  "end": 30.913
+ },
+ {
+  "text": "deux",
+  "start": 30.913,
+  "end": 31.013
+ },
+ {
+  "text": "femmes",
+  "start": 31.013,
+  "end": 31.253
+ },
+ {
+  "text": "dans",
+  "start": 31.253,
+  "end": 31.433
+ },
+ {
+  "text": "une",
+  "start": 31.433,
+  "end": 31.573
+ },
+ {
+  "text": "homélie.",
+  "start": 31.573,
+  "end": 31.873
+ },
+ {
+  "text": "Cette",
+  "start": 31.973,
+  "end": 32.433
+ },
+ {
+  "text": "lecture",
+  "start": 32.433,
+  "end": 32.773
+ },
+ {
+  "text": "a",
+  "start": 32.773,
+  "end": 33.013
+ },
+ {
+  "text": "marqué",
+  "start": 33.013,
+  "end": 33.453
+ },
+ {
+  "text": "l'Occident",
+  "start": 33.453,
+  "end": 33.813
+ },
+ {
+  "text": "pendant",
+  "start": 33.813,
+  "end": 34.053
+ },
+ {
+  "text": "des",
+  "start": 34.053,
+  "end": 34.293
+ },
+ {
+  "text": "siècles.",
+  "start": 34.293,
+  "end": 34.653
+ },
+ {
+  "text": "Mais",
+  "start": 34.873,
+  "end": 35.293
+ },
+ {
+  "text": "aucun",
+  "start": 35.293,
+  "end": 35.653
+ },
+ {
+  "text": "passage",
+  "start": 35.653,
+  "end": 36.053
+ },
+ {
+  "text": "biblique",
+  "start": 36.053,
+  "end": 36.453
+ },
+ {
+  "text": "ne",
+  "start": 36.453,
+  "end": 36.593
+ },
+ {
+  "text": "les",
+  "start": 36.593,
+  "end": 36.713
+ },
+ {
+  "text": "identifie.",
+  "start": 36.713,
+  "end": 37.173
+ },
+ {
+  "text": "L'Église",
+  "start": 37.333,
+  "end": 37.993
+ },
+ {
+  "text": "catholique",
+  "start": 37.993,
+  "end": 38.413
+ },
+ {
+  "text": "a",
+  "start": 38.413,
+  "end": 38.553
+ },
+ {
+  "text": "elle-même",
+  "start": 38.553,
+  "end": 39.053
+ },
+ {
+  "text": "cessé",
+  "start": 39.053,
+  "end": 39.433
+ },
+ {
+  "text": "de",
+  "start": 39.433,
+  "end": 39.513
+ },
+ {
+  "text": "les",
+  "start": 39.513,
+  "end": 39.593
+ },
+ {
+  "text": "confondre",
+  "start": 39.593,
+  "end": 39.993
+ },
+ {
+  "text": "dans",
+  "start": 39.993,
+  "end": 40.133
+ },
+ {
+  "text": "son",
+  "start": 40.133,
+  "end": 40.273
+ },
+ {
+  "text": "calendrier",
+  "start": 40.273,
+  "end": 40.693
+ },
+ {
+  "text": "liturgique,",
+  "start": 40.693,
+  "end": 41.273
+ },
+ {
+  "text": "en",
+  "start": 41.273,
+  "end": 41.433
+ },
+ {
+  "text": "1969.",
+  "start": 41.433,
+  "end": 41.813
+ },
+ {
+  "text": "Ce",
+  "start": 42.167,
+  "end": 42.647
+ },
+ {
+  "text": "que",
+  "start": 42.647,
+  "end": 42.747
+ },
+ {
+  "text": "disent",
+  "start": 42.747,
+  "end": 42.907
+ },
+ {
+  "text": "les",
+  "start": 42.907,
+  "end": 43.047
+ },
+ {
+  "text": "Évangiles",
+  "start": 43.047,
+  "end": 43.467
+ },
+ {
+  "text": "elle",
+  "start": 43.567,
+  "end": 43.907
+ },
+ {
+  "text": "suit",
+  "start": 43.907,
+  "end": 44.207
+ },
+ {
+  "text": "Jésus,",
+  "start": 44.207,
+  "end": 44.567
+ },
+ {
+  "text": "elle",
+  "start": 44.647,
+  "end": 44.967
+ },
+ {
+  "text": "est",
+  "start": 44.967,
+  "end": 45.087
+ },
+ {
+  "text": "présente",
+  "start": 45.087,
+  "end": 45.707
+ },
+ {
+  "text": "à",
+  "start": 45.707,
+  "end": 45.827
+ },
+ {
+  "text": "la",
+  "start": 45.827,
+  "end": 45.907
+ },
+ {
+  "text": "croix,",
+  "start": 45.907,
+  "end": 46.187
+ },
+ {
+  "text": "et",
+  "start": 46.187,
+  "end": 46.527
+ },
+ {
+  "text": "elle",
+  "start": 46.527,
+  "end": 46.707
+ },
+ {
+  "text": "est",
+  "start": 46.707,
+  "end": 46.807
+ },
+ {
+  "text": "la",
+  "start": 46.807,
+  "end": 46.887
+ },
+ {
+  "text": "première",
+  "start": 46.887,
+  "end": 47.347
+ },
+ {
+  "text": "à",
+  "start": 47.347,
+  "end": 47.627
+ },
+ {
+  "text": "voir",
+  "start": 47.627,
+  "end": 47.807
+ },
+ {
+  "text": "le",
+  "start": 47.807,
+  "end": 47.947
+ },
+ {
+  "text": "Christ",
+  "start": 47.947,
+  "end": 48.147
+ },
+ {
+  "text": "ressuscité,",
+  "start": 48.147,
+  "end": 48.807
+ },
+ {
+  "text": "en",
+  "start": 48.867,
+  "end": 49.127
+ },
+ {
+  "text": "Jean",
+  "start": 49.127,
+  "end": 49.367
+ },
+ {
+  "text": "20.",
+  "start": 49.367,
+  "end": 49.527
+ },
+ {
+  "text": "En",
+  "start": 49.919,
+  "end": 50.119
+ },
+ {
+  "text": "2016,",
+  "start": 50.119,
+  "end": 50.439
+ },
+ {
+  "text": "le",
+  "start": 50.679,
+  "end": 50.939
+ },
+ {
+  "text": "pape",
+  "start": 50.939,
+  "end": 51.119
+ },
+ {
+  "text": "François",
+  "start": 51.119,
+  "end": 51.399
+ },
+ {
+  "text": "l'a",
+  "start": 51.399,
+  "end": 51.559
+ },
+ {
+  "text": "honorée",
+  "start": 51.559,
+  "end": 51.899
+ },
+ {
+  "text": "du",
+  "start": 51.899,
+  "end": 51.999
+ },
+ {
+  "text": "titre",
+  "start": 51.999,
+  "end": 52.219
+ },
+ {
+  "text": "d'«",
+  "start": 52.219,
+  "end": 52.529
+ },
+ {
+  "text": "apôtre",
+  "start": 52.529,
+  "end": 52.839
+ },
+ {
+  "text": "des",
+  "start": 52.839,
+  "end": 52.999
+ },
+ {
+  "text": "apôtres",
+  "start": 52.999,
+  "end": 53.419
+ },
+ {
+  "text": "Quelle",
+  "start": 53.999,
+  "end": 54.319
+ },
+ {
+  "text": "idée",
+  "start": 54.319,
+  "end": 54.459
+ },
+ {
+  "text": "reçue",
+  "start": 54.459,
+  "end": 54.779
+ },
+ {
+  "text": "sur",
+  "start": 54.779,
+  "end": 54.919
+ },
+ {
+  "text": "la",
+  "start": 54.919,
+  "end": 55.039
+ },
+ {
+  "text": "Bible",
+  "start": 55.039,
+  "end": 55.199
+ },
+ {
+  "text": "t'a",
+  "start": 55.199,
+  "end": 55.419
+ },
+ {
+  "text": "le",
+  "start": 55.419,
+  "end": 55.479
+ },
+ {
+  "text": "plus",
+  "start": 55.479,
+  "end": 55.719
+ },
+ {
+  "text": "surpris",
+  "start": 55.719,
+  "end": 56.239
+ },
+ {
+  "text": "Dis-le",
+  "start": 56.239,
+  "end": 56.719
+ },
+ {
+  "text": "en",
+  "start": 56.719,
+  "end": 56.799
+ },
+ {
+  "text": "commentaire.",
+  "start": 56.799,
+  "end": 57.279
+ },
+ {
+  "text": "Abonne-toi",
+  "start": 57.839,
+  "end": 58.239
+ },
+ {
+  "text": "pour",
+  "start": 58.239,
+  "end": 58.379
+ },
+ {
+  "text": "découvrir",
+  "start": 58.379,
+  "end": 58.699
+ },
+ {
+  "text": "la",
+  "start": 58.699,
+  "end": 58.839
+ },
+ {
+  "text": "Bible,",
+  "start": 58.839,
+  "end": 59.019
+ },
+ {
+  "text": "un",
+  "start": 59.119,
+  "end": 59.379
+ },
+ {
+  "text": "récit",
+  "start": 59.379,
+  "end": 59.699
+ },
+ {
+  "text": "à",
+  "start": 59.699,
+  "end": 59.799
+ },
+ {
+  "text": "la",
+  "start": 59.799,
+  "end": 59.839
+ },
+ {
+  "text": "fois.",
+  "start": 59.839,
+  "end": 59.999
+ }
+]
