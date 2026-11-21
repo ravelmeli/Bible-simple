@@ -16,6 +16,8 @@ L'utilisateur précise à chaque fois s'il s'agit d'un **short** (1 min à 1 min
 8. **Montage** : projet HyperFrames dans `montage/<nom-video>/`, suivre la skill `hyperframes` (puis `general-video` et `hyperframes-core`). `npx hyperframes check` doit passer, puis rendu brouillon (`-q draft`) envoyé pour validation et contrôle d'images clés.
 9. **Finalisation** : rendu en qualité `delivery`, puis `titre-description-tags.md` dans le format de `montage/short-666/titre-description-tags.md` (titre, 5 titres courts avec nombre de caractères, description SEO, crédits audio, tags sous 500 caractères).
 
+**Rendus envoyés à l'utilisateur : toujours en 1080p** (le fichier brouillon complet, pas une copie 720p), pour les vidéos longues comme pour les shorts. Les rendus restent hors de git (plus de 100 Mo, `renders/` ignoré) : les envoyer en pièce jointe. Une copie 720p n'est utile que si l'utilisateur la demande.
+
 Committer et pousser à chaque étape qui produit des fichiers.
 
 ## Chaînes par langue
