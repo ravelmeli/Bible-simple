@@ -1,0 +1,822 @@
+[
+ {
+  "text": "«Gesù",
+  "start": 0.0,
+  "end": 0.48
+ },
+ {
+  "text": "è",
+  "start": 0.48,
+  "end": 0.6
+ },
+ {
+  "text": "morto",
+  "start": 0.6,
+  "end": 0.98
+ },
+ {
+  "text": "a",
+  "start": 0.98,
+  "end": 1.04
+ },
+ {
+  "text": "33",
+  "start": 1.04,
+  "end": 1.46
+ },
+ {
+  "text": "anni.»",
+  "start": 1.46,
+  "end": 1.96
+ },
+ {
+  "text": "La",
+  "start": 2.1,
+  "end": 2.62
+ },
+ {
+  "text": "Bibbia",
+  "start": 2.62,
+  "end": 3.0
+ },
+ {
+  "text": "non",
+  "start": 3.0,
+  "end": 3.26
+ },
+ {
+  "text": "lo",
+  "start": 3.26,
+  "end": 3.38
+ },
+ {
+  "text": "dice",
+  "start": 3.38,
+  "end": 3.64
+ },
+ {
+  "text": "mai.",
+  "start": 3.64,
+  "end": 3.96
+ },
+ {
+  "text": "Nessun",
+  "start": 4.42,
+  "end": 4.94
+ },
+ {
+  "text": "versetto",
+  "start": 4.94,
+  "end": 5.34
+ },
+ {
+  "text": "dà",
+  "start": 5.34,
+  "end": 5.5
+ },
+ {
+  "text": "la",
+  "start": 5.5,
+  "end": 5.54
+ },
+ {
+  "text": "sua",
+  "start": 5.54,
+  "end": 5.68
+ },
+ {
+  "text": "età",
+  "start": 5.68,
+  "end": 5.88
+ },
+ {
+  "text": "alla",
+  "start": 5.88,
+  "end": 6.02
+ },
+ {
+  "text": "morte.",
+  "start": 6.02,
+  "end": 6.3
+ },
+ {
+  "text": "L'unico",
+  "start": 6.58,
+  "end": 7.38
+ },
+ {
+  "text": "numero",
+  "start": 7.38,
+  "end": 7.6
+ },
+ {
+  "text": "è",
+  "start": 7.6,
+  "end": 7.88
+ },
+ {
+  "text": "Luca",
+  "start": 7.88,
+  "end": 8.14
+ },
+ {
+  "text": "3,",
+  "start": 8.14,
+  "end": 8.36
+ },
+ {
+  "text": "versetto",
+  "start": 8.46,
+  "end": 8.8
+ },
+ {
+  "text": "23,",
+  "start": 8.8,
+  "end": 9.2
+ },
+ {
+  "text": "nella",
+  "start": 9.46,
+  "end": 9.74
+ },
+ {
+  "text": "Riveduta:",
+  "start": 9.74,
+  "end": 10.2
+ },
+ {
+  "text": "«Gesù,",
+  "start": 10.78,
+  "end": 11.3
+ },
+ {
+  "text": "quando",
+  "start": 11.32,
+  "end": 11.66
+ },
+ {
+  "text": "cominciò,",
+  "start": 11.66,
+  "end": 12.2
+ },
+ {
+  "text": "avea",
+  "start": 12.28,
+  "end": 12.82
+ },
+ {
+  "text": "circa",
+  "start": 12.82,
+  "end": 13.14
+ },
+ {
+  "text": "trent'anni.»",
+  "start": 13.14,
+  "end": 14.06
+ },
+ {
+  "text": "Notate",
+  "start": 14.34,
+  "end": 14.86
+ },
+ {
+  "text": "la",
+  "start": 14.86,
+  "end": 15.0
+ },
+ {
+  "text": "parola",
+  "start": 15.0,
+  "end": 15.28
+ },
+ {
+  "text": "«circa».",
+  "start": 15.28,
+  "end": 15.56
+ },
+ {
+  "text": "Luca",
+  "start": 15.92,
+  "end": 16.44
+ },
+ {
+  "text": "non",
+  "start": 16.44,
+  "end": 16.8
+ },
+ {
+  "text": "dà",
+  "start": 16.8,
+  "end": 17.0
+ },
+ {
+  "text": "un'età",
+  "start": 17.0,
+  "end": 17.34
+ },
+ {
+  "text": "esatta.",
+  "start": 17.34,
+  "end": 17.66
+ },
+ {
+  "text": "Poi",
+  "start": 18.2,
+  "end": 18.72
+ },
+ {
+  "text": "bisogna",
+  "start": 18.72,
+  "end": 19.06
+ },
+ {
+  "text": "contare.",
+  "start": 19.06,
+  "end": 19.48
+ },
+ {
+  "text": "Giovanni",
+  "start": 19.96,
+  "end": 20.48
+ },
+ {
+  "text": "menziona",
+  "start": 20.48,
+  "end": 20.8
+ },
+ {
+  "text": "almeno",
+  "start": 20.8,
+  "end": 21.1
+ },
+ {
+  "text": "tre",
+  "start": 21.1,
+  "end": 21.28
+ },
+ {
+  "text": "feste",
+  "start": 21.28,
+  "end": 21.66
+ },
+ {
+  "text": "di",
+  "start": 21.66,
+  "end": 21.74
+ },
+ {
+  "text": "Pasqua",
+  "start": 21.74,
+  "end": 22.08
+ },
+ {
+  "text": "durante",
+  "start": 22.08,
+  "end": 22.28
+ },
+ {
+  "text": "il",
+  "start": 22.28,
+  "end": 22.48
+ },
+ {
+  "text": "suo",
+  "start": 22.48,
+  "end": 22.58
+ },
+ {
+  "text": "ministero,",
+  "start": 22.58,
+  "end": 23.18
+ },
+ {
+  "text": "il",
+  "start": 23.2,
+  "end": 23.42
+ },
+ {
+  "text": "che",
+  "start": 23.42,
+  "end": 23.54
+ },
+ {
+  "text": "fa",
+  "start": 23.54,
+  "end": 23.72
+ },
+ {
+  "text": "da",
+  "start": 23.72,
+  "end": 23.98
+ },
+ {
+  "text": "due",
+  "start": 23.98,
+  "end": 24.24
+ },
+ {
+  "text": "a",
+  "start": 24.24,
+  "end": 24.36
+ },
+ {
+  "text": "tre",
+  "start": 24.36,
+  "end": 24.52
+ },
+ {
+  "text": "anni.",
+  "start": 24.52,
+  "end": 24.82
+ },
+ {
+  "text": "Quanto",
+  "start": 25.32,
+  "end": 25.84
+ },
+ {
+  "text": "alla",
+  "start": 25.84,
+  "end": 25.98
+ },
+ {
+  "text": "nascita,",
+  "start": 25.98,
+  "end": 26.48
+ },
+ {
+  "text": "Matteo",
+  "start": 26.48,
+  "end": 26.9
+ },
+ {
+  "text": "la",
+  "start": 26.9,
+  "end": 27.02
+ },
+ {
+  "text": "colloca",
+  "start": 27.02,
+  "end": 27.38
+ },
+ {
+  "text": "prima",
+  "start": 27.38,
+  "end": 27.56
+ },
+ {
+  "text": "della",
+  "start": 27.56,
+  "end": 27.86
+ },
+ {
+  "text": "morte",
+  "start": 27.86,
+  "end": 28.16
+ },
+ {
+  "text": "di",
+  "start": 28.16,
+  "end": 28.28
+ },
+ {
+  "text": "Erode",
+  "start": 28.28,
+  "end": 28.5
+ },
+ {
+  "text": "il",
+  "start": 28.5,
+  "end": 28.62
+ },
+ {
+  "text": "Grande,",
+  "start": 28.62,
+  "end": 28.86
+ },
+ {
+  "text": "nel",
+  "start": 29.1,
+  "end": 29.3
+ },
+ {
+  "text": "4",
+  "start": 29.3,
+  "end": 29.56
+ },
+ {
+  "text": "avanti",
+  "start": 29.56,
+  "end": 29.98
+ },
+ {
+  "text": "Cristo.",
+  "start": 29.98,
+  "end": 30.2
+ },
+ {
+  "text": "Con",
+  "start": 30.7,
+  "end": 31.18
+ },
+ {
+  "text": "questi",
+  "start": 31.18,
+  "end": 31.44
+ },
+ {
+  "text": "punti",
+  "start": 31.44,
+  "end": 31.8
+ },
+ {
+  "text": "di",
+  "start": 31.8,
+  "end": 31.9
+ },
+ {
+  "text": "riferimento,",
+  "start": 31.9,
+  "end": 32.32
+ },
+ {
+  "text": "molti",
+  "start": 32.32,
+  "end": 32.8
+ },
+ {
+  "text": "studiosi",
+  "start": 32.8,
+  "end": 33.22
+ },
+ {
+  "text": "collocano",
+  "start": 33.22,
+  "end": 33.62
+ },
+ {
+  "text": "la",
+  "start": 33.62,
+  "end": 33.76
+ },
+ {
+  "text": "sua",
+  "start": 33.76,
+  "end": 33.9
+ },
+ {
+  "text": "morte",
+  "start": 33.9,
+  "end": 34.18
+ },
+ {
+  "text": "tra",
+  "start": 34.18,
+  "end": 34.36
+ },
+ {
+  "text": "il",
+  "start": 34.36,
+  "end": 34.5
+ },
+ {
+  "text": "30",
+  "start": 34.5,
+  "end": 34.84
+ },
+ {
+  "text": "e",
+  "start": 34.84,
+  "end": 35.0
+ },
+ {
+  "text": "il",
+  "start": 35.0,
+  "end": 35.12
+ },
+ {
+  "text": "33",
+  "start": 35.12,
+  "end": 35.5
+ },
+ {
+  "text": "d.C.",
+  "start": 35.5,
+  "end": 36.08
+ },
+ {
+  "text": "Avrebbe",
+  "start": 36.52,
+  "end": 37.0
+ },
+ {
+  "text": "dunque",
+  "start": 37.0,
+  "end": 37.38
+ },
+ {
+  "text": "tra",
+  "start": 37.38,
+  "end": 37.5
+ },
+ {
+  "text": "i",
+  "start": 37.5,
+  "end": 37.62
+ },
+ {
+  "text": "33",
+  "start": 37.62,
+  "end": 37.9
+ },
+ {
+  "text": "e",
+  "start": 37.9,
+  "end": 38.24
+ },
+ {
+  "text": "i",
+  "start": 38.24,
+  "end": 38.34
+ },
+ {
+  "text": "37",
+  "start": 38.34,
+  "end": 38.7
+ },
+ {
+  "text": "anni",
+  "start": 38.7,
+  "end": 39.14
+ },
+ {
+  "text": "circa.",
+  "start": 39.14,
+  "end": 39.44
+ },
+ {
+  "text": "Non",
+  "start": 39.68,
+  "end": 40.06
+ },
+ {
+  "text": "è",
+  "start": 40.06,
+  "end": 40.18
+ },
+ {
+  "text": "una",
+  "start": 40.18,
+  "end": 40.3
+ },
+ {
+  "text": "certezza.",
+  "start": 40.3,
+  "end": 40.86
+ },
+ {
+  "text": "«33",
+  "start": 41.42,
+  "end": 41.9
+ },
+ {
+  "text": "anni»",
+  "start": 41.9,
+  "end": 42.28
+ },
+ {
+  "text": "è",
+  "start": 42.28,
+  "end": 42.42
+ },
+ {
+  "text": "quindi",
+  "start": 42.42,
+  "end": 42.6
+ },
+ {
+  "text": "una",
+  "start": 42.6,
+  "end": 42.8
+ },
+ {
+  "text": "tradizione",
+  "start": 42.8,
+  "end": 43.22
+ },
+ {
+  "text": "antica,",
+  "start": 43.22,
+  "end": 43.68
+ },
+ {
+  "text": "non",
+  "start": 43.74,
+  "end": 44.0
+ },
+ {
+  "text": "un",
+  "start": 44.0,
+  "end": 44.14
+ },
+ {
+  "text": "numero",
+  "start": 44.14,
+  "end": 44.36
+ },
+ {
+  "text": "del",
+  "start": 44.36,
+  "end": 44.54
+ },
+ {
+  "text": "testo.",
+  "start": 44.54,
+  "end": 45.0
+ },
+ {
+  "text": "I",
+  "start": 45.28,
+  "end": 45.66
+ },
+ {
+  "text": "Vangeli",
+  "start": 45.66,
+  "end": 46.02
+ },
+ {
+  "text": "non",
+  "start": 46.02,
+  "end": 46.22
+ },
+ {
+  "text": "si",
+  "start": 46.22,
+  "end": 46.4
+ },
+ {
+  "text": "interessano",
+  "start": 46.4,
+  "end": 46.98
+ },
+ {
+  "text": "alla",
+  "start": 46.98,
+  "end": 47.06
+ },
+ {
+  "text": "sua",
+  "start": 47.06,
+  "end": 47.22
+ },
+ {
+  "text": "età,",
+  "start": 47.22,
+  "end": 47.48
+ },
+ {
+  "text": "ma",
+  "start": 47.5,
+  "end": 47.7
+ },
+ {
+  "text": "a",
+  "start": 47.7,
+  "end": 47.8
+ },
+ {
+  "text": "ciò",
+  "start": 47.8,
+  "end": 48.0
+ },
+ {
+  "text": "che",
+  "start": 48.0,
+  "end": 48.16
+ },
+ {
+  "text": "ha",
+  "start": 48.16,
+  "end": 48.26
+ },
+ {
+  "text": "detto",
+  "start": 48.26,
+  "end": 48.54
+ },
+ {
+  "text": "e",
+  "start": 48.54,
+  "end": 48.7
+ },
+ {
+  "text": "fatto.",
+  "start": 48.7,
+  "end": 48.92
+ },
+ {
+  "text": "Quale",
+  "start": 49.275,
+  "end": 49.755
+ },
+ {
+  "text": "altra",
+  "start": 49.755,
+  "end": 49.955
+ },
+ {
+  "text": "idea",
+  "start": 49.955,
+  "end": 50.115
+ },
+ {
+  "text": "comune",
+  "start": 50.115,
+  "end": 50.475
+ },
+ {
+  "text": "sulla",
+  "start": 50.475,
+  "end": 50.635
+ },
+ {
+  "text": "Bibbia",
+  "start": 50.635,
+  "end": 51.015
+ },
+ {
+  "text": "ti",
+  "start": 51.015,
+  "end": 51.115
+ },
+ {
+  "text": "ha",
+  "start": 51.115,
+  "end": 51.215
+ },
+ {
+  "text": "sorpreso?",
+  "start": 51.215,
+  "end": 51.715
+ },
+ {
+  "text": "Dillo",
+  "start": 51.855,
+  "end": 52.335
+ },
+ {
+  "text": "nei",
+  "start": 52.335,
+  "end": 52.475
+ },
+ {
+  "text": "commenti.",
+  "start": 52.475,
+  "end": 52.955
+ },
+ {
+  "text": "Iscriviti",
+  "start": 53.352,
+  "end": 53.832
+ },
+ {
+  "text": "per",
+  "start": 53.832,
+  "end": 54.012
+ },
+ {
+  "text": "scoprire",
+  "start": 54.012,
+  "end": 54.372
+ },
+ {
+  "text": "la",
+  "start": 54.372,
+  "end": 54.572
+ },
+ {
+  "text": "Bibbia,",
+  "start": 54.572,
+  "end": 54.912
+ },
+ {
+  "text": "un",
+  "start": 54.912,
+  "end": 55.272
+ },
+ {
+  "text": "racconto",
+  "start": 55.272,
+  "end": 55.672
+ },
+ {
+  "text": "alla",
+  "start": 55.672,
+  "end": 55.792
+ },
+ {
+  "text": "volta.",
+  "start": 55.792,
+  "end": 56.032
+ }
+]
