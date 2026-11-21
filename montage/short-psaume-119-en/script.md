@@ -1,5 +1,5 @@
 The longest chapter in the Bible has 176 verses. It's Psalm 119.
-The shortest, Psalm 117, has only two. In between, just one psalm: 118.
+117 has only two. In between, just one psalm: 118.
 Why so many verses? Because it's a poem built like an alphabet.
 In Hebrew, the text is an acrostic: twenty-two stanzas, like the twenty-two letters of the Hebrew alphabet.
 Each stanza has eight verses, and all begin with the same letter, from alef to tav. Eight times twenty-two: one hundred seventy-six.

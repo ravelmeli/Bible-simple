@@ -1,0 +1,892 @@
+[
+ {
+  "text": "Le",
+  "start": 0.0,
+  "end": 0.18
+ },
+ {
+  "text": "plus",
+  "start": 0.18,
+  "end": 0.3
+ },
+ {
+  "text": "long",
+  "start": 0.3,
+  "end": 0.64
+ },
+ {
+  "text": "chapitre",
+  "start": 0.64,
+  "end": 1.22
+ },
+ {
+  "text": "de",
+  "start": 1.22,
+  "end": 1.28
+ },
+ {
+  "text": "la",
+  "start": 1.28,
+  "end": 1.4
+ },
+ {
+  "text": "Bible",
+  "start": 1.4,
+  "end": 1.64
+ },
+ {
+  "text": "compte",
+  "start": 1.64,
+  "end": 1.98
+ },
+ {
+  "text": "176",
+  "start": 1.98,
+  "end": 3.0
+ },
+ {
+  "text": "versets.",
+  "start": 3.0,
+  "end": 3.68
+ },
+ {
+  "text": "C'est",
+  "start": 3.7,
+  "end": 4.02
+ },
+ {
+  "text": "le",
+  "start": 4.02,
+  "end": 4.08
+ },
+ {
+  "text": "Psaume",
+  "start": 4.08,
+  "end": 4.38
+ },
+ {
+  "text": "119.",
+  "start": 4.38,
+  "end": 5.0
+ },
+ {
+  "text": "Le",
+  "start": 5.22,
+  "end": 5.5
+ },
+ {
+  "text": "plus",
+  "start": 5.5,
+  "end": 5.66
+ },
+ {
+  "text": "court,",
+  "start": 5.66,
+  "end": 5.96
+ },
+ {
+  "text": "le",
+  "start": 6.08,
+  "end": 6.24
+ },
+ {
+  "text": "Psaume",
+  "start": 6.24,
+  "end": 6.5
+ },
+ {
+  "text": "117,",
+  "start": 6.5,
+  "end": 7.02
+ },
+ {
+  "text": "n'en",
+  "start": 7.14,
+  "end": 7.38
+ },
+ {
+  "text": "a",
+  "start": 7.38,
+  "end": 7.48
+ },
+ {
+  "text": "que",
+  "start": 7.48,
+  "end": 7.62
+ },
+ {
+  "text": "deux.",
+  "start": 7.62,
+  "end": 7.92
+ },
+ {
+  "text": "Entre",
+  "start": 8.18,
+  "end": 8.66
+ },
+ {
+  "text": "les",
+  "start": 8.66,
+  "end": 8.82
+ },
+ {
+  "text": "deux,",
+  "start": 8.82,
+  "end": 8.96
+ },
+ {
+  "text": "un",
+  "start": 9.06,
+  "end": 9.38
+ },
+ {
+  "text": "seul",
+  "start": 9.38,
+  "end": 9.58
+ },
+ {
+  "text": "psaume",
+  "start": 9.58,
+  "end": 9.9
+ },
+ {
+  "text": "le",
+  "start": 9.96,
+  "end": 10.2
+ },
+ {
+  "text": "118.",
+  "start": 10.2,
+  "end": 10.66
+ },
+ {
+  "text": "Pourquoi",
+  "start": 11.16,
+  "end": 11.64
+ },
+ {
+  "text": "tant",
+  "start": 11.64,
+  "end": 12.0
+ },
+ {
+  "text": "de",
+  "start": 12.0,
+  "end": 12.16
+ },
+ {
+  "text": "versets",
+  "start": 12.16,
+  "end": 12.58
+ },
+ {
+  "text": "Parce",
+  "start": 12.58,
+  "end": 13.08
+ },
+ {
+  "text": "que",
+  "start": 13.08,
+  "end": 13.2
+ },
+ {
+  "text": "c'est",
+  "start": 13.2,
+  "end": 13.36
+ },
+ {
+  "text": "un",
+  "start": 13.36,
+  "end": 13.44
+ },
+ {
+  "text": "poème",
+  "start": 13.44,
+  "end": 13.78
+ },
+ {
+  "text": "construit",
+  "start": 13.78,
+  "end": 14.3
+ },
+ {
+  "text": "comme",
+  "start": 14.3,
+  "end": 14.46
+ },
+ {
+  "text": "un",
+  "start": 14.46,
+  "end": 14.6
+ },
+ {
+  "text": "alphabet.",
+  "start": 14.6,
+  "end": 14.92
+ },
+ {
+  "text": "En",
+  "start": 15.24,
+  "end": 15.72
+ },
+ {
+  "text": "hébreu,",
+  "start": 15.72,
+  "end": 16.1
+ },
+ {
+  "text": "le",
+  "start": 16.1,
+  "end": 16.18
+ },
+ {
+  "text": "texte",
+  "start": 16.18,
+  "end": 16.54
+ },
+ {
+  "text": "est",
+  "start": 16.54,
+  "end": 16.62
+ },
+ {
+  "text": "un",
+  "start": 16.62,
+  "end": 16.76
+ },
+ {
+  "text": "acrostiche",
+  "start": 16.76,
+  "end": 17.28
+ },
+ {
+  "text": "vingt-deux",
+  "start": 17.42,
+  "end": 17.9
+ },
+ {
+  "text": "strophes,",
+  "start": 17.9,
+  "end": 18.44
+ },
+ {
+  "text": "comme",
+  "start": 18.44,
+  "end": 18.6
+ },
+ {
+  "text": "les",
+  "start": 18.6,
+  "end": 18.74
+ },
+ {
+  "text": "vingt-deux",
+  "start": 18.74,
+  "end": 19.0
+ },
+ {
+  "text": "lettres",
+  "start": 19.0,
+  "end": 19.36
+ },
+ {
+  "text": "de",
+  "start": 19.36,
+  "end": 19.5
+ },
+ {
+  "text": "l'alphabet",
+  "start": 19.5,
+  "end": 19.8
+ },
+ {
+  "text": "hébreu.",
+  "start": 19.8,
+  "end": 20.18
+ },
+ {
+  "text": "Chaque",
+  "start": 20.5,
+  "end": 20.98
+ },
+ {
+  "text": "strophe",
+  "start": 20.98,
+  "end": 21.24
+ },
+ {
+  "text": "compte",
+  "start": 21.24,
+  "end": 21.46
+ },
+ {
+  "text": "huit",
+  "start": 21.46,
+  "end": 21.7
+ },
+ {
+  "text": "versets,",
+  "start": 21.7,
+  "end": 22.16
+ },
+ {
+  "text": "et",
+  "start": 22.18,
+  "end": 22.52
+ },
+ {
+  "text": "tous",
+  "start": 22.52,
+  "end": 22.7
+ },
+ {
+  "text": "commencent",
+  "start": 22.7,
+  "end": 23.06
+ },
+ {
+  "text": "par",
+  "start": 23.06,
+  "end": 23.16
+ },
+ {
+  "text": "la",
+  "start": 23.16,
+  "end": 23.28
+ },
+ {
+  "text": "même",
+  "start": 23.28,
+  "end": 23.44
+ },
+ {
+  "text": "lettre,",
+  "start": 23.44,
+  "end": 23.8
+ },
+ {
+  "text": "de",
+  "start": 23.84,
+  "end": 24.06
+ },
+ {
+  "text": "alef",
+  "start": 24.06,
+  "end": 24.46
+ },
+ {
+  "text": "à",
+  "start": 24.46,
+  "end": 24.74
+ },
+ {
+  "text": "tav.",
+  "start": 24.74,
+  "end": 25.04
+ },
+ {
+  "text": "Huit",
+  "start": 25.14,
+  "end": 25.528
+ },
+ {
+  "text": "fois",
+  "start": 25.528,
+  "end": 25.916
+ },
+ {
+  "text": "vingt-deux",
+  "start": 25.916,
+  "end": 26.304
+ },
+ {
+  "text": "cent",
+  "start": 26.304,
+  "end": 26.692
+ },
+ {
+  "text": "soixante-seize.",
+  "start": 26.692,
+  "end": 27.08
+ },
+ {
+  "text": "De",
+  "start": 27.412,
+  "end": 27.832
+ },
+ {
+  "text": "quoi",
+  "start": 27.832,
+  "end": 27.972
+ },
+ {
+  "text": "parle-t-il",
+  "start": 27.972,
+  "end": 28.472
+ },
+ {
+  "text": "Presque",
+  "start": 28.472,
+  "end": 29.132
+ },
+ {
+  "text": "à",
+  "start": 29.132,
+  "end": 29.232
+ },
+ {
+  "text": "chaque",
+  "start": 29.232,
+  "end": 29.452
+ },
+ {
+  "text": "verset,",
+  "start": 29.452,
+  "end": 29.872
+ },
+ {
+  "text": "de",
+  "start": 29.872,
+  "end": 29.972
+ },
+ {
+  "text": "la",
+  "start": 29.972,
+  "end": 30.072
+ },
+ {
+  "text": "parole",
+  "start": 30.072,
+  "end": 30.412
+ },
+ {
+  "text": "de",
+  "start": 30.412,
+  "end": 30.612
+ },
+ {
+  "text": "Dieu,",
+  "start": 30.612,
+  "end": 30.832
+ },
+ {
+  "text": "avec",
+  "start": 30.912,
+  "end": 31.272
+ },
+ {
+  "text": "des",
+  "start": 31.272,
+  "end": 31.412
+ },
+ {
+  "text": "mots",
+  "start": 31.412,
+  "end": 31.552
+ },
+ {
+  "text": "comme",
+  "start": 31.552,
+  "end": 31.752
+ },
+ {
+  "text": "loi,",
+  "start": 31.752,
+  "end": 32.012
+ },
+ {
+  "text": "préceptes",
+  "start": 32.172,
+  "end": 32.872
+ },
+ {
+  "text": "ou",
+  "start": 32.872,
+  "end": 32.912
+ },
+ {
+  "text": "commandements.",
+  "start": 32.912,
+  "end": 33.412
+ },
+ {
+  "text": "Le",
+  "start": 33.712,
+  "end": 34.132
+ },
+ {
+  "text": "verset",
+  "start": 34.132,
+  "end": 34.412
+ },
+ {
+  "text": "le",
+  "start": 34.412,
+  "end": 34.472
+ },
+ {
+  "text": "plus",
+  "start": 34.472,
+  "end": 34.632
+ },
+ {
+  "text": "connu",
+  "start": 34.632,
+  "end": 34.912
+ },
+ {
+  "text": "est",
+  "start": 34.912,
+  "end": 35.192
+ },
+ {
+  "text": "le",
+  "start": 35.192,
+  "end": 35.352
+ },
+ {
+  "text": "105,",
+  "start": 35.352,
+  "end": 35.632
+ },
+ {
+  "text": "dans",
+  "start": 35.632,
+  "end": 36.032
+ },
+ {
+  "text": "la",
+  "start": 36.032,
+  "end": 36.152
+ },
+ {
+  "text": "Louis",
+  "start": 36.152,
+  "end": 36.312
+ },
+ {
+  "text": "Segond",
+  "start": 36.312,
+  "end": 36.472
+ },
+ {
+  "text": "1910",
+  "start": 36.472,
+  "end": 37.132
+ },
+ {
+  "text": "Ta",
+  "start": 37.632,
+  "end": 37.732
+ },
+ {
+  "text": "parole",
+  "start": 37.732,
+  "end": 38.012
+ },
+ {
+  "text": "est",
+  "start": 38.012,
+  "end": 38.192
+ },
+ {
+  "text": "une",
+  "start": 38.192,
+  "end": 38.352
+ },
+ {
+  "text": "lampe",
+  "start": 38.352,
+  "end": 38.752
+ },
+ {
+  "text": "à",
+  "start": 38.752,
+  "end": 38.832
+ },
+ {
+  "text": "mes",
+  "start": 38.832,
+  "end": 38.872
+ },
+ {
+  "text": "pieds,",
+  "start": 38.872,
+  "end": 39.212
+ },
+ {
+  "text": "et",
+  "start": 39.212,
+  "end": 39.352
+ },
+ {
+  "text": "une",
+  "start": 39.352,
+  "end": 39.492
+ },
+ {
+  "text": "lumière",
+  "start": 39.492,
+  "end": 39.872
+ },
+ {
+  "text": "sur",
+  "start": 39.872,
+  "end": 40.132
+ },
+ {
+  "text": "mon",
+  "start": 40.132,
+  "end": 40.292
+ },
+ {
+  "text": "sentier.",
+  "start": 40.292,
+  "end": 40.672
+ },
+ {
+  "text": "Ce",
+  "start": 41.172,
+  "end": 41.552
+ },
+ {
+  "text": "n'est",
+  "start": 41.552,
+  "end": 41.632
+ },
+ {
+  "text": "pas",
+  "start": 41.632,
+  "end": 41.712
+ },
+ {
+  "text": "un",
+  "start": 41.712,
+  "end": 41.832
+ },
+ {
+  "text": "code",
+  "start": 41.832,
+  "end": 42.112
+ },
+ {
+  "text": "froid.",
+  "start": 42.112,
+  "end": 42.472
+ },
+ {
+  "text": "L'auteur",
+  "start": 42.632,
+  "end": 43.272
+ },
+ {
+  "text": "dit",
+  "start": 43.272,
+  "end": 43.452
+ },
+ {
+  "text": "aimer",
+  "start": 43.452,
+  "end": 43.952
+ },
+ {
+  "text": "cette",
+  "start": 43.952,
+  "end": 44.112
+ },
+ {
+  "text": "parole,",
+  "start": 44.112,
+  "end": 44.412
+ },
+ {
+  "text": "y",
+  "start": 44.612,
+  "end": 44.732
+ },
+ {
+  "text": "trouver",
+  "start": 44.732,
+  "end": 44.972
+ },
+ {
+  "text": "de",
+  "start": 44.972,
+  "end": 45.132
+ },
+ {
+  "text": "la",
+  "start": 45.132,
+  "end": 45.212
+ },
+ {
+  "text": "consolation,",
+  "start": 45.212,
+  "end": 45.872
+ },
+ {
+  "text": "et",
+  "start": 45.952,
+  "end": 46.352
+ },
+ {
+  "text": "il",
+  "start": 46.352,
+  "end": 46.492
+ },
+ {
+  "text": "supplie",
+  "start": 46.492,
+  "end": 47.052
+ },
+ {
+  "text": "aussi",
+  "start": 47.052,
+  "end": 47.232
+ },
+ {
+  "text": "Dieu",
+  "start": 47.232,
+  "end": 47.532
+ },
+ {
+  "text": "dans",
+  "start": 47.532,
+  "end": 47.712
+ },
+ {
+  "text": "l'épreuve.",
+  "start": 47.712,
+  "end": 48.112
+ },
+ {
+  "text": "Le",
+  "start": 48.492,
+  "end": 48.912
+ },
+ {
+  "text": "texte",
+  "start": 48.912,
+  "end": 49.252
+ },
+ {
+  "text": "ne",
+  "start": 49.252,
+  "end": 49.312
+ },
+ {
+  "text": "nomme",
+  "start": 49.312,
+  "end": 49.632
+ },
+ {
+  "text": "pas",
+  "start": 49.632,
+  "end": 49.732
+ },
+ {
+  "text": "son",
+  "start": 49.732,
+  "end": 49.892
+ },
+ {
+  "text": "auteur.",
+  "start": 49.892,
+  "end": 50.172
+ },
+ {
+  "text": "Quel",
+  "start": 50.732,
+  "end": 51.152
+ },
+ {
+  "text": "verset",
+  "start": 51.152,
+  "end": 51.552
+ },
+ {
+  "text": "du",
+  "start": 51.552,
+  "end": 51.632
+ },
+ {
+  "text": "Psaume",
+  "start": 51.632,
+  "end": 51.852
+ },
+ {
+  "text": "119",
+  "start": 51.852,
+  "end": 52.252
+ },
+ {
+  "text": "préfères-tu",
+  "start": 52.252,
+  "end": 52.892
+ },
+ {
+  "text": "Dis-le",
+  "start": 52.892,
+  "end": 53.572
+ },
+ {
+  "text": "en",
+  "start": 53.572,
+  "end": 53.692
+ },
+ {
+  "text": "commentaire.",
+  "start": 53.692,
+  "end": 54.132
+ },
+ {
+  "text": "Abonne-toi",
+  "start": 54.652,
+  "end": 55.252
+ },
+ {
+  "text": "pour",
+  "start": 55.252,
+  "end": 55.412
+ },
+ {
+  "text": "découvrir",
+  "start": 55.412,
+  "end": 55.772
+ },
+ {
+  "text": "la",
+  "start": 55.772,
+  "end": 56.012
+ },
+ {
+  "text": "Bible,",
+  "start": 56.012,
+  "end": 56.172
+ },
+ {
+  "text": "un",
+  "start": 56.292,
+  "end": 56.552
+ },
+ {
+  "text": "récit",
+  "start": 56.552,
+  "end": 56.992
+ },
+ {
+  "text": "à",
+  "start": 56.992,
+  "end": 57.272
+ },
+ {
+  "text": "la",
+  "start": 57.272,
+  "end": 57.352
+ },
+ {
+  "text": "fois.",
+  "start": 57.352,
+  "end": 57.592
+ }
+]
