@@ -54,7 +54,7 @@ Let's begin with Genesis. In chapter 1, the human being is created on the sixth 
 Seven, in the Bible, says fullness: seven days, seven churches, seven seals, seven trumpets. Six therefore stays one step short of that goal.
 Many readers conclude that six speaks of the human, limited, incomplete. Repeated three times, it would say the human who thinks he is God. It is a common and coherent reading, but no verse states it.
 Now let's look at two scenes where six returns, with the caution that rigor requires.
-First book of Kings, chapter 10: six hundred sixty-six talents of gold a year for Solomon, about twenty tons. The text does not judge this number in itself, it describes an immense wealth. Yet the law of the king, in Deuteronomy chapter 17, forbids the king from piling up horses, wives, silver and gold.
+First book of Kings, chapter 10: six hundred sixty-six talents of gold a year for Solomon, about twenty tons. The text does not judge this number in itself, it describes an immense wealth. Now, the Queen of Sheba had just said that the Lord wanted Solomon on his throne to rule with justice and right. Yet the law of the king, in Deuteronomy chapter 17, forbids the king from piling up horses, wives, silver and gold.
 And what does Solomon do? He imports horses from Egypt, he marries hundreds of women, and he accumulates gold. Some commentators see in this 666 the sign of a human power that has turned aside.
 Second scene: in the book of Daniel, chapter 3, King Nebuchadnezzar has a gold statue set up, sixty cubits high, six cubits wide. Everyone must bow down before it, on pain of death.
 As in Revelation, a human power demands a worship that belongs only to God, and faithful people refuse.
