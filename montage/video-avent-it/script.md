@@ -5,7 +5,7 @@ Vi guiderò passo dopo passo, separando ciò che dice il testo, ciò che dice la
 E vedrete che l'Avvento parla tanto del futuro quanto del passato.
 Cominciamo dalla parola stessa.
 «Avvento» viene dal latino adventus. Significa «arrivo», «venuta».
-I Romani usavano questa parola per una scena precisa: l'ingresso solenne di un imperatore in una città. Gli abitanti uscivano ad accoglierlo, la città si addobbava, cominciavano le feste.
+I Romani usavano questa parola per l'ingresso solenne di un imperatore in una città. Gli abitanti uscivano ad accoglierlo, la città si addobbava, cominciavano le feste.
 I primi cristiani, che parlavano greco, avevano una parola vicina: parousia. Significa «presenza», «venuta». Indicava anch'essa la visita di un re.
 Quando il Nuovo Testamento parla della venuta di Cristo, prende dunque in prestito il vocabolario dell'arrivo di un sovrano.
 L'immagine è forte: di fronte all'imperatore di Roma, si attende un altro re.
@@ -15,7 +15,7 @@ Ora, una prima sorpresa: la Bibbia non menziona alcun periodo di quattro settima
 Questo periodo è una tradizione della Chiesa, costruita a poco a poco.
 Nel quarto secolo, in Spagna, un concilio menziona già un tempo di preparazione prima dell'Epifania. Nel quinto secolo, in Gallia, si digiuna quaranta giorni prima di Natale.
 A Roma, è verso il sesto secolo che le quattro settimane si fissano. Le Chiese d'Oriente, invece, hanno altre usanze.
-Presso gli ortodossi, per esempio, il digiuno della Natività comincia il 15 novembre e dura quaranta giorni. Le Chiese protestanti ed evangeliche non praticano tutte l'Avvento allo stesso modo: alcune lo celebrano con cura, altre quasi per nulla.
+Presso gli ortodossi, il digiuno della Natività comincia il 15 novembre e dura quaranta giorni. Le Chiese protestanti ed evangeliche non praticano tutte l'Avvento allo stesso modo.
 Altra sorpresa: la data del 25 dicembre non è nella Bibbia nemmeno lei.
 I Vangeli non danno la data della nascita di Gesù. La più antica traccia di una festa di Natale il 25 dicembre si trova a Roma, nel quarto secolo.
 Perché questa data? Si discutono due ipotesi principali. Alcuni pensano che la Chiesa abbia scelto una data vicina a feste pagane del sole. Altri pensano che la data sia stata calcolata a partire da quella della morte di Gesù.
@@ -29,7 +29,7 @@ In Michea 5, il profeta annuncia che colui che dominerà su Israele uscirà da B
 E in Isaia 7 viene dato un segno: «La vergine concepirà, partorirà un figliuolo, e gli porrà nome Emmanuele.»
 Quest'ultimo versetto merita una sosta. La parola ebraica è almah. Indica una giovane donna in età da marito, senza precisare se sia vergine.
 L'antica traduzione greca, la Settanta, ha scelto parthenos, che può significare «vergine». È questa la parola che riprende Matteo 1, al versetto 23.
-Questa differenza di parole è studiata da secoli. Non cambia il senso generale: Dio annuncia che sarà «con noi». Emmanuele significa proprio questo.
+Questa differenza è studiata da secoli. Non cambia il senso generale: Dio annuncia che sarà «con noi». Emmanuele significa proprio questo.
 In Isaia 11, un'altra immagine: «Un ramo uscirà dal tronco d'Isai.» Isai è il padre del re Davide. Il tronco sembra tagliato, ma la vita rispunta.
 In Geremia 33, Dio promette di adempiere la sua buona parola. Una promessa fatta a un popolo in rovina, durante l'esilio.
 E in Isaia 40, il versetto che si associa all'Avvento: «Consolate, consolate il mio popolo, dice il vostro Dio.»
@@ -41,13 +41,13 @@ Questa frase è il cuore dell'Avvento: preparare la via. Nell'antichità si ripa
 In altre parole, l'Avvento è preparare il proprio cuore come si prepara una strada.
 I primi capitoli del Vangelo di Luca sono pieni di persone che aspettano.
 C'è prima di tutto Zaccaria, un sacerdote anziano. Un angelo gli annuncia che avrà un figlio, Giovanni. Dubita, e perde la parola fino alla nascita del bambino.
-Circa nove mesi di silenzio. Non è una punizione spettacolare, è piuttosto un'attesa imposta: deve tacere, e guardare ciò che viene.
+Circa nove mesi di silenzio. Non è una punizione spettacolare, è un'attesa imposta: deve tacere, e guardare ciò che viene.
 Poi c'è Maria, una giovane donna di Nazaret. Quando l'angelo le annuncia che sarà la madre del Salvatore, risponde: «Ecco la serva del Signore; siami fatto secondo la tua parola.»
 Più avanti, canta un cantico chiamato Magnificat, che comincia così: «L'anima mia magnifica il Signore.»
 Giuseppe riceve l'annuncio in sogno, in Matteo 1. Esita, riflette, poi accoglie Maria in casa sua.
 La scena di Betlemme è raccontata da Luca con grande semplicità. Un editto dell'imperatore Augusto ordina un censimento, e Giuseppe sale a Betlemme con Maria.
 Là, dice il testo, Maria lo pose a giacere in una mangiatoia, perché non c'era posto per loro nell'albergo.
-La parola greca, kataluma, indica una stanza per gli ospiti. Alcuni studiosi pensano che fosse una sala comune della casa, troppo piena, più che una locanda in senso moderno.
+La parola greca, kataluma, indica una stanza per gli ospiti. Alcuni studiosi pensano a una sala comune della casa, troppo piena, più che a una locanda.
 In ogni caso, il re atteso arriva in un luogo umile, lontano dai palazzi, e lontanissimo dall'ingresso solenne di un imperatore.
 Ognuna di queste persone vive un'attesa diversa: il dubbio, la fiducia, il silenzio, la decisione.
 E alla fine del racconto, quando Gesù è presentato al tempio, due anziani lo aspettano da sempre: Simeone, che «aspettava la consolazione d'Israele», e Anna, una profetessa che prega giorno e notte.
@@ -71,11 +71,11 @@ Poi la preparazione. «Preparate la via» non è una lista della spesa: è un in
 E infine la speranza. Nella Bibbia, sperare non significa cullarsi nelle illusioni, significa fidarsi che Dio mantiene le sue promesse, anche quando il tempo è lungo.
 In ebraico, una parola ritorna spesso: tiqvah, di solito tradotta «speranza». Viene da un verbo, qavah, che significa «aspettare», «tendere verso».
 La stessa parola, tiqvah, indica anche una corda. In Giosuè 2, alla prostituta Raab viene detto di legare un cordone di filo scarlatto alla finestra: quel cordone è una tiqvah.
-Molti lettori vi vedono l'idea di una corda tesa, di un'attesa che tiene. È una spiegazione comune, ma resta una lettura: il testo non la formula da sé.
+Molti lettori vi vedono una corda tesa, un'attesa che tiene. È una lettura comune, ma il testo non la formula da sé.
 E nel Nuovo Testamento, la terza settimana dell'Avvento porta un nome latino, Gaudete, che significa «rallegratevi». Viene da Filippesi 4: «Rallegratevi sempre nel Signore.»
-Anche nel mezzo dell'attesa, la Bibbia invita alla gioia. Non è una gioia che nega la stanchezza: è una gioia che sa che la strada avanza.
+Anche nell'attesa, la Bibbia invita alla gioia: non una gioia che nega la stanchezza, ma una gioia che sa che la strada avanza.
 Voglio dire una parola anche per chi vive questo periodo con difficoltà.
-Per molti, la fine dell'anno risveglia la solitudine, il lutto, la stanchezza, la sensazione di restare ai margini delle feste.
+Per molti, la fine dell'anno risveglia la solitudine, il lutto, la stanchezza, la sensazione di restare ai margini.
 Se è il vostro caso, non siete soli. La Bibbia non nasconde questi momenti: Anna, la futura madre di Samuele, aspettò per anni un figlio, e piangeva.
 E se questa tristezza diventa pesante, parlarne con una persona cara, con un pastore, o con un professionista della salute può davvero aiutare. Non è mancanza di fede.
 Fermiamoci un istante su questa domanda: che cosa aspettate davvero quest'anno, e che cosa cambiano per voi questi testi? Ditelo nei commenti, leggo le vostre risposte.
