@@ -36,3 +36,11 @@ Règle donnée par l'utilisateur le 25/11/2026. Le compteur démarre avec la vid
 ## Exception du 25/11/2026 (hors cycle)
 
 À la demande de l'utilisateur, une vidéo longue **d'actualité** est réalisée maintenant, en dehors du compteur : **« Arche de Noé : le bois de 4 300 ans »** (`montage/video-arche-noe/`). Source de la tendance : actualité du 24-25/11/2026 (annonce de « Noah's Ark Scans » relayée par Newsweek, LADbible, Church Leaders, CBN, GreekReporter). Le cycle reprend ensuite comme convenu : prochaine vidéo = n° 2 du cycle 1 (sujet du document, choix par défaut Jérémie 29:11), puis n° 3 = sujet d'actualité.
+
+### Vidéo d'actualité hors cycle (demande de l'utilisateur du 25/11/2026)
+
+| Date | Sujet | Source de la tendance | État |
+|---|---|---|---|
+| 25/11/2026 | Exorcisme : ce que la Bible dit vraiment (`montage/video-exorcisme/`) | Google Trends (flux RSS quotidien, Italie : « esorcismo », plus de 200 recherches) et sujet permanent très recherché ; l'actualité attachée (prière d'exorcisme d'un cardinal diffusée en direct) n'a pas pu être confirmée par ma recherche | script FR à valider |
+
+D'après la consigne de l'utilisateur, cette vidéo est une exception : **la vidéo suivante reprend le cycle comme convenu** (n° 2 du cycle : un sujet du document, puis le n° 3 : un sujet d'actualité).
