@@ -32,3 +32,7 @@ Règle donnée par l'utilisateur le 25/11/2026. Le compteur démarre avec la vid
 | 1 | 3 | **Actualité** (Google Trends) | à chercher et à envoyer à l'utilisateur pour validation | à faire |
 | 2 | 4-5 | Document | à choisir | à faire |
 | 2 | 6 | **Actualité** | à chercher | à faire |
+
+## Exception du 25/11/2026 (hors cycle)
+
+À la demande de l'utilisateur, une vidéo longue **d'actualité** est réalisée maintenant, en dehors du compteur : **« Arche de Noé : le bois de 4 300 ans »** (`montage/video-arche-noe/`). Source de la tendance : actualité du 24-25/11/2026 (annonce de « Noah's Ark Scans » relayée par Newsweek, LADbible, Church Leaders, CBN, GreekReporter). Le cycle reprend ensuite comme convenu : prochaine vidéo = n° 2 du cycle 1 (sujet du document, choix par défaut Jérémie 29:11), puis n° 3 = sujet d'actualité.
