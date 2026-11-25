@@ -42,6 +42,6 @@ Règle donnée par l'utilisateur le 25/11/2026. Le compteur démarre avec la vid
 | Date | Sujet | Source de la tendance | État |
 |---|---|---|---|
 | 25/11/2026 | ~~Exorcisme~~ (`montage/video-exorcisme/`, script écrit mais **abandonné** : l'utilisateur a préféré l'Avent) | Google Trends Italie (« esorcismo », 200+) | abandonné |
-| 25/11/2026 | **L'Avent** (`montage/video-avent/`) | Avent 2026 : début le dimanche 29 novembre ; sujet saisonnier très recherché | FR : script, voix, montage et brouillon faits ; EN et IT à faire sur demande |
+| 25/11/2026 | **L'Avent** (`montage/video-avent/`) | Avent 2026 : début le dimanche 29 novembre ; sujet saisonnier très recherché | FR et EN : script, voix, montage et brouillon faits ; IT à faire sur demande |
 
 D'après la consigne de l'utilisateur, cette vidéo est une exception : **la vidéo suivante reprend le cycle comme convenu** (n° 2 du cycle : un sujet du document, puis le n° 3 : un sujet d'actualité).
