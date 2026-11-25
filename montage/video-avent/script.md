@@ -41,16 +41,16 @@ Cette phrase est le cœur de l'Avent : préparer le chemin. Dans l'Antiquité, o
 Autrement dit, l'Avent, c'est préparer son cœur comme on prépare une route.
 Les premiers chapitres de l'Évangile de Luc sont remplis de personnages qui attendent.
 Il y a d'abord Zacharie, un prêtre âgé. Un ange lui annonce qu'il aura un fils, Jean. Il doute, et il perd la parole jusqu'à la naissance de l'enfant.
-Neuf mois de silence. Ce n'est pas une punition spectaculaire, c'est comme une attente imposée : il doit se taire, et regarder venir ce qui vient.
+Environ neuf mois de silence. Ce n'est pas une punition spectaculaire, c'est comme une attente imposée : il doit se taire, et regarder venir ce qui vient.
 Puis il y a Marie, une jeune femme de Nazareth. Quand l'ange lui annonce qu'elle sera la mère du Sauveur, elle répond : « Je suis la servante du Seigneur ; qu'il me soit fait selon ta parole. »
 Plus loin, elle chante un cantique que l'on appelle le Magnificat, qui commence ainsi : « Mon âme exalte le Seigneur. »
 Joseph, lui, reçoit l'annonce en songe, dans Matthieu 1. Il hésite, il réfléchit, puis il accueille Marie chez lui.
-Chacun de ces personnages vit une attente différente : le doute, la confiance, le silence, la décision.
-Et à la fin du récit, quand Jésus est présenté au temple, deux personnes âgées l'attendent depuis toujours : Syméon, qui « attendait la consolation d'Israël », et Anne, une prophétesse qui prie jour et nuit.
-Entre-temps, la scène de Bethléhem est racontée par Luc avec une grande simplicité. Un édit de l'empereur Auguste ordonne un recensement, et Joseph monte à Bethléhem avec Marie.
+La scène de Bethléhem, elle, est racontée par Luc avec une grande simplicité. Un édit de l'empereur Auguste ordonne un recensement, et Joseph monte à Bethléhem avec Marie.
 Là, dit le texte, Marie « l'emmaillota et le coucha dans une crèche, parce qu'il n'y avait pas de place pour eux dans l'hôtellerie ».
 Le mot grec, kataluma, désigne une pièce d'accueil. Certains spécialistes pensent qu'il s'agit d'une salle commune de la maison, trop pleine, plutôt que d'une auberge au sens moderne.
 Quoi qu'il en soit, le roi attendu arrive dans un lieu modeste, loin des palais, et bien loin de l'entrée solennelle d'un empereur.
+Chacun de ces personnages vit une attente différente : le doute, la confiance, le silence, la décision.
+Et à la fin du récit, quand Jésus est présenté au temple, deux personnes âgées l'attendent depuis toujours : Syméon, qui « attendait la consolation d'Israël », et Anne, une prophétesse qui prie jour et nuit.
 Leur attente est récompensée. Ils ont attendu toute leur vie pour voir un enfant, et ils le reconnaissent.
 Mais attention : l'Avent ne parle pas que de Bethléhem.
 Dans la tradition chrétienne, l'Avent a toujours eu deux sens. Il rappelle la première venue du Christ, comme enfant, à Bethléhem. Et il fait penser à sa seconde venue, à la fin des temps.
@@ -76,7 +76,7 @@ Et dans le Nouveau Testament, la troisième semaine de l'Avent porte un nom lati
 Même au cœur de l'attente, la Bible invite à la joie. Ce n'est pas une joie qui nie la fatigue : c'est une joie qui sait que la route avance.
 Je veux aussi dire un mot pour celles et ceux pour qui cette période est difficile.
 Pour beaucoup, la fin de l'année réveille la solitude, le deuil, la fatigue, le sentiment d'être à l'écart des fêtes.
-Si c'est votre cas, vous n'êtes pas seul. La Bible ne cache pas ces moments : Anne, avant la naissance de Samuel, attendait un enfant depuis des années, et elle pleurait.
+Si c'est votre cas, vous n'êtes pas seul. La Bible ne cache pas ces moments : Anne, la future mère de Samuel, attendait un enfant depuis des années, et elle pleurait.
 Et si cette tristesse devient pesante, parler à un proche, à un pasteur, ou à un professionnel de santé peut vraiment aider. Ce n'est pas un manque de foi.
 Prenons un instant pour nous poser cette question : qu'attendez-vous vraiment, cette année, et qu'est-ce que ces textes changent pour vous ? Dites-le en commentaire, je lis vos réponses.
 Revenons à notre question de départ. L'Avent n'est pas écrit dans la Bible, et pourtant tout le texte parle d'attente.
