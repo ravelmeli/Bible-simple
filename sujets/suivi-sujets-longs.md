@@ -41,6 +41,7 @@ Règle donnée par l'utilisateur le 25/11/2026. Le compteur démarre avec la vid
 
 | Date | Sujet | Source de la tendance | État |
 |---|---|---|---|
-| 25/11/2026 | Exorcisme : ce que la Bible dit vraiment (`montage/video-exorcisme/`) | Google Trends (flux RSS quotidien, Italie : « esorcismo », plus de 200 recherches) et sujet permanent très recherché ; l'actualité attachée (prière d'exorcisme d'un cardinal diffusée en direct) n'a pas pu être confirmée par ma recherche | script FR à valider |
+| 25/11/2026 | ~~Exorcisme~~ (`montage/video-exorcisme/`, script écrit mais **abandonné** : l'utilisateur a préféré l'Avent) | Google Trends Italie (« esorcismo », 200+) | abandonné |
+| 25/11/2026 | **L'Avent** (`montage/video-avent/`) | Avent 2026 : début le dimanche 29 novembre ; sujet saisonnier très recherché | script FR à valider |
 
 D'après la consigne de l'utilisateur, cette vidéo est une exception : **la vidéo suivante reprend le cycle comme convenu** (n° 2 du cycle : un sujet du document, puis le n° 3 : un sujet d'actualité).
