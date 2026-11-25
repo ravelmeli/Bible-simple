@@ -20,3 +20,15 @@ Source des idées : `sujets/sujets-longs-source.md` (document fourni par l'utili
 ## Prochain choix
 
 À renseigner à chaque nouvelle vidéo longue : sujet retenu, numéro dans le document, raison (potentiel de viralité).
+
+## Cycle des vidéos longues : 2 sujets du document, puis 1 sujet d'actualité
+
+Règle donnée par l'utilisateur le 25/11/2026. Le compteur démarre avec la vidéo « 666 » (sujet du document, imposé par l'utilisateur) comme **n° 1 du cycle**.
+
+| Cycle | N° | Type | Sujet | État |
+|---|---|---|---|---|
+| 1 | 1 | Document | 666 : Pourquoi tout ce qu'on vous a raconté est FAUX | FR, EN, IT en brouillon |
+| 1 | 2 | Document | à choisir (choix par défaut : Jérémie 29:11, n° 17 du document) | à faire |
+| 1 | 3 | **Actualité** (Google Trends) | à chercher et à envoyer à l'utilisateur pour validation | à faire |
+| 2 | 4-5 | Document | à choisir | à faire |
+| 2 | 6 | **Actualité** | à chercher | à faire |
