@@ -1,5 +1,5 @@
-Un homme hurle dans une synagogue. La foule recule. Et Jésus ne sort ni eau bénite, ni crucifix, ni formule : il dit trois mots.
-Ces trois mots, la plupart des gens ne les connaissent pas. Et ce qu'on vous raconte sur l'exorcisme vient bien plus du cinéma que de la Bible.
+Un homme hurle dans une synagogue. La foule recule. Et Jésus ne sort ni eau bénite, ni crucifix, ni formule : il dit quelques mots.
+Ces quelques mots, la plupart des gens ne les connaissent pas. Et ce qu'on vous raconte sur l'exorcisme vient bien plus du cinéma que de la Bible.
 Alors, qu'est-ce que la Bible montre vraiment ? Qu'est-ce qu'elle ne dit jamais ? Et pourquoi cette question revient-elle sans cesse ?
 Je ne vais pas me moquer de ceux qui y croient, ni leur dire de tout croire. Je vais lire les textes, dans l'ordre, et séparer ce que dit la Bible, ce que dit la tradition, et ce que dit Hollywood.
 Commençons par un mot. Il va tout changer.
@@ -22,7 +22,7 @@ Mais tout le monde n'applaudit pas. Dans Marc 3, des responsables religieux accu
 Jésus répond par une question simple : « Comment Satan peut-il chasser Satan ? Un royaume divisé contre lui-même ne peut subsister. »
 Puis il ajoute une image : pour piller la maison d'un homme fort, il faut d'abord le lier. Ses exorcismes montrent que le pouvoir du mal est brisé.
 Voilà donc la logique du texte : chaque libération est un petit signe d'une victoire plus grande.
-Un détail frappant : Jésus fait taire les esprits, même quand ils disent vrai. Marc 1 précise qu'il « ne leur permettait pas de dire qu'ils le connaissaient ».
+Un détail frappant : Jésus fait taire les esprits, même quand ils disent vrai. Marc 1 précise qu'il ne permettait pas aux démons de parler, parce qu'ils le connaissaient.
 Il ne veut pas d'un témoignage venu de cette source. Il refuse d'être présenté par des forces hostiles.
 Les spécialistes parlent de « secret messianique » : Jésus avance prudemment, et ne se laisse pas enfermer dans une image de sauveur spectaculaire.
 Deuxième scène. Marc, chapitre 5, au pays des Géraséniens. Un homme vit parmi les tombes. Personne ne parvient à le maîtriser.
@@ -37,7 +37,7 @@ Cette phrase est précieuse : elle montre qu'on peut croire et douter à la fois
 À la fin, Jésus explique aux disciples : « Cette espèce ne peut sortir que par la prière. » Certains manuscrits ajoutent : « et par le jeûne ». Même ici, pas de formule, mais une dépendance de Dieu.
 Pourquoi Jésus agit-il ainsi ? Il le dit lui-même, dans Luc 11 : « Si c'est par le doigt de Dieu que je chasse les démons, le royaume de Dieu est donc parvenu jusqu'à vous. »
 Pour lui, chasser un démon est un signe : le règne de Dieu s'approche. Ce n'est pas un spectacle, c'est un message.
-Dans Matthieu 12, la phrase est presque identique : « Si c'est par l'Esprit de Dieu que je chasse les démons, le royaume de Dieu est donc parvenu jusqu'à vous. »
+Dans Matthieu 12, la phrase est presque identique : « Si c'est par l'Esprit de Dieu que je chasse les démons, le royaume de Dieu est donc venu jusqu'à vous. »
 Les évangélistes ne présentent donc jamais ces scènes pour fasciner. Ils les présentent pour dire : quelque chose de nouveau commence.
 Maintenant, comparons avec les autres exorcistes de l'époque.
 L'historien juif Flavius Josèphe, au premier siècle, raconte comment un certain Éléazar chassait les démons devant l'empereur : il utilisait une racine, des formules, et le nom de Salomon.
@@ -76,7 +76,7 @@ Dans la première lettre de Jean, au chapitre 4 : « Celui qui est en vous est p
 Dans la lettre de Jacques, au chapitre 4 : « Résistez au diable, et il fuira loin de vous. »
 Le message est constant : la victoire du Christ est le point de départ, pas la fin du combat. Le croyant n'a pas à vivre dans la terreur.
 Prenons un instant pour nous poser cette question : qu'est-ce qui vous inquiète le plus, dans ce sujet, et qu'est-ce que ces textes changent pour vous ? Dites-le en commentaire, je lis vos réponses.
-Revenons à notre scène d'ouverture. Un homme hurle dans une synagogue, et Jésus dit trois mots : « Tais-toi, et sors. »
+Revenons à notre scène d'ouverture. Un homme hurle dans une synagogue, et Jésus dit quelques mots : « Tais-toi, et sors de cet homme. »
 Il n'utilise ni objet, ni formule, ni mise en scène. Il agit avec une autorité que la foule remarque tout de suite.
 Ce que la Bible montre, c'est un Christ qui libère les personnes, qui leur rend leur place et leur raison.
 Ce qu'elle ne montre pas, c'est un spectacle, une recette, ou un pouvoir que l'on pourrait utiliser comme un outil.
