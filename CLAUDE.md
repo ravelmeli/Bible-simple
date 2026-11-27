@@ -35,6 +35,12 @@ Committer et pousser à chaque étape qui produit des fichiers.
 - Durée : 10 minutes (environ 1 950 à 1 980 mots en FR), puis versions EN et IT sur demande.
 - **Cycle de 3 vidéos longues** : 2 sujets piochés dans le document (règle ci-dessus), puis **le 3e est un sujet d'actualité** : chercher sur internet (Google Trends, puis recherche web en repli) le sujet le plus actuel du moment qui cadre bien avec la chaîne, et **l'envoyer à l'utilisateur dans le chat avant d'écrire le script** (sujet, pourquoi il est d'actualité, source et date de la tendance, angle honnête proposé, titre). Le script est écrit une fois que l'utilisateur a validé. Puis le cycle recommence (2 sujets du document, 1 sujet d'actualité, etc.). Le compteur du cycle est dans `sujets/suivi-sujets-longs.md`. Un sujet d'actualité doit rester fidèle aux règles éditoriales (pas de sensationnalisme, pas d'attaque d'une personne ou d'un parti, pas de prédiction) ; si Google Trends est inaccessible depuis l'environnement, le dire et passer à une recherche web.
 
+## Sujets des shorts
+
+- Les idées de sujets de shorts seront dans `sujets/sujets-shorts-source.md` (document de l'utilisateur, à ne pas modifier, dès qu'il est fourni). Le suivi des sujets déjà traités est dans `sujets/suivi-sujets-shorts.md` : le mettre à jour à chaque nouveau short. Les shorts déjà réalisés avant ce document y sont listés comme « hors document ».
+- **À chaque nouveau short, sauf si l'utilisateur impose un sujet : piocher dans ce document le sujet au plus fort potentiel de viralité** (jamais un sujet déjà traité), **et l'envoyer à l'utilisateur dans le chat avant d'écrire les scripts** : sujet, numéro dans le document, pourquoi il a le plus fort potentiel, titre proposé. Les scripts FR, EN et IT sont écrits ensuite (sauf indication contraire). Mêmes critères de viralité et même exigence d'honnêteté du titre que pour les vidéos longues.
+- **Alerte de stock** (shorts et vidéos longues) : à chaque choix de sujet, compter les sujets restants dans le document concerné et **le signaler à l'utilisateur quand il en reste 10 ou moins pour les shorts, 5 ou moins pour les vidéos longues** (puis à chaque choix suivant), pour qu'il puisse fournir de nouvelles idées à temps. Donner aussi le nombre restant dans la phrase d'annonce du sujet.
+
 ## Règles éditoriales
 
 - Distinguer ce que dit le texte biblique, la tradition, le consensus historique et les hypothèses. Une hypothèse (ex. Néron = 666) est présentée comme telle.
