@@ -36,7 +36,7 @@ Le document annonce « 90 idées » mais **ne contient que 74 sujets numérotés
 
 ## Stock restant
 
-**71 sujets disponibles** (74 − 2 déjà traités − 1 réservé à la vidéo longue). Alerte à 10 ou moins.
+**69 sujets disponibles** (74 − 2 déjà traités − 1 réservé à la vidéo longue − n° 46 − n° 16). Alerte à 10 ou moins.
 
 ## Cycle des shorts : 2 sujets du document, puis 1 sujet d'actualité
 
@@ -44,8 +44,8 @@ Règle donnée par l'utilisateur le 27/11/2026, indépendante du cycle des vidé
 
 | Cycle | N° | Type | Sujet | État |
 |---|---|---|---|---|
-| 1 | 1 | Document | n° 46 : « Cela aussi passera » n'est pas dans la Bible | scripts FR/EN/IT à valider |
-| 1 | 2 | Document | à choisir | à faire |
+| 1 | 1 | Document | n° 46 : « Cela aussi passera » n'est pas dans la Bible | brouillons 1080p envoyés le 27/11/2026 |
+| 1 | 2 | Document | n° 16 : « Christ » n'est pas le nom de famille de Jésus | scripts FR/EN/IT à valider |
 | 1 | 3 | **Actualité** (Google Trends) | à chercher et à envoyer à l'utilisateur pour validation | à faire |
 | 2 | 4-5 | Document | à choisir | à faire |
 | 2 | 6 | **Actualité** | à chercher | à faire |
