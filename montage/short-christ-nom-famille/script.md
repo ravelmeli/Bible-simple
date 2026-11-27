@@ -7,6 +7,6 @@ C'est la traduction de l'hébreu « Mashiah », le Messie : celui qu'on oignait 
 Quand Pierre dit, dans Matthieu 16, verset 16 : « Tu es le Christ, le Fils du Dieu vivant », il ne donne pas un nom de famille. Il reconnaît un titre.
 « Jésus-Christ » veut donc dire « Jésus, le Messie ». C'est déjà une affirmation de foi.
 Avec le temps, le mot a fini par servir presque de nom, surtout dans les lettres de Paul.
-Et dans Actes 11, verset 26 : « C'est à Antioche que, pour la première fois, les disciples furent appelés chrétiens. » Les gens du Christ.
+Et dans Actes 11, verset 26 : « Ce fut à Antioche que, pour la première fois, les disciples furent appelés chrétiens. » Les gens du Christ.
 Quel autre mot de la Bible pensais-tu connaître ? Dis-le en commentaire.
 Abonne-toi pour découvrir la Bible, un récit à la fois.
