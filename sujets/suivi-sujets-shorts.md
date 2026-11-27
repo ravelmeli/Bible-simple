@@ -45,7 +45,7 @@ Règle donnée par l'utilisateur le 27/11/2026, indépendante du cycle des vidé
 | Cycle | N° | Type | Sujet | État |
 |---|---|---|---|---|
 | 1 | 1 | Document | n° 46 : « Cela aussi passera » n'est pas dans la Bible | brouillons 1080p envoyés le 27/11/2026 |
-| 1 | 2 | Document | n° 16 : « Christ » n'est pas le nom de famille de Jésus | scripts FR/EN/IT à valider |
-| 1 | 3 | **Actualité** (Google Trends) | à chercher et à envoyer à l'utilisateur pour validation | à faire |
+| 1 | 2 | Document | n° 16 : « Christ » n'est pas le nom de famille de Jésus | brouillons 1080p envoyés le 27/11/2026 |
+| 1 | 3 | **Actualité** (Google Trends, 27/11/2026) | Black Friday : « L'argent est la racine de tous les maux » (1 Timothée 6.10) | scripts FR/EN/IT à valider |
 | 2 | 4-5 | Document | à choisir | à faire |
 | 2 | 6 | **Actualité** | à chercher | à faire |
